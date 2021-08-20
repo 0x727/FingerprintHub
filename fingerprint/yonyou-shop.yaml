@@ -1,0 +1,23 @@
+name: yonyou-shop
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - url:"/shophome/ajaxgetcompetemessagelist.action",
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - $.post("/shopfront/shoppingcar/gotoshoppingcartajax.action",function(data){
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 北京用友政务软件股份有限公司
+  favicon_hash: []
+  priority: 3

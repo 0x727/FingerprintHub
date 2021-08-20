@@ -1,0 +1,16 @@
+name: chinatelecom-guestsupportsystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="nhmis.css"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'var requiredfieldvalidator2 = document.all '
+  favicon_hash: []
+  priority: 3

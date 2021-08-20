@@ -1,0 +1,18 @@
+name: 网神防火墙
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 3600防火墙
+  - 网神SecGate
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - resources/image/logo_header.png
+  - 网神防火墙系统
+  favicon_hash: []
+  priority: 3

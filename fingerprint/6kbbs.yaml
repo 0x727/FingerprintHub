@@ -1,0 +1,16 @@
+name: 6kbbs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by 6kbbs
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - generator" content="6kbbs
+  favicon_hash: []
+  priority: 3

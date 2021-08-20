@@ -1,0 +1,9 @@
+name: weisha-learningsystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /utility/corescripts/widget.js
+  favicon_hash: []
+  priority: 3

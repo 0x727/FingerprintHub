@@ -1,0 +1,10 @@
+name: cameralife
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="camera life
+  - this site is powered by camera life
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: 7moor-product
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="ds_do_action domain_aboutus"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /javascripts/qiniu/qiniu.js
+  favicon_hash: []
+  priority: 3

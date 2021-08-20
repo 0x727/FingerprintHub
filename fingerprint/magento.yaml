@@ -1,0 +1,9 @@
+name: magento
+fingerprint:
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 88733ee53676a47fc354a61c32516e82
+  priority: 1

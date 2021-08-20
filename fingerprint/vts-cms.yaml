@@ -1,0 +1,9 @@
+name: vts-cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - errmag
+  favicon_hash: []
+  priority: 3

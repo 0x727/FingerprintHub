@@ -1,0 +1,9 @@
+name: phonix-pacs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="/pacs/"><img src="pacs/images/logo.svg">
+  favicon_hash: []
+  priority: 3

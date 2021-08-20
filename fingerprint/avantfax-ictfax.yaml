@@ -1,0 +1,16 @@
+name: avantfax-ictfax
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img src="images/avantfax-big.png" border="0" alt="ictfax
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="ictfax
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,10 @@
+name: synology-webstation
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="paragraph">web station has been enabled. to finish setting up your website,
+    please see the "web service
+  favicon_hash: []
+  priority: 3

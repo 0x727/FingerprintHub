@@ -1,0 +1,9 @@
+name: bjqit-crm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href=/css/ordercomplaint
+  favicon_hash: []
+  priority: 3

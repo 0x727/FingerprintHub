@@ -1,0 +1,24 @@
+name: grafana
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - Grafana
+  - login
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'window.grafanabootdata = '
+  favicon_hash: []
+  priority: 3
+- path: /login
+  status_code: 0
+  headers: {}
+  keyword:
+  - grafana-app
+  favicon_hash: []
+  priority: 1

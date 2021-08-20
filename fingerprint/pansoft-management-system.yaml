@@ -1,0 +1,9 @@
+name: pansoft-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - directlink = "eafc.application";
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: good10000-tios
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - value="https://mail.sinopec.com/owa/"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 北京万佳信科技有限公司
+  favicon_hash: []
+  priority: 3

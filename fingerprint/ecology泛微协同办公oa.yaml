@@ -1,0 +1,72 @@
+name: ecology泛微协同办公oa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '"/login/Login.jsp?logintype=1"'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /wui/common/css/w7ovfont.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - typeof poppedwindow
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - client/jquery.client_wev8.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /theme/ecology8/jquery/js/zdialog_wev8.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ecology8/lang/weaver_lang_7_wev8.js
+  favicon_hash: []
+  priority: 3
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 41eca7a9245394106a09b2534d8030df
+  priority: 3
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - c27547e27e1d2c7514545cd8d5988946
+  priority: 3
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 9b1d3f08ede38dbe699d6b2e72a8febb
+  priority: 3
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 281348dd57383c1f214ffb8aed3a1210
+  priority: 3

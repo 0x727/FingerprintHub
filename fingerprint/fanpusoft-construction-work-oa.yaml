@@ -1,0 +1,9 @@
+name: fanpusoft-construction-work-oa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /dwr/interface/loginservice.js
+  favicon_hash: []
+  priority: 3

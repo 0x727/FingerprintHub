@@ -1,0 +1,9 @@
+name: bitkeeper
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: bkhttp
+  keyword: []
+  favicon_hash: []
+  priority: 3

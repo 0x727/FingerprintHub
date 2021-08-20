@@ -1,0 +1,23 @@
+name: netflow-analyzer-zoho-traffic-management
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - netflow analyzer
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - zoho
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/netflow/css/netflow.css
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: hanyuan-wanfa-fax-server
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - background="images/centerfax0.gif"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - background-image:url(images/bgfax0.jpg);
+  favicon_hash: []
+  priority: 3

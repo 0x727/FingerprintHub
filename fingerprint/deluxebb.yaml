@@ -1,0 +1,9 @@
+name: deluxebb
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="powered by deluxebb
+  favicon_hash: []
+  priority: 3

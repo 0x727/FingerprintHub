@@ -1,0 +1,9 @@
+name: phpmybackuppro
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'please login (use your mysql username and password): <a href="index.php?login=true'
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,17 @@
+name: foosun
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - created by dotnetcms
+  - for foosun
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by www.foosun.net,products:foosun content manage system
+  favicon_hash: []
+  priority: 3

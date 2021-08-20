@@ -1,0 +1,16 @@
+name: dmxready-portfolio-manager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /css/portfoliomanager/styles_display_page.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - rememberme_portfoliomanager
+  favicon_hash: []
+  priority: 3

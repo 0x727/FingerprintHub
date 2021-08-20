@@ -1,0 +1,16 @@
+name: ali-monitoring-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /monitor/css/monitor.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/monitor/monitoritem/monitoritemlist.htm
+  favicon_hash: []
+  priority: 3

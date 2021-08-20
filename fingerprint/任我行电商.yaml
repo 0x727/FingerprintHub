@@ -1,0 +1,9 @@
+name: 任我行电商
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="366EC
+  favicon_hash: []
+  priority: 1

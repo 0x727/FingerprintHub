@@ -1,0 +1,9 @@
+name: ibot-cloud
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - author:lvzhaohua
+  favicon_hash: []
+  priority: 3

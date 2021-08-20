@@ -1,0 +1,23 @@
+name: phplist
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="michiel dethmers - http://www.phplist.com
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="phplist version
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '&copy; <a href="http://phplist.com" target'
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: xiuno
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - xiuno/xiunobbs
+  favicon_hash: []
+  priority: 1

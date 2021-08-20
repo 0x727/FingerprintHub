@@ -1,0 +1,24 @@
+name: zimbra
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: ZM_LOGIN_CSRF
+  keyword:
+  - ImgZimbraIcon
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window._zimbramail
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="zimbra
+  favicon_hash: []
+  priority: 3

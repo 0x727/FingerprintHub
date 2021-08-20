@@ -1,0 +1,9 @@
+name: mshift
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by mshift&reg
+  favicon_hash: []
+  priority: 3

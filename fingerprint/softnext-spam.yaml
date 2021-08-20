@@ -1,0 +1,23 @@
+name: softnext-spam
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - snspam/spam_request/
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - snspam/start_page.asp
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - spam_request/spam_requestact.asp
+  favicon_hash: []
+  priority: 3

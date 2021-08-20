@@ -1,0 +1,23 @@
+name: imageview
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="imageview
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - by jorge schrauwen
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.blackdot.be" title="blackdot.be
+  favicon_hash: []
+  priority: 3

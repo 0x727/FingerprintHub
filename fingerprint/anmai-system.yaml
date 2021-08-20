@@ -1,0 +1,23 @@
+name: anmai-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ' id="lblname">版权所有：上海安脉计算机科技有限公司'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="lblname1">版权所有：上海安脉计算机科技有限公司
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <font color="#000000">上海安脉计算机科技有限公司</font>
+  favicon_hash: []
+  priority: 3

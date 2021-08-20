@@ -1,0 +1,16 @@
+name: pansoft-financial-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - pansoftplugins/multithreading/pancalc.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/login/img/loading.gif"
+  favicon_hash: []
+  priority: 3

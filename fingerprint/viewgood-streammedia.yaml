@@ -1,0 +1,31 @@
+name: viewgood-streammedia
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - fgetquery
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - viewgood
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - location.href
+  - var webvirtualdiretory = 'viewgood';
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src='/viewgood/pc/
+  favicon_hash: []
+  priority: 3

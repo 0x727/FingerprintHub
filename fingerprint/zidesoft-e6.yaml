@@ -1,0 +1,9 @@
+name: zidesoft-e6
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/static/images/login/btn-login.gif"
+  favicon_hash: []
+  priority: 3

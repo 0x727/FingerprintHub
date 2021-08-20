@@ -1,0 +1,9 @@
+name: gitstack-code
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ^gitstack/
+  favicon_hash: []
+  priority: 3

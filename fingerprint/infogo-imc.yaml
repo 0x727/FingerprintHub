@@ -1,0 +1,9 @@
+name: infogo-imc
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - client_check/js/global.js
+  favicon_hash: []
+  priority: 3

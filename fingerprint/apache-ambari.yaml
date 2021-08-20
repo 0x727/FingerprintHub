@@ -1,0 +1,10 @@
+name: apache-ambari
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '"/licenses/NOTICE.txt"'
+  - <title>Ambari</title>
+  favicon_hash: []
+  priority: 1

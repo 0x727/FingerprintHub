@@ -1,0 +1,23 @@
+name: kxmail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.kxmail.net
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /systemfunction.pack.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - lo_computername
+  favicon_hash: []
+  priority: 3

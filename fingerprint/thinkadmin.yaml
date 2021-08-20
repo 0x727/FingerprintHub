@@ -1,0 +1,9 @@
+name: thinkadmin
+fingerprint:
+- path: /admin
+  status_code: 200
+  headers: {}
+  keyword:
+  - ThinkAdmin</title>
+  favicon_hash: []
+  priority: 1

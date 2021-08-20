@@ -1,0 +1,9 @@
+name: utt-device
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="utt-inline-block" src="./images/login_btmlogo.png"
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: joinf-erp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h1>富通天下erp</h1>
+  favicon_hash: []
+  priority: 3

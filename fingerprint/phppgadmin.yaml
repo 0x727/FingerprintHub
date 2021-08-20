@@ -1,0 +1,9 @@
+name: phppgadmin
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="appname">phppgadmin
+  favicon_hash: []
+  priority: 3

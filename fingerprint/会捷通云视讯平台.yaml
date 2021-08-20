@@ -1,0 +1,9 @@
+name: 会捷通云视讯平台
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '"/him/api/rest/v1.0/node/role"'
+  favicon_hash: []
+  priority: 1

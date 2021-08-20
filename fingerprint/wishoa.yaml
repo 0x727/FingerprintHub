@@ -1,0 +1,16 @@
+name: wishoa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - WishOA_WebPlugin.js
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - wishoa_webplugin.js
+  favicon_hash: []
+  priority: 3

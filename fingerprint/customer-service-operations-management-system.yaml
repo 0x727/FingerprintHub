@@ -1,0 +1,9 @@
+name: customer-service-operations-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div class="count-down">页面在<em>5</em>秒后自动跳转至您有权限的页面</div>
+  favicon_hash: []
+  priority: 3

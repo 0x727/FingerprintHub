@@ -1,0 +1,16 @@
+name: mgb-opensource-guestbook
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="mgb opensource guestbook
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - title="mgb homepage
+  favicon_hash: []
+  priority: 3

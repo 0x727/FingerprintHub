@@ -1,0 +1,30 @@
+name: livezilla
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - thank you for using livezilla!
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="livezilla
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.livezilla.net" target="_blank
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - livezilla is a registered trademark of livezilla gmbh</div>
+  favicon_hash: []
+  priority: 3

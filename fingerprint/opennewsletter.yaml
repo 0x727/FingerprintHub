@@ -1,0 +1,16 @@
+name: opennewsletter
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://netmeans.net">netmeans.net
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - this software is based on the opennewsletter project
+  favicon_hash: []
+  priority: 3

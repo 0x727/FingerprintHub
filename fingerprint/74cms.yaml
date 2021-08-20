@@ -1,0 +1,44 @@
+name: 74cms
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - content="74cms.com"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="74cms.com
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="骑士cms
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.74cms.com/"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /templates/default/css/common.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - selectjobscategory
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: dspace
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="dspace
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://www.dspace.org">dspace software
+  favicon_hash: []
+  priority: 3

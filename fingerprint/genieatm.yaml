@@ -1,0 +1,16 @@
+name: genieatm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - copyright© genie networks ltd.
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - defect 3531
+  favicon_hash: []
+  priority: 3

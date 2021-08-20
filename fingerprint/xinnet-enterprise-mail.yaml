@@ -1,0 +1,17 @@
+name: xinnet-enterprise-mail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 北京新网数码信息技术有限公司 版权所有</span>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - mail
+  - webmail
+  favicon_hash: []
+  priority: 3

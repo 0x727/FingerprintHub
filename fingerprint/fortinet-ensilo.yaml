@@ -1,0 +1,9 @@
+name: fortinet-ensilo
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img src="images/ensilo_logo.png
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,10 @@
+name: splunkd
+fingerprint:
+- path: /
+  status_code: 200
+  headers:
+    Server: Splunkd
+  keyword:
+  - <title>splunkd</title>
+  favicon_hash: []
+  priority: 1

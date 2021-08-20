@@ -1,0 +1,9 @@
+name: ruvarhrm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/ruvarhrm/web_login/login.aspx
+  favicon_hash: []
+  priority: 3

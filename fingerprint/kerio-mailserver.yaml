@@ -1,0 +1,9 @@
+name: kerio-mailserver
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: kerio mailserver
+  keyword: []
+  favicon_hash: []
+  priority: 3

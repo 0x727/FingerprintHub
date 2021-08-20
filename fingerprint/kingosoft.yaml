@@ -1,0 +1,24 @@
+name: kingosoft
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - setkingoencypt.jsp
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /jkingo.js
+  - kingosoft
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 青果
+  favicon_hash: []
+  priority: 3

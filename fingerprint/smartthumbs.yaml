@@ -1,0 +1,9 @@
+name: smartthumbs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by<a href="http://www.smart-scripts.com">smart thumbs</a>
+  favicon_hash: []
+  priority: 3

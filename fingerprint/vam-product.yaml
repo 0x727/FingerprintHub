@@ -1,0 +1,30 @@
+name: vam-product
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="mymodallabel">login vam system
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by virtual airlines manager
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="js/vam.js"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="https://virtualairlinesmanager.net/">virtual airlines manager
+  favicon_hash: []
+  priority: 3

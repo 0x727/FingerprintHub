@@ -1,0 +1,16 @@
+name: hanming-video-conferencing
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="win_introduce
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /resources/fmweb/other/js/login.js
+  favicon_hash: []
+  priority: 3

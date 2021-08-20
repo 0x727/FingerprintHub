@@ -1,0 +1,9 @@
+name: codiad
+fingerprint:
+- path: /favicon.png
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - e6651505c929a48424bc021fcc4b2966
+  priority: 1

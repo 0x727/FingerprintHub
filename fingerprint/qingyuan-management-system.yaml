@@ -1,0 +1,10 @@
+name: qingyuan-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - -moz-background-size
+  - class="u_logo fa fa-user"
+  favicon_hash: []
+  priority: 3

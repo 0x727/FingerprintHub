@@ -1,0 +1,16 @@
+name: aspnet-requestvalidationmode
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - httprequestvalidationexception
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - request validation has detected a potentially dangerous client input value
+  favicon_hash: []
+  priority: 3

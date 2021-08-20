@@ -1,0 +1,31 @@
+name: goldlib-library
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - onclick="change('book');
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /opac/periodicals
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="jp-searchtabs
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 图书
+  - 金盘软件
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: videosurveillancemanagementplatform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ' <span>平台采用最新图像化展现技术'
+  favicon_hash: []
+  priority: 3

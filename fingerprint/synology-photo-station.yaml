@@ -1,0 +1,37 @@
+name: synology-photo-station
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - photo_new/syno_photo_main.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="photo station 6"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="service_not_available"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="photo station
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="album
+  favicon_hash: []
+  priority: 3

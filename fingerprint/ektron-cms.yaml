@@ -1,0 +1,9 @@
+name: ektron-cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /java/ektron.js
+  favicon_hash: []
+  priority: 3

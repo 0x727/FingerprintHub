@@ -1,0 +1,16 @@
+name: cacti
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: cacti=
+  keyword: []
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /plugins/jqueryskin/include/login.css
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: ipguard-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - onchange="is_empty('#txtusername','#lblemptyname')
+  favicon_hash: []
+  priority: 3

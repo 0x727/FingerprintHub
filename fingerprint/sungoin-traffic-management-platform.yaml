@@ -1,0 +1,9 @@
+name: sungoin-traffic-management-platform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 尚景流量管理平台
+  favicon_hash: []
+  priority: 3

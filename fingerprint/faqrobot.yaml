@@ -1,0 +1,16 @@
+name: faqrobot
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="faq客服机器人
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 南京云问网络技术有限公司
+  favicon_hash: []
+  priority: 3

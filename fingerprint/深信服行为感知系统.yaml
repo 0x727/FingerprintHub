@@ -1,0 +1,9 @@
+name: 深信服行为感知系统
+fingerprint:
+- path: /ui/login.php
+  status_code: 0
+  headers: {}
+  keyword:
+  - '''home/mod-login/nopro-login/index'''
+  favicon_hash: []
+  priority: 1

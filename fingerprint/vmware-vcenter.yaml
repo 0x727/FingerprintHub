@@ -1,0 +1,23 @@
+name: vmware-vcenter
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /converter/vmware-converter-client.exe
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="vmware vcenter
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /vmw_nsx_logo-black-triangle-500w.png
+  favicon_hash: []
+  priority: 1

@@ -1,0 +1,16 @@
+name: cbss-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - </a>登录cbss系统</p>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <li>com.cbss.xss.filter.xssfilter.dofilter
+  favicon_hash: []
+  priority: 3

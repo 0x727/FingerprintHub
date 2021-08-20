@@ -1,0 +1,16 @@
+name: mibew-messenger
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="empty_inner
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="flink">mibew messenger
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: bitnami-redmine-stack
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - alt="bitnami redmine stack
+  favicon_hash: []
+  priority: 3

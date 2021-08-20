@@ -1,0 +1,9 @@
+name: 天融信topapp_lb负载均衡系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <title>天融信 TopAPP</title>
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: seafile
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - css/seahub.min.css
+  favicon_hash: []
+  priority: 3

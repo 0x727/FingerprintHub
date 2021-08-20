@@ -1,0 +1,23 @@
+name: liferay
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by liferay portal
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - liferay.aui
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - liferay.currenturl
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: microsoft-skype-for-business
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var reachclientproductname = "skype for business web 应用"
+  favicon_hash: []
+  priority: 3

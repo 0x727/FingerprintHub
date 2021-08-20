@@ -1,0 +1,16 @@
+name: netdoit
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - power by netdoit
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - align="center"><a href="http://www.net-doit.com" target="_blank
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,17 @@
+name: kentico-cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /cmspages/getresource.ashx
+  - content="kentico cms
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - kentico
+  favicon_hash: []
+  priority: 3

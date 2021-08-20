@@ -1,0 +1,9 @@
+name: doclever
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '@click.prevent="login" :loading="loginpending"'
+  favicon_hash: []
+  priority: 3

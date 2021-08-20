@@ -1,0 +1,9 @@
+name: cisco-prime-network-registrar
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - productname="network registrar
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,10 @@
+name: sangfor-virtualization-management
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="webkit|ie-stand"
+  - id="privacytipwin"
+  favicon_hash: []
+  priority: 3

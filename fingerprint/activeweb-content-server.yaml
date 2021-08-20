@@ -1,0 +1,16 @@
+name: activeweb-content-server
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - awnocachebegin__awnocachebegin__awnocachebegin__awnocachebegin__awnocachebegin
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - activeweb cache extension
+  favicon_hash: []
+  priority: 3

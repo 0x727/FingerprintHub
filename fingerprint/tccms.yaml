@@ -1,0 +1,16 @@
+name: tccms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - index.php?ac=link_more
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - index.php?ac=news_list
+  favicon_hash: []
+  priority: 3

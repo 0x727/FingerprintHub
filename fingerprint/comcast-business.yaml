@@ -1,0 +1,9 @@
+name: comcast-business
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - cmn/css/common-min.css
+  favicon_hash: []
+  priority: 3

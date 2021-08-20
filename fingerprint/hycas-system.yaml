@@ -1,0 +1,9 @@
+name: hycas-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/images/hyscm.jpg
+  favicon_hash: []
+  priority: 3

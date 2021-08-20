@@ -1,0 +1,9 @@
+name: bio-lims
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /lims/dist/css/font-awesome.min.css
+  favicon_hash: []
+  priority: 3

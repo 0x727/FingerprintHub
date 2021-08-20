@@ -1,0 +1,16 @@
+name: zhongyou-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - background=zhongyou.jpg
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 众友科技巡检管理软件
+  favicon_hash: []
+  priority: 3

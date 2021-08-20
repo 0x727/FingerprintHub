@@ -1,0 +1,16 @@
+name: telerik-sitefinity
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - telerik.web.ui.webresource.axd
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="sitefinity
+  favicon_hash: []
+  priority: 3

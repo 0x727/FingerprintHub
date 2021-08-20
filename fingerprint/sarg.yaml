@@ -1,0 +1,9 @@
+name: sarg
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="logo"><a href="http://sarg.sourceforge.net"
+  favicon_hash: []
+  priority: 3

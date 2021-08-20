@@ -1,0 +1,9 @@
+name: baishijia-cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /resource/images/cms.ico
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,17 @@
+name: simple-phishing-toolkit
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <span id="spt"><a href="http://www.sptoolkit.com/download/" target="_blank">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="welcome to spt - simple phishing toolkit.  spt is a super simple but
+    powerful phishing toolkit." />
+  favicon_hash: []
+  priority: 3

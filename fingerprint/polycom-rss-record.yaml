@@ -1,0 +1,9 @@
+name: polycom-rss-record
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location.replace("/rss/")
+  favicon_hash: []
+  priority: 3

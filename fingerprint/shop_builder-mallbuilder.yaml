@@ -1,0 +1,10 @@
+name: shop_builder-mallbuilder
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="mallbuilder
+  - powered by mallbuilder
+  favicon_hash: []
+  priority: 3

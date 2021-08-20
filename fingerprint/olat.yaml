@@ -1,0 +1,44 @@
+name: olat
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - title="homepage of open source lms olat
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="olat
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="olat 是一个学习内容管理系统 (lcms).
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="olat - online learning and training
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - o_info.uriprefix="/olat/dmz/";
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/olat/raw/
+  favicon_hash: []
+  priority: 3

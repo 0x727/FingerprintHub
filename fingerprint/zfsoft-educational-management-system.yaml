@@ -1,0 +1,10 @@
+name: zfsoft-educational-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="站点介绍"
+  - style/base/jw.css
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: ffay-lanproxy
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - '"/lanproxy-config/"'
+  favicon_hash: []
+  priority: 1

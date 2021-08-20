@@ -1,0 +1,23 @@
+name: eyou-mail-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="亿邮电子邮件系统
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /tpl/login/user/images/dbg.png
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var loginssl = document.form_login.login_ssl.value;
+  favicon_hash: []
+  priority: 3

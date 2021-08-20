@@ -1,0 +1,24 @@
+name: smf
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://www.simplemachines.org/about/copyright.php" title="free forum
+    software" target="_blank
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img class="floatright" id="smflogo" src=
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'document.getelementbyid("upshrink").src = smf_images_url + '
+  favicon_hash: []
+  priority: 3

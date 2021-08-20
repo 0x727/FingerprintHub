@@ -1,0 +1,16 @@
+name: lifetype
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="lifetype
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - title="install lifetype
+  favicon_hash: []
+  priority: 3

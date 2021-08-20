@@ -1,0 +1,16 @@
+name: qm-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="polyfills.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - assets/css/fdb.css
+  favicon_hash: []
+  priority: 3

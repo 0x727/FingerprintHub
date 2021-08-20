@@ -1,0 +1,16 @@
+name: hanwei-hazardous-chemicals-enterprise-early-warning-and-prevention-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - default value is bootstrapdialog.type_primary
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var objheight = document.documentelement.clientheight
+  favicon_hash: []
+  priority: 3

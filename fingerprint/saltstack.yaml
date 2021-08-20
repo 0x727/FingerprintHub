@@ -1,0 +1,17 @@
+name: saltstack
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: TornadoServer
+  keyword:
+  - <title>SaltStack</title>
+  favicon_hash: []
+  priority: 1
+- path: /img/icons/favicon.png
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 8259624a1bf4f9a3e817c7bf80f52db9
+  priority: 1

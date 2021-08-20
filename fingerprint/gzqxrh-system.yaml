@@ -1,0 +1,30 @@
+name: gzqxrh-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 广州全息若海信息科技有限公司
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/scripts/easyui/jquery.easyui.min.js"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'style="vertical-align: middle; cursor: pointer'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 响应键盘的回车事件
+  favicon_hash: []
+  priority: 3

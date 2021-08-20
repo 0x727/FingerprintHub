@@ -1,0 +1,9 @@
+name: apache-struts
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="Struts2 Showcase for Apache Struts Project"
+  favicon_hash: []
+  priority: 1

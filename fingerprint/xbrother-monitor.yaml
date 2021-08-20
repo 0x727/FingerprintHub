@@ -1,0 +1,9 @@
+name: xbrother-monitor
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - if (!getcookie("x_gu_sid"
+  favicon_hash: []
+  priority: 3

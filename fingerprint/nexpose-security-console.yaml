@@ -1,0 +1,23 @@
+name: nexpose-security-console
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /nexpose-dark.min.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - nexposeccpassword
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /nexpose-features.js
+  favicon_hash: []
+  priority: 3

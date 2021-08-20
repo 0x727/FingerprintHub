@@ -1,0 +1,9 @@
+name: phpok
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="phpok
+  favicon_hash: []
+  priority: 3

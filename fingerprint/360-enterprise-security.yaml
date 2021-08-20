@@ -1,0 +1,17 @@
+name: 360-enterprise-security
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 360entinst
+  - 关于全网部署360私有云的通知
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 天擎
+  favicon_hash: []
+  priority: 3

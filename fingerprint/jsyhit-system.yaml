@@ -1,0 +1,9 @@
+name: jsyhit-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="仪化产品质量查询系统"
+  favicon_hash: []
+  priority: 3

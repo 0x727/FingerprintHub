@@ -1,0 +1,9 @@
+name: 用友软件fe协作办公平台
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - FE协作办公平台
+  favicon_hash: []
+  priority: 1

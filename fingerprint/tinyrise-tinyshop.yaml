@@ -1,0 +1,16 @@
+name: tinyrise-tinyshop
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var server_url = '/__con__/__act__';
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - tiny_token_
+  favicon_hash: []
+  priority: 3

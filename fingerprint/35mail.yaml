@@ -1,0 +1,18 @@
+name: 35mail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '35'
+  - images/mail/35pushmail.app.png
+  - switchingserverpopup
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="user_define_img_btn6" href="http://help.mail.35.com/mailman/81.html
+  favicon_hash: []
+  priority: 3

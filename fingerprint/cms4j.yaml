@@ -1,0 +1,16 @@
+name: cms4j
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/cms4jadmin/login.jsp
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - method="post" name="cms4jsearchform" id="cms4jsearchform
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: alcatel_lucent-omnivista-cirrus
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /help/en-us/others/ov-cirrus_cookiepolicy.html
+  favicon_hash: []
+  priority: 3

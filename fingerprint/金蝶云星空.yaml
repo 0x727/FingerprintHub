@@ -1,0 +1,23 @@
+name: 金蝶云星空
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /ClientBin/Kingdee.BOS.XPF.App.xap
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - HTML5/content/themes/kdcss.min.css
+  favicon_hash: []
+  priority: 3
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 825af13371930eeb2f85cf075fa25b68
+  priority: 3

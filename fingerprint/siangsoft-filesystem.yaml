@@ -1,0 +1,9 @@
+name: siangsoft-filesystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - $.cookie('sianglng' , null)
+  favicon_hash: []
+  priority: 3

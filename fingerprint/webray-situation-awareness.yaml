@@ -1,0 +1,9 @@
+name: webray-situation-awareness
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'class="disclaimer" style="color: #ffffff">《盛邦安全网站监控预警平台服务协议》</a>'
+  favicon_hash: []
+  priority: 3

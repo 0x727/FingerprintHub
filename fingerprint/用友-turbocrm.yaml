@@ -1,0 +1,11 @@
+name: 用友-turbocrm
+fingerprint:
+- path: /login/login.php
+  status_code: 200
+  headers: {}
+  keyword:
+  - CRM
+  - loginsys_osv
+  - 用友
+  favicon_hash: []
+  priority: 3

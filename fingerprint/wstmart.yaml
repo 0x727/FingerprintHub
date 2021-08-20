@@ -1,0 +1,16 @@
+name: wstmart
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by wstmart
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/wstmart/home/
+  favicon_hash: []
+  priority: 3

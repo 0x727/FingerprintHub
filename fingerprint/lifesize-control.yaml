@@ -1,0 +1,9 @@
+name: lifesize-control
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /lifesizecontrol/asp/index.html
+  favicon_hash: []
+  priority: 3

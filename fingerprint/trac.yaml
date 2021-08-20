@@ -1,0 +1,23 @@
+name: trac
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h1>available projects</h1>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - wiki/tracguide
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by trac
+  favicon_hash: []
+  priority: 3

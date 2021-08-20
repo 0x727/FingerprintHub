@@ -1,0 +1,9 @@
+name: rap2
+fingerprint:
+- path: /favicon.png
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 5c16c9e452d2974a1c14887032c86c5d
+  priority: 1

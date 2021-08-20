@@ -1,0 +1,9 @@
+name: enigma2
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/web/movielist.rss?tag
+  favicon_hash: []
+  priority: 3

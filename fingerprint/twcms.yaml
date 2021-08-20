@@ -1,0 +1,9 @@
+name: twcms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/twcms/theme/default/css/global.css"
+  favicon_hash: []
+  priority: 3

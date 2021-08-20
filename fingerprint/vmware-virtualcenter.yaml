@@ -1,0 +1,30 @@
+name: vmware-virtualcenter
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="vmware virtualcenter
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="vmware vsphere
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - url=vcops-vsphere/
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - the vshield manager requires
+  favicon_hash: []
+  priority: 1

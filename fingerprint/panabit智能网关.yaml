@@ -1,0 +1,26 @@
+name: panabit智能网关
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - forum.panabit.com
+  - pa_iptcode
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - Maintain
+  - Panalog
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="codeno"
+  - 日志系统
+  favicon_hash: []
+  priority: 3

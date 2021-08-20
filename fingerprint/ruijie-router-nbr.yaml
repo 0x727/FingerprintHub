@@ -1,0 +1,17 @@
+name: ruijie-router-nbr
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - web_monitor_config.htm
+  - 锐捷网络
+  favicon_hash: []
+  priority: 3
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 41eef7e97e11b4400265e5ea800fa081
+  priority: 1

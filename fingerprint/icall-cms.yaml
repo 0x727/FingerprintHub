@@ -1,0 +1,9 @@
+name: icall-cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var img_obj = document.getelementbyid('showing');
+  favicon_hash: []
+  priority: 3

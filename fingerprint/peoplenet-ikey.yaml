@@ -1,0 +1,9 @@
+name: peoplenet-ikey
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="ikey,众人科技,ikey
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,32 @@
+name: siteserver
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - http://www.siteserver.cn
+  - powered by
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - siteserver cms
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - siteserver
+  - t_系统首页模板
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - sitefiles
+  favicon_hash: []
+  priority: 3

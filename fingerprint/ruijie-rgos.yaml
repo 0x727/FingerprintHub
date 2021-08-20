@@ -1,0 +1,9 @@
+name: ruijie-rgos
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: rgos http-server
+  keyword: []
+  favicon_hash: []
+  priority: 1

@@ -1,0 +1,11 @@
+name: centos默认页面
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <title>Welcome to CentOS</title>
+  - centos.org
+  - img/centos-logo.png
+  favicon_hash: []
+  priority: 1

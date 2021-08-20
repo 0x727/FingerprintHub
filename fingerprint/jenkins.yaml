@@ -1,0 +1,23 @@
+name: jenkins
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - hudson.model.Hudson.Administer
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - jenkins-agent-protocols
+  favicon_hash: []
+  priority: 3
+- path: /login?from=%2F
+  status_code: 200
+  headers: {}
+  keyword:
+  - '[Jenkins]'
+  favicon_hash: []
+  priority: 1

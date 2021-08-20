@@ -1,0 +1,9 @@
+name: oureman-eman
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <span i18n="1">益模模具智能制造系统</span>
+  favicon_hash: []
+  priority: 3

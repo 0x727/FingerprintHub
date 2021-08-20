@@ -1,0 +1,16 @@
+name: cloodie-his
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/design/common/his.logo.white.svg" alt="his logo
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/design/design/cloodie.css
+  favicon_hash: []
+  priority: 3

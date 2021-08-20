@@ -1,0 +1,17 @@
+name: webasyst-shop-script
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://www.shop-script.com
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'powered by webasyst shop-script <a href="http://www.shop-script.com/" style="font-weight:
+    normal">shopping cart software</a>'
+  favicon_hash: []
+  priority: 3

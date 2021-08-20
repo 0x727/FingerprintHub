@@ -1,0 +1,16 @@
+name: c-lodop
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h1>关于c-lodop免费和注册授权</h1>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - document.getelementbyid("reqid").value==document.getelementbyid("licid").value
+  favicon_hash: []
+  priority: 3

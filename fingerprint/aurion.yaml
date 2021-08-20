@@ -1,0 +1,16 @@
+name: aurion
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- aurion teal will be used as the login-time default
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /aurion.js
+  favicon_hash: []
+  priority: 3

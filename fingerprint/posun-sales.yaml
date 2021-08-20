@@ -1,0 +1,16 @@
+name: posun-sales
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/view/static/js/eidpcommon.min.js"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <p>快易销公众号</p>
+  favicon_hash: []
+  priority: 3

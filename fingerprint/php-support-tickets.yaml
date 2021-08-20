@@ -1,0 +1,16 @@
+name: php-support-tickets
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - title="php support tickets">php support tickets
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="triangle solutions ltd
+  favicon_hash: []
+  priority: 3

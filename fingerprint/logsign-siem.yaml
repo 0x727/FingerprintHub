@@ -1,0 +1,9 @@
+name: logsign-siem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location = '/ui/modules/login/'
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,10 @@
+name: nmap-log
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - interesting ports on
+  - starting nmap
+  favicon_hash: []
+  priority: 3

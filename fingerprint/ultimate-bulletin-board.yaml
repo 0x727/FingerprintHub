@@ -1,0 +1,16 @@
+name: ultimate-bulletin-board
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <meta name="generator" content="ubb.threads
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://www.groupee.com/landing/goto.php?a=ubb.classic">powered by ubb.classic&trade
+  favicon_hash: []
+  priority: 3

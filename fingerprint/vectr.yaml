@@ -1,0 +1,9 @@
+name: vectr
+fingerprint:
+- path: /
+  status_code: 302
+  headers:
+    Location: /sra-purpletools-webui/app
+  keyword: []
+  favicon_hash: []
+  priority: 1

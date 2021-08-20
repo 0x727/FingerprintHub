@@ -1,0 +1,16 @@
+name: apabi-digital-resource-platform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - default/apabi.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <link href="http://apabi
+  favicon_hash: []
+  priority: 3

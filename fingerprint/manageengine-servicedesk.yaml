@@ -1,0 +1,9 @@
+name: manageengine-servicedesk
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ',''manageengine servicedesk plus'','
+  favicon_hash: []
+  priority: 3

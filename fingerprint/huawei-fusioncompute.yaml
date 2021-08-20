@@ -1,0 +1,16 @@
+name: huawei-fusioncompute
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - resources/themes/images/logo/favicon.ico
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /omsportal/
+  favicon_hash: []
+  priority: 3

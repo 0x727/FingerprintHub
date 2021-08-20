@@ -1,0 +1,16 @@
+name: adobe-experience-manager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - adobe experience manager
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ' class="coral-heading coral-heading--1"'
+  favicon_hash: []
+  priority: 3

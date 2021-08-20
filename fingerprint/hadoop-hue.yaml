@@ -1,0 +1,17 @@
+name: hadoop-hue
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - jhuehdfstreeglobals
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - hue and the hue logo are trademarks of cloudera, inc.
+  - id="jhuenotify
+  favicon_hash: []
+  priority: 2

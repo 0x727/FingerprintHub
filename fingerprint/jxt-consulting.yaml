@@ -1,0 +1,16 @@
+name: jxt-consulting
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="jxt-popup-wrapper
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by jxt consulting
+  favicon_hash: []
+  priority: 3

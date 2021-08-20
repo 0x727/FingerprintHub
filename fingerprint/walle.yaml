@@ -1,0 +1,9 @@
+name: walle
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - walle
+  favicon_hash: []
+  priority: 3

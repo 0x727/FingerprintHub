@@ -1,0 +1,9 @@
+name: yichao-crmreporting
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/css/vendors~index.acfeb.css"
+  favicon_hash: []
+  priority: 3

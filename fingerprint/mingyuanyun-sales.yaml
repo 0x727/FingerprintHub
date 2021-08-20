@@ -1,0 +1,16 @@
+name: mingyuanyun-sales
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img id="erp" src="/_imgs/login/zs_erp.png
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - value="明源售楼管理系统v5.0"
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: kouton-ctbs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 欢迎使用 kouton ctbs advanced web client 系统!
+  favicon_hash: []
+  priority: 3

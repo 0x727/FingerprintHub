@@ -1,0 +1,9 @@
+name: kuaipu-m6
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="resource/javascript/jkpm6.datetime.js
+  favicon_hash: []
+  priority: 3

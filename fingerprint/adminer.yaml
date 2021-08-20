@@ -1,0 +1,9 @@
+name: adminer
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - https://www.adminer.org
+  favicon_hash: []
+  priority: 1

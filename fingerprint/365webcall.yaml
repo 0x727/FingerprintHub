@@ -1,0 +1,9 @@
+name: 365webcall
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src='http://www.365webcall.com/imme1.aspx?
+  favicon_hash: []
+  priority: 3

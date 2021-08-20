@@ -1,0 +1,9 @@
+name: apache-axis
+fingerprint:
+- path: /axis2/services/Cat/getClassPath
+  status_code: 0
+  headers: {}
+  keyword:
+  - http://ws.apache.org/axis2
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: synology-router-manager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'hostname" : "synologyrouter"'
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="synologyrouter
+  favicon_hash: []
+  priority: 1

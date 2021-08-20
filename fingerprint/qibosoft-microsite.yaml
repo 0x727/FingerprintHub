@@ -1,0 +1,9 @@
+name: qibosoft-microsite
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by qibosoft v1.0
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: listserv
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by the listserv email list manager
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <title>welcome to listserv
+  favicon_hash: []
+  priority: 3

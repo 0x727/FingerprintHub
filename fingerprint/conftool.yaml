@@ -1,0 +1,16 @@
+name: conftool
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h2 align=center>conftool conference administration
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href='http://www.conftool.net'>conference management software
+  favicon_hash: []
+  priority: 3

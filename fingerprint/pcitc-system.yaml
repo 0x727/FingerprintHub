@@ -1,0 +1,9 @@
+name: pcitc-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 动设备运行风险分析系统
+  favicon_hash: []
+  priority: 3

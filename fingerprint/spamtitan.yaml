@@ -1,0 +1,10 @@
+name: spamtitan
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <table class="lhead"><tr><td class="img"><img src="/imgs/logo.gif" alt="spamtitan
+    logo"></td></tr></table></div>
+  favicon_hash: []
+  priority: 3

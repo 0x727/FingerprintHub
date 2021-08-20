@@ -1,0 +1,16 @@
+name: founder-operation-management-and-decision-support-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/portal/img/logo.png"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/desktop/ui/custom/getimage?img=iphoneview.png"
+  favicon_hash: []
+  priority: 3

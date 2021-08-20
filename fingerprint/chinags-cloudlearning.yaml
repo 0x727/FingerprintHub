@@ -1,0 +1,9 @@
+name: chinags-cloudlearning
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /integrats/gs.sub.systemmanager/dologin/json
+  favicon_hash: []
+  priority: 3

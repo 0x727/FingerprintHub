@@ -1,0 +1,9 @@
+name: graylog
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - org.graylog.plugins.pipelineprocessor.processorplugin
+  favicon_hash: []
+  priority: 3

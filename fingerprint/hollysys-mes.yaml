@@ -1,0 +1,9 @@
+name: hollysys-mes
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - resource="title_sub"
+  favicon_hash: []
+  priority: 3

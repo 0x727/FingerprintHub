@@ -1,0 +1,9 @@
+name: symantec-client-security
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- symantec client security web based installation -->
+  favicon_hash: []
+  priority: 3

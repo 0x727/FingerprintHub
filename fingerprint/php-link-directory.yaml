@@ -1,0 +1,16 @@
+name: php-link-directory
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by phplinkdirectory
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="php link directory
+  favicon_hash: []
+  priority: 2

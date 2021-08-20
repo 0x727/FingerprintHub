@@ -1,0 +1,9 @@
+name: yunec
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/17rec.html"
+  favicon_hash: []
+  priority: 3

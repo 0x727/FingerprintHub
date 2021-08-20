@@ -1,0 +1,9 @@
+name: ez-publish
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: ezsessioncookie
+  keyword: []
+  favicon_hash: []
+  priority: 3

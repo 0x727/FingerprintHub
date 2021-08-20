@@ -1,0 +1,9 @@
+name: dhc-oa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/extcomponent/security/image/dhc.png"
+  favicon_hash: []
+  priority: 3

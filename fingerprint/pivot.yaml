@@ -1,0 +1,16 @@
+name: pivot
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered bypivot
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.pivotlog.net/?ver=pivot
+  favicon_hash: []
+  priority: 3

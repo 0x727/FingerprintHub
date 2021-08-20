@@ -1,0 +1,9 @@
+name: netpilot
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/sys/images/tree.css" title="netpilot
+  favicon_hash: []
+  priority: 3

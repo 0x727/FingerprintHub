@@ -1,0 +1,9 @@
+name: rconfig
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - rConfigLogo
+  favicon_hash: []
+  priority: 1

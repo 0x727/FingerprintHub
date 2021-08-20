@@ -1,0 +1,16 @@
+name: manageengine-opmanager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - the complete network monitoring software from manageengine
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://www.manageengine.com/products/opmanager/index.html" target=
+  favicon_hash: []
+  priority: 3

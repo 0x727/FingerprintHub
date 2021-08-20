@@ -1,0 +1,16 @@
+name: dian-diagnostics
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 浙江迪安诊断技术股份有限公司
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/resources/pages/img/logo.svg"
+  favicon_hash: []
+  priority: 3

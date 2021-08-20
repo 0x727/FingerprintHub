@@ -1,0 +1,17 @@
+name: cisco-acs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <meta http-equiv="refresh" content="0;url=/acsadmin" />
+  - cisco
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/acsadmin">launch acs
+  favicon_hash: []
+  priority: 3

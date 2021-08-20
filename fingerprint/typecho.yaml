@@ -1,0 +1,10 @@
+name: typecho
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - typecho
+  - usr/themes
+  favicon_hash: []
+  priority: 1

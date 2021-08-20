@@ -1,0 +1,9 @@
+name: phpmoneybooks
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href='http://phpmoneybooks.com'>phpmoneybooks
+  favicon_hash: []
+  priority: 3

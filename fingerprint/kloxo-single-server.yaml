@@ -1,0 +1,16 @@
+name: kloxo-single-server
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/img/hypervm-logo.gif
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /htmllib/js/preop.js
+  favicon_hash: []
+  priority: 2

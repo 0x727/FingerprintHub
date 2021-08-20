@@ -1,0 +1,9 @@
+name: etl
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div class="header">登录补天etl系统</div>
+  favicon_hash: []
+  priority: 3

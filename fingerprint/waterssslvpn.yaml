@@ -1,0 +1,9 @@
+name: waterssslvpn
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - welcome.cgi?p=logo&signinid=url_default
+  favicon_hash: []
+  priority: 3

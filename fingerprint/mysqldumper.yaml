@@ -1,0 +1,9 @@
+name: mysqldumper
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <select class="sqlcombo" name="tablecombo
+  favicon_hash: []
+  priority: 3

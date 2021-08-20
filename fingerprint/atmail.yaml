@@ -1,0 +1,23 @@
+name: atmail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by atmail
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /index.php/mail/auth/processlogin
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <input id="mailserverinput
+  favicon_hash: []
+  priority: 3

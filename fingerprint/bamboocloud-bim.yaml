@@ -1,0 +1,9 @@
+name: bamboocloud-bim
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - bim 开发配置与运维控制台
+  favicon_hash: []
+  priority: 3

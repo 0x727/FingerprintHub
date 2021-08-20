@@ -1,0 +1,9 @@
+name: smartcds
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: smartcds
+  keyword: []
+  favicon_hash: []
+  priority: 3

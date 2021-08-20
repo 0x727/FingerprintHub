@@ -1,0 +1,16 @@
+name: dandian-crm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - url=general/erp/login/
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="单点crm系统
+  favicon_hash: []
+  priority: 3

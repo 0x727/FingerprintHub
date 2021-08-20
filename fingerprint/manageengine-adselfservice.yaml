@@ -1,0 +1,30 @@
+name: manageengine-adselfservice
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="images/adssp_favicon.ico
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - small_status_box
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="adsf/js/
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - manageengine
+  favicon_hash: []
+  priority: 3

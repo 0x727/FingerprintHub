@@ -1,0 +1,9 @@
+name: secbi-product
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /secbiutils.min.js
+  favicon_hash: []
+  priority: 3

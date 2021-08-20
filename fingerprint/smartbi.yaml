@@ -1,0 +1,9 @@
+name: smartbi
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - gcfutil = jsloader.resolve('smartbi.gcf.gcfutil')
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: 蓝海卓越计费管理系统
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - <script language='javascript'>window.parent.location.href='login.php';</script>
+  favicon_hash: []
+  priority: 1

@@ -1,0 +1,16 @@
+name: myre-php
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '<!-- begin: menu footer don''t change anything'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <b><u>my last viewed</u></b>
+  favicon_hash: []
+  priority: 3

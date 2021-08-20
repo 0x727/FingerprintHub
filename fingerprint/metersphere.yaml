@@ -1,0 +1,9 @@
+name: metersphere
+fingerprint:
+- path: /favicon.ico
+  status_code: 200
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 618fd9ad8473083815f7426fbddecd8e
+  priority: 1

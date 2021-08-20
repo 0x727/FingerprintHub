@@ -1,0 +1,16 @@
+name: willfar-interface-management-tool
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - the wasion software foundation
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - alt="接口应用管理工具"
+  favicon_hash: []
+  priority: 3

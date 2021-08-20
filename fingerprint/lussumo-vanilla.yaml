@@ -1,0 +1,9 @@
+name: lussumo-vanilla
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    X-Powered-By: lussumo vanilla
+  keyword: []
+  favicon_hash: []
+  priority: 3

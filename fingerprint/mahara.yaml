@@ -1,0 +1,23 @@
+name: mahara
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - this site is powered by mahara
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="powered-by"><a href="http://mahara.org/
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '{"namedfieldempty":'
+  favicon_hash: []
+  priority: 3

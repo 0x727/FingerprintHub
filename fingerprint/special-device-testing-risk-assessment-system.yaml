@@ -1,0 +1,9 @@
+name: special-device-testing-risk-assessment-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var unitid = getpagerequestvalue("unitid")
+  favicon_hash: []
+  priority: 3

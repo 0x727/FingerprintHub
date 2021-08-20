@@ -1,0 +1,9 @@
+name: huawei-vpn
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - oncompleted(hresult,perrorobject, pasynccontext)
+  favicon_hash: []
+  priority: 3

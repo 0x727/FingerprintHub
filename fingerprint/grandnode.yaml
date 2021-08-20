@@ -1,0 +1,9 @@
+name: grandnode
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    X-Powered-By: grandnode
+  keyword: []
+  favicon_hash: []
+  priority: 3

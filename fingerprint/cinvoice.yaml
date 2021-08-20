@@ -1,0 +1,9 @@
+name: cinvoice
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.forperfect.com/
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: 数字化校园综合管理系统
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - '"../../DC_Login/QYSignUp"'
+  favicon_hash: []
+  priority: 1

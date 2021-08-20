@@ -1,0 +1,20 @@
+name: splunk
+fingerprint:
+- path: /
+  status_code: 200
+  headers:
+    Server: Splunkd
+    Set-Cookie: splunkweb_uid
+  keyword:
+  - content="Splunk Inc."
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 303
+  headers:
+    Server: Splunkd
+    Set-Cookie: ROUTEID
+  keyword:
+  - <title>303 See Other</title>
+  favicon_hash: []
+  priority: 1

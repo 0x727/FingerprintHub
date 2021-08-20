@@ -1,0 +1,9 @@
+name: 深信服终端检测响应平台-sangfor-edr
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'windows_download_name: "/download_installer_win.php",'
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: drrui-cloud-office-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /studentsign/tologin.di
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /user/toupdatepasswordpage.di
+  favicon_hash: []
+  priority: 3

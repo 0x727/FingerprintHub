@@ -1,0 +1,9 @@
+name: cndatacom-smsp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /smrc/resources/default/
+  favicon_hash: []
+  priority: 3

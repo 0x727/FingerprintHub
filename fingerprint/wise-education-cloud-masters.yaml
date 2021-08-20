@@ -1,0 +1,9 @@
+name: wise-education-cloud-masters
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ctl00_contentplaceholder1_dlttopvideos
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: emerson-xweb-evo
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="img/xweb-logo.png"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/css/images/logo_xweb_alpha.png"
+  favicon_hash: []
+  priority: 3

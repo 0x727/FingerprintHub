@@ -1,0 +1,16 @@
+name: cwp-controlpanel
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/login/cwp_theme/original/img/ico/favicon.ico"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/login/cwp_theme/original/img/new_logo_small.png"
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: xampp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'font-size: 1.2em; color: red;">new xampp'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'content="xampp '
+  favicon_hash: []
+  priority: 3

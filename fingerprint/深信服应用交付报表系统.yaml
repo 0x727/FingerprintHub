@@ -1,0 +1,16 @@
+name: 深信服应用交付报表系统
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - /reportCenter/index.php?cls_mode=cluster_mode_others
+  favicon_hash: []
+  priority: 3
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 98128e625a3b98546a206c2170fb5eb3
+  priority: 3

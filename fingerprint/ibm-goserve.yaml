@@ -1,0 +1,9 @@
+name: ibm-goserve
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: goserve
+  keyword: []
+  favicon_hash: []
+  priority: 2

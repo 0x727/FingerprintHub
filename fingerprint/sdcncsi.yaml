@@ -1,0 +1,16 @@
+name: sdcncsi
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <em class="wk-fl">在沃系统</em>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - refreshcaptchaimgfun
+  favicon_hash: []
+  priority: 3

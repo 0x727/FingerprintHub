@@ -1,0 +1,9 @@
+name: meis-medicine
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h1 class="logo">欢迎使用 <span class="logo_icon">meis</span> 医疗信息管理系统</h1>
+  favicon_hash: []
+  priority: 3

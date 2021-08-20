@@ -1,0 +1,16 @@
+name: apache-ofbiz
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <span>Powered by OFBiz</span>
+  favicon_hash: []
+  priority: 1
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 13c7b63d568edb7bd89f5fe6c6627118
+  priority: 1

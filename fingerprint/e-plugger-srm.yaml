@@ -1,0 +1,10 @@
+name: e-plugger-srm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - lan12-jingbian-hong
+  - 科研管理系统，北京易普拉格科技
+  favicon_hash: []
+  priority: 3

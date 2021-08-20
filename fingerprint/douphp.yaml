@@ -1,0 +1,9 @@
+name: douphp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'content="douphp '
+  favicon_hash: []
+  priority: 3

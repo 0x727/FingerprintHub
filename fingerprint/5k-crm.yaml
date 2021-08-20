@@ -1,0 +1,9 @@
+name: 5k-crm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /public/js/5kcrm.js
+  favicon_hash: []
+  priority: 3

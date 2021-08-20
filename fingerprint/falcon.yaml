@@ -1,0 +1,16 @@
+name: falcon
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h3 class="font-bold">opsplatform</h3>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - textarea class="form-control endpoints
+  favicon_hash: []
+  priority: 3

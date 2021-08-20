@@ -1,0 +1,9 @@
+name: axentra-hipserv
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="axentra
+  favicon_hash: []
+  priority: 3

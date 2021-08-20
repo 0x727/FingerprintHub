@@ -1,0 +1,16 @@
+name: taocms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - template/taocms
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/taocms/code/calendar.js"
+  favicon_hash: []
+  priority: 3

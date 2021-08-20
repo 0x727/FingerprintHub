@@ -1,0 +1,10 @@
+name: 列目录
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - <h1>Index of /
+  - <title>Index of /
+  favicon_hash: []
+  priority: 3

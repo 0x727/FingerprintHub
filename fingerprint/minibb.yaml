@@ -1,0 +1,16 @@
+name: minibb
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!--minibb copyright link
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.minibb.
+  favicon_hash: []
+  priority: 3

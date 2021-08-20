@@ -1,0 +1,9 @@
+name: adaptec-maxview
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/maxview/manager/login.xhtml
+  favicon_hash: []
+  priority: 3

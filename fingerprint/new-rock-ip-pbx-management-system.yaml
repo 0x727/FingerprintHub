@@ -1,0 +1,9 @@
+name: new-rock-ip-pbx-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var data = formatparams(params.data)
+  favicon_hash: []
+  priority: 3

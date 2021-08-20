@@ -1,0 +1,17 @@
+name: mrtg
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://oss.oetiker.ch/mrtg/
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /mrtg-l.png
+  - command line is easier to read using "view page properties" of your browser
+  favicon_hash: []
+  priority: 3

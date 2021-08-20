@@ -1,0 +1,9 @@
+name: oracle-opera
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - operalogin/welcome.do
+  favicon_hash: []
+  priority: 3

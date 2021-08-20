@@ -1,0 +1,9 @@
+name: cloudwise-dodp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /public/vendor/monaco/vs/loader.js
+  favicon_hash: []
+  priority: 3

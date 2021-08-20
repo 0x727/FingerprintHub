@@ -1,0 +1,9 @@
+name: advantech_wise
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - remote manage your intelligent systems
+  favicon_hash: []
+  priority: 3

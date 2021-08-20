@@ -1,0 +1,16 @@
+name: glodon-console
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/scripts/dd_belatedpng.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'url: "/console/account/logon"'
+  favicon_hash: []
+  priority: 3

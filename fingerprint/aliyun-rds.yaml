@@ -1,0 +1,9 @@
+name: aliyun-rds
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="legend">rds管理系统</div>
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: chinamdm-mobile-device-management
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - innerhtml="chinamdm移动终端管理系统
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - justsy/user/searchmenusbyusername/
+  favicon_hash: []
+  priority: 3

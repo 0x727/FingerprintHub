@@ -1,0 +1,24 @@
+name: zknet-attendance-management
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'onclick="showstate(gettext(''forgotten password'')) '
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - zknet
+  - zksoftware inc.
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - web考勤管理系统
+  favicon_hash: []
+  priority: 3

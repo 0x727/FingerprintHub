@@ -1,0 +1,9 @@
+name: crhms-medical-insurance-review-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.open(url, "中公网医疗信息管理系统", option
+  favicon_hash: []
+  priority: 3

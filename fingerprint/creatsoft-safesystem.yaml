@@ -1,0 +1,9 @@
+name: creatsoft-safesystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="javascript:update_news('board/noticelist.jsp')
+  favicon_hash: []
+  priority: 3

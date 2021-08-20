@@ -1,0 +1,23 @@
+name: tiger-ip-connect
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <link rel="stylesheet" href="/include/firedigit.css">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <link rel="stylesheet" href="/include/tms.css">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /include/tiger.css
+  favicon_hash: []
+  priority: 3

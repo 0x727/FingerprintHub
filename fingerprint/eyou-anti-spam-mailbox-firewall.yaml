@@ -1,0 +1,9 @@
+name: eyou-anti-spam-mailbox-firewall
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="亿邮大容量电子邮件系统，反垃圾邮件网关
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: spark
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - serversparkversion
+  favicon_hash: []
+  priority: 2

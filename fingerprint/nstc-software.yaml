@@ -1,0 +1,9 @@
+name: nstc-software
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - skysz.fw.index.validatecodenew = "/loginaction/validatecodenew.html
+  favicon_hash: []
+  priority: 3

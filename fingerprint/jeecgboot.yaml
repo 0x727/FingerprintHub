@@ -1,0 +1,10 @@
+name: jeecgboot
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - JeecgBoot
+  - polyfill_
+  favicon_hash: []
+  priority: 1

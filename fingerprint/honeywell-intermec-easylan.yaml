@@ -1,0 +1,9 @@
+name: honeywell-intermec-easylan
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - color="black" size="5">intermec easylan
+  favicon_hash: []
+  priority: 3

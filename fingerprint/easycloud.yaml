@@ -1,0 +1,9 @@
+name: easycloud
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h1 class="white">云资源管控平台</h1>
+  favicon_hash: []
+  priority: 3

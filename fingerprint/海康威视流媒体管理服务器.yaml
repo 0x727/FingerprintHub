@@ -1,0 +1,11 @@
+name: 海康威视流媒体管理服务器
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - MSHTML
+  - login
+  - 流媒体管理服务器
+  favicon_hash: []
+  priority: 1

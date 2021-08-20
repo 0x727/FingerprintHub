@@ -1,0 +1,23 @@
+name: ntop
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - global traffic statistics
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ntopmenuid
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /css/ntopng.css
+  favicon_hash: []
+  priority: 3

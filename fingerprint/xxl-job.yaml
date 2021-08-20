@@ -1,0 +1,9 @@
+name: xxl-job
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - 分布式任务调度平台XXL-JOB
+  favicon_hash: []
+  priority: 2

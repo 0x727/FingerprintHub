@@ -1,0 +1,16 @@
+name: sql-buddy
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - h3><a href="http://www.sqlbuddy.com/help
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="themes/bittersweet/css/main.css
+  favicon_hash: []
+  priority: 3

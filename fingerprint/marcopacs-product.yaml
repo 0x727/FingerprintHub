@@ -1,0 +1,9 @@
+name: marcopacs-product
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - data-redirect="account/systemconfiguration.aspx"
+  favicon_hash: []
+  priority: 3

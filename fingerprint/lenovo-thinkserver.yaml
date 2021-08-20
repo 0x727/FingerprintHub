@@ -1,0 +1,9 @@
+name: lenovo-thinkserver
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - thinkserver
+  favicon_hash: []
+  priority: 3

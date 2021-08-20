@@ -1,0 +1,9 @@
+name: seceon-otm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - use this if you want to run the seceon module of kibana.
+  favicon_hash: []
+  priority: 3

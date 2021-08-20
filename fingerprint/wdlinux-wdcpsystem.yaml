@@ -1,0 +1,23 @@
+name: wdlinux-wdcpsystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.wdlinux.cn/bbs/index.php
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - linux云主机
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: wdcpsessionid
+  keyword: []
+  favicon_hash: []
+  priority: 3

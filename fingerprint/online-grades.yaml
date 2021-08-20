@@ -1,0 +1,9 @@
+name: online-grades
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="online grades
+  favicon_hash: []
+  priority: 3

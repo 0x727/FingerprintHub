@@ -1,0 +1,9 @@
+name: quixplorer
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - target="_blank">the quix project</a></small>
+  favicon_hash: []
+  priority: 3

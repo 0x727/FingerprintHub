@@ -1,0 +1,9 @@
+name: inoerp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="ino-body"
+  favicon_hash: []
+  priority: 3

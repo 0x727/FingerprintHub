@@ -1,0 +1,9 @@
+name: innotube-manager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - images/intro/lin_bottom_nocr.gif
+  favicon_hash: []
+  priority: 3

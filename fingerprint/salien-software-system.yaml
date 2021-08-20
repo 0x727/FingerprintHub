@@ -1,0 +1,16 @@
+name: salien-software-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="images/login/msn/favicon.ico"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 北京市时林电脑公司
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,17 @@
+name: yelala
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /public/js/knockout-3.4.1.debug.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '<form action="/index.php/home/login/login.html" method="post" id="login" class="form"
+    data-bind="submit: submitform">'
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,23 @@
+name: spiceworks
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <meta name="author" content="spiceworks, inc." />
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <link href="/stylesheets/general.css?
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h1><img alt="spiceworks" src="/images/logos/large.png
+  favicon_hash: []
+  priority: 3

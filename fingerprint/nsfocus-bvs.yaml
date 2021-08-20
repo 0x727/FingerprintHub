@@ -1,0 +1,9 @@
+name: nsfocus-bvs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /nsfocus_bvs.css
+  favicon_hash: []
+  priority: 3

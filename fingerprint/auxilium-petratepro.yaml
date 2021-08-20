@@ -1,0 +1,9 @@
+name: auxilium-petratepro
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - index.php?cmd=11
+  favicon_hash: []
+  priority: 3

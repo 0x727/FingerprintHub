@@ -1,0 +1,9 @@
+name: nuance-safecom
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - safecom mobile print
+  favicon_hash: []
+  priority: 3

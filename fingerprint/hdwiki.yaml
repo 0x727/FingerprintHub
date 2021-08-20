@@ -1,0 +1,16 @@
+name: hdwiki
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="hdwiki
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - http://kaiyuan.hudong.com?hf=hdwiki_copyright_kaiyuan
+  favicon_hash: []
+  priority: 3

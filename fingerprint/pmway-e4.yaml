@@ -1,0 +1,16 @@
+name: pmway-e4
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '风<span style="padding-left: 12px;"></span>格'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 热情似火</option>
+  favicon_hash: []
+  priority: 3

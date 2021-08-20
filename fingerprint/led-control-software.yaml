@@ -1,0 +1,16 @@
+name: led-control-software
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - j_setcon j_sub_new j_padt30 j_padb30
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- 记录当前电视墙的序号 end-->
+  favicon_hash: []
+  priority: 3

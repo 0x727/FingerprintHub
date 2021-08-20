@@ -1,0 +1,9 @@
+name: emerson-environmentalenergymonitoringsystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - alert("网络断连或者idu-s没有启动.
+  favicon_hash: []
+  priority: 3

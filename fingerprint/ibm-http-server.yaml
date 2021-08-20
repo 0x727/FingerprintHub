@@ -1,0 +1,17 @@
+name: ibm-http-server
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - IBM HTTP Server
+  - Support
+  favicon_hash: []
+  priority: 3
+- path: /images/ihs/favicon.ico
+  status_code: 200
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - d8ba35521dfc638f134cf3a64d1a6875
+  priority: 3

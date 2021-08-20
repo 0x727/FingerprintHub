@@ -1,0 +1,16 @@
+name: group-office
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by group-office
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '"theme":"group-office",'
+  favicon_hash: []
+  priority: 3

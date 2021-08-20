@@ -1,0 +1,16 @@
+name: mysqlman
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="mysql.cgi?do=top_level_op
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - size="1">mysqlman
+  favicon_hash: []
+  priority: 3

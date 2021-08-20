@@ -1,0 +1,16 @@
+name: evercookie
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - evercookie.js
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var ec = new evercookie();
+  favicon_hash: []
+  priority: 2

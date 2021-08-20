@@ -1,0 +1,9 @@
+name: yonyou-turbocrm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - turboui.js
+  favicon_hash: []
+  priority: 3

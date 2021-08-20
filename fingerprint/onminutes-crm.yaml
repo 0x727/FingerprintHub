@@ -1,0 +1,10 @@
+name: onminutes-crm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div class="extras" id="password_extras">
+  - crm
+  favicon_hash: []
+  priority: 3

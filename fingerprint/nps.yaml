@@ -1,0 +1,11 @@
+name: nps
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ehang
+  - login
+  - nps
+  favicon_hash: []
+  priority: 1

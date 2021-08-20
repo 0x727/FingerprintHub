@@ -1,0 +1,25 @@
+name: sugarcrm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href=" javascript:void window.open('http://support.sugarcrm.com')">support</a>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '<img style=''margin-top: 2px'' border=''0'' width=''106'' height=''23'' src=''include/images/poweredby_sugarcrm.png''
+    alt=''powered by sugarcrm''>'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <script>var module_sugar_grp1 = 'users';</script><script>var action_sugar_grp1
+    = 'login';</script><script>jscal_today
+  favicon_hash: []
+  priority: 3

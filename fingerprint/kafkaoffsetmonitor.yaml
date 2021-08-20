@@ -1,0 +1,9 @@
+name: kafkaoffsetmonitor
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - css/cluster-viz.css
+  favicon_hash: []
+  priority: 3

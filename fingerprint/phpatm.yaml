@@ -1,0 +1,23 @@
+name: phpatm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="viewer_bottom.php?file=
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by phpatm
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by php advanced transfer manager
+  favicon_hash: []
+  priority: 3

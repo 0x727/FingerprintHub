@@ -1,0 +1,16 @@
+name: udesk
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - assets-cli.udesk.cn/im_client/js/udeskapi.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - udesk.cn/im_client/?web_plugin_id=
+  favicon_hash: []
+  priority: 3

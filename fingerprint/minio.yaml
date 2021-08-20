@@ -1,0 +1,9 @@
+name: minio
+fingerprint:
+- path: /minio/login
+  status_code: 0
+  headers: {}
+  keyword:
+  - <title>MinIO Browser</title>
+  favicon_hash: []
+  priority: 1

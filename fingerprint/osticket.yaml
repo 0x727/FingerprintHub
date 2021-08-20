@@ -1,0 +1,9 @@
+name: osticket
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://osticket.com">osticket.com
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,17 @@
+name: 孚盟云
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - fumasoft
+  - 孚盟云
+  favicon_hash: []
+  priority: 1
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - d798209beb36c2d8efd96e58e421d060
+  priority: 1

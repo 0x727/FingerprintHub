@@ -1,0 +1,23 @@
+name: southidc
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /southidckefu.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="copyright 2003-2015 - southidc.net
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /southidcj2f.js
+  favicon_hash: []
+  priority: 3

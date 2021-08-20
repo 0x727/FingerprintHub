@@ -1,0 +1,16 @@
+name: sxzrouter-caching
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/public/sec/assets/js/libs/jquery.placeholder.min.js">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ' href="http://www.dwcache.com"'
+  favicon_hash: []
+  priority: 3

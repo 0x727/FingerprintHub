@@ -1,0 +1,16 @@
+name: kenna-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/favicon.ico?kenna"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="kenna sessions new"
+  favicon_hash: []
+  priority: 3

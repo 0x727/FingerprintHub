@@ -1,0 +1,9 @@
+name: thinksaas
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="https://www.thinksaas.cn/app/home/skins/default/style.css"
+  favicon_hash: []
+  priority: 3

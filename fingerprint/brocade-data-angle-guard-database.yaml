@@ -1,0 +1,9 @@
+name: brocade-data-angle-guard-database
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location.host + "/agweb"
+  favicon_hash: []
+  priority: 3

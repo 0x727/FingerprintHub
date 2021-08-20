@@ -1,0 +1,17 @@
+name: wuzhicms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <meta name="generator" content="wuzhicms
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="wuzhicms
+  - powered by wuzhicms
+  favicon_hash: []
+  priority: 3

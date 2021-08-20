@@ -1,0 +1,23 @@
+name: smartoa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /smartoa.plist
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - iframeheight()
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.smartoa.com.cn/download/smartoa.apk">安卓客户端</a>
+  favicon_hash: []
+  priority: 3

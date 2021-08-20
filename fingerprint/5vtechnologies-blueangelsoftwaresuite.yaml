@@ -1,0 +1,9 @@
+name: 5vtechnologies-blueangelsoftwaresuite
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /cgi-bin/webctrl.cgi?action=index_page
+  favicon_hash: []
+  priority: 3

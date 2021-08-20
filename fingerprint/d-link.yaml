@@ -1,0 +1,9 @@
+name: d-link
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - D-Link Systems, Inc
+  favicon_hash: []
+  priority: 1

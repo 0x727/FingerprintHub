@@ -1,0 +1,10 @@
+name: apache-axis2
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - axis2-admin
+  - axis2-web
+  favicon_hash: []
+  priority: 1

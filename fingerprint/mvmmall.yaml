@@ -1,0 +1,16 @@
+name: mvmmall
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="mvmmall
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="www.mvmmall.cn"
+  favicon_hash: []
+  priority: 3

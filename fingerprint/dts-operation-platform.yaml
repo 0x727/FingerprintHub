@@ -1,0 +1,9 @@
+name: dts-operation-platform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.appname = 'alidts';
+  favicon_hash: []
+  priority: 3

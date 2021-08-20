@@ -1,0 +1,10 @@
+name: ajenti-server-admin-panel
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/ajenti:auth"
+  - src="/ajenti:static/
+  favicon_hash: []
+  priority: 3

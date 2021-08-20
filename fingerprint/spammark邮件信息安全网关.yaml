@@ -1,0 +1,16 @@
+name: spammark邮件信息安全网关
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /spammark?noframes=1
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - href="spammark16.ico"
+  favicon_hash: []
+  priority: 1

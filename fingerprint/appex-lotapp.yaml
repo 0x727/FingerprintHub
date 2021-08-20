@@ -1,0 +1,16 @@
+name: appex-lotapp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - appex network corporation
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /change_lan.php?lanid=en
+  favicon_hash: []
+  priority: 3

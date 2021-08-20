@@ -1,0 +1,9 @@
+name: boxiao-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var bxnstaticresroot='/bxn-static-resource/resources'
+  favicon_hash: []
+  priority: 3

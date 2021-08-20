@@ -1,0 +1,9 @@
+name: sgp-managerial-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /static/all/img/logo/sgp
+  favicon_hash: []
+  priority: 3

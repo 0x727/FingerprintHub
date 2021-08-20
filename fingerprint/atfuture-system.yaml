@@ -1,0 +1,9 @@
+name: atfuture-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /content/web/theme/skin01/img/p_login_logo01.png
+  favicon_hash: []
+  priority: 3

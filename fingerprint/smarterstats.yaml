@@ -1,0 +1,9 @@
+name: smarterstats
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <td class=bar1inner>smarterstats
+  favicon_hash: []
+  priority: 3

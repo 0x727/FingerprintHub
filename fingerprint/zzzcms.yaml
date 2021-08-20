@@ -1,0 +1,9 @@
+name: zzzcms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - Powered by <a href='http://zzzcms.com'>ZZZcms</a>
+  favicon_hash: []
+  priority: 1

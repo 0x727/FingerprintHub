@@ -1,0 +1,24 @@
+name: 启明星辰天清汉马usg防火墙
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - Venusense
+  - 天清汉马USG防火墙
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 天清汉马USG
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - /cgi-bin/webui?op=get_product_model
+  favicon_hash: []
+  priority: 3

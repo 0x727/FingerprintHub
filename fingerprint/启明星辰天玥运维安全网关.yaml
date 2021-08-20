@@ -1,0 +1,10 @@
+name: 启明星辰天玥运维安全网关
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - checkLocalServiceStatus
+  - 天玥运维安全网关
+  favicon_hash: []
+  priority: 3

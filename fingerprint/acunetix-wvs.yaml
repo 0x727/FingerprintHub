@@ -1,0 +1,16 @@
+name: acunetix-wvs
+fingerprint:
+- path: /favicon.ico
+  status_code: 200
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 025a587e8522a7f6f39096674fbe7c69
+  priority: 1
+- path: /images/favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 025a587e8522a7f6f39096674fbe7c69
+  priority: 1

@@ -1,0 +1,23 @@
+name: sangfor-behavior-management-or-identity-authentication-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="/webauth/">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 身份认证系统
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="info-inner"
+  favicon_hash: []
+  priority: 3

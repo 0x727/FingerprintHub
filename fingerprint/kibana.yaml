@@ -1,0 +1,9 @@
+name: kibana
+fingerprint:
+- path: /yunsee_not_found_test
+  status_code: 302
+  headers:
+    kbn-name: kibana
+  keyword: []
+  favicon_hash: []
+  priority: 1

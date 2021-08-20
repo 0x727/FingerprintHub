@@ -1,0 +1,10 @@
+name: 深信服web防篡改管理系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - WEB防篡改
+  - cgi-bin/tamper_admin.cgi
+  favicon_hash: []
+  priority: 1

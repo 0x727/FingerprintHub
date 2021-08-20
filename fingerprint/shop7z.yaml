@@ -1,0 +1,16 @@
+name: shop7z
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="www_zzjs_net_loding"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - function www_zzjs_net_change
+  favicon_hash: []
+  priority: 3

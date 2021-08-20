@@ -1,0 +1,9 @@
+name: virtualmin
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <center><a href=/virtualmin-password-recovery/>forgot your virtualmin password?</a></center>
+  favicon_hash: []
+  priority: 2

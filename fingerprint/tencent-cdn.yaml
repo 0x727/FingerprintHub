@@ -1,0 +1,16 @@
+name: tencent-cdn
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: nwss
+  keyword: []
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers:
+    Server: tencent-cdn
+  keyword: []
+  favicon_hash: []
+  priority: 2

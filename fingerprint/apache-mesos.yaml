@@ -1,0 +1,9 @@
+name: apache-mesos
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img src="/static/img/mesos_logo.png" alt="apache mesos">
+  favicon_hash: []
+  priority: 3

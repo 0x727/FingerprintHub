@@ -1,0 +1,16 @@
+name: e-tiller
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - reader/view_abstract.aspx
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 北京勤云
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: ispconfig
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.ispconfig.org
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,38 @@
+name: s-cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <p class="alignright">powered by s:cms - copyright ©
+  - class="scms_container w1200"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /media/20151019095214828.png
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h2>闪灵cms建站系统</h2>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - type=news&s_id=
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - type=newsinfo&s_id=
+  favicon_hash: []
+  priority: 3

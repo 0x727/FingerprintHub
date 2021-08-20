@@ -1,0 +1,16 @@
+name: inspur-ec-government-approval-platform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - onlinequery/querylist.aspx
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - langchao.ecgap.outportal
+  favicon_hash: []
+  priority: 3

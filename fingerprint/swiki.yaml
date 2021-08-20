@@ -1,0 +1,11 @@
+name: swiki
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '<a href="http://minnow.cc.gatech.edu/swiki" title="comswiki: powered by squeak"><img
+    src="/defaultscheme/comswiki.gif" border=0 width=277 height=88 alt="comswiki:
+    powered by squeak"></a><br>'
+  favicon_hash: []
+  priority: 2

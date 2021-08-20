@@ -1,0 +1,16 @@
+name: ostec-firebox
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'background-image: url(''/icones/fundo_firebox.png'')'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - http://colorzilla.com/
+  favicon_hash: []
+  priority: 3

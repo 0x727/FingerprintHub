@@ -1,0 +1,9 @@
+name: adviserlogiccli
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - navigator.serviceworker.register('/adviserlogiccache.js')
+  favicon_hash: []
+  priority: 3

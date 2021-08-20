@@ -1,0 +1,9 @@
+name: iguard-security-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="lucky-tech iguard
+  favicon_hash: []
+  priority: 3

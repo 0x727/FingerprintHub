@@ -1,0 +1,9 @@
+name: mobilityguard
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - click here for more information about mobilityguard
+  favicon_hash: []
+  priority: 1

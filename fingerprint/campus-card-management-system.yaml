@@ -1,0 +1,23 @@
+name: campus-card-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - harbin synjones electronic
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - document.formpostds.action="xxsearch.action
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /shouyeziti.css
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: novell-groupwise
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- start novell services
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: njscn=
+  keyword: []
+  favicon_hash: []
+  priority: 3

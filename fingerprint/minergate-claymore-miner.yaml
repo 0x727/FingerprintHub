@@ -1,0 +1,16 @@
+name: minergate-claymore-miner
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'eth — total speed:'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'eth: gpu0'
+  favicon_hash: []
+  priority: 3

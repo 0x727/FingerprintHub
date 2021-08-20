@@ -1,0 +1,10 @@
+name: 天融信数据防泄漏系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - topdlp_show
+  - 天融信数据防泄漏系统
+  favicon_hash: []
+  priority: 1

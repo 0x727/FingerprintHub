@@ -1,0 +1,9 @@
+name: idcos-cloudboot
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /clipboard/zeroclipboard.min
+  favicon_hash: []
+  priority: 3

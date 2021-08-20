@@ -1,0 +1,9 @@
+name: riverbed-appresponse
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - uiwebinsights/webinsights.html
+  favicon_hash: []
+  priority: 3

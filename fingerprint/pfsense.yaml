@@ -1,0 +1,16 @@
+name: pfsense
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - rubicon communications, llc (netgate)
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h4>login to pfsense</h4>
+  favicon_hash: []
+  priority: 3

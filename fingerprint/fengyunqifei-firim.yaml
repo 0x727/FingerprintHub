@@ -1,0 +1,9 @@
+name: fengyunqifei-firim
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="android/com.apsp.xnmdm-signed.apk"
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: shenguyun-sgc8000
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var granttype="authorization_code
+  favicon_hash: []
+  priority: 3

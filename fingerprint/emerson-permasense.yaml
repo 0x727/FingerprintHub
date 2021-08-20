@@ -1,0 +1,9 @@
+name: emerson-permasense
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/permasense/app/webroot/flot/css/layout.print.ie.css
+  favicon_hash: []
+  priority: 3

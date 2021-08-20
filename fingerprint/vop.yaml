@@ -1,0 +1,17 @@
+name: vop
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - lgdynacodebtn
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="lgform" action="/sso/login
+  - vop
+  favicon_hash: []
+  priority: 3

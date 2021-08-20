@@ -1,0 +1,16 @@
+name: elitius
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="elitius
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - target="_blank" title="affiliate
+  favicon_hash: []
+  priority: 3

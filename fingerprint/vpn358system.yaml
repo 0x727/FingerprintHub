@@ -1,0 +1,16 @@
+name: vpn358system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="form-actions j_add_ip_actions"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/lib/bootstrap/ico/favicon.ico"
+  favicon_hash: []
+  priority: 3

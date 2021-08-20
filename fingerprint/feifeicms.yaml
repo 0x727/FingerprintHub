@@ -1,0 +1,9 @@
+name: feifeicms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - data-target="#navbar-feifeicms"
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,23 @@
+name: rockoa-oa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - onclick="loginsubmit()"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 信呼开发团队
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 技术支持：<a href="http://www.rockoa.com/"
+  favicon_hash: []
+  priority: 3

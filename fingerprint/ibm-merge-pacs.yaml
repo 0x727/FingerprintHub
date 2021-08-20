@@ -1,0 +1,9 @@
+name: ibm-merge-pacs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <option value="merge pacs">merge pacs</option>
+  favicon_hash: []
+  priority: 3

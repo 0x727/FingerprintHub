@@ -1,0 +1,9 @@
+name: goaccess-log
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - by <a href="https://goaccess.io/">goaccess</a>
+  favicon_hash: []
+  priority: 3

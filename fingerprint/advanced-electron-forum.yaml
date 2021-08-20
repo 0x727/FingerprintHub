@@ -1,0 +1,9 @@
+name: advanced-electron-forum
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by aef
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: qtweb
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - url=gqrtweb
+  favicon_hash: []
+  priority: 3

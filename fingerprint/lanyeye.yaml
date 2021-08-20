@@ -1,0 +1,16 @@
+name: lanyeye
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <font>兰眼下一代威胁感知系统</font>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /skin/admin/img/login/laneye.png
+  favicon_hash: []
+  priority: 3

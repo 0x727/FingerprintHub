@@ -1,0 +1,16 @@
+name: goodway-integrated-management-information-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - option value="enterprise"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 是否域账户登录
+  favicon_hash: []
+  priority: 3

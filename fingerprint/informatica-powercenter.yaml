@@ -1,0 +1,16 @@
+name: informatica-powercenter
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/adminconsole/loginsubmit.do
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers:
+    Server: informatica
+  keyword: []
+  favicon_hash: []
+  priority: 3

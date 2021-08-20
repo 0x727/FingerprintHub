@@ -1,0 +1,16 @@
+name: yirui-iras
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /authjsp/login.jsp
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - fe0174bb-f093-42af-ab20-7ec621d10488
+  favicon_hash: []
+  priority: 3

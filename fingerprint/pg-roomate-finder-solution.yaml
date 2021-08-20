@@ -1,0 +1,16 @@
+name: pg-roomate-finder-solution
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by pg roomate finder solution
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.realtysoft.pro
+  favicon_hash: []
+  priority: 3

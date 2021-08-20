@@ -1,0 +1,9 @@
+name: debian
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h1>welcome to nginx on debian!</h1>
+  favicon_hash: []
+  priority: 1

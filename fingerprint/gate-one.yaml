@@ -1,0 +1,12 @@
+name: gate-one
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: GateOne
+  keyword:
+  - <div id="gateone"></div>
+  - gateone.css
+  - gateone.js
+  favicon_hash: []
+  priority: 1

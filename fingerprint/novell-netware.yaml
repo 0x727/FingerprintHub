@@ -1,0 +1,16 @@
+name: novell-netware
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - code="nwshealth.class
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers:
+    Server: netware http stack
+  keyword: []
+  favicon_hash: []
+  priority: 1

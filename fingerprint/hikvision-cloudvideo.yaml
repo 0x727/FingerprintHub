@@ -1,0 +1,9 @@
+name: hikvision-cloudvideo
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 嗨看云视频</p>
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: creatsoft-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/corrosion/charts/water-pid.jsp
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/corrosion/charts/ph.jsp"
+  favicon_hash: []
+  priority: 3

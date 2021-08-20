@@ -1,0 +1,17 @@
+name: ibm-tivoli-access-manager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!--- do not translate or modify any part of the hidden parameter(s) --->
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var warningstring = "<b>warning:</b> to maintain your login session, make sure
+    that your browser is configured to accept cookies.";
+  favicon_hash: []
+  priority: 3

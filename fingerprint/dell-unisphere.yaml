@@ -1,0 +1,16 @@
+name: dell-unisphere
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - unisphere for sc series
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 用于 sc 系列的 unisphere
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: crhms-medical-insurance-decision-support-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - name="source" value="clientbin/cisdasystem.xap"
+  favicon_hash: []
+  priority: 3

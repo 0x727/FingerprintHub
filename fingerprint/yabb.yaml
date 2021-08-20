@@ -1,0 +1,16 @@
+name: yabb
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - yabbtime.gettime()
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /yabb.js
+  favicon_hash: []
+  priority: 3

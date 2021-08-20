@@ -1,0 +1,9 @@
+name: shiji-xms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="xmsenv.exe">系统运行环境
+  favicon_hash: []
+  priority: 3

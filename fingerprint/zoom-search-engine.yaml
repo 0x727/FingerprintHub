@@ -1,0 +1,9 @@
+name: zoom-search-engine
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - name="zoom_query"
+  favicon_hash: []
+  priority: 3

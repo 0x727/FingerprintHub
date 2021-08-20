@@ -1,0 +1,9 @@
+name: opt-webfieldassis
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="javascript:__dopostback('lbanonymous','')"
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,30 @@
+name: apache-airflow
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - Airflow
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/static/pin_100.png"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <span>airflow</span>
+  favicon_hash: []
+  priority: 3
+- path: /yunsee_not_found_test
+  status_code: 404
+  headers: {}
+  keyword:
+  - Airflow 404 = lots of circles
+  favicon_hash: []
+  priority: 1

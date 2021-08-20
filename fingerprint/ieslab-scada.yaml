@@ -1,0 +1,16 @@
+name: ieslab-scada
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - copyrightpt12
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 青岛积成电子有限公司
+  favicon_hash: []
+  priority: 3

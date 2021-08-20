@@ -1,0 +1,16 @@
+name: sonarqube
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="sonarqube
+  favicon_hash: []
+  priority: 3
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - b4e4785d5852c563b9ae47cbb7af06fe
+  priority: 1

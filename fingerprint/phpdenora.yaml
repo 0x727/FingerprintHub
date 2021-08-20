@@ -1,0 +1,17 @@
+name: phpdenora
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="chat4all phpdenora
+  - powered by phpdenora
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://denorastats.org/
+  favicon_hash: []
+  priority: 3

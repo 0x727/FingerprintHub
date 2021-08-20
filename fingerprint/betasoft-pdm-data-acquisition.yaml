@@ -1,0 +1,16 @@
+name: betasoft-pdm-data-acquisition
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - align="center" class="login_pdm">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'background: no-repeat url(../images/login/pdmdenglu1_28.png);'
+  favicon_hash: []
+  priority: 3

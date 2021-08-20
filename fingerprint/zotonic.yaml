@@ -1,0 +1,10 @@
+name: zotonic
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /lib/js/apps/zotonic-1.0
+  - 'powered by: zotonic'
+  favicon_hash: []
+  priority: 3

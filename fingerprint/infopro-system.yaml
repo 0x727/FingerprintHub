@@ -1,0 +1,11 @@
+name: infopro-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <input type="submit" name="cmdsubmit" value=" 登 录 " onclick="javascript:webform_dopostbackwithoptions(new
+    webform_postbackoptions(&quot;cmdsubmit&quot;, &quot;&quot;, true, &quot;&quot;,
+    &quot;&quot;, false, false))" id="cmdsubmit" class="colorbutton
+  favicon_hash: []
+  priority: 3

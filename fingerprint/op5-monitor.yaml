@@ -1,0 +1,9 @@
+name: op5-monitor
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /monitor/application/views/themes/default/css/default/common.css
+  favicon_hash: []
+  priority: 3

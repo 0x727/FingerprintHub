@@ -1,0 +1,16 @@
+name: drugpak
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by drugpak
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /dplimg/dpstyle.css
+  favicon_hash: []
+  priority: 3

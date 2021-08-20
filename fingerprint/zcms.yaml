@@ -1,0 +1,25 @@
+name: zcms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - _ZCMS_ShowNewMessage
+  - zcms_skin
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - _zcms_shownewmessage
+  - zcms_skin
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - app=zcms
+  favicon_hash: []
+  priority: 3

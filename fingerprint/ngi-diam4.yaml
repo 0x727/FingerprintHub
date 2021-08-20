@@ -1,0 +1,9 @@
+name: ngi-diam4
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/diam4/inc/lang/fr/lang.min.js"
+  favicon_hash: []
+  priority: 3

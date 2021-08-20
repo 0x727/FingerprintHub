@@ -1,0 +1,23 @@
+name: shopsn
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="shopsn
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.shopsn.net">商城系统</a>&nbsp;提供技术支持
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '<span>shopsn全网开源<a style="padding: 0px" href="http://www.shopsn.net'
+  favicon_hash: []
+  priority: 3

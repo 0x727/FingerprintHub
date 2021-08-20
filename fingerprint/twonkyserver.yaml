@@ -1,0 +1,9 @@
+name: twonkyserver
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <meta name="description" content="twonkymedia digital home">
+  favicon_hash: []
+  priority: 2

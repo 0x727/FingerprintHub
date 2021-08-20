@@ -1,0 +1,16 @@
+name: adn
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="http://res.wx.qq.com/open/js/jweixin
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <title>交付应用</title>
+  favicon_hash: []
+  priority: 3

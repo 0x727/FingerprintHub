@@ -1,0 +1,9 @@
+name: hcl-sametime
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/chat/sametime192x192.png
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,30 @@
+name: mybb
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.mybboard.com
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- mybb is free software developed and maintained
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - visibility of the mybb copyright at any time
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - onchange="mybb.changelanguage();
+  favicon_hash: []
+  priority: 3

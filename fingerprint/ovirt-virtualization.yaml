@@ -1,0 +1,9 @@
+name: ovirt-virtualization
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="https://www.ovirt.org" class="obrand_loginpagelogolink">
+  favicon_hash: []
+  priority: 1

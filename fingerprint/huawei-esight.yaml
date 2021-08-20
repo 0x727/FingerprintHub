@@ -1,0 +1,24 @@
+name: huawei-esight
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - location.replace('login.action?_='+ new date().gettime());
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '<a '
+  - <body onload="gotologin()">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - esight_login_copy_right_font
+  favicon_hash: []
+  priority: 3

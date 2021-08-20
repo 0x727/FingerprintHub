@@ -1,0 +1,17 @@
+name: ruijie-rg-uac
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - bbs.ruijie.com.cn
+  - 锐捷统一上网行为管理与审计系统
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src='images/free_login.png'
+  favicon_hash: []
+  priority: 3

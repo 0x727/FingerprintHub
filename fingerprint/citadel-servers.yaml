@@ -1,0 +1,16 @@
+name: citadel-servers
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /styles/webcit.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div class="boxlabel">citadel server - powered by
+  favicon_hash: []
+  priority: 3

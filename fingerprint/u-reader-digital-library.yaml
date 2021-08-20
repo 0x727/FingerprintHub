@@ -1,0 +1,16 @@
+name: u-reader-digital-library
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="ureader
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="login-show-title">dynomedia inc.</p>
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: phpfox
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by phpfox
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.phpfox.com
+  favicon_hash: []
+  priority: 3

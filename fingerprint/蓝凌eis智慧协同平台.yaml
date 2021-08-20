@@ -1,0 +1,10 @@
+name: 蓝凌eis智慧协同平台
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /scripts/jquery.landray.common.js
+  - 蓝凌软件
+  favicon_hash: []
+  priority: 3

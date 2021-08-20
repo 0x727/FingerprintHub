@@ -1,0 +1,9 @@
+name: web-erp-network-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location='/www/login.html'
+  favicon_hash: []
+  priority: 3

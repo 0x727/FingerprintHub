@@ -1,0 +1,16 @@
+name: jakarta-project
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - alt="the jakarta project
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://jakarta.apache.org/">
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: fortigate
+fingerprint:
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - b7405d88bf3171526350904569e5514e
+  priority: 3

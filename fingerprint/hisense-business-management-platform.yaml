@@ -1,0 +1,10 @@
+name: hisense-business-management-platform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="left.jpg"
+  - src="up.jpg"
+  favicon_hash: []
+  priority: 3

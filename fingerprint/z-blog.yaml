@@ -1,0 +1,9 @@
+name: z-blog
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - generator" content="z-blog
+  favicon_hash: []
+  priority: 3

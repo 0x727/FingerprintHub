@@ -1,0 +1,16 @@
+name: yunkemail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/alimail/error/browserlog
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="阿里企业邮箱
+  favicon_hash: []
+  priority: 3

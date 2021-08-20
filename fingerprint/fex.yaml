@@ -1,0 +1,16 @@
+name: fex
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: fexsrv
+  keyword: []
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="mailto:fexmaster@ostc.de
+  favicon_hash: []
+  priority: 3

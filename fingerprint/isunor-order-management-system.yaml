@@ -1,0 +1,9 @@
+name: isunor-order-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var c_name = 'jsessionid';
+  favicon_hash: []
+  priority: 3

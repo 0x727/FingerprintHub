@@ -1,0 +1,10 @@
+name: 若依ruoyi管理系统
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - /ruoyi/css/ry-ui.css
+  - /ruoyi/js/ry-ui.js
+  favicon_hash: []
+  priority: 3

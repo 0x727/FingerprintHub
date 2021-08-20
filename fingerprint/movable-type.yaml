@@ -1,0 +1,23 @@
+name: movable-type
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - movable type version
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="movable type
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - rel="generator">movable type
+  favicon_hash: []
+  priority: 3

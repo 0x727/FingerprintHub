@@ -1,0 +1,16 @@
+name: zte-police-research-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 深圳市中兴信息技术有限公司版权所有
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="img/gonanlogo.jpg
+  favicon_hash: []
+  priority: 3

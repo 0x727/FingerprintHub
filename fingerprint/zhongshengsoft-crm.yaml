@@ -1,0 +1,16 @@
+name: zhongshengsoft-crm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - clientutil.isff=!clientutil.isie
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - alert("餐厅编号不能为空")
+  favicon_hash: []
+  priority: 3

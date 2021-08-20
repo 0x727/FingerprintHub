@@ -1,0 +1,9 @@
+name: cuisec-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - r=e&&e.__esmodule?function
+  favicon_hash: []
+  priority: 3

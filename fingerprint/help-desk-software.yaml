@@ -1,0 +1,9 @@
+name: help-desk-software
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - target="_blank">freehelpdesk.org
+  favicon_hash: []
+  priority: 3

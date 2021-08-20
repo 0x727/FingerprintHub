@@ -1,0 +1,23 @@
+name: eticket
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by eticket
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://www.eticketsupport.com" target="_blank">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /eticket/eticket.css
+  favicon_hash: []
+  priority: 3

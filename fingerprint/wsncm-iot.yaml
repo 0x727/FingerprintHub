@@ -1,0 +1,9 @@
+name: wsncm-iot
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="login">物联网供应链与金融风险管理服务
+  favicon_hash: []
+  priority: 3

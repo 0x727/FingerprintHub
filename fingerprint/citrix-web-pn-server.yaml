@@ -1,0 +1,9 @@
+name: citrix-web-pn-server
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: citrix web pn server
+  keyword: []
+  favicon_hash: []
+  priority: 2

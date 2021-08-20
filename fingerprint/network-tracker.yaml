@@ -1,0 +1,9 @@
+name: network-tracker
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '>network tracker<'
+  favicon_hash: []
+  priority: 3

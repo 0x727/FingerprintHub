@@ -1,0 +1,9 @@
+name: public-security-checkpoint-document-verification-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="公安检查站人脸/证件合一核录系统
+  favicon_hash: []
+  priority: 3

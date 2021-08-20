@@ -1,0 +1,9 @@
+name: huawei-ivs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var iever = scriptenginemajorversion()
+  favicon_hash: []
+  priority: 3

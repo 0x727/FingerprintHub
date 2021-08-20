@@ -1,0 +1,16 @@
+name: pageup-people
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by pageup people
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="pageuplink" href="http://www.pageuppeople.com
+  favicon_hash: []
+  priority: 3

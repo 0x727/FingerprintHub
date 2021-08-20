@@ -1,0 +1,16 @@
+name: dvwa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - dvwa/css/login.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - dvwa/images/login_logo.png
+  favicon_hash: []
+  priority: 3

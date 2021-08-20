@@ -1,0 +1,26 @@
+name: cicro
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - cicro
+  - content="cicro
+  - cws
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - index.files/cicro_userdefine.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - structure/index
+  - window.location.href=
+  favicon_hash: []
+  priority: 3

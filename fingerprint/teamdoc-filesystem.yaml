@@ -1,0 +1,9 @@
+name: teamdoc-filesystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="labellink"
+  favicon_hash: []
+  priority: 3

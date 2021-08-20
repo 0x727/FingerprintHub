@@ -1,0 +1,9 @@
+name: datanet
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href='/scada'>datanet scada interface
+  favicon_hash: []
+  priority: 3

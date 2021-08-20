@@ -1,0 +1,16 @@
+name: diyou-p2p
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /js/diyou.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/dyweb/dythemes
+  favicon_hash: []
+  priority: 3

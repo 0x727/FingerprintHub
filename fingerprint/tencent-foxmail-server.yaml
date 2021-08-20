@@ -1,0 +1,9 @@
+name: tencent-foxmail-server
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/images//foxs_logo.gif
+  favicon_hash: []
+  priority: 3

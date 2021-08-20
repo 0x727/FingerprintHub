@@ -1,0 +1,9 @@
+name: 任我行crm
+fingerprint:
+- path: /login
+  status_code: 0
+  headers: {}
+  keyword:
+  - CRM_LASTLOGINUSERKEY
+  favicon_hash: []
+  priority: 1

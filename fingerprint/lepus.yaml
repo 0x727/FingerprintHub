@@ -1,0 +1,10 @@
+name: lepus
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - language/switchover"+'/'+current_language
+  - 登录
+  favicon_hash: []
+  priority: 3

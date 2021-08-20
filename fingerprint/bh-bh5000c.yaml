@@ -1,0 +1,9 @@
+name: bh-bh5000c
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - bhclientcer:"/modules/web/common/data/bhclient.cer
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,23 @@
+name: shopnc
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by shopnc
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - copyright 2007-2014 shopnc inc
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="shopnc
+  favicon_hash: []
+  priority: 3

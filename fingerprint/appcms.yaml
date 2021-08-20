@@ -1,0 +1,9 @@
+name: appcms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powerd by appcms
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: soft78-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - offlineservice/showdownloadmessage.aspx
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - add by sll
+  favicon_hash: []
+  priority: 3

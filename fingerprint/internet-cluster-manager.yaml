@@ -1,0 +1,9 @@
+name: internet-cluster-manager
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: internet cluster manager
+  keyword: []
+  favicon_hash: []
+  priority: 3

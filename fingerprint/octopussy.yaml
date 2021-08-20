@@ -1,0 +1,16 @@
+name: octopussy
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - value="connect to octopussy
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - align="center" >octopussy
+  favicon_hash: []
+  priority: 3

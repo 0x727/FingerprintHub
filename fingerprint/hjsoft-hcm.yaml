@@ -1,0 +1,23 @@
+name: hjsoft-hcm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/images/hcm/copyright.gif"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/images/hcm/themes/default/login/login_banner2.png?v=12334"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/general/sys/hjaxmanage.js"
+  favicon_hash: []
+  priority: 3

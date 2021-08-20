@@ -1,0 +1,16 @@
+name: parature
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="kbfolder.asp?deptid=
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - redirectportalurl('/ics/support/custhandler.asp?
+  favicon_hash: []
+  priority: 3

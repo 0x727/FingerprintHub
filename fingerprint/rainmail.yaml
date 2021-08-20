@@ -1,0 +1,16 @@
+name: rainmail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '.: <b>rainmail intranet login </b> :.</div>'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/resources/rainmailvpninstaller.exe
+  favicon_hash: []
+  priority: 3

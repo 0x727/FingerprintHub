@@ -1,0 +1,9 @@
+name: ikuai8-cloud
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '<strong>we''re sorry but ikuai cloud platform doesn''t '
+  favicon_hash: []
+  priority: 3

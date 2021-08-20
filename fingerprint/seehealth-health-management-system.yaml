@@ -1,0 +1,9 @@
+name: seehealth-health-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="upvalidatefile.aspx
+  favicon_hash: []
+  priority: 3

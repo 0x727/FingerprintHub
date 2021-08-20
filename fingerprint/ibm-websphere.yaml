@@ -1,0 +1,23 @@
+name: ibm-websphere
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - websphere
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - com.ibm.websphere.ihs.doc
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="websphere application server
+  favicon_hash: []
+  priority: 2

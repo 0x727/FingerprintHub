@@ -1,0 +1,9 @@
+name: usezan-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/usezan/login/getlogin"
+  favicon_hash: []
+  priority: 3

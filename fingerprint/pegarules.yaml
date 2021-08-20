@@ -1,0 +1,16 @@
+name: pegarules
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - unable to logon to the pegarules system
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="images/pzpegaicon.ico
+  favicon_hash: []
+  priority: 3

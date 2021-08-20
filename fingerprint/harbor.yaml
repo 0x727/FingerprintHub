@@ -1,0 +1,9 @@
+name: harbor
+fingerprint:
+- path: /favicon.ico
+  status_code: 200
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 5a508149f630bfd801df6e04369527f9
+  priority: 1

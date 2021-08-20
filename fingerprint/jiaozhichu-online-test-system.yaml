@@ -1,0 +1,16 @@
+name: jiaozhichu-online-test-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="jiaozhichu
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/ksxt/h5/images/jiaozhichu.ico
+  favicon_hash: []
+  priority: 3

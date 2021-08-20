@@ -1,0 +1,9 @@
+name: netpas-traffic-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 版权所有 <a href="http://www.netpas.cc
+  favicon_hash: []
+  priority: 3

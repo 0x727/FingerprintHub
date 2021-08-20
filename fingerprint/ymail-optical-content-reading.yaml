@@ -1,0 +1,9 @@
+name: ymail-optical-content-reading
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /ymail/default/js/menu.js
+  favicon_hash: []
+  priority: 3

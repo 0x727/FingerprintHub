@@ -1,0 +1,9 @@
+name: open-source-ticket-request-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/otrs-web/images/
+  favicon_hash: []
+  priority: 3

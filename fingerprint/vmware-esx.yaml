@@ -1,0 +1,45 @@
+name: vmware-esx
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="vmware esxi
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - document.write("<title>" + id_eesx_welcome + "</title>");
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <meta http-equiv="refresh" content="0;url='/ui'"/>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'content="vmware esx '
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - document.write(id_esx_viclientdesc);
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <meta http-equiv="content-type" content="text/html; charset=utf8">
+  - body
+  favicon_hash: []
+  priority: 3

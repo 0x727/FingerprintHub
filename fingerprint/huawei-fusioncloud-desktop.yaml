@@ -1,0 +1,10 @@
+name: huawei-fusioncloud-desktop
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href=/webui/default/img/logo.ico
+  - huawei
+  favicon_hash: []
+  priority: 1

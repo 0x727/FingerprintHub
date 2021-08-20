@@ -1,0 +1,16 @@
+name: kaibb
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by kaibb
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="forum powered by kaibb
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: acsoft-cloud
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - sdiyun.com, all rights reserved
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - onrememberpasswordclick
+  favicon_hash: []
+  priority: 3

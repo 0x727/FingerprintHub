@@ -1,0 +1,25 @@
+name: confluence
+fingerprint:
+- path: /
+  status_code: 302
+  headers:
+    Location: /login.action?os_destination=
+    X-Confluence-Request-Time: '*'
+  keyword: []
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="com-atlassian-confluence
+  - name="confluence-base-url"
+  favicon_hash: []
+  priority: 3
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 966e60f8eb85b7ea43a7b0095f3e2336
+  priority: 3

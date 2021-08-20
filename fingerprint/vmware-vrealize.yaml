@@ -1,0 +1,9 @@
+name: vmware-vrealize
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 正在重定向到 vrealize operations manager web
+  favicon_hash: []
+  priority: 3

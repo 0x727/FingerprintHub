@@ -1,0 +1,10 @@
+name: ultrastats
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img src="./images/main/ultrastatslogo.png" width="300" height="200" name="ultrastats_logo"
+    align="center">
+  favicon_hash: []
+  priority: 3

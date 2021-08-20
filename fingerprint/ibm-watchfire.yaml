@@ -1,0 +1,9 @@
+name: ibm-watchfire
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: watchfiresessionid
+  keyword: []
+  favicon_hash: []
+  priority: 3

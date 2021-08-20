@@ -1,0 +1,11 @@
+name: h3c-web网管
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - Web网管用户登录
+  - china_logo.jpg
+  - webui
+  favicon_hash: []
+  priority: 1

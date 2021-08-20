@@ -1,0 +1,16 @@
+name: adobe-magento
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /skin/frontend/
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - blank_img
+  favicon_hash: []
+  priority: 3

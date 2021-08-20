@@ -1,0 +1,9 @@
+name: netzone-webcache
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 广州高度软件有限公司版权所有
+  favicon_hash: []
+  priority: 3

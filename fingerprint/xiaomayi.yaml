@@ -1,0 +1,9 @@
+name: xiaomayi
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /template/ant/css/anthomecomm.css
+  favicon_hash: []
+  priority: 3

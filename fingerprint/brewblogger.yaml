@@ -1,0 +1,9 @@
+name: brewblogger
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - developed by <a href="http://www.zkdigital.com
+  favicon_hash: []
+  priority: 3

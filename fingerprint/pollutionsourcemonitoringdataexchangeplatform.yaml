@@ -1,0 +1,9 @@
+name: pollutionsourcemonitoringdataexchangeplatform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location.href = '/syncmodule/synchome/index';
+  favicon_hash: []
+  priority: 3

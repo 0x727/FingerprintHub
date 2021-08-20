@@ -1,0 +1,9 @@
+name: egroupware
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="egroupware
+  favicon_hash: []
+  priority: 3

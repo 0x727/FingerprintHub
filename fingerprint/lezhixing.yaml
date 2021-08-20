@@ -1,0 +1,24 @@
+name: lezhixing
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/datacenter/authentication/login.do" method="post
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - location.href=contextpath+"/login/password/password.jsp
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /static/thirdparty/jquery/
+  - var contextpath = "/datacenter
+  favicon_hash: []
+  priority: 3

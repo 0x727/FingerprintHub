@@ -1,0 +1,30 @@
+name: websidestory
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - http://websidestory.com
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - websidestory code
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - websidestory,inc. all rights reserved. u.s.patent no. 6,393,479b1
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- websidestory html for search -->
+  favicon_hash: []
+  priority: 3

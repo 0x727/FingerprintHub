@@ -1,0 +1,16 @@
+name: eisoo-anyshare
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - res/libs/webuploader/webuploader.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/res/libs/base64.min.js"
+  favicon_hash: []
+  priority: 3

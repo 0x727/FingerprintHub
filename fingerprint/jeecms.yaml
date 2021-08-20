@@ -1,0 +1,9 @@
+name: jeecms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '"/cnf/r/cms/common.js"'
+  favicon_hash: []
+  priority: 1

@@ -1,0 +1,9 @@
+name: dell-n1108p-on
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="login_server_default">n1108p-on
+  favicon_hash: []
+  priority: 1

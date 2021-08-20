@@ -1,0 +1,10 @@
+name: powermta
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <html><body>access denied.  please consult the http-access directive in the user's
+    guide for more information.</body>
+  favicon_hash: []
+  priority: 3

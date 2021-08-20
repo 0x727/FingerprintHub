@@ -1,0 +1,16 @@
+name: phpoa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - url(template/default/images/admin_img/msg.png)
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - admin_img/msg_bg.png
+  favicon_hash: []
+  priority: 3

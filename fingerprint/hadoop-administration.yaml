@@ -1,0 +1,16 @@
+name: hadoop-administration
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /static/hadoop.css
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="navbar-brand">hadoop</div>
+  favicon_hash: []
+  priority: 2

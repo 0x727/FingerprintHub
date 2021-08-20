@@ -1,0 +1,23 @@
+name: dokuwiki
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by dokuwiki
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="dokuwiki
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div id="dokuwiki
+  favicon_hash: []
+  priority: 3

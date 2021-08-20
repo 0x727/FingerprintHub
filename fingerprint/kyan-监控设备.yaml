@@ -1,0 +1,11 @@
+name: kyan-监控设备
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - login_files
+  - platform
+  - 欢迎
+  favicon_hash: []
+  priority: 1

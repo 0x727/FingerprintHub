@@ -1,0 +1,16 @@
+name: das-usmb-
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var pagefunc968535468893538dasdaweqwertion = "timeout";
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="loadoem?path=login-logo.png
+  favicon_hash: []
+  priority: 3

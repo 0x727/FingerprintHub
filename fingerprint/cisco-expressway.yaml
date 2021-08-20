@@ -1,0 +1,9 @@
+name: cisco-expressway
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - expressway-e</legend>
+  favicon_hash: []
+  priority: 3

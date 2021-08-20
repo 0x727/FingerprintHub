@@ -1,0 +1,16 @@
+name: 3dcart
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by 3dcart
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers:
+    X-Powered-By: 3dcart
+  keyword: []
+  favicon_hash: []
+  priority: 3

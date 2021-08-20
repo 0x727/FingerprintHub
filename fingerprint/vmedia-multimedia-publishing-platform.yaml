@@ -1,0 +1,16 @@
+name: vmedia-multimedia-publishing-platform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - function toggle(targetid)
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="video_00"
+  favicon_hash: []
+  priority: 3

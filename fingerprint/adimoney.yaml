@@ -1,0 +1,16 @@
+name: adimoney
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img src="/img/logo.png" alt="adimoney"/>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'content="adimoney.com mobile advertisement network. '
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: accellion-secure-file-transfer
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - secured by accellion
+  favicon_hash: []
+  priority: 3

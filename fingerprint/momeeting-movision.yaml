@@ -1,0 +1,23 @@
+name: momeeting-movision
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="meeting movision"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - document.title="登录-摩云视讯"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- 科达视讯云 摩云视讯 电信有区别 -->
+  favicon_hash: []
+  priority: 3

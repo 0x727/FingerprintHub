@@ -1,0 +1,24 @@
+name: ewebs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ClientDownload.xgi
+  - NewSoft
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /js/xajax05/xajax_js/xajax_core.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href='../client/ewebsclientsetup.exe'></a> </td>
+  favicon_hash: []
+  priority: 3

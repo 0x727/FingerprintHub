@@ -1,0 +1,16 @@
+name: tcexam
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a name="topofdoc" id="topofdoc"></a>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="nicola asuni - tecnick.com s.r.l." />
+  favicon_hash: []
+  priority: 3

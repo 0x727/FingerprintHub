@@ -1,0 +1,16 @@
+name: novell-sentinel-log-manager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - title="novell sentinel log manager
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="0;url=/novelllogmanager">
+  favicon_hash: []
+  priority: 3

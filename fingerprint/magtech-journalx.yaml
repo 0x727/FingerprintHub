@@ -1,0 +1,9 @@
+name: magtech-journalx
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - journalx/authorlogon.action?mag_id
+  favicon_hash: []
+  priority: 3

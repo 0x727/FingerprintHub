@@ -1,0 +1,9 @@
+name: censura
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'powered by: <a href="http://www.censura.info'
+  favicon_hash: []
+  priority: 3

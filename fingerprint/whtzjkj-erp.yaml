@@ -1,0 +1,9 @@
+name: whtzjkj-erp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/content/home/tzjlog.ico"
+  favicon_hash: []
+  priority: 3

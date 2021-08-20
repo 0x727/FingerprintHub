@@ -1,0 +1,16 @@
+name: sangfor-data-center
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - acloglogin.php
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers:
+    Location: ./src/acloglogin.php
+  keyword: []
+  favicon_hash: []
+  priority: 3

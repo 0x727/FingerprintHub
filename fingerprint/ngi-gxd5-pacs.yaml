@@ -1,0 +1,9 @@
+name: ngi-gxd5-pacs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div id="passwordwrapper" class="fieldwrapper">
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: startbbs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="startbbs
+  favicon_hash: []
+  priority: 3

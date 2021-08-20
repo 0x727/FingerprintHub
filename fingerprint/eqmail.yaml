@@ -1,0 +1,16 @@
+name: eqmail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="eqmail.ico
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <frame src="/cgi-bin/eqwebmail?empty=1
+  favicon_hash: []
+  priority: 3

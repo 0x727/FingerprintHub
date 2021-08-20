@@ -1,0 +1,16 @@
+name: pritlog
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://pritlog.com/">pritlog
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <em id="jserror">please enable javascript for full functionality
+  favicon_hash: []
+  priority: 3

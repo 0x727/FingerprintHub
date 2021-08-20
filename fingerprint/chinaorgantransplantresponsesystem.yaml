@@ -1,0 +1,9 @@
+name: chinaorgantransplantresponsesystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="images/logo_cotsr.png"
+  favicon_hash: []
+  priority: 3

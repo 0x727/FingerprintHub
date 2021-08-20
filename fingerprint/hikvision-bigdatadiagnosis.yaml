@@ -1,0 +1,9 @@
+name: hikvision-bigdatadiagnosis
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 大数据诊断工具</strong>
+  favicon_hash: []
+  priority: 3

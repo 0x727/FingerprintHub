@@ -1,0 +1,16 @@
+name: tomatocms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - tomato.core.widget.loader.baseurl = 'http://
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://www.tomatocms.com" title="powered by tomatocms" target="_blank">
+  favicon_hash: []
+  priority: 3

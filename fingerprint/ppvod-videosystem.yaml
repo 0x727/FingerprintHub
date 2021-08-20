@@ -1,0 +1,9 @@
+name: ppvod-videosystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ppvod copyright
+  favicon_hash: []
+  priority: 3

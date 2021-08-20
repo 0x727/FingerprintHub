@@ -1,0 +1,9 @@
+name: policyretriever
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="heading1">policyretriever service</p>
+  favicon_hash: []
+  priority: 2

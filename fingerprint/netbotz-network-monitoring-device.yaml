@@ -1,0 +1,16 @@
+name: netbotz-network-monitoring-device
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/netbotz.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.netbotz.com" target
+  favicon_hash: []
+  priority: 3

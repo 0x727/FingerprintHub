@@ -1,0 +1,10 @@
+name: jumpserver-fortres-machine
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <input type="password" class="form-control" name="password" placeholder="密码" required="">
+  - csrfmiddlewaretoken
+  favicon_hash: []
+  priority: 3

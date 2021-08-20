@@ -1,0 +1,23 @@
+name: nucleus-cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - target="_blank">nucleus cms
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - nucleus_lf_name
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - title="nucleus" href="http://nucleuscms.org/
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: bitbucket
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - bitbucket.page.login
+  favicon_hash: []
+  priority: 3

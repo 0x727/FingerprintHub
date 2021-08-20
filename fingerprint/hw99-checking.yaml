@@ -1,0 +1,9 @@
+name: hw99-checking
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /hwface/script/logincheck.js
+  favicon_hash: []
+  priority: 3

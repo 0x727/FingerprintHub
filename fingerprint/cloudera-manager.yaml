@@ -1,0 +1,16 @@
+name: cloudera-manager
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: cloudera_manager_sessionid=
+  keyword: []
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var loginpageurl = "/cmf/login";
+  favicon_hash: []
+  priority: 2

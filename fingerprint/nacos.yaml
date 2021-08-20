@@ -1,0 +1,9 @@
+name: nacos
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <title>Nacos</title>
+  favicon_hash: []
+  priority: 1

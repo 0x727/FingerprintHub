@@ -1,0 +1,9 @@
+name: wap
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location = 'wap.htm'
+  favicon_hash: []
+  priority: 1

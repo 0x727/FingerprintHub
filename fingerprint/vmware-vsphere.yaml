@@ -1,0 +1,9 @@
+name: vmware-vsphere
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <meta name="description" content="VMware vSphere
+  favicon_hash: []
+  priority: 3

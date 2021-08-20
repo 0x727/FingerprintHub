@@ -1,0 +1,9 @@
+name: neusoft-uniportal
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ecdomain/unieap/ria/unieap/themes/earth/common/unieap.css
+  favicon_hash: []
+  priority: 3

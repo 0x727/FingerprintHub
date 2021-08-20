@@ -1,0 +1,9 @@
+name: smart-cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - name="formdoc" action="/hz/sys/login/logined.jsp
+  favicon_hash: []
+  priority: 3

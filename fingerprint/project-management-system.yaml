@@ -1,0 +1,16 @@
+name: project-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var right = regexp.rightcontext
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.top.location = "login.aspx?url=" + right"
+  favicon_hash: []
+  priority: 3

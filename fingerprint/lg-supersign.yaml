@@ -1,0 +1,9 @@
+name: lg-supersign
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/ssw/js/user/index.js"
+  favicon_hash: []
+  priority: 3

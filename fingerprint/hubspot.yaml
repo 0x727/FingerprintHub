@@ -1,0 +1,9 @@
+name: hubspot
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - js.hubspot.com/analytics
+  favicon_hash: []
+  priority: 3

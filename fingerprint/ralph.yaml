@@ -1,0 +1,9 @@
+name: ralph
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ralph <strong>3</strong>
+  favicon_hash: []
+  priority: 3

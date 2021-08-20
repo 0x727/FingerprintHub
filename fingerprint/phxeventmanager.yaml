@@ -1,0 +1,23 @@
+name: phxeventmanager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <td><div class="minicalmonth
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="pem-includes/xajax/xajax_js/xajax_core.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by phxeventmanager
+  favicon_hash: []
+  priority: 3

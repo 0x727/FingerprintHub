@@ -1,0 +1,9 @@
+name: raisecom-ivoice8000
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="com_raisecom_ums_aos_portal_login_domain
+  favicon_hash: []
+  priority: 3

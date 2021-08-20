@@ -1,0 +1,17 @@
+name: acsoft-reimbursement-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div id="dsitetitle"
+  - by:lin.zhibin
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.external.addfavorite(location.href,document.title);
+  favicon_hash: []
+  priority: 3

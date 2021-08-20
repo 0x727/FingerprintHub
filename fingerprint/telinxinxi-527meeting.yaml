@@ -1,0 +1,16 @@
+name: telinxinxi-527meeting
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 527meeting
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ' content="轻会议"'
+  favicon_hash: []
+  priority: 3

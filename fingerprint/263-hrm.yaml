@@ -1,0 +1,9 @@
+name: 263-hrm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <p align="center">请使用263em登陆!</p>
+  favicon_hash: []
+  priority: 3

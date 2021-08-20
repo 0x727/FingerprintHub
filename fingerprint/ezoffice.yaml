@@ -1,0 +1,9 @@
+name: ezoffice
+fingerprint:
+- path: /
+  status_code: 302
+  headers:
+    Location: /defaultroot/portal.jsp?access=oa
+  keyword: []
+  favicon_hash: []
+  priority: 1

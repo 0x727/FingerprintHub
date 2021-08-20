@@ -1,0 +1,16 @@
+name: xdoa-oa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - http://www.xdoa.cn</a>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 北京创信达科技有限公司
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: extplorer
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /extplorer.ico
+  favicon_hash: []
+  priority: 3

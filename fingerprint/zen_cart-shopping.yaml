@@ -1,0 +1,16 @@
+name: zen_cart-shopping
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - shopping cart program by zen cart
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: zenid=
+  keyword: []
+  favicon_hash: []
+  priority: 3

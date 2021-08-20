@@ -1,0 +1,16 @@
+name: pcitc-remotesystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="validatecode.aspx"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="f-loading-mask ui-widget ui-widget-content"
+  favicon_hash: []
+  priority: 3

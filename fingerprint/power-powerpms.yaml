@@ -1,0 +1,23 @@
+name: power-powerpms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - apphub.server.registertohub(qrcodeid)
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /app_themes/default/assets/css/style.min.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /scripts/boot.js
+  favicon_hash: []
+  priority: 3

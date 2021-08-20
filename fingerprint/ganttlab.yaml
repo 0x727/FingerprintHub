@@ -1,0 +1,9 @@
+name: ganttlab
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - GanttLab-preview.png
+  favicon_hash: []
+  priority: 1

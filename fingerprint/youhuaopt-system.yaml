@@ -1,0 +1,9 @@
+name: youhuaopt-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /ashx/log/logincheck.ashx?fresh=" + math.random()
+  favicon_hash: []
+  priority: 3

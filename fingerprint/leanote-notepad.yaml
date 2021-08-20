@@ -1,0 +1,9 @@
+name: leanote-notepad
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - name="author" content="leanote,蚂蚁笔记"
+  favicon_hash: []
+  priority: 3

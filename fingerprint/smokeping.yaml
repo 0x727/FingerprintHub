@@ -1,0 +1,16 @@
+name: smokeping
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://oss.oetiker.ch/smokeping/counter.cgi/
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <tr><td class="menuitem" colspan="2">&nbsp;-&nbsp;<a class="menulink" href="?target=
+  favicon_hash: []
+  priority: 3

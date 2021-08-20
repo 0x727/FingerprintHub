@@ -1,0 +1,16 @@
+name: landmark-dus
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - landmark
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/landmark.admin.web_deploy/
+  favicon_hash: []
+  priority: 1

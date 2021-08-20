@@ -1,0 +1,9 @@
+name: hitachi-virtual-storage-platform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/cgismryset/smryset.cgi/clk"
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: cisco-nexus-data-broker
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location.href = '/monitor';
+  favicon_hash: []
+  priority: 3

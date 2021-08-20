@@ -1,0 +1,9 @@
+name: yonyou-erp-nc
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /nc/servlet/nc.ui.iufo.login.index
+  favicon_hash: []
+  priority: 3

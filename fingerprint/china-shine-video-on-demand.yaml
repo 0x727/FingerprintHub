@@ -1,0 +1,16 @@
+name: china-shine-video-on-demand
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 视翰公司
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - background="images/cbackground.jpg"
+  favicon_hash: []
+  priority: 3

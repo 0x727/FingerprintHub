@@ -1,0 +1,9 @@
+name: redflag-linux-cluster-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <b>登录到红旗集群管理系统</b></td>
+  favicon_hash: []
+  priority: 3

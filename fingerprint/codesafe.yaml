@@ -1,0 +1,9 @@
+name: codesafe
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'baseurl : ''app'',        //配置模块根路径到静态资源根目录。'
+  favicon_hash: []
+  priority: 3

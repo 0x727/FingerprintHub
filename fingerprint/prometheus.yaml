@@ -1,0 +1,9 @@
+name: prometheus
+fingerprint:
+- path: /favicon.ico
+  status_code: 200
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 5ee43b38986a144d6b5022ea8c8f748f
+  priority: 1

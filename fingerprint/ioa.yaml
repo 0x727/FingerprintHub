@@ -1,0 +1,16 @@
+name: ioa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="https://www.ioa.cn/official/download.html" target="_blank">爱办公app</a>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="foot_version">厦门容能科技有限公司
+  favicon_hash: []
+  priority: 3

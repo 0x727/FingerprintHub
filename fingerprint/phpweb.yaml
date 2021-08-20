@@ -1,0 +1,9 @@
+name: phpweb
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - pdv_pagename
+  favicon_hash: []
+  priority: 3

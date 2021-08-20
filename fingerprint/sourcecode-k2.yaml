@@ -1,0 +1,16 @@
+name: sourcecode-k2
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - document.getelementbyid("redirectform").action = "../mxworkspace/login.aspx
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - document.getelementbyid("redirectform").action = "../workspace/default.aspx
+  favicon_hash: []
+  priority: 3

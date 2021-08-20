@@ -1,0 +1,37 @@
+name: bt-linux-control-pane
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img src="https://app.bt.cn/static/app.png">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.bt.cn/bbs/thread-1172-1-1.html
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 宝塔linux面板
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/static/js/validform_v5.3.2_min.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: bt_panel=
+  keyword: []
+  favicon_hash: []
+  priority: 3

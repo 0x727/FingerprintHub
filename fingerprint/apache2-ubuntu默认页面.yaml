@@ -1,0 +1,10 @@
+name: apache2-ubuntu默认页面
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - Apache2 Ubuntu Default Page
+  - ubuntu-logo.png
+  favicon_hash: []
+  priority: 1

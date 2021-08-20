@@ -1,0 +1,16 @@
+name: trend-smart-protection-server
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - lastrow_right
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - redirect_reason
+  favicon_hash: []
+  priority: 3

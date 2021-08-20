@@ -1,0 +1,9 @@
+name: ispcp-omega
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: ispcp
+  keyword: []
+  favicon_hash: []
+  priority: 3

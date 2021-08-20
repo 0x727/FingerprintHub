@@ -1,0 +1,9 @@
+name: brocade-network-advisor
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <span class="ui-menuitem-text">about network advisor</span></a>
+  favicon_hash: []
+  priority: 3

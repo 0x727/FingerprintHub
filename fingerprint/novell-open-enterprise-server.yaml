@@ -1,0 +1,16 @@
+name: novell-open-enterprise-server
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- this is all just a super-duper redirect to the welcome page
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.novell.com/products/openenterpriseserver
+  favicon_hash: []
+  priority: 1

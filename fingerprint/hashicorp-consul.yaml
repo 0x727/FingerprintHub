@@ -1,0 +1,9 @@
+name: hashicorp-consul
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - Consul
+  favicon_hash: []
+  priority: 1

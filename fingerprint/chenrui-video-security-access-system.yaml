@@ -1,0 +1,9 @@
+name: chenrui-video-security-access-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location="/vmonitor";
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: 协达oa
+fingerprint:
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 3c8c8a2f01d7e06527cbd7b3d43fbba0
+  priority: 3

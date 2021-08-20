@@ -1,0 +1,10 @@
+name: igenus邮件系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - form.action = "login.php?Cmd=login";
+  - iGENUS
+  favicon_hash: []
+  priority: 1

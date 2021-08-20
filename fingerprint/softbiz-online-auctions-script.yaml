@@ -1,0 +1,9 @@
+name: softbiz-online-auctions-script
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.softbizscripts.com
+  favicon_hash: []
+  priority: 3

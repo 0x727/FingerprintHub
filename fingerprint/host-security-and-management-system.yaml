@@ -1,0 +1,9 @@
+name: host-security-and-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href=./static/css/app.edb681c84a53277f9336fc297ebca96e.css
+  favicon_hash: []
+  priority: 3

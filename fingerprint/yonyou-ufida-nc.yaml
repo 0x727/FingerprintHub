@@ -1,0 +1,39 @@
+name: yonyou-ufida-nc
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ufida_iufo_over.png
+  - ufida_nc.png
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - logo/images/
+  - ufida
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - logo/images/ufida_nc.png
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div id="nc_text">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div id="nc_img" onmouseover="overimage('nc');
+  favicon_hash: []
+  priority: 3

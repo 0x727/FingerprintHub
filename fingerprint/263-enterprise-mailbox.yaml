@@ -1,0 +1,16 @@
+name: 263-enterprise-mailbox
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - net263.wm.custom_login.homepage_init
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/custom_login/js/net263_wm_util.js
+  favicon_hash: []
+  priority: 3

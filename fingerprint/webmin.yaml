@@ -1,0 +1,17 @@
+name: webmin
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - Webmin
+  - session_login
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - webmin server on
+  favicon_hash: []
+  priority: 3

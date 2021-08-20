@@ -1,0 +1,9 @@
+name: dell-navisphere-express
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - parent.main.location = urlnonst + "?nst=" + top.menu.securitytoken
+  favicon_hash: []
+  priority: 3

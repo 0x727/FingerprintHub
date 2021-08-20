@@ -1,0 +1,59 @@
+name: citrix-access-gateway
+fingerprint:
+- path: /
+  status_code: 302
+  headers:
+    Location: /vpn/index.html
+  keyword:
+  - '"/vpn/resources/{lang}"'
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/vpn/images/accessgateway.ico
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="citrixreceiverlogoaboutbox"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /vpn/js/gateway_login_view.js?
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - cloud.ottoworkfroce.eu/vpn/index.html
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - vpn/js/lsgateway_login_view.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="_ctxstxt_netscalergateway"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - receiver/images/common/icon_vpn.ico
+  favicon_hash: []
+  priority: 3

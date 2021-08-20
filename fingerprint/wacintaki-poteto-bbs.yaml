@@ -1,0 +1,16 @@
+name: wacintaki-poteto-bbs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://www.ninechime.com/products/" title="get your own free bbs!">wacintaki
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - by <a href="http://suteki.nu">ranmaguy</a> and <a href="http://www.cellosoft.com">marcello</a>
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: tencent-exmail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /cgi-bin/getinvestigate?flowid=
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="登录腾讯企业邮箱
+  favicon_hash: []
+  priority: 3

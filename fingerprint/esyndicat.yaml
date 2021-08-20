@@ -1,0 +1,9 @@
+name: esyndicat
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="esyndicat
+  favicon_hash: []
+  priority: 3

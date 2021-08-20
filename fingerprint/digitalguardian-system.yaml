@@ -1,0 +1,9 @@
+name: digitalguardian-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/brands/guardian/favicon.ico"
+  favicon_hash: []
+  priority: 3

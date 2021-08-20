@@ -1,0 +1,9 @@
+name: centerm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - new ct.extapp.aboutsystemwindow()
+  favicon_hash: []
+  priority: 3

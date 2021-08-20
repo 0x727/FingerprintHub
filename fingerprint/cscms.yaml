@@ -1,0 +1,16 @@
+name: cscms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - tag_adfo dis_wap
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /js/cscms.js
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: citrix-xenserver
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - citrix systems, inc. xenserver
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="xencentersetup.exe">xencenter installer</a>
+  favicon_hash: []
+  priority: 1

@@ -1,0 +1,9 @@
+name: mercurial
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - title="mercurial" style=
+  favicon_hash: []
+  priority: 3

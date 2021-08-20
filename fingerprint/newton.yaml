@@ -1,0 +1,9 @@
+name: newton
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - name="group_sn"
+  favicon_hash: []
+  priority: 3

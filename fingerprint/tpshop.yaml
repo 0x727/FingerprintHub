@@ -1,0 +1,10 @@
+name: tpshop
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - tpshop.css
+  - tpshop_config
+  favicon_hash: []
+  priority: 1

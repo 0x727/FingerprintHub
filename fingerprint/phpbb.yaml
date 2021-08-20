@@ -1,0 +1,32 @@
+name: phpbb
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: phpbb3_
+  keyword: []
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '&copy;'
+  - http://www.longluntan.com/zh/phpbb/
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - phpbb
+  - phpbb group" />
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - start quick hack - phpbb statistics mod
+  favicon_hash: []
+  priority: 3

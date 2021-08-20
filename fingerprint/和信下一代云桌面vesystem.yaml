@@ -1,0 +1,9 @@
+name: 和信下一代云桌面vesystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - URL=/vesystem
+  favicon_hash: []
+  priority: 3

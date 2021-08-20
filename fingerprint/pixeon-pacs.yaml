@@ -1,0 +1,9 @@
+name: pixeon-pacs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <span class="apptitle" id="apppixviewer">
+  favicon_hash: []
+  priority: 3

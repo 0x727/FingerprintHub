@@ -1,0 +1,16 @@
+name: bicesoft-super-custom-survey-voting-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="images/bicesoft.css"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 佰思超强自定义问卷调查系统(bicesoft.com)
+  favicon_hash: []
+  priority: 3

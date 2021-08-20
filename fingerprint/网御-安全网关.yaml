@@ -1,0 +1,11 @@
+name: 网御-安全网关
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - login
+  - 安全系统
+  - 网御星云
+  favicon_hash: []
+  priority: 3

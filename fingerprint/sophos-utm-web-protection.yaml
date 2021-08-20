@@ -1,0 +1,9 @@
+name: sophos-utm-web-protection
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by utm web protection
+  favicon_hash: []
+  priority: 3

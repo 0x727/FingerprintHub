@@ -1,0 +1,16 @@
+name: jianhengxinan-jh-las
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - jh-la3600
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 建恒信安日志审计系统
+  favicon_hash: []
+  priority: 3

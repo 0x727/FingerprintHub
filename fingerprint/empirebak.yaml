@@ -1,0 +1,16 @@
+name: empirebak
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.phome.net" target="_blank"><strong>empirebak</strong>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div align="center">(<a href="doc.html" target="_blank">查看帝国备份王说明文档</a>)</div>
+  favicon_hash: []
+  priority: 3

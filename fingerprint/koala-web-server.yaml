@@ -1,0 +1,9 @@
+name: koala-web-server
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: koala web server
+  keyword: []
+  favicon_hash: []
+  priority: 2

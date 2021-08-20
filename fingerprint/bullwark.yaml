@@ -1,0 +1,9 @@
+name: bullwark
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <title>Bullwark Momentum Series</title>
+  favicon_hash: []
+  priority: 1

@@ -1,0 +1,16 @@
+name: festos
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - title="festos
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - css/festos.css
+  favicon_hash: []
+  priority: 3

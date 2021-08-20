@@ -1,0 +1,9 @@
+name: authine-h3-bpm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - h3 bpm suite信息化的最佳实践
+  favicon_hash: []
+  priority: 3

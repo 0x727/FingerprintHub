@@ -1,0 +1,9 @@
+name: aliyunoss
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: aliyunoss
+  keyword: []
+  favicon_hash: []
+  priority: 3

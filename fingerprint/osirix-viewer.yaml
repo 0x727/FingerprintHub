@@ -1,0 +1,9 @@
+name: osirix-viewer
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - service provided by <a href="https://www.osirix-viewer.com"
+  favicon_hash: []
+  priority: 3

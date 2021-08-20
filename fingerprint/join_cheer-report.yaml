@@ -1,0 +1,10 @@
+name: join_cheer-report
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ../netrep
+  - jqci
+  favicon_hash: []
+  priority: 3

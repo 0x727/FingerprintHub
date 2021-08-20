@@ -1,0 +1,9 @@
+name: tp_link-omada-controller
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="width=1300,initial-scale=1,minimal-ui"
+  favicon_hash: []
+  priority: 3

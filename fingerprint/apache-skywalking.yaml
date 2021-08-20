@@ -1,0 +1,9 @@
+name: apache-skywalking
+fingerprint:
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 56d39b7b26bb71a231b7737764d1f4cc
+  priority: 1

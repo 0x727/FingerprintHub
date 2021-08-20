@@ -1,0 +1,9 @@
+name: phpopenchat
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - phpopenchat installation
+  favicon_hash: []
+  priority: 3

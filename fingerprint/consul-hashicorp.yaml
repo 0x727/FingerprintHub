@@ -1,0 +1,30 @@
+name: consul-hashicorp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - consul-ui/config/environment
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - consulhost
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - consul instance
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - www.consul.io
+  favicon_hash: []
+  priority: 3

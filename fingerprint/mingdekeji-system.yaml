@@ -1,0 +1,16 @@
+name: mingdekeji-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="imges/zgsh.ico"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 荆州明德科技
+  favicon_hash: []
+  priority: 3

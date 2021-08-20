@@ -1,0 +1,9 @@
+name: openam
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/openam/ui/login"
+  favicon_hash: []
+  priority: 3

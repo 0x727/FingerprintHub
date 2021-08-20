@@ -1,0 +1,9 @@
+name: netapp-data-ontap
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: data ontap
+  keyword: []
+  favicon_hash: []
+  priority: 3

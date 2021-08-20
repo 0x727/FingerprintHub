@@ -1,0 +1,16 @@
+name: phpmyrealty
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '<!-- main content table : stop -->'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.phpmyrealty.com
+  favicon_hash: []
+  priority: 3

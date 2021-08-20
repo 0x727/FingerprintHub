@@ -1,0 +1,45 @@
+name: trs-wcm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /wcm/app/js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 0;url=/wcm
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location.href = "/wcm";
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - forum.trs.com.cn
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /wcm" target="_blank">网站管理
+  - wcm
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /wcm" target="_blank">管理
+  favicon_hash: []
+  priority: 3

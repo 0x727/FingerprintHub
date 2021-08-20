@@ -1,0 +1,16 @@
+name: kampyle
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - http://cf.kampyle.com/k_button.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - start kampyle feedback form button
+  favicon_hash: []
+  priority: 3

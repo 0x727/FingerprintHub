@@ -1,0 +1,9 @@
+name: beichuang-book-retrieval-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - opac_two
+  favicon_hash: []
+  priority: 3

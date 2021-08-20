@@ -1,0 +1,16 @@
+name: hisense-webpos
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <legend><img src="../../content/images/hisense.bmp" style="height:20px; padding-left:-10px"/>webpos登录</legend>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content/images/hisense.bmp
+  favicon_hash: []
+  priority: 3

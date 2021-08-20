@@ -1,0 +1,9 @@
+name: uccc-iot
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - hidden-xs">物联网云平台
+  favicon_hash: []
+  priority: 3

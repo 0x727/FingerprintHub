@@ -1,0 +1,16 @@
+name: goonie-internet-public-ppinion-monitoring-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - alert("菜单层数量和内容层数量不一样!")
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 网络舆情监控系统
+  favicon_hash: []
+  priority: 3

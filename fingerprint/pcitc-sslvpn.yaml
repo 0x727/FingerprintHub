@@ -1,0 +1,9 @@
+name: pcitc-sslvpn
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="new_style/placeholderfriend.js"
+  favicon_hash: []
+  priority: 3

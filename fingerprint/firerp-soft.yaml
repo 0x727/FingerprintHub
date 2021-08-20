@@ -1,0 +1,9 @@
+name: firerp-soft
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - mm_preloadimages('images/bt/bt_login_b.gif
+  favicon_hash: []
+  priority: 3

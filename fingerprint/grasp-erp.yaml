@@ -1,0 +1,9 @@
+name: grasp-erp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ' alert("欢迎使用 【管家婆分销erp)'
+  favicon_hash: []
+  priority: 3

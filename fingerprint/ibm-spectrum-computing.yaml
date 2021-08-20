@@ -1,0 +1,16 @@
+name: ibm-spectrum-computing
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /platform/framework/logout/logout.action
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ssoclient_
+  favicon_hash: []
+  priority: 3

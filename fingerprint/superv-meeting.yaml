@@ -1,0 +1,9 @@
+name: superv-meeting
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="ctl00_topcontrol1_lblsitedescription"
+  favicon_hash: []
+  priority: 3

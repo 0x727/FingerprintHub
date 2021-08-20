@@ -1,0 +1,9 @@
+name: tingjiandan-iot
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="hwebsystemtitle"
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: enterpriseloginmanagementsystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - txtusername").focus(); //默认焦点
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - themes/scripts/functionjs.js
+  favicon_hash: []
+  priority: 3

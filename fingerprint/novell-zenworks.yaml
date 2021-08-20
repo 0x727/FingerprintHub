@@ -1,0 +1,16 @@
+name: novell-zenworks
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /zenworks/js/dojo
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - managementzonename
+  favicon_hash: []
+  priority: 3

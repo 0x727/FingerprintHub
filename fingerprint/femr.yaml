@@ -1,0 +1,16 @@
+name: femr
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /res/vendor/bootstrap-3.3.5/css/bootstrap.min.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /res/images/login-bg-1.png
+  favicon_hash: []
+  priority: 3

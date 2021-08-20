@@ -1,0 +1,9 @@
+name: esafenet-dlp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - cdgserver3
+  favicon_hash: []
+  priority: 3

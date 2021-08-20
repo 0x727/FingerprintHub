@@ -1,0 +1,16 @@
+name: ganglia
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - onchange="ganglia_form.submit();
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - name="ganglia_form
+  favicon_hash: []
+  priority: 3

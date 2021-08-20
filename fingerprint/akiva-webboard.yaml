@@ -1,0 +1,9 @@
+name: akiva-webboard
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by webboard
+  favicon_hash: []
+  priority: 3

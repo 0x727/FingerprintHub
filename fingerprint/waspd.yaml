@@ -1,0 +1,9 @@
+name: waspd
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - pending waspd activities</font>
+  favicon_hash: []
+  priority: 3

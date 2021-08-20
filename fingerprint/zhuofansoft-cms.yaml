@@ -1,0 +1,9 @@
+name: zhuofansoft-cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - session.infocss.infocssurl
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,10 @@
+name: ejinshan终端
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - net.ejinshan.avclient.apk
+  - 金山终端安全系统
+  favicon_hash: []
+  priority: 1

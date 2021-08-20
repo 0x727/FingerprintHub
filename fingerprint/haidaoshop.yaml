@@ -1,0 +1,9 @@
+name: haidaoshop
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - haidao.web.general.js
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: nagios-xi
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - click the link below to get started using nagios xi.
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /nagiosxi/images/favicon.ico
+  favicon_hash: []
+  priority: 3

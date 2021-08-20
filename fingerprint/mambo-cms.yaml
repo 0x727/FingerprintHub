@@ -1,0 +1,16 @@
+name: mambo-cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="mambo
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div id="mambo
+  favicon_hash: []
+  priority: 3

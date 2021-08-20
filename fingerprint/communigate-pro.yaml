@@ -1,0 +1,9 @@
+name: communigate-pro
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Server: communigatepro
+  keyword: []
+  favicon_hash: []
+  priority: 3

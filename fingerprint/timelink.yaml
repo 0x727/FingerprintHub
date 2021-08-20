@@ -1,0 +1,16 @@
+name: timelink
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - link international corp. all rights reserved
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <link rel="shortcut icon" type="image/png" href="/timelink/images/favicon.ico"/>
+  favicon_hash: []
+  priority: 3

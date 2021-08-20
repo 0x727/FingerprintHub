@@ -1,0 +1,9 @@
+name: greencms
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    X-Powered-By: greencms
+  keyword: []
+  favicon_hash: []
+  priority: 3

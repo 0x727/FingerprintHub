@@ -1,0 +1,9 @@
+name: daydao-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - $(document).attr("title","我被修改啦.哈哈"
+  favicon_hash: []
+  priority: 3

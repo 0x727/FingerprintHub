@@ -1,0 +1,23 @@
+name: reremouse-exam-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 蝙蝠在线考试系统
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 博库医学在线考试系统，技术支持：杭州博库科技有限公司
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/resources/js/upscroll.js"
+  favicon_hash: []
+  priority: 3

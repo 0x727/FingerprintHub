@@ -1,0 +1,9 @@
+name: euesoft-hr
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - link.description = "亿华软件"
+  favicon_hash: []
+  priority: 3

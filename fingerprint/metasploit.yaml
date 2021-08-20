@@ -1,0 +1,10 @@
+name: metasploit
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - metasploit
+  - r7bottom-strip
+  favicon_hash: []
+  priority: 3

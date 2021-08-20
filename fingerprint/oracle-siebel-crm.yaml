@@ -1,0 +1,23 @@
+name: oracle-siebel-crm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ot='siebwebmainwindow'>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - scripting is used to manage data interactions between the siebel server/web server
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - onload="gotourl('start.swe?swecmd=start')
+  favicon_hash: []
+  priority: 3

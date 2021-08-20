@@ -1,0 +1,10 @@
+name: loopup-meeting
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="loopup"
+  - 'machine:'
+  favicon_hash: []
+  priority: 3

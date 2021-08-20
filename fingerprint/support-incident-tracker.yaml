@@ -1,0 +1,16 @@
+name: support-incident-tracker
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div class='windowtitle'>sit! - login</div>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="sit! support incident tracker
+  favicon_hash: []
+  priority: 3

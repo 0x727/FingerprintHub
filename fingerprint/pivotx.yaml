@@ -1,0 +1,23 @@
+name: pivotx
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="includes/js/pivotx.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - templates_internal/assets/pivotx.png" alt="pivotx
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="pivotx
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: vmware-horizon
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href='https://www.vmware.com/go/viewclients'
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - alt="vmware horizon">
+  favicon_hash: []
+  priority: 1

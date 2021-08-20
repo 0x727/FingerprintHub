@@ -1,0 +1,9 @@
+name: apache-cocoon
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    X-Cocoon-Version: '*'
+  keyword: []
+  favicon_hash: []
+  priority: 3

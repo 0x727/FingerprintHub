@@ -1,0 +1,9 @@
+name: wisepower-oa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/wisepower/login.jsp
+  favicon_hash: []
+  priority: 3

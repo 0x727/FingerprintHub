@@ -1,0 +1,16 @@
+name: webbased-pear-package-manager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - pear_frontend_web
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img src="?img=pear" width="104" height="50" vspace="2" hspace="5" alt="pear">
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: pyspider
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="pyspider dashboard"
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: automatedlogiccorporation-webctrl
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/_common/lvl5/about/eula.jsp"
+  favicon_hash: []
+  priority: 3

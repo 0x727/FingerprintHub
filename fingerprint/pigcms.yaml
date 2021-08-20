@@ -1,0 +1,9 @@
+name: pigcms
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    X-Powered-By: pigcms.com
+  keyword: []
+  favicon_hash: []
+  priority: 3

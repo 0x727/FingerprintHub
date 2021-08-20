@@ -1,0 +1,16 @@
+name: metaswitch-networks-metaview-web
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content='dcl.metaview.web.client'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="dcl.metaview.web.client.nocache.js">
+  favicon_hash: []
+  priority: 3

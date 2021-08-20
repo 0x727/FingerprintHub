@@ -1,0 +1,16 @@
+name: apache-oozie-web-console
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - oozie-console
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/oozie">oozie console
+  favicon_hash: []
+  priority: 3

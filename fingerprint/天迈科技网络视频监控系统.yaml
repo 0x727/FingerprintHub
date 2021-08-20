@@ -1,0 +1,11 @@
+name: 天迈科技网络视频监控系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - jsessionid
+  - 天迈科技
+  - 网络视频监控系统
+  favicon_hash: []
+  priority: 1

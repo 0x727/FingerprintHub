@@ -1,0 +1,9 @@
+name: deshang-dsmall
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /static/plugins/js/dialog/dialog.js" id="dialog_js"
+  favicon_hash: []
+  priority: 3

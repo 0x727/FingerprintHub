@@ -1,0 +1,16 @@
+name: phpmywind
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - phpmywind.com all rights reserved
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="phpmywind
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,23 @@
+name: processmaker
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - processmaker ver
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.processmaker.com" alt="processmaker
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - alt="powered by processmaker
+  favicon_hash: []
+  priority: 3

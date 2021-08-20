@@ -1,0 +1,16 @@
+name: anymacro
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - document.aa.f_email
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - anywebapp
+  favicon_hash: []
+  priority: 3

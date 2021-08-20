@@ -1,0 +1,20 @@
+name: ruijie-sslvpn
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - SSLVPN
+  - login
+  - rjsslvpn
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - SSLVPN
+  - login
+  - rjsslvpn_encookie
+  favicon_hash: []
+  priority: 1

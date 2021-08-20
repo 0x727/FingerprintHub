@@ -1,0 +1,31 @@
+name: fastadmin-framework
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - copyright © fastadmin.net
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="/" class="navbar-brand">fastadmin</a>
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - fastadmin.net
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - FastAdmin
+  - fastadmin.net
+  favicon_hash: []
+  priority: 3

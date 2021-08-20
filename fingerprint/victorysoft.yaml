@@ -1,0 +1,16 @@
+name: victorysoft
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - value="style2012/style1/scripts/expressinstall.swf"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="webstyles/webstyle1/style1/css.css"
+  favicon_hash: []
+  priority: 3

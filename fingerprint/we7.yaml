@@ -1,0 +1,10 @@
+name: we7
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - <title>微擎
+  - w7.cc
+  favicon_hash: []
+  priority: 1

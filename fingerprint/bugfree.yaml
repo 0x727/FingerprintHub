@@ -1,0 +1,16 @@
+name: bugfree
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - id="logo" alt=bugfree
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="loginbgimage" alt="bugfree
+  favicon_hash: []
+  priority: 3

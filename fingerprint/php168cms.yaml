@@ -1,0 +1,9 @@
+name: php168cms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var system = 'cms
+  favicon_hash: []
+  priority: 3

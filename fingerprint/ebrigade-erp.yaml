@@ -1,0 +1,9 @@
+name: ebrigade-erp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class='btn btn-ebrigade btn-lg'
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: disqus
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - disqus_thread
+  favicon_hash: []
+  priority: 3

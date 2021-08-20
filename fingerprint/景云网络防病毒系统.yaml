@@ -1,0 +1,11 @@
+name: 景云网络防病毒系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - login_form
+  - styles/images/logo.png
+  - 防病毒
+  favicon_hash: []
+  priority: 1

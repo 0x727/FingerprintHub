@@ -1,0 +1,23 @@
+name: phpnow
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://phpnow.org/go.php?id=1005">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="yinzcn@gmail.com
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - by <a href="http://phpnow.org">phpnow.org
+  favicon_hash: []
+  priority: 3

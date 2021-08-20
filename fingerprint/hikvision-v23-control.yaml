@@ -1,0 +1,23 @@
+name: hikvision-v23-control
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - hikvision v2.3控件网页demo
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 杭州海康威视数字技术股份有限公司
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - if(m_bdvrcontrol.stoptalk())
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: pcitc-logistics-management-mystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ' href="/newimages/login/logo_icon.ico'
+  favicon_hash: []
+  priority: 3

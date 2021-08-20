@@ -1,0 +1,9 @@
+name: nsfocus-enterprise-security-center
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /login_logo_espc_zh_cn.png
+  favicon_hash: []
+  priority: 3

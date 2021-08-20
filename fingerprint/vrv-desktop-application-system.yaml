@@ -1,0 +1,16 @@
+name: vrv-desktop-application-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <span id="lblvalidcompany" class="validcompany">vrv
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var vver = $('#hidverify').val();
+  favicon_hash: []
+  priority: 3

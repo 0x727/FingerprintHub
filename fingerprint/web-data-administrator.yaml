@@ -1,0 +1,10 @@
+name: web-data-administrator
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <form name="webform1" method="post" action="default.aspx" onsubmit="javascript:return
+    webform_onsubmit();" id="webform1
+  favicon_hash: []
+  priority: 3

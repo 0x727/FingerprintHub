@@ -1,0 +1,9 @@
+name: information-operation-and-maintenance-support-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - placeholder="ad域账号 / 系统账号"
+  favicon_hash: []
+  priority: 3

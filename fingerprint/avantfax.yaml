@@ -1,0 +1,9 @@
+name: avantfax
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="images/avantfax-big.png" border="0" alt="avantfax
+  favicon_hash: []
+  priority: 3

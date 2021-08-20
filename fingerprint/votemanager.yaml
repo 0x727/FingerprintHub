@@ -1,0 +1,17 @@
+name: votemanager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="微平台投票系统
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://www.cdrbp.cn">微信数字投票
+  - content="微平台投票管理系统
+  favicon_hash: []
+  priority: 3

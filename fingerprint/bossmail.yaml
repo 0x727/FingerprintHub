@@ -1,0 +1,16 @@
+name: bossmail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <span class="footer_t">powered by bossmail</span>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://apps.microsoft.com/windows/zh-cn/app/bossmail/24f4bdb3-1bca-467e-9dd9-15a5d278aec6
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,26 @@
+name: zkteco-security-management-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src='/login/images/zksecurity.png'
+  - 百傲瑞达
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="login-finger-btn disabled"
+  - id="password_hidden"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - $(".copyright").text("copyright ? " + server_current_year + " zkteco co., ltd.
+    all rights reserved");
+  favicon_hash: []
+  priority: 3

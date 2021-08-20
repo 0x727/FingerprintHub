@@ -1,0 +1,16 @@
+name: ultra_electronics
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /preauth/login.cgi
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /preauth/style.css
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,24 @@
+name: clipbucket
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- clipbucket
+  - content="clipbucket
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- forged by clipbucket
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://clip-bucket.com/">clipbucket
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: synology-dms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="logo-synology"
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="logo-dsm"
+  favicon_hash: []
+  priority: 3

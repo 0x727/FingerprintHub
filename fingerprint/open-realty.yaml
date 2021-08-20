@@ -1,0 +1,16 @@
+name: open-realty
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="open-realty
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.open-realty.org" title="powered by open-realty
+  favicon_hash: []
+  priority: 3

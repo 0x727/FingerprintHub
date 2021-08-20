@@ -1,0 +1,9 @@
+name: emc-onefs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/onefs/styles/onefs.css
+  favicon_hash: []
+  priority: 1

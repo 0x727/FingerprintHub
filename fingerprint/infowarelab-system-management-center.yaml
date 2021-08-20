@@ -1,0 +1,10 @@
+name: infowarelab-system-management-center
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div class="main_supporterbar">
+  - class="main_loginbar
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: slideshowpro-director
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div id="simple-footer"><span>slideshowpro director
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - </div> <!--close login-container--></body>
+  favicon_hash: []
+  priority: 3

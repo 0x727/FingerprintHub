@@ -1,0 +1,9 @@
+name: asterisk
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - asterisk_rawmanpath
+  favicon_hash: []
+  priority: 2

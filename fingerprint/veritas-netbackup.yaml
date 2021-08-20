@@ -1,0 +1,9 @@
+name: veritas-netbackup
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="/opscenter/features/common/images/favicon.ico"
+  favicon_hash: []
+  priority: 3

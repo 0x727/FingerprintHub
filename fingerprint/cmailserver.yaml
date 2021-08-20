@@ -1,0 +1,16 @@
+name: cmailserver
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <font size=2>username ( contatto email )</font>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <input type=checkbox name="saveuserpass
+  favicon_hash: []
+  priority: 3

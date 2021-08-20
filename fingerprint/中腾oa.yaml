@@ -1,0 +1,11 @@
+name: 中腾oa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - login
+  - systemAction
+  - zt_webframe
+  favicon_hash: []
+  priority: 1

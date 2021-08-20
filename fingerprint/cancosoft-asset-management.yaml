@@ -1,0 +1,9 @@
+name: cancosoft-asset-management
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var path = "/cassets";
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: nstrong-itmaster
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var base_path = '/stormweb';
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - netstrong
+  favicon_hash: []
+  priority: 3

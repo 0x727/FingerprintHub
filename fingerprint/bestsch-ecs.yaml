@@ -1,0 +1,16 @@
+name: bestsch-ecs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /userfiles/admin/customskin
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/include/ecsserverapi.js
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,17 @@
+name: statusnet
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <p>this site is powered by <a href="http://status.net/">statusnet</a> version
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'it runs the <a href="http://status.net/">statusnet</a> microblogging software,
+    version '
+  favicon_hash: []
+  priority: 3

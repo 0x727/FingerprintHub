@@ -1,0 +1,37 @@
+name: nexus-repository-manager
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <title>Nexus Repository Manager</title>
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ' nexus repository manager'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - progressmessage('initializing ...')
+  favicon_hash: []
+  priority: 3
+- path: /favicon.ico
+  status_code: 0
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 79a95f4f1c2cc36eea51fe66450acfa2
+  priority: 3
+- path: /favicon.ico
+  status_code: 200
+  headers: {}
+  keyword: []
+  favicon_hash:
+  - 0c295d21ff53bdd0a95499db97acf0dd
+  priority: 3

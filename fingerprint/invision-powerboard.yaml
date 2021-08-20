@@ -1,0 +1,9 @@
+name: invision-powerboard
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by <a href="http://www.invisionboard.com
+  favicon_hash: []
+  priority: 3

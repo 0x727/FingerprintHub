@@ -1,0 +1,16 @@
+name: parallels-plesk-panel
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - parallels ip holdings gmbh
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img src="./img/panel-logo.png" alt="parallels plesk panel"></a>
+  favicon_hash: []
+  priority: 3

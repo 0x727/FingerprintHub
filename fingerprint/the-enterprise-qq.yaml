@@ -1,0 +1,16 @@
+name: the-enterprise-qq
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - http://wpa.b.qq.com/cgi/wpa.php
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://wpa.qq.com/
+  favicon_hash: []
+  priority: 2

@@ -1,0 +1,9 @@
+name: uebimiau-webmail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <script type="text/javascript" src="themes/default/js/webmail.js"></script>
+  favicon_hash: []
+  priority: 3

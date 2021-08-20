@@ -1,0 +1,16 @@
+name: zhongtan-ndstart
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var pubnewsarray
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '<title>南大之星信息发布系统 '
+  favicon_hash: []
+  priority: 3

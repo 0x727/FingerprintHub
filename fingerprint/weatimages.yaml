@@ -1,0 +1,23 @@
+name: weatimages
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="http://nazarkin.name/projects/weatimages
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <meta name="generator" content="weatimages"/>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div align="center" class="weatimages_toppest_navig" style="text-decoration:underline;">
+  favicon_hash: []
+  priority: 3

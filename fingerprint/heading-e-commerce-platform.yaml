@@ -1,0 +1,9 @@
+name: heading-e-commerce-platform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location.replace('/bin/hdnet.dll/login')
+  favicon_hash: []
+  priority: 3

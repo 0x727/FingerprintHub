@@ -1,0 +1,11 @@
+name: 好视通-fastmeeting
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - login/createQRCode.do
+  - resources/commonImage/favicon.ico
+  - 用户登录
+  favicon_hash: []
+  priority: 1

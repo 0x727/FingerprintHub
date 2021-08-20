@@ -1,0 +1,23 @@
+name: shopex
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="shopex
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - '@author litie[aita]shopex.cn'
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - http://www.shopex.cn' target='_blank'
+  favicon_hash: []
+  priority: 3

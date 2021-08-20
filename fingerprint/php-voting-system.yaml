@@ -1,0 +1,17 @@
+name: php-voting-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="http://www.888072.com
+  - content="qq 7000719
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="http://www.vote123.cn
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,16 @@
+name: jive-sbs
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /jive-icons.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="jive-body-formpage
+  favicon_hash: []
+  priority: 3

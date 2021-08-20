@@ -1,0 +1,9 @@
+name: myscada-hmi
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - if(window.__myscadaversion)
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,24 @@
+name: vbulletin
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="vbulletin
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - powered by vbulletin&trade;
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <!-- do not remove this copyright notice -->powered by < a href="https://www.vbulletin.com"
+    id="vbulletinlink">
+  favicon_hash: []
+  priority: 3

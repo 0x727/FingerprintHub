@@ -1,0 +1,23 @@
+name: weiphp
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - 本系统由<a href="http://www.weiphp.cn" target="_blank">weiphp</a>强力驱动
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="weiphp
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /css/weiphp.css
+  favicon_hash: []
+  priority: 3

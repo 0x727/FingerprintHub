@@ -1,0 +1,38 @@
+name: oceansoft
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 江苏欧索软件有限公司
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /ocensoftcomm.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 技术支持：<a href="http://www.oceansoft.com.cn/">
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - aspx/casecenter/acasecenter.aspx?pagetype=sxcx&casetype=sscs&casename=
+  - href="/e/action/listinfo/?
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 江苏欧索
+  favicon_hash: []
+  priority: 3

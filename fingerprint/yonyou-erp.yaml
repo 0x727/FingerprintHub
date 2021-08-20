@@ -1,0 +1,16 @@
+name: yonyou-erp
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - login_main_bg
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - login_owner
+  favicon_hash: []
+  priority: 3

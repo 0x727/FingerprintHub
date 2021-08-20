@@ -1,0 +1,23 @@
+name: hiki
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="hiki
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /hiki_base.css
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - by <a href="http://hikiwiki.org/
+  favicon_hash: []
+  priority: 3

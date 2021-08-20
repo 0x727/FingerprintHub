@@ -1,0 +1,9 @@
+name: webpa
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <td align="right"><div id="inst_logo"><img src=
+  favicon_hash: []
+  priority: 3

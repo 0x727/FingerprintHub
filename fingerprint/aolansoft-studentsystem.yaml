@@ -1,0 +1,9 @@
+name: aolansoft-studentsystem
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - vcode.aspx
+  favicon_hash: []
+  priority: 3

@@ -1,0 +1,9 @@
+name: chinatiejun-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - document.domain == "eqs.jztj.net"
+  favicon_hash: []
+  priority: 3

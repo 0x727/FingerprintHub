@@ -1,0 +1,16 @@
+name: mywebsql
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - target="_blank" href="http://mywebsql.net
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'method="post" action="" name="dbform" '
+  favicon_hash: []
+  priority: 3

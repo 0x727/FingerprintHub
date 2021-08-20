@@ -1,0 +1,9 @@
+name: 17mail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - //易企邮正式版发布
+  favicon_hash: []
+  priority: 3

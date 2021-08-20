@@ -1,0 +1,16 @@
+name: diancms
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - diancms_sitename
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - diancms_用户登陆引用
+  favicon_hash: []
+  priority: 3

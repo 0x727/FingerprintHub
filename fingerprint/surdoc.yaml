@@ -1,0 +1,16 @@
+name: surdoc
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h1>欢迎使用360书生云盘！</h1>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <p>copyright@2016 pan.surdoc.net all rights</p>
+  favicon_hash: []
+  priority: 3

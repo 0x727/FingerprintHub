@@ -1,0 +1,9 @@
+name: youngzsoft-dbmail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.dbmailserver.com" target=_blank
+  favicon_hash: []
+  priority: 3

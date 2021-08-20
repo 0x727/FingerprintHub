@@ -1,0 +1,16 @@
+name: silverstripe
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - framework/javascript/htmleditorfield.js
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="silverstripe/
+  favicon_hash: []
+  priority: 3

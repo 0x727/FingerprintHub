@@ -1,0 +1,30 @@
+name: jira
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Location: /secure/SetupMode!default.jspa
+  keyword: []
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - jira.webresources
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - ams-build-number
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - com.atlassian.plugins
+  favicon_hash: []
+  priority: 3

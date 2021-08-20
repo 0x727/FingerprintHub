@@ -1,0 +1,9 @@
+name: open-blog
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - target="_blank">open blog
+  favicon_hash: []
+  priority: 3

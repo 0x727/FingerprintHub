@@ -1,0 +1,9 @@
+name: apereo-cas
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - cas &#8211; central authentication service
+  favicon_hash: []
+  priority: 3

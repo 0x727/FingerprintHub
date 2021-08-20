@@ -1,0 +1,9 @@
+name: alliance-web-platform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location = "/swp/group/admin";
+  favicon_hash: []
+  priority: 2

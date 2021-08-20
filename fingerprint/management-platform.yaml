@@ -1,0 +1,17 @@
+name: management-platform
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 北京天源迪科信息技术有限公司
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - casloginview
+  - i-verfiy
+  favicon_hash: []
+  priority: 3

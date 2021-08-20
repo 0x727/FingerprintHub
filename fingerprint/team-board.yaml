@@ -1,0 +1,23 @@
+name: team-board
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <a href="licence.asp"><b style='color:#ff9900'>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 'href=http://www.team5.cn"><b>team '
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - team5.cn by daymoon
+  favicon_hash: []
+  priority: 3

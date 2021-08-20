@@ -1,0 +1,9 @@
+name: business-paperless-system
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - //获取营业台席pc机 ip地址 mac地址
+  favicon_hash: []
+  priority: 3

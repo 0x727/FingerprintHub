@@ -1,0 +1,9 @@
+name: 华天动力协同oa办公系统
+fingerprint:
+- path: /
+  status_code: 200
+  headers: {}
+  keyword:
+  - /OAapp/WebObjects/OAapp.woa
+  favicon_hash: []
+  priority: 3

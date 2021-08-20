@@ -1,0 +1,9 @@
+name: rising-antivirus-wall
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/index.php" onsubmit="return checkfrm(this);
+  favicon_hash: []
+  priority: 3

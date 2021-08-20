@@ -1,0 +1,16 @@
+name: citrix-netscaler
+fingerprint:
+- path: /
+  status_code: 0
+  headers:
+    Set-Cookie: citrix_ns_id
+  keyword: []
+  favicon_hash: []
+  priority: 2
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - netscape/firefox/opera
+  favicon_hash: []
+  priority: 2

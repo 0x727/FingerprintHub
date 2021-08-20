@@ -1,0 +1,9 @@
+name: anneca-intouch-crm
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.anneca.cz"
+  favicon_hash: []
+  priority: 3

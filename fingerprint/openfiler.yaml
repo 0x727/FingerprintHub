@@ -1,0 +1,16 @@
+name: openfiler
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="http://www.openfiler.com/">openfiler
+  favicon_hash: []
+  priority: 1
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - </strong>openfiler nas/san appliance
+  favicon_hash: []
+  priority: 1

@@ -1,0 +1,16 @@
+name: wackopicko
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h2>welcome to wackopicko</h2>
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <h1 id="title"><a href="/">wackopicko.com</a></h1>
+  favicon_hash: []
+  priority: 3

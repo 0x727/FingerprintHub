@@ -1,0 +1,17 @@
+name: webissues
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div id="header-right">webissues
+  favicon_hash: []
+  priority: 3
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <div><input type="hidden" name="__formid" id="field-login-__formid" value="login"
+    />
+  favicon_hash: []
+  priority: 3
