@@ -4,6 +4,6 @@ fingerprint:
   status_code: 200
   headers: {}
   keyword:
-  - <meta name="author" content="Portainer.io" />
+  - content="Portainer.io"
   favicon_hash: []
   priority: 1

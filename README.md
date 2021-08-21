@@ -15,7 +15,7 @@ fingerprint:
   keyword:
   - Swagger UI
   favicon_hash: []
-  priority: 3
+  priority: 2
 - path: /
   status_code: 0
   headers: {}
@@ -37,8 +37,8 @@ fingerprint:
 | path         | String                 | HTTP请求的路径                                               |
 | status_code  | u32                    | 响应状态码，不匹配可以填0                                    |
 | headers      | HashMap<String,String> | 相应的请求头，以键值对出现                                   |
-| keyword      | Vec<String>            | 响应的HTML关键词数组，可以添加多个提高识别精度               |
-| favicon_hash | HashSet<String>        | 网页图标的MD5或者MMH3哈希，会与响应中的哈希取并集            |
+| keyword      | Vec<String>            | 响应的HTML关键词数组，可以添加多个关键词提高识别精度         |
+| favicon_hash | HashSet<String>        | 网页图标的MD5或者MMH3哈希，会与响应中的哈希取并集，yaml规则中表现为列表。 |
 | priority     | u32                    | 优先程度，用来排序是否为重要组件资产，数字越大越重要，可选：1，2，3 |
 
 - 一个`path`为一组指纹，像上面的yaml规则中有三组指纹，只要匹配到了一组，就会返回`name`字段，也就是`swagger`。
@@ -87,7 +87,7 @@ git checkout -b thinkphp
 - 跟踪修改和提交Pull-Requests，合并指纹。
 
 ```
-git add 你添加的文件名
+git add 你添加或者修改的文件名
 git commit -m "添加的组件名或者你的描述"
 git push origin thinkphp
 ```

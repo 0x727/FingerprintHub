@@ -1,0 +1,46 @@
+name: 📝 FingerPrint Update
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check out code
+        uses: actions/checkout@master
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.7.7"
+
+      - name: Update FingerPrint
+        id: update-fingerprint
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyYAML
+          python auto_update.py
+          find . -path "*.pyc" -delete
+          echo "::set-output name=changes::$(git status -s | wc -l)"
+
+      - name: Commit files
+        if: steps.update-readme.outputs.changes > 0
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Auto Update FingerPrint [$(date)] :robot:" -a
+
+      - name: Push changes
+        if: steps.update-readme.outputs.changes > 0
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
