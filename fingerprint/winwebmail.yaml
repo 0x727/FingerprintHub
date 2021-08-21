@@ -25,13 +25,6 @@ fingerprint:
   status_code: 0
   headers: {}
   keyword:
-  - onclick="this.style.behavior='url(#default#homepage)';this.sethomepage
-  favicon_hash: []
-  priority: 3
-- path: /
-  status_code: 0
-  headers: {}
-  keyword:
   - type="hidden" name="secex"
   favicon_hash: []
   priority: 3

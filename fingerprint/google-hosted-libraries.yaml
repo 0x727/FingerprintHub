@@ -1,9 +1,0 @@
-name: google-hosted-libraries
-fingerprint:
-- path: /
-  status_code: 0
-  headers: {}
-  keyword:
-  - ajax.googleapis.com/ajax/libs
-  favicon_hash: []
-  priority: 2
