@@ -39,6 +39,7 @@ def fingerprint_json_generator(path):
     fingerprint_all_dict = {}
     for site, site_list, file_list in os.walk(path):
         for file_name in file_list:
+            print(file_name)
             abs_filename = os.path.abspath(os.path.join(site, file_name))
             with open(abs_filename) as y:
                 y_dict = yaml.safe_load(y)
