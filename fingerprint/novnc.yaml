@@ -4,8 +4,6 @@ fingerprint:
   status_code: 0
   headers: {}
   keyword:
-  - <span>no</span>
-  - host
   - noVNC
   favicon_hash: []
   priority: 2
