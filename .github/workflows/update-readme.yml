@@ -40,7 +40,7 @@ jobs:
         id: update-fingerprintV2
         run: |
           go get gopkg.in/yaml.v2
-          go run ./auto_updateV2.go
+          go run .github/script/auto_updateV2.go
 
       - name: Commit files
         if: steps.update-fingerprint.outputs.changes > 0
