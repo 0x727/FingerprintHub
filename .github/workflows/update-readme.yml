@@ -39,7 +39,7 @@ jobs:
       - name: Update FingerPrintV2
         id: update-fingerprintV2
         run: |
-          go mod tidy
+          go mod download gopkg.in/yaml.v2
           go run .github/script/auto_updateV2.go
 
       - name: Commit files
