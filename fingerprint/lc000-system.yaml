@@ -7,10 +7,3 @@ fingerprint:
   - <title>secondary_nodes</title>
   favicon_hash: []
   priority: 3
-- path: /
-  status_code: 0
-  headers: {}
-  keyword:
-  - cdn.jsdelivr.net/npm/vue
-  favicon_hash: []
-  priority: 3
