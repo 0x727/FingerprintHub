@@ -43,7 +43,7 @@ func readYamlFile(path string)(finger FingerInfo){
 func main() {
 	var Fingerprints  []FingerInfo
 	path, _ := os.Getwd()
-	path = filepath.Join(path,"../../fingerprint")
+	path = filepath.Join(path,"fingerprint")
 	files,err := os.ReadDir(path)
 	if err != nil{
 		log.Fatalln(err)
@@ -64,5 +64,6 @@ func main() {
 	}
 
 	result , _ := json.Marshal(Fingerprints)
-	ioutil.WriteFile("../../web_fingerprint_v2.json",result,0777)
+	log.Println("[+]",filepath.Join(path))
+	ioutil.WriteFile("./web_fingerprint_v2.json",result,0777)
 }
