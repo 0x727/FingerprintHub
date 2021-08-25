@@ -21,6 +21,12 @@ jobs:
         with:
           python-version: "3.7.7"
 
+      - name: Update FingerPrintV2
+          uses: actions/setup-go@v2
+          with:
+            go-version: 1.16.4
+          id: go
+
       - name: Update FingerPrint
         id: update-fingerprint
         run: |
@@ -29,6 +35,13 @@ jobs:
           python .github/script/auto_update.py
           find . -path "*.pyc" -delete
           echo "::set-output name=changes::$(git status -s | wc -l)"
+
+      - name: Update FingerPrintV2
+          id: update-fingerprintV2
+          run: |
+            cd ./github/script/
+            go mod tidy
+            go run ./auto_updateV2.go
 
       - name: Commit files
         if: steps.update-fingerprint.outputs.changes > 0
