@@ -38,7 +38,7 @@ def valid_fingerprint(rule):
 
 def valid_fingerprint_v2(rule):
     fields = {'path': '/', 'status_code': 0, 'keyword': [], 'headers': {}, 'favicon_hash': [],
-              'priority': 1, 'request_method': 'get', 'request_header': {}, 'request_data': ''}
+              'priority': 1, 'request_method': 'get', 'request_header': {}, 'request_data': None}
     for key in list(rule):
         if key not in fields:
             rule.pop(key)
