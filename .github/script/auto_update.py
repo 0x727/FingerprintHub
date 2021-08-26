@@ -45,6 +45,8 @@ def valid_fingerprint_v2(rule):
     for key in fields:
         if key not in rule:
             rule[key] = fields[key]
+        if key == 'request_data' and rule['request_data'] == '':
+            rule[key] = fields[key]
     return rule
 
 
@@ -70,6 +72,10 @@ def fingerprint_json_generator(path):
                             if valid_rule not in rules:
                                 rules.append(valid_rule)
                                 fingerprint_all_dict[path] = rules
+    for k in list(fingerprint_all_dict):
+        unsorted_fingerprint = fingerprint_all_dict[k]
+        sorted_fingerprint = sorted(unsorted_fingerprint, key=itemgetter('name'))
+        fingerprint_all_dict[k] = sorted_fingerprint
     web_fingerprint = dict(sorted(fingerprint_all_dict.items()))
     with open("web_fingerprint.json", 'w') as wfp:
         json.dump(web_fingerprint, wfp)
@@ -80,7 +86,6 @@ def fingerprint_json_generator_v2(path):
     fingerprint_all_dict = []
     for site, site_list, file_list in os.walk(path):
         for file_name in file_list:
-            print(file_name)
             abs_filename = os.path.abspath(os.path.join(site, file_name))
             with open(abs_filename) as y:
                 y_dict = yaml.safe_load(y)

@@ -9,7 +9,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /
   status_code: 200
   headers: {}
@@ -19,7 +19,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /
   status_code: 0
   headers: {}
@@ -29,7 +29,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /
   status_code: 0
   headers: {}
@@ -39,7 +39,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /
   status_code: 0
   headers: {}
@@ -50,7 +50,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /
   status_code: 0
   headers: {}
@@ -60,7 +60,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /
   status_code: 0
   headers: {}
@@ -70,7 +70,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /
   status_code: 0
   headers: {}
@@ -80,7 +80,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /
   status_code: 0
   headers: {}
@@ -90,7 +90,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /
   status_code: 0
   headers: {}
@@ -100,7 +100,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /default/login_btn.png
   status_code: 0
   headers: {}
@@ -110,7 +110,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -120,7 +120,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /images/tongda.ico
   status_code: 0
   headers: {}
@@ -130,7 +130,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /images/tongda.ico
   status_code: 0
   headers: {}
@@ -140,7 +140,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
 - path: /static/images/tongda.ico
   status_code: 0
   headers: {}
@@ -150,4 +150,4 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null

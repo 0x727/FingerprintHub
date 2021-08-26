@@ -5,7 +5,7 @@ fingerprint:
   request_method: post
   request_header:
     Set-Cookie: rememberMe=deleteMe
-  request_data: ''
+  request_data: null
   headers:
     Set-Cookie: rememberMe=deleteMe
   keyword: []
@@ -20,4 +20,4 @@ fingerprint:
   priority: 2
   request_method: get
   request_header: {}
-  request_data: ''
+  request_data: null
