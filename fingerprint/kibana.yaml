@@ -1,7 +1,7 @@
 name: kibana
 fingerprint:
-- path: /yunsee_not_found_test
-  status_code: 302
+- path: /
+  status_code: 0
   headers:
     kbn-name: kibana
   keyword: []

@@ -1,6 +1,6 @@
 name: minio
 fingerprint:
-- path: /minio/login
+- path: /
   status_code: 0
   headers: {}
   keyword:

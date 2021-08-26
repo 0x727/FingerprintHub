@@ -1,6 +1,6 @@
 name: 用友-turbocrm
 fingerprint:
-- path: /login/login.php
+- path: /
   status_code: 200
   headers: {}
   keyword:

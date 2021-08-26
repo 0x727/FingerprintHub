@@ -1,6 +1,6 @@
 name: mongodb
 fingerprint:
-- path: /yunsee_not_found_test
+- path: /
   status_code: 0
   headers: {}
   keyword:

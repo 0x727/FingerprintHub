@@ -1,6 +1,6 @@
 name: apache-axis
 fingerprint:
-- path: /axis2/services/Cat/getClassPath
+- path: /
   status_code: 0
   headers: {}
   keyword:

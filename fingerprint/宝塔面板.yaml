@@ -31,7 +31,7 @@ fingerprint:
   request_method: get
   request_data: ''
   request_headers: {}
-- path: /login
+- path: /
   status_code: 200
   headers: {}
   keyword:

@@ -40,8 +40,8 @@ fingerprint:
   request_method: get
   request_data: ''
   request_headers: {}
-- path: /yunsee_not_found_test
-  status_code: 404
+- path: /
+  status_code: 0
   headers: {}
   keyword:
   - <a title="官方网站" href="http://www.thinkcmf.com">ThinkCMF</a>

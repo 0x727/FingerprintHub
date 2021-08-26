@@ -30,13 +30,3 @@ fingerprint:
   request_method: get
   request_data: ''
   request_headers: {}
-- path: /yunsee_not_found_test
-  status_code: 404
-  headers: {}
-  keyword:
-  - Airflow 404 = lots of circles
-  favicon_hash: []
-  priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}
