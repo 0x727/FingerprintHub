@@ -8,8 +8,8 @@ fingerprint:
   favicon_hash: []
   priority: 1
   request_method: get
-  request_header: {}
   request_data: ''
+  request_headers: {}
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -18,5 +18,5 @@ fingerprint:
   - 13c7b63d568edb7bd89f5fe6c6627118
   priority: 1
   request_method: get
-  request_header: {}
   request_data: ''
+  request_headers: {}

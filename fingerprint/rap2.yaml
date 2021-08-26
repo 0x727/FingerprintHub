@@ -8,5 +8,5 @@ fingerprint:
   - 5c16c9e452d2974a1c14887032c86c5d
   priority: 1
   request_method: get
-  request_header: {}
   request_data: ''
+  request_headers: {}

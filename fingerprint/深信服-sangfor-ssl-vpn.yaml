@@ -8,8 +8,8 @@ fingerprint:
   favicon_hash: []
   priority: 3
   request_method: get
-  request_header: {}
   request_data: ''
+  request_headers: {}
 - path: /
   status_code: 0
   headers: {}
@@ -18,8 +18,8 @@ fingerprint:
   favicon_hash: []
   priority: 3
   request_method: get
-  request_header: {}
   request_data: ''
+  request_headers: {}
 - path: /
   status_code: 0
   headers: {}
@@ -30,8 +30,8 @@ fingerprint:
   favicon_hash: []
   priority: 3
   request_method: get
-  request_header: {}
   request_data: ''
+  request_headers: {}
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -40,5 +40,5 @@ fingerprint:
   - 0b24d4d5c7d300d50ee1cd96059a9e85
   priority: 3
   request_method: get
-  request_header: {}
   request_data: ''
+  request_headers: {}
