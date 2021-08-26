@@ -54,7 +54,6 @@ def fingerprint_json_generator(path):
     fingerprint_all_dict = {}
     for site, site_list, file_list in os.walk(path):
         for file_name in file_list:
-            print(file_name)
             abs_filename = os.path.abspath(os.path.join(site, file_name))
             with open(abs_filename) as y:
                 y_dict = yaml.safe_load(y)
@@ -83,14 +82,18 @@ def fingerprint_json_generator(path):
 
 
 def fingerprint_json_generator_v2(path):
-    fingerprint_all_dict = []
+    fingerprint_all_list = []
     for site, site_list, file_list in os.walk(path):
         for file_name in file_list:
             abs_filename = os.path.abspath(os.path.join(site, file_name))
             with open(abs_filename) as y:
                 y_dict = yaml.safe_load(y)
-                fingerprint_all_dict.append(y_dict)
-    web_fingerprint = sorted(fingerprint_all_dict, key=itemgetter('name'))
+                fingerprint_rules_origin = y_dict.get('fingerprint', [])
+                for fingerprint in fingerprint_rules_origin:
+                    valid_rule = valid_fingerprint_v2(fingerprint)
+                    valid_rule['name'] = y_dict.get('name')
+                    fingerprint_all_list.append(valid_rule)
+    web_fingerprint = sorted(fingerprint_all_list, key=itemgetter('name'))
     with open("web_fingerprint_v2.json", 'w') as wfp:
         json.dump(web_fingerprint, wfp)
     return web_fingerprint
