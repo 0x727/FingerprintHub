@@ -7,6 +7,9 @@ fingerprint:
   - class="copyright">powered by <a href="http://www.we7.cc"><b>微擎</b>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,6 +18,9 @@ fingerprint:
   - onsubmit="return formcheck();" class="we7-form">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,3 +28,6 @@ fingerprint:
   - powered by we7.cc
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

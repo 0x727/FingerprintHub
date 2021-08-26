@@ -7,3 +7,6 @@ fingerprint:
   - https://www.adminer.org
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - id="com_raisecom_ums_aos_portal_login_domain
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

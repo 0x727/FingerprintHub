@@ -8,6 +8,9 @@ fingerprint:
   - PassWord.aspx
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,6 +18,9 @@ fingerprint:
   - js/passwordcommon.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,6 +28,9 @@ fingerprint:
   - js/passwordnew.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -29,6 +38,9 @@ fingerprint:
   - jinher network
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -37,3 +49,6 @@ fingerprint:
   - closewindownoask
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

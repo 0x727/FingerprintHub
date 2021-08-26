@@ -7,3 +7,6 @@ fingerprint:
   - /nc/servlet/nc.ui.iufo.login.index
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - document.writeln("（温馨提示：此处为志高美萍分支机构联系方式，志高美萍总部联系方式请点击<a href='javascript:var
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

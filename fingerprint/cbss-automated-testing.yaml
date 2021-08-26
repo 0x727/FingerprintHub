@@ -7,3 +7,6 @@ fingerprint:
   - <p>copyright&copy cbss 项目组 自动化测试小组</p>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

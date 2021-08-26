@@ -7,6 +7,9 @@ fingerprint:
   - action='/mas_security_check'>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - if(!isnotnull(document.forms[0].filepath.value, "证书文件"))
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

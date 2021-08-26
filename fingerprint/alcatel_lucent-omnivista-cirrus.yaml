@@ -7,3 +7,6 @@ fingerprint:
   - /help/en-us/others/ov-cirrus_cookiepolicy.html
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - h3 bpm suite信息化的最佳实践
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

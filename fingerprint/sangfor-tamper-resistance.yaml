@@ -7,6 +7,9 @@ fingerprint:
   - <li style="color:#999999;margin-left:6px;list-style:circle inside;">如忘记密码，请与防火墙管理员联系</li>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - href="tamper/style/control.css"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

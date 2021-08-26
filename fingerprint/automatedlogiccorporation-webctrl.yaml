@@ -7,3 +7,6 @@ fingerprint:
   - href="/_common/lvl5/about/eula.jsp"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

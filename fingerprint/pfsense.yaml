@@ -7,6 +7,9 @@ fingerprint:
   - rubicon communications, llc (netgate)
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - <h4>login to pfsense</h4>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

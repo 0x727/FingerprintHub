@@ -7,3 +7,6 @@ fingerprint:
   - '<strong>we''re sorry but ikuai cloud platform doesn''t '
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - /seeyon/USER-DATA/IMAGES/LOGIN/login.gif
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - /seeyon/common/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - M3 Server
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   - M1-Server
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -35,6 +47,9 @@ fingerprint:
   - /seeyon/user-data/images/login/login.gif
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -43,6 +58,9 @@ fingerprint:
   - seeyonproductid
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -50,6 +68,9 @@ fingerprint:
   - var _ctxpath = '/seeyon'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -57,6 +78,9 @@ fingerprint:
   - a8-v5企业版
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -64,6 +88,9 @@ fingerprint:
   - /seeyon/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -71,6 +98,9 @@ fingerprint:
   favicon_hash:
   - cdc85452665e7708caed3009ecb7d4e2
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -78,6 +108,9 @@ fingerprint:
   favicon_hash:
   - 57f307ad3764553df84e7b14b7a85432
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -85,6 +118,9 @@ fingerprint:
   favicon_hash:
   - 17ac348fcce0b320e7bfab3fe2858dfa
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -92,6 +128,9 @@ fingerprint:
   favicon_hash:
   - 3c8df395ec2cbd72782286d18a286a9a
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -99,6 +138,9 @@ fingerprint:
   favicon_hash:
   - 055c3de1ef212cc16bec218c3ae08ca7
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -106,6 +148,9 @@ fingerprint:
   favicon_hash:
   - 2f761c27b6b7f9386bbd61403635dc42
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /seeyon/common/images/A8/favicon.ico
   status_code: 0
   headers: {}
@@ -113,3 +158,6 @@ fingerprint:
   favicon_hash:
   - cdc85452665e7708caed3009ecb7d4e2
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

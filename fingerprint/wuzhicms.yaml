@@ -7,6 +7,9 @@ fingerprint:
   - <meta name="generator" content="wuzhicms
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,3 +18,6 @@ fingerprint:
   - powered by wuzhicms
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

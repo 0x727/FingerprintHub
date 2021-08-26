@@ -7,6 +7,9 @@ fingerprint:
   - <meta name="author" content="spiceworks, inc." />
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <link href="/stylesheets/general.css?
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - <h1><img alt="spiceworks" src="/images/logos/large.png
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - class="empty_inner
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - class="flink">mibew messenger
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

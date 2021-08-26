@@ -7,6 +7,9 @@ fingerprint:
   - href="/static/images/tongda.ico"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 200
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <a href='http://www.tongda2000.com/' target='_black'>通达官网</a>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - /images/tongda.ico
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   - Office Anywhere
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -36,6 +48,9 @@ fingerprint:
   - tongda2000
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -43,6 +58,9 @@ fingerprint:
   - /static/templates/2013_01/index.css/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -50,6 +68,9 @@ fingerprint:
   - javascript:document.form1.uname.focus()
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -57,6 +78,9 @@ fingerprint:
   - <link rel="shortcut icon" href="/images/tongda.ico" />
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -64,6 +88,9 @@ fingerprint:
   - oa提示：不能登录oa
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -71,6 +98,9 @@ fingerprint:
   - 紧急通知：今日10点停电
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /default/login_btn.png
   status_code: 0
   headers: {}
@@ -78,6 +108,9 @@ fingerprint:
   favicon_hash:
   - 4d94103aa03e2a9af93030d7b1415b3b
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -85,6 +118,9 @@ fingerprint:
   favicon_hash:
   - ed0044587917c76d08573577c8b72883
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /images/tongda.ico
   status_code: 0
   headers: {}
@@ -92,6 +128,9 @@ fingerprint:
   favicon_hash:
   - c615668494a4cc54601a06976c9ea408
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /images/tongda.ico
   status_code: 0
   headers: {}
@@ -99,6 +138,9 @@ fingerprint:
   favicon_hash:
   - ab93346c1650acf2f16328fa41caf425
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /static/images/tongda.ico
   status_code: 0
   headers: {}
@@ -106,3 +148,6 @@ fingerprint:
   favicon_hash:
   - 1205af91d6b1638c23de1132ae0c7e0b
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

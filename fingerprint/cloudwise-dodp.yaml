@@ -7,3 +7,6 @@ fingerprint:
   - /public/vendor/monaco/vs/loader.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

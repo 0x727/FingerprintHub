@@ -7,6 +7,9 @@ fingerprint:
   - <font>兰眼下一代威胁感知系统</font>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - /skin/admin/img/login/laneye.png
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - href="javascript:update_news('board/noticelist.jsp')
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

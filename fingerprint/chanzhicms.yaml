@@ -7,6 +7,9 @@ fingerprint:
   - title='cms系统，首选蝉知cms
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - chanzhi.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - poweredby'><a href='http://www.chanzhi.org
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

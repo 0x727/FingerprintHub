@@ -7,3 +7,6 @@ fingerprint:
   - parent.main.location = urlnonst + "?nst=" + top.menu.securitytoken
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

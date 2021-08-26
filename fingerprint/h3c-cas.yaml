@@ -7,3 +7,6 @@ fingerprint:
   - href="cas.css
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - 'id=mtokenplugin width=0 height=0 style="position: absolute;left: 0px; top: 0px"'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - ng-app="esxuiapp"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <title ng-bind="$root.title">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /ui/favicon.ico
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   favicon_hash:
   - 7815e1b305fb71ef41119c3c38b7fd17
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

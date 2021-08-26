@@ -7,3 +7,6 @@ fingerprint:
   - onmouseout="this.classname='btn btnoff'"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - /imc/login.jsf
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - imc来宾接入自助管理系统
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - login_logo_h3c.png.jsf
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   - com_h3c_imc_usr_usermgr_alluser_overlaydiv
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -35,6 +47,9 @@ fingerprint:
   - action="/imc/login.jsf
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -42,6 +57,9 @@ fingerprint:
   - src="/imc/javax.faces.resource/images/login_logo_h3c.png.jsf?ln=primefaces-imc-new-webui
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -49,6 +67,9 @@ fingerprint:
   - <span class="cmn_mn_normalfont">h3c 智能管理中心
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -57,6 +78,9 @@ fingerprint:
   - src="/imc/faces/extensionresource/com.h3c.imc.component.util.extensionresourceloader/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -64,3 +88,6 @@ fingerprint:
   - href="/selfservice/javax.faces.resource/theme.css.xhtml?ln=primefaces-imc-classic-blue"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

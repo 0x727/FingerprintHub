@@ -7,3 +7,6 @@ fingerprint:
   - href="xmsenv.exe">系统运行环境
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

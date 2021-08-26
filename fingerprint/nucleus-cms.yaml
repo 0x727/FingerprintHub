@@ -7,6 +7,9 @@ fingerprint:
   - target="_blank">nucleus cms
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - nucleus_lf_name
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - title="nucleus" href="http://nucleuscms.org/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

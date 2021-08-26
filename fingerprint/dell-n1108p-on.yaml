@@ -7,3 +7,6 @@ fingerprint:
   - class="login_server_default">n1108p-on
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

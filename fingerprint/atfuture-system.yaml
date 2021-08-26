@@ -7,3 +7,6 @@ fingerprint:
   - /content/web/theme/skin01/img/p_login_logo01.png
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -8,6 +8,9 @@ fingerprint:
   keyword: []
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,6 +18,9 @@ fingerprint:
   - <!-- owapage = asp.auth_logon_aspx
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,6 +28,9 @@ fingerprint:
   - /exchweb/bin/auth/owalogon.asp
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -29,6 +38,9 @@ fingerprint:
   - /exchweb/bin/auth/owalogon.asp?url=
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -36,6 +48,9 @@ fingerprint:
   - href="/owa/auth/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -43,6 +58,9 @@ fingerprint:
   - window.location.replace("/owa/" + window.location.hash);</script></head><body></body>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -50,6 +68,9 @@ fingerprint:
   - <meta http-equiv="refresh" contect="0;url=/owa">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -57,6 +78,9 @@ fingerprint:
   - themes/resources/segoeui-semibold.ttf
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -65,6 +89,9 @@ fingerprint:
   - owalogocontainer
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -73,6 +100,9 @@ fingerprint:
   - owapage = asp.auth_logon_aspx
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -81,6 +111,9 @@ fingerprint:
   - showpasswordcheck
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -88,3 +121,6 @@ fingerprint:
   - outlook
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

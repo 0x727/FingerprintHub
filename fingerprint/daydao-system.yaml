@@ -7,3 +7,6 @@ fingerprint:
   - $(document).attr("title","我被修改啦.哈哈"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

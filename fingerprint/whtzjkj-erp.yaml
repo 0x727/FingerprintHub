@@ -7,3 +7,6 @@ fingerprint:
   - href="/content/home/tzjlog.ico"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - sugar.themes.theme_name = 'suitep'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - sugar.themes.theme_name      = 'suiter'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - src="img/suitecrm.png" alt="bitnami suitecrm stack"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   - supercharged by suitecrm
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -35,6 +47,9 @@ fingerprint:
   - src="custom/themes/default/images/company_logo.png
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -42,6 +57,9 @@ fingerprint:
   - alt="suitecrm"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers:
@@ -49,3 +67,6 @@ fingerprint:
   keyword: []
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

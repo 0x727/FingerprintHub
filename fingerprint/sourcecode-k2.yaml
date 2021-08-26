@@ -7,6 +7,9 @@ fingerprint:
   - document.getelementbyid("redirectform").action = "../mxworkspace/login.aspx
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - document.getelementbyid("redirectform").action = "../workspace/default.aspx
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - unauthorized activity has been detected.
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

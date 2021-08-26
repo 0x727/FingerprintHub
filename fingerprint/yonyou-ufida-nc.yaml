@@ -8,6 +8,9 @@ fingerprint:
   - ufida_nc.png
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -16,6 +19,9 @@ fingerprint:
   - ufida
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -23,6 +29,9 @@ fingerprint:
   - logo/images/ufida_nc.png
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -30,6 +39,9 @@ fingerprint:
   - <div id="nc_text">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -37,3 +49,6 @@ fingerprint:
   - <div id="nc_img" onmouseover="overimage('nc');
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

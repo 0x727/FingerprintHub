@@ -7,3 +7,6 @@ fingerprint:
   - /plus/laydate/laydate.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

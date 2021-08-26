@@ -7,6 +7,9 @@ fingerprint:
   - pear_frontend_web
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - <img src="?img=pear" width="104" height="50" vspace="2" hspace="5" alt="pear">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

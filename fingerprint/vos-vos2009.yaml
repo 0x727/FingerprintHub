@@ -7,3 +7,6 @@ fingerprint:
   - content="vos2009, voip, voip运营支撑系统, 软交换"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

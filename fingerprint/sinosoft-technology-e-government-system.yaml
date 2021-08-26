@@ -7,6 +7,9 @@ fingerprint:
   - app_themes/1/style.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - window.location = "homepages/index.aspx
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - homepages/content_page.aspx
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

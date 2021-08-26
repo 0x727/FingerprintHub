@@ -7,6 +7,9 @@ fingerprint:
   - /reportCenter/index.php?cls_mode=cluster_mode_others
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   favicon_hash:
   - 98128e625a3b98546a206c2170fb5eb3
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

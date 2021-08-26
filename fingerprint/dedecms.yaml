@@ -7,6 +7,9 @@ fingerprint:
   - <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - power by dedecms
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - http://www.dedecms.com/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -29,6 +38,9 @@ fingerprint:
   - dedecms
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -36,3 +48,6 @@ fingerprint:
   - <div><h3>dedecms error warning!</h3>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

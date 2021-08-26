@@ -7,6 +7,9 @@ fingerprint:
   - <legend><img src="../../content/images/hisense.bmp" style="height:20px; padding-left:-10px"/>webpos登录</legend>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - content/images/hisense.bmp
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

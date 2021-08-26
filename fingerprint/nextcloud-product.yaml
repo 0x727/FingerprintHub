@@ -7,3 +7,6 @@ fingerprint:
   - nextcloud</a> – 给您所有数据一个安全的家
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

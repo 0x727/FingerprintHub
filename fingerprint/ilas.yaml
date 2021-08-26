@@ -7,6 +7,9 @@ fingerprint:
   - <iframe name="content"  src="index_middle.html" frameborder="auto
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - <select id="selprovince"   onchange="getcity(this.options[this.selectedindex].value)">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - 深圳市中兴信息技术有限公司版权所有
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - src="img/gonanlogo.jpg
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

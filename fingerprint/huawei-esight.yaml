@@ -7,6 +7,9 @@ fingerprint:
   - location.replace('login.action?_='+ new date().gettime());
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <body onload="gotologin()">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - esight_login_copy_right_font
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

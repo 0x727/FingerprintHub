@@ -7,3 +7,6 @@ fingerprint:
   - id="ctl00_topcontrol1_lblsitedescription"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

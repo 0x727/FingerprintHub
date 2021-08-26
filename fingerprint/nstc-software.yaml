@@ -7,3 +7,6 @@ fingerprint:
   - skysz.fw.index.validatecodenew = "/loginaction/validatecodenew.html
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

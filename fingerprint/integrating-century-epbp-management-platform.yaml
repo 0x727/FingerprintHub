@@ -7,6 +7,9 @@ fingerprint:
   - rmsie = /(msie\s|trident.*rv:)([\w.]+)/i
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - match = rmsie.exec(window.navigator.useragent
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

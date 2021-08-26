@@ -7,6 +7,9 @@ fingerprint:
   - struts problem report
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - there is no action mapped for namespace
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - no result defined for action and result input
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

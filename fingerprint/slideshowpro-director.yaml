@@ -7,6 +7,9 @@ fingerprint:
   - <div id="simple-footer"><span>slideshowpro director
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - </div> <!--close login-container--></body>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - frmvalidator
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <span class="warn">请您从网易企业邮箱用户登录页登录</span>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,3 +28,6 @@ fingerprint:
   - src="http://mimg.qiye.163.com/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

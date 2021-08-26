@@ -7,3 +7,6 @@ fingerprint:
   - //易企邮正式版发布
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

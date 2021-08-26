@@ -7,3 +7,6 @@ fingerprint:
   - Powered by <a href='http://zzzcms.com'>ZZZcms</a>
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

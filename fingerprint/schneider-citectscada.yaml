@@ -7,6 +7,9 @@ fingerprint:
   - <meta http-equiv="refresh" content="0; url=/citectscada">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -16,3 +19,6 @@ fingerprint:
     allen bradley, allenbradley, citect, citectscada, kingfisher
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

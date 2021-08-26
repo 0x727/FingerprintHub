@@ -7,3 +7,6 @@ fingerprint:
   - 北京众恒志信科技
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

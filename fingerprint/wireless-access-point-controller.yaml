@@ -7,6 +7,9 @@ fingerprint:
   - var oemproductname = "mvc_howay6000"
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <select id = "selclangswitch" class="langswitch" onchange = "switchpagelanguage()">
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - 苏州汉明科技有限公司
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   - var oemproductname = "mvc_howay6100")
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -35,6 +47,9 @@ fingerprint:
   - src="images/acchtext.png"
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -42,3 +57,6 @@ fingerprint:
   - 版权所有 &copy 2009-2017</div>
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

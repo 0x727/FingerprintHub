@@ -7,3 +7,6 @@ fingerprint:
   - 速达软件技术（广州）有限公司
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

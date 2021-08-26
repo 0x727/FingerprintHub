@@ -7,3 +7,6 @@ fingerprint:
   - copyright &copy;  dms  all rights reserved （alibaba 数据管理产品）
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

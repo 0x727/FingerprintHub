@@ -7,6 +7,9 @@ fingerprint:
   - /coremail/bundle/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 200
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <a href="http://www.coremail.cn" target="_blank">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - coremail/common
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   - /coremail/common/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -35,6 +47,9 @@ fingerprint:
   - action="/coremail/index.jsp
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -42,6 +57,9 @@ fingerprint:
   - 'fmt_logoalt: "coremail 电子邮件系统'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -49,3 +67,6 @@ fingerprint:
   favicon_hash:
   - ad74ff8f9a2f630fc2c5e6b3aa0a5cb8
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

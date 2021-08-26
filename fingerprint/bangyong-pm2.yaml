@@ -7,3 +7,6 @@ fingerprint:
   - pm2项目管理系统bs版增强工具.zip
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

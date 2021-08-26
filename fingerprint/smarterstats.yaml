@@ -7,3 +7,6 @@ fingerprint:
   - <td class=bar1inner>smarterstats
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

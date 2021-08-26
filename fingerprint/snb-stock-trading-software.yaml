@@ -7,3 +7,6 @@ fingerprint:
   - copyright 2005–2009 <a href="http://www.s-mo.com">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

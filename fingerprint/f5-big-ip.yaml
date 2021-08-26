@@ -7,3 +7,6 @@ fingerprint:
   favicon_hash:
   - 04d9541338e525258daf47cc844d59f3
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

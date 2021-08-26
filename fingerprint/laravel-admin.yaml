@@ -7,6 +7,9 @@ fingerprint:
   - vendor/laravel-admin/
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - 欢迎登录laravel-admin</p>
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

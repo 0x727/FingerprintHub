@@ -7,6 +7,9 @@ fingerprint:
   - WebLogic
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - Hypertext Transfer Protocol
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - <i>Hypertext Transfer Protocol -- HTTP/1.1</i>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   - /console/framework/skins/wlsconsole/images/login_WebLogic_branding.png
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -35,6 +47,9 @@ fingerprint:
   - Welcome to Weblogic Application Server
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -42,6 +57,9 @@ fingerprint:
   - Error 403--
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -49,6 +67,9 @@ fingerprint:
   - Error 404--Not Found
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /console
   status_code: 0
   headers: {}
@@ -56,3 +77,6 @@ fingerprint:
   - Oracle WebLogic Server
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

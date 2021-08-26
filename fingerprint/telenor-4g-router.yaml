@@ -7,6 +7,9 @@ fingerprint:
   - <form id="default_login" name="default_login" method="post" action="/goform/user_login">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,3 +18,6 @@ fingerprint:
     blocked, please contact the provider
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

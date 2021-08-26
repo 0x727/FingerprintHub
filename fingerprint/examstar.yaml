@@ -7,6 +7,9 @@ fingerprint:
   - /examstar_icon.ico
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - <div class="content-bottom-text">考试星为您提供方便、高效的考试服务</div>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

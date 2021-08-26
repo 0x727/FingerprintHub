@@ -7,3 +7,6 @@ fingerprint:
   - for="ctl00_cph_l_login_username">crm帐号
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

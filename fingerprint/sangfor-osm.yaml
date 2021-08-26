@@ -7,3 +7,6 @@ fingerprint:
   - window.location.href="https://"+window.location.host+"/fort/login
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

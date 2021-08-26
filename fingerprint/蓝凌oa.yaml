@@ -8,6 +8,9 @@ fingerprint:
   - lui_login_button_div_c
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -16,6 +19,9 @@ fingerprint:
   - sys/ui/extend/theme/default/style/profile.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -23,6 +29,9 @@ fingerprint:
   - 蓝凌软件
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -31,6 +40,9 @@ fingerprint:
   - lui_login_message_td
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -38,6 +50,9 @@ fingerprint:
   - /scripts/jquery.landray.common.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -45,6 +60,9 @@ fingerprint:
   - v11_qrcodebar clr
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -52,3 +70,6 @@ fingerprint:
   favicon_hash:
   - 302464c3f6207d57240649926cfc7bd4
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

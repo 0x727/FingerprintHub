@@ -7,6 +7,9 @@ fingerprint:
   - j_setcon j_sub_new j_padt30 j_padb30
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - <!-- 记录当前电视墙的序号 end-->
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

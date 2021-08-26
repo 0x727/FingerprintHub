@@ -7,6 +7,9 @@ fingerprint:
   - action="/datacenter/authentication/login.do" method="post
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - location.href=contextpath+"/login/password/password.jsp
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,3 +28,6 @@ fingerprint:
   - var contextpath = "/datacenter
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

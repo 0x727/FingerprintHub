@@ -7,6 +7,9 @@ fingerprint:
   - src="/design/common/his.logo.white.svg" alt="his logo
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - href="/design/design/cloodie.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

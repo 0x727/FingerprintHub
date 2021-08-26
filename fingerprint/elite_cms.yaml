@@ -7,3 +7,6 @@ fingerprint:
   - copyright &copy; 2003 - 2017 <a href="http://www.elite-is.com/cmhome.asp
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

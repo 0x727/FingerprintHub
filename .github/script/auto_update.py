@@ -1,7 +1,8 @@
+import base64
 import json
 import re
 import string
-from pathlib import Path
+from operator import itemgetter
 import yaml
 import os
 
@@ -35,6 +36,18 @@ def valid_fingerprint(rule):
         return None
 
 
+def valid_fingerprint_v2(rule):
+    fields = {'path': '/', 'status_code': 0, 'keyword': [], 'headers': {}, 'favicon_hash': [],
+              'priority': 1, 'request_method': 'get', 'request_header': {}, 'request_data': ''}
+    for key in list(rule):
+        if key not in fields:
+            rule.pop(key)
+    for key in fields:
+        if key not in rule:
+            rule[key] = fields[key]
+    return rule
+
+
 def fingerprint_json_generator(path):
     fingerprint_all_dict = {}
     for site, site_list, file_list in os.walk(path):
@@ -63,4 +76,38 @@ def fingerprint_json_generator(path):
     return web_fingerprint
 
 
+def fingerprint_json_generator_v2(path):
+    fingerprint_all_dict = []
+    for site, site_list, file_list in os.walk(path):
+        for file_name in file_list:
+            print(file_name)
+            abs_filename = os.path.abspath(os.path.join(site, file_name))
+            with open(abs_filename) as y:
+                y_dict = yaml.safe_load(y)
+                fingerprint_all_dict.append(y_dict)
+    web_fingerprint = sorted(fingerprint_all_dict, key=itemgetter('name'))
+    with open("web_fingerprint_v2.json", 'w') as wfp:
+        json.dump(web_fingerprint, wfp)
+    return web_fingerprint
+
+
+def update_yaml(path):
+    for site, site_list, file_list in os.walk(path):
+        for file_name in file_list:
+            abs_filename = os.path.abspath(os.path.join(site, file_name))
+            fingerprint_rules = []
+            with open(abs_filename) as y:
+                y_dict = yaml.safe_load(y)
+                fingerprint_rules_origin = y_dict.get('fingerprint', [])
+                for fingerprint in fingerprint_rules_origin:
+                    valid_rule = valid_fingerprint_v2(fingerprint)
+                    fingerprint_rules.append(valid_rule)
+                y_dict['fingerprint'] = fingerprint_rules
+                wfp_y = yaml.safe_dump(y_dict, sort_keys=False, allow_unicode=True, default_flow_style=False)
+                with open(abs_filename, "w") as y:
+                    y.write(wfp_y)
+
+
+update_yaml("fingerprint")
+fingerprint_json_generator_v2("fingerprint")
 fingerprint_json_generator("fingerprint")

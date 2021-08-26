@@ -7,3 +7,6 @@ fingerprint:
   - class="utt-inline-block" src="./images/login_btmlogo.png"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

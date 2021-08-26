@@ -7,6 +7,9 @@ fingerprint:
   - <img src="https://app.bt.cn/static/app.png">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - href="http://www.bt.cn/bbs/thread-1172-1-1.html
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - 宝塔linux面板
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   - src="/static/js/validform_v5.3.2_min.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers:
@@ -35,3 +47,6 @@ fingerprint:
   keyword: []
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

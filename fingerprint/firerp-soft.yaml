@@ -7,3 +7,6 @@ fingerprint:
   - mm_preloadimages('images/bt/bt_login_b.gif
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

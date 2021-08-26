@@ -7,6 +7,9 @@ fingerprint:
   - <!--警示提示处-->
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <h1 class="logo">安防综合管理平台</h1>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - 杭州海康威视系统技术有限公司 版权所有
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,3 +37,6 @@ fingerprint:
   - serviceip
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

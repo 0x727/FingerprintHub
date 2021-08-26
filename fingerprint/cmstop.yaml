@@ -7,6 +7,9 @@ fingerprint:
   - /css/cmstop-common.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - /js/cmstop-common.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,3 +28,6 @@ fingerprint:
   - cmstop-list-text.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - content="tlog 实时数据处理
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

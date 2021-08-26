@@ -7,6 +7,9 @@ fingerprint:
   - href="phpmyadmin.css.php
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers:
@@ -14,6 +17,9 @@ fingerprint:
   keyword: []
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - pma_password
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   favicon_hash:
   - d037ef2f629a22ddadcf438e6be7a325
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /phpmyadmin/favicon.ico
   status_code: 0
   headers: {}
@@ -35,3 +47,6 @@ fingerprint:
   favicon_hash:
   - ebd8a51a6152d6da6436399bb4355488
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

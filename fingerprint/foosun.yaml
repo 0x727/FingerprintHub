@@ -8,6 +8,9 @@ fingerprint:
   - for foosun
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,3 +18,6 @@ fingerprint:
   - powered by www.foosun.net,products:foosun content manage system
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

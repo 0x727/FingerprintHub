@@ -7,3 +7,6 @@ fingerprint:
   - bim 开发配置与运维控制台
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

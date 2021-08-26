@@ -7,3 +7,6 @@ fingerprint:
   - <span>easted vserver虚拟数据中心系统</span></a></div>
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

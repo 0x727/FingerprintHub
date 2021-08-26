@@ -7,3 +7,6 @@ fingerprint:
   - /newsedit/newsedit/css/login_1.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

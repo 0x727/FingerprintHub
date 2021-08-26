@@ -7,3 +7,6 @@ fingerprint:
   - '"/him/api/rest/v1.0/node/role"'
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

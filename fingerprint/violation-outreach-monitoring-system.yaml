@@ -7,6 +7,9 @@ fingerprint:
   - <body onload="forward_to_logon()">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - window.location='login.action';
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - 欢迎登录违规外联平台
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

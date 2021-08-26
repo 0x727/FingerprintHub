@@ -7,3 +7,6 @@ fingerprint:
   - 嗨看云视频</p>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -8,3 +8,6 @@ fingerprint:
     webform_onsubmit();" id="webform1
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

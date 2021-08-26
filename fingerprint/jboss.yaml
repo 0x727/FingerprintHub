@@ -7,6 +7,9 @@ fingerprint:
   - <a href="http://jboss.org">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - jboss.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   favicon_hash:
   - 1b24a7a916a0e0901e381a0d6131b28d
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   favicon_hash:
   - 78ee71862e89db1b1870197b40d026e5
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -35,3 +47,6 @@ fingerprint:
   favicon_hash:
   - 799f70b71314a7508326d1d2f68f7519
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

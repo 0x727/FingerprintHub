@@ -7,6 +7,9 @@ fingerprint:
   - <h2>nsoc大数据分析系统</h2>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - src="/nfw/static/framework/images/views.png
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - <b>nsoc云安全解决方案
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

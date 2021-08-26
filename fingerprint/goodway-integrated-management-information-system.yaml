@@ -7,6 +7,9 @@ fingerprint:
   - option value="enterprise"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - 是否域账户登录
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

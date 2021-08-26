@@ -7,3 +7,6 @@ fingerprint:
   - content="力软敏捷开发框架，是一个web可视化开发平台
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

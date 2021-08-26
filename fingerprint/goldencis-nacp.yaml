@@ -7,3 +7,6 @@ fingerprint:
   - <div class="tit_b"> 通过管理员分配的密码使用紧急入口。</div>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

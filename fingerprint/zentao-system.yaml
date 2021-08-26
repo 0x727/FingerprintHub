@@ -7,6 +7,9 @@ fingerprint:
   - $('#zentao').addClass('btn-success');
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - zentao/theme
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - <a id='zentaopro' href='/pro/'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   - $('#zentaopro').addclass
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -36,6 +48,9 @@ fingerprint:
   - welcome to use zentao!
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -43,6 +58,9 @@ fingerprint:
   - href='/zentao/favicon.ico
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -50,6 +68,9 @@ fingerprint:
   - 'server: cpws'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /zentao/favicon.ico
   status_code: 0
   headers: {}
@@ -57,3 +78,6 @@ fingerprint:
   favicon_hash:
   - e89fbe166ded2a714ef73377ece0062b
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

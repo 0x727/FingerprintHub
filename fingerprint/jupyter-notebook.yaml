@@ -7,6 +7,9 @@ fingerprint:
   - <div id="ipython-main-app" class="container">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <div id="ipython_notebook" class="nav navbar-brand">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /login
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - <title>Jupyter Notebook</title>
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

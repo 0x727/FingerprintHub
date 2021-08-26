@@ -7,3 +7,6 @@ fingerprint:
   - 大数据诊断工具</strong>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

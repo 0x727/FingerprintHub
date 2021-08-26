@@ -7,3 +7,6 @@ fingerprint:
   - <span i18n="1">益模模具智能制造系统</span>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

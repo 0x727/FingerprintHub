@@ -7,3 +7,6 @@ fingerprint:
   - <!-- fcms-template head.tpl begins
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

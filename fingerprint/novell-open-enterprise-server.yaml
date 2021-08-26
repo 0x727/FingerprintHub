@@ -7,6 +7,9 @@ fingerprint:
   - <!-- this is all just a super-duper redirect to the welcome page
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - href="http://www.novell.com/products/openenterpriseserver
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

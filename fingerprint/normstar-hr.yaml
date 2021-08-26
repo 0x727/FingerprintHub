@@ -7,3 +7,6 @@ fingerprint:
   - class="blackfont">诺姆四达人力资源测评咨询服务有限公司
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

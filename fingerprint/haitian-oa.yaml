@@ -7,6 +7,9 @@ fingerprint:
   - htvos.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - images/myjs.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - mshtml 8.00.6001.19298
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - content="开源团主机管理系统
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

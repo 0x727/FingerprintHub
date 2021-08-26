@@ -7,3 +7,6 @@ fingerprint:
   - D-Link Systems, Inc
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

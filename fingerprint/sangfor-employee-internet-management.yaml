@@ -8,6 +8,9 @@ fingerprint:
   - content="must-revalidate"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,6 +18,9 @@ fingerprint:
   - document.cookie = 'sangfor_session_hash=0'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,6 +28,9 @@ fingerprint:
   - 上网优化管理
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -29,6 +38,9 @@ fingerprint:
   - href="http://sec.sangfor.com.cn/events/89.html"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -36,3 +48,6 @@ fingerprint:
   - internet authentication system
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

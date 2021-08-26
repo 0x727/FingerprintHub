@@ -7,3 +7,6 @@ fingerprint:
   - ' <span>平台采用最新图像化展现技术'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

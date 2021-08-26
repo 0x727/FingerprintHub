@@ -7,3 +7,6 @@ fingerprint:
   - <div class="count-down">页面在<em>5</em>秒后自动跳转至您有权限的页面</div>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

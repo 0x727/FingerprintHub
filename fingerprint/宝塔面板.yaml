@@ -7,6 +7,9 @@ fingerprint:
   keyword: []
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,6 +18,9 @@ fingerprint:
   - 扫码登录
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,6 +28,9 @@ fingerprint:
   - 入口校验失败
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /login
   status_code: 200
   headers: {}
@@ -30,6 +39,9 @@ fingerprint:
   - 宝塔
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /static/favicon.ico
   status_code: 200
   headers: {}
@@ -37,3 +49,6 @@ fingerprint:
   favicon_hash:
   - aaedb6def36624d10ebb00de1d2e49e6
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

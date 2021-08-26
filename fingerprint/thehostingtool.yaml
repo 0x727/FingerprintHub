@@ -7,6 +7,9 @@ fingerprint:
   - <a href="http://thehostingtool.com" target="_blank">thehostingtool</a>
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <td width="20%"><strong>server os:</strong></td>
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - page=status&sub=phpinfo">phpinfo</a>)</td>
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

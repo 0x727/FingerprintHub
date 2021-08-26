@@ -7,6 +7,9 @@ fingerprint:
   - /enableq.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - js/checkquestion.js.php
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - /images/enableq.ico
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

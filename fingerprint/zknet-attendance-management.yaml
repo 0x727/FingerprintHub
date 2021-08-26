@@ -7,6 +7,9 @@ fingerprint:
   - 'onclick="showstate(gettext(''forgotten password'')) '
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,6 +18,9 @@ fingerprint:
   - zksoftware inc.
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,3 +28,6 @@ fingerprint:
   - web考勤管理系统
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

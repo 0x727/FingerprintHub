@@ -7,6 +7,9 @@ fingerprint:
   keyword: []
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 200
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   favicon_hash:
   - ed7d5c39c69262f4ba95418d4f909b10
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

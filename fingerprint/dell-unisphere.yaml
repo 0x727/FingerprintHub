@@ -7,6 +7,9 @@ fingerprint:
   - unisphere for sc series
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - 用于 sc 系列的 unisphere
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

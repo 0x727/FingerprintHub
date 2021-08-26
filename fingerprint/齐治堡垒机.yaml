@@ -7,6 +7,9 @@ fingerprint:
   - //xfpverifyExec.jsp;
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   favicon_hash:
   - 48ee373f098d8e96e53b7dd778f09ff4
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

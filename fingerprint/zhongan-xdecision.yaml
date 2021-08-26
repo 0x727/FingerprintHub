@@ -7,3 +7,6 @@ fingerprint:
   - <div class="g-alert-content" id="g-alert-contentsystem">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

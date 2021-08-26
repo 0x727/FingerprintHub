@@ -7,6 +7,9 @@ fingerprint:
   - content="copyright (c) microsoft corporation
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - action="logon.aspx?
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

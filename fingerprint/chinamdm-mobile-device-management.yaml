@@ -7,6 +7,9 @@ fingerprint:
   - innerhtml="chinamdm移动终端管理系统
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - justsy/user/searchmenusbyusername/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

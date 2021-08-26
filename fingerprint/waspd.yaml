@@ -7,3 +7,6 @@ fingerprint:
   - pending waspd activities</font>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

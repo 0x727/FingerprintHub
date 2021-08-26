@@ -7,3 +7,6 @@ fingerprint:
   - <!-- <title>派拉统一身份管理系统</title> -->
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

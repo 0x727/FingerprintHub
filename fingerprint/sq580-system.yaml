@@ -7,3 +7,6 @@ fingerprint:
   - 3cspan id='cnzz_stat_icon_1274142628
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

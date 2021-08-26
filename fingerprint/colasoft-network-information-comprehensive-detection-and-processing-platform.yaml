@@ -7,6 +7,9 @@ fingerprint:
   - <meta name="colasoft"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - 科来网络信息综合检测处理平台
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

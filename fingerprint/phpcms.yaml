@@ -7,6 +7,9 @@ fingerprint:
   - <a href="http://www.phpcms.cn" target="_blank">PHPCMS</a>
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   favicon_hash:
   - 6e9f36b06ea21f69f5374a0472c85415
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   favicon_hash:
   - 18fb0c67f6a7e5c7ad62fc37c5ab7637
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

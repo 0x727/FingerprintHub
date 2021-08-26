@@ -7,3 +7,6 @@ fingerprint:
   - 抄表器驱动tp1100m
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - <a href="http://www.ninechime.com/products/" title="get your own free bbs!">wacintaki
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - by <a href="http://suteki.nu">ranmaguy</a> and <a href="http://www.cellosoft.com">marcello</a>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

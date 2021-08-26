@@ -7,6 +7,9 @@ fingerprint:
   keyword: []
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - http://www.longluntan.com/zh/phpbb/
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,6 +28,9 @@ fingerprint:
   - phpbb group" />
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -29,3 +38,6 @@ fingerprint:
   - start quick hack - phpbb statistics mod
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

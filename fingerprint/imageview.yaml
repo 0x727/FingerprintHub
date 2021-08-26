@@ -7,6 +7,9 @@ fingerprint:
   - content="imageview
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - by jorge schrauwen
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - href="http://www.blackdot.be" title="blackdot.be
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

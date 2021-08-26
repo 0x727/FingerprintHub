@@ -7,3 +7,6 @@ fingerprint:
   - 登录密码错误次数超过5次，帐号被锁定。请联系省坏账系统管理员，或发邮件解锁
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

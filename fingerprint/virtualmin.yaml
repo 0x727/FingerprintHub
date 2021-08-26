@@ -7,3 +7,6 @@ fingerprint:
   - <center><a href=/virtualmin-password-recovery/>forgot your virtualmin password?</a></center>
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

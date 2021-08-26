@@ -7,6 +7,9 @@ fingerprint:
   - tomato.core.widget.loader.baseurl = 'http://
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - <a href="http://www.tomatocms.com" title="powered by tomatocms" target="_blank">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

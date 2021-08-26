@@ -7,3 +7,6 @@ fingerprint:
   - class="hidden-xs ewheaderrow"><img src="aspximages/htqy.png"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

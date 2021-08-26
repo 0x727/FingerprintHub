@@ -7,6 +7,9 @@ fingerprint:
   - the isa server denied the specified uniform resource locator
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,3 +18,6 @@ fingerprint:
     administrator
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

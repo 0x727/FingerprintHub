@@ -7,6 +7,9 @@ fingerprint:
   - stylesheets/load/vamcart.css" rel="stylesheet"  media="screen
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - '<!-- powered by: vamcart (http://vamcart.com) -->'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - <p><a href="http://vamcart.com/">php shopping cart</a> <a href="http://vamcart.com/">vamcart</a></p>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

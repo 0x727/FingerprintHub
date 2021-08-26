@@ -7,6 +7,9 @@ fingerprint:
   - <h1>欢迎使用360书生云盘！</h1>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - <p>copyright@2016 pan.surdoc.net all rights</p>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

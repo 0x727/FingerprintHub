@@ -7,6 +7,9 @@ fingerprint:
   - /ClientBin/Kingdee.BOS.XPF.App.xap
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - HTML5/content/themes/kdcss.min.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   favicon_hash:
   - 825af13371930eeb2f85cf075fa25b68
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - <img src="/img/logo.png" alt="adimoney"/>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - 'content="adimoney.com mobile advertisement network. '
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

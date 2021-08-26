@@ -7,6 +7,9 @@ fingerprint:
   keyword: []
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - content="thinkcmf
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers:
@@ -21,6 +27,9 @@ fingerprint:
   keyword: []
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,6 +37,9 @@ fingerprint:
   - made by <a href="http://www.thinkcmf.com" target="_blank">thinkcmf</a>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /yunsee_not_found_test
   status_code: 404
   headers: {}
@@ -35,3 +47,6 @@ fingerprint:
   - <a title="官方网站" href="http://www.thinkcmf.com">ThinkCMF</a>
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

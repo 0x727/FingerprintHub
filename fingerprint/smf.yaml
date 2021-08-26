@@ -8,6 +8,9 @@ fingerprint:
     software" target="_blank
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,6 +18,9 @@ fingerprint:
   - <img class="floatright" id="smflogo" src=
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,3 +28,6 @@ fingerprint:
   - 'document.getelementbyid("upshrink").src = smf_images_url + '
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

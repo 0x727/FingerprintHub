@@ -8,6 +8,9 @@ fingerprint:
   - maincontent.css
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,3 +18,6 @@ fingerprint:
   - hims酒店云计算服务
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

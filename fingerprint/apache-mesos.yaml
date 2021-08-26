@@ -7,3 +7,6 @@ fingerprint:
   - <img src="/static/img/mesos_logo.png" alt="apache mesos">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - href="/sys/images/tree.css" title="netpilot
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

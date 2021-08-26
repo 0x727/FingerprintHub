@@ -7,3 +7,6 @@ fingerprint:
   - class="title">关于全网部署金山毒霸企业版
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

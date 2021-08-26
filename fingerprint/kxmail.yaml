@@ -7,6 +7,9 @@ fingerprint:
   - powered by <a href="http://www.kxmail.net
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - /systemfunction.pack.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - lo_computername
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

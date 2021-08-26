@@ -7,3 +7,6 @@ fingerprint:
   - <!-- symantec client security web based installation -->
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - <h3>连豆豆pc客户端 </h3>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - href="http://im.vrv.cn/server-securitycenter/password/goretrieval.vrv
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - class="loginusername" value="" placeholder="连豆豆账号/邮箱/手机号
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,3 +37,6 @@ fingerprint:
   - class="wj-text wj-title">下载信源豆豆</p>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

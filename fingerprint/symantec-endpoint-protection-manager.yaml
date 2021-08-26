@@ -7,6 +7,9 @@ fingerprint:
   - '<div style="font-family: tahoma, verdana, arial, helvetica, sans-serif; font-size:11px;">version'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -16,6 +19,9 @@ fingerprint:
     is installed -->
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -24,3 +30,6 @@ fingerprint:
     protection manager<br>web access</b></td></tr>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

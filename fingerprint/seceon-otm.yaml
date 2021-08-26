@@ -7,3 +7,6 @@ fingerprint:
   - use this if you want to run the seceon module of kibana.
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

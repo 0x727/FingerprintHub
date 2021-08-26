@@ -7,3 +7,6 @@ fingerprint:
   - <td align="right"><div id="inst_logo"><img src=
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

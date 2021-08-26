@@ -7,3 +7,6 @@ fingerprint:
   - <title>维盟（WayOS）智能路由管理系统  www.wayos.cn</title>
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

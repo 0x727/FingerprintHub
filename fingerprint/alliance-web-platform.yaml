@@ -7,3 +7,6 @@ fingerprint:
   - window.location = "/swp/group/admin";
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

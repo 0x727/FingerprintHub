@@ -7,3 +7,6 @@ fingerprint:
   - var bxnstaticresroot='/bxn-static-resource/resources'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

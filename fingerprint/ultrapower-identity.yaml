@@ -7,3 +7,6 @@ fingerprint:
   - <li><p>欢迎进入身份与安全管控系统</p></li>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

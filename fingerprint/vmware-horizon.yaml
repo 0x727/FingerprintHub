@@ -7,6 +7,9 @@ fingerprint:
   - href='https://www.vmware.com/go/viewclients'
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - alt="vmware horizon">
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

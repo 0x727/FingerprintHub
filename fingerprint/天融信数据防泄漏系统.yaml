@@ -8,3 +8,6 @@ fingerprint:
   - 天融信数据防泄漏系统
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

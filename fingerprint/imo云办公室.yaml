@@ -7,6 +7,9 @@ fingerprint:
   - <a title="imo云办公室"
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - download/imo_setup.exe
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - title="imo云办公室" href="http://imoffice.com
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - /web/icc/js/chat-msg.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - /js/ext/resources/css/xtheme-blue.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - href="logo/images/ufida.ico">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -29,6 +38,9 @@ fingerprint:
   - uclient.yonyou.com
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -37,6 +49,9 @@ fingerprint:
   - 用友NC
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /favicon.ico
   status_code: 0
   headers: {}
@@ -44,3 +59,6 @@ fingerprint:
   favicon_hash:
   - 27b492028ae9972a7d3bd805d0e004ff
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

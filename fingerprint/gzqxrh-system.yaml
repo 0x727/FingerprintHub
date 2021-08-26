@@ -7,6 +7,9 @@ fingerprint:
   - 广州全息若海信息科技有限公司
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - src="/scripts/easyui/jquery.easyui.min.js"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - 'style="vertical-align: middle; cursor: pointer'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,3 +37,6 @@ fingerprint:
   - 响应键盘的回车事件
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

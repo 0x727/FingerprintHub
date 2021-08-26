@@ -7,3 +7,6 @@ fingerprint:
   - remote manage your intelligent systems
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

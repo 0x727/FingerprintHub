@@ -9,6 +9,9 @@ fingerprint:
   - switchingserverpopup
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -16,3 +19,6 @@ fingerprint:
   - class="user_define_img_btn6" href="http://help.mail.35.com/mailman/81.html
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

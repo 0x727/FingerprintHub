@@ -7,3 +7,6 @@ fingerprint:
   - <b>登录到红旗集群管理系统</b></td>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

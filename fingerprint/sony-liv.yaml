@@ -7,6 +7,9 @@ fingerprint:
   - <meta name="author" content="sony pictures networks india pvt. ltd">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - <meta name="twitter:image" content="http://sonyliv.com/asset/socialsharelogo"/>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - content="sony liv
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

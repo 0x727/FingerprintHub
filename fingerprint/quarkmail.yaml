@@ -7,6 +7,9 @@ fingerprint:
   - window.location.replace("/cgi-bin/web2cgi/index.cgi");
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - <iframe src="/cgi-bin/web2cgi/index.cgi" scrolling="no" frameborder=
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

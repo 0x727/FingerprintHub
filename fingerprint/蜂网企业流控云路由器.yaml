@@ -9,3 +9,6 @@ fingerprint:
   - 企业级流控云路由器
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

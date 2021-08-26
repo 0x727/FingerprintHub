@@ -7,6 +7,9 @@ fingerprint:
   - powered by <a href="http://www.whmcs.com
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,3 +18,6 @@ fingerprint:
     or <a href="register.php" title="register"><strong>register</strong></a></div>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

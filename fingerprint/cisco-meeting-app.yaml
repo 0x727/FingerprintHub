@@ -7,3 +7,6 @@ fingerprint:
   - <div id="cisco_meeting_application">
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

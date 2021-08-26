@@ -7,3 +7,6 @@ fingerprint:
   - lemis.web_app_name
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

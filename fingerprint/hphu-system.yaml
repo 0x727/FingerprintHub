@@ -8,3 +8,6 @@ fingerprint:
   - src='kss_inc/js/jquery.1.3.2.pack.js'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

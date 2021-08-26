@@ -7,3 +7,6 @@ fingerprint:
   - 神盾fs<sup>3</sup>文档安全共享系统v2.0</div>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

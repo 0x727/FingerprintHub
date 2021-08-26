@@ -7,3 +7,6 @@ fingerprint:
   - 生产经营计划统计一体化管理信息系统安装程序
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

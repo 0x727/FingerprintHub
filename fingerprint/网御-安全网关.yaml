@@ -9,3 +9,6 @@ fingerprint:
   - 网御星云
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

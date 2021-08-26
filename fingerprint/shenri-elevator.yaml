@@ -7,6 +7,9 @@ fingerprint:
   - /frameworks/images/ico.ico
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - images/login/btnmobile.gif
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - copyright 2015 shenri habiliment co.,ltd. all rights reserved
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

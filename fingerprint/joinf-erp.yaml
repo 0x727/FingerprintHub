@@ -7,3 +7,6 @@ fingerprint:
   - <h1>富通天下erp</h1>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

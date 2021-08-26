@@ -7,3 +7,6 @@ fingerprint:
   - <li><a href="/install/certapp_bd.exe">下载证书应用环境</a></li>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

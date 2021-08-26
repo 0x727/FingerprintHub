@@ -7,6 +7,9 @@ fingerprint:
   - subsonic
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - onload="document.getelementbyid('j_username').focus()"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - parent.frames.upper.keyboardshortcut("showindex", index.touppercase());
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

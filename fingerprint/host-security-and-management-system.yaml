@@ -7,3 +7,6 @@ fingerprint:
   - href=./static/css/app.edb681c84a53277f9336fc297ebca96e.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

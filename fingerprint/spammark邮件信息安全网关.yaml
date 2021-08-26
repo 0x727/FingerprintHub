@@ -7,6 +7,9 @@ fingerprint:
   - /spammark?noframes=1
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 200
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - href="spammark16.ico"
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

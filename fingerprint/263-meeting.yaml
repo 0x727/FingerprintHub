@@ -7,3 +7,6 @@ fingerprint:
   - <frame src="/jsp/conference/meetinglist.jsp" name="mainframe"/>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

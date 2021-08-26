@@ -7,6 +7,9 @@ fingerprint:
   - <a href="http://www.78oa.com" target="_blank">78OA办公系统</a>
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - /resource/javascript/system/runtime.min.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - license.78oa.com
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - class="heading1">policyretriever service</p>
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

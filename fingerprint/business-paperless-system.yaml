@@ -7,3 +7,6 @@ fingerprint:
   - //获取营业台席pc机 ip地址 mac地址
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

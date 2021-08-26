@@ -7,6 +7,9 @@ fingerprint:
   - value="style2012/style1/scripts/expressinstall.swf"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - href="webstyles/webstyle1/style1/css.css"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

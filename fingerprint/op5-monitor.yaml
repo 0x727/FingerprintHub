@@ -7,3 +7,6 @@ fingerprint:
   - /monitor/application/views/themes/default/css/default/common.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

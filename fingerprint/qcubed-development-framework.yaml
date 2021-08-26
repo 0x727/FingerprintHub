@@ -7,6 +7,9 @@ fingerprint:
   - <div id="codeversion">qcubed development framework
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - <b>qcubed version:</b>
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

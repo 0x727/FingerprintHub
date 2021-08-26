@@ -9,3 +9,6 @@ fingerprint:
     powered by squeak"></a><br>'
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

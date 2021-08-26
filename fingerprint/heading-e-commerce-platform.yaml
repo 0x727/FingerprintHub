@@ -7,3 +7,6 @@ fingerprint:
   - window.location.replace('/bin/hdnet.dll/login')
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

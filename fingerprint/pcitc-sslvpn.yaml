@@ -7,3 +7,6 @@ fingerprint:
   - src="new_style/placeholderfriend.js"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

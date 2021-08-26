@@ -7,6 +7,9 @@ fingerprint:
   - appid":"skylar6
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - /task/index/detail?id={item.id}
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - 已过期或者未授权，购买请联系4008-136-360
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

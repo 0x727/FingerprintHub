@@ -7,6 +7,9 @@ fingerprint:
   - </a>登录cbss系统</p>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - <li>com.cbss.xss.filter.xssfilter.dofilter
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

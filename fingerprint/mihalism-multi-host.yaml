@@ -7,6 +7,9 @@ fingerprint:
   - http://www.mihalism.com/product/mmh/">mihalism multi host
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - powered by mihalism multi host
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - content="mihalism multi host
   favicon_hash: []
   priority: 2
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - <td><div class="minicalmonth
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - src="pem-includes/xajax/xajax_js/xajax_core.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - powered by phxeventmanager
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

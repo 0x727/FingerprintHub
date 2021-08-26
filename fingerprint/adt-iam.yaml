@@ -7,3 +7,6 @@ fingerprint:
   - content="tpn,vpn,内网安全,内网控制,主机防护"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

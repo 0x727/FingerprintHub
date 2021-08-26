@@ -7,6 +7,9 @@ fingerprint:
   - href="clients/html5client/src/receiverthirdpartynotices.html"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,3 +18,6 @@ fingerprint:
   - upgradeavailable-already-installed-separator bar-separator
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

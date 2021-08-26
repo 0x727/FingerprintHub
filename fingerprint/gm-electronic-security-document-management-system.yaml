@@ -7,6 +7,9 @@ fingerprint:
   - </span>国迈安全私有云部. <span>all rights reserved
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - 国迈安全私有云部 all rights reserved
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - class="boxheadline">proxmox virtual environment
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - href='http://www.proxmox.com' target='_blank' class="boxheadline
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,3 +27,6 @@ fingerprint:
   - ext.create('pve.stdworkspace')
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

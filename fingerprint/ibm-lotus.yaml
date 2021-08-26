@@ -7,6 +7,9 @@ fingerprint:
   - action="/names.nsf?login" name="_dominoform
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - 软标科技
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -22,6 +28,9 @@ fingerprint:
   - login.nsf
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -30,3 +39,6 @@ fingerprint:
   - main.nsf
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

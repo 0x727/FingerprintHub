@@ -7,3 +7,6 @@ fingerprint:
   - 'windows_download_name: "/download_installer_win.php",'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

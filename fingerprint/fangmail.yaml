@@ -7,6 +7,9 @@ fingerprint:
   - /fangmail/default/css/em_css.css
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - /fangmail/cgi/index.cgi
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

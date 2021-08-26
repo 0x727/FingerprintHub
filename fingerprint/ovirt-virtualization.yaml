@@ -7,3 +7,6 @@ fingerprint:
   - <a href="https://www.ovirt.org" class="obrand_loginpagelogolink">
   favicon_hash: []
   priority: 1
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,6 +7,9 @@ fingerprint:
   - <iframe id="ifrm" width="100%" height="100%" frameborder="0" scrolling="no" src="/include/login.aspx
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -15,3 +18,6 @@ fingerprint:
   - '<iframe '
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

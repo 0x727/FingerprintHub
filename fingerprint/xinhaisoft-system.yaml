@@ -7,6 +7,9 @@ fingerprint:
   - 北京心海导航教育科技股份有限公司-中国心理网版权所有<br>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - ../regist.asp?school=
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

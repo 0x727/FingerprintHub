@@ -7,3 +7,6 @@ fingerprint:
   - 'class="disclaimer" style="color: #ffffff">《盛邦安全网站监控预警平台服务协议》</a>'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

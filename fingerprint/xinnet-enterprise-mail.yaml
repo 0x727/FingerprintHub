@@ -7,3 +7,6 @@ fingerprint:
   - 北京新网数码信息技术有限公司 版权所有</span>
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

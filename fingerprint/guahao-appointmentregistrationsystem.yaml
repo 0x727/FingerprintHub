@@ -7,3 +7,6 @@ fingerprint:
   - var title    = "预约挂号系统";
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

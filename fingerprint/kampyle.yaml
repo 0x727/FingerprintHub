@@ -7,6 +7,9 @@ fingerprint:
   - http://cf.kampyle.com/k_button.js
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,3 +17,6 @@ fingerprint:
   - start kampyle feedback form button
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

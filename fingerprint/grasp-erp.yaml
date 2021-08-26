@@ -7,3 +7,6 @@ fingerprint:
   - ' alert("欢迎使用 【管家婆分销erp)'
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

@@ -7,3 +7,6 @@ fingerprint:
   - color="black" size="5">intermec easylan
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

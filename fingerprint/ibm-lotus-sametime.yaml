@@ -7,6 +7,9 @@ fingerprint:
   - src="sametime/avtest.js"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -14,6 +17,9 @@ fingerprint:
   - href="sametime/meetingcenter-moz.css"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -21,6 +27,9 @@ fingerprint:
   - class="sametimemeetingsbuttontransparent"
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -28,3 +37,6 @@ fingerprint:
   - sametime/themes/images/blank.gif
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''

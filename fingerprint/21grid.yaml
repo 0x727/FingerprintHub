@@ -7,3 +7,6 @@ fingerprint:
   - 技术支持：网格（福建）智能科技有限公司
   favicon_hash: []
   priority: 3
+  request_method: get
+  request_header: {}
+  request_data: ''
