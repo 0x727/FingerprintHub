@@ -9,7 +9,8 @@ fingerprint:
   keyword: []
   favicon_hash: []
   priority: 3
-  request_headers: {"Cookie":"rememberMe=admin"}
+  request_headers:
+    Cookie: rememberMe=admin
 - path: /
   status_code: 0
   headers: {}
