@@ -10,7 +10,7 @@ fingerprint:
   priority: 1
   request_method: get
   request_header: {}
-  request_data: null
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -20,7 +20,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: null
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -31,7 +31,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: null
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -41,7 +41,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: null
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -51,7 +51,7 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: null
+  request_data: ''
 - path: /
   status_code: 0
   headers: {}
@@ -61,4 +61,4 @@ fingerprint:
   priority: 3
   request_method: get
   request_header: {}
-  request_data: null
+  request_data: ''

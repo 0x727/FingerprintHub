@@ -10,4 +10,4 @@ fingerprint:
   priority: 2
   request_method: get
   request_header: {}
-  request_data: null
+  request_data: ''

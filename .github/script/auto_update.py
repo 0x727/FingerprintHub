@@ -38,14 +38,14 @@ def valid_fingerprint(rule):
 
 def valid_fingerprint_v2(rule):
     fields = {'path': '/', 'status_code': 0, 'keyword': [], 'headers': {}, 'favicon_hash': [],
-              'priority': 1, 'request_method': 'get', 'request_header': {}, 'request_data': None}
+              'priority': 1, 'request_method': 'get', 'request_header': {}, 'request_data': ''}
     for key in list(rule):
         if key not in fields:
             rule.pop(key)
     for key in fields:
         if key not in rule:
             rule[key] = fields[key]
-        if key == 'request_data' and rule['request_data'] == '':
+        if key == 'request_data' and rule['request_data'] is None:
             rule[key] = fields[key]
     return rule
 
