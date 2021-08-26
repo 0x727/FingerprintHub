@@ -1,6 +1,6 @@
 name: 微三云管理系统
 fingerprint:
-- path: /index/
+- path: /
   status_code: 0
   headers: {}
   keyword:

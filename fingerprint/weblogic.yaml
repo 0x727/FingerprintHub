@@ -70,7 +70,7 @@ fingerprint:
   request_method: get
   request_data: ''
   request_headers: {}
-- path: /console
+- path: /
   status_code: 0
   headers: {}
   keyword:

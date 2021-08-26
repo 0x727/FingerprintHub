@@ -1,6 +1,6 @@
 name: 深信服行为感知系统
 fingerprint:
-- path: /ui/login.php
+- path: /ui/
   status_code: 0
   headers: {}
   keyword:

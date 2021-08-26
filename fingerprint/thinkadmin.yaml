@@ -1,6 +1,6 @@
 name: thinkadmin
 fingerprint:
-- path: /admin
+- path: /
   status_code: 200
   headers: {}
   keyword:
