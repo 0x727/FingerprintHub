@@ -1,11 +1,12 @@
 name: eyou-亿邮邮件系统
 fingerprint:
-- path: /php/user/images/laji05.gif
+- path: /
   status_code: 0
   headers: {}
-  keyword: []
-  favicon_hash:
-  - e186e2e55812321359d1c68ac27da9f1
+  keyword:
+  - eYouWS
+  - eYouMail
+  favicon_hash: []
   priority: 3
   request_method: get
   request_data: ''

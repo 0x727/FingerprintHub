@@ -151,13 +151,3 @@ fingerprint:
   request_method: get
   request_data: ''
   request_headers: {}
-- path: /seeyon/common/images/A8/favicon.ico
-  status_code: 0
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - cdc85452665e7708caed3009ecb7d4e2
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

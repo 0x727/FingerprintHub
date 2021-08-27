@@ -40,13 +40,3 @@ fingerprint:
   request_method: get
   request_data: ''
   request_headers: {}
-- path: /phpmyadmin/favicon.ico
-  status_code: 0
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - ebd8a51a6152d6da6436399bb4355488
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

@@ -11,13 +11,3 @@ fingerprint:
   request_method: get
   request_data: ''
   request_headers: {}
-- path: /img/icons/favicon.png
-  status_code: 0
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - 8259624a1bf4f9a3e817c7bf80f52db9
-  priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

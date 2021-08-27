@@ -22,16 +22,6 @@ fingerprint:
   request_data: ''
   request_headers: {}
 - path: /
-  status_code: 0
-  headers: {}
-  keyword:
-  - 入口校验失败
-  favicon_hash: []
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /
   status_code: 200
   headers: {}
   keyword:
@@ -39,16 +29,6 @@ fingerprint:
   - 宝塔
   favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /static/favicon.ico
-  status_code: 200
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - aaedb6def36624d10ebb00de1d2e49e6
-  priority: 1
   request_method: get
   request_data: ''
   request_headers: {}

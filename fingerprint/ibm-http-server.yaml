@@ -11,13 +11,3 @@ fingerprint:
   request_method: get
   request_data: ''
   request_headers: {}
-- path: /images/ihs/favicon.ico
-  status_code: 200
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - d8ba35521dfc638f134cf3a64d1a6875
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

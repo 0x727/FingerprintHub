@@ -1,4 +1,3 @@
-import base64
 import json
 import re
 import string
@@ -111,11 +110,11 @@ def update_yaml(path):
                     valid_rule = valid_fingerprint_v2(fingerprint)
                     fingerprint_rules.append(valid_rule)
                 y_dict['fingerprint'] = fingerprint_rules
-                wfp_y = yaml.safe_dump(y_dict, sort_keys=False, allow_unicode=True, default_flow_style=False)
+                wfp_y = yaml.safe_dump(y_dict, sort_keys=False, allow_unicode=True, indent=2)
                 with open(abs_filename, "w") as y:
                     y.write(wfp_y)
 
 
 update_yaml("fingerprint")
 fingerprint_json_generator_v2("fingerprint")
-fingerprint_json_generator("fingerprint")
+# fingerprint_json_generator("fingerprint")

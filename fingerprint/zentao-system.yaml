@@ -71,13 +71,3 @@ fingerprint:
   request_method: get
   request_data: ''
   request_headers: {}
-- path: /zentao/favicon.ico
-  status_code: 0
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - e89fbe166ded2a714ef73377ece0062b
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
