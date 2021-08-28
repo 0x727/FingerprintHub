@@ -1,0 +1,13 @@
+name: ruijie-eg易网关
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="eg.css
+  - ruijie
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

@@ -1,0 +1,12 @@
+name: 石化盈科-ssl-vpn-远程接入系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="new_style/placeholderfriend.js
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

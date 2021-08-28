@@ -1,0 +1,13 @@
+name: richinfo-richmail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="richmail
+  - richmail
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

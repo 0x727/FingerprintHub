@@ -1,0 +1,12 @@
+name: 接入网关管理平台
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - edp-web/login.jsp
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

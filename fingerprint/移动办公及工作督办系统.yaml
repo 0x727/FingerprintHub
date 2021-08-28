@@ -1,0 +1,13 @@
+name: 移动办公及工作督办系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="icon iconxinan"
+  - class="icon-container wrapper"
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

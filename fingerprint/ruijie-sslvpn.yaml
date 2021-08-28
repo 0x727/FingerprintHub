@@ -4,9 +4,7 @@ fingerprint:
   status_code: 0
   headers: {}
   keyword:
-  - SSLVPN
-  - login
-  - rjsslvpn
+  - document.cookie = "rjsslvpn_encookie=yes;"
   favicon_hash: []
   priority: 3
   request_method: get

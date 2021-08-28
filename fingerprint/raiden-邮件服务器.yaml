@@ -1,0 +1,12 @@
+name: raiden-邮件服务器
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /webimages/raidenmaild.jpg
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

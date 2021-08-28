@@ -5,6 +5,7 @@ fingerprint:
   headers: {}
   keyword:
   - imgs/fs-black-box.jpg
+  - fs vpn
   favicon_hash: []
   priority: 3
   request_method: get

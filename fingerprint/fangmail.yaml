@@ -4,17 +4,8 @@ fingerprint:
   status_code: 0
   headers: {}
   keyword:
-  - /fangmail/default/css/em_css.css
-  favicon_hash: []
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /
-  status_code: 0
-  headers: {}
-  keyword:
   - /fangmail/cgi/index.cgi
+  - /fangmail/default/css/em_css.css
   favicon_hash: []
   priority: 3
   request_method: get

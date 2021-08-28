@@ -1,0 +1,12 @@
+name: 文网亿联-文网卫士安全路由器
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 文网卫士安全路由器
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

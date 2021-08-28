@@ -1,0 +1,12 @@
+name: redseal-数字防御平台
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - alt="redseal, inc."/></a>
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

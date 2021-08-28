@@ -1,0 +1,13 @@
+name: 安恒信息-明御web应用防火墙
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <img id="company_logo" src="images/waf.company.png
+  - 明御web应用防火墙
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

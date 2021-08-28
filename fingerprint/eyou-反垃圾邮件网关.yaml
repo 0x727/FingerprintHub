@@ -1,0 +1,13 @@
+name: eyou-反垃圾邮件网关
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="亿邮大容量电子邮件系统反垃圾邮件网关
+  - 反垃圾邮件网关  - 亿邮通讯
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

@@ -5,16 +5,7 @@ fingerprint:
   headers: {}
   keyword:
   - href="/about_mail.htm">about surgemail
-  favicon_hash: []
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /
-  status_code: 0
-  headers: {}
-  keyword:
-  - /surgemail.css
+  - surgemail welcome page
   favicon_hash: []
   priority: 3
   request_method: get

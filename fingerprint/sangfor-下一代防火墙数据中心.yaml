@@ -1,0 +1,12 @@
+name: sangfor-下一代防火墙数据中心
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.open("/loginout.php", "_top""
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

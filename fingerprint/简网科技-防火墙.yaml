@@ -1,0 +1,13 @@
+name: 简网科技-防火墙
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/logincheck"
+  - class="login-head clearfix"
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

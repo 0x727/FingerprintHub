@@ -1,0 +1,12 @@
+name: 三零盛安-安全邮件系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 30san.all rights reserved.</div>
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

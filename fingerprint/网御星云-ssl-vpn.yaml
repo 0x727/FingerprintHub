@@ -1,0 +1,13 @@
+name: 网御星云-ssl-vpn
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /ssl/down/usbkey.exe
+  - 欢迎使用leadsec网御ssl vpn
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

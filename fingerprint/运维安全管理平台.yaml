@@ -1,0 +1,13 @@
+name: 运维安全管理平台
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - usm
+  - 运维安全管理平台
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

@@ -1,0 +1,13 @@
+name: kedacom-dvr接入网关
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 苏州科达科技有限公司
+  - src='images/ind_log_kedacom.png')
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

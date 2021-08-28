@@ -1,0 +1,13 @@
+name: tmailer_suite-tmailer邮件系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - content="tmailer
+  - tmailer
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

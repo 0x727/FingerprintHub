@@ -1,0 +1,12 @@
+name: sangfor-运维安全管理系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - window.location.href="https://"+window.location.host+"/fort/login
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

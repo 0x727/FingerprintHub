@@ -1,0 +1,12 @@
+name: huawei-rbt网关管理系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - rbt gateway management system
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

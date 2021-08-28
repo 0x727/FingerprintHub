@@ -1,0 +1,13 @@
+name: nsfocus-企业安全中心
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /login_logo_espc_zh_cn.png
+  - 绿盟科技企业安全中心
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

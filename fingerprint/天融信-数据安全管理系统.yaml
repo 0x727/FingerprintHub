@@ -1,0 +1,12 @@
+name: 天融信-数据安全管理系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 天融信数据安全管理系统
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

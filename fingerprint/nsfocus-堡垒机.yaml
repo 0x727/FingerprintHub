@@ -1,0 +1,12 @@
+name: nsfocus-堡垒机
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /login_logo_sas_h_zh_cn.png
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

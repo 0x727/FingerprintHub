@@ -1,0 +1,12 @@
+name: 奇安信-企业安全部署
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 360企业安全部署
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

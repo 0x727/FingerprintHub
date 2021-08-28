@@ -1,0 +1,12 @@
+name: 老板邮局-虚拟主机控制面板
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /public/js/util/xg_oyang.js
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

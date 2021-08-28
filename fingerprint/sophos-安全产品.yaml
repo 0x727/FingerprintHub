@@ -1,0 +1,13 @@
+name: sophos-安全产品
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - <span class='logosophosfooterfont'>protected by</span>
+  - blocked site
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

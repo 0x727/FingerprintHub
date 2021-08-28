@@ -1,0 +1,13 @@
+name: zte-zxsec统一安全网关
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - welcome to login gateway system
+  - 安全网关
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

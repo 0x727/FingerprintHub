@@ -1,0 +1,13 @@
+name: 奇安信-新一代智慧防火墙
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - var __permission = "360防火墙"
+  - 360天堤新一代智慧防火墙
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

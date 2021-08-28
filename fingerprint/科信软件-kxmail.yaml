@@ -1,0 +1,13 @@
+name: 科信软件-kxmail
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 科信邮件系统
+  - powered by <a href="http://www.kxmail.net
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

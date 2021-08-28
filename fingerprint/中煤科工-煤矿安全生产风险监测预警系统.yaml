@@ -1,0 +1,12 @@
+name: 中煤科工-煤矿安全生产风险监测预警系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - src="/cariweb/images/images-new
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

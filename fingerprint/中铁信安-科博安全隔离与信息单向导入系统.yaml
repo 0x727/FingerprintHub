@@ -1,0 +1,13 @@
+name: 中铁信安-科博安全隔离与信息单向导入系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 科博安全隔离与信息交换系统
+  - 科博安全隔离与信息单向导入系统</span>
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

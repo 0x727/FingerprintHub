@@ -1,0 +1,13 @@
+name: cetc-工业防火墙
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /webgui/scripts/dd_belatedpng.js
+  - 工业防火墙
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

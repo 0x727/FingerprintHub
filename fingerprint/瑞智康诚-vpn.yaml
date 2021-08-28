@@ -1,0 +1,13 @@
+name: 瑞智康诚-vpn
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - class="no-js">请先启用javascript
+  - class="col-md-12 col-xs-12 col-lg-12 external_signin_links"
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

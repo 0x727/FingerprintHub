@@ -1,0 +1,13 @@
+name: 360-安全路由
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 360安全路由
+  - 360loginflag
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

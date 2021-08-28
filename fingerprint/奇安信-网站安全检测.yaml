@@ -1,0 +1,12 @@
+name: 奇安信-网站安全检测
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - webscan.360.cn/status/pai/hash
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

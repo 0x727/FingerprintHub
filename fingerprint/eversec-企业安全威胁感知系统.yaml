@@ -1,0 +1,12 @@
+name: eversec-企业安全威胁感知系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - action="/j_spring_security_check
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

@@ -1,0 +1,12 @@
+name: secusys-tc348nt安全访问模块
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - tc348nt pannel
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

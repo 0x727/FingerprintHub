@@ -1,0 +1,12 @@
+name: creatsoft-特种设备安全管理平台
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - href="javascript:update_news('board/noticelist.jsp')
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

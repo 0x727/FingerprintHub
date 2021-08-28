@@ -1,0 +1,13 @@
+name: fit2cloud-jumpserver-堡垒机
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - csrfmiddlewaretoken
+  - <a href="/users/password/forgot/">
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

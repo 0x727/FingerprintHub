@@ -1,0 +1,12 @@
+name: sangfor-ssl-vpn
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - login_psw.csp
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

@@ -1,0 +1,13 @@
+name: 天行网安-视频图像安全监控接入系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - 天行视频图像安全监控接入系统
+  - <meta http-equiv="refresh" content="0;url=/usercertloginaction.action" />
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}

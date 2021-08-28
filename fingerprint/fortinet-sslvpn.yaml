@@ -4,17 +4,8 @@ fingerprint:
   status_code: 0
   headers: {}
   keyword:
-  - fgt_lang
-  favicon_hash: []
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /
-  status_code: 0
-  headers: {}
-  keyword:
   - /sslvpn/portal.html
+  - fgt_lang
   favicon_hash: []
   priority: 3
   request_method: get

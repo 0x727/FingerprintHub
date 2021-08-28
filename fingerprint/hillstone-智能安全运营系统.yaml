@@ -1,0 +1,13 @@
+name: hillstone-智能安全运营系统
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - /static/css/main.4672616b.chunk.css
+  - 智源
+  favicon_hash: []
+  priority: 3
+  request_method: get
+  request_data: ''
+  request_headers: {}
