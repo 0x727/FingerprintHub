@@ -10,44 +10,47 @@
 | 团队 | [0x727](https://github.com/0x727) 未来一段时间将陆续开源工具 |
 | 定位 | 社区化指纹库，让管理和使用指纹规则更加简单。                 |
 | 语言 | Yaml                                                         |
-| 功能 | 使用github actions 自动更新指纹库。                          |
+| 功能 | 可自定义请求，使用github actions 自动更新指纹库。            |
 
 ## 规则说明
 
 ```yaml
-name: swagger
+name: apache-shiro
 fingerprint:
 - path: /
   status_code: 0
-  headers: {}
-  keyword:
-  - Swagger UI
+  request_method: post
+  request_data: ''
+  headers:
+    Set-Cookie: rememberMe=deleteMe
+  keyword: []
   favicon_hash: []
-  priority: 2
+  priority: 3
+  request_headers:
+    Cookie: rememberMe=admin
 - path: /
   status_code: 0
   headers: {}
   keyword:
-  - swagger-ui.css
+  - </i> shiro</li>
   favicon_hash: []
   priority: 2
-- path: /
-  status_code: 0
-  headers: {}
-  keyword:
-  - swagger-ui.js
-  favicon_hash: []
-  priority: 2
+  request_method: get
+  request_data: ''
+  request_headers: {}
 ```
 
-| 字段         | 数据类型               | 描述                                                         |
-| ------------ | ---------------------- | ------------------------------------------------------------ |
-| path         | String                 | HTTP请求的路径。                                             |
-| status_code  | u32                    | 响应状态码，不匹配可以填0。                                  |
-| headers      | HashMap<String,String> | 相应的请求头，以键值对出现，值填`*`时只匹配键。              |
-| keyword      | Vec<String>            | 响应的HTML关键词数组，可以添加多个关键词提高识别精度         |
-| favicon_hash | HashSet<String>        | 网页图标的MD5或者MMH3哈希，会与响应中的哈希取并集，yaml规则中表现为列表。 |
-| priority     | u32                    | 优先程度，用来排序是否为重要组件资产，数字越大越重要，可选：[1,2,3] |
+| 字段            | 数据类型               | 描述                                                         |
+| --------------- | ---------------------- | ------------------------------------------------------------ |
+| request_method  | String                 | 自定义请求方法                                               |
+| request_data    | String                 | 自定义请求数据                                               |
+| request_headers | HashMap<String,String> | 自定义请求头                                                 |
+| path            | String                 | HTTP请求的路径。                                             |
+| status_code     | u32                    | 响应状态码，不匹配可以填0。                                  |
+| headers         | HashMap<String,String> | 相应的请求头，以键值对出现，值填`*`时只匹配键。              |
+| keyword         | Vec<String>            | 响应的HTML关键词数组，可以添加多个关键词提高识别精度         |
+| favicon_hash    | HashSet<String>        | 网页图标的MD5或者MMH3哈希，会与响应中的哈希取并集，yaml规则中表现为列表。 |
+| priority        | u32                    | 优先程度，用来排序是否为重要组件资产，数字越大越重要，可选：[1,2,3] |
 
 - 一个`path`为一组指纹，像上面的yaml规则中有三组指纹，只要匹配到了一组，就会返回`name`字段，也就是`swagger`。
 
