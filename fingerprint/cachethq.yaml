@@ -1,4 +1,4 @@
-name: cachecloud
+name: cachethq
 fingerprint:
 - path: /
   status_code: 0
