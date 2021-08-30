@@ -4,7 +4,7 @@ fingerprint:
   status_code: 200
   headers: {}
   keyword:
-  - content="Portainer.io"
+  - ng-app="portainer"
   favicon_hash: []
   priority: 1
   request_method: get
