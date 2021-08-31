@@ -1,22 +1,20 @@
 name: ioa
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <a href="https://www.ioa.cn/official/download.html" target="_blank">爱办公app</a>
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - id="foot_version">厦门容能科技有限公司
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

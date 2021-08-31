@@ -1,22 +1,20 @@
 name: promise-webpam
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - js/promise/themes/apple/images/logo_promise.png
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - src="js/dojo/promise.js
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

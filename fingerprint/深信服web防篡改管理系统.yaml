@@ -1,13 +1,12 @@
 name: 深信服web防篡改管理系统
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - WEB防篡改
   - cgi-bin/tamper_admin.cgi
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

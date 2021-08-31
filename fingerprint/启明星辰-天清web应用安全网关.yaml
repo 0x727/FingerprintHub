@@ -1,13 +1,12 @@
 name: 启明星辰-天清web应用安全网关
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - 天清web应用安全网关
   - v2/global/vendor/modernizr/modernizr.js
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

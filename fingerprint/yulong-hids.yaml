@@ -1,22 +1,20 @@
 name: yulong-hids
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <h1>驭龙</h1>
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <h2>yulong - a cool hids system.</h2>
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

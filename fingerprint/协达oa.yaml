@@ -1,12 +1,11 @@
 name: 协达oa
 fingerprint:
-- path: /favicon.ico
+- path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
-  keyword: []
-  favicon_hash:
-  - 3c8c8a2f01d7e06527cbd7b3d43fbba0
+  keyword:
+  - img.style.height=(bodyH-84-100)
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

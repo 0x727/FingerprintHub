@@ -1,13 +1,12 @@
 name: 中新金盾防火墙
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 200
   headers: {}
   keyword:
   - <title>中新金盾防火墙</title>
   - ZXFW
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

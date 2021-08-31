@@ -1,22 +1,20 @@
 name: ostec-firebox
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - 'background-image: url(''/icones/fundo_firebox.png'')'
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - http://colorzilla.com/
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

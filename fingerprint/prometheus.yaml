@@ -1,12 +1,11 @@
 name: prometheus
 fingerprint:
-- path: /favicon.ico
+- path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 200
   headers: {}
-  keyword: []
-  favicon_hash:
-  - 5ee43b38986a144d6b5022ea8c8f748f
+  keyword:
+  - <title>Prometheus
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

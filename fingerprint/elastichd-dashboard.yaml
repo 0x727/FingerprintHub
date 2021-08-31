@@ -1,12 +1,11 @@
 name: elastichd-dashboard
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <title>Elastic HD Dashboard</title>
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

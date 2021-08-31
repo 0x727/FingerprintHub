@@ -1,23 +1,21 @@
 name: telenor-4g-router
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <form id="default_login" name="default_login" method="post" action="/goform/user_login">
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - please power off and plug in (u)sim card. then power on again. or pin is permanently
     blocked, please contact the provider
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

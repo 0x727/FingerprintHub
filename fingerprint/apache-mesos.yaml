@@ -1,12 +1,11 @@
 name: apache-mesos
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <img src="/static/img/mesos_logo.png" alt="apache mesos">
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

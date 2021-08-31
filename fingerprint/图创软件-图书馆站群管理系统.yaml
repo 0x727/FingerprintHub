@@ -1,12 +1,11 @@
 name: 图创软件-图书馆站群管理系统
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - /interlib/common/
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

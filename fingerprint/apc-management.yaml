@@ -1,12 +1,11 @@
 name: apc-management
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - this object on the apc management web server is protected
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}

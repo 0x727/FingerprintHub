@@ -1,14 +1,13 @@
 name: h3c-er3100
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - ER3100
   - h3c.com
   - login
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

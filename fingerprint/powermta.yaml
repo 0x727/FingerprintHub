@@ -1,13 +1,12 @@
 name: powermta
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <html><body>access denied.  please consult the http-access directive in the user's
     guide for more information.</body>
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

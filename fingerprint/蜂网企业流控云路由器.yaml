@@ -1,14 +1,13 @@
 name: 蜂网企业流控云路由器
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - ifw8
   - login
   - 企业级流控云路由器
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

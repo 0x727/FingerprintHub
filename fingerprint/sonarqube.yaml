@@ -1,22 +1,11 @@
 name: sonarqube
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - content="sonarqube
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /favicon.ico
-  status_code: 0
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - b4e4785d5852c563b9ae47cbb7af06fe
-  priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

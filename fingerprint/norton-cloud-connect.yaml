@@ -1,12 +1,11 @@
 name: norton-cloud-connect
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - '<h2 style="margin-left: 0px;">norton cloud connect</h2>'
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

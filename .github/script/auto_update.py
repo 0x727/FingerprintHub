@@ -1,6 +1,7 @@
 import json
 import re
 import string
+from collections import OrderedDict
 from operator import itemgetter
 import yaml
 import os
@@ -23,20 +24,10 @@ def replace_name(name):
     return name.lower()
 
 
-def valid_fingerprint(rule):
-    fields = ['name', 'path', 'status_code', 'keyword', 'headers', 'favicon_hash', 'priority']
-    if all([key in rule for key in fields]):
-        for key in list(rule):
-            if key not in fields:
-                rule.pop(key)
-        return rule
-    else:
-        print("字段不完全", rule)
-        return None
-
-
 def valid_fingerprint_v2(rule):
-    fields = {'path': '/', 'status_code': 0, 'keyword': [], 'headers': {}, 'favicon_hash': [],
+    sorted_list = {'path': 0, 'request_method': 1, 'request_headers': 2, 'request_data': 3, 'status_code': 4,
+                   'headers': 5, 'keyword': 6, 'priority': 7}
+    fields = {'path': '/', 'status_code': 0, 'keyword': [], 'headers': {},
               'priority': 1, 'request_method': 'get', 'request_headers': {}, 'request_data': ''}
     for key in list(rule):
         if key not in fields:
@@ -46,38 +37,7 @@ def valid_fingerprint_v2(rule):
             rule[key] = fields[key]
         if key == 'request_data' and rule['request_data'] is None:
             rule[key] = fields[key]
-    return rule
-
-
-def fingerprint_json_generator(path):
-    fingerprint_all_dict = {}
-    for site, site_list, file_list in os.walk(path):
-        for file_name in file_list:
-            abs_filename = os.path.abspath(os.path.join(site, file_name))
-            with open(abs_filename) as y:
-                y_dict = yaml.safe_load(y)
-                name = replace_name(y_dict.get('name', ''))
-                fingerprint_rules = y_dict.get('fingerprint', [])
-                for rule in fingerprint_rules:
-                    rule['name'] = name
-                    valid_rule = valid_fingerprint(rule)
-                    if valid_rule:
-                        path = rule.pop('path')
-                        if path not in fingerprint_all_dict:
-                            fingerprint_all_dict.setdefault(path, [valid_rule])
-                        else:
-                            rules = fingerprint_all_dict.get(path, [])
-                            if valid_rule not in rules:
-                                rules.append(valid_rule)
-                                fingerprint_all_dict[path] = rules
-    for k in list(fingerprint_all_dict):
-        unsorted_fingerprint = fingerprint_all_dict[k]
-        sorted_fingerprint = sorted(unsorted_fingerprint, key=itemgetter('name'))
-        fingerprint_all_dict[k] = sorted_fingerprint
-    web_fingerprint = dict(sorted(fingerprint_all_dict.items()))
-    with open("web_fingerprint.json", 'w') as wfp:
-        json.dump(web_fingerprint, wfp)
-    return web_fingerprint
+    return dict(sorted(rule.items(), key=lambda t: sorted_list[t[0]]))
 
 
 def fingerprint_json_generator_v2(path):

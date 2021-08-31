@@ -1,12 +1,11 @@
 name: 蓝海卓越计费管理系统
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 200
   headers: {}
   keyword:
   - <script language='javascript'>window.parent.location.href='login.php';</script>
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

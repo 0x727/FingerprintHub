@@ -1,13 +1,12 @@
 name: ejinshan终端
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 200
   headers: {}
   keyword:
   - net.ejinshan.avclient.apk
   - 金山终端安全系统
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

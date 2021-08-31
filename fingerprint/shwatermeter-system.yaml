@@ -1,12 +1,11 @@
 name: shwatermeter-system
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - 关于正则表达式的内容在本书的第10章中有较详细的讨论
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

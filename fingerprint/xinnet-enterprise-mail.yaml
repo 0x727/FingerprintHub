@@ -1,12 +1,11 @@
 name: xinnet-enterprise-mail
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - 北京新网数码信息技术有限公司 版权所有</span>
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

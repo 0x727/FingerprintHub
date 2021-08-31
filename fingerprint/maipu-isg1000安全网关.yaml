@@ -1,13 +1,12 @@
 name: maipu-isg1000安全网关
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - /php/common/checknum_creat.php?module=config_authnum")?
   - isg1000
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

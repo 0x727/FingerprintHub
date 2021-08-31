@@ -1,13 +1,12 @@
 name: 紫光集团-紫光防火墙
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - 紫光防火墙
   - name="adminlogin" action="/cgi-bin/manageaccount">
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

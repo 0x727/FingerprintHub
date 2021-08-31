@@ -1,32 +1,20 @@
 name: vmware-esxi
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - ng-app="esxuiapp"
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <title ng-bind="$root.title">
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /ui/favicon.ico
-  status_code: 0
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - 7815e1b305fb71ef41119c3c38b7fd17
-  priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

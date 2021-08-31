@@ -1,22 +1,20 @@
 name: evercookie
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - evercookie.js
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - var ec = new evercookie();
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}

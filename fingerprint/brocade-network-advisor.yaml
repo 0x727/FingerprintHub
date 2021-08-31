@@ -1,12 +1,11 @@
 name: brocade-network-advisor
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <span class="ui-menuitem-text">about network advisor</span></a>
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

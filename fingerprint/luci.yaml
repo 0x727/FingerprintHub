@@ -1,62 +1,56 @@
 name: luci
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - /luci-static/openwrt.org/cascade.css
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - luci - lua configuration interface
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - powered by luci
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - action="/cgi-bin/luci">
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - href="/cgi-bin/luci"></a>
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <head> <meta http-equiv="refresh" content="0; url=/cgi-bin/luci" /> </head>
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}

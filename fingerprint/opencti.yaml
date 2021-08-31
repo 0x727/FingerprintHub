@@ -1,12 +1,11 @@
 name: opencti
 fingerprint:
-- path: /static/favicon.png
+- path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
-  keyword: []
-  favicon_hash:
-  - 8b2b9dd55e8dcbc8dbf62a0b5e6bf19a
+  keyword:
+  - webpackJsonpopencti-front
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

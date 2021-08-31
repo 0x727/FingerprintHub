@@ -1,12 +1,11 @@
 name: automatedlogiccorporation-webctrl
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - href="/_common/lvl5/about/eula.jsp"
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

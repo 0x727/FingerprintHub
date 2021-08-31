@@ -1,12 +1,11 @@
 name: emby
 fingerprint:
-- path: /favicon.ico
+- path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
-  keyword: []
-  favicon_hash:
-  - 8df2318cae6c03a85179b744108645ba
+  keyword:
+  - content="Emby Server"
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

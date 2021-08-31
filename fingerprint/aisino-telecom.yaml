@@ -1,12 +1,11 @@
 name: aisino-telecom
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <font class="bottomfont">航天信息股份有限公司 电信行业版
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

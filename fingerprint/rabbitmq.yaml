@@ -1,22 +1,11 @@
 name: rabbitmq
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <title>RabbitMQ Management</title>
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /favicon.ico
-  status_code: 200
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - 4aef220ab05308e3a3e8e4bec5984b2b
-  priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

@@ -1,73 +1,57 @@
 name: apache-tomcat
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 404
   headers: {}
   keyword:
   - <h3>Apache Tomcat/
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 200
   headers: {}
   keyword:
   - <title>Apache Tomcat/
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - /manager/html
   - /manager/status
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - href="tomcat.css
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - this is the default tomcat home page
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <h3>apache tomcat
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /favicon.ico
-  status_code: 0
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - 4644f2d45601037b8423d45e13194c93
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

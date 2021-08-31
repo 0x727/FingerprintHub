@@ -1,12 +1,11 @@
 name: yadongsoft-fs3
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - 神盾fs<sup>3</sup>文档安全共享系统v2.0</div>
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

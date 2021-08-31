@@ -1,12 +1,11 @@
 name: codiad
 fingerprint:
-- path: /favicon.png
+- path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
-  keyword: []
-  favicon_hash:
-  - e6651505c929a48424bc021fcc4b2966
+  keyword:
+  - codimd">CodiMD
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

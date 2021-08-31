@@ -1,12 +1,11 @@
 name: metersphere
 fingerprint:
-- path: /favicon.ico
+- path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 200
   headers: {}
-  keyword: []
-  favicon_hash:
-  - 618fd9ad8473083815f7426fbddecd8e
+  keyword:
+  - <title>MeterSphere
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

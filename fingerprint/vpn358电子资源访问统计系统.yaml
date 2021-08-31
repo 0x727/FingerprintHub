@@ -1,13 +1,12 @@
 name: vpn358电子资源访问统计系统
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - href="/lib/bootstrap/ico/favicon.ico"
   - class="form-actions j_add_ip_actions"
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

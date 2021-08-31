@@ -1,23 +1,21 @@
 name: whmcs
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - powered by <a href="http://www.whmcs.com
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <div id="welcome_box">please <a href="clientarea.php" title="login"><strong>login</strong></a>
     or <a href="register.php" title="register"><strong>register</strong></a></div>
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

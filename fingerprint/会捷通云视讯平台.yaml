@@ -1,12 +1,11 @@
 name: 会捷通云视讯平台
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - '"/him/api/rest/v1.0/node/role"'
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

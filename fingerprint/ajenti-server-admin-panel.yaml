@@ -1,13 +1,12 @@
 name: ajenti-server-admin-panel
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - action="/ajenti:auth"
   - src="/ajenti:static/
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

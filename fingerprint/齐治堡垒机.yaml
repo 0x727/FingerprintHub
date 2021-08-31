@@ -1,22 +1,11 @@
 name: 齐治堡垒机
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 200
   headers: {}
   keyword:
   - //xfpverifyExec.jsp;
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /favicon.ico
-  status_code: 0
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - 48ee373f098d8e96e53b7dd778f09ff4
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

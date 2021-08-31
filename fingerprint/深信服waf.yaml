@@ -1,34 +1,22 @@
 name: 深信服waf
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - commonFunction.js
   - rsa.js
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - /LogInOut.php
   - Redirect to...
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /favicon.ico
-  status_code: 0
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - b6ebbd47b0a76ffb2a1af902da65db9c
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

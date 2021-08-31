@@ -1,12 +1,11 @@
 name: harbor
 fingerprint:
-- path: /favicon.ico
+- path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 200
   headers: {}
-  keyword: []
-  favicon_hash:
-  - 5a508149f630bfd801df6e04369527f9
+  keyword:
+  - <title>Harbor</title>
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

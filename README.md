@@ -24,7 +24,6 @@ fingerprint:
   headers:
     Set-Cookie: rememberMe=deleteMe
   keyword: []
-  favicon_hash: []
   priority: 3
   request_headers:
     Cookie: rememberMe=admin
@@ -33,7 +32,6 @@ fingerprint:
   headers: {}
   keyword:
   - </i> shiro</li>
-  favicon_hash: []
   priority: 2
   request_method: get
   request_data: ''
@@ -49,7 +47,6 @@ fingerprint:
 | status_code     | u32                    | 响应状态码，不匹配可以填0。                                  |
 | headers         | HashMap<String,String> | 相应的请求头，以键值对出现，值填`*`时只匹配键。              |
 | keyword         | Vec<String>            | 响应的HTML关键词数组，可以添加多个关键词提高识别精度         |
-| favicon_hash    | HashSet<String>        | 网页图标的MD5或者MMH3哈希，会与响应中的哈希取并集，yaml规则中表现为列表。 |
 | priority        | u32                    | 优先程度，用来排序是否为重要组件资产，数字越大越重要，可选：[1,2,3] |
 
 - 一个`path`为一组指纹，像上面的yaml规则中有三组指纹，只要匹配到了一组，就会返回`name`字段，也就是`swagger`。

@@ -1,14 +1,13 @@
 name: 景云网络防病毒系统
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - login_form
   - styles/images/logo.png
   - 防病毒
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

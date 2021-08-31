@@ -1,13 +1,12 @@
 name: 任子行-net110网络安全审计系统
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - simplemodal.1.4.1.min.js
   - net110网络安全审计系统
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

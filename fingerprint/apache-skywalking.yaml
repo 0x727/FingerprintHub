@@ -1,12 +1,11 @@
 name: apache-skywalking
 fingerprint:
-- path: /favicon.ico
+- path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
-  keyword: []
-  favicon_hash:
-  - 56d39b7b26bb71a231b7737764d1f4cc
+  keyword:
+  - sorry but SkyWalking doesn't work
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

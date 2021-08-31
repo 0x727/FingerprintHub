@@ -1,13 +1,12 @@
 name: ibm-cognos
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - /cgi-bin/cognos.cgi
   - cognos &#26159; international business machines corp
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

@@ -1,12 +1,11 @@
 name: guahao-appointmentregistrationsystem
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - var title    = "预约挂号系统";
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

@@ -1,13 +1,12 @@
 name: 安达通-tpn网关控制台登陆系统
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - tpn-2g网关控制台管理员登录
   - $('#submitid').bind('click',checksubmitfn);"
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

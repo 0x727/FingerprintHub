@@ -1,12 +1,11 @@
 name: nstc-software
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - skysz.fw.index.validatecodenew = "/loginaction/validatecodenew.html
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

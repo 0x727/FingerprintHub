@@ -1,12 +1,11 @@
 name: sundray-企业防火墙
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - help = decodeuricomponent(version_info_ch)
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

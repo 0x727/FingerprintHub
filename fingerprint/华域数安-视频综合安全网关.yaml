@@ -1,13 +1,12 @@
 name: 华域数安-视频综合安全网关
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <div class="sys-name">视频综合安全网关</div>
   - 华域数安
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

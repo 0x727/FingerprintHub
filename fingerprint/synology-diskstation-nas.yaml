@@ -1,12 +1,11 @@
 name: synology-diskstation-nas
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 200
   headers: {}
   keyword:
   - <meta name="application-name" content="Synology DiskStation
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

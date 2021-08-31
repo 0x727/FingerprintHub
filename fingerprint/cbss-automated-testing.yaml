@@ -1,12 +1,11 @@
 name: cbss-automated-testing
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <p>copyright&copy cbss 项目组 自动化测试小组</p>
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

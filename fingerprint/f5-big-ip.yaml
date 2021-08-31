@@ -1,12 +1,11 @@
 name: f5-big-ip
 fingerprint:
-- path: /favicon.ico
+- path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
-  keyword: []
-  favicon_hash:
-  - 04d9541338e525258daf47cc844d59f3
+  keyword:
+  - content="F5 Networks, Inc."
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

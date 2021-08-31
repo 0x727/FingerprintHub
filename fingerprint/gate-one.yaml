@@ -1,6 +1,9 @@
 name: gate-one
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers:
     Server: GateOne
@@ -8,8 +11,4 @@ fingerprint:
   - <div id="gateone"></div>
   - gateone.css
   - gateone.js
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}

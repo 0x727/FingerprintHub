@@ -1,12 +1,11 @@
 name: nextcloud-数据安全产品
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - nextcloud</a>  给您所有数据一个安全的家
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

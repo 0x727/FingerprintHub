@@ -1,12 +1,11 @@
 name: etcd-viewer
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <a class="navbar-brand" href="./home">etcd viewer</a>
-  favicon_hash: []
   priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}

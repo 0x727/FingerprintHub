@@ -1,12 +1,11 @@
 name: apache-druid
 fingerprint:
-- path: /favicon.png
+- path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 200
   headers: {}
-  keyword: []
-  favicon_hash:
-  - af7218c1d0996bcb314c874f693e1335
+  keyword:
+  - content="Apache Druid console"
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

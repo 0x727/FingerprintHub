@@ -1,22 +1,11 @@
 name: ruijie-eweb网管系统
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <title>锐捷网络-EWEB网管系统</title>
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}
-- path: /favicon.ico
-  status_code: 0
-  headers: {}
-  keyword: []
-  favicon_hash:
-  - d8d7c9138e93d43579ebf2e384745ba8
-  priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

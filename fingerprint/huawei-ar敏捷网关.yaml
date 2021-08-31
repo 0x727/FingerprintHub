@@ -1,13 +1,12 @@
 name: huawei-ar敏捷网关
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - /verifycode.cgi?vrfcodeid=
   - document.title = 'ar web登录
-  favicon_hash: []
   priority: 3
-  request_method: get
-  request_data: ''
-  request_headers: {}

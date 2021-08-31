@@ -1,12 +1,11 @@
 name: wayos维盟ac集中管理系统
 fingerprint:
 - path: /
+  request_method: get
+  request_headers: {}
+  request_data: ''
   status_code: 0
   headers: {}
   keyword:
   - <title>维盟（WayOS）智能路由管理系统  www.wayos.cn</title>
-  favicon_hash: []
   priority: 1
-  request_method: get
-  request_data: ''
-  request_headers: {}
