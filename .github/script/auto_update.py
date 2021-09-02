@@ -70,6 +70,7 @@ def update_yaml(path):
                 max_priority = 0
                 sorted_list = {'name': 0, 'priority': 1, 'fingerprint': 2}
                 for fingerprint in fingerprint_rules_origin:
+                    fingerprint['priority'] = y_dict.get('priority')
                     valid_rule = valid_fingerprint_v2(fingerprint)
                     priority = valid_rule.pop('priority')
                     if priority > max_priority:
