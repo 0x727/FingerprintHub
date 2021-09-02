@@ -34,5 +34,5 @@ fingerprint:
   status_code: 0
   headers: {}
   keyword:
-  - com.atlassian.plugins
+  - com.atlassian.jira
   priority: 3
