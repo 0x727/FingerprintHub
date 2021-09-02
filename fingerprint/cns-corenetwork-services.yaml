@@ -1,4 +1,5 @@
 name: cns-corenetwork-services
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - '<!--p>cns网络核心服务自动化开通平台系统. '
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - '<span class="left">cns-app '
-  priority: 2

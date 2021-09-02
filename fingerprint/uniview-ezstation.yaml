@@ -1,4 +1,5 @@
 name: uniview-ezstation
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h1>welcome to ezstation vc server
-  priority: 3

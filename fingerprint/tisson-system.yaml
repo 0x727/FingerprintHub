@@ -1,4 +1,5 @@
 name: tisson-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - dlqaweb_deploy/webresource.axd
-  priority: 3

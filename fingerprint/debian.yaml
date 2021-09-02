@@ -1,4 +1,5 @@
 name: debian
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h1>welcome to nginx on debian!</h1>
-  priority: 1

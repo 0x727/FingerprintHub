@@ -1,4 +1,5 @@
 name: 5vtechnologies-blueangelsoftwaresuite
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /cgi-bin/webctrl.cgi?action=index_page
-  priority: 3

@@ -1,4 +1,5 @@
 name: jsf
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     X-Powered-By: jsf
   keyword: []
-  priority: 2

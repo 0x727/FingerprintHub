@@ -1,4 +1,5 @@
 name: flower-celery-monitoring-tool
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a class="brand" href="/">flower</a>
-  priority: 2

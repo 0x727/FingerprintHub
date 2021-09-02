@@ -1,4 +1,5 @@
 name: wowza-wowzastreamingengine
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: wowzastreamingengine
   keyword: []
-  priority: 2

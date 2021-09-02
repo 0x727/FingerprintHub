@@ -1,4 +1,5 @@
 name: znv-digital-campus
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - list.asp?caseid=
-  priority: 3

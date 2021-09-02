@@ -1,4 +1,5 @@
 name: house5
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /house5-style1/
-  priority: 3

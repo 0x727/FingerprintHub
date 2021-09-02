@@ -1,4 +1,5 @@
 name: yunhezi
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - ui/js/seaconfig.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - ui/skins/black/style.css
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="client-list dm-clear">
-  priority: 3

@@ -1,4 +1,5 @@
 name: 天迈科技网络视频监控系统
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -10,4 +11,3 @@ fingerprint:
   - jsessionid
   - 天迈科技
   - 网络视频监控系统
-  priority: 1

@@ -1,4 +1,5 @@
 name: globalsign-cert
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - //seal.globalsign.com/siteseal
-  priority: 2

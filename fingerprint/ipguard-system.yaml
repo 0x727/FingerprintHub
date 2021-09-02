@@ -1,4 +1,5 @@
 name: ipguard-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - onchange="is_empty('#txtusername','#lblemptyname')
-  priority: 3

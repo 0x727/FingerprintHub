@@ -1,4 +1,5 @@
 name: bh-bh5000c
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - bhclientcer:"/modules/web/common/data/bhclient.cer
-  priority: 3

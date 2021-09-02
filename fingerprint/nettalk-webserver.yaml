@@ -1,4 +1,5 @@
 name: nettalk-webserver
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: nettalk-webserver
   keyword: []
-  priority: 2

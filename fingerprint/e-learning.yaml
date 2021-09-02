@@ -1,4 +1,5 @@
 name: e-learning
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - method="post" action="/eln3_asp/login.do
-  priority: 3

@@ -1,4 +1,5 @@
 name: z-blog
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - generator" content="z-blog
-  priority: 3

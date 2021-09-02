@@ -1,4 +1,5 @@
 name: emerson-permasense
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/permasense/app/webroot/flot/css/layout.print.ie.css
-  priority: 3

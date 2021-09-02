@@ -1,4 +1,5 @@
 name: cwp-controlpanel
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="/login/cwp_theme/original/img/ico/favicon.ico"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/login/cwp_theme/original/img/new_logo_small.png"
-  priority: 3

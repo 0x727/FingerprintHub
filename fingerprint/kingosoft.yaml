@@ -1,4 +1,5 @@
 name: kingosoft
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - setkingoencypt.jsp
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   keyword:
   - /jkingo.js
   - kingosoft
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,4 +26,3 @@ fingerprint:
   headers: {}
   keyword:
   - 青果
-  priority: 3

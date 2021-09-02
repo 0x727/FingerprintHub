@@ -1,4 +1,5 @@
 name: yirui-iras
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /authjsp/login.jsp
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - fe0174bb-f093-42af-ab20-7ec621d10488
-  priority: 3

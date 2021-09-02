@@ -1,4 +1,5 @@
 name: utt-安全网络管理系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - technology, inc.
   - 上海艾泰科技有限公司
-  priority: 3

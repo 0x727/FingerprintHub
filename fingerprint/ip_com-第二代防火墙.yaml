@@ -1,4 +1,5 @@
 name: ip_com-第二代防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - 深圳市和为顺网络技术有限公司"z?pkq
   - technology, inc.
-  priority: 3

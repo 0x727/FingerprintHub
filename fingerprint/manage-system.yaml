@@ -1,4 +1,5 @@
 name: manage-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="基于vue2 + element ui 的后台管理系统解决方案
-  priority: 3

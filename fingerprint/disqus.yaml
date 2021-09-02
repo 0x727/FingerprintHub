@@ -1,4 +1,5 @@
 name: disqus
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - disqus_thread
-  priority: 3

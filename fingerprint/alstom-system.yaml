@@ -1,4 +1,5 @@
 name: alstom-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="technology_communion.asp
-  priority: 3

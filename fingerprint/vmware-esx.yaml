@@ -1,4 +1,5 @@
 name: vmware-esx
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="vmware esxi
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - document.write("<title>" + id_eesx_welcome + "</title>");
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta http-equiv="refresh" content="0;url='/ui'"/>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - 'content="vmware esx '
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,4 +41,3 @@ fingerprint:
   headers: {}
   keyword:
   - document.write(id_esx_viclientdesc);
-  priority: 3

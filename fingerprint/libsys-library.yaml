@@ -1,4 +1,5 @@
 name: libsys-library
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div class="header_opac_logo">
-  priority: 3

@@ -1,4 +1,5 @@
 name: sourcebans
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <div id="footqversion">version(
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - http://www.sourcebans.net" target="_blank"><img src="images/sb.png
-  priority: 3

@@ -1,4 +1,5 @@
 name: ilas
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <iframe name="content"  src="index_middle.html" frameborder="auto
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <select id="selprovince"   onchange="getcity(this.options[this.selectedindex].value)">
-  priority: 3

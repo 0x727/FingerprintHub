@@ -1,4 +1,5 @@
 name: teleradiology-telrads
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - https://clients.telrads.com/css/feedback.css
-  priority: 3

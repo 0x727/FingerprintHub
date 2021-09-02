@@ -1,4 +1,5 @@
 name: scientific-research-instrument-network-service-platform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 'content: "/lfsms/user/login2?go=" + go'
-  priority: 3

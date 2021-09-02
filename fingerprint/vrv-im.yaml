@@ -1,4 +1,5 @@
 name: vrv-im
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <h3>连豆豆pc客户端 </h3>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://im.vrv.cn/server-securitycenter/password/goretrieval.vrv
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="loginusername" value="" placeholder="连豆豆账号/邮箱/手机号
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,4 +33,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="wj-text wj-title">下载信源豆豆</p>
-  priority: 3

@@ -1,4 +1,5 @@
 name: oracle-fusion-middleware
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="css/fmw_bottom_area.css
-  priority: 2

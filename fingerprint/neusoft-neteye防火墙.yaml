@@ -1,4 +1,5 @@
 name: neusoft-neteye防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - 'name="login_form" action="/fwm4/fwm.cgi/usrlgin" '
   - neteye防火墙系统
-  priority: 3

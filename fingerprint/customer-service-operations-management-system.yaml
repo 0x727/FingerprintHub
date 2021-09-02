@@ -1,4 +1,5 @@
 name: customer-service-operations-management-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div class="count-down">页面在<em>5</em>秒后自动跳转至您有权限的页面</div>
-  priority: 3

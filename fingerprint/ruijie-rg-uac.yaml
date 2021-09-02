@@ -1,4 +1,5 @@
 name: ruijie-rg-uac
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - bbs.ruijie.com.cn
   - 锐捷统一上网行为管理与审计系统
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   headers: {}
   keyword:
   - src='images/free_login.png'
-  priority: 3

@@ -1,4 +1,5 @@
 name: sitegenius
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - var portalbrowser = window.open('popup.php?page_type='+page_type+'&lang=
-  priority: 2

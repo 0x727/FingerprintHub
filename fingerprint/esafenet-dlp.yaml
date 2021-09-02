@@ -1,4 +1,5 @@
 name: esafenet-dlp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - cdgserver3
-  priority: 3

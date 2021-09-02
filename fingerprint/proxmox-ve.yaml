@@ -1,4 +1,5 @@
 name: proxmox-ve
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="boxheadline">proxmox virtual environment
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - href='http://www.proxmox.com' target='_blank' class="boxheadline
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - ext.create('pve.stdworkspace')
-  priority: 1

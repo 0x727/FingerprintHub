@@ -1,4 +1,5 @@
 name: sangfor-ssl-vpn
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - login_psw.csp
-  priority: 3

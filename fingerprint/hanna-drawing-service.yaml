@@ -1,4 +1,5 @@
 name: hanna-drawing-service
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - hanna图纸服务
-  priority: 3

@@ -1,4 +1,5 @@
 name: southidc
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /southidckefu.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="copyright 2003-2015 - southidc.net
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - /southidcj2f.js
-  priority: 3

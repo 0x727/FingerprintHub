@@ -1,4 +1,5 @@
 name: apache-unomi
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - logo apache unomi
-  priority: 2

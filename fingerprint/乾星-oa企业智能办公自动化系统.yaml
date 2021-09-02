@@ -1,4 +1,5 @@
 name: 乾星-oa企业智能办公自动化系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - input name="s1" type=image
-  priority: 3

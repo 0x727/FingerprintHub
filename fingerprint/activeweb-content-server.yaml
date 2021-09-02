@@ -1,4 +1,5 @@
 name: activeweb-content-server
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - awnocachebegin__awnocachebegin__awnocachebegin__awnocachebegin__awnocachebegin
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - activeweb cache extension
-  priority: 3

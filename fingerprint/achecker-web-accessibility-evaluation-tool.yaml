@@ -1,4 +1,5 @@
 name: achecker-web-accessibility-evaluation-tool
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="achecker is a web accessibility
-  priority: 2

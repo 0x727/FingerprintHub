@@ -1,4 +1,5 @@
 name: zkwell-corrosion-monitoring-and-corrosion-protection-management-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - background-image:url(images/devicebg.jpg)
-  priority: 3

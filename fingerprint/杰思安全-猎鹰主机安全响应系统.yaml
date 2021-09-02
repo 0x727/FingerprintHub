@@ -1,4 +1,5 @@
 name: 杰思安全-猎鹰主机安全响应系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - majorsec
-  priority: 3

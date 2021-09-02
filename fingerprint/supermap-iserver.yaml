@@ -1,4 +1,5 @@
 name: supermap-iserver
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - window.location.href="iserver";
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - id="copyright"><a href="http://www.supermap.com.cn
-  priority: 3

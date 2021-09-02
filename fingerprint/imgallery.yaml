@@ -1,4 +1,5 @@
 name: imgallery
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://www.imgallery.zor.pl"><b>imgallery
-  priority: 2

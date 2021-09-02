@@ -1,4 +1,5 @@
 name: 中科网威-4a运维堡垒机系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - zk.appname='中科网威4a运维堡垒机系统'
-  priority: 3

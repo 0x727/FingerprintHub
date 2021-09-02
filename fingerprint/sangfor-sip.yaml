@@ -1,4 +1,5 @@
 name: sangfor-sip
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - window.sessionstorage.removeitem('serialcheckobj')
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="/apps/secvisual/static/js/runtime.js?
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - 'url: ''../auth_manage/auth_manage/on_login'''
-  priority: 3

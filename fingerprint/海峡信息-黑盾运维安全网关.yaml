@@ -1,4 +1,5 @@
 name: 海峡信息-黑盾运维安全网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 黑盾运维安全网关(hd-sgs/v4.0)
-  priority: 3

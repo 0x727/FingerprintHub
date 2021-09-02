@@ -1,4 +1,5 @@
 name: asus-aicloud
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/smb/css/startup.png"
-  priority: 3

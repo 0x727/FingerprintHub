@@ -1,4 +1,5 @@
 name: lasso-web-data-engine
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: lasso
   keyword: []
-  priority: 2

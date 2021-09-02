@@ -1,4 +1,5 @@
 name: thoughtconduit
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <html><head><title>error</title></head><body>your request produced an error.</body></html>
-  priority: 2

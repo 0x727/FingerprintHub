@@ -1,4 +1,5 @@
 name: dsview
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="/dsview/images/avocent-logo.png
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="/dsview/themes/
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers:
     Server: avocent dsview
   keyword: []
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - /dsview/images/favicon.ico
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,4 +41,3 @@ fingerprint:
   headers: {}
   keyword:
   - /dsview/protected/login.do
-  priority: 3

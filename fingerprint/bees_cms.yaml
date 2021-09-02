@@ -1,4 +1,5 @@
 name: bees_cms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - powerd by
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   keyword:
   - beescms
   - template/default/images/slides.min.jquery.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,7 +26,6 @@ fingerprint:
   headers: {}
   keyword:
   - /default/images/xslider.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,7 +34,6 @@ fingerprint:
   headers: {}
   keyword:
   - /default/images/search_btn.gif
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -45,7 +42,6 @@ fingerprint:
   headers: {}
   keyword:
   - powerd by beescms
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -54,4 +50,3 @@ fingerprint:
   headers: {}
   keyword:
   - mx_form/mx_form.php
-  priority: 3

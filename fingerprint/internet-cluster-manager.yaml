@@ -1,4 +1,5 @@
 name: internet-cluster-manager
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: internet cluster manager
   keyword: []
-  priority: 3

@@ -1,4 +1,5 @@
 name: anecms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="erwin aligam - ealigam@gmail.com
-  priority: 3

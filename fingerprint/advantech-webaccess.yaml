@@ -1,4 +1,5 @@
 name: advantech-webaccess
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /bw_templete1.dwt
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - /broadweb/webaccessclientsetup.exe
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - /broadweb/bwuconfig.asp
-  priority: 2

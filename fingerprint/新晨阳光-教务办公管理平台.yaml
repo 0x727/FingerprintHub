@@ -1,4 +1,5 @@
 name: 新晨阳光-教务办公管理平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - '>digital anywhere platform</h2>'
-  priority: 3

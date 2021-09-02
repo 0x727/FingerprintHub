@@ -1,4 +1,5 @@
 name: savant-web-server
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: savant
   keyword: []
-  priority: 2

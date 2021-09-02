@@ -1,4 +1,5 @@
 name: synology-photo-station
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - photo_new/syno_photo_main.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="photo station 6"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="service_not_available"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="photo station
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,4 +41,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="album
-  priority: 3

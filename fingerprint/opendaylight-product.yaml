@@ -1,4 +1,5 @@
 name: opendaylight-product
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - j_security_check
-  priority: 3

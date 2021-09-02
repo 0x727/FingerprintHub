@@ -1,4 +1,5 @@
 name: oracle-commerce-cloud
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - id="oracle-cc
-  priority: 2

@@ -1,4 +1,5 @@
 name: 国迈电子安全文档管理系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - 国迈安全私有云部 all rights reserved
   - </span>国迈安全私有云部. <span>all rights reserved
-  priority: 3

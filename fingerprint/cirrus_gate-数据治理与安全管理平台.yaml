@@ -1,4 +1,5 @@
 name: cirrus_gate-数据治理与安全管理平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - window.location.href = "/dlp/admin/user/login.action"
-  priority: 3

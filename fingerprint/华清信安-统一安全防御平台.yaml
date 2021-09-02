@@ -1,4 +1,5 @@
 name: 华清信安-统一安全防御平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - window.dmsdefaultlanguage
   - content="华清信安统一安全防御平台
-  priority: 3

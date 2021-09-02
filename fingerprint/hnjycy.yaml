@@ -1,4 +1,5 @@
 name: hnjycy
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://www.hnjycy.com" target="_blank">沃科网<
-  priority: 3

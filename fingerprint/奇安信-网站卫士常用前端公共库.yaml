@@ -1,4 +1,5 @@
 name: 奇安信-网站卫士常用前端公共库
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - libs.useso.com
-  priority: 3

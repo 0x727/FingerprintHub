@@ -1,4 +1,5 @@
 name: censura
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 'powered by: <a href="http://www.censura.info'
-  priority: 3

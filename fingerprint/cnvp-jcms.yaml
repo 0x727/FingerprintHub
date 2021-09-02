@@ -1,4 +1,5 @@
 name: cnvp-jcms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - publish by jcms2010
-  priority: 3

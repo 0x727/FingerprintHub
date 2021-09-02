@@ -1,4 +1,5 @@
 name: citec-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 正在使用腾讯qq帐号登录消防联网系统
-  priority: 3

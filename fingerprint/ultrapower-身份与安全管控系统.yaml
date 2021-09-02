@@ -1,4 +1,5 @@
 name: ultrapower-身份与安全管控系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <li><p>欢迎进入身份与安全管控系统</p></li>
-  priority: 3

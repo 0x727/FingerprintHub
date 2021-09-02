@@ -1,4 +1,5 @@
 name: sanshuichinatelecombusinesssupportroomsystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - background="images/vista.jpg"
-  priority: 3

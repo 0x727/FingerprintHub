@@ -1,4 +1,5 @@
 name: goldencis-nacp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div class="tit_b"> 通过管理员分配的密码使用紧急入口。</div>
-  priority: 3

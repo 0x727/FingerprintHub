@@ -1,4 +1,5 @@
 name: ipcop-firewall
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <!-- ipcop logo row -->
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - href='https://sourceforge.net/projects/ipcop/
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - href='http://sf.net/projects/ipcop/
-  priority: 2

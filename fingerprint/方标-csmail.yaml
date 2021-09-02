@@ -1,4 +1,5 @@
 name: 方标-csmail
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <frame src="/mainframe_zh-cn.html" />
-  priority: 3

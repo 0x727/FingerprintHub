@@ -1,4 +1,5 @@
 name: viewgood-streammedia
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - fgetquery
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - viewgood
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,7 +26,6 @@ fingerprint:
   keyword:
   - location.href
   - var webvirtualdiretory = 'viewgood';
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,4 +34,3 @@ fingerprint:
   headers: {}
   keyword:
   - src='/viewgood/pc/
-  priority: 3

@@ -1,4 +1,5 @@
 name: resourcemanager
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - this is standby rm. redirecting to the current active rm
-  priority: 2

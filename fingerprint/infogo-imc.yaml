@@ -1,4 +1,5 @@
 name: infogo-imc
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - client_check/js/global.js
-  priority: 3

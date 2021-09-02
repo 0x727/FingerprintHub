@@ -1,4 +1,5 @@
 name: juniper-vpn
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - juniper networks vpn
   - junos pulse secure access service
-  priority: 3

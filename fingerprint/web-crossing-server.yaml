@@ -1,4 +1,5 @@
 name: web-crossing-server
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: web crossing
   keyword: []
-  priority: 2

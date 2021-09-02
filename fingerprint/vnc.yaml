@@ -1,4 +1,5 @@
 name: vnc
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <applet code=vncviewer.class archive=vncviewer.jar
-  priority: 2

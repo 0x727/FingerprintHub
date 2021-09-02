@@ -1,4 +1,5 @@
 name: dedecms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - power by dedecms
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - http://www.dedecms.com/
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,7 +34,6 @@ fingerprint:
   keyword:
   - /templets/default/style/dedecms.css
   - dedecms
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -45,4 +42,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div><h3>dedecms error warning!</h3>
-  priority: 3

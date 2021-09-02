@@ -1,4 +1,5 @@
 name: zentao-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - $('#zentao').addClass('btn-success');
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - zentao/theme
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a id='zentaopro' href='/pro/'
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - $('#zentaopro').addclass
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -45,7 +42,6 @@ fingerprint:
   keyword:
   - powered by <a href='http://www.zentao.net' target='_blank'>zentaopms
   - welcome to use zentao!
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -54,7 +50,6 @@ fingerprint:
   headers: {}
   keyword:
   - href='/zentao/favicon.ico
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -63,4 +58,3 @@ fingerprint:
   headers: {}
   keyword:
   - 'server: cpws'
-  priority: 3

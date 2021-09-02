@@ -1,4 +1,5 @@
 name: accellion-secure-file-transfer
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - secured by accellion
-  priority: 3

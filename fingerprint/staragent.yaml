@@ -1,4 +1,5 @@
 name: staragent
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - window.location = "/user/home.jsx";
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/aisc/aisc.css
-  priority: 2

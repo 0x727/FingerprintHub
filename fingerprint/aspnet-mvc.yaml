@@ -1,4 +1,5 @@
 name: aspnet-mvc
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <h2>modify this template to jump-start your asp.net mvc application.</h2>
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - asp.net mvc application</p>
-  priority: 2

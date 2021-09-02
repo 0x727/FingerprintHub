@@ -1,4 +1,5 @@
 name: hcl-sametime
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/chat/sametime192x192.png
-  priority: 3

@@ -1,4 +1,5 @@
 name: mantuoluo-medication
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h2>曼陀罗医疗</h2>
-  priority: 3

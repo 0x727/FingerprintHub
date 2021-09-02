@@ -1,4 +1,5 @@
 name: qcubed-development-framework
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <div id="codeversion">qcubed development framework
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <b>qcubed version:</b>
-  priority: 2

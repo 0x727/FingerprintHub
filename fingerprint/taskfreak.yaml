@@ -1,4 +1,5 @@
 name: taskfreak
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://www.taskfreak.com">taskfreak
-  priority: 2

@@ -1,4 +1,5 @@
 name: udesk
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - assets-cli.udesk.cn/im_client/js/udeskapi.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - udesk.cn/im_client/?web_plugin_id=
-  priority: 3

@@ -1,4 +1,5 @@
 name: thinkmail
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - href='http://www.thinkcloud.cn' target='_blank'>thinkcloud</a>.all right reserved</div>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - app_download":"","thinkmail官网
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - /webmail"+"/common/validatecode.do
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,4 +33,3 @@ fingerprint:
   headers: {}
   keyword:
   - /resource/se/common/jquery.js
-  priority: 3

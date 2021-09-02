@@ -1,4 +1,5 @@
 name: 天清汉马vpn
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /vpn/common/js/leadsec.js
   - /vpn/user/common/custom/auth_home.css
-  priority: 3

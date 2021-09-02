@@ -1,4 +1,5 @@
 name: h3c-hdm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /video_record.jnlp
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - <iframe frameborder="0" class="framelayout" src="./page/blank.html" name="mainframe"
     id="mainframe
-  priority: 3

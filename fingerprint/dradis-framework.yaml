@@ -1,4 +1,5 @@
 name: dradis-framework
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <p class="copyright">dradis
-  priority: 2

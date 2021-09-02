@@ -1,4 +1,5 @@
 name: alibaba-group-dms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - copyright &copy;  dms  all rights reserved （alibaba 数据管理产品）
-  priority: 3

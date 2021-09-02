@@ -1,4 +1,5 @@
 name: thinkcmf
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers:
     X-Powered-By: ThinkCMF
   keyword: []
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="thinkcmf
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers:
     X-Powered-By: thinkcmf
   keyword: []
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - made by <a href="http://www.thinkcmf.com" target="_blank">thinkcmf</a>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,4 +41,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a title="官方网站" href="http://www.thinkcmf.com">ThinkCMF</a>
-  priority: 1

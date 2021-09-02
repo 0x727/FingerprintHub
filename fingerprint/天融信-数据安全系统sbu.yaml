@@ -1,4 +1,5 @@
 name: 天融信-数据安全系统sbu
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 天融信数据安全系统sbu
-  priority: 3

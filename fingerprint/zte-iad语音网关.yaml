@@ -1,4 +1,5 @@
 name: zte-iad语音网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /image/i202.gif
   - /image/banner_i532.jpg
-  priority: 3

@@ -1,4 +1,5 @@
 name: lancom-防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - firewall
   - <a href="http://www.lancom-systems.de">
-  priority: 3

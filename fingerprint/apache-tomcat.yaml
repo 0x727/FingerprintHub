@@ -1,4 +1,5 @@
 name: apache-tomcat
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <h3>Apache Tomcat/
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - <title>Apache Tomcat/
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -27,7 +26,6 @@ fingerprint:
   keyword:
   - /manager/html
   - /manager/status
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,7 +34,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="tomcat.css
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -45,7 +42,6 @@ fingerprint:
   headers: {}
   keyword:
   - this is the default tomcat home page
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -54,4 +50,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h3>apache tomcat
-  priority: 2

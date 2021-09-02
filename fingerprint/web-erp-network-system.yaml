@@ -1,4 +1,5 @@
 name: web-erp-network-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - window.location='/www/login.html'
-  priority: 3

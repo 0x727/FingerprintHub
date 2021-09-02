@@ -1,4 +1,5 @@
 name: open-blog
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - target="_blank">open blog
-  priority: 3

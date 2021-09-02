@@ -1,4 +1,5 @@
 name: openfire
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - 'background: transparent url(images/login_logo.gif) no-repeat'
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="row justify-content-center"
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - <title>openfire 管理界面</title>
-  priority: 2

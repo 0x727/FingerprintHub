@@ -1,4 +1,5 @@
 name: rusong-product
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - plugins/wbb/barrett.js
-  priority: 3

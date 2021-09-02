@@ -1,4 +1,5 @@
 name: h2-database
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - login.jsp?jsessionid=
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - welcome to h2
-  priority: 2

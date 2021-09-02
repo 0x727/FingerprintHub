@@ -1,4 +1,5 @@
 name: etcd-viewer
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a class="navbar-brand" href="./home">etcd viewer</a>
-  priority: 2

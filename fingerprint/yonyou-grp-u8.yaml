@@ -1,4 +1,5 @@
 name: yonyou-grp-u8
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - window.location.replace("login.jsp?up=1")
-  priority: 3

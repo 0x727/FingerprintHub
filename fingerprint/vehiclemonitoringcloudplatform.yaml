@@ -1,4 +1,5 @@
 name: vehiclemonitoringcloudplatform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - gps-web"></iframe>
-  priority: 3

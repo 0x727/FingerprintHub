@@ -1,4 +1,5 @@
 name: gerpgo-erp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - static/style/images/tou.png") no-repeat
-  priority: 3

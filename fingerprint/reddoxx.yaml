@@ -1,4 +1,5 @@
 name: reddoxx
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 148779de-1cf1-49bb-8bdb-129321cf8974
-  priority: 3

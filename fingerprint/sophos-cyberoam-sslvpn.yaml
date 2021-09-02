@@ -1,4 +1,5 @@
 name: sophos-cyberoam-sslvpn
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - sslvpnuserportalloginform
   - cyberoam ssl vpn portal
-  priority: 3

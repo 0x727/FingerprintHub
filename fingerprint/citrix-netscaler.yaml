@@ -1,4 +1,5 @@
 name: citrix-netscaler
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers:
     Set-Cookie: citrix_ns_id
   keyword: []
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - netscape/firefox/opera
-  priority: 2

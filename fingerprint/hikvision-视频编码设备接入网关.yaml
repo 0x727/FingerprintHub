@@ -1,4 +1,5 @@
 name: hikvision-视频编码设备接入网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - href="/bncgi-bin/test.pl
   - <input id="p_pass" class="int" onfocus="this.value='';" tabindex="2" name="p_pass
-  priority: 3

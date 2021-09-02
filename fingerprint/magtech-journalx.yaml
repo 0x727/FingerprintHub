@@ -1,4 +1,5 @@
 name: magtech-journalx
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - journalx/authorlogon.action?mag_id
-  priority: 3

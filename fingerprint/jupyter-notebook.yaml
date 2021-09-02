@@ -1,4 +1,5 @@
 name: jupyter-notebook
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <div id="ipython-main-app" class="container">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - <div id="ipython_notebook" class="nav navbar-brand">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - <title>Jupyter Notebook</title>
-  priority: 1

@@ -1,4 +1,5 @@
 name: wap
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - window.location = 'wap.htm'
-  priority: 1

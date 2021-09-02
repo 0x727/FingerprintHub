@@ -1,4 +1,5 @@
 name: apache2-ubuntu默认页面
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - Apache2 Ubuntu Default Page
   - ubuntu-logo.png
-  priority: 1

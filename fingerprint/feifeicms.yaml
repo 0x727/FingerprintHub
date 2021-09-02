@@ -1,4 +1,5 @@
 name: feifeicms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - data-target="#navbar-feifeicms"
-  priority: 3

@@ -1,4 +1,5 @@
 name: gogs
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="gogs
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a class="item" target="_blank" href="https://gogs.io/docs" rel="noreferrer">帮助</a>
-  priority: 2

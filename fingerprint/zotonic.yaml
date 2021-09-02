@@ -1,4 +1,5 @@
 name: zotonic
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /lib/js/apps/zotonic-1.0
   - 'powered by: zotonic'
-  priority: 3

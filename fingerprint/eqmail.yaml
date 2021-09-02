@@ -1,4 +1,5 @@
 name: eqmail
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="eqmail.ico
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <frame src="/cgi-bin/eqwebmail?empty=1
-  priority: 3

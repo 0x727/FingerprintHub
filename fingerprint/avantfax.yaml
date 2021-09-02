@@ -1,4 +1,5 @@
 name: avantfax
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="images/avantfax-big.png" border="0" alt="avantfax
-  priority: 3

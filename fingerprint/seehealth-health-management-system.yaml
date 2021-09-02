@@ -1,4 +1,5 @@
 name: seehealth-health-management-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="upvalidatefile.aspx
-  priority: 3

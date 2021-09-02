@@ -1,4 +1,5 @@
 name: marathon
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="img/marathon-favicon.ico
-  priority: 2

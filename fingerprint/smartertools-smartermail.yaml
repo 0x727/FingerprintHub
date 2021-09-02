@@ -1,4 +1,5 @@
 name: smartertools-smartermail
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - login - smartermail
   - <a href='http://www.smartertools.com/smartermail/mail-server-software.aspx' target='_blank'>smartermail
-  priority: 3

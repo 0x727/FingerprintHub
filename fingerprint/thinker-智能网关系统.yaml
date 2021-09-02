@@ -1,4 +1,5 @@
 name: thinker-智能网关系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 智能网关系统<br>"
-  priority: 3

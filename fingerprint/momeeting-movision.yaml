@@ -1,4 +1,5 @@
 name: momeeting-movision
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="meeting movision"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - document.title="登录-摩云视讯"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - <!-- 科达视讯云 摩云视讯 电信有区别 -->
-  priority: 3

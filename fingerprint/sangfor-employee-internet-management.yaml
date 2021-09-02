@@ -1,4 +1,5 @@
 name: sangfor-employee-internet-management
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - ' = function(str, key)'
   - content="must-revalidate"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   headers: {}
   keyword:
   - document.cookie = 'sangfor_session_hash=0'
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,7 +26,6 @@ fingerprint:
   headers: {}
   keyword:
   - 上网优化管理
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,7 +34,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://sec.sangfor.com.cn/events/89.html"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -45,4 +42,3 @@ fingerprint:
   headers: {}
   keyword:
   - internet authentication system
-  priority: 3

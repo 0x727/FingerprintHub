@@ -1,4 +1,5 @@
 name: zipkin
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <base href="/zipkin/">
-  priority: 2

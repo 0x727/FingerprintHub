@@ -1,4 +1,5 @@
 name: hanweb-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - produced by 大汉网络
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href='http://www.hanweb.com' style='display:none'>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta name='generator' content='大汉版通'>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta name='author' content='大汉网络'>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,4 +41,3 @@ fingerprint:
   headers: {}
   keyword:
   - /jcms_files/jcms
-  priority: 3

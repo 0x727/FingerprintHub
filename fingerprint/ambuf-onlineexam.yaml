@@ -1,4 +1,5 @@
 name: ambuf-onlineexam
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 北京众恒志信科技
-  priority: 3

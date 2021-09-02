@@ -1,4 +1,5 @@
 name: hollysys-mes
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - resource="title_sub"
-  priority: 3

@@ -1,4 +1,5 @@
 name: vbulletin
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="vbulletin
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - powered by vbulletin&trade;
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,4 +26,3 @@ fingerprint:
   keyword:
   - <!-- do not remove this copyright notice -->powered by < a href="https://www.vbulletin.com"
     id="vbulletinlink">
-  priority: 3

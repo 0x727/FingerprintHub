@@ -1,4 +1,5 @@
 name: 优仕康-网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="ipxweb/login.html
-  priority: 3

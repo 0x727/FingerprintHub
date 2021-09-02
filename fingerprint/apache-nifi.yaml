@@ -1,4 +1,5 @@
 name: apache-nifi
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="/nifi/">/nifi</a>
-  priority: 1

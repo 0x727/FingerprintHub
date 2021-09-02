@@ -1,4 +1,5 @@
 name: tencent-foxmail-server
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/images//foxs_logo.gif
-  priority: 3

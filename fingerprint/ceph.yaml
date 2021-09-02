@@ -1,4 +1,5 @@
 name: ceph
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="ceph-none-found" rv-hide="rbd_pools
-  priority: 3

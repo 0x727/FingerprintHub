@@ -1,4 +1,5 @@
 name: microsoft-exchange
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
     Location: /owa/
     Server: Microsoft
   keyword: []
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   headers: {}
   keyword:
   - <!-- owapage = asp.auth_logon_aspx
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,7 +26,6 @@ fingerprint:
   headers: {}
   keyword:
   - /exchweb/bin/auth/owalogon.asp
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,7 +34,6 @@ fingerprint:
   headers: {}
   keyword:
   - /exchweb/bin/auth/owalogon.asp?url=
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -45,7 +42,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="/owa/auth/
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -54,7 +50,6 @@ fingerprint:
   headers: {}
   keyword:
   - window.location.replace("/owa/" + window.location.hash);</script></head><body></body>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -63,7 +58,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta http-equiv="refresh" contect="0;url=/owa">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -72,7 +66,6 @@ fingerprint:
   headers: {}
   keyword:
   - themes/resources/segoeui-semibold.ttf
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -82,7 +75,6 @@ fingerprint:
   keyword:
   - <div class="signinheader">outlook</div>
   - owalogocontainer
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -92,7 +84,6 @@ fingerprint:
   keyword:
   - /owa/
   - owapage = asp.auth_logon_aspx
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -102,7 +93,6 @@ fingerprint:
   keyword:
   - /owa/
   - showpasswordcheck
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -111,4 +101,3 @@ fingerprint:
   headers: {}
   keyword:
   - outlook
-  priority: 3

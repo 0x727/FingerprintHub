@@ -1,4 +1,5 @@
 name: tq-cloud-call-center
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - tq.cn/floatcard?
-  priority: 2

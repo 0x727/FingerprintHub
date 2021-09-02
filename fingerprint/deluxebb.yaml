@@ -1,4 +1,5 @@
 name: deluxebb
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="powered by deluxebb
-  priority: 3

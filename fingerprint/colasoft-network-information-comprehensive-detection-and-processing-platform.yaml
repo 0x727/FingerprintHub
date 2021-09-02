@@ -1,4 +1,5 @@
 name: colasoft-network-information-comprehensive-detection-and-processing-platform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta name="colasoft"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - 科来网络信息综合检测处理平台
-  priority: 3

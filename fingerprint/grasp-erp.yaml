@@ -1,4 +1,5 @@
 name: grasp-erp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - ' alert("欢迎使用 【管家婆分销erp)'
-  priority: 3

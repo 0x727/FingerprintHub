@@ -1,4 +1,5 @@
 name: cloodie-his
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="/design/common/his.logo.white.svg" alt="his logo
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/design/design/cloodie.css
-  priority: 3

@@ -1,4 +1,5 @@
 name: sophos-web-appliance
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - url(resources/images/en/login_swa.jpg)
-  priority: 3

@@ -1,4 +1,5 @@
 name: bbpress
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <!-- if you like showing off the fact that your server rocks -->
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - is proudly powered by <a href="http://bbpress.org
-  priority: 3

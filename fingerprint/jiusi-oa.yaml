@@ -1,4 +1,5 @@
 name: jiusi-oa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 九思软件
-  priority: 3

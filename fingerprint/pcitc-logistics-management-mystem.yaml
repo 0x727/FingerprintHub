@@ -1,4 +1,5 @@
 name: pcitc-logistics-management-mystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - ' href="/newimages/login/logo_icon.ico'
-  priority: 3

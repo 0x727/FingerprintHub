@@ -1,4 +1,5 @@
 name: 74cms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="74cms.com"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="74cms.com
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="骑士cms
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - powered by <a href="http://www.74cms.com/"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,7 +41,6 @@ fingerprint:
   headers: {}
   keyword:
   - /templates/default/css/common.css
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -53,4 +49,3 @@ fingerprint:
   headers: {}
   keyword:
   - selectjobscategory
-  priority: 3

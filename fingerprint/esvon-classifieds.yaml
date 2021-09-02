@@ -1,4 +1,5 @@
 name: esvon-classifieds
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - powered by esvon
-  priority: 2

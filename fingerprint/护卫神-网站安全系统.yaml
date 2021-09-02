@@ -1,4 +1,5 @@
 name: 护卫神-网站安全系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 护卫神.网站安全系统
-  priority: 3

@@ -1,4 +1,5 @@
 name: hortonworks-smartsense-tool
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - name="hstapp/config/environment"
-  priority: 2

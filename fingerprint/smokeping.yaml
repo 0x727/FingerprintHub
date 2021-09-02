@@ -1,4 +1,5 @@
 name: smokeping
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://oss.oetiker.ch/smokeping/counter.cgi/
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <tr><td class="menuitem" colspan="2">&nbsp;-&nbsp;<a class="menulink" href="?target=
-  priority: 3

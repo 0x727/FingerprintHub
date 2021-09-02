@@ -1,4 +1,5 @@
 name: lime-survey
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - content="limesurvey
   - href="http://www.limesurvey.org" target="_blank
-  priority: 3

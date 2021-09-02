@@ -1,4 +1,5 @@
 name: 网御星云-vpn
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - src="/vpn/user/common/
   - /js/leadsec.js
-  priority: 3

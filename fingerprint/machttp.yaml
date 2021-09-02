@@ -1,4 +1,5 @@
 name: machttp
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: machttp
   keyword: []
-  priority: 2

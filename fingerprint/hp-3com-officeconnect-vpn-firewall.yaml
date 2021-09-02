@@ -1,4 +1,5 @@
 name: hp-3com-officeconnect-vpn-firewall
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 3com - officeconnect vpn firewall
-  priority: 3

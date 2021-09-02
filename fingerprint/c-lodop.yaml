@@ -1,4 +1,5 @@
 name: c-lodop
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <h1>关于c-lodop免费和注册授权</h1>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - document.getelementbyid("reqid").value==document.getelementbyid("licid").value
-  priority: 3

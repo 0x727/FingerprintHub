@@ -1,4 +1,5 @@
 name: cerberus-helpdesk
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - <!-- if you have your own stylesheet for html elements, you can remove the cerberus-html.css
     link
-  priority: 3

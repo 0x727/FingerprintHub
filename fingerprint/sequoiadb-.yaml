@@ -1,4 +1,5 @@
 name: sequoiadb-
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="btn btn-default" onclick="updateconnect();">
-  priority: 2

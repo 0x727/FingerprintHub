@@ -1,4 +1,5 @@
 name: wuzhicms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta name="generator" content="wuzhicms
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - content="wuzhicms
   - powered by wuzhicms
-  priority: 3

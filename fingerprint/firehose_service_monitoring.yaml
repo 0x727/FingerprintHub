@@ -1,4 +1,5 @@
 name: firehose_service_monitoring
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h1>firehose_service_monitoring status</h1>
-  priority: 3

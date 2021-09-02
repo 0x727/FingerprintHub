@@ -1,4 +1,5 @@
 name: iwebshop
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - _skinpath
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - _themepath
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -27,4 +26,3 @@ fingerprint:
   keyword:
   - _weburl
   - class="pro_title">iwebshop支付测试
-  priority: 2

@@ -1,4 +1,5 @@
 name: hospital-material-supplier-b2b-platform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 医院物资供应商b2b平台
-  priority: 3

@@ -1,4 +1,5 @@
 name: netport
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: netport software
   keyword: []
-  priority: 2

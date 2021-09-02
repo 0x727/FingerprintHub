@@ -1,4 +1,5 @@
 name: lifesize-control
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /lifesizecontrol/asp/index.html
-  priority: 3

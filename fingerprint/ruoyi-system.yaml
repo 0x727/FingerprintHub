@@ -1,4 +1,5 @@
 name: ruoyi-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /ry-ui.css
   - /ry-ui.js
-  priority: 3

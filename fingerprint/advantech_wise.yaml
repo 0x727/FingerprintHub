@@ -1,4 +1,5 @@
 name: advantech_wise
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - remote manage your intelligent systems
-  priority: 3

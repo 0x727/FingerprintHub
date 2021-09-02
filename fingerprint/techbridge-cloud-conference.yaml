@@ -1,4 +1,5 @@
 name: techbridge-cloud-conference
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://www.techbridge-inc.com/" target="_blank"></a></span>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - /images/web_meeting/tool_bg.jpg
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - /joinmeeting.js
-  priority: 3

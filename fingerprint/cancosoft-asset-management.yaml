@@ -1,4 +1,5 @@
 name: cancosoft-asset-management
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - var path = "/cassets";
-  priority: 3

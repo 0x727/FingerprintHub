@@ -1,4 +1,5 @@
 name: manageengine-deviceexpert
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /deviceexpert.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - password manager pro does not allow
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - selectpasswordpolicy
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,4 +33,3 @@ fingerprint:
   headers: {}
   keyword:
   - changepasswordpolicy
-  priority: 3

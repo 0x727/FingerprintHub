@@ -1,4 +1,5 @@
 name: sugarcrm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href=" javascript:void window.open('http://support.sugarcrm.com')">support</a>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   keyword:
   - '<img style=''margin-top: 2px'' border=''0'' width=''106'' height=''23'' src=''include/images/poweredby_sugarcrm.png''
     alt=''powered by sugarcrm''>'
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -28,4 +27,3 @@ fingerprint:
   keyword:
   - <script>var module_sugar_grp1 = 'users';</script><script>var action_sugar_grp1
     = 'login';</script><script>jscal_today
-  priority: 3

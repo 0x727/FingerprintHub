@@ -1,4 +1,5 @@
 name: sap-web-application-server
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers:
     Server: sap web application server
   keyword: []
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers:
     Server: sap netweaver application server
   keyword: []
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers:
     Server: sap j2ee engine
   keyword: []
-  priority: 2

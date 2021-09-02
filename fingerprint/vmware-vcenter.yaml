@@ -1,4 +1,5 @@
 name: vmware-vcenter
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /converter/vmware-converter-client.exe
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="vmware vcenter
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - /vmw_nsx_logo-black-triangle-500w.png
-  priority: 1

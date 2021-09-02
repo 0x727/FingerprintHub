@@ -1,4 +1,5 @@
 name: urp-integrated-educational-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <input name="j_captcha_response" type="hidden
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - 北京清元优软科技有限公司
   - 教务系统
-  priority: 3

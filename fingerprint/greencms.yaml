@@ -1,4 +1,5 @@
 name: greencms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     X-Powered-By: greencms
   keyword: []
-  priority: 3

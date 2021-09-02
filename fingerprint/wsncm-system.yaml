@@ -1,4 +1,5 @@
 name: wsncm-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="login">wsncm动态仓单系统
-  priority: 3

@@ -1,4 +1,5 @@
 name: telenor-4g-router
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <form id="default_login" name="default_login" method="post" action="/goform/user_login">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - please power off and plug in (u)sim card. then power on again. or pin is permanently
     blocked, please contact the provider
-  priority: 3

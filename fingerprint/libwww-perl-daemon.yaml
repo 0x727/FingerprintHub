@@ -1,4 +1,5 @@
 name: libwww-perl-daemon
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: libwww-perl-daemon
   keyword: []
-  priority: 2

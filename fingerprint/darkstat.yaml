@@ -1,4 +1,5 @@
 name: darkstat
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: darkstat
   keyword: []
-  priority: 3

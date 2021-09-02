@@ -1,4 +1,5 @@
 name: 网御星云-ssl-vpn
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /ssl/down/usbkey.exe
   - 欢迎使用leadsec网御ssl vpn
-  priority: 3

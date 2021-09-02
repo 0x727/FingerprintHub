@@ -1,4 +1,5 @@
 name: cisco-webex
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - alt="cisco webex meetings server"
-  priority: 3

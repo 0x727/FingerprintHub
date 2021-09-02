@@ -1,4 +1,5 @@
 name: aliyun-rds
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="legend">rds管理系统</div>
-  priority: 3

@@ -1,4 +1,5 @@
 name: phplist-邮件系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - content="phplist version
   - content="michiel dethmers - http://www.phplist.com
-  priority: 3

@@ -1,4 +1,5 @@
 name: huawei-ar敏捷网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /verifycode.cgi?vrfcodeid=
   - document.title = 'ar web登录
-  priority: 3

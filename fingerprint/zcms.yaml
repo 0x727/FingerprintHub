@@ -1,4 +1,5 @@
 name: zcms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - _ZCMS_ShowNewMessage
   - zcms_skin
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -19,7 +19,6 @@ fingerprint:
   keyword:
   - _zcms_shownewmessage
   - zcms_skin
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -28,4 +27,3 @@ fingerprint:
   headers: {}
   keyword:
   - app=zcms
-  priority: 3

@@ -1,4 +1,5 @@
 name: ymail-optical-content-reading
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /ymail/default/js/menu.js
-  priority: 3

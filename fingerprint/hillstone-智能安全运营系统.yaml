@@ -1,4 +1,5 @@
 name: hillstone-智能安全运营系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /static/css/main.4672616b.chunk.css
   - 智源
-  priority: 3

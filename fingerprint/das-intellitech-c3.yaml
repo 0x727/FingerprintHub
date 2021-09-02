@@ -1,4 +1,5 @@
 name: das-intellitech-c3
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - window.location.href="single/empmain2.aspx
-  priority: 3

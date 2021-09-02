@@ -1,4 +1,5 @@
 name: superdata-oa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 速达软件技术（广州）有限公司
-  priority: 3

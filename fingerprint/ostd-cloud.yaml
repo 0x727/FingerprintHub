@@ -1,4 +1,5 @@
 name: ostd-cloud
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="sys-title-right">智联云服务
-  priority: 3

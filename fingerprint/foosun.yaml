@@ -1,4 +1,5 @@
 name: foosun
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - created by dotnetcms
   - for foosun
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   headers: {}
   keyword:
   - powered by www.foosun.net,products:foosun content manage system
-  priority: 3

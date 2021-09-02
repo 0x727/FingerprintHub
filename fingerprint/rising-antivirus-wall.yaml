@@ -1,4 +1,5 @@
 name: rising-antivirus-wall
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - action="/index.php" onsubmit="return checkfrm(this);
-  priority: 3

@@ -1,4 +1,5 @@
 name: useresponse
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - <form id="system-form-registration" enctype="application/x-www-form-urlencoded"
     class="system-form-registration" accept-charset="utf-8
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -19,4 +19,3 @@ fingerprint:
   keyword:
   - title="customer feedback software, community support system" target="_blank" href="http://www.useresponse.com"
     class="popup-logo">
-  priority: 2

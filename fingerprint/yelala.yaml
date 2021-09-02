@@ -1,4 +1,5 @@
 name: yelala
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /public/js/knockout-3.4.1.debug.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - '<form action="/index.php/home/login/login.html" method="post" id="login" class="form"
     data-bind="submit: submitform">'
-  priority: 3

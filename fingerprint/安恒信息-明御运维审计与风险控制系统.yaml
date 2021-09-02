@@ -1,4 +1,5 @@
 name: 安恒信息-明御运维审计与风险控制系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 明御运维审计
-  priority: 3

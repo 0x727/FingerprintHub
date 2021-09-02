@@ -1,4 +1,5 @@
 name: cms4j
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="/cms4jadmin/login.jsp
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - method="post" name="cms4jsearchform" id="cms4jsearchform
-  priority: 3

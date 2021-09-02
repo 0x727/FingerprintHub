@@ -1,4 +1,5 @@
 name: easycloud
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h1 class="white">云资源管控平台</h1>
-  priority: 3

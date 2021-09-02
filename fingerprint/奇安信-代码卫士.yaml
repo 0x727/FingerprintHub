@@ -1,4 +1,5 @@
 name: 奇安信-代码卫士
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - 'baseurl : ''app'',        //配置模块根路径到静态资源根目录'
   - 360代码卫士
-  priority: 3

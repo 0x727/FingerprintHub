@@ -1,4 +1,5 @@
 name: ibm-lotus-sametime
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="sametime/avtest.js"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="sametime/meetingcenter-moz.css"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="sametimemeetingsbuttontransparent"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,4 +33,3 @@ fingerprint:
   headers: {}
   keyword:
   - sametime/themes/images/blank.gif
-  priority: 3

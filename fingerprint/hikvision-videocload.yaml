@@ -1,4 +1,5 @@
 name: hikvision-videocload
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: face-webs
   keyword: []
-  priority: 3

@@ -1,4 +1,5 @@
 name: adt-sjw74-vpn网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - sjw74
   - src="./system/usbkey.js"
-  priority: 3

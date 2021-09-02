@@ -1,4 +1,5 @@
 name: euesoft-hr
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - link.description = "亿华软件"
-  priority: 3

@@ -1,4 +1,5 @@
 name: myscada-hmi
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - if(window.__myscadaversion)
-  priority: 3

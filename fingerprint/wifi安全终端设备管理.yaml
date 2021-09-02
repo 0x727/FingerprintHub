@@ -1,4 +1,5 @@
 name: wifi安全终端设备管理
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h1>wifi安全终端设备管理</h1>
-  priority: 3

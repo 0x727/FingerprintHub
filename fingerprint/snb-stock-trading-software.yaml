@@ -1,4 +1,5 @@
 name: snb-stock-trading-software
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - copyright 2005–2009 <a href="http://www.s-mo.com">
-  priority: 3

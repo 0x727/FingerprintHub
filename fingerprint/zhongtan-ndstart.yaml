@@ -1,4 +1,5 @@
 name: zhongtan-ndstart
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - var pubnewsarray
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - '<title>南大之星信息发布系统 '
-  priority: 3

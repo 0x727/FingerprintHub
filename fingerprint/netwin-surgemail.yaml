@@ -1,4 +1,5 @@
 name: netwin-surgemail
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - href="/about_mail.htm">about surgemail
   - surgemail welcome page
-  priority: 3

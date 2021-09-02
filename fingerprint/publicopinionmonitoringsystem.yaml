@@ -1,4 +1,5 @@
 name: publicopinionmonitoringsystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /mpoweb/a/login
-  priority: 3

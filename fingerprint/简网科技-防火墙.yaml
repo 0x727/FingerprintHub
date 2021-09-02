@@ -1,4 +1,5 @@
 name: 简网科技-防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - action="/logincheck"
   - class="login-head clearfix"
-  priority: 3

@@ -1,4 +1,5 @@
 name: ibm-cics-transaction-server
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: ibm_cics_transaction_server
   keyword: []
-  priority: 2

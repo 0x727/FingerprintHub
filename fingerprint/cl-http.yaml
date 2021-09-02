@@ -1,4 +1,5 @@
 name: cl-http
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: cl-http
   keyword: []
-  priority: 2

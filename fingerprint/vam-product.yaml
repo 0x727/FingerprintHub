@@ -1,4 +1,5 @@
 name: vam-product
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - id="mymodallabel">login vam system
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - powered by virtual airlines manager
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="js/vam.js"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,4 +33,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="https://virtualairlinesmanager.net/">virtual airlines manager
-  priority: 3

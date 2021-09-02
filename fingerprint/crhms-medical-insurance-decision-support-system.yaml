@@ -1,4 +1,5 @@
 name: crhms-medical-insurance-decision-support-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - name="source" value="clientbin/cisdasystem.xap"
-  priority: 3

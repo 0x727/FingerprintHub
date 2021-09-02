@@ -1,4 +1,5 @@
 name: vop
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - lgdynacodebtn
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - id="lgform" action="/sso/login
   - vop
-  priority: 3

@@ -1,4 +1,5 @@
 name: shwatermeter-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 关于正则表达式的内容在本书的第10章中有较详细的讨论
-  priority: 3

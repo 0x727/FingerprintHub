@@ -1,4 +1,5 @@
 name: vmware-vsphere
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <meta name="description" content="VMware vSphere
-  priority: 3

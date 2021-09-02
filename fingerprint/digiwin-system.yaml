@@ -1,4 +1,5 @@
 name: digiwin-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="common_footer1030_textfontlink"
-  priority: 3

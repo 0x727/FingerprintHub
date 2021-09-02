@@ -1,4 +1,5 @@
 name: hanming-video-conferencing
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="win_introduce
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - /resources/fmweb/other/js/login.js
-  priority: 3

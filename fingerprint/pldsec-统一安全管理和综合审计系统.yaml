@@ -1,4 +1,5 @@
 name: pldsec-统一安全管理和综合审计系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - module/image/pldsec.css
-  priority: 3

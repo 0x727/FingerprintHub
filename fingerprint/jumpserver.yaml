@@ -1,4 +1,5 @@
 name: jumpserver
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - Jumpserver开源堡垒机
-  priority: 3

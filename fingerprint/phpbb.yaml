@@ -1,4 +1,5 @@
 name: phpbb
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers:
     Set-Cookie: phpbb3_
   keyword: []
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - http://www.longluntan.com/zh/phpbb/
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,7 +26,6 @@ fingerprint:
   keyword:
   - phpbb
   - phpbb group" />
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,4 +34,3 @@ fingerprint:
   headers: {}
   keyword:
   - start quick hack - phpbb statistics mod
-  priority: 3

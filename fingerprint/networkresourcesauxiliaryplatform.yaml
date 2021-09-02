@@ -1,4 +1,5 @@
 name: networkresourcesauxiliaryplatform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <b>网络资源综合支撑辅助平台</b>
-  priority: 3

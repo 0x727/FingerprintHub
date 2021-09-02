@@ -1,4 +1,5 @@
 name: kingsoft-duba-enterprise
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="title">关于全网部署金山毒霸企业版
-  priority: 3

@@ -1,4 +1,5 @@
 name: micro-focus-open-enterprise-server
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h3>micro focus open enterprise server 提供市场中的最佳网络、文件和打印服务。</h3>
-  priority: 3

@@ -1,4 +1,5 @@
 name: vpn358电子资源访问统计系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - href="/lib/bootstrap/ico/favicon.ico"
   - class="form-actions j_add_ip_actions"
-  priority: 3

@@ -1,4 +1,5 @@
 name: moosefs
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - mfs.cgi
   - under-goal files
-  priority: 2

@@ -1,4 +1,5 @@
 name: lenovo-enterprise-network-disk
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - client/android/bin/lenovobox.apk
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - alt="联想企业网盘android客户端下载"
-  priority: 3

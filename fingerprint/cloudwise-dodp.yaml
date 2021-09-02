@@ -1,4 +1,5 @@
 name: cloudwise-dodp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /public/vendor/monaco/vs/loader.js
-  priority: 3

@@ -1,4 +1,5 @@
 name: 金蝶云星空
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /ClientBin/Kingdee.BOS.XPF.App.xap
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - HTML5/content/themes/kdcss.min.css
-  priority: 3

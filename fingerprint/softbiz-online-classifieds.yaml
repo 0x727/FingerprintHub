@@ -1,4 +1,5 @@
 name: softbiz-online-classifieds
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - http://www.softbizscripts.com/classified-ads-plus-script-features.php
-  priority: 2

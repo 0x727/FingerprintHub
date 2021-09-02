@@ -1,4 +1,5 @@
 name: multiabnle-m18
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <label>打开m18 app， 扫描二维码</label>
-  priority: 3

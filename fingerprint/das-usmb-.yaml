@@ -1,4 +1,5 @@
 name: das-usmb-
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - var pagefunc968535468893538dasdaweqwertion = "timeout";
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="loadoem?path=login-logo.png
-  priority: 3

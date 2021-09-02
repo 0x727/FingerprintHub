@@ -1,4 +1,5 @@
 name: shopsn
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="shopsn
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://www.shopsn.net">商城系统</a>&nbsp;提供技术支持
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - '<span>shopsn全网开源<a style="padding: 0px" href="http://www.shopsn.net'
-  priority: 3

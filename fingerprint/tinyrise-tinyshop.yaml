@@ -1,4 +1,5 @@
 name: tinyrise-tinyshop
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - var server_url = '/__con__/__act__';
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - tiny_token_
-  priority: 3

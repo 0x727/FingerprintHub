@@ -1,4 +1,5 @@
 name: dayrui-poscms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /statics/admin/global/plugins/font-awesome/css/font-awesome.min.css
-  priority: 3

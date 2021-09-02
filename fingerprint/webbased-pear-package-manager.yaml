@@ -1,4 +1,5 @@
 name: webbased-pear-package-manager
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - pear_frontend_web
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <img src="?img=pear" width="104" height="50" vspace="2" hspace="5" alt="pear">
-  priority: 3

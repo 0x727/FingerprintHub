@@ -1,4 +1,5 @@
 name: pcitc-cameras-and-surveillance
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - images/slider/banner-gis.png
-  priority: 3

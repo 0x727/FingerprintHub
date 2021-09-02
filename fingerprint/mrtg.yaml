@@ -1,4 +1,5 @@
 name: mrtg
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://oss.oetiker.ch/mrtg/
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - /mrtg-l.png
   - command line is easier to read using "view page properties" of your browser
-  priority: 3

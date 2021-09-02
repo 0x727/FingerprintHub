@@ -1,4 +1,5 @@
 name: kerio-webstar
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers:
     Server: kerio_webstar
   keyword: []
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers:
     Server: webstar
   keyword: []
-  priority: 2

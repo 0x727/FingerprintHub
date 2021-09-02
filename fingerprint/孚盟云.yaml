@@ -1,4 +1,5 @@
 name: 孚盟云
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - fumasoft
   - 孚盟云
-  priority: 1

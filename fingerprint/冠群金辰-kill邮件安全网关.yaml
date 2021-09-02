@@ -1,4 +1,5 @@
 name: 冠群金辰-kill邮件安全网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - background="skins/default/images/login_ksgm.jpg
   - kill邮件安全网关
-  priority: 3

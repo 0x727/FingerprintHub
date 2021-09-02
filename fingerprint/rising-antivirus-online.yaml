@@ -1,4 +1,5 @@
 name: rising-antivirus-online
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="ravweb_files/
-  priority: 3

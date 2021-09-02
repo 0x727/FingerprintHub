@@ -1,4 +1,5 @@
 name: eyou-反垃圾邮件网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - content="亿邮大容量电子邮件系统反垃圾邮件网关
   - 反垃圾邮件网关  - 亿邮通讯
-  priority: 3

@@ -1,4 +1,5 @@
 name: smart-cms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - name="formdoc" action="/hz/sys/login/logined.jsp
-  priority: 3

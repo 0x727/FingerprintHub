@@ -1,4 +1,5 @@
 name: codepush-server
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="codepush service is hotupdate services
-  priority: 2

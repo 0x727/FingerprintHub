@@ -1,4 +1,5 @@
 name: parallels-plesk-panel
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - parallels ip holdings gmbh
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <img src="./img/panel-logo.png" alt="parallels plesk panel"></a>
-  priority: 3

@@ -1,4 +1,5 @@
 name: zonghousc-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - data-errormessage-value-missing="* 请录入用户名
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - style/default/frui.css
-  priority: 3

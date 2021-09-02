@@ -1,4 +1,5 @@
 name: join-cheer-general-financial-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - 北京久其软件股份有限公司 版权所有
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   keyword:
   - /netrep/intf
   - /netrep/message2/
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,4 +26,3 @@ fingerprint:
   headers: {}
   keyword:
   - <meta http-equiv="refresh" content="0";url="../netrep">
-  priority: 3

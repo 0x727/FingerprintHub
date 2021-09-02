@@ -1,4 +1,5 @@
 name: founder-all-media-editing-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /newsedit/newsedit/css/login_1.css
-  priority: 3

@@ -1,4 +1,5 @@
 name: goldlib-library
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - onclick="change('book');
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - /opac/periodicals
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="jp-searchtabs
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,4 +34,3 @@ fingerprint:
   keyword:
   - 图书
   - 金盘软件
-  priority: 3

@@ -1,4 +1,5 @@
 name: rising-网络安全预警系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 瑞星网络安全预警系统
-  priority: 3

@@ -1,4 +1,5 @@
 name: opzoon-安全网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - var opzoon_ver = document.getelementbyid("opzoon_version"
-  priority: 3

@@ -1,4 +1,5 @@
 name: ciphermail-email-encryption-gateway
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - ciphermail email encryption gateway
-  priority: 3

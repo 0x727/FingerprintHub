@@ -1,4 +1,5 @@
 name: php-voting-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - content="http://www.888072.com
   - content="qq 7000719
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="http://www.vote123.cn
-  priority: 3

@@ -1,4 +1,5 @@
 name: oceansoft
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - 江苏欧索软件有限公司
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - /ocensoftcomm.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - 技术支持：<a href="http://www.oceansoft.com.cn/">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,7 +34,6 @@ fingerprint:
   keyword:
   - aspx/casecenter/acasecenter.aspx?pagetype=sxcx&casetype=sscs&casename=
   - href="/e/action/listinfo/?
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -45,4 +42,3 @@ fingerprint:
   headers: {}
   keyword:
   - 江苏欧索
-  priority: 3

@@ -1,4 +1,5 @@
 name: faq-manager
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <td><font size="-1">&nbsp;</font><p><b><font size="-1">faq admin area</font></b></td>
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="admin/">admin area</a></td></tr></table></body></html>
-  priority: 2

@@ -1,4 +1,5 @@
 name: dhc-oa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/extcomponent/security/image/dhc.png"
-  priority: 3

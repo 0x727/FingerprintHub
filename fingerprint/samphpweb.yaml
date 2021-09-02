@@ -1,4 +1,5 @@
 name: samphpweb
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - songinfo.php
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - copyright spacial audio solutions
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://www.spacialaudio.com/products/sambroadcaster/"
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -35,4 +33,3 @@ fingerprint:
   headers: {}
   keyword:
   - <meta http-equiv="refresh" content="0;url=playing.html">
-  priority: 2

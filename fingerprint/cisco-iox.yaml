@@ -1,4 +1,5 @@
 name: cisco-iox
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - var g_url_version = "/iox/api/v2"
-  priority: 1

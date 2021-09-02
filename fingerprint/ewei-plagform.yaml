@@ -1,4 +1,5 @@
 name: ewei-plagform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 易维平台</h1>
-  priority: 3

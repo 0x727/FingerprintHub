@@ -1,4 +1,5 @@
 name: web-wiz-rich-text-editor
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://www.richtexteditor.org"
-  priority: 3

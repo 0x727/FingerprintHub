@@ -1,4 +1,5 @@
 name: valueapex-eamic
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - log into my eamic® account
-  priority: 3

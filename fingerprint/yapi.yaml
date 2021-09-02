@@ -1,4 +1,5 @@
 name: yapi
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - YApi
   - 可视化接口管理平台
-  priority: 3

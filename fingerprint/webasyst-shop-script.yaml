@@ -1,4 +1,5 @@
 name: webasyst-shop-script
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://www.shop-script.com
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - 'powered by webasyst shop-script <a href="http://www.shop-script.com/" style="font-weight:
     normal">shopping cart software</a>'
-  priority: 3

@@ -1,4 +1,5 @@
 name: chinatelecomcustomerbroadbandaddressquerysystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <strong>客户宽带地址查询
-  priority: 3

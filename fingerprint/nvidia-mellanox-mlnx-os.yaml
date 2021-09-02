@@ -1,4 +1,5 @@
 name: nvidia-mellanox-mlnx-os
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - '<div style=''display: none;'' id="setstatusiconstatediv"></div>'
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - /mlx-default.css
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - '''/admin/launch?script='
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -35,4 +33,3 @@ fingerprint:
   headers: {}
   keyword:
   - url=/admin/launch?script=
-  priority: 1

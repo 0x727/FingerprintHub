@@ -1,4 +1,5 @@
 name: 中科曙光-龙芯防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="login_main_text">曙光龙芯防火墙</div>
-  priority: 3

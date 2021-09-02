@@ -1,4 +1,5 @@
 name: falcon
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <h3 class="font-bold">opsplatform</h3>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - textarea class="form-control endpoints
-  priority: 3

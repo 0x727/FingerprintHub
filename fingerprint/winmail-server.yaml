@@ -1,4 +1,5 @@
 name: winmail-server
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - amax information technologies inc.
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - 'pop3,smtp server: <font color=red>'
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="themes/default/images/mail_pic.jpg
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,7 +34,6 @@ fingerprint:
   keyword:
   - encryptpwd
   - sessid
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -46,7 +43,6 @@ fingerprint:
   keyword:
   - f_theme
   - pwdplaceholder
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -55,7 +51,6 @@ fingerprint:
   headers: {}
   keyword:
   - winmail mail server
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -65,7 +60,6 @@ fingerprint:
   keyword:
   - '(build '
   - background="customer/winmail_bg11.jpg
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -74,4 +68,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="customer/index_winmail_new.gif
-  priority: 3

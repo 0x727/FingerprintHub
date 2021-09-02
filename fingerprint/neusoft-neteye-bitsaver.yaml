@@ -1,4 +1,5 @@
 name: neusoft-neteye-bitsaver
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - action="/ntars/loginaction.do
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/ntars/css/
-  priority: 3

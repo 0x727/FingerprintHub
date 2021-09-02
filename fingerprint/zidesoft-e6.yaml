@@ -1,4 +1,5 @@
 name: zidesoft-e6
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/static/images/login/btn-login.gif"
-  priority: 3

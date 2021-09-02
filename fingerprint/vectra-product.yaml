@@ -1,4 +1,5 @@
 name: vectra-product
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - vectra.base.css
-  priority: 3

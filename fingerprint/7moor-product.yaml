@@ -1,4 +1,5 @@
 name: 7moor-product
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="ds_do_action domain_aboutus"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - /javascripts/qiniu/qiniu.js
-  priority: 3

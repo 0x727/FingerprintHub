@@ -1,4 +1,5 @@
 name: guahao-appointmentregistrationsystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - var title    = "预约挂号系统";
-  priority: 3

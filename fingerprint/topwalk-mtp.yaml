@@ -1,4 +1,5 @@
 name: topwalk-mtp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <meta http-equiv="refresh" content="0;url=/usercertloginaction.action" />
-  priority: 3

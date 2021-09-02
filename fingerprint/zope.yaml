@@ -1,4 +1,5 @@
 name: zope
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     X-Powered-By: zope
   keyword: []
-  priority: 2

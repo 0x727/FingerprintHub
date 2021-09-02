@@ -1,4 +1,5 @@
 name: jasig-cas
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - powered by <a href="http://www.jasig.org/cas
-  priority: 2

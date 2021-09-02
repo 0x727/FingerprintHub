@@ -1,4 +1,5 @@
 name: maritimeselectionsystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 海事选船系统</el-col>
-  priority: 3

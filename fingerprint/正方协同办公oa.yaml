@@ -1,4 +1,5 @@
 name: 正方协同办公oa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - zfoausername
-  priority: 3

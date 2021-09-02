@@ -1,4 +1,5 @@
 name: 365xxy-examing
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - href=https://unpkg.com/element-ui/lib/theme-chalk/index.css
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <title>云时政在线考试系统</title>
-  priority: 3

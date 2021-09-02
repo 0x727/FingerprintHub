@@ -1,4 +1,5 @@
 name: nsfocus-vpn
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /logo_login_nsfocus.png
-  priority: 3

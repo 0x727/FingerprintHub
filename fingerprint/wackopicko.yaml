@@ -1,4 +1,5 @@
 name: wackopicko
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <h2>welcome to wackopicko</h2>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h1 id="title"><a href="/">wackopicko.com</a></h1>
-  priority: 3

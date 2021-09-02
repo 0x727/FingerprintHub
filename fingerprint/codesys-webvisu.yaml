@@ -1,4 +1,5 @@
 name: codesys-webvisu
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <param name="startvisu" value="plc_visu">
-  priority: 2

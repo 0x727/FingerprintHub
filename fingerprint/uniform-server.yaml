@@ -1,4 +1,5 @@
 name: uniform-server
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://www.uniformserver.com">
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta name="description" content="the uniform server 8.1.0-coral." />
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -27,4 +26,3 @@ fingerprint:
   keyword:
   - <div id="divider">developed by <a href="http://www.uniformserver.com/">the uniform
     server development team</a></div>
-  priority: 2

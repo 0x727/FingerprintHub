@@ -1,4 +1,5 @@
 name: 蓝凌eis智慧协同平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /scripts/jquery.landray.common.js
   - 蓝凌软件
-  priority: 3

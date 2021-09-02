@@ -1,4 +1,5 @@
 name: salien-performance-management-platform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="images/login/cbgl/favicon.ico"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="copyright 2010 www.salien.com.cn"
-  priority: 3

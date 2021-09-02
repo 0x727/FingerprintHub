@@ -1,4 +1,5 @@
 name: 皓峰通讯-智能防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - ' <body bgcolor=#ddeeff onload="document.all.user.focus()">'
   - 皓峰防火墙
-  priority: 3

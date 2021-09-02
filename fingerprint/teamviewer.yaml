@@ -1,4 +1,5 @@
 name: teamviewer
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - teamviewer
   - this site is running
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href='http://www.teamviewer.com'>teamviewer</a>
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -27,4 +26,3 @@ fingerprint:
   headers: {}
   keyword:
   - this site is running
-  priority: 2

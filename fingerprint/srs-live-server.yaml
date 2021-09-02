@@ -1,4 +1,5 @@
 name: srs-live-server
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - players/js/winlin.utility.js
-  priority: 2

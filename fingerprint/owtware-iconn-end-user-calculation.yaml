@@ -1,4 +1,5 @@
 name: owtware-iconn-end-user-calculation
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/res/api/owvmapi.js?
-  priority: 2

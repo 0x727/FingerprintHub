@@ -1,4 +1,5 @@
 name: kedacom-dvr接入网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - 苏州科达科技有限公司
   - src='images/ind_log_kedacom.png')
-  priority: 3

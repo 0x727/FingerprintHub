@@ -1,4 +1,5 @@
 name: webbuilder
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="webbuilder/script/wb.js
-  priority: 2

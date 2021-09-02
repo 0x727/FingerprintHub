@@ -1,4 +1,5 @@
 name: 齐治堡垒机
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - //xfpverifyExec.jsp;
-  priority: 3

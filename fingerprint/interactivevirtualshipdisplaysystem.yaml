@@ -1,4 +1,5 @@
 name: interactivevirtualshipdisplaysystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 交互式虚拟船舶展示系统</a>
-  priority: 3

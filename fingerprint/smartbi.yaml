@@ -1,4 +1,5 @@
 name: smartbi
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - gcfutil = jsloader.resolve('smartbi.gcf.gcfutil')
-  priority: 3

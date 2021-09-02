@@ -1,4 +1,5 @@
 name: labview
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: labview
   keyword: []
-  priority: 2

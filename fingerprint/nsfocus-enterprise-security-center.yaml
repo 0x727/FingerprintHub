@@ -1,4 +1,5 @@
 name: nsfocus-enterprise-security-center
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /login_logo_espc_zh_cn.png
-  priority: 3

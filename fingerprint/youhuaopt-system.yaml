@@ -1,4 +1,5 @@
 name: youhuaopt-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /ashx/log/logincheck.ashx?fresh=" + math.random()
-  priority: 3

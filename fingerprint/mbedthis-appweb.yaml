@@ -1,4 +1,5 @@
 name: mbedthis-appweb
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: mbedthis-appweb
   keyword: []
-  priority: 2

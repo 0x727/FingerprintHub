@@ -1,4 +1,5 @@
 name: 猎鹰安全-金山终端安全系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 数据库连接异常您可
-  priority: 3

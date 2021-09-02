@@ -1,4 +1,5 @@
 name: ms-mfc-httpsvr
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - action="i.cgi
-  priority: 2

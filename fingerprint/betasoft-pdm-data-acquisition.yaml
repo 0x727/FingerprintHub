@@ -1,4 +1,5 @@
 name: betasoft-pdm-data-acquisition
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - align="center" class="login_pdm">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - 'background: no-repeat url(../images/login/pdmdenglu1_28.png);'
-  priority: 3

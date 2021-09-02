@@ -1,4 +1,5 @@
 name: pgadmin
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - pgadmin 客户端安装包
-  priority: 3

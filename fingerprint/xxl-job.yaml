@@ -1,4 +1,5 @@
 name: xxl-job
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 分布式任务调度平台XXL-JOB
-  priority: 2

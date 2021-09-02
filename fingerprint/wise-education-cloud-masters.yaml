@@ -1,4 +1,5 @@
 name: wise-education-cloud-masters
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - ctl00_contentplaceholder1_dlttopvideos
-  priority: 3

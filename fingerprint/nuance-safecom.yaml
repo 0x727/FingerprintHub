@@ -1,4 +1,5 @@
 name: nuance-safecom
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - safecom mobile print
-  priority: 3

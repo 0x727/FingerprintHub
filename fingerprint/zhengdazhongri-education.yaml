@@ -1,4 +1,5 @@
 name: zhengdazhongri-education
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - images/lgline.gif
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - lb_hint
   - onclick="safecodeclick" src="safecode.aspx
-  priority: 3

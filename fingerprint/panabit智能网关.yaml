@@ -1,4 +1,5 @@
 name: panabit智能网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - forum.panabit.com
   - pa_iptcode
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -19,7 +19,6 @@ fingerprint:
   keyword:
   - Maintain
   - Panalog
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -29,4 +28,3 @@ fingerprint:
   keyword:
   - id="codeno"
   - 日志系统
-  priority: 3

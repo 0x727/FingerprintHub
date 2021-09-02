@@ -1,4 +1,5 @@
 name: yuneasy-ipcalling
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 云翌ip呼叫中心</span>
-  priority: 3

@@ -1,4 +1,5 @@
 name: olat
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - title="homepage of open source lms olat
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="olat
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="olat 是一个学习内容管理系统 (lcms).
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="olat - online learning and training
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,7 +41,6 @@ fingerprint:
   headers: {}
   keyword:
   - o_info.uriprefix="/olat/dmz/";
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -53,4 +49,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/olat/raw/
-  priority: 3

@@ -1,4 +1,5 @@
 name: bluepacific-share-content-management-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /visadmin/viscms/index.do
-  priority: 3

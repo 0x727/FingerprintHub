@@ -1,4 +1,5 @@
 name: cisco-acs
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - <meta http-equiv="refresh" content="0;url=/acsadmin" />
   - cisco
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/acsadmin">launch acs
-  priority: 3

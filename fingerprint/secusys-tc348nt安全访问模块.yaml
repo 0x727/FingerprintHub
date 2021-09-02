@@ -1,4 +1,5 @@
 name: secusys-tc348nt安全访问模块
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - tc348nt pannel
-  priority: 3

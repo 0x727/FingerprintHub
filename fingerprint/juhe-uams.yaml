@@ -1,4 +1,5 @@
 name: juhe-uams
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - action="login.aspx" id="ctl00"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - 'background-color: #4a93be;'
-  priority: 3

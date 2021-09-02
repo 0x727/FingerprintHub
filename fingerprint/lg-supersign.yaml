@@ -1,4 +1,5 @@
 name: lg-supersign
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/ssw/js/user/index.js"
-  priority: 3

@@ -1,4 +1,5 @@
 name: ibm-ts3310
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - http-equiv="refresh" content="0; url=/main_login.htm"
-  priority: 3

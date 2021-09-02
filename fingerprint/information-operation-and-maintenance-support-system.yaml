@@ -1,4 +1,5 @@
 name: information-operation-and-maintenance-support-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - placeholder="ad域账号 / 系统账号"
-  priority: 3

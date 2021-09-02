@@ -1,4 +1,5 @@
 name: cndatacom-smsp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /smrc/resources/default/
-  priority: 3

@@ -1,4 +1,5 @@
 name: minio-browser
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/minio/loader.css"
-  priority: 3

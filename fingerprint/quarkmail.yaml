@@ -1,4 +1,5 @@
 name: quarkmail
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - window.location.replace("/cgi-bin/web2cgi/index.cgi");
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <iframe src="/cgi-bin/web2cgi/index.cgi" scrolling="no" frameborder=
-  priority: 3

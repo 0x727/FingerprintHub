@@ -1,4 +1,5 @@
 name: 蓝盾-文档安全管理系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 蓝盾文档安全管理系统
-  priority: 3

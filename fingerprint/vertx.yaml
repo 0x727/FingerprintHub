@@ -1,4 +1,5 @@
 name: vertx
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Set-Cookie: vertx-web.session
   keyword: []
-  priority: 2

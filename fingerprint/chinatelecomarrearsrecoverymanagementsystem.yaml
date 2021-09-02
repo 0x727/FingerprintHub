@@ -1,4 +1,5 @@
 name: chinatelecomarrearsrecoverymanagementsystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - id="v_login_container"
-  priority: 3

@@ -1,4 +1,5 @@
 name: aspentech-aspen-infoplus21
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/aspencui/css/appstyles.js
-  priority: 2

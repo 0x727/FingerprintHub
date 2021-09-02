@@ -1,4 +1,5 @@
 name: thinkphp-yfcmf
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - /public/others/maxlength.js
   - yfcmf
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   headers: {}
   keyword:
   - /yfcmf/yfcmf.js
-  priority: 2

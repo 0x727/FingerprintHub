@@ -1,4 +1,5 @@
 name: phpmybackuppro
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 'please login (use your mysql username and password): <a href="index.php?login=true'
-  priority: 3

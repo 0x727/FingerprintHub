@@ -1,4 +1,5 @@
 name: 宁盾-一体化安全认证平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - id="dynamicpasswordwithmobile">
-  priority: 3

@@ -1,4 +1,5 @@
 name: grafana
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - Grafana
   - login
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   headers: {}
   keyword:
   - 'window.grafanabootdata = '
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,4 +26,3 @@ fingerprint:
   headers: {}
   keyword:
   - grafana-app
-  priority: 1

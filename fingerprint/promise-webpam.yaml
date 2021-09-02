@@ -1,4 +1,5 @@
 name: promise-webpam
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - js/promise/themes/apple/images/logo_promise.png
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="js/dojo/promise.js
-  priority: 3

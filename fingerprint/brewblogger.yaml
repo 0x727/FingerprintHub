@@ -1,4 +1,5 @@
 name: brewblogger
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - developed by <a href="http://www.zkdigital.com
-  priority: 3

@@ -1,4 +1,5 @@
 name: intelligent-cloud
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - handlexpapplycontact
-  priority: 3

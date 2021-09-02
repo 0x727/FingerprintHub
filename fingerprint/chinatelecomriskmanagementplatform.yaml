@@ -1,4 +1,5 @@
 name: chinatelecomriskmanagementplatform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 风险治理平台</div>
-  priority: 3

@@ -1,4 +1,5 @@
 name: invision-ipboard
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - ipb.vars
-  priority: 3

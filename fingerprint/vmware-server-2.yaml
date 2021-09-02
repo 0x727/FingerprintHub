@@ -1,4 +1,5 @@
 name: vmware-server-2
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="vmware server is virtual
-  priority: 2

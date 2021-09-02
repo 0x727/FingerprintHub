@@ -1,4 +1,5 @@
 name: tab-and-link-manager
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div id="footer_copyright" class="shade footer_copyright">powered by <a href="http://www.wolfshead-solutions.com/ws-products/product-1
-  priority: 2

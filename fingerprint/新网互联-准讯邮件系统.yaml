@@ -1,4 +1,5 @@
 name: 新网互联-准讯邮件系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /webmail//cssv2/tamail.css"
   - src="cgijson/getloginimg.php?img=logo
-  priority: 3

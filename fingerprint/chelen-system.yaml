@@ -1,4 +1,5 @@
 name: chelen-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - iaus/media/js/login/login.js
-  priority: 3

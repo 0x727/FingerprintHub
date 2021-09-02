@@ -1,4 +1,5 @@
 name: hikvision-bigdatadiagnosis
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 大数据诊断工具</strong>
-  priority: 3

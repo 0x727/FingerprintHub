@@ -1,4 +1,5 @@
 name: ibm-tivoli
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - banner/tivoli/tv_icbanner.html
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - tivoli netview uses an open source web server
-  priority: 3

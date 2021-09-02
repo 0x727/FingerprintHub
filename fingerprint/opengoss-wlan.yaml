@@ -1,4 +1,5 @@
 name: opengoss-wlan
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /stylesheets/themes/wifi2/ui.theme.css
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="wlan综合网管系统"
-  priority: 3

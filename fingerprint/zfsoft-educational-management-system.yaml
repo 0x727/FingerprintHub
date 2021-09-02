@@ -1,4 +1,5 @@
 name: zfsoft-educational-management-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - content="站点介绍"
   - style/base/jw.css
-  priority: 3

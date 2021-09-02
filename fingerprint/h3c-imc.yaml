@@ -1,4 +1,5 @@
 name: h3c-imc
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /imc/login.jsf
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - imc来宾接入自助管理系统
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - login_logo_h3c.png.jsf
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - com_h3c_imc_usr_usermgr_alluser_overlaydiv
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,7 +41,6 @@ fingerprint:
   headers: {}
   keyword:
   - action="/imc/login.jsf
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -53,7 +49,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="/imc/javax.faces.resource/images/login_logo_h3c.png.jsf?ln=primefaces-imc-new-webui
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -62,7 +57,6 @@ fingerprint:
   headers: {}
   keyword:
   - <span class="cmn_mn_normalfont">h3c 智能管理中心
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -72,7 +66,6 @@ fingerprint:
   keyword:
   - h3c &#26234;&#33021;&#31649;&#29702;&#20013;&#24515;</span>
   - src="/imc/faces/extensionresource/com.h3c.imc.component.util.extensionresourceloader/
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -81,4 +74,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/selfservice/javax.faces.resource/theme.css.xhtml?ln=primefaces-imc-classic-blue"
-  priority: 3

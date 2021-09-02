@@ -1,4 +1,5 @@
 name: kerio-mailserver
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: kerio mailserver
   keyword: []
-  priority: 3

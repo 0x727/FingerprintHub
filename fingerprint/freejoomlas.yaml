@@ -1,4 +1,5 @@
 name: freejoomlas
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a title="free joomla hosting" href="http://freejoomlas.com
-  priority: 2

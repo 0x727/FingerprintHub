@@ -1,4 +1,5 @@
 name: symantec-client-security
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <!-- symantec client security web based installation -->
-  priority: 3

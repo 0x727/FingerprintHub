@@ -1,4 +1,5 @@
 name: cgiproxy
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://www.jmarshall.com/tools/cgiproxy/
-  priority: 2

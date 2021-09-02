@@ -1,4 +1,5 @@
 name: phpmoneybooks
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href='http://phpmoneybooks.com'>phpmoneybooks
-  priority: 3

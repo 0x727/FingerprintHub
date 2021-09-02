@@ -1,4 +1,5 @@
 name: 54-customer-service
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="http://code.54kefu.net/
-  priority: 2

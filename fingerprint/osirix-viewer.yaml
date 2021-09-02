@@ -1,4 +1,5 @@
 name: osirix-viewer
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - service provided by <a href="https://www.osirix-viewer.com"
-  priority: 3

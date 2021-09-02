@@ -1,4 +1,5 @@
 name: uniview-vm50
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - vm5.0
-  priority: 3

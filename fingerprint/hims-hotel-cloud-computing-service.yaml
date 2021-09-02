@@ -1,4 +1,5 @@
 name: hims-hotel-cloud-computing-service
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - gb_root_dir
   - maincontent.css
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   headers: {}
   keyword:
   - hims酒店云计算服务
-  priority: 2

@@ -1,4 +1,5 @@
 name: novell-groupwise
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <!-- start novell services
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers:
     Set-Cookie: njscn=
   keyword: []
-  priority: 3

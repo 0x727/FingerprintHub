@@ -1,4 +1,5 @@
 name: fanwe
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - app/tpl/fanwe_1/images/lazy_loading.gif
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - index.php?ctl=article_cate
-  priority: 3

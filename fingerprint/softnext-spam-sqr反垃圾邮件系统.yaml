@@ -1,4 +1,5 @@
 name: softnext-spam-sqr反垃圾邮件系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - spam sqr
   - snspam/spam_request/
-  priority: 3

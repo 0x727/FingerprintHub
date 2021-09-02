@@ -1,4 +1,5 @@
 name: 石化盈科-ssl-vpn-远程接入系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="new_style/placeholderfriend.js
-  priority: 3

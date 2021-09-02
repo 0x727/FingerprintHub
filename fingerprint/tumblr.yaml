@@ -1,4 +1,5 @@
 name: tumblr
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta name="tumblr-theme" content=
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <!-- begin tumblr code --><iframe src="http://assets.tumblr.com/iframe.html
-  priority: 3

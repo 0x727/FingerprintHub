@@ -1,4 +1,5 @@
 name: chinags-sc
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/animation/images/teacher_2.png"
-  priority: 3

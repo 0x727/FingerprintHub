@@ -1,4 +1,5 @@
 name: u-mail
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <body link="white" vlink="white" alink="white">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta http-equiv="refresh" content="0;url=./webmail/">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - power by <a href="http://www.comingchina.com">u-mail邮件服务器</a>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,4 +33,3 @@ fingerprint:
   headers: {}
   keyword:
   - u-mail webadmin 要求启用 javascript
-  priority: 3

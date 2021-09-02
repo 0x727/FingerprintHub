@@ -1,4 +1,5 @@
 name: speed-test
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - classid="clsid:53028063-426b-446d-85f9-62e9e3dc5501"
-  priority: 3

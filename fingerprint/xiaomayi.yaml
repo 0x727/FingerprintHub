@@ -1,4 +1,5 @@
 name: xiaomayi
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /template/ant/css/anthomecomm.css
-  priority: 3

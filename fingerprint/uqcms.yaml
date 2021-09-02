@@ -1,4 +1,5 @@
 name: uqcms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /public/css/common_uqcms.css
-  priority: 3

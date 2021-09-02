@@ -1,4 +1,5 @@
 name: dingruan-cgm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - id='cgm' style='background-image
-  priority: 3

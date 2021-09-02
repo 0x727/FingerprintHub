@@ -1,4 +1,5 @@
 name: zbintel-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - background="images/login_sample_bgz.jpg"
-  priority: 3

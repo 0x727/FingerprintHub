@@ -1,4 +1,5 @@
 name: simsweb
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <form onsubmit="sendinfo(); return false;" name="logon
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="/simsweb/monitor.js
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - index.html"><font color="black" face="arial">loading simsweb, please wait.....</font></a></h2>
-  priority: 2

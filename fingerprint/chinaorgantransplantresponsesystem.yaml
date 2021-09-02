@@ -1,4 +1,5 @@
 name: chinaorgantransplantresponsesystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="images/logo_cotsr.png"
-  priority: 3

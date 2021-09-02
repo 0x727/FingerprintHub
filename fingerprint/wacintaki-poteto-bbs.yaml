@@ -1,4 +1,5 @@
 name: wacintaki-poteto-bbs
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://www.ninechime.com/products/" title="get your own free bbs!">wacintaki
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - by <a href="http://suteki.nu">ranmaguy</a> and <a href="http://www.cellosoft.com">marcello</a>
-  priority: 3

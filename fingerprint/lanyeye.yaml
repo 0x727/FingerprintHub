@@ -1,4 +1,5 @@
 name: lanyeye
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <font>兰眼下一代威胁感知系统</font>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - /skin/admin/img/login/laneye.png
-  priority: 3

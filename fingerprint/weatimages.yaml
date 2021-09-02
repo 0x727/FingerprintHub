@@ -1,4 +1,5 @@
 name: weatimages
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://nazarkin.name/projects/weatimages
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta name="generator" content="weatimages"/>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div align="center" class="weatimages_toppest_navig" style="text-decoration:underline;">
-  priority: 3

@@ -1,4 +1,5 @@
 name: bentley-systems-projectwise
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="projectwise.ico
-  priority: 3

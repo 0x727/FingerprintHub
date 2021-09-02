@@ -1,4 +1,5 @@
 name: spring-boot-admin
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - spring boot admin
-  priority: 2

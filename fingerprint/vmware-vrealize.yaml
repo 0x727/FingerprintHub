@@ -1,4 +1,5 @@
 name: vmware-vrealize
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 正在重定向到 vrealize operations manager web
-  priority: 3

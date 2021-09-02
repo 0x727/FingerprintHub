@@ -1,4 +1,5 @@
 name: wantit-erp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /javascript/js/witfunctions.js
-  priority: 3

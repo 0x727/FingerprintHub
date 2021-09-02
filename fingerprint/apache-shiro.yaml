@@ -1,4 +1,5 @@
 name: apache-shiro
+priority: 3
 fingerprint:
 - path: /
   request_method: post
@@ -9,7 +10,6 @@ fingerprint:
   headers:
     Set-Cookie: rememberMe=deleteMe
   keyword: []
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   headers: {}
   keyword:
   - </i> shiro</li>
-  priority: 2

@@ -1,4 +1,5 @@
 name: jit-web-connector
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - location.href='/cgi-bin/cgiproxy.exe?action=start';
-  priority: 3

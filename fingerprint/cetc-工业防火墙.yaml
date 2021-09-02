@@ -1,4 +1,5 @@
 name: cetc-工业防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /webgui/scripts/dd_belatedpng.js
   - 工业防火墙
-  priority: 3

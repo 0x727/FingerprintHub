@@ -1,4 +1,5 @@
 name: nextcloud-数据安全产品
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - nextcloud</a>  给您所有数据一个安全的家
-  priority: 3

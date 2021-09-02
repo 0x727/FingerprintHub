@@ -1,4 +1,5 @@
 name: ultrapower-me移动协调办公平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - me移动协调办公平台
-  priority: 3

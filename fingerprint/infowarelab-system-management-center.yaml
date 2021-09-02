@@ -1,4 +1,5 @@
 name: infowarelab-system-management-center
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - <div class="main_supporterbar">
   - class="main_loginbar
-  priority: 3

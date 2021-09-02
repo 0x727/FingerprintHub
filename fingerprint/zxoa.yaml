@@ -1,4 +1,5 @@
 name: zxoa
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - obj.src = "createcheckcode.aspx?id"+strmath;
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - name="button1" value="" onclick="javascript:return checkfrom();" id="button1"
     class="loginbtn" />
-  priority: 2

@@ -1,4 +1,5 @@
 name: logsign-siem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - window.location = '/ui/modules/login/'
-  priority: 3

@@ -1,4 +1,5 @@
 name: pmway-e4
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - '风<span style="padding-left: 12px;"></span>格'
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - 热情似火</option>
-  priority: 3

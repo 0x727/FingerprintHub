@@ -1,4 +1,5 @@
 name: 启明星辰-泰合信息安全运营中心
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 泰合信息安全运营中心
-  priority: 3

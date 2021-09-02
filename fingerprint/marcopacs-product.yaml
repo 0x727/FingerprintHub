@@ -1,4 +1,5 @@
 name: marcopacs-product
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - data-redirect="account/systemconfiguration.aspx"
-  priority: 3

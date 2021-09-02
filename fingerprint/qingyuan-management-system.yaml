@@ -1,4 +1,5 @@
 name: qingyuan-management-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - -moz-background-size
   - class="u_logo fa fa-user"
-  priority: 3

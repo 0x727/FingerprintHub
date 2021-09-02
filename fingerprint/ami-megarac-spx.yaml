@@ -1,4 +1,5 @@
 name: ami-megarac-spx
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <modelname>ami megarac spx</modelname>
-  priority: 3

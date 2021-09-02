@@ -1,4 +1,5 @@
 name: 世无忧-世安内网安全
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - gzsa. all rights reserved</span>
   - 内网终端安全管理系统登陆界面
-  priority: 3

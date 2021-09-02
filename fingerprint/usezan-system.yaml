@@ -1,4 +1,5 @@
 name: usezan-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - action="/usezan/login/getlogin"
-  priority: 3

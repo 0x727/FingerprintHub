@@ -1,4 +1,5 @@
 name: yonyou-shop
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - url:"/shophome/ajaxgetcompetemessagelist.action",
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - $.post("/shopfront/shoppingcar/gotoshoppingcartajax.action",function(data){
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - 北京用友政务软件股份有限公司
-  priority: 3

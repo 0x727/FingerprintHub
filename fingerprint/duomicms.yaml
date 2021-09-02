@@ -1,4 +1,5 @@
 name: duomicms
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - duomicms_member
   - 多米
-  priority: 1

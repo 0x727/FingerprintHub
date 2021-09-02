@@ -1,4 +1,5 @@
 name: 网御-安全网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -10,4 +11,3 @@ fingerprint:
   - login
   - 安全系统
   - 网御星云
-  priority: 3

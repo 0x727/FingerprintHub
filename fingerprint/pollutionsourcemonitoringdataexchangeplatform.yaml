@@ -1,4 +1,5 @@
 name: pollutionsourcemonitoringdataexchangeplatform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - window.location.href = '/syncmodule/synchome/index';
-  priority: 3

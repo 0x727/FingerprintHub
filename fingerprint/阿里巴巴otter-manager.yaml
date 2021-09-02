@@ -1,4 +1,5 @@
 name: 阿里巴巴otter-manager
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - Otter Manager
   - channelList
-  priority: 2

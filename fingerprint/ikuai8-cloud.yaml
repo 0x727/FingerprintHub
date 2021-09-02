@@ -1,4 +1,5 @@
 name: ikuai8-cloud
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - '<strong>we''re sorry but ikuai cloud platform doesn''t '
-  priority: 3

@@ -1,4 +1,5 @@
 name: argosoft-mail-server
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - argosoft mail server plus for
-  priority: 3

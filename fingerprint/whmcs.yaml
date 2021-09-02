@@ -1,4 +1,5 @@
 name: whmcs
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - powered by <a href="http://www.whmcs.com
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - <div id="welcome_box">please <a href="clientarea.php" title="login"><strong>login</strong></a>
     or <a href="register.php" title="register"><strong>register</strong></a></div>
-  priority: 3

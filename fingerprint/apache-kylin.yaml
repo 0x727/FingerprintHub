@@ -1,4 +1,5 @@
 name: apache-kylin
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta http-equiv="refresh" content="1;url=kylin">
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/kylin/"
-  priority: 2

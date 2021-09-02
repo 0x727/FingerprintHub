@@ -1,4 +1,5 @@
 name: wiserice-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /resources/metronic/scripts/hz-tools.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h4>请在下框里画图形来提交登录
-  priority: 3

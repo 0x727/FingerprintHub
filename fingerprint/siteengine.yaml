@@ -1,4 +1,5 @@
 name: siteengine
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="boka siteengine
-  priority: 3

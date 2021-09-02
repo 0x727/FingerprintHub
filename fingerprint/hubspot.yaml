@@ -1,4 +1,5 @@
 name: hubspot
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - js.hubspot.com/analytics
-  priority: 3

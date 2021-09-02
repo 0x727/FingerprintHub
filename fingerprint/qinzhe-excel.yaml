@@ -1,4 +1,5 @@
 name: qinzhe-excel
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - 如果能访问到qinzhe网站上的图片，说明网络是通的，显示新闻
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - id="chkworkbyreplacer" type="checkbox"
-  priority: 2

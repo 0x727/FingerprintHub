@@ -1,4 +1,5 @@
 name: tsm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - var url = getcontextname() + "?service=ajaxdirect/1/
-  priority: 3

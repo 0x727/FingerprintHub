@@ -1,4 +1,5 @@
 name: baishijia-cms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /resource/images/cms.ico
-  priority: 3

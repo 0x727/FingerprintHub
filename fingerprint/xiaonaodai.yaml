@@ -1,4 +1,5 @@
 name: xiaonaodai
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - http://stat.xiaonaodai.com/stat.php
-  priority: 2

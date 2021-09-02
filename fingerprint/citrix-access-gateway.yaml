@@ -1,4 +1,5 @@
 name: citrix-access-gateway
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
     Location: /vpn/index.html
   keyword:
   - '"/vpn/resources/{lang}"'
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="/vpn/images/accessgateway.ico
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,7 +26,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="citrixreceiverlogoaboutbox"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,7 +34,6 @@ fingerprint:
   headers: {}
   keyword:
   - /vpn/js/gateway_login_view.js?
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -45,7 +42,6 @@ fingerprint:
   headers: {}
   keyword:
   - cloud.ottoworkfroce.eu/vpn/index.html
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -54,7 +50,6 @@ fingerprint:
   headers: {}
   keyword:
   - vpn/js/lsgateway_login_view.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -63,7 +58,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="_ctxstxt_netscalergateway"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -72,4 +66,3 @@ fingerprint:
   headers: {}
   keyword:
   - receiver/images/common/icon_vpn.ico
-  priority: 3

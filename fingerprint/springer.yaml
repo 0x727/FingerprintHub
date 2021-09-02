@@ -1,4 +1,5 @@
 name: springer
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="//static.springer.com/
-  priority: 3

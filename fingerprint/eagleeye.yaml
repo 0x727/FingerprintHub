@@ -1,4 +1,5 @@
 name: eagleeye
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - eagleeye 钉钉答疑群
-  priority: 3

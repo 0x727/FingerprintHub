@@ -1,4 +1,5 @@
 name: spiceworks
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta name="author" content="spiceworks, inc." />
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - <link href="/stylesheets/general.css?
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h1><img alt="spiceworks" src="/images/logos/large.png
-  priority: 3

@@ -1,4 +1,5 @@
 name: kuaipu-m6
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="resource/javascript/jkpm6.datetime.js
-  priority: 3

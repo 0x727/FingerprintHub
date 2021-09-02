@@ -1,4 +1,5 @@
 name: 奇安信-企业安全部署
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 360企业安全部署
-  priority: 3

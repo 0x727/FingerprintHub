@@ -1,4 +1,5 @@
 name: vos3000
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - images/vos3000.ico
-  priority: 3

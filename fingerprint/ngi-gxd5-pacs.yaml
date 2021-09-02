@@ -1,4 +1,5 @@
 name: ngi-gxd5-pacs
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div id="passwordwrapper" class="fieldwrapper">
-  priority: 3

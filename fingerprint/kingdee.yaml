@@ -1,4 +1,5 @@
 name: kingdee
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - Kingdee.EntryRole
   - loginKDLogo
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   headers: {}
   keyword:
   - 金蝶国际软件集团有限公司版权所有
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,7 +26,6 @@ fingerprint:
   headers: {}
   keyword:
   - var formidafterlogin = '"bos_mainconsolesutra"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,7 +34,6 @@ fingerprint:
   headers: {}
   keyword:
   - class="kd-div-loading-ct"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -45,7 +42,6 @@ fingerprint:
   headers: {}
   keyword:
   - logo-kingdee.png
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -54,7 +50,6 @@ fingerprint:
   headers: {}
   keyword:
   - eassessionid
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -63,4 +58,3 @@ fingerprint:
   headers: {}
   keyword:
   - /eassso/common
-  priority: 3

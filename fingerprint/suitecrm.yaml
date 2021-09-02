@@ -1,4 +1,5 @@
 name: suitecrm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - sugar.themes.theme_name = 'suitep'
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - sugar.themes.theme_name      = 'suiter'
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="img/suitecrm.png" alt="bitnami suitecrm stack"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - supercharged by suitecrm
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,7 +41,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="custom/themes/default/images/company_logo.png
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -53,7 +49,6 @@ fingerprint:
   headers: {}
   keyword:
   - alt="suitecrm"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -62,4 +57,3 @@ fingerprint:
   headers:
     Set-Cookie: sugar_user_theme=suitep
   keyword: []
-  priority: 3

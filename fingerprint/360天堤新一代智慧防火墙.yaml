@@ -1,4 +1,5 @@
 name: 360天堤新一代智慧防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 360天堤
-  priority: 3

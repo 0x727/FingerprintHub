@@ -1,4 +1,5 @@
 name: bluepacific-network-monitoring-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /biradarserver/web/
-  priority: 3

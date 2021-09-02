@@ -1,4 +1,5 @@
 name: raiden-邮件服务器
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /webimages/raidenmaild.jpg
-  priority: 3

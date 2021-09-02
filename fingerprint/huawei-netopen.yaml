@@ -1,4 +1,5 @@
 name: huawei-netopen
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /netopen/theme/css/inframe.css
-  priority: 2

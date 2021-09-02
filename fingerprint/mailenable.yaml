@@ -1,4 +1,5 @@
 name: mailenable
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <!-- loginpanel_shell_table -->
-  priority: 3

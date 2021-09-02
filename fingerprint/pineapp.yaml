@@ -1,4 +1,5 @@
 name: pineapp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /admin/css/images/pineapp.ico
-  priority: 3

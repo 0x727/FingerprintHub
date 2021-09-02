@@ -1,4 +1,5 @@
 name: hanyuan-wanfa-fax-server
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - background="images/centerfax0.gif"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - background-image:url(images/bgfax0.jpg);
-  priority: 3

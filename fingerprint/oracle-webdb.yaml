@@ -1,4 +1,5 @@
 name: oracle-webdb
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: oracle_webdb_listener
   keyword: []
-  priority: 2

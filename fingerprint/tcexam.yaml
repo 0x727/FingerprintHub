@@ -1,4 +1,5 @@
 name: tcexam
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a name="topofdoc" id="topofdoc"></a>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="nicola asuni - tecnick.com s.r.l." />
-  priority: 3

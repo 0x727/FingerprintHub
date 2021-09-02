@@ -1,4 +1,5 @@
 name: startbootstrap-product
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="img/portfolio/thumbnails/4.jpg"
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - we've got what you need!</h2>
-  priority: 2

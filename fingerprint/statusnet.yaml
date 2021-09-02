@@ -1,4 +1,5 @@
 name: statusnet
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <p>this site is powered by <a href="http://status.net/">statusnet</a> version
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - 'it runs the <a href="http://status.net/">statusnet</a> microblogging software,
     version '
-  priority: 3

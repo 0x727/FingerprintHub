@@ -1,4 +1,5 @@
 name: 17mail-易企邮
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - //易企邮正式版发布
-  priority: 3

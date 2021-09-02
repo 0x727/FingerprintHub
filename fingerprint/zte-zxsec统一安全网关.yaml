@@ -1,4 +1,5 @@
 name: zte-zxsec统一安全网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - welcome to login gateway system
   - 安全网关
-  priority: 3

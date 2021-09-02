@@ -1,4 +1,5 @@
 name: sangfor-edr
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - datalayer','gtm-tl7g2lw'
-  priority: 3

@@ -1,4 +1,5 @@
 name: hphu-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - id='psssdiv'
   - src='kss_inc/js/jquery.1.3.2.pack.js'
-  priority: 3

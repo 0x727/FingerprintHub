@@ -1,4 +1,5 @@
 name: zhuofansoft-cms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - session.infocss.infocssurl
-  priority: 3

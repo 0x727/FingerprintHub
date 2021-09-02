@@ -1,4 +1,5 @@
 name: sgp-managerial-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /static/all/img/logo/sgp
-  priority: 3

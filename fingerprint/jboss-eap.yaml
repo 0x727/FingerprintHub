@@ -1,4 +1,5 @@
 name: jboss-eap
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <h3>your jboss enterprise application platform is running.</h3>
-  priority: 2

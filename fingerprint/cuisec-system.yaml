@@ -1,4 +1,5 @@
 name: cuisec-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - r=e&&e.__esmodule?function
-  priority: 3

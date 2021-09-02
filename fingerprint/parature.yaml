@@ -1,4 +1,5 @@
 name: parature
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="kbfolder.asp?deptid=
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - redirectportalurl('/ics/support/custhandler.asp?
-  priority: 3

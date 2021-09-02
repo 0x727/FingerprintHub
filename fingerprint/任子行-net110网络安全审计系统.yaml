@@ -1,4 +1,5 @@
 name: 任子行-net110网络安全审计系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - simplemodal.1.4.1.min.js
   - net110网络安全审计系统
-  priority: 3

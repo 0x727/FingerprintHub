@@ -1,4 +1,5 @@
 name: netapp-netcache-appliance
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: netcache appliance
   keyword: []
-  priority: 2

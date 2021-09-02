@@ -1,4 +1,5 @@
 name: webray-situation-awareness
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 'class="disclaimer" style="color: #ffffff">《盛邦安全网站监控预警平台服务协议》</a>'
-  priority: 3

@@ -1,4 +1,5 @@
 name: 金和协同管理平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - Jhsoft.Web.login
   - PassWord.aspx
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   headers: {}
   keyword:
   - js/passwordcommon.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,7 +26,6 @@ fingerprint:
   headers: {}
   keyword:
   - js/passwordnew.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -36,7 +34,6 @@ fingerprint:
   headers: {}
   keyword:
   - jinher network
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -46,4 +43,3 @@ fingerprint:
   keyword:
   - c6/jhsoft.web.login
   - closewindownoask
-  priority: 3

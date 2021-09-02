@@ -1,4 +1,5 @@
 name: alibaba-企业邮箱
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - content="阿里企业邮箱
   - action="/alimail/error/browserlog
-  priority: 3

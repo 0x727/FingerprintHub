@@ -1,4 +1,5 @@
 name: mason
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     X-Powered-By: html::mason
   keyword: []
-  priority: 2

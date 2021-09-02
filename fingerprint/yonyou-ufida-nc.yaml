@@ -1,4 +1,5 @@
 name: yonyou-ufida-nc
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - ufida_iufo_over.png
   - ufida_nc.png
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -19,7 +19,6 @@ fingerprint:
   keyword:
   - logo/images/
   - ufida
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -28,7 +27,6 @@ fingerprint:
   headers: {}
   keyword:
   - logo/images/ufida_nc.png
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -37,7 +35,6 @@ fingerprint:
   headers: {}
   keyword:
   - <div id="nc_text">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -46,4 +43,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div id="nc_img" onmouseover="overimage('nc');
-  priority: 3

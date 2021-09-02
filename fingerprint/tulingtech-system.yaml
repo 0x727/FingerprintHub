@@ -1,4 +1,5 @@
 name: tulingtech-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/content/login-ui/static/h-ui.admin/css/h-ui.login.css"
-  priority: 3

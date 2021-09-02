@@ -1,4 +1,5 @@
 name: h3c-安全产品管理平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /wnm/ssl/web/frame/login.html
-  priority: 3

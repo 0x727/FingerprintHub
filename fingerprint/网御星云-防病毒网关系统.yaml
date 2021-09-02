@@ -1,4 +1,5 @@
 name: 网御星云-防病毒网关系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 网御防病毒网关系统
-  priority: 3

@@ -1,4 +1,5 @@
 name: apache-guacamole
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - images/guacamole-logo
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - guacamole - clientless remote desktop
   - scripts/guac-ui.js
-  priority: 3

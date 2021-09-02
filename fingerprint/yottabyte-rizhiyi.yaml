@@ -1,4 +1,5 @@
 name: yottabyte-rizhiyi
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/static/assets/yottaweb-elements/index.css"
-  priority: 3

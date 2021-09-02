@@ -1,4 +1,5 @@
 name: creatsoft-safesystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="javascript:update_news('board/noticelist.jsp')
-  priority: 3

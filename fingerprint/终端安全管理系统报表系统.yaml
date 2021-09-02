@@ -1,4 +1,5 @@
 name: 终端安全管理系统报表系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="loadprogress.gif" alt="loading"
-  priority: 3

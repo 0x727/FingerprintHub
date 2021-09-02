@@ -1,4 +1,5 @@
 name: chinamdm-mobile-device-management
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - innerhtml="chinamdm移动终端管理系统
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - justsy/user/searchmenusbyusername/
-  priority: 3

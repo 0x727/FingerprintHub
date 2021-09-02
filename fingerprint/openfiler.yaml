@@ -1,4 +1,5 @@
 name: openfiler
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://www.openfiler.com/">openfiler
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - </strong>openfiler nas/san appliance
-  priority: 1

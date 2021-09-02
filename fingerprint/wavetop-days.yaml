@@ -1,4 +1,5 @@
 name: wavetop-days
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - application/views/img/logo_wavetop.png
-  priority: 3

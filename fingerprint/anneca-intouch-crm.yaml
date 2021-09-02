@@ -1,4 +1,5 @@
 name: anneca-intouch-crm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://www.anneca.cz"
-  priority: 3

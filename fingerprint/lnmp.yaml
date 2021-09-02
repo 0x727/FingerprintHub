@@ -1,4 +1,5 @@
 name: lnmp
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - lnmp一键安装包
-  priority: 2

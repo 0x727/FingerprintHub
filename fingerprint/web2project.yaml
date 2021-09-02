@@ -1,4 +1,5 @@
 name: web2project
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - </head><body>fatal error. you haven't created a config file yet.<br/><a href=
-  priority: 3

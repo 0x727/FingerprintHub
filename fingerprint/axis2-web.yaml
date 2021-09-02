@@ -1,4 +1,5 @@
 name: axis2-web
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - axis2-web/css/axis-style.css
-  priority: 2

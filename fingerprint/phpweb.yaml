@@ -1,4 +1,5 @@
 name: phpweb
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - pdv_pagename
-  priority: 3

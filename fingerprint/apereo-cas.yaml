@@ -1,4 +1,5 @@
 name: apereo-cas
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - cas &#8211; central authentication service
-  priority: 3

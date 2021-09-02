@@ -1,4 +1,5 @@
 name: yizhitong-e7
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - name="hidden_isbiaozhun"
-  priority: 3

@@ -1,4 +1,5 @@
 name: mobilityguard
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - click here for more information about mobilityguard
-  priority: 1

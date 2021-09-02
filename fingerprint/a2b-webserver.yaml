@@ -1,4 +1,5 @@
 name: a2b-webserver
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: a2b webserver
   keyword: []
-  priority: 2

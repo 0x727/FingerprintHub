@@ -1,4 +1,5 @@
 name: 任子行-ssl-vpn
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - surfilter
   - src="/javascript/validation/sslvpnlogin.js
-  priority: 3

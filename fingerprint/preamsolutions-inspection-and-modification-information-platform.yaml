@@ -1,4 +1,5 @@
 name: preamsolutions-inspection-and-modification-information-platform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - action="/gqjx/loginmgr.do?method=dologin
-  priority: 3

@@ -1,4 +1,5 @@
 name: teradata-parallel
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - var currentmode ='fittowindowonload
-  priority: 2

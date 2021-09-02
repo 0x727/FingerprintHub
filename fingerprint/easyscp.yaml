@@ -1,4 +1,5 @@
 name: easyscp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /css/easyscp.login.css
   - content='easyscp
-  priority: 3

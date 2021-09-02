@@ -1,4 +1,5 @@
 name: 佑友-佑友防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - class="inputsize2"
   - src="./js/jquery.validate.js"
-  priority: 3

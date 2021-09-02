@@ -1,4 +1,5 @@
 name: trs-wcm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /wcm/app/js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - 0;url=/wcm
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - window.location.href = "/wcm";
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - forum.trs.com.cn
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -45,7 +42,6 @@ fingerprint:
   keyword:
   - /wcm" target="_blank">网站管理
   - wcm
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -54,4 +50,3 @@ fingerprint:
   headers: {}
   keyword:
   - /wcm" target="_blank">管理
-  priority: 3

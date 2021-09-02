@@ -1,4 +1,5 @@
 name: quixplorer
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - target="_blank">the quix project</a></small>
-  priority: 3

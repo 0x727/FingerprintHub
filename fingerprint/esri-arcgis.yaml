@@ -1,4 +1,5 @@
 name: esri-arcgis
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - esri/discovery/admin.js
-  priority: 3

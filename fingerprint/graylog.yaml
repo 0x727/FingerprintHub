@@ -1,4 +1,5 @@
 name: graylog
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - org.graylog.plugins.pipelineprocessor.processorplugin
-  priority: 3

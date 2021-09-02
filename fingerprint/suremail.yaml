@@ -1,4 +1,5 @@
 name: suremail
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - content="北京国信安邮科技有限公司
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <span> 客服邮箱：support@suremail.cn</span>
-  priority: 3

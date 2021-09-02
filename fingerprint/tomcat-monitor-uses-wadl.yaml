@@ -1,4 +1,5 @@
 name: tomcat-monitor-uses-wadl
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - tomcat monitor uses wadl to describe services it can offer
-  priority: 2

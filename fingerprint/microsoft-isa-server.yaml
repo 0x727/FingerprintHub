@@ -1,4 +1,5 @@
 name: microsoft-isa-server
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - the isa server denied the specified uniform resource locator
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - the server denied the specified uniform resource locator (url). contact the server
     administrator
-  priority: 3

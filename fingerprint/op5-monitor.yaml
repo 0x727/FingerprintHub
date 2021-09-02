@@ -1,4 +1,5 @@
 name: op5-monitor
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /monitor/application/views/themes/default/css/default/common.css
-  priority: 3

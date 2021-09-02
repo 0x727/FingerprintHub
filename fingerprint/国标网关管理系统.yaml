@@ -1,4 +1,5 @@
 name: 国标网关管理系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - title>国标网关管理系统</title
-  priority: 3

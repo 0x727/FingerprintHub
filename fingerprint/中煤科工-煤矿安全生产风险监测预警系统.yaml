@@ -1,4 +1,5 @@
 name: 中煤科工-煤矿安全生产风险监测预警系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/cariweb/images/images-new
-  priority: 3

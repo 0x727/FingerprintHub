@@ -1,4 +1,5 @@
 name: upyun-js-library
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - b0.upaiyun.com
-  priority: 2

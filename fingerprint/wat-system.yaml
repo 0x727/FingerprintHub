@@ -1,4 +1,5 @@
 name: wat-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 生产经营计划统计一体化管理信息系统安装程序
-  priority: 3

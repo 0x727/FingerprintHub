@@ -1,4 +1,5 @@
 name: videosurveillancemanagementplatform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - ' <span>平台采用最新图像化展现技术'
-  priority: 3

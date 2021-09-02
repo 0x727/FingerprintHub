@@ -1,4 +1,5 @@
 name: 飞鱼星-安全设备
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - languagechange
   - cgi-bin/login
-  priority: 3

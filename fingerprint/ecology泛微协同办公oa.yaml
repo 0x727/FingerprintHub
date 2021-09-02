@@ -1,4 +1,5 @@
 name: ecology泛微协同办公oa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - '"/login/Login.jsp?logintype=1"'
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - /wui/common/css/w7ovfont.css
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - typeof poppedwindow
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - client/jquery.client_wev8.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,7 +41,6 @@ fingerprint:
   headers: {}
   keyword:
   - /theme/ecology8/jquery/js/zdialog_wev8.js
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -53,4 +49,3 @@ fingerprint:
   headers: {}
   keyword:
   - ecology8/lang/weaver_lang_7_wev8.js
-  priority: 3

@@ -1,4 +1,5 @@
 name: 中科网威-安全控制系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - dkey_login"?0?
   - <div class="con_r_b_r"> <input class="btn_bg
-  priority: 3

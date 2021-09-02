@@ -1,4 +1,5 @@
 name: avantfax-ictfax
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <img src="images/avantfax-big.png" border="0" alt="ictfax
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="ictfax
-  priority: 3

@@ -1,4 +1,5 @@
 name: oureman-eman
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <span i18n="1">益模模具智能制造系统</span>
-  priority: 3

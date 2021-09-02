@@ -1,4 +1,5 @@
 name: sap-sybase
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: adaptiveserveranywhere
   keyword: []
-  priority: 2

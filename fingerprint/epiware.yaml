@@ -1,4 +1,5 @@
 name: epiware
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - epiware - project and document management
-  priority: 3

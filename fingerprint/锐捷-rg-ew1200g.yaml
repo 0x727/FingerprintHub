@@ -1,4 +1,5 @@
 name: 锐捷-rg-ew1200g
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -10,4 +11,3 @@ fingerprint:
   - /js/app
   - /static/img/title.ico
   - 锐捷
-  priority: 1

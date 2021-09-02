@@ -1,4 +1,5 @@
 name: 奇安信-分析平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/static/build/animate_nprogress_timepiacker_tooltipster.min.css
-  priority: 3

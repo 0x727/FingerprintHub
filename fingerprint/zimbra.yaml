@@ -1,4 +1,5 @@
 name: zimbra
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
     Set-Cookie: ZM_LOGIN_CSRF
   keyword:
   - ImgZimbraIcon
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   headers: {}
   keyword:
   - window._zimbramail
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,4 +26,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="zimbra
-  priority: 3

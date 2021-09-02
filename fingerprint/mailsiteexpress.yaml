@@ -1,4 +1,5 @@
 name: mailsiteexpress
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - onsubmit="openexpress(document.expresslogin)
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - rockliffe systems, inc.
-  priority: 3

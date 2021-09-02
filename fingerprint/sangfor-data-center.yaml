@@ -1,4 +1,5 @@
 name: sangfor-data-center
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - acloglogin.php
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers:
     Location: ./src/acloglogin.php
   keyword: []
-  priority: 3

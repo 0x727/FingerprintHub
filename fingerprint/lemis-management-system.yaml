@@ -1,4 +1,5 @@
 name: lemis-management-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - lemis.web_app_name
-  priority: 3

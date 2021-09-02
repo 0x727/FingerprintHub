@@ -1,4 +1,5 @@
 name: hillstone-hsa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="resources/login-all.css"
-  priority: 3

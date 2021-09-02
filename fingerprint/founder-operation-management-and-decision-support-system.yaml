@@ -1,4 +1,5 @@
 name: founder-operation-management-and-decision-support-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="/portal/img/logo.png"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/desktop/ui/custom/getimage?img=iphoneview.png"
-  priority: 3

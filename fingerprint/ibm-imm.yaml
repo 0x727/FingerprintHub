@@ -1,4 +1,5 @@
 name: ibm-imm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - <meta http-equiv="refresh" content="0;url=/designs/imm/noscript/noscript_en.php"
     />
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   headers: {}
   keyword:
   - ibm.stg.inlinemessage.messagetypes.msg_critical
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,4 +26,3 @@ fingerprint:
   headers: {}
   keyword:
   - /ibmdojo/
-  priority: 3

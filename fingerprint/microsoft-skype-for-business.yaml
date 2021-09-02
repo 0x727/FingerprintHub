@@ -1,4 +1,5 @@
 name: microsoft-skype-for-business
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - var reachclientproductname = "skype for business web 应用"
-  priority: 3

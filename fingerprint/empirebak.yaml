@@ -1,4 +1,5 @@
 name: empirebak
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - powered by <a href="http://www.phome.net" target="_blank"><strong>empirebak</strong>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div align="center">(<a href="doc.html" target="_blank">查看帝国备份王说明文档</a>)</div>
-  priority: 3

@@ -1,4 +1,5 @@
 name: topfreeweb-charging
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - background="images/logbg.jpg"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - value="经理">经理</option>
-  priority: 3

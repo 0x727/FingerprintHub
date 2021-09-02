@@ -1,4 +1,5 @@
 name: mail2000-邮件系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - mail2000郵件系統
-  priority: 3

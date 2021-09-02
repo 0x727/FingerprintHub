@@ -1,4 +1,5 @@
 name: virtualmin
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <center><a href=/virtualmin-password-recovery/>forgot your virtualmin password?</a></center>
-  priority: 2

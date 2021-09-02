@@ -1,4 +1,5 @@
 name: ruvar-oa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <iframe id="ifrm" width="100%" height="100%" frameborder="0" scrolling="no" src="/include/login.aspx
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - <frame
   - '<iframe '
-  priority: 3

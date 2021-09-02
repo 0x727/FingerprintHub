@@ -1,4 +1,5 @@
 name: honeywell-intermec-easylan
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - color="black" size="5">intermec easylan
-  priority: 3

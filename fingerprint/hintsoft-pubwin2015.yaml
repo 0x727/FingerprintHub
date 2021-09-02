@@ -1,4 +1,5 @@
 name: hintsoft-pubwin2015
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - images/newlogin_01.jpg
-  priority: 3

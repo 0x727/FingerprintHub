@@ -1,4 +1,5 @@
 name: php-support-tickets
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - title="php support tickets">php support tickets
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="triangle solutions ltd
-  priority: 3

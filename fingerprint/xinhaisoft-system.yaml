@@ -1,4 +1,5 @@
 name: xinhaisoft-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - 北京心海导航教育科技股份有限公司-中国心理网版权所有<br>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - ../regist.asp?school=
-  priority: 3

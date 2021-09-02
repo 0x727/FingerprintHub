@@ -1,4 +1,5 @@
 name: ibm-watchfire
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Set-Cookie: watchfiresessionid
   keyword: []
-  priority: 3

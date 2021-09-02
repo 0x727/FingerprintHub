@@ -1,4 +1,5 @@
 name: pcitc-file-management-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - js/scripts/common/easyui/jquery.easyui.min.js
-  priority: 3

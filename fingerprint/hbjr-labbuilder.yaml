@@ -1,4 +1,5 @@
 name: hbjr-labbuilder
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - labbuilder 实验室信息管理系统
-  priority: 3

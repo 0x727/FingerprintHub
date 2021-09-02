@@ -1,4 +1,5 @@
 name: 全息若海-仓储办公辅助管理系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - src="/scripts/easyui/jquery.easyui.min.js"
   - 广州全息若海信息科技有限公司
-  priority: 3

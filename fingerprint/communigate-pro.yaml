@@ -1,4 +1,5 @@
 name: communigate-pro
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: communigatepro
   keyword: []
-  priority: 3

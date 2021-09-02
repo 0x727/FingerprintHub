@@ -1,4 +1,5 @@
 name: cisco-meeting-app
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div id="cisco_meeting_application">
-  priority: 3

@@ -1,4 +1,5 @@
 name: chinatelecomequipmentwebconfigurationsystem
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 设备web配置</font
-  priority: 3

@@ -1,4 +1,5 @@
 name: mingyuanyun-sales
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <img id="erp" src="/_imgs/login/zs_erp.png
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - value="明源售楼管理系统v5.0"
-  priority: 3

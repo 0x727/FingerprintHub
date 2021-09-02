@@ -1,4 +1,5 @@
 name: powermta
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - <html><body>access denied.  please consult the http-access directive in the user's
     guide for more information.</body>
-  priority: 3

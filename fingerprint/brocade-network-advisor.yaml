@@ -1,4 +1,5 @@
 name: brocade-network-advisor
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <span class="ui-menuitem-text">about network advisor</span></a>
-  priority: 3

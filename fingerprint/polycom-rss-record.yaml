@@ -1,4 +1,5 @@
 name: polycom-rss-record
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - window.location.replace("/rss/")
-  priority: 3

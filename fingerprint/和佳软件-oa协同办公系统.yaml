@@ -1,4 +1,5 @@
 name: 和佳软件-oa协同办公系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/templates/everythingisok/index.css"
-  priority: 3

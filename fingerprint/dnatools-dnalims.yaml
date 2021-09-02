@@ -1,4 +1,5 @@
 name: dnatools-dnalims
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - /cgi-bin/dna/password.cgi
   - dnalims
-  priority: 3

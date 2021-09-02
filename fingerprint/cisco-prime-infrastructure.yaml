@@ -1,4 +1,5 @@
 name: cisco-prime-infrastructure
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <div class="xwtproductname" >cisco prime infrastructure
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - /webacs/lib/xwt/themes/prime/prime-xwt.css
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - webacs/welcomeaction.do
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,4 +33,3 @@ fingerprint:
   headers:
     Server: prime
   keyword: []
-  priority: 3

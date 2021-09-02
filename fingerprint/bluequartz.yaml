@@ -1,4 +1,5 @@
 name: bluequartz
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - value="copyright (c) 2000, cobalt networks
-  priority: 3

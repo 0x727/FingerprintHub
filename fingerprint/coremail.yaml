@@ -1,4 +1,5 @@
 name: coremail
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /coremail/bundle/
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://www.coremail.cn" target="_blank">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - coremail/common
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - /coremail/common/
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -44,7 +41,6 @@ fingerprint:
   headers: {}
   keyword:
   - action="/coremail/index.jsp
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -53,4 +49,3 @@ fingerprint:
   headers: {}
   keyword:
   - 'fmt_logoalt: "coremail 电子邮件系统'
-  priority: 3

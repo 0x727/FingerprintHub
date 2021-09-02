@@ -1,4 +1,5 @@
 name: simple-phishing-toolkit
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <span id="spt"><a href="http://www.sptoolkit.com/download/" target="_blank">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,4 +18,3 @@ fingerprint:
   keyword:
   - content="welcome to spt - simple phishing toolkit.  spt is a super simple but
     powerful phishing toolkit." />
-  priority: 3

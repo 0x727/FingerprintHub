@@ -1,4 +1,5 @@
 name: 中电福富-安全基线管理
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - align="center">福富软件
-  priority: 3

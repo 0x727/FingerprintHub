@@ -1,4 +1,5 @@
 name: hispider-router
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - action="login.pl" method="post"  onsubmit="encryptpasswd()
-  priority: 3

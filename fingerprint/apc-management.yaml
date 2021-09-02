@@ -1,4 +1,5 @@
 name: apc-management
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - this object on the apc management web server is protected
-  priority: 2

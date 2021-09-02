@@ -1,4 +1,5 @@
 name: 工控安全隐患治理项目系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="qyxt.html"
-  priority: 3

@@ -1,4 +1,5 @@
 name: ziguanghuayu-attendance-management-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 广州紫光华宇信息技术有限公司
-  priority: 3

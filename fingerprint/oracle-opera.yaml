@@ -1,4 +1,5 @@
 name: oracle-opera
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - operalogin/welcome.do
-  priority: 3

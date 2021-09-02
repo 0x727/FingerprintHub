@@ -1,4 +1,5 @@
 name: luci
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /luci-static/openwrt.org/cascade.css
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - luci - lua configuration interface
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -26,7 +25,6 @@ fingerprint:
   headers: {}
   keyword:
   - powered by luci
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -35,7 +33,6 @@ fingerprint:
   headers: {}
   keyword:
   - action="/cgi-bin/luci">
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -44,7 +41,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="/cgi-bin/luci"></a>
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -53,4 +49,3 @@ fingerprint:
   headers: {}
   keyword:
   - <head> <meta http-equiv="refresh" content="0; url=/cgi-bin/luci" /> </head>
-  priority: 2

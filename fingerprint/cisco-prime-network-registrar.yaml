@@ -1,4 +1,5 @@
 name: cisco-prime-network-registrar
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - productname="network registrar
-  priority: 3

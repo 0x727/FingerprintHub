@@ -1,4 +1,5 @@
 name: maipu-安全网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /webui/images/maipu/login/login_adminbg_a.gif"?
-  priority: 3

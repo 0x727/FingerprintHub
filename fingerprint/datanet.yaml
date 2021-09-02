@@ -1,4 +1,5 @@
 name: datanet
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href='/scada'>datanet scada interface
-  priority: 3

@@ -1,4 +1,5 @@
 name: goonie-internet-public-ppinion-monitoring-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - alert("菜单层数量和内容层数量不一样!")
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - 网络舆情监控系统
-  priority: 3

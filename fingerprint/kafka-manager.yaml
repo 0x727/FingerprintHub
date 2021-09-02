@@ -1,4 +1,5 @@
 name: kafka-manager
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - vassets/images/2af62f58ee2baf495c9b3a9a1c30ce03-favicon.png
-  priority: 2

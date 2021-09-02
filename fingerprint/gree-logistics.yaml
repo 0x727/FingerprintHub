@@ -1,4 +1,5 @@
 name: gree-logistics
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /images/gree/gree.gif
-  priority: 3

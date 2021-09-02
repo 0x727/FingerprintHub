@@ -1,4 +1,5 @@
 name: xyhcms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - power by xyhcms
-  priority: 3

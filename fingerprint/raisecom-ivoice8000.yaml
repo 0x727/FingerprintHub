@@ -1,4 +1,5 @@
 name: raisecom-ivoice8000
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - id="com_raisecom_ums_aos_portal_login_domain
-  priority: 3

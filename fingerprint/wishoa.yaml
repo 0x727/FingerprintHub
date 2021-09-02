@@ -1,4 +1,5 @@
 name: wishoa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - WishOA_WebPlugin.js
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - wishoa_webplugin.js
-  priority: 3

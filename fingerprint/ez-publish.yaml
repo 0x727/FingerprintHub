@@ -1,4 +1,5 @@
 name: ez-publish
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Set-Cookie: ezsessioncookie
   keyword: []
-  priority: 3

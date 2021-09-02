@@ -1,4 +1,5 @@
 name: nagios-xi
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - click the link below to get started using nagios xi.
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - /nagiosxi/images/favicon.ico
-  priority: 3

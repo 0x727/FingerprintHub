@@ -1,4 +1,5 @@
 name: ueditor
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - ueditor.all.js
-  priority: 3

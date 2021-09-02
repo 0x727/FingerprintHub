@@ -1,4 +1,5 @@
 name: hercules-logistics
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - document.cookie="4pl07username="+arraystr
-  priority: 3

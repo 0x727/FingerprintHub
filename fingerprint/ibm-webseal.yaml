@@ -1,4 +1,5 @@
 name: ibm-webseal
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: webseal
   keyword: []
-  priority: 2

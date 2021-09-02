@@ -1,4 +1,5 @@
 name: chnitc-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://www.chnitc.com" style="text-decoration:none;color:#fff;">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - 科业开发团队出品
-  priority: 3

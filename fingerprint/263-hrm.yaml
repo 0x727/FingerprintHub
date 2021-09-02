@@ -1,4 +1,5 @@
 name: 263-hrm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <p align="center">请使用263em登陆!</p>
-  priority: 3

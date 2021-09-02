@@ -1,4 +1,5 @@
 name: grandnode
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     X-Powered-By: grandnode
   keyword: []
-  priority: 3

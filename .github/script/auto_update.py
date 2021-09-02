@@ -51,6 +51,7 @@ def fingerprint_json_generator_v2(path):
                 for fingerprint in fingerprint_rules_origin:
                     valid_rule = valid_fingerprint_v2(fingerprint)
                     valid_rule['name'] = y_dict.get('name')
+                    valid_rule['priority'] = y_dict.get('priority')
                     fingerprint_all_list.append(valid_rule)
     web_fingerprint = sorted(fingerprint_all_list, key=itemgetter('name'))
     with open("web_fingerprint_v2.json", 'w') as wfp:
@@ -66,11 +67,18 @@ def update_yaml(path):
             with open(abs_filename) as y:
                 y_dict = yaml.safe_load(y)
                 fingerprint_rules_origin = y_dict.get('fingerprint', [])
+                max_priority = 0
+                sorted_list = {'name': 0, 'priority': 1, 'fingerprint': 2}
                 for fingerprint in fingerprint_rules_origin:
                     valid_rule = valid_fingerprint_v2(fingerprint)
+                    priority = valid_rule.pop('priority')
+                    if priority > max_priority:
+                        max_priority = priority
                     fingerprint_rules.append(valid_rule)
                 y_dict['fingerprint'] = fingerprint_rules
-                wfp_y = yaml.safe_dump(y_dict, sort_keys=False, allow_unicode=True, indent=2)
+                y_dict['priority'] = max_priority
+                new_y_dict = dict(sorted(y_dict.items(), key=lambda t: sorted_list[t[0]]))
+                wfp_y = yaml.safe_dump(new_y_dict, sort_keys=False, allow_unicode=True, indent=2)
                 with open(abs_filename, "w") as y:
                     y.write(wfp_y)
 

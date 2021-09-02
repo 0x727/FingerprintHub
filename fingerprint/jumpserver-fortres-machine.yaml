@@ -1,4 +1,5 @@
 name: jumpserver-fortres-machine
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - <input type="password" class="form-control" name="password" placeholder="密码" required="">
   - csrfmiddlewaretoken
-  priority: 3

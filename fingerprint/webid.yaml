@@ -1,4 +1,5 @@
 name: webid
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - powered by <a href="http://www.webidsupport.com/">webid
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <meta name="generator" content="webid">
-  priority: 2

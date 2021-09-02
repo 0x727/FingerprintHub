@@ -1,4 +1,5 @@
 name: sxt234-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <div class="head_right" onclick="window_close()">
-  priority: 3

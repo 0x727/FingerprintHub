@@ -1,4 +1,5 @@
 name: shiji-xms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="xmsenv.exe">系统运行环境
-  priority: 3

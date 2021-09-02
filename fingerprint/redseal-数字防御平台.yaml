@@ -1,4 +1,5 @@
 name: redseal-数字防御平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - alt="redseal, inc."/></a>
-  priority: 3

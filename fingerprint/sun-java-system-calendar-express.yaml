@@ -1,4 +1,5 @@
 name: sun-java-system-calendar-express
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <img src="imx/login-logo.gif" width="186" height="79" alt="sun microsystems, inc.">
-  priority: 2

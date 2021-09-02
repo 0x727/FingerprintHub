@@ -1,4 +1,5 @@
 name: acmailer-邮件系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://www.acmailer.jp"><img src="img/logo.jpg
-  priority: 3

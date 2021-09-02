@@ -1,4 +1,5 @@
 name: xhlis-oa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <title>杏和区域检验业务协同平台登录界面</title>
-  priority: 3

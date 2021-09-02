@@ -1,4 +1,5 @@
 name: crow-force-portal-cms
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 中企动力提供技术支持
-  priority: 3

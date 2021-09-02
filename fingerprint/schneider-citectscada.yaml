@@ -1,4 +1,5 @@
 name: schneider-citectscada
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <meta http-equiv="refresh" content="0; url=/citectscada">
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -19,4 +19,3 @@ fingerprint:
   - content="start services, start group, the start group, automation, industrial,
     software engineering, scada, plc, rtu, rockwell, rockwell automation, allen-bradley,
     allen bradley, allenbradley, citect, citectscada, kingfisher
-  priority: 3

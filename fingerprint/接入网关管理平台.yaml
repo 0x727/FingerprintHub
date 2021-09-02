@@ -1,4 +1,5 @@
 name: 接入网关管理平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - edp-web/login.jsp
-  priority: 3

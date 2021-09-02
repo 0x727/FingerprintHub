@@ -1,4 +1,5 @@
 name: alcatel_lucent-omnivista-cirrus
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /help/en-us/others/ov-cirrus_cookiepolicy.html
-  priority: 3

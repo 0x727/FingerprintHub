@@ -1,4 +1,5 @@
 name: dell-navisphere-express
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - parent.main.location = urlnonst + "?nst=" + top.menu.securitytoken
-  priority: 3

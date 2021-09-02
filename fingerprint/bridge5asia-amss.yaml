@@ -1,4 +1,5 @@
 name: bridge5asia-amss
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - 'education area management support system : amss++'
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - /statics/js/mdo-angular-cryptography.js
-  priority: 3

@@ -1,4 +1,5 @@
 name: nstc-software
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - skysz.fw.index.validatecodenew = "/loginaction/validatecodenew.html
-  priority: 3

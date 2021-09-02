@@ -1,4 +1,5 @@
 name: 天融信topapp_lb负载均衡系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <title>天融信 TopAPP</title>
-  priority: 3

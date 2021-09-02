@@ -1,4 +1,5 @@
 name: vmedia-multimedia-publishing-platform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - function toggle(targetid)
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - class="video_00"
-  priority: 3

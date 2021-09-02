@@ -1,4 +1,5 @@
 name: adaptec-maxview
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - action="/maxview/manager/login.xhtml
-  priority: 3

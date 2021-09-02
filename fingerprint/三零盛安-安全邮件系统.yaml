@@ -1,4 +1,5 @@
 name: 三零盛安-安全邮件系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 30san.all rights reserved.</div>
-  priority: 3

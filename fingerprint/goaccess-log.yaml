@@ -1,4 +1,5 @@
 name: goaccess-log
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - by <a href="https://goaccess.io/">goaccess</a>
-  priority: 3

@@ -1,4 +1,5 @@
 name: pcitc-lims
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /home/plug_in_download
-  priority: 3

@@ -1,4 +1,5 @@
 name: keyfocus-webserver
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: kfwebserver
   keyword: []
-  priority: 2

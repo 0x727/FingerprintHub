@@ -1,4 +1,5 @@
 name: vrv-desktop-application-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <span id="lblvalidcompany" class="validcompany">vrv
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - var vver = $('#hidverify').val();
-  priority: 3

@@ -1,4 +1,5 @@
 name: paloalto-globalprotect
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - global-protect/login.esp
-  priority: 2

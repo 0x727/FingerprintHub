@@ -1,4 +1,5 @@
 name: netsweeper
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - netsweepersmbtextatbottomofloginscreen
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - 'href="http://www.poweredbynetsweeper.com"><img '
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers:
     Set-Cookie: webadmin=
   keyword: []
-  priority: 3

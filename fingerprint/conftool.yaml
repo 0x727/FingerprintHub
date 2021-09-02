@@ -1,4 +1,5 @@
 name: conftool
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <h2 align=center>conftool conference administration
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a href='http://www.conftool.net'>conference management software
-  priority: 3

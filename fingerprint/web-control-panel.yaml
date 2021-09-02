@@ -1,4 +1,5 @@
 name: web-control-panel
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <td><img src="/images/wcpe.gif
-  priority: 3

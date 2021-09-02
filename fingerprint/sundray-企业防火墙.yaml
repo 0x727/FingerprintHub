@@ -1,4 +1,5 @@
 name: sundray-企业防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - help = decodeuricomponent(version_info_ch)
-  priority: 3

@@ -1,4 +1,5 @@
 name: reremouse-exam-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - 蝙蝠在线考试系统
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - 博库医学在线考试系统，技术支持：杭州博库科技有限公司
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/resources/js/upscroll.js"
-  priority: 3

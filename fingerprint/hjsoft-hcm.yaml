@@ -1,4 +1,5 @@
 name: hjsoft-hcm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="/images/hcm/copyright.gif"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - src="/images/hcm/themes/default/login/login_banner2.png?v=12334"
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/general/sys/hjaxmanage.js"
-  priority: 3

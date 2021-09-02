@@ -1,4 +1,5 @@
 name: yonyou-turbocrm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - turboui.js
-  priority: 3

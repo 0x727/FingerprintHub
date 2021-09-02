@@ -1,4 +1,5 @@
 name: cc-customer-service
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <script src="http://kefu.qycn.com/
-  priority: 3

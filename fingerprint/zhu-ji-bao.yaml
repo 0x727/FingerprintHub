@@ -1,4 +1,5 @@
 name: zhu-ji-bao
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - 您访问的是主机宝服务器默认页
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://z.admin5.com/" target=
-  priority: 2

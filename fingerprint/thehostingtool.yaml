@@ -1,4 +1,5 @@
 name: thehostingtool
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - <a href="http://thehostingtool.com" target="_blank">thehostingtool</a>
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - <td width="20%"><strong>server os:</strong></td>
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -26,4 +25,3 @@ fingerprint:
   headers: {}
   keyword:
   - page=status&sub=phpinfo">phpinfo</a>)</td>
-  priority: 2

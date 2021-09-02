@@ -1,4 +1,5 @@
 name: 紫光集团-紫光防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - 紫光防火墙
   - name="adminlogin" action="/cgi-bin/manageaccount">
-  priority: 3

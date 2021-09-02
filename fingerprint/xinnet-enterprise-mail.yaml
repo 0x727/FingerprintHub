@@ -1,4 +1,5 @@
 name: xinnet-enterprise-mail
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - 北京新网数码信息技术有限公司 版权所有</span>
-  priority: 3

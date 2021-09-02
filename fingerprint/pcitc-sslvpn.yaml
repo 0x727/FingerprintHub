@@ -1,4 +1,5 @@
 name: pcitc-sslvpn
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="new_style/placeholderfriend.js"
-  priority: 3

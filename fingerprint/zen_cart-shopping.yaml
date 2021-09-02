@@ -1,4 +1,5 @@
 name: zen_cart-shopping
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - shopping cart program by zen cart
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers:
     Set-Cookie: zenid=
   keyword: []
-  priority: 3

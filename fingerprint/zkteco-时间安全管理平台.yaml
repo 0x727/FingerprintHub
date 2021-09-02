@@ -1,4 +1,5 @@
 name: zkteco-时间安全管理平台
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - zkeco 时间&安全管理平台
-  priority: 3

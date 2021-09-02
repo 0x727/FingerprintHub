@@ -1,4 +1,5 @@
 name: smartoa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - /smartoa.plist
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="http://www.smartoa.com.cn/download/smartoa.apk">安卓客户端</a>
-  priority: 3

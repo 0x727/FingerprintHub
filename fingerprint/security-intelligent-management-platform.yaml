@@ -1,4 +1,5 @@
 name: security-intelligent-management-platform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - nanjing rickyinfo technology
-  priority: 3

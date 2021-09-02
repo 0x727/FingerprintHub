@@ -1,4 +1,5 @@
 name: 慧盾安全-视频核心安全网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - title').text('视频会议安全系统
   - id="view-login"
-  priority: 3

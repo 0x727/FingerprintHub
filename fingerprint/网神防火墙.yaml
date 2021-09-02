@@ -1,4 +1,5 @@
 name: 网神防火墙
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - 3600防火墙
   - 网神SecGate
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -19,4 +19,3 @@ fingerprint:
   keyword:
   - resources/image/logo_header.png
   - 网神防火墙系统
-  priority: 3

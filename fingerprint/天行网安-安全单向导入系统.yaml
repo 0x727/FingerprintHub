@@ -1,4 +1,5 @@
 name: 天行网安-安全单向导入系统
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - 天行安全单向导入系统
   - <meta http-equiv="refresh" content="0;url=/usermainaction.action" />
-  priority: 3

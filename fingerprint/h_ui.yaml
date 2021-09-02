@@ -1,4 +1,5 @@
 name: h_ui
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - h-ui.js
   - h-ui.min.js
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -19,7 +19,6 @@ fingerprint:
   keyword:
   - /css/h-ui.min.css
   - html5shi.js
-  priority: 2
 - path: /
   request_method: get
   request_headers: {}
@@ -29,4 +28,3 @@ fingerprint:
   keyword:
   - /css/h-ui.login.css
   - /h-ui.admin/
-  priority: 2

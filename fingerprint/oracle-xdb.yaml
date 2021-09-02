@@ -1,4 +1,5 @@
 name: oracle-xdb
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: oracle xml db
   keyword: []
-  priority: 2

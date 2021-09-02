@@ -1,4 +1,5 @@
 name: yichao-crmreporting
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="/css/vendors~index.acfeb.css"
-  priority: 3

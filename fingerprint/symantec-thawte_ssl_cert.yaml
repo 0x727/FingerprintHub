@@ -1,4 +1,5 @@
 name: symantec-thawte_ssl_cert
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - https://seal.thawte.com/getthawteseal
-  priority: 2

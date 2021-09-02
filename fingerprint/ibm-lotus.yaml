@@ -1,4 +1,5 @@
 name: ibm-lotus
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - action="/names.nsf?login" name="_dominoform
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,7 +17,6 @@ fingerprint:
   headers: {}
   keyword:
   - 软标科技
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,7 +26,6 @@ fingerprint:
   keyword:
   - domcfg.nsf
   - login.nsf
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -37,4 +35,3 @@ fingerprint:
   keyword:
   - esoaisapp/login.jsp
   - main.nsf
-  priority: 3

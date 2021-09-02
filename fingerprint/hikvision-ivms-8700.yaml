@@ -1,4 +1,5 @@
 name: hikvision-ivms-8700
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - src="/portal/common/js/commonvar.js
-  priority: 3

@@ -1,4 +1,5 @@
 name: tp_link-omada-controller
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="width=1300,initial-scale=1,minimal-ui"
-  priority: 3

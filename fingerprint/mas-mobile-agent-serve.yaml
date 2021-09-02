@@ -1,4 +1,5 @@
 name: mas-mobile-agent-serve
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - action='/mas_security_check'>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - if(!isnotnull(document.forms[0].filepath.value, "证书文件"))
-  priority: 3

@@ -1,4 +1,5 @@
 name: wellcare-health-management-system
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - href="/web/vfyphrmedical">健康档案</a></li>
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - www.wellcare.cn
-  priority: 3

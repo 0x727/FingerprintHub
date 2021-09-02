@@ -1,4 +1,5 @@
 name: cisco-imc-supervisor
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - 'font-family: "ciscosansthin"'
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - cisco imc supervisor
-  priority: 3

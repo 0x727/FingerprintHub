@@ -1,4 +1,5 @@
 name: phpoa
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - url(template/default/images/admin_img/msg.png)
-  priority: 1
 - path: /
   request_method: get
   request_headers: {}
@@ -17,4 +17,3 @@ fingerprint:
   headers: {}
   keyword:
   - admin_img/msg_bg.png
-  priority: 3

@@ -1,4 +1,5 @@
 name: m2soft-rdserver
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: rdserver
   keyword: []
-  priority: 3

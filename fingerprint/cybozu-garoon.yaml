@@ -1,4 +1,5 @@
 name: cybozu-garoon
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers:
     Server: cybozu-ws
   keyword: []
-  priority: 3

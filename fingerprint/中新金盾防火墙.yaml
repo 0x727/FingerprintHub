@@ -1,4 +1,5 @@
 name: 中新金盾防火墙
+priority: 1
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - <title>中新金盾防火墙</title>
   - ZXFW
-  priority: 1

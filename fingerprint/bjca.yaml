@@ -1,4 +1,5 @@
 name: bjca
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <li><a href="/install/certapp_bd.exe">下载证书应用环境</a></li>
-  priority: 3

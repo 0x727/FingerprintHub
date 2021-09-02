@@ -1,4 +1,5 @@
 name: innotube-manager
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - images/intro/lin_bottom_nocr.gif
-  priority: 3

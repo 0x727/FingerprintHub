@@ -1,4 +1,5 @@
 name: peoplenet-ikey
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - content="ikey,众人科技,ikey
-  priority: 3

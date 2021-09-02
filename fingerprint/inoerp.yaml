@@ -1,4 +1,5 @@
 name: inoerp
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - id="ino-body"
-  priority: 3

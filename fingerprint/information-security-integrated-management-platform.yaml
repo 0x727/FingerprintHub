@@ -1,4 +1,5 @@
 name: information-security-integrated-management-platform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - ccaq_kf@unisk.cn
-  priority: 3

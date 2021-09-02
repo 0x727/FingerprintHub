@@ -1,4 +1,5 @@
 name: dts-operation-platform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - window.appname = 'alidts';
-  priority: 3

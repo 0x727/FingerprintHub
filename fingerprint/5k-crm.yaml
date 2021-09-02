@@ -1,4 +1,5 @@
 name: 5k-crm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /public/js/5kcrm.js
-  priority: 3

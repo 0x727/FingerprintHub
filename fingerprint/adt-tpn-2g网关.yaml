@@ -1,4 +1,5 @@
 name: adt-tpn-2g网关
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,4 +10,3 @@ fingerprint:
   keyword:
   - tpn-2g
   - src="./system/usbkey.js"
-  priority: 3

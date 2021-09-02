@@ -1,4 +1,5 @@
 name: cbss-automated-testing
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <p>copyright&copy cbss 项目组 自动化测试小组</p>
-  priority: 3

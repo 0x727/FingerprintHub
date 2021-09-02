@@ -1,4 +1,5 @@
 name: serv-u-ftp
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - alt="serv-u ftp server
-  priority: 2

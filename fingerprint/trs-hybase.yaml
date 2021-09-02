@@ -1,4 +1,5 @@
 name: trs-hybase
+priority: 2
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - href="#">trs hybase</a>
-  priority: 2

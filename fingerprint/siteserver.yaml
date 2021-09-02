@@ -1,4 +1,5 @@
 name: siteserver
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -9,7 +10,6 @@ fingerprint:
   keyword:
   - http://www.siteserver.cn
   - powered by
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   headers: {}
   keyword:
   - siteserver cms
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -28,7 +27,6 @@ fingerprint:
   keyword:
   - siteserver
   - t_系统首页模板
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -37,4 +35,3 @@ fingerprint:
   headers: {}
   keyword:
   - sitefiles
-  priority: 3

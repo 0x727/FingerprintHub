@@ -1,4 +1,5 @@
 name: yioks-campus-football-management-platform
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - <script>document.location='/index.mpl?a=login'</script>
-  priority: 3

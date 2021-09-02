@@ -1,4 +1,5 @@
 name: yonyou-erp-nc
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - /nc/servlet/nc.ui.iufo.login.index
-  priority: 3

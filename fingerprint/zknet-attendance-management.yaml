@@ -1,4 +1,5 @@
 name: zknet-attendance-management
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,7 +9,6 @@ fingerprint:
   headers: {}
   keyword:
   - 'onclick="showstate(gettext(''forgotten password'')) '
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -18,7 +18,6 @@ fingerprint:
   keyword:
   - zknet
   - zksoftware inc.
-  priority: 3
 - path: /
   request_method: get
   request_headers: {}
@@ -27,4 +26,3 @@ fingerprint:
   headers: {}
   keyword:
   - web考勤管理系统
-  priority: 3

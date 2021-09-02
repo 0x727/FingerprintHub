@@ -1,4 +1,5 @@
 name: authine-h3-bpm
+priority: 3
 fingerprint:
 - path: /
   request_method: get
@@ -8,4 +9,3 @@ fingerprint:
   headers: {}
   keyword:
   - h3 bpm suite信息化的最佳实践
-  priority: 3
