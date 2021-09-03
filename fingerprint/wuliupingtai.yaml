@@ -2,10 +2,10 @@ name: wuliupingtai
 priority: 1
 fingerprint:
   - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
     status_code: 0
-    headers: { }
+    headers: {}
     keyword:
       - static/styles/frame/basic.css
-    request_method: get
-    request_data: ''
-    request_headers: { }
