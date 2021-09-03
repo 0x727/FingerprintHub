@@ -16,26 +16,25 @@
 
 ```yaml
 name: apache-shiro
+priority: 3
 fingerprint:
-- path: /
-  status_code: 0
-  request_method: post
-  request_data: ''
-  headers:
-    Set-Cookie: rememberMe=deleteMe
-  keyword: []
-  priority: 3
-  request_headers:
-    Cookie: rememberMe=admin
-- path: /
-  status_code: 0
-  headers: {}
-  keyword:
-  - </i> shiro</li>
-  priority: 2
-  request_method: get
-  request_data: ''
-  request_headers: {}
+  - path: /
+    request_method: post
+    request_headers:
+      Cookie: rememberMe=admin
+    request_data: ''
+    status_code: 0
+    headers:
+      Set-Cookie: rememberMe=deleteMe
+    keyword: [ ]
+  - path: /
+    request_method: get
+    request_headers: { }
+    request_data: ''
+    status_code: 0
+    headers: { }
+    keyword:
+      - </i> shiro</li>
 ```
 
 | 字段            | 数据类型               | 描述                                                         |
@@ -49,7 +48,7 @@ fingerprint:
 | keyword         | Vec<String>            | 响应的HTML关键词数组，可以添加多个关键词提高识别精度         |
 | priority        | u32                    | 优先程度，用来排序是否为重要组件资产，数字越大越重要，可选：[1,2,3] |
 
-- 一个`path`为一组指纹，像上面的yaml规则中有三组指纹，只要匹配到了一组，就会返回`name`字段，也就是`swagger`。
+- 一个`path`为一组指纹，像上面的yaml规则中有两组指纹，只要匹配到了一组，就会返回`name`字段，也就是`apache-shiro`。
 
 ## 如何贡献
 
@@ -105,9 +104,9 @@ git push origin thinkphp
 ### 指纹反馈
 
 - 当前指纹库收集于互联网，虽然已经经过了人工整理，但是难免会有以下情况：
-  - 出现误报，当指纹不够精确时会产生识别不准确的情况。
-  - 组件重复，可能出现多个组件名称，但是都是同一个组件。
-  - 识别不出组件，指纹规则覆盖不到。
+    - 出现误报，当指纹不够精确时会产生识别不准确的情况。
+    - 组件重复，可能出现多个组件名称，但是都是同一个组件。
+    - 识别不出组件，指纹规则覆盖不到。
 - 出现上面情况可以提交**issues**，可以附上演示URL地址，如果不方便演示可以提交首页的HTML源码，我们会人工修正指纹规则。
 
 ### 谢谢
