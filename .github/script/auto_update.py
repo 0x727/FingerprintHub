@@ -93,4 +93,3 @@ def update_yaml(path):
 
 update_yaml("fingerprint")
 fingerprint_json_generator_v2("fingerprint")
-# fingerprint_json_generator("fingerprint")
