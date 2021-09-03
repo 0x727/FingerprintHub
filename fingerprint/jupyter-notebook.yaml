@@ -1,27 +1,27 @@
 name: jupyter-notebook
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <div id="ipython-main-app" class="container">
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <div id="ipython_notebook" class="nav navbar-brand">
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <title>Jupyter Notebook</title>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <div id="ipython-main-app" class="container">
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <div id="ipython_notebook" class="nav navbar-brand">
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <title>Jupyter Notebook</title>

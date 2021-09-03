@@ -1,20 +1,20 @@
 name: microsoft-isa-server
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - the isa server denied the specified uniform resource locator
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - the server denied the specified uniform resource locator (url). contact the server
-    administrator
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - the isa server denied the specified uniform resource locator
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - the server denied the specified uniform resource locator (url). contact the
+        server administrator

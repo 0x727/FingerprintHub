@@ -1,11 +1,11 @@
 name: raisecom-ivoice8000
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - id="com_raisecom_ums_aos_portal_login_domain
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - id="com_raisecom_ums_aos_portal_login_domain

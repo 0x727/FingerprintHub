@@ -1,11 +1,11 @@
 name: brocade-network-advisor
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <span class="ui-menuitem-text">about network advisor</span></a>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <span class="ui-menuitem-text">about network advisor</span></a>

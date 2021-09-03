@@ -1,19 +1,19 @@
 name: integrating-century-epbp-management-platform
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - rmsie = /(msie\s|trident.*rv:)([\w.]+)/i
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - match = rmsie.exec(window.navigator.useragent
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - rmsie = /(msie\s|trident.*rv:)([\w.]+)/i
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - match = rmsie.exec(window.navigator.useragent

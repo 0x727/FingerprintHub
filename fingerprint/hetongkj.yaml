@@ -1,11 +1,11 @@
 name: hetongkj
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - href="/web/mainmenu/images/favicon.ico">
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - href="/web/mainmenu/images/favicon.ico">

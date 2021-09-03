@@ -1,11 +1,11 @@
 name: 天融信-入侵防御系统topidp
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - 天融信入侵防御系统topidp
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - 天融信入侵防御系统topidp

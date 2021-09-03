@@ -1,12 +1,12 @@
 name: 奇安信-天擎
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - appid":"skylar6
-  - 360新天擎
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - appid":"skylar6
+      - 360新天擎

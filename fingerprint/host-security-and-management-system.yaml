@@ -1,11 +1,11 @@
 name: host-security-and-management-system
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - href=./static/css/app.edb681c84a53277f9336fc297ebca96e.css
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - href=./static/css/app.edb681c84a53277f9336fc297ebca96e.css

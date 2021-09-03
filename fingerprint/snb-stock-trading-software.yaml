@@ -1,11 +1,11 @@
 name: snb-stock-trading-software
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - copyright 2005–2009 <a href="http://www.s-mo.com">
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - copyright 2005–2009 <a href="http://www.s-mo.com">

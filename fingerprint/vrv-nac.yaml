@@ -1,20 +1,20 @@
 name: vrv-nac
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - id="modal_delay"
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - localstorage.setitem('doctitle','北信源网络接入控制系统')
-  - 欢迎登录北信源网络接入控制系统
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - id="modal_delay"
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - localstorage.setitem('doctitle','北信源网络接入控制系统')
+      - 欢迎登录北信源网络接入控制系统

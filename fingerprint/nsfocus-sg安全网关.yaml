@@ -1,11 +1,11 @@
 name: nsfocus-sg安全网关
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - /login_logo_sg_zh_cn.png
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /login_logo_sg_zh_cn.png

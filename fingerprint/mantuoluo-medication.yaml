@@ -1,11 +1,11 @@
 name: mantuoluo-medication
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <h2>曼陀罗医疗</h2>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <h2>曼陀罗医疗</h2>

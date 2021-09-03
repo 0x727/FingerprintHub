@@ -1,11 +1,11 @@
 name: webtrust-cert
 priority: 2
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - https://cert.webtrust.org/viewseal
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - https://cert.webtrust.org/viewseal

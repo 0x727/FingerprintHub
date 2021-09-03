@@ -1,28 +1,28 @@
 name: 启明星辰天清汉马usg防火墙
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 200
-  headers: {}
-  keyword:
-  - Venusense
-  - 天清汉马USG防火墙
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - 天清汉马USG
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 200
-  headers: {}
-  keyword:
-  - /cgi-bin/webui?op=get_product_model
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 200
+    headers: {}
+    keyword:
+      - Venusense
+      - 天清汉马USG防火墙
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - 天清汉马USG
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 200
+    headers: {}
+    keyword:
+      - /cgi-bin/webui?op=get_product_model

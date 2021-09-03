@@ -1,11 +1,11 @@
 name: jeecms
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - '"/cnf/r/cms/common.js"'
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - '"/cnf/r/cms/common.js"'

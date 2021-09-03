@@ -1,13 +1,13 @@
 name: 深信服行为感知系统
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers:
-    Etag: '*'
-  keyword:
-  - location.href = "./ui/";
-  - <title>Loading...</title>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      Etag: '*'
+    keyword:
+      - location.href = "./ui/";
+      - <title>Loading...</title>

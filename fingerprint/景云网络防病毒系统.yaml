@@ -1,13 +1,13 @@
 name: 景云网络防病毒系统
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - login_form
-  - styles/images/logo.png
-  - 防病毒
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - login_form
+      - styles/images/logo.png
+      - 防病毒

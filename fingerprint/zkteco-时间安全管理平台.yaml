@@ -1,11 +1,11 @@
 name: zkteco-时间安全管理平台
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - zkeco 时间&安全管理平台
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - zkeco 时间&安全管理平台

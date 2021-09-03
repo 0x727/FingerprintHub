@@ -1,12 +1,12 @@
 name: lime-survey
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - content="limesurvey
-  - href="http://www.limesurvey.org" target="_blank
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - content="limesurvey
+      - href="http://www.limesurvey.org" target="_blank

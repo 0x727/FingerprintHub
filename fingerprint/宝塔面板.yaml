@@ -1,29 +1,29 @@
 name: 宝塔面板
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 302
-  headers:
-    Set-Cookie: BT_PANEL_6
-  keyword: []
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - bt.cn
-  - 扫码登录
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 200
-  headers: {}
-  keyword:
-  - <title>入口校验失败</title>
-  - 宝塔
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 302
+    headers:
+      Set-Cookie: BT_PANEL_6
+    keyword: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - bt.cn
+      - 扫码登录
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 200
+    headers: {}
+    keyword:
+      - <title>入口校验失败</title>
+      - 宝塔

@@ -1,11 +1,11 @@
 name: bluepacific-share-content-management-system
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - /visadmin/viscms/index.do
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /visadmin/viscms/index.do

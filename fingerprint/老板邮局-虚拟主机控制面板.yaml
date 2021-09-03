@@ -1,11 +1,11 @@
 name: 老板邮局-虚拟主机控制面板
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - /public/js/util/xg_oyang.js
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /public/js/util/xg_oyang.js

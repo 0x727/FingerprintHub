@@ -1,11 +1,11 @@
 name: deshang-dsmall
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - /static/plugins/js/dialog/dialog.js" id="dialog_js"
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /static/plugins/js/dialog/dialog.js" id="dialog_js"

@@ -1,13 +1,13 @@
 name: swiki
 priority: 2
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - '<a href="http://minnow.cc.gatech.edu/swiki" title="comswiki: powered by squeak"><img
-    src="/defaultscheme/comswiki.gif" border=0 width=277 height=88 alt="comswiki:
-    powered by squeak"></a><br>'
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - '<a href="http://minnow.cc.gatech.edu/swiki" title="comswiki: powered by squeak"><img
+        src="/defaultscheme/comswiki.gif" border=0 width=277 height=88 alt="comswiki:
+        powered by squeak"></a><br>'

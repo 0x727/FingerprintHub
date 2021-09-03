@@ -1,12 +1,12 @@
 name: fortinet-防火墙
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - fortitoken
-  - str_table.mail_token_msg
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - fortitoken
+      - str_table.mail_token_msg

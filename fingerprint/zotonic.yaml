@@ -1,12 +1,12 @@
 name: zotonic
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - /lib/js/apps/zotonic-1.0
-  - 'powered by: zotonic'
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /lib/js/apps/zotonic-1.0
+      - 'powered by: zotonic'

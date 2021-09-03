@@ -1,12 +1,12 @@
 name: eyou-反垃圾邮件网关
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - content="亿邮大容量电子邮件系统反垃圾邮件网关
-  - 反垃圾邮件网关  - 亿邮通讯
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - content="亿邮大容量电子邮件系统反垃圾邮件网关
+      - 反垃圾邮件网关  - 亿邮通讯

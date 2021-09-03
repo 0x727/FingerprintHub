@@ -1,12 +1,12 @@
 name: ultrastats
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <img src="./images/main/ultrastatslogo.png" width="300" height="200" name="ultrastats_logo"
-    align="center">
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <img src="./images/main/ultrastatslogo.png" width="300" height="200" name="ultrastats_logo"
+        align="center">

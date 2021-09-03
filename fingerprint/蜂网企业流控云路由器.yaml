@@ -1,13 +1,13 @@
 name: 蜂网企业流控云路由器
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - ifw8
-  - login
-  - 企业级流控云路由器
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - ifw8
+      - login
+      - 企业级流控云路由器

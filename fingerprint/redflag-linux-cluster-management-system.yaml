@@ -1,11 +1,11 @@
 name: redflag-linux-cluster-management-system
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <b>登录到红旗集群管理系统</b></td>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <b>登录到红旗集群管理系统</b></td>

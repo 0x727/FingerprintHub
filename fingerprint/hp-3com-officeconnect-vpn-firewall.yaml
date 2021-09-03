@@ -1,11 +1,11 @@
 name: hp-3com-officeconnect-vpn-firewall
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - 3com - officeconnect vpn firewall
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - 3com - officeconnect vpn firewall

@@ -1,11 +1,11 @@
 name: vertx
 priority: 2
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers:
-    Set-Cookie: vertx-web.session
-  keyword: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      Set-Cookie: vertx-web.session
+    keyword: []

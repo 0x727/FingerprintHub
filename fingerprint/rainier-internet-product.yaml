@@ -1,11 +1,11 @@
 name: rainier-internet-product
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <a href="http://www.rainier.net.cn">北京润尼尔网络科技有限公司
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <a href="http://www.rainier.net.cn">北京润尼尔网络科技有限公司

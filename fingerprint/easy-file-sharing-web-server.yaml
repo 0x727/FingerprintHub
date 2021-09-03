@@ -1,11 +1,11 @@
 name: easy-file-sharing-web-server
 priority: 2
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers:
-    Server: easy file sharing web server
-  keyword: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      Server: easy file sharing web server
+    keyword: []

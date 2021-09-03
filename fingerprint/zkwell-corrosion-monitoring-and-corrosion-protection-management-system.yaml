@@ -1,11 +1,11 @@
 name: zkwell-corrosion-monitoring-and-corrosion-protection-management-system
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - background-image:url(images/devicebg.jpg)
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - background-image:url(images/devicebg.jpg)

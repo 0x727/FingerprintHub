@@ -1,11 +1,11 @@
 name: apache-solr
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 302
-  headers:
-    Location: /solr/
-  keyword: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 302
+    headers:
+      Location: /solr/
+    keyword: []

@@ -1,19 +1,19 @@
 name: clipshare
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <!--!!!!!!!!!!!!!!!!!!!!!!!!! processing script
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - powered by <a href="http://www.clip-share.com
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <!--!!!!!!!!!!!!!!!!!!!!!!!!! processing script
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - powered by <a href="http://www.clip-share.com

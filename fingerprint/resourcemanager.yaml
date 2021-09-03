@@ -1,11 +1,11 @@
 name: resourcemanager
 priority: 2
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - this is standby rm. redirecting to the current active rm
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - this is standby rm. redirecting to the current active rm

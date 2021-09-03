@@ -1,12 +1,13 @@
 name: smartertools-smartermail
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - login - smartermail
-  - <a href='http://www.smartertools.com/smartermail/mail-server-software.aspx' target='_blank'>smartermail
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - login - smartermail
+      - <a href='http://www.smartertools.com/smartermail/mail-server-software.aspx'
+        target='_blank'>smartermail

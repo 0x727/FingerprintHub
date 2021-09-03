@@ -1,11 +1,11 @@
 name: 齐治堡垒机
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 200
-  headers: {}
-  keyword:
-  - //xfpverifyExec.jsp;
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 200
+    headers: {}
+    keyword:
+      - //xfpverifyExec.jsp;

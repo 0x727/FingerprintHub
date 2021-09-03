@@ -1,12 +1,12 @@
 name: 信息安全管理系统
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - id="lblmsg_container"
-  - src="js/piwik.js"
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - id="lblmsg_container"
+      - src="js/piwik.js"

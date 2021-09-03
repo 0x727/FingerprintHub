@@ -1,11 +1,11 @@
 name: adt-iam
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - content="tpn,vpn,内网安全,内网控制,主机防护"
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - content="tpn,vpn,内网安全,内网控制,主机防护"

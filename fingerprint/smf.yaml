@@ -1,28 +1,28 @@
 name: smf
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <a href="http://www.simplemachines.org/about/copyright.php" title="free forum
-    software" target="_blank
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <img class="floatright" id="smflogo" src=
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - 'document.getelementbyid("upshrink").src = smf_images_url + '
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <a href="http://www.simplemachines.org/about/copyright.php" title="free forum
+        software" target="_blank
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <img class="floatright" id="smflogo" src=
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - 'document.getelementbyid("upshrink").src = smf_images_url + '

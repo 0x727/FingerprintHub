@@ -1,12 +1,12 @@
 name: filevista
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <a href="http://www.gleamtech.com/products/filevista/web-file-manager
-  - welcome to filevista
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <a href="http://www.gleamtech.com/products/filevista/web-file-manager
+      - welcome to filevista

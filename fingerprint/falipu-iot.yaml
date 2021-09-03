@@ -1,11 +1,11 @@
 name: falipu-iot
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - id="t1">安全、稳定、安全</div>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - id="t1">安全、稳定、安全</div>

@@ -1,20 +1,20 @@
 name: citrix-receiver
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - href="clients/html5client/src/receiverthirdpartynotices.html"
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - logonbelt-topshadow
-  - upgradeavailable-already-installed-separator bar-separator
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - href="clients/html5client/src/receiverthirdpartynotices.html"
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - logonbelt-topshadow
+      - upgradeavailable-already-installed-separator bar-separator

@@ -1,12 +1,12 @@
 name: mongodb
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - It looks like you are trying to access MongoDB over HTTP on the native driver
-    port.
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - It looks like you are trying to access MongoDB over HTTP on the native driver
+        port.

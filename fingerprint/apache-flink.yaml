@@ -1,19 +1,19 @@
 name: apache-flink
 priority: 2
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 200
-  headers: {}
-  keyword:
-  - <title>Apache Flink Web Dashboard</title>
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <img alt="apache flink dashboard" src="images/flink-logo.png
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 200
+    headers: {}
+    keyword:
+      - <title>Apache Flink Web Dashboard</title>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <img alt="apache flink dashboard" src="images/flink-logo.png

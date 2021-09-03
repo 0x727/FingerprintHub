@@ -1,12 +1,12 @@
 name: http基本认证
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 401
-  headers:
-    Www-Authenticate: Basic realm="default"
-  keyword:
-  - Unauthorized
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 401
+    headers:
+      Www-Authenticate: Basic realm="default"
+    keyword:
+      - Unauthorized

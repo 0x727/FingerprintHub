@@ -1,13 +1,13 @@
 name: 天迈科技网络视频监控系统
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - jsessionid
-  - 天迈科技
-  - 网络视频监控系统
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - jsessionid
+      - 天迈科技
+      - 网络视频监控系统

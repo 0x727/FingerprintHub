@@ -1,21 +1,21 @@
 name: ruijie-sslvpn
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - document.cookie = "rjsslvpn_encookie=yes;"
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - SSLVPN
-  - login
-  - rjsslvpn_encookie
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - document.cookie = "rjsslvpn_encookie=yes;"
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - SSLVPN
+      - login
+      - rjsslvpn_encookie

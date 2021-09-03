@@ -1,11 +1,11 @@
 name: sangfor-下一代防火墙数据中心
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - window.open("/loginout.php", "_top""
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - window.open("/loginout.php", "_top""

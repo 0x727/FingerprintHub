@@ -1,19 +1,19 @@
 name: hanwei-hazardous-chemicals-enterprise-early-warning-and-prevention-system
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - default value is bootstrapdialog.type_primary
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - var objheight = document.documentelement.clientheight
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - default value is bootstrapdialog.type_primary
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - var objheight = document.documentelement.clientheight

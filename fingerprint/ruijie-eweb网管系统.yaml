@@ -1,11 +1,11 @@
 name: ruijie-eweb网管系统
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <title>锐捷网络-EWEB网管系统</title>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <title>锐捷网络-EWEB网管系统</title>

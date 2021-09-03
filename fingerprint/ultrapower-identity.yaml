@@ -1,11 +1,11 @@
 name: ultrapower-identity
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <li><p>欢迎进入身份与安全管控系统</p></li>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <li><p>欢迎进入身份与安全管控系统</p></li>

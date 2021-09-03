@@ -1,11 +1,11 @@
 name: shunde-cms
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - for="ctl00_cph_l_login_username">crm帐号
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - for="ctl00_cph_l_login_username">crm帐号

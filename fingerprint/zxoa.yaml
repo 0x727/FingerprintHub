@@ -1,20 +1,20 @@
 name: zxoa
 priority: 2
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - obj.src = "createcheckcode.aspx?id"+strmath;
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - name="button1" value="" onclick="javascript:return checkfrom();" id="button1"
-    class="loginbtn" />
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - obj.src = "createcheckcode.aspx?id"+strmath;
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - name="button1" value="" onclick="javascript:return checkfrom();" id="button1"
+        class="loginbtn" />

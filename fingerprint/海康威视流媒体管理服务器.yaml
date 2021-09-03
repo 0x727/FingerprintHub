@@ -1,13 +1,13 @@
 name: 海康威视流媒体管理服务器
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - MSHTML
-  - login
-  - 流媒体管理服务器
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - MSHTML
+      - login
+      - 流媒体管理服务器

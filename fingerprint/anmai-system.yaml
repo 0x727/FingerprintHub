@@ -1,27 +1,27 @@
 name: anmai-system
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - ' id="lblname">版权所有：上海安脉计算机科技有限公司'
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - id="lblname1">版权所有：上海安脉计算机科技有限公司
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <font color="#000000">上海安脉计算机科技有限公司</font>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - ' id="lblname">版权所有：上海安脉计算机科技有限公司'
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - id="lblname1">版权所有：上海安脉计算机科技有限公司
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <font color="#000000">上海安脉计算机科技有限公司</font>

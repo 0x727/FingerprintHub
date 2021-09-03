@@ -24,6 +24,12 @@ def replace_name(name):
     return name.lower()
 
 
+class MyDumper(yaml.Dumper):
+
+    def increase_indent(self, flow=False, indentless=False):
+        return super(MyDumper, self).increase_indent(flow, False)
+
+
 def valid_fingerprint_v2(rule):
     sorted_list = {'path': 0, 'request_method': 1, 'request_headers': 2, 'request_data': 3, 'status_code': 4,
                    'headers': 5, 'keyword': 6, 'priority': 7}
@@ -79,7 +85,8 @@ def update_yaml(path):
                 y_dict['fingerprint'] = fingerprint_rules
                 y_dict['priority'] = max_priority
                 new_y_dict = dict(sorted(y_dict.items(), key=lambda t: sorted_list[t[0]]))
-                wfp_y = yaml.safe_dump(new_y_dict, sort_keys=False, allow_unicode=True, indent=2)
+                wfp_y = yaml.dump(new_y_dict, Dumper=MyDumper, sort_keys=False, allow_unicode=True,
+                                  default_flow_style=False, explicit_start=False, indent=2, width=2)
                 with open(abs_filename, "w") as y:
                     y.write(wfp_y)
 

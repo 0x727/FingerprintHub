@@ -1,11 +1,11 @@
 name: pcitc-file-management-system
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - js/scripts/common/easyui/jquery.easyui.min.js
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - js/scripts/common/easyui/jquery.easyui.min.js

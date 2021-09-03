@@ -1,11 +1,11 @@
 name: networkresourcesauxiliaryplatform
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <b>网络资源综合支撑辅助平台</b>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <b>网络资源综合支撑辅助平台</b>

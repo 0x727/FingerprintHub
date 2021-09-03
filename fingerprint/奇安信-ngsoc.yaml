@@ -1,12 +1,12 @@
 name: 奇安信-ngsoc
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - ngsoc日志采集探针
-  - ngsoc关联规则引擎
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - ngsoc日志采集探针
+      - ngsoc关联规则引擎

@@ -1,20 +1,20 @@
 name: h3c-hdm
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - /video_record.jnlp
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <iframe frameborder="0" class="framelayout" src="./page/blank.html" name="mainframe"
-    id="mainframe
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /video_record.jnlp
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <iframe frameborder="0" class="framelayout" src="./page/blank.html" name="mainframe"
+        id="mainframe

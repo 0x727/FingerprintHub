@@ -1,28 +1,28 @@
 name: ecology泛微e-office
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 302
-  headers: {}
-  keyword:
-  - dynamiCode
-  - iSignaturePortal
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - /general/login/view//images/updateload.gif
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - szfeatures
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 302
+    headers: {}
+    keyword:
+      - dynamiCode
+      - iSignaturePortal
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /general/login/view//images/updateload.gif
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - szfeatures

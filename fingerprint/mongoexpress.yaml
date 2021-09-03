@@ -1,12 +1,12 @@
 name: mongoexpress
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - Mongo Express
-  - mongo-express-logo.png
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - Mongo Express
+      - mongo-express-logo.png

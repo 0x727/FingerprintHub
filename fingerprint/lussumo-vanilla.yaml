@@ -1,11 +1,11 @@
 name: lussumo-vanilla
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers:
-    X-Powered-By: lussumo vanilla
-  keyword: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      X-Powered-By: lussumo vanilla
+    keyword: []

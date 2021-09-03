@@ -1,11 +1,11 @@
 name: acmailer-邮件系统
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <a href="http://www.acmailer.jp"><img src="img/logo.jpg
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <a href="http://www.acmailer.jp"><img src="img/logo.jpg

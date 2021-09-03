@@ -1,12 +1,12 @@
 name: acunetix-wvs
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 200
-  headers: {}
-  keyword:
-  - <acx-root>
-  - <title>Acunetix
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 200
+    headers: {}
+    keyword:
+      - <acx-root>
+      - <title>Acunetix

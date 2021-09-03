@@ -1,19 +1,20 @@
 name: ultimate-bulletin-board
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <meta name="generator" content="ubb.threads
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <a href="http://www.groupee.com/landing/goto.php?a=ubb.classic">powered by ubb.classic&trade
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <meta name="generator" content="ubb.threads
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <a href="http://www.groupee.com/landing/goto.php?a=ubb.classic">powered by
+        ubb.classic&trade

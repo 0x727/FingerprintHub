@@ -1,11 +1,11 @@
 name: daydao-system
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - $(document).attr("title","我被修改啦.哈哈"
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - $(document).attr("title","我被修改啦.哈哈"

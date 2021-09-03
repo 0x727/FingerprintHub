@@ -1,11 +1,11 @@
 name: xhlis-oa
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <title>杏和区域检验业务协同平台登录界面</title>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <title>杏和区域检验业务协同平台登录界面</title>

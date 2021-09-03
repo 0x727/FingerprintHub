@@ -1,20 +1,21 @@
 name: ruvar-oa
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <iframe id="ifrm" width="100%" height="100%" frameborder="0" scrolling="no" src="/include/login.aspx
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <frame
-  - '<iframe '
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <iframe id="ifrm" width="100%" height="100%" frameborder="0" scrolling="no"
+        src="/include/login.aspx
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <frame
+      - '<iframe '

@@ -1,12 +1,12 @@
 name: cetc-工业防火墙
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - /webgui/scripts/dd_belatedpng.js
-  - 工业防火墙
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /webgui/scripts/dd_belatedpng.js
+      - 工业防火墙

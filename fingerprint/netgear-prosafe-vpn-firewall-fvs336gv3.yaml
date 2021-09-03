@@ -1,11 +1,11 @@
 name: netgear-prosafe-vpn-firewall-fvs336gv3
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - gigabit dual wan ssl vpn firewall fvs336gv3</div>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - gigabit dual wan ssl vpn firewall fvs336gv3</div>

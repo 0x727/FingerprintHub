@@ -1,13 +1,13 @@
 name: 锐捷-rg-ew1200g
 priority: 1
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - /js/app
-  - /static/img/title.ico
-  - 锐捷
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /js/app
+      - /static/img/title.ico
+      - 锐捷

@@ -1,12 +1,12 @@
 name: 网御星云-ssl-vpn
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - /ssl/down/usbkey.exe
-  - 欢迎使用leadsec网御ssl vpn
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /ssl/down/usbkey.exe
+      - 欢迎使用leadsec网御ssl vpn

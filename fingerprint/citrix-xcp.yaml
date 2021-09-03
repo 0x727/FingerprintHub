@@ -1,11 +1,11 @@
 name: citrix-xcp
 priority: 2
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - <p/>citrix systems, inc. xcp 1.6.10
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <p/>citrix systems, inc. xcp 1.6.10

@@ -1,11 +1,11 @@
 name: xinnet-enterprise-mail
 priority: 3
 fingerprint:
-- path: /
-  request_method: get
-  request_headers: {}
-  request_data: ''
-  status_code: 0
-  headers: {}
-  keyword:
-  - 北京新网数码信息技术有限公司 版权所有</span>
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - 北京新网数码信息技术有限公司 版权所有</span>
