@@ -1,0 +1,11 @@
+name: wuliupingtai
+fingerprint:
+- path: /
+  status_code: 0
+  headers: {}
+  keyword:
+  - static/styles/frame/basic.css
+  priority: 1
+  request_method: get
+  request_data: ''
+  request_headers: {}
