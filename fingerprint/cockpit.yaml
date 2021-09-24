@@ -8,5 +8,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - cockpit.socket
-      - cockpit_po
+      - cockpit/static/login.js
+      - cockpit/static/login.css
