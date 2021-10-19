@@ -1,11 +1,12 @@
-name: ruijie-smart-web
+name: cockpit
 priority: 3
 fingerprint:
   - path: /
     request_method: get
     request_headers: {}
     request_data: ''
-    status_code: 200
+    status_code: 0
     headers: {}
     keyword:
-      - 锐捷交换机
+      - cockpit/static/login.js
+      - cockpit/static/login.css

@@ -1,4 +1,4 @@
-name: vmware-vcenter-converter
+name: phpwiki
 priority: 3
 fingerprint:
   - path: /
@@ -8,4 +8,4 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - content="VMware vCenter Converter Standalone"
+      - powered by phpwiki

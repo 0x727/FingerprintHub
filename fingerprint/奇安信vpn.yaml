@@ -1,11 +1,12 @@
-name: ruijie-smart-web
+name: 奇安信vpn
 priority: 3
 fingerprint:
   - path: /
     request_method: get
     request_headers: {}
     request_data: ''
-    status_code: 200
+    status_code: 0
     headers: {}
     keyword:
-      - 锐捷交换机
+      - QianxinVPN
+      - <title>奇安信VPN</title>

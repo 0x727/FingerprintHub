@@ -1,4 +1,4 @@
-name: opendaylight-product
+name: 资产灯塔系统
 priority: 3
 fingerprint:
   - path: /
@@ -8,4 +8,4 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - j_security_check
+      - <title>资产灯塔系统</title>
