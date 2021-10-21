@@ -4,7 +4,7 @@ fingerprint:
   - path: /
     request_method: post
     request_headers:
-      Cookie: rememberMe=admin
+      Cookie: rememberMe=admin;rememberMe-K=admin
     request_data: ''
     status_code: 0
     headers:
