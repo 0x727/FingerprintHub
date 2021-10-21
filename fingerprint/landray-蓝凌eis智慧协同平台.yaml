@@ -8,4 +8,4 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - '/scripts/jquery.landray.common.js'
+      - /scripts/jquery.landray.common.js
