@@ -1,10 +1,16 @@
+import codecs
 import json
 import re
 import string
+import subprocess
 from collections import OrderedDict
 from operator import itemgetter
+from pathlib import Path
+
 import yaml
 import os
+
+from git import Repo
 
 allow_string = string.digits + string.ascii_letters + '-_ '
 
@@ -69,27 +75,38 @@ def update_yaml(path):
     for site, site_list, file_list in os.walk(path):
         for file_name in file_list:
             abs_filename = os.path.abspath(os.path.join(site, file_name))
-            fingerprint_rules = []
-            with open(abs_filename) as y:
-                y_dict = yaml.safe_load(y)
-                fingerprint_rules_origin = y_dict.get('fingerprint', [])
-                max_priority = 0
-                sorted_list = {'name': 0, 'priority': 1, 'fingerprint': 2}
-                for fingerprint in fingerprint_rules_origin:
-                    fingerprint['priority'] = y_dict.get('priority')
-                    valid_rule = valid_fingerprint_v2(fingerprint)
-                    priority = valid_rule.pop('priority')
-                    if priority > max_priority:
-                        max_priority = priority
-                    fingerprint_rules.append(valid_rule)
-                y_dict['fingerprint'] = fingerprint_rules
-                y_dict['priority'] = max_priority
-                new_y_dict = dict(sorted(y_dict.items(), key=lambda t: sorted_list[t[0]]))
-                wfp_y = yaml.dump(new_y_dict, Dumper=MyDumper, sort_keys=False, allow_unicode=True,
-                                  default_flow_style=False, explicit_start=False, indent=2, width=2)
-                with open(abs_filename, "w") as y:
-                    y.write(wfp_y)
+            format_yaml(abs_filename)
 
 
-update_yaml("fingerprint")
+def format_yaml(path):
+    fingerprint_rules = []
+    with open(path) as y:
+        y_dict = yaml.safe_load(y)
+        fingerprint_rules_origin = y_dict.get('fingerprint', [])
+        max_priority = 0
+        sorted_list = {'name': 0, 'priority': 1, 'fingerprint': 2}
+        for fingerprint in fingerprint_rules_origin:
+            fingerprint['priority'] = y_dict.get('priority')
+            valid_rule = valid_fingerprint_v2(fingerprint)
+            priority = valid_rule.pop('priority')
+            if priority > max_priority:
+                max_priority = priority
+            fingerprint_rules.append(valid_rule)
+        y_dict['fingerprint'] = fingerprint_rules
+        y_dict['priority'] = max_priority
+        new_y_dict = dict(sorted(y_dict.items(), key=lambda t: sorted_list[t[0]]))
+        wfp_y = yaml.dump(new_y_dict, Dumper=MyDumper, sort_keys=False, allow_unicode=True,
+                          default_flow_style=False, explicit_start=False, indent=2, width=2)
+        with open(path, "w") as y:
+            y.write(wfp_y)
+
+
+# update_yaml("fingerprint")
+repo = Repo('./')
+current_sha = repo.head.object.hexsha
+poc_path_list = []
+for c in repo.commit('HEAD~').diff(current_sha):
+    if c.a_path.startswith('fingerprint/') and c.a_path.endswith('.yaml'):
+        if Path(c.a_path).exists():
+            format_yaml(c.a_path)
 fingerprint_json_generator_v2("fingerprint")
