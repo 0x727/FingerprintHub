@@ -78,9 +78,15 @@ def update_yaml(path):
             format_yaml(abs_filename)
 
 
-def format_yaml(path):
+def format_yaml(format_path):
+    suffix = Path(format_path).suffix
+    suffix_file_name = Path(format_path).name[0:-len(suffix)]
+    if suffix_file_name != replace_name(suffix_file_name):
+        suffix_file_name = replace_name(suffix_file_name)
+        new_path = Path(format_path).with_name(suffix_file_name).with_suffix(suffix)
+        Path(format_path).rename(new_path)
     fingerprint_rules = []
-    with open(path) as y:
+    with open(format_path) as y:
         y_dict = yaml.safe_load(y)
         fingerprint_rules_origin = y_dict.get('fingerprint', [])
         max_priority = 0
@@ -94,14 +100,14 @@ def format_yaml(path):
             fingerprint_rules.append(valid_rule)
         y_dict['fingerprint'] = fingerprint_rules
         y_dict['priority'] = max_priority
+        y_dict['name'] = suffix_file_name
         new_y_dict = dict(sorted(y_dict.items(), key=lambda t: sorted_list[t[0]]))
         wfp_y = yaml.dump(new_y_dict, Dumper=MyDumper, sort_keys=False, allow_unicode=True,
                           default_flow_style=False, explicit_start=False, indent=2, width=2)
-        with open(path, "w") as y:
+        with open(format_path, "w") as y:
             y.write(wfp_y)
 
 
-# update_yaml("fingerprint")
 repo = Repo('./')
 current_sha = repo.head.object.hexsha
 poc_path_list = []
