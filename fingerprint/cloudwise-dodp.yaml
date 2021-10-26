@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - /public/vendor/monaco/vs/loader.js
+    favicon_hash: []

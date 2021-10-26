@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="/images/hcm/copyright.gif"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="/images/hcm/themes/default/login/login_banner2.png?v=12334"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="/general/sys/hjaxmanage.js"
+    favicon_hash: []

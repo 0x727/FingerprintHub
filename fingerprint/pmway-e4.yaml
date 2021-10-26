@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - '风<span style="padding-left: 12px;"></span>格'
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - 热情似火</option>
+    favicon_hash: []

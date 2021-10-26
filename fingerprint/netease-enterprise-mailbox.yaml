@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - frmvalidator
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <span class="warn">请您从网易企业邮箱用户登录页登录</span>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,3 +28,4 @@ fingerprint:
     keyword:
       - content="网易企业邮箱
       - src="http://mimg.qiye.163.com/
+    favicon_hash: []

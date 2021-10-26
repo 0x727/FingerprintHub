@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - cockpit/static/login.js
       - cockpit/static/login.css
+    favicon_hash: []

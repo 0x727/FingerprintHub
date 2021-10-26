@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - apphub.server.registertohub(qrcodeid)
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - /app_themes/default/assets/css/style.min.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /scripts/boot.js
+    favicon_hash: []

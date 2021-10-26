@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - title="moodle" href="http://moodle.org/
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="moodle
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - 'm.str = {"moodle":'
+    favicon_hash: []

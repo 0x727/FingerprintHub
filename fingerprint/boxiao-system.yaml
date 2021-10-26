@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - var bxnstaticresroot='/bxn-static-resource/resources'
+    favicon_hash: []

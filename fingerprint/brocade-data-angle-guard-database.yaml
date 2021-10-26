@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.location.host + "/agweb"
+    favicon_hash: []

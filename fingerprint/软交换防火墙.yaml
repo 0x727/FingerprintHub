@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - name="secretkey" id="secretkey"
       - name="token_code"placeholder="令牌口令"
+    favicon_hash: []

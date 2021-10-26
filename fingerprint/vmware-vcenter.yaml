@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /converter/vmware-converter-client.exe
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="vmware vcenter
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /vmw_nsx_logo-black-triangle-500w.png
+    favicon_hash: []

@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.location.replace("/rss/")
+    favicon_hash: []

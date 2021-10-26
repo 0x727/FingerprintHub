@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - powered by <a href='http://www.wqcms.com
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - inc/wqcms.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - style/wangqi/style.css
+    favicon_hash: []

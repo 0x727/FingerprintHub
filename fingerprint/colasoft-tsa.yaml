@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - data-i18n="[html]username">#username&nbsp;&nbsp;</td>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - nfr="true"
+    favicon_hash: []

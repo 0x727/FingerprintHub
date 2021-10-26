@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="gogs
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - <a class="item" target="_blank" href="https://gogs.io/docs" rel="noreferrer">帮助</a>
+    favicon_hash: []

@@ -9,3 +9,4 @@ fingerprint:
     headers:
       Server: caddy
     keyword: []
+    favicon_hash: []

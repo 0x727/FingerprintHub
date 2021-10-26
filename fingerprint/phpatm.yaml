@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="viewer_bottom.php?file=
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - powered by phpatm
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - powered by php advanced transfer manager
+    favicon_hash: []

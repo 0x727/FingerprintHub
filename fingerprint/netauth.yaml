@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="image/loginauthorize.png"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - onmouseover="mm_swapimage('image1','','image/loginok_after.gif',1)"
+    favicon_hash: []

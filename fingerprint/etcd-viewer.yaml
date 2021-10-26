@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - <a class="navbar-brand" href="./home">etcd viewer</a>
+    favicon_hash: []

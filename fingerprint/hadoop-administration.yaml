@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /static/hadoop.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - class="navbar-brand">hadoop</div>
+    favicon_hash: []

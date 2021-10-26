@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - mailgard webmail
       - window.open('http://www.hechen.com')
+    favicon_hash: []

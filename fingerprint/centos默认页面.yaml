@@ -11,3 +11,4 @@ fingerprint:
       - <title>Welcome to CentOS</title>
       - centos.org
       - img/centos-logo.png
+    favicon_hash: []

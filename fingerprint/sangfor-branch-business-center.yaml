@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - location.href = '/bbc/index'
+    favicon_hash: []

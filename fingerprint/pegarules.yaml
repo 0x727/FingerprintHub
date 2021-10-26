@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - unable to logon to the pegarules system
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="images/pzpegaicon.ico
+    favicon_hash: []

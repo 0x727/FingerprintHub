@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 深圳市深海捷科技有限公司
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - /admin/modules/admin/statics/images/
+    favicon_hash: []

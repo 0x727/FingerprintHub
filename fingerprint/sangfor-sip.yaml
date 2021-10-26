@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - window.sessionstorage.removeitem('serialcheckobj')
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="/apps/secvisual/static/js/runtime.js?
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - 'url: ''../auth_manage/auth_manage/on_login'''
+    favicon_hash: []

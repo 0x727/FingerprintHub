@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.location.href = '/ui/html/login.html';
+    favicon_hash: []

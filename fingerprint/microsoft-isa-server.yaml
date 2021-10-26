@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - the isa server denied the specified uniform resource locator
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - the server denied the specified uniform resource locator (url). contact the
         server administrator
+    favicon_hash: []

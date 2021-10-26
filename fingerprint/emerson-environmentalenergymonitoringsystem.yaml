@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - alert("网络断连或者idu-s没有启动.
+    favicon_hash: []

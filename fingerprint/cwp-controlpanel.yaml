@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="/login/cwp_theme/original/img/ico/favicon.ico"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="/login/cwp_theme/original/img/new_logo_small.png"
+    favicon_hash: []

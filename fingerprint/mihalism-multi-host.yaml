@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - http://www.mihalism.com/product/mmh/">mihalism multi host
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - powered by mihalism multi host
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - content="mihalism multi host
+    favicon_hash: []

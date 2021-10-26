@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - background=zhongyou.jpg
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - 众友科技巡检管理软件
+    favicon_hash: []

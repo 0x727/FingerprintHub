@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - action='/mas_security_check'>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - if(!isnotnull(document.forms[0].filepath.value, "证书文件"))
+    favicon_hash: []

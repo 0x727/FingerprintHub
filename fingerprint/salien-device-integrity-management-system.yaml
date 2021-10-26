@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - rmsie = /(msie\s|trident.*rv:)([\w.]+)/
+    favicon_hash: []

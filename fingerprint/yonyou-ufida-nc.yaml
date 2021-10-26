@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - ufida_iufo_over.png
       - ufida_nc.png
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,6 +20,7 @@ fingerprint:
     keyword:
       - logo/images/
       - ufida
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -27,6 +29,7 @@ fingerprint:
     headers: {}
     keyword:
       - logo/images/ufida_nc.png
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -35,6 +38,7 @@ fingerprint:
     headers: {}
     keyword:
       - <div id="nc_text">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -43,3 +47,4 @@ fingerprint:
     headers: {}
     keyword:
       - <div id="nc_img" onmouseover="overimage('nc');
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="74cms.com"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="74cms.com
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="骑士cms
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,6 +36,7 @@ fingerprint:
     headers: {}
     keyword:
       - powered by <a href="http://www.74cms.com/"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -41,6 +45,7 @@ fingerprint:
     headers: {}
     keyword:
       - /templates/default/css/common.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -49,3 +54,4 @@ fingerprint:
     headers: {}
     keyword:
       - selectjobscategory
+    favicon_hash: []

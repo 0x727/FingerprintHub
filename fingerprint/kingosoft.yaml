@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - setkingoencypt.jsp
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,6 +19,7 @@ fingerprint:
     keyword:
       - /jkingo.js
       - kingosoft
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,3 +28,4 @@ fingerprint:
     headers: {}
     keyword:
       - 青果
+    favicon_hash: []

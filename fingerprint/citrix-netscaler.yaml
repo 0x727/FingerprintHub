@@ -9,6 +9,7 @@ fingerprint:
     headers:
       Set-Cookie: citrix_ns_id
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - netscape/firefox/opera
+    favicon_hash: []

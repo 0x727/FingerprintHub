@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - onclick="javascript:useaccountlogin();
       - 'c.alertmsg(''磁盘空间剩余: '' + space_available + '' m'',''alert_msg'');'
+    favicon_hash: []

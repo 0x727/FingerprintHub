@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="北京国信安邮科技有限公司
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - <span> 客服邮箱：support@suremail.cn</span>
+    favicon_hash: []

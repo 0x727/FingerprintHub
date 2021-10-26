@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <img src="images/zshlogo.jpg" />
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - 信任汉威的开发证书
+    favicon_hash: []

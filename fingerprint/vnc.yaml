@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - <applet code=vncviewer.class archive=vncviewer.jar
+    favicon_hash: []

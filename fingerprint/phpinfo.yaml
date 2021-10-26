@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - <title>phpinfo
       - Virtual Directory Support
+    favicon_hash: []

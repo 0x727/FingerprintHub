@@ -11,6 +11,7 @@ fingerprint:
       - '35'
       - images/mail/35pushmail.app.png
       - switchingserverpopup
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,3 +20,4 @@ fingerprint:
     headers: {}
     keyword:
       - class="user_define_img_btn6" href="http://help.mail.35.com/mailman/81.html
+    favicon_hash: []

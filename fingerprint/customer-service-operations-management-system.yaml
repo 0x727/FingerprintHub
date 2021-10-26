@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - <div class="count-down">页面在<em>5</em>秒后自动跳转至您有权限的页面</div>
+    favicon_hash: []

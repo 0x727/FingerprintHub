@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - 移动办公系统
       - window.location.href = '/ui/html/login.html';
+    favicon_hash: []

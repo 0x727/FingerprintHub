@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - onclick="loginsubmit()"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - 信呼开发团队
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - 技术支持：<a href="http://www.rockoa.com/"
+    favicon_hash: []

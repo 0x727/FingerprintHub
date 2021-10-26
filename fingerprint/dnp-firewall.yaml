@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - name="dnp_firewall_redirect
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <form name=dnp_firewall
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - dnp_firewall_redirect
+    favicon_hash: []

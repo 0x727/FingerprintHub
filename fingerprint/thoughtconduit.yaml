@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - <html><head><title>error</title></head><body>your request produced an error.</body></html>
+    favicon_hash: []

@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - action="/logincheck"
       - class="login-head clearfix"
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="http://www.uniformserver.com">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <meta name="description" content="the uniform server 8.1.0-coral." />
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,3 +28,4 @@ fingerprint:
     keyword:
       - <div id="divider">developed by <a href="http://www.uniformserver.com/">the
         uniform server development team</a></div>
+    favicon_hash: []

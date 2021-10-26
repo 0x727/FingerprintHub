@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /platform/framework/logout/logout.action
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - ssoclient_
+    favicon_hash: []

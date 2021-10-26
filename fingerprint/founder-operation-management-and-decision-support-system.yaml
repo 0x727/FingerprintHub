@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="/portal/img/logo.png"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="/desktop/ui/custom/getimage?img=iphoneview.png"
+    favicon_hash: []

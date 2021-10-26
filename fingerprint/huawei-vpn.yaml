@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - oncompleted(hresult,perrorobject, pasynccontext)
+    favicon_hash: []

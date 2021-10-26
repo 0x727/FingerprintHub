@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - 'content: "/lfsms/user/login2?go=" + go'
+    favicon_hash: []

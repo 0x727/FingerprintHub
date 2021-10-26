@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.location = "/swp/group/admin";
+    favicon_hash: []

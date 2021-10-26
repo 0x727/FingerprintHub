@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - oracle http server</font></font></b></h1>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - mod_ssl web site
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - oracle jsp documentation
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,3 +36,4 @@ fingerprint:
     headers: {}
     keyword:
       - mod_ose documentation
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="微平台投票系统
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - <a href="http://www.cdrbp.cn">微信数字投票
       - content="微平台投票管理系统
+    favicon_hash: []

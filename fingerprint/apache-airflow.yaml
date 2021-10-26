@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - Airflow
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="/static/pin_100.png"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - <span>airflow</span>
+    favicon_hash: []

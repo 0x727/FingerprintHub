@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 广州协商科技有限公司
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - /web/submitlogon2.do
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - css/hitalklogin.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,6 +36,7 @@ fingerprint:
     headers: {}
     keyword:
       - /activex/sinoccshell.cab
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -41,3 +45,4 @@ fingerprint:
     headers: {}
     keyword:
       - '/web/submitlogon2.do '
+    favicon_hash: []

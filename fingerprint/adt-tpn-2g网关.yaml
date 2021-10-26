@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - tpn-2g
       - src="./system/usbkey.js"
+    favicon_hash: []

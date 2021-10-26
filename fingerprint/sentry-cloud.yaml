@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - 'src: url(/static/fonts/lcdd.eot) format("truetype"), url(/static/fonts/lcdd.ttf)
         format("truetype");'
+    favicon_hash: []

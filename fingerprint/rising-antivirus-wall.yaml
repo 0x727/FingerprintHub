@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - action="/index.php" onsubmit="return checkfrm(this);
+    favicon_hash: []

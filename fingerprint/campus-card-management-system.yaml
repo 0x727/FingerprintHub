@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - harbin synjones electronic
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - document.formpostds.action="xxsearch.action
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /shouyeziti.css
+    favicon_hash: []

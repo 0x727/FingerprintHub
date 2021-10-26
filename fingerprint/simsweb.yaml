@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <form onsubmit="sendinfo(); return false;" name="logon
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="/simsweb/monitor.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - index.html"><font color="black" face="arial">loading simsweb, please wait.....</font></a></h2>
+    favicon_hash: []

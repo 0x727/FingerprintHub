@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="mysql.cgi?do=top_level_op
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - size="1">mysqlman
+    favicon_hash: []

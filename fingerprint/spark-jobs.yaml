@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="/jobs/job?id=
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - spark jobs
+    favicon_hash: []

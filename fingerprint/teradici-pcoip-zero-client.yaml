@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - pcoip&#174 zero client
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - password_value
+    favicon_hash: []

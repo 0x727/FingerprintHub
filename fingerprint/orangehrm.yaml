@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - welcome to the orangehrm ver
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - name="hdnusertimezoneoffset
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://www.orangehrm.com" target=
+    favicon_hash: []

@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - <meta http-equiv="refresh" content="0;url=/acsadmin" />
       - cisco
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="/acsadmin">launch acs
+    favicon_hash: []

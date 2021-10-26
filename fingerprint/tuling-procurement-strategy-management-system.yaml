@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 长沙图灵科技有限公司
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="/login/main_body_bg.jpg"
+    favicon_hash: []

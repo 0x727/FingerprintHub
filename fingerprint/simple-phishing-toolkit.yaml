@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <span id="spt"><a href="http://www.sptoolkit.com/download/" target="_blank">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - content="welcome to spt - simple phishing toolkit.  spt is a super simple
         but powerful phishing toolkit." />
+    favicon_hash: []

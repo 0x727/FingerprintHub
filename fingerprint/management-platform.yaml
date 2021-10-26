@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 北京天源迪科信息技术有限公司
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - casloginview
       - i-verfiy
+    favicon_hash: []

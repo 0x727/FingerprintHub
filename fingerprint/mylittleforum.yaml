@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - powered by my little forum
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - index.php?mode=js_defaults
+    favicon_hash: []

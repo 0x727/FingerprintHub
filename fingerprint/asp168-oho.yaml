@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - upload/moban/images/style.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - default.php?mod=article&do=detail&tid
+    favicon_hash: []

@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - Webmin
       - session_login
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     headers: {}
     keyword:
       - webmin server on
+    favicon_hash: []

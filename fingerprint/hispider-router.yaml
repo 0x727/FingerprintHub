@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - action="login.pl" method="post"  onsubmit="encryptpasswd()
+    favicon_hash: []

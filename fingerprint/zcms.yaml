@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - _ZCMS_ShowNewMessage
       - zcms_skin
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,6 +20,7 @@ fingerprint:
     keyword:
       - _zcms_shownewmessage
       - zcms_skin
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -27,3 +29,4 @@ fingerprint:
     headers: {}
     keyword:
       - app=zcms
+    favicon_hash: []

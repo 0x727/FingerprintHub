@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - Jhsoft.Web.login
       - PassWord.aspx
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,6 +19,7 @@ fingerprint:
     headers: {}
     keyword:
       - js/passwordcommon.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,6 +28,7 @@ fingerprint:
     headers: {}
     keyword:
       - js/passwordnew.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -34,6 +37,7 @@ fingerprint:
     headers: {}
     keyword:
       - jinher network
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -43,3 +47,4 @@ fingerprint:
     keyword:
       - c6/jhsoft.web.login
       - closewindownoask
+    favicon_hash: []

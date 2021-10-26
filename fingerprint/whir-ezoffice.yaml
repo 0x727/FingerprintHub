@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - ezofficeusername
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - whirrootpath
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /defaultroot/js/cookie.js
+    favicon_hash: []

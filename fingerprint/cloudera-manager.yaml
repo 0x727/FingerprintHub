@@ -9,6 +9,7 @@ fingerprint:
     headers:
       Set-Cookie: cloudera_manager_sessionid=
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - var loginpageurl = "/cmf/login";
+    favicon_hash: []

@@ -10,6 +10,7 @@ fingerprint:
     headers:
       Set-Cookie: rememberMe=deleteMe
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     headers: {}
     keyword:
       - </i> shiro</li>
+    favicon_hash: []

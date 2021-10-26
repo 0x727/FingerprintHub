@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - '@click.prevent="login" :loading="loginpending"'
+    favicon_hash: []

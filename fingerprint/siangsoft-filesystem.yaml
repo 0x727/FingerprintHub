@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - $.cookie('sianglng' , null)
+    favicon_hash: []

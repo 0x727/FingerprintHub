@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.location.replace('/bin/hdnet.dll/login')
+    favicon_hash: []

@@ -10,6 +10,7 @@ fingerprint:
       Citrix-TransactionId: '*'
       Set-Cookie: xmscookie
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,3 +20,4 @@ fingerprint:
     keyword:
       - <title>XenMobile
       - citrix_logo
+    favicon_hash: []

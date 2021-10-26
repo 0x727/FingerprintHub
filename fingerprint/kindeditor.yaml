@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - kindeditor.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - kindeditor.ready
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,3 +28,4 @@ fingerprint:
     keyword:
       - k.create
       - kindeditor-min.js
+    favicon_hash: []

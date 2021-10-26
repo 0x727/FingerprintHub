@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <font>兰眼下一代威胁感知系统</font>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - /skin/admin/img/login/laneye.png
+    favicon_hash: []

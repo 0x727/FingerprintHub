@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - client/android/bin/lenovobox.apk
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - alt="联想企业网盘android客户端下载"
+    favicon_hash: []

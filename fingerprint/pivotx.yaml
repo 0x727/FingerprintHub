@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="includes/js/pivotx.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - templates_internal/assets/pivotx.png" alt="pivotx
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - content="pivotx
+    favicon_hash: []

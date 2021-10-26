@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.location.href="https://"+window.location.host+"/fort/login
+    favicon_hash: []

@@ -11,6 +11,7 @@ fingerprint:
       Set-Cookie: splunkweb_uid
     keyword:
       - content="Splunk Inc."
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -21,3 +22,4 @@ fingerprint:
       Set-Cookie: ROUTEID
     keyword:
       - <title>303 See Other</title>
+    favicon_hash: []

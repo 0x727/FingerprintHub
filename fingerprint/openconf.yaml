@@ -9,6 +9,7 @@ fingerprint:
     headers:
       Set-Cookie: openconf=
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - powered by <a href="http://www.openconf.org
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="openconf.js?
+    favicon_hash: []

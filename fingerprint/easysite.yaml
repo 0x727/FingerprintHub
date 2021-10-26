@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - generator" content="easysite
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - copyright 2009 by huilan
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - _desktopmodules_picturenews
+    favicon_hash: []

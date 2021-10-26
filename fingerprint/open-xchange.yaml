@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - you need to enable javascript to access the open-xchange server
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - id="browserchecktext_id
+    favicon_hash: []

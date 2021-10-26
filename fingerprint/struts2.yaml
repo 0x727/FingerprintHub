@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - struts problem report
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - there is no action mapped for namespace
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - no result defined for action and result input
+    favicon_hash: []

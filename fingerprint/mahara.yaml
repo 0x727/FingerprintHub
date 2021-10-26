@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - this site is powered by mahara
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - id="powered-by"><a href="http://mahara.org/
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - '{"namedfieldempty":'
+    favicon_hash: []

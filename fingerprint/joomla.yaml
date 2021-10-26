@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <meta name="keywords" content="joomla, Joomla" />
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="joomla
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - /media/system/js/core.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,3 +36,4 @@ fingerprint:
     headers: {}
     keyword:
       - /media/system/js/mootools-core.js
+    favicon_hash: []

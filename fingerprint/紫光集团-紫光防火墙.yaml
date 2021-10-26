@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - 紫光防火墙
       - name="adminlogin" action="/cgi-bin/manageaccount">
+    favicon_hash: []

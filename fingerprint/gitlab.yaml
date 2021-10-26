@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - gon.default_issues_tracker
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="gitlab community edition"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - 'content="gitlab '
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,6 +36,7 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="https://about.gitlab.com/">about gitlab
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -41,3 +45,4 @@ fingerprint:
     headers: {}
     keyword:
       - class="col-sm-7 brand-holder pull-left"
+    favicon_hash: []

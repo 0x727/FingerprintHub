@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - <form id="system-form-registration" enctype="application/x-www-form-urlencoded"
         class="system-form-registration" accept-charset="utf-8
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,3 +20,4 @@ fingerprint:
     keyword:
       - title="customer feedback software, community support system" target="_blank"
         href="http://www.useresponse.com" class="popup-logo">
+    favicon_hash: []

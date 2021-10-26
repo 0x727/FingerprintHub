@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - the wasion software foundation
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - alt="接口应用管理工具"
+    favicon_hash: []

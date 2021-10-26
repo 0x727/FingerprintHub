@@ -11,6 +11,7 @@ fingerprint:
       - cicro
       - content="cicro
       - cws
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,3 +20,4 @@ fingerprint:
     headers: {}
     keyword:
       - index.files/cicro_userdefine.css
+    favicon_hash: []

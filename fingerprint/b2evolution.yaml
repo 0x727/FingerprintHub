@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /powered-by-b2evolution-150t.gif
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - powered by b2evolution
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - content="b2evolution
+    favicon_hash: []

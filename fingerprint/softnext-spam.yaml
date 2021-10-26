@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - snspam/spam_request/
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - snspam/start_page.asp
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - spam_request/spam_requestact.asp
+    favicon_hash: []

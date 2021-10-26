@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - var apppath = "/app/hw/"
       - href="./logo/&logo&.ico"
+    favicon_hash: []

@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - fortitoken
       - str_table.mail_token_msg
+    favicon_hash: []

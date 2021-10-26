@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 'content="dpfax - minifaxserver '
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - <img src="images/dpfax-big.png" border="0" alt="dpfax
+    favicon_hash: []

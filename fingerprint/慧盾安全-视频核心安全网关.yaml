@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - title').text('视频会议安全系统
       - id="view-login"
+    favicon_hash: []

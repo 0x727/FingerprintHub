@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <body onload="forward_to_logon()">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - window.location='login.action';
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - 欢迎登录违规外联平台
+    favicon_hash: []

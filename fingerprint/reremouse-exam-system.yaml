@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 蝙蝠在线考试系统
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - 博库医学在线考试系统，技术支持：杭州博库科技有限公司
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="/resources/js/upscroll.js"
+    favicon_hash: []

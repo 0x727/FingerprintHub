@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="n点虚拟主机管理系统
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - js/ajax_x.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /inc/usercode.asp?npoint=
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - images/common/logina_1.gif
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="fsmeeting
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - type="hidden" id="app.index.configsuclogin
+    favicon_hash: []

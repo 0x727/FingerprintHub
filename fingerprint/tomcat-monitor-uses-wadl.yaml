@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - tomcat monitor uses wadl to describe services it can offer
+    favicon_hash: []

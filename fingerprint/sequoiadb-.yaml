@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - class="btn btn-default" onclick="updateconnect();">
+    favicon_hash: []

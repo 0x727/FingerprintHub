@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <meta name="colasoft"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - 科来网络信息综合检测处理平台
+    favicon_hash: []

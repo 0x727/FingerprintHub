@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="oracle adf
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <!-- created by oracle adf faces
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - var _adfwindowopenerror
+    favicon_hash: []

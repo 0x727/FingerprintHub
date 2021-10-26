@@ -9,6 +9,7 @@ fingerprint:
     headers:
       Set-Cookie: phpbb3_
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - http://www.longluntan.com/zh/phpbb/
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,6 +28,7 @@ fingerprint:
     keyword:
       - phpbb
       - phpbb group" />
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -34,3 +37,4 @@ fingerprint:
     headers: {}
     keyword:
       - start quick hack - phpbb statistics mod
+    favicon_hash: []

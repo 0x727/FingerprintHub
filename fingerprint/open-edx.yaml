@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - id="footer-openedx
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - class="footer-about-openedx
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - alt="powered by open edx
+    favicon_hash: []

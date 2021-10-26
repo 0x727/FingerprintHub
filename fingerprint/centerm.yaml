@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - new ct.extapp.aboutsystemwindow()
+    favicon_hash: []

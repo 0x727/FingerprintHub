@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="php code snippet
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - title="php-csl">php-csl
+    favicon_hash: []

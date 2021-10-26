@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - welcome to nginx on ubuntu!
+    favicon_hash: []

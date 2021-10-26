@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="/corrosion/charts/water-pid.jsp
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="/corrosion/charts/ph.jsp"
+    favicon_hash: []

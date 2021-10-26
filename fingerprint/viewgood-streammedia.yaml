@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - fgetquery
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - viewgood
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,6 +28,7 @@ fingerprint:
     keyword:
       - location.href
       - var webvirtualdiretory = 'viewgood';
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -34,3 +37,4 @@ fingerprint:
     headers: {}
     keyword:
       - src='/viewgood/pc/
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - citrix systems, inc. xenserver
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="xencentersetup.exe">xencenter installer</a>
+    favicon_hash: []

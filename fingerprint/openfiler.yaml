@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://www.openfiler.com/">openfiler
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - </strong>openfiler nas/san appliance
+    favicon_hash: []

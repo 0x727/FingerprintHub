@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /app_qjuserinfo/qjuserinfoadd.jsp
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - /images/default/first/xtoa_logo.png
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="systemfiles/js/iawebclientactivexcheck.js"
+    favicon_hash: []

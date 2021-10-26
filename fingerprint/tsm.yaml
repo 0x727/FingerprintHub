@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - var url = getcontextname() + "?service=ajaxdirect/1/
+    favicon_hash: []

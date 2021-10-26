@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - http-equiv="refresh" content="0; url=/main_login.htm"
+    favicon_hash: []

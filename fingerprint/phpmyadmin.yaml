@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="phpmyadmin.css.php
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers:
       Set-Cookie: phpmyadmin=
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - pma_password
+    favicon_hash: []

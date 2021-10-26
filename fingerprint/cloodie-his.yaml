@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="/design/common/his.logo.white.svg" alt="his logo
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="/design/design/cloodie.css
+    favicon_hash: []

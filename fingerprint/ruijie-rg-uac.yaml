@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - bbs.ruijie.com.cn
       - 锐捷统一上网行为管理与审计系统
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     headers: {}
     keyword:
       - src='images/free_login.png'
+    favicon_hash: []

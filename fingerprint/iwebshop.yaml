@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - _skinpath
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - _themepath
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,3 +28,4 @@ fingerprint:
     keyword:
       - _weburl
       - class="pro_title">iwebshop支付测试
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <!-- this is all just a super-duper redirect to the welcome page
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://www.novell.com/products/openenterpriseserver
+    favicon_hash: []

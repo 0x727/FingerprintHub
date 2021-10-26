@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="simbix framework v
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - logo-lpage-owner.png
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,3 +28,4 @@ fingerprint:
     keyword:
       - <div class="image"><img src="/logo-lpage.png" width="40" height="40" alt="simbix
         framework" /></div>
+    favicon_hash: []

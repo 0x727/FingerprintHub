@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - h-ui.js
       - h-ui.min.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,6 +20,7 @@ fingerprint:
     keyword:
       - /css/h-ui.min.css
       - html5shi.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -28,3 +30,4 @@ fingerprint:
     keyword:
       - /css/h-ui.login.css
       - /h-ui.admin/
+    favicon_hash: []

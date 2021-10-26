@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - url:"/shophome/ajaxgetcompetemessagelist.action",
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - $.post("/shopfront/shoppingcar/gotoshoppingcartajax.action",function(data){
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - 北京用友政务软件股份有限公司
+    favicon_hash: []

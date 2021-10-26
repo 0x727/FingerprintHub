@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - websphere
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - com.ibm.websphere.ihs.doc
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - content="websphere application server
+    favicon_hash: []

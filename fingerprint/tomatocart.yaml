@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="tomatocart open source shopping cart solutions" />
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - powered by <a href="http://www.tomatocart.com" target="_blank">tomatocart</a>
+    favicon_hash: []

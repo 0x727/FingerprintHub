@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - bitrix_sm_time_zone
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - bx.setcsslist
+    favicon_hash: []

@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - input name="s1" type=image
+    favicon_hash: []

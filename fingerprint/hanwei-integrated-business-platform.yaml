@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 系统需要.net框架2.0，请点击安装!
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - onclick="window.navigate(this.fname);enablesetup();"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - 东营汉威石油技术开发有限公司
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,6 +36,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="microsoft visual studio .net 7.1"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -42,6 +46,7 @@ fingerprint:
     keyword:
       - id="loginpwdcontiner"
       - window.location.href="/源头数据资源管理/default/default.aspx"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -50,3 +55,4 @@ fingerprint:
     headers: {}
     keyword:
       - directlink = "programstartup.application"
+    favicon_hash: []

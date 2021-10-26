@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <h1>欢迎使用360书生云盘！</h1>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - <p>copyright@2016 pan.surdoc.net all rights</p>
+    favicon_hash: []

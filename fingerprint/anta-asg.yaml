@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - setcookie("asglanguage",document.form1.planguage.value)
+    favicon_hash: []

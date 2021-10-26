@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <div class='windowtitle'>sit! - login</div>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - content="sit! support incident tracker
+    favicon_hash: []

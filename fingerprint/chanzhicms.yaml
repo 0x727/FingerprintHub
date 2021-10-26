@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - title='cms系统，首选蝉知cms
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - chanzhi.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - poweredby'><a href='http://www.chanzhi.org
+    favicon_hash: []

@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - <!-- if you have your own stylesheet for html elements, you can remove the
         cerberus-html.css link
+    favicon_hash: []

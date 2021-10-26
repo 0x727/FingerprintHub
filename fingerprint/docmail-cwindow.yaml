@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://www.docmail.cn/android/app/docmail.apk
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="北京国信冠群技术有限公司,国信冠群,邮件
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="http://www.docmail.cn" target="_blank">
+    favicon_hash: []

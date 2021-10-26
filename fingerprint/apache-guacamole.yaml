@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - images/guacamole-logo
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - guacamole - clientless remote desktop
       - scripts/guac-ui.js
+    favicon_hash: []

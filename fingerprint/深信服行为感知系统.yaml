@@ -11,3 +11,4 @@ fingerprint:
     keyword:
       - location.href = "./ui/";
       - <title>Loading...</title>
+    favicon_hash: []

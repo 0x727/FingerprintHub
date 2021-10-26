@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - id="modal_delay"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - localstorage.setitem('doctitle','北信源网络接入控制系统')
       - 欢迎登录北信源网络接入控制系统
+    favicon_hash: []

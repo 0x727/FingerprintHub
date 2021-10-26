@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - location.replace('login.action?_='+ new date().gettime());
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <body onload="gotologin()">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - esight_login_copy_right_font
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - obj.src = "createcheckcode.aspx?id"+strmath;
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - name="button1" value="" onclick="javascript:return checkfrom();" id="button1"
         class="loginbtn" />
+    favicon_hash: []

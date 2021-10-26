@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - '<div style=''display: none;'' id="setstatusiconstatediv"></div>'
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - /mlx-default.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - '''/admin/launch?script='
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,3 +36,4 @@ fingerprint:
     headers: {}
     keyword:
       - url=/admin/launch?script=
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /video_record.jnlp
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - <iframe frameborder="0" class="framelayout" src="./page/blank.html" name="mainframe"
         id="mainframe
+    favicon_hash: []

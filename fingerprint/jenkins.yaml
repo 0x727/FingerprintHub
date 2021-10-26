@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - hudson.model.Hudson.Administer
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - jenkins-agent-protocols
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - '[Jenkins]'
+    favicon_hash: []

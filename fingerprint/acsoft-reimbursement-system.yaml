@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - <div id="dsitetitle"
       - by:lin.zhibin
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.external.addfavorite(location.href,document.title);
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <img src="/img/logo.png" alt="adimoney"/>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - 'content="adimoney.com mobile advertisement network. '
+    favicon_hash: []

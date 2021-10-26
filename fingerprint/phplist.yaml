@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="michiel dethmers - http://www.phplist.com
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="phplist version
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - '&copy; <a href="http://phplist.com" target'
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <img id="createcheckcode" src="login/picturecheckcode" name="check_code" ng-click="reloadcheckcode()
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - ng-disabled="!loginform.$valid"
+    favicon_hash: []

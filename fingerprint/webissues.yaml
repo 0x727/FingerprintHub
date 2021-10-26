@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <div id="header-right">webissues
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - <div><input type="hidden" name="__formid" id="field-login-__formid" value="login"
         />
+    favicon_hash: []

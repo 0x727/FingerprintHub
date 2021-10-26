@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.location.replace("login.jsp?up=1")
+    favicon_hash: []

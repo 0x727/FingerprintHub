@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - tpn-2g网关控制台管理员登录
       - $('#submitid').bind('click',checksubmitfn);"
+    favicon_hash: []

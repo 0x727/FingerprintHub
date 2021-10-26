@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - parent.main.location = urlnonst + "?nst=" + top.menu.securitytoken
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <!--- do not translate or modify any part of the hidden parameter(s) --->
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - var warningstring = "<b>warning:</b> to maintain your login session, make
         sure that your browser is configured to accept cookies.";
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="vbulletin
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - powered by vbulletin&trade;
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,3 +28,4 @@ fingerprint:
     keyword:
       - <!-- do not remove this copyright notice -->powered by < a href="https://www.vbulletin.com"
         id="vbulletinlink">
+    favicon_hash: []

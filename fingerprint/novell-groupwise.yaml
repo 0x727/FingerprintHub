@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <!-- start novell services
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers:
       Set-Cookie: njscn=
     keyword: []
+    favicon_hash: []

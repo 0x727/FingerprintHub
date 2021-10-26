@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.open("/loginout.php", "_top""
+    favicon_hash: []

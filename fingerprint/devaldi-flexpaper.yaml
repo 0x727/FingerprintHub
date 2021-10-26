@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - login to the flexpaper console
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://flexpaper.devaldi.com/plugins.htm"
+    favicon_hash: []

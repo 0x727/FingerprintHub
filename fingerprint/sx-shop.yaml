@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - alert("ihr suchbegriff muss mind. aus 3 zeichen bestehen.");
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - content="source worx - software development">
+    favicon_hash: []

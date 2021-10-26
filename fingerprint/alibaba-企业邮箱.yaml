@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - content="阿里企业邮箱
       - action="/alimail/error/browserlog
+    favicon_hash: []

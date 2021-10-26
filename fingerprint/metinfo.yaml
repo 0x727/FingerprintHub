@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="metinfo
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - powered_by_metinfo
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /images/css/metinfo.css
+    favicon_hash: []

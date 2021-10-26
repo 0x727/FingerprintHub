@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - admin@cnoa.cn
       - powered by 协众oa
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     headers: {}
     keyword:
       - powered by cnoa.cn
+    favicon_hash: []

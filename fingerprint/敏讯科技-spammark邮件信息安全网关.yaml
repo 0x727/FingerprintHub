@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - /cgi-bin/spammark?empty=1
       - spammark邮件信息安全网关
+    favicon_hash: []

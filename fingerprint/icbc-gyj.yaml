@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - var s3_app_address="https://gyj.icbc.com.cn"
+    favicon_hash: []

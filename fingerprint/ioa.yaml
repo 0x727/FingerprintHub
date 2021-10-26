@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="https://www.ioa.cn/official/download.html" target="_blank">爱办公app</a>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - id="foot_version">厦门容能科技有限公司
+    favicon_hash: []

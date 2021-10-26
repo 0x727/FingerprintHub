@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - '<div style="font-family: tahoma, verdana, arial, helvetica, sans-serif; font-size:11px;">version'
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,6 +20,7 @@ fingerprint:
       - /portal/about.jsp
       - <!-- now, if it is ie on windows platform, we check to see which version of
         jws is installed -->
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -28,3 +30,4 @@ fingerprint:
     keyword:
       - <tr><td align="left" style="font-family:arial; font-size:18pt"><b>symantec
         endpoint protection manager<br>web access</b></td></tr>
+    favicon_hash: []

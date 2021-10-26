@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - action="/manager/logincontroller.htm?act=login
       - 联软it安全运维管理系统
+    favicon_hash: []

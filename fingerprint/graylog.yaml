@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - org.graylog.plugins.pipelineprocessor.processorplugin
+    favicon_hash: []

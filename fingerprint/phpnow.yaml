@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://phpnow.org/go.php?id=1005">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="yinzcn@gmail.com
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - by <a href="http://phpnow.org">phpnow.org
+    favicon_hash: []

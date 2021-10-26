@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="wrzcnet.ico
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="mailto:webmaster@wrzc.net
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - url = 'wrzcnet_vote.asp?stype=view';
+    favicon_hash: []

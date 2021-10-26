@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="luxcal
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - class='footlb'>lux
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - content="roel buining
+    favicon_hash: []

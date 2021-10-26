@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - 3600防火墙
       - 网神SecGate
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,3 +20,4 @@ fingerprint:
     keyword:
       - resources/image/logo_header.png
       - 网神防火墙系统
+    favicon_hash: []

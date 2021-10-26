@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - id="lblmsg_container"
       - src="js/piwik.js"
+    favicon_hash: []

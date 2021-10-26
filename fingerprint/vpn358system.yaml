@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - class="form-actions j_add_ip_actions"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="/lib/bootstrap/ico/favicon.ico"
+    favicon_hash: []

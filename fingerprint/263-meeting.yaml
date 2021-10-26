@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - <frame src="/jsp/conference/meetinglist.jsp" name="mainframe"/>
+    favicon_hash: []

@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - var newlocation = "https://" + target + "/cgi-bin/common/issue";
+    favicon_hash: []

@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - welcome.cgi?p=logo&signinid=url_default
+    favicon_hash: []

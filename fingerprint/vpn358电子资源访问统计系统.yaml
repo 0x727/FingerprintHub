@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - href="/lib/bootstrap/ico/favicon.ico"
       - class="form-actions j_add_ip_actions"
+    favicon_hash: []

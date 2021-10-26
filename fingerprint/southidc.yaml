@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /southidckefu.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="copyright 2003-2015 - southidc.net
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /southidcj2f.js
+    favicon_hash: []

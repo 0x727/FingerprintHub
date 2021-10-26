@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /cgi-bin/login.cgi?requestname=
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - var msg = '对不起，集中管理平台暂不支持您当前使用的浏览器
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - var msg = '对不起, '+str+'暂不支持您当前使用的浏览器
+    favicon_hash: []

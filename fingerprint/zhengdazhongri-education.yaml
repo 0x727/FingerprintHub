@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - images/lgline.gif
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - lb_hint
       - onclick="safecodeclick" src="safecode.aspx
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="http://www.shop-script.com
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - 'powered by webasyst shop-script <a href="http://www.shop-script.com/" style="font-weight:
         normal">shopping cart software</a>'
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /worldclient.dll?view=main
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - 'mdaemon '
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - <strong>mdaemon/worldclient
+    favicon_hash: []

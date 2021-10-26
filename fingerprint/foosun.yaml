@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - created by dotnetcms
       - for foosun
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     headers: {}
     keyword:
       - powered by www.foosun.net,products:foosun content manage system
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - processmaker ver
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://www.processmaker.com" alt="processmaker
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - alt="powered by processmaker
+    favicon_hash: []

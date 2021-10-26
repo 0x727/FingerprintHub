@@ -10,6 +10,7 @@ fingerprint:
       Location: /owa/
       Server: Microsoft
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,6 +19,7 @@ fingerprint:
     headers: {}
     keyword:
       - <!-- owapage = asp.auth_logon_aspx
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,6 +28,7 @@ fingerprint:
     headers: {}
     keyword:
       - /exchweb/bin/auth/owalogon.asp
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -34,6 +37,7 @@ fingerprint:
     headers: {}
     keyword:
       - /exchweb/bin/auth/owalogon.asp?url=
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -42,6 +46,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="/owa/auth/
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -50,6 +55,7 @@ fingerprint:
     headers: {}
     keyword:
       - window.location.replace("/owa/" + window.location.hash);</script></head><body></body>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -58,6 +64,7 @@ fingerprint:
     headers: {}
     keyword:
       - <meta http-equiv="refresh" contect="0;url=/owa">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -66,6 +73,7 @@ fingerprint:
     headers: {}
     keyword:
       - themes/resources/segoeui-semibold.ttf
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -75,6 +83,7 @@ fingerprint:
     keyword:
       - <div class="signinheader">outlook</div>
       - owalogocontainer
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -84,6 +93,7 @@ fingerprint:
     keyword:
       - /owa/
       - owapage = asp.auth_logon_aspx
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -93,6 +103,7 @@ fingerprint:
     keyword:
       - /owa/
       - showpasswordcheck
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -101,3 +112,4 @@ fingerprint:
     headers: {}
     keyword:
       - outlook
+    favicon_hash: []

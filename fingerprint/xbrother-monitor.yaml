@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - if (!getcookie("x_gu_sid"
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <img id="erp" src="/_imgs/login/zs_erp.png
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - value="明源售楼管理系统v5.0"
+    favicon_hash: []

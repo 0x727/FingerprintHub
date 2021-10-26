@@ -11,3 +11,4 @@ fingerprint:
       - <input type="password" class="form-control" name="password" placeholder="密码"
         required="">
       - csrfmiddlewaretoken
+    favicon_hash: []

@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - onmouseout="this.classname='btn btnoff'"
+    favicon_hash: []

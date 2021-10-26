@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - action="/datacenter/authentication/login.do" method="post
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - location.href=contextpath+"/login/password/password.jsp
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,3 +28,4 @@ fingerprint:
     keyword:
       - /static/thirdparty/jquery/
       - var contextpath = "/datacenter
+    favicon_hash: []

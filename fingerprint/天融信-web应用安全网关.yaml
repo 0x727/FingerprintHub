@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - this.src='/style/images/rand.php?update=1'
       - 天融信web应用安全网关
+    favicon_hash: []

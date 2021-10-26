@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - action="/names.nsf?login" name="_dominoform
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - 软标科技
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,6 +28,7 @@ fingerprint:
     keyword:
       - domcfg.nsf
       - login.nsf
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -35,3 +38,4 @@ fingerprint:
     keyword:
       - esoaisapp/login.jsp
       - main.nsf
+    favicon_hash: []

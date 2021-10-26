@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <h2>modify this template to jump-start your asp.net mvc application.</h2>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - asp.net mvc application</p>
+    favicon_hash: []

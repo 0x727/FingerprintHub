@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <a name="topofdoc" id="topofdoc"></a>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - content="nicola asuni - tecnick.com s.r.l." />
+    favicon_hash: []

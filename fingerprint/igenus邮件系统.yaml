@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - form.action = "login.php?Cmd=login";
       - iGENUS
+    favicon_hash: []

@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - Zabbix SIA
       - zabbix
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     headers: {}
     keyword:
       - images/general/zabbix.ico
+    favicon_hash: []

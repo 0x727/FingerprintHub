@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="vmware esxi
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - document.write("<title>" + id_eesx_welcome + "</title>");
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - <meta http-equiv="refresh" content="0;url='/ui'"/>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,6 +36,7 @@ fingerprint:
     headers: {}
     keyword:
       - 'content="vmware esx '
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -41,3 +45,4 @@ fingerprint:
     headers: {}
     keyword:
       - document.write(id_esx_viclientdesc);
+    favicon_hash: []

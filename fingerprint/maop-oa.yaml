@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - pwd yahei16
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - www.oooa.cn
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://www.oooa.cn">重庆猫扑网络科技有限公司</a>
+    favicon_hash: []

@@ -10,3 +10,4 @@ fingerprint:
       Www-Authenticate: Basic realm="default"
     keyword:
       - Unauthorized
+    favicon_hash: []

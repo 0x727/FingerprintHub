@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - res/libs/webuploader/webuploader.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="/res/libs/base64.min.js"
+    favicon_hash: []

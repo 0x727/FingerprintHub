@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="hiki
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - /hiki_base.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - by <a href="http://hikiwiki.org/
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="http://thehostingtool.com" target="_blank">thehostingtool</a>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <td width="20%"><strong>server os:</strong></td>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - page=status&sub=phpinfo">phpinfo</a>)</td>
+    favicon_hash: []

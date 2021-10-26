@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <p><a href="http://www.omeeting.com" target='_blank'>powered by
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="om视频会议
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - onclick="gotomeeting('/gotomeeting.php
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <input class="an1" name="btnrst" id="btnrst" type="reset" value=" " />
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - class="wrap login_wrap"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - url(images/yh.jpg)
+    favicon_hash: []

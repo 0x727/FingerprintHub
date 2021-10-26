@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - method="post" action="/eln3_asp/login.do
+    favicon_hash: []

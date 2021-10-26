@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - 'please login (use your mysql username and password): <a href="index.php?login=true'
+    favicon_hash: []

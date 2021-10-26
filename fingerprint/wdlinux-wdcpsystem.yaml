@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://www.wdlinux.cn/bbs/index.php
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - linux云主机
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers:
       Set-Cookie: wdcpsessionid
     keyword: []
+    favicon_hash: []

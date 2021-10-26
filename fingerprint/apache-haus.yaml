@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="/apachehaus.ico
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - copyright &copy; 2008-2017 <a href="http://www.apachehaus.com">the apache
         haus</a>
+    favicon_hash: []

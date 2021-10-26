@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - onsubmit="return sys_submit(this)
+    favicon_hash: []

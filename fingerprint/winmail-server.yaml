@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - amax information technologies inc.
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - 'pop3,smtp server: <font color=red>'
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="themes/default/images/mail_pic.jpg
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -34,6 +37,7 @@ fingerprint:
     keyword:
       - encryptpwd
       - sessid
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -43,6 +47,7 @@ fingerprint:
     keyword:
       - f_theme
       - pwdplaceholder
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -51,6 +56,7 @@ fingerprint:
     headers: {}
     keyword:
       - winmail mail server
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -60,6 +66,7 @@ fingerprint:
     keyword:
       - '(build '
       - background="customer/winmail_bg11.jpg
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -68,3 +75,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="customer/index_winmail_new.gif
+    favicon_hash: []

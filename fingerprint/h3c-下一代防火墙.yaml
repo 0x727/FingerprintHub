@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - /php/common/checknum_creat.php?module=config_authnum
       - class="dl_margin0" align="left">web网管用户登录</div>
+    favicon_hash: []

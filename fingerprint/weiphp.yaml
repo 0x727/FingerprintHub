@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 本系统由<a href="http://www.weiphp.cn" target="_blank">weiphp</a>强力驱动
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="weiphp
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /css/weiphp.css
+    favicon_hash: []

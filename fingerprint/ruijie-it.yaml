@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - var logincookiename = 'riil_id'
+    favicon_hash: []

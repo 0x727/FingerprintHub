@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://oss.oetiker.ch/mrtg/
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - /mrtg-l.png
       - command line is easier to read using "view page properties" of your browser
+    favicon_hash: []

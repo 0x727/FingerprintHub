@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - <form id="form1" name="form1" method="post" action="login_commit.php" class="mainbox">
       - document.getelementbyid("dkey_login").checked=false;
+    favicon_hash: []

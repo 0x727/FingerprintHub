@@ -11,3 +11,4 @@ fingerprint:
       - login/createQRCode.do
       - resources/commonImage/favicon.ico
       - 用户登录
+    favicon_hash: []

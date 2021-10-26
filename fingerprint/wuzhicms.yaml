@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <meta name="generator" content="wuzhicms
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - content="wuzhicms
       - powered by wuzhicms
+    favicon_hash: []

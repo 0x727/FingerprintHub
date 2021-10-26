@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="/drm/template/css/login.css"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - action="/drm/login.do"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="/drm/encjs/barrett.js"
+    favicon_hash: []

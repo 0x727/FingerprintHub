@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - data-errormessage-value-missing="* 请录入用户名
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - style/default/frui.css
+    favicon_hash: []

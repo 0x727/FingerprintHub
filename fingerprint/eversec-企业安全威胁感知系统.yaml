@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - action="/j_spring_security_check
+    favicon_hash: []

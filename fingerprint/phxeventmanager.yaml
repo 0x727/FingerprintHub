@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <td><div class="minicalmonth
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="pem-includes/xajax/xajax_js/xajax_core.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - powered by phxeventmanager
+    favicon_hash: []

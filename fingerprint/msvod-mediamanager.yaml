@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - $('.sign-btn').addclass("completion");
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - static/js/meisicms.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - content="魅思cms
+    favicon_hash: []

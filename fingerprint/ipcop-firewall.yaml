@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <!-- ipcop logo row -->
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - href='https://sourceforge.net/projects/ipcop/
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - href='http://sf.net/projects/ipcop/
+    favicon_hash: []

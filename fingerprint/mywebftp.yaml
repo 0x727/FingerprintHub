@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href='mwftp/common/mwftp.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - mwftp/common/mwftp.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - '>mywebftp</a>'
+    favicon_hash: []

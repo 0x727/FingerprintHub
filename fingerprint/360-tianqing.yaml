@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - appid":"skylar6
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - /task/index/detail?id={item.id}
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - 已过期或者未授权，购买请联系4008-136-360
+    favicon_hash: []

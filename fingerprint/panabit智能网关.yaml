@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - forum.panabit.com
       - pa_iptcode
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,6 +20,7 @@ fingerprint:
     keyword:
       - Maintain
       - Panalog
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -28,3 +30,4 @@ fingerprint:
     keyword:
       - id="codeno"
       - 日志系统
+    favicon_hash: []

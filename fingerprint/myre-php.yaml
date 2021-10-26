@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - '<!-- begin: menu footer don''t change anything'
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - <b><u>my last viewed</u></b>
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /coremail/bundle/
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="http://www.coremail.cn" target="_blank">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - coremail/common
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,6 +36,7 @@ fingerprint:
     headers: {}
     keyword:
       - /coremail/common/
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -41,6 +45,7 @@ fingerprint:
     headers: {}
     keyword:
       - action="/coremail/index.jsp
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -49,3 +54,4 @@ fingerprint:
     headers: {}
     keyword:
       - 'fmt_logoalt: "coremail 电子邮件系统'
+    favicon_hash: []

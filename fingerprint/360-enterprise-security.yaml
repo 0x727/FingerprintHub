@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - 360entinst
       - 关于全网部署360私有云的通知
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     headers: {}
     keyword:
       - 天擎
+    favicon_hash: []

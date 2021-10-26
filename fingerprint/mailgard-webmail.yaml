@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.open('http://www.hechen.com')
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="kbfolder.asp?deptid=
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - redirectportalurl('/ics/support/custhandler.asp?
+    favicon_hash: []

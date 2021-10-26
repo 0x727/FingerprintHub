@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /css/cmstop-common.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - /js/cmstop-common.js
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,3 +28,4 @@ fingerprint:
     keyword:
       - <a class="poweredby" href="http://www.cmstop.com"
       - cmstop-list-text.css
+    favicon_hash: []

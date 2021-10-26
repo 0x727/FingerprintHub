@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - action="/leadsec-soc/signin
       - /leadsec-soc
+    favicon_hash: []

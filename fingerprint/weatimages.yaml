@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="http://nazarkin.name/projects/weatimages
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <meta name="generator" content="weatimages"/>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - <div align="center" class="weatimages_toppest_navig" style="text-decoration:underline;">
+    favicon_hash: []

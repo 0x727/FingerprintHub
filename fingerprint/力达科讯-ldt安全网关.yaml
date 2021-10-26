@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - <body onload="chkversion();setlanguage();loading()" onkeydown="keylogin(event);">
       - 湖北力达科讯
+    favicon_hash: []

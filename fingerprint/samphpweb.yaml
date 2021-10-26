@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - songinfo.php
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - copyright spacial audio solutions
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://www.spacialaudio.com/products/sambroadcaster/"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,3 +36,4 @@ fingerprint:
     headers: {}
     keyword:
       - <meta http-equiv="refresh" content="0;url=playing.html">
+    favicon_hash: []

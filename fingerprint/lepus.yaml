@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - language/switchover"+'/'+current_language
       - 登录
+    favicon_hash: []

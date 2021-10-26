@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <div id="simple-footer"><span>slideshowpro director
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - </div> <!--close login-container--></body>
+    favicon_hash: []

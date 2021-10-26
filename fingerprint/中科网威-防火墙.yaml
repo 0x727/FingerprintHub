@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - 北京中科网威
       - <input type="checkbox" id="authened_type" name="authened_type"><i class="checkbox"></i>
+    favicon_hash: []

@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - e-mobile
       - weaver
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,6 +19,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="weaver e-mobile"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,6 +28,7 @@ fingerprint:
     headers: {}
     keyword:
       - e-mobile&nbsp;
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -35,6 +38,7 @@ fingerprint:
     keyword:
       - /images/login_logo@2x.png
       - action="/verifylogin.do
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -43,3 +47,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.apiprifix = "/emp";
+    favicon_hash: []

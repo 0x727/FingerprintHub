@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="validatecode.aspx"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - class="f-loading-mask ui-widget ui-widget-content"
+    favicon_hash: []

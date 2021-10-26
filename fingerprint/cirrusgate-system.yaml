@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - window.location.href = "/dlp/admin/user/login.action"
+    favicon_hash: []

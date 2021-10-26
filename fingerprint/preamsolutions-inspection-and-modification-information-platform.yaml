@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - action="/gqjx/loginmgr.do?method=dologin
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - j_setcon j_sub_new j_padt30 j_padb30
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - <!-- 记录当前电视墙的序号 end-->
+    favicon_hash: []

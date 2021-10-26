@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - stylesheets/load/vamcart.css" rel="stylesheet"  media="screen
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - '<!-- powered by: vamcart (http://vamcart.com) -->'
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - <p><a href="http://vamcart.com/">php shopping cart</a> <a href="http://vamcart.com/">vamcart</a></p>
+    favicon_hash: []

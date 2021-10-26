@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - border="0" alt="pro chat rooms
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - href='http://prochatrooms.com'>pro chat rooms</a>
+    favicon_hash: []

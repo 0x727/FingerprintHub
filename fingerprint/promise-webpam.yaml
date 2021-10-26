@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - js/promise/themes/apple/images/logo_promise.png
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="js/dojo/promise.js
+    favicon_hash: []

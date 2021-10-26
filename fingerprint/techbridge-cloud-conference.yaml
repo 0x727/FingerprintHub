@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="http://www.techbridge-inc.com/" target="_blank"></a></span>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - /images/web_meeting/tool_bg.jpg
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /joinmeeting.js
+    favicon_hash: []

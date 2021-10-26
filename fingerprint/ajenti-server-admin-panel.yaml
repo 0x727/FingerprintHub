@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - action="/ajenti:auth"
       - src="/ajenti:static/
+    favicon_hash: []

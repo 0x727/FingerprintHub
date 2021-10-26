@@ -10,6 +10,7 @@ fingerprint:
       Location: /login.action?os_destination=
       X-Confluence-Request-Time: '*'
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,3 +20,4 @@ fingerprint:
     keyword:
       - id="com-atlassian-confluence
       - name="confluence-base-url"
+    favicon_hash: []

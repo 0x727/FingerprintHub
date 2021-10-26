@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - <frame src="/preloginmonitor/welcome.jsp"/>
+    favicon_hash: []

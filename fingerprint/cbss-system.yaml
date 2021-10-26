@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - </a>登录cbss系统</p>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - <li>com.cbss.xss.filter.xssfilter.dofilter
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 您访问的是主机宝服务器默认页
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - <a href="http://z.admin5.com/" target=
+    favicon_hash: []

@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - /cgi-bin/webctrl.cgi?action=index_page
+    favicon_hash: []

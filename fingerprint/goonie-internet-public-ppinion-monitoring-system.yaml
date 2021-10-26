@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - alert("菜单层数量和内容层数量不一样!")
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - 网络舆情监控系统
+    favicon_hash: []

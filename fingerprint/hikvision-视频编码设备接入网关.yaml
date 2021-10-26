@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - href="/bncgi-bin/test.pl
       - <input id="p_pass" class="int" onfocus="this.value='';" tabindex="2" name="p_pass
+    favicon_hash: []

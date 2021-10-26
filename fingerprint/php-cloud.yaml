@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <div class="index_link_list_name">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - yun_toplogin a.yun_more
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - yun_index.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,6 +36,7 @@ fingerprint:
     headers: {}
     keyword:
       - $(this).removeclass('dn'
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -41,3 +45,4 @@ fingerprint:
     headers: {}
     keyword:
       - phpyun
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <meta name="generator" content="ubb.threads
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - <a href="http://www.groupee.com/landing/goto.php?a=ubb.classic">powered by
         ubb.classic&trade
+    favicon_hash: []

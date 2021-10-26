@@ -9,6 +9,7 @@ fingerprint:
     headers:
       Server: sap web application server
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers:
       Server: sap netweaver application server
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers:
       Server: sap j2ee engine
     keyword: []
+    favicon_hash: []

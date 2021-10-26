@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - <img src="static/images/login/loading.gif" /><span id="message">loading......</span>
+    favicon_hash: []

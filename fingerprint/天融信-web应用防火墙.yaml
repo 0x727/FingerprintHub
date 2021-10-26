@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - evpng.fix('div, ul, img, li, input'); //evpng.fix('pngid1, pngid2')
       - web user login
+    favicon_hash: []

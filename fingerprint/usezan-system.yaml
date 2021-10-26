@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - action="/usezan/login/getlogin"
+    favicon_hash: []

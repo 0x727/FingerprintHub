@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - function squirrelmail_loginpage_onload()
+    favicon_hash: []

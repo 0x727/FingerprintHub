@@ -9,6 +9,7 @@ fingerprint:
     headers:
       Server: compaqhttpserver
     keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers:
       Set-Cookie: compaq-hmmd
     keyword: []
+    favicon_hash: []

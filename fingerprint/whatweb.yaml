@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - <body><center><table border=0><tr align=center><td><font color=red size=5>troy
         serial server</font></td></tr>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -19,3 +20,4 @@ fingerprint:
     keyword:
       - network card access password&#058; </b><input type=password size=16 maxlength=16
         name=access_psw>
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - href="clients/html5client/src/receiverthirdpartynotices.html"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     keyword:
       - logonbelt-topshadow
       - upgradeavailable-already-installed-separator bar-separator
+    favicon_hash: []

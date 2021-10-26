@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - gb_root_dir
       - maincontent.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,3 +19,4 @@ fingerprint:
     headers: {}
     keyword:
       - hims酒店云计算服务
+    favicon_hash: []

@@ -11,3 +11,4 @@ fingerprint:
       - login
       - systemAction
       - zt_webframe
+    favicon_hash: []

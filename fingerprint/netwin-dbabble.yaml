@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /cgi/dbabble.cgi
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - '>dbabble online help</a>'
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - action="/dbabble
+    favicon_hash: []

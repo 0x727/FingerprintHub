@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /ctop/index.jsp
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - /software/jinstall.exe
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - src="images/logo-ctop.gif
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,3 +36,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="images/ctop_logo.gif
+    favicon_hash: []

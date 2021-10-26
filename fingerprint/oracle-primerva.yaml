@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - primavera systems, inc
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - class="introareabuildid
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - com.primavera.detectplugin.detectpluginapplet.class
+    favicon_hash: []

@@ -10,3 +10,4 @@ fingerprint:
       Location: index.php?app=main&func=passport&action=login
       Set-Cookie: CNOAOASESSID=
     keyword: []
+    favicon_hash: []

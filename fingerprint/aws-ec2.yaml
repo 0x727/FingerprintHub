@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - welcome to nginx on amazon ec2!
+    favicon_hash: []

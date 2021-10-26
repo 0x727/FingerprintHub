@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - goodbook-tabcont
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <script src="/public/static/layer/layer.js">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="/template/home/default_web/css/style.css"
+    favicon_hash: []

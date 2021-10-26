@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - /verifycode.cgi?vrfcodeid=
       - document.title = 'ar web登录
+    favicon_hash: []

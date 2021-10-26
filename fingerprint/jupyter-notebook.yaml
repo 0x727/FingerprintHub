@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <div id="ipython-main-app" class="container">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <div id="ipython_notebook" class="nav navbar-brand">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - <title>Jupyter Notebook</title>
+    favicon_hash: []

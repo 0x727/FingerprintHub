@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 如果能访问到qinzhe网站上的图片，说明网络是通的，显示新闻
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - id="chkworkbyreplacer" type="checkbox"
+    favicon_hash: []

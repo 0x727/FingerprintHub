@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - csrfmiddlewaretoken
       - <a href="/users/password/forgot/">
+    favicon_hash: []

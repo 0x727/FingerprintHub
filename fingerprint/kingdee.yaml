@@ -10,6 +10,7 @@ fingerprint:
     keyword:
       - Kingdee.EntryRole
       - loginKDLogo
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -18,6 +19,7 @@ fingerprint:
     headers: {}
     keyword:
       - 金蝶国际软件集团有限公司版权所有
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -26,6 +28,7 @@ fingerprint:
     headers: {}
     keyword:
       - var formidafterlogin = '"bos_mainconsolesutra"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -34,6 +37,7 @@ fingerprint:
     headers: {}
     keyword:
       - class="kd-div-loading-ct"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -42,6 +46,7 @@ fingerprint:
     headers: {}
     keyword:
       - logo-kingdee.png
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -50,6 +55,7 @@ fingerprint:
     headers: {}
     keyword:
       - eassessionid
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -58,3 +64,4 @@ fingerprint:
     headers: {}
     keyword:
       - /eassso/common
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /bw_templete1.dwt
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - /broadweb/webaccessclientsetup.exe
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /broadweb/bwuconfig.asp
+    favicon_hash: []

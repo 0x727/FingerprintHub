@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - 浙江迪安诊断技术股份有限公司
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - src="/resources/pages/img/logo.svg"
+    favicon_hash: []

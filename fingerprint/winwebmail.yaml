@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - winwebmail server
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - images/owin.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,6 +27,7 @@ fingerprint:
     headers: {}
     keyword:
       - <td class=newsdiv-mid2>邮局管理员可自行分配邮箱！</td>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -33,6 +36,7 @@ fingerprint:
     headers: {}
     keyword:
       - type="hidden" name="secex"
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -41,3 +45,4 @@ fingerprint:
     headers: {}
     keyword:
       - href="images\hwem.css"
+    favicon_hash: []

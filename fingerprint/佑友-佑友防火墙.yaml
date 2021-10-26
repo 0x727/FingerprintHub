@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - class="inputsize2"
       - src="./js/jquery.validate.js"
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <em class="wk-fl">在沃系统</em>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - refreshcaptchaimgfun
+    favicon_hash: []

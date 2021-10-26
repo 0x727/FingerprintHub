@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - <meta name="author" content="sony pictures networks india pvt. ltd">
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - <meta name="twitter:image" content="http://sonyliv.com/asset/socialsharelogo"/>
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - content="sony liv
+    favicon_hash: []

@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - content="dpivision.com ltd" />
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,3 +18,4 @@ fingerprint:
     headers: {}
     keyword:
       - id="credits"><a href="http://www.tradingeye.com/">powered by tradingeye</a>
+    favicon_hash: []

@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - /sys/index.php?m=user&f=login&referer=
+    favicon_hash: []

@@ -10,3 +10,4 @@ fingerprint:
     keyword:
       - languagechange
       - cgi-bin/login
+    favicon_hash: []

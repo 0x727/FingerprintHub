@@ -9,3 +9,4 @@ fingerprint:
     headers: {}
     keyword:
       - gcfutil = jsloader.resolve('smartbi.gcf.gcfutil')
+    favicon_hash: []

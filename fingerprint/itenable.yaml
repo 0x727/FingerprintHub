@@ -9,6 +9,7 @@ fingerprint:
     headers: {}
     keyword:
       - /enableq.css
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -17,6 +18,7 @@ fingerprint:
     headers: {}
     keyword:
       - js/checkquestion.js.php
+    favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
@@ -25,3 +27,4 @@ fingerprint:
     headers: {}
     keyword:
       - /images/enableq.ico
+    favicon_hash: []
