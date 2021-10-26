@@ -21,31 +21,34 @@ fingerprint:
   - path: /
     request_method: post
     request_headers:
-      Cookie: rememberMe=admin
+      Cookie: rememberMe=admin;rememberMe-K=admin
     request_data: ''
     status_code: 0
     headers:
       Set-Cookie: rememberMe=deleteMe
-    keyword: [ ]
+    keyword: []
+    favicon_hash: []
   - path: /
     request_method: get
-    request_headers: { }
+    request_headers: {}
     request_data: ''
     status_code: 0
-    headers: { }
+    headers: {}
     keyword:
       - </i> shiro</li>
+    favicon_hash: []
 ```
 
 | 字段            | 数据类型               | 描述                                                         |
 | --------------- | ---------------------- | ------------------------------------------------------------ |
 | request_method  | String                 | 自定义请求方法                                               |
-| request_data    | String                 | 自定义请求数据                                               |
+| request_data    | String                 | 自定义请求数据，base64编码后的字符串                         |
 | request_headers | HashMap<String,String> | 自定义请求头                                                 |
 | path            | String                 | HTTP请求的路径。                                             |
-| status_code     | u32                    | 响应状态码，不匹配可以填0。                                  |
-| headers         | HashMap<String,String> | 相应的请求头，以键值对出现，值填`*`时只匹配键。              |
+| status_code     | u32                    | 响应状态码，不匹配可以填0                                    |
+| headers         | HashMap<String,String> | 相应的请求头，以键值对出现，值填`*`时只匹配键                |
 | keyword         | Vec<String>            | 响应的HTML关键词数组，可以添加多个关键词提高识别精度         |
+| favicon_hash    | Vec<String>            | favicon的MD5哈希数组，取并集关系，只要匹配到一个就算识别到   |
 | priority        | u32                    | 优先程度，用来排序是否为重要组件资产，数字越大越重要，可选：[1,2,3] |
 
 - 一个`path`为一组指纹，像上面的yaml规则中有两组指纹，只要匹配到了一组，就会返回`name`字段，也就是`apache-shiro`。
