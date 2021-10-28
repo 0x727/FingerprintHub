@@ -1,0 +1,21 @@
+name: laravel-debug-enabled
+priority: 3
+fingerprint:
+  - path: /_ignition/health-check
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 200
+    headers: {}
+    keyword:
+      - can_execute_commands
+    favicon_hash: []
+  - path: /_ignition/execute-solution
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 405
+    headers: {}
+    keyword:
+      - Laravel
+    favicon_hash: []
