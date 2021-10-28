@@ -44,7 +44,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Auto Update README [$(date)] :robot:" -a
+          git commit -m "Auto Update Nuclei [$(date)] :robot:" -a
 
       - name: Push changes
         if: steps.update-readme.outputs.changes > 0
