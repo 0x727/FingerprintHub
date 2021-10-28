@@ -1,9 +1,6 @@
-import codecs
 import json
 import re
 import string
-import subprocess
-from collections import OrderedDict
 from operator import itemgetter
 from pathlib import Path
 
@@ -132,11 +129,12 @@ def format_yaml(format_path):
             y.write(wfp_y)
 
 
-repo = Repo('./')
-current_sha = repo.head.object.hexsha
-poc_path_list = []
-for c in repo.commit('HEAD~').diff(current_sha):
-    if c.a_path.startswith('fingerprint/') and c.a_path.endswith('.yaml'):
-        if Path(c.a_path).exists():
-            format_yaml(c.a_path)
-fingerprint_json_generator("fingerprint")
+if __name__ == '__main__':
+    repo = Repo('./')
+    current_sha = repo.head.object.hexsha
+    poc_path_list = []
+    for c in repo.commit('HEAD~').diff(current_sha):
+        if c.a_path.startswith('fingerprint/') and c.a_path.endswith('.yaml'):
+            if Path(c.a_path).exists():
+                format_yaml(c.a_path)
+    fingerprint_json_generator("fingerprint")

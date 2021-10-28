@@ -1,0 +1,173 @@
+dedecms:
+  - - dedecms
+apache-tomcat:
+  - - tomcat
+yonyou-seeyon-oa:
+  - - seeyon
+parallels-plesk-panel:
+  - - plesk
+finereport:
+  - - finereport
+zcms:
+  - - zcms
+drupal:
+  - - drupal
+nacos:
+  - - nacos
+elastichd-dashboard:
+  - - elastic
+jenkins:
+  - - jenkins
+  - - jenkin
+citrix-access-gateway:
+  - - citrix
+d-link:
+  - - dlink
+sonarqube:
+  - - sonarqube
+webmin:
+  - - webmin
+ueditor:
+  - - ueditor
+splunk:
+  - - splunk
+minio:
+  - - minio
+thinkphp:
+  - - thinkphp
+rconfig:
+  - - rconfig
+confluence:
+  - - confluence
+weblogic:
+  - - weblogic
+jellyfin:
+  - - jellyfin
+apache-airflow:
+  - - airflow
+jboss:
+  - - jboss
+yapi:
+  - - yapi
+xiuno:
+  - - xiuno
+gate-one:
+  - - gateone
+wordpress:
+  - - wordpress
+horde:
+  - - horde
+grafana:
+  - - grafana
+wuzhicms:
+  - - wuzhicms
+emby:
+  - - emby
+apache-skywalking:
+  - - skywalking
+vmware-vrealize-operations-manager:
+  - - vrealize
+深信服终端检测响应平台-sangfor-edr:
+  - - 深信服终端检测响应平台-sangfor-edr
+django:
+  - - django
+solarwinds:
+  - - solarwinds
+apache-hadoop:
+  - - hadoop
+shopxo:
+  - - shopxo
+apache-flink:
+  - - flink
+apache-activemq:
+  - - activemq
+xdcms:
+  - - xdcms
+thinkadmin:
+  - - thinkadmin
+laravel-framework:
+  - - laravel
+phpmyadmin:
+  - - phpmyadmin
+yii-framework:
+  - - yii
+netgear:
+  - - netgear
+apache-solr:
+  - - solr
+f5-big-ip:
+  - - bigip
+moodle:
+  - - moodle
+apache-ambari:
+  - - ambari
+coremail:
+  - - coremail
+harbor:
+  - - harbor
+会捷通云视讯平台:
+  - - huijietong
+websvn:
+  - - websvn
+saltstack:
+  - - saltstack
+weiphp:
+  - - weiphp
+tongda-oa:
+  - - tongda
+adminer:
+  - - adminer
+xxl-job:
+  - - xxljob
+vmware-vcenter:
+  - - vmware-vcenter
+74cms:
+  - - 74cms
+bullwark:
+  - - bullwark
+showdoc:
+  - - showdoc
+spring-framework:
+  - - springboot
+  - - springframework
+mongodb:
+  - - mongodb
+gogs:
+  - - gogs
+apache-druid:
+  - - druid
+atlassian-jira:
+  - - jira
+    - atlassian
+zabbix:
+  - - zabbix
+nps:
+  - - nps
+rabbitmq:
+  - - rabbitmq
+eyou-亿邮邮件系统:
+  - - eyou
+zimbra:
+  - - zimbra
+zzzcms:
+  - - zzzcms
+gitlab:
+  - - gitlab
+ffay-lanproxy:
+  - - lanproxy
+apache-axis2:
+  - - axis
+prometheus:
+  - - prometheus
+apache-struts:
+  - - struts
+fortinet-fortigate:
+  - - fortigate
+kibana:
+  - - kibana
+thinkcmf:
+  - - thinkcmf
+tpshop:
+  - - tpshop
+apache-cocoon:
+  - - cocoon
