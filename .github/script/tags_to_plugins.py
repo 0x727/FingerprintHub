@@ -17,7 +17,7 @@ class MyDumper(yaml.Dumper):
 def update_tags_yaml_format():
     with open("plugins/tags.yaml", "r") as y:
         tags = yaml.safe_load(y)
-        tags_y = yaml.dump(tags, Dumper=MyDumper, sort_keys=False, allow_unicode=True,
+        tags_y = yaml.dump(tags, Dumper=MyDumper, sort_keys=True, allow_unicode=True,
                            default_flow_style=False, explicit_start=False, indent=2, width=2)
     with open("plugins/tags.yaml", "w") as y:
         y.write(tags_y)
@@ -96,17 +96,13 @@ for site, site_list, file_list in os.walk("fingerprint"):
     for file_name in file_list:
         fingerprint_list.append(file_name[:-len(Path(file_name).suffix)])
 
-
-def find_nuclei_git_diff():
+if __name__ == '__main__':
     repo = Repo('nuclei-templates')
     current_sha = repo.head.object.hexsha
     for c in repo.commit('HEAD~100').diff(current_sha):
         if not c.a_path.startswith('.') and c.a_path.endswith('.yaml') and Path(c.a_path).parts[0] in poc_dir_list:
             NucleiDiffGitMode(c_ins=c, g_tags_dict=tags_dict).run()
 
-
-find_nuclei_git_diff()
-#
 # def tags_to_plugins_all():
 #     for site, site_list, file_list in os.walk("nuclei-templates"):
 #         for file_name in file_list:
