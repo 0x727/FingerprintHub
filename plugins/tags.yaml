@@ -57,10 +57,10 @@ drupal:
   - - drupal
 dvwa:
   - - dvwa
+elascticsearch:
+  - - elascticsearch
 elastichd-dashboard:
   - - elastic
-elasticsearch:
-  - - elascticsearch
 emby:
   - - emby
 exponent-cms:

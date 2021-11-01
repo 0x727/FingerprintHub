@@ -6,7 +6,6 @@ import yaml
 from git import Repo, Diff
 
 poc_dir_list = ['cves', 'cnvd', 'vulnerabilities', 'default-logins', 'exposures', 'miscellaneous']
-fingerprint_list = []
 
 
 class MyDumper(yaml.Dumper):
@@ -27,6 +26,7 @@ def update_tags_yaml_format():
 
 plugins_path_dict = {}
 nuclei_path_dict = {}
+fingerprint_path_dict = {}
 tags_dict = update_tags_yaml_format()
 for site, site_list, file_list in os.walk("plugins"):
     for file_name in file_list:
@@ -43,7 +43,7 @@ for site, site_list, file_list in os.walk("nuclei-templates"):
 
 for site, site_list, file_list in os.walk("fingerprint"):
     for file_name in file_list:
-        fingerprint_list.append(file_name[:-len(Path(file_name).suffix)])
+        fingerprint_path_dict.setdefault(file_name[:-len(Path(file_name).suffix)], file_name)
 
 
 class NucleiDiffGitMode:
@@ -125,12 +125,16 @@ def tags_to_plugins_all():
                     print("未分类Tags：", tags, nuclei_abs_filename)
             except KeyError:
                 pass
+    all_fingerprints = set(fingerprint_path_dict.keys())
+    all_tags = set(tags_dict.keys())
+    print(all_tags.difference(all_fingerprints))
 
 
 if __name__ == '__main__':
-    repo = Repo('nuclei-templates')
-    current_sha = repo.head.object.hexsha
-    for c in repo.commit('HEAD~100').diff(current_sha):
-        if not c.a_path.startswith('.') and c.a_path.endswith('.yaml') and Path(c.a_path).parts[0] in poc_dir_list:
-            NucleiDiffGitMode(c_ins=c, g_tags_dict=tags_dict).run()
-    # tags_to_plugins_all()
+    # repo = Repo('nuclei-templates')
+    # current_sha = repo.head.object.hexsha
+    # for c in repo.commit('HEAD~100').diff(current_sha):
+    #     if not c.a_path.startswith('.') and c.a_path.endswith('.yaml') and Path(c.a_path).parts[0] in poc_dir_list:
+    #         NucleiDiffGitMode(c_ins=c, g_tags_dict=tags_dict).run()
+    tags_to_plugins_all()
+
