@@ -58,6 +58,8 @@ class NucleiDiffGitMode:
     def added(self, add_abs_filename=None):
         if add_abs_filename is None:
             add_abs_filename = self.abs_filename
+        else:
+            print("added", add_abs_filename)
         with open(add_abs_filename, 'r') as y:
             yaml_template = yaml.safe_load(y)
             try:
@@ -80,14 +82,14 @@ class NucleiDiffGitMode:
         print("deleted", self.file_name)
         for file_path in plugins_path_dict.values():
             if file_path.endswith(self.file_name):
-                if Path(file_path).is_file():
+                if Path(file_path).exists():
                     shutil.rmtree(file_path)
 
     def renamed(self):
         print("renamed", self.file_name)
         for file_path in plugins_path_dict.values():
             if file_path.endswith(self.file_name):
-                if Path(file_path).is_file():
+                if Path(file_path).exists():
                     shutil.rmtree(file_path)
                     self.added('nuclei-templates/' + self.c_ins.rename_to)
 
