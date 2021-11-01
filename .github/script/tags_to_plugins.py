@@ -122,7 +122,7 @@ def tags_to_plugins_all():
                             shutil.copy(file_path, to_file)
                             is_match = True
                 if not is_match:
-                    print("未分类Tags：", tags)
+                    print("未分类Tags：", tags, nuclei_abs_filename)
             except KeyError:
                 pass
 

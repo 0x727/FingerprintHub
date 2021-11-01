@@ -2,6 +2,8 @@
   - - 74cms
 adminer:
   - - adminer
+adobe-magento:
+  - - magento
 apache-activemq:
   - - activemq
 apache-airflow:
@@ -16,8 +18,14 @@ apache-druid:
   - - druid
 apache-flink:
   - - flink
+apache-guacamole:
+  - - guacamole
 apache-hadoop:
   - - hadoop
+apache-ofbiz:
+  - - ofbiz
+    - apache
+  - - ofbiz
 apache-skywalking:
   - - skywalking
 apache-solr:
@@ -47,12 +55,16 @@ django:
   - - django
 drupal:
   - - drupal
+dvwa:
+  - - dvwa
 elastichd-dashboard:
   - - elastic
 elasticsearch:
   - - elascticsearch
 emby:
   - - emby
+exponent-cms:
+  - - exponentcms
 eyou-亿邮邮件系统:
   - - eyou
 f5-big-ip:
@@ -79,6 +91,8 @@ harbor:
   - - harbor
 horde:
   - - horde
+ibm-websphere:
+  - - websphere
 jboss:
   - - jboss
 jellyfin:
@@ -94,6 +108,8 @@ kindeditor:
   - - kindeditor
 laravel-framework:
   - - laravel
+microsoft-sharepoint:
+  - - sharepoint
 minio:
   - - minio
 mongodb:
@@ -102,18 +118,30 @@ moodle:
   - - moodle
 nacos:
   - - nacos
+nagios-xi:
+  - - nagios
 netgear:
   - - netgear
+nexus-repository-manager:
+  - - nexus
 nps:
   - - nps
 openfire:
   - - openfire
+panabit智能网关:
+  - - panabit
 parallels-plesk-panel:
   - - plesk
 phpmyadmin:
   - - phpmyadmin
+phpwiki:
+  - - phpwiki
+powercreator-cms:
+  - - powercreator
 prometheus:
   - - prometheus
+qcubed-development-framework:
+  - - qcubed
 rabbitmq:
   - - rabbitmq
 rconfig:
@@ -138,6 +166,8 @@ splunk:
 spring-framework:
   - - springboot
   - - springframework
+swagger:
+  - - swagger
 thinkadmin:
   - - thinkadmin
 thinkcmf:
@@ -152,6 +182,8 @@ ueditor:
   - - ueditor
 vmware-vcenter:
   - - vmware-vcenter
+  - - vcenter
+    - vmware
 vmware-vrealize-operations-manager:
   - - vrealize
 weblogic:
@@ -188,6 +220,9 @@ zzzcms:
   - - zzzcms
 会捷通云视讯平台:
   - - huijietong
+  - - hjtcloud
 深信服终端检测响应平台-sangfor-edr:
   - - 深信服终端检测响应平台-sangfor-edr
   - - sangfor
+用友-turbocrm:
+  - - turbocrm

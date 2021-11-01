@@ -12,3 +12,12 @@ fingerprint:
       - loginsys_osv
       - 用友
     favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - turboui.js
+    favicon_hash: []
