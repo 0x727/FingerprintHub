@@ -1,11 +1,12 @@
-import json
 import os
 import shutil
 from pathlib import Path
 from typing import Dict
-
 import yaml
 from git import Repo, Diff
+
+poc_dir_list = ['cves', 'cnvd', 'vulnerabilities', 'default-logins', 'exposures', 'miscellaneous']
+fingerprint_list = []
 
 
 class MyDumper(yaml.Dumper):
@@ -24,12 +25,25 @@ def update_tags_yaml_format():
     return tags
 
 
-plugins_path_list = []
+plugins_path_dict = {}
+nuclei_path_dict = {}
+tags_dict = update_tags_yaml_format()
+for site, site_list, file_list in os.walk("plugins"):
+    for file_name in file_list:
+        plugins_abs_filename = os.path.abspath(os.path.join(site, file_name))
+        if not file_name.startswith('.') and file_name.endswith('.yaml') and not file_name == "tags.yaml":
+            plugins_path_dict.setdefault(file_name, plugins_abs_filename)
 
 for site, site_list, file_list in os.walk("nuclei-templates"):
     for file_name in file_list:
-        abs_filename = os.path.abspath(os.path.join(site, file_name))
-        plugins_path_list.append(abs_filename)
+        nuclei_abs_filename = os.path.abspath(os.path.join(site, file_name))
+        if len(Path(site).parts) > 1 and Path(site).parts[1] in poc_dir_list:
+            if not file_name.startswith('.') and file_name.endswith('.yaml'):
+                nuclei_path_dict.setdefault(file_name, nuclei_abs_filename)
+
+for site, site_list, file_list in os.walk("fingerprint"):
+    for file_name in file_list:
+        fingerprint_list.append(file_name[:-len(Path(file_name).suffix)])
 
 
 class NucleiDiffGitMode:
@@ -64,14 +78,14 @@ class NucleiDiffGitMode:
 
     def deleted(self):
         print("deleted", self.file_name)
-        for file_path in plugins_path_list:
+        for file_path in plugins_path_dict.values():
             if file_path.endswith(self.file_name):
                 if Path(file_path).is_file():
                     shutil.rmtree(file_path)
 
     def renamed(self):
         print("renamed", self.file_name)
-        for file_path in plugins_path_list:
+        for file_path in plugins_path_dict.values():
             if file_path.endswith(self.file_name):
                 if Path(file_path).is_file():
                     shutil.rmtree(file_path)
@@ -89,12 +103,27 @@ class NucleiDiffGitMode:
             func()
 
 
-poc_dir_list = ['cves', 'cnvd', 'vulnerabilities', 'default-logins', 'exposures', 'miscellaneous']
-tags_dict = update_tags_yaml_format()
-fingerprint_list = []
-for site, site_list, file_list in os.walk("fingerprint"):
-    for file_name in file_list:
-        fingerprint_list.append(file_name[:-len(Path(file_name).suffix)])
+def tags_to_plugins_all():
+    for nuclei_file_name, file_path in nuclei_path_dict.items():
+        with open(file_path, 'r') as y:
+            yaml_template = yaml.safe_load(y)
+            try:
+                tags = set(yaml_template.get('info')['tags'].split(','))
+                is_match = False
+                for name, tags_list in tags_dict.items():
+                    for tag in tags_list:
+                        tags_set = tags.issuperset(tag)
+                        if tags_set:
+                            to_file = os.path.join("plugins", name, nuclei_file_name)
+                            if not Path(to_file).parent.is_dir():
+                                Path(to_file).parent.mkdir()
+                            shutil.copy(file_path, to_file)
+                            is_match = True
+                if not is_match:
+                    print("未分类Tags：", tags)
+            except KeyError:
+                pass
+
 
 if __name__ == '__main__':
     repo = Repo('nuclei-templates')
@@ -102,28 +131,4 @@ if __name__ == '__main__':
     for c in repo.commit('HEAD~100').diff(current_sha):
         if not c.a_path.startswith('.') and c.a_path.endswith('.yaml') and Path(c.a_path).parts[0] in poc_dir_list:
             NucleiDiffGitMode(c_ins=c, g_tags_dict=tags_dict).run()
-
-# def tags_to_plugins_all():
-#     for site, site_list, file_list in os.walk("nuclei-templates"):
-#         for file_name in file_list:
-#             abs_filename = os.path.abspath(os.path.join(site, file_name))
-#             if len(Path(site).parts) > 1 and Path(site).parts[1] in poc_dir_list:
-#                 if not file_name.startswith('.') and file_name.endswith('.yaml'):
-#                     with open(abs_filename, 'r') as y:
-#                         yaml_template = yaml.safe_load(y)
-#                         try:
-#                             tags = set(yaml_template.get('info')['tags'].split(','))
-#                             for name, tags_list in tags_dict.items():
-#                                 for tag in tags_list:
-#                                     tags_set = tags.issuperset(tag)
-#                                     if tags_set:
-#                                         print(abs_filename)
-#                                         to_file = os.path.join("plugins", name, file_name)
-#                                         if not Path(to_file).parent.is_dir():
-#                                             Path(to_file).parent.mkdir()
-#                                         shutil.copy(abs_filename, to_file)
-#                         except KeyError:
-#                             pass
-#
-#
-# tags_to_plugins_all()
+    # tags_to_plugins_all()

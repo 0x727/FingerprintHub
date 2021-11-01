@@ -1,4 +1,4 @@
-name: adobe-coldfusion
+name: coldfusion
 priority: 2
 fingerprint:
   - path: /

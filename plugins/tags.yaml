@@ -28,11 +28,13 @@ apache-tomcat:
   - - tomcat
 atlassian-jira:
   - - jira
-    - atlassian
+  - - atlassian
 bullwark:
   - - bullwark
 citrix-access-gateway:
   - - citrix
+coldfusion:
+  - - coldfusion
 confluence:
   - - confluence
 coremail:
@@ -47,12 +49,16 @@ drupal:
   - - drupal
 elastichd-dashboard:
   - - elastic
+elasticsearch:
+  - - elascticsearch
 emby:
   - - emby
 eyou-亿邮邮件系统:
   - - eyou
 f5-big-ip:
   - - bigip
+fastjson:
+  - - fastjson
 ffay-lanproxy:
   - - lanproxy
 finereport:
@@ -67,6 +73,8 @@ gogs:
   - - gogs
 grafana:
   - - grafana
+h3c-imc:
+  - - h3c-imc
 harbor:
   - - harbor
 horde:
@@ -78,8 +86,12 @@ jellyfin:
 jenkins:
   - - jenkins
   - - jenkin
+joomla:
+  - - joomla
 kibana:
   - - kibana
+kindeditor:
+  - - kindeditor
 laravel-framework:
   - - laravel
 minio:
@@ -94,6 +106,8 @@ netgear:
   - - netgear
 nps:
   - - nps
+openfire:
+  - - openfire
 parallels-plesk-panel:
   - - plesk
 phpmyadmin:
@@ -114,6 +128,11 @@ solarwinds:
   - - solarwinds
 sonarqube:
   - - sonarqube
+sonicwall-ssl-vpn:
+  - - sonicwall
+    - vpn
+spark:
+  - - spark
 splunk:
   - - splunk
 spring-framework:
@@ -171,3 +190,4 @@ zzzcms:
   - - huijietong
 深信服终端检测响应平台-sangfor-edr:
   - - 深信服终端检测响应平台-sangfor-edr
+  - - sangfor

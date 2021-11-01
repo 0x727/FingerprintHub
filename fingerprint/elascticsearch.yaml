@@ -1,4 +1,4 @@
-name: elasticsearch
+name: elascticsearch
 priority: 3
 fingerprint:
   - path: /
