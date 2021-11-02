@@ -106,6 +106,8 @@ kibana:
   - - kibana
 kindeditor:
   - - kindeditor
+landray-蓝凌oa系统:
+  - - landray
 laravel-framework:
   - - laravel
 microsoft-sharepoint:
@@ -183,7 +185,7 @@ ueditor:
 vmware-vcenter:
   - - vmware-vcenter
   - - vcenter
-    - vmware
+  - - vmware
 vmware-vrealize-operations-manager:
   - - vrealize
 weblogic:

@@ -83,14 +83,14 @@ class NucleiDiffGitMode:
         for file_path in plugins_path_dict.values():
             if file_path.endswith(self.file_name):
                 if Path(file_path).exists():
-                    shutil.rmtree(file_path)
+                    os.unlink(file_path)
 
     def renamed(self):
         print("renamed", self.file_name)
         for file_path in plugins_path_dict.values():
             if file_path.endswith(self.file_name):
                 if Path(file_path).exists():
-                    shutil.rmtree(file_path)
+                    os.unlink(file_path)
                     self.added('nuclei-templates/' + self.c_ins.rename_to)
 
     def modified(self):
@@ -122,7 +122,7 @@ def tags_to_plugins_all():
                             shutil.copy(file_path, to_file)
                             is_match = True
                 if not is_match:
-                    print("未分类Tags：", tags, nuclei_abs_filename)
+                    print("未分类Tags：", tags, file_path)
             except KeyError:
                 pass
     all_fingerprints = set(fingerprint_path_dict.keys())
@@ -131,10 +131,9 @@ def tags_to_plugins_all():
 
 
 if __name__ == '__main__':
-    # repo = Repo('nuclei-templates')
-    # current_sha = repo.head.object.hexsha
-    # for c in repo.commit('HEAD~100').diff(current_sha):
-    #     if not c.a_path.startswith('.') and c.a_path.endswith('.yaml') and Path(c.a_path).parts[0] in poc_dir_list:
-    #         NucleiDiffGitMode(c_ins=c, g_tags_dict=tags_dict).run()
-    tags_to_plugins_all()
-
+    repo = Repo('nuclei-templates')
+    current_sha = repo.head.object.hexsha
+    for c in repo.commit('HEAD~100').diff(current_sha):
+        if not c.a_path.startswith('.') and c.a_path.endswith('.yaml') and Path(c.a_path).parts[0] in poc_dir_list:
+            NucleiDiffGitMode(c_ins=c, g_tags_dict=tags_dict).run()
+    # tags_to_plugins_all()
