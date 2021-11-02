@@ -10,3 +10,12 @@ fingerprint:
     keyword:
       - <h1>whitelabel error page</h1>
     favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - springboot
+    favicon_hash: []
