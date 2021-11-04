@@ -3,63 +3,64 @@ priority: 3
 fingerprint:
   - path: /
     request_method: get
-    request_headers: { }
+    request_headers: {}
     request_data: ''
     status_code: 0
-    headers: { }
+    headers: {}
     keyword:
       - '"/login/Login.jsp?logintype=1"'
-    favicon_hash: [ ]
+    favicon_hash: []
   - path: /
     request_method: get
-    request_headers: { }
+    request_headers: {}
     request_data: ''
     status_code: 0
-    headers: { }
+    headers: {}
     keyword:
       - /wui/common/css/w7ovfont.css
-    favicon_hash: [ ]
+    favicon_hash: []
   - path: /
     request_method: get
-    request_headers: { }
+    request_headers: {}
     request_data: ''
     status_code: 0
-    headers: { }
+    headers: {}
     keyword:
       - typeof poppedwindow
-    favicon_hash: [ ]
+    favicon_hash: []
   - path: /
     request_method: get
-    request_headers: { }
+    request_headers: {}
     request_data: ''
     status_code: 0
-    headers: { }
+    headers: {}
     keyword:
       - client/jquery.client_wev8.js
-    favicon_hash: [ ]
+    favicon_hash: []
   - path: /
     request_method: get
-    request_headers: { }
+    request_headers: {}
     request_data: ''
     status_code: 0
-    headers: { }
+    headers: {}
     keyword:
       - /theme/ecology8/jquery/js/zdialog_wev8.js
-    favicon_hash: [ ]
+    favicon_hash: []
   - path: /
     request_method: get
-    request_headers: { }
+    request_headers: {}
     request_data: ''
     status_code: 0
-    headers: { }
+    headers: {}
     keyword:
       - ecology8/lang/weaver_lang_7_wev8.js
-    favicon_hash: [ ]
+    favicon_hash: []
   - path: /
     request_method: get
-    request_headers: { }
+    request_headers: {}
     request_data: ''
     status_code: 0
-    headers: { "Set-Cookie": "ecology_JSessionId" }
-    keyword: [ ]
-    favicon_hash: [ ]
+    headers:
+      Set-Cookie: ecology_JSessionId
+    keyword: []
+    favicon_hash: []
