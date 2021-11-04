@@ -26,17 +26,17 @@ fingerprint:
     status_code: 0
     headers:
       Set-Cookie: rememberMe=deleteMe
-    keyword: []
-    favicon_hash: []
+    keyword: [ ]
+    favicon_hash: [ ]
   - path: /
     request_method: get
-    request_headers: {}
+    request_headers: { }
     request_data: ''
     status_code: 0
-    headers: {}
+    headers: { }
     keyword:
       - </i> shiro</li>
-    favicon_hash: []
+    favicon_hash: [ ]
 ```
 
 | 字段            | 数据类型               | 描述                                                         |
@@ -54,6 +54,21 @@ fingerprint:
 - 一个`path`为一组指纹，像上面的yaml规则中有两组指纹，只要匹配到了一组，就会返回`name`字段，也就是`apache-shiro`。
 
 ## 如何贡献
+
+### 验证指纹
+
+- 使用`--verify`参数指定要验证的yaml文件，`-t`指定测试目标。
+
+```bash
+➜  ~ ./observer_ward --verify verification.yaml -t https://httpbin.org
+[ https://httpbin.org | ["swagger"] | 9593 | httpbin.org ]
+Important technology:
++-------------------------+---------+--------+---------------------+----------+
+| Url                     | Name    | Length | Title               | Priority |
++=========================+=========+========+=====================+==========+
+| https://httpbin.org     | swagger | 9593   | httpbin.org         | 3        |
++-------------------------+---------+--------+---------------------+----------+
+```
 
 ### 提交指纹规则
 
