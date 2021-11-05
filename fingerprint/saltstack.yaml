@@ -1,5 +1,7 @@
 name: saltstack
 priority: 1
+nuclei_tags:
+  - - saltstack
 fingerprint:
   - path: /
     request_method: get

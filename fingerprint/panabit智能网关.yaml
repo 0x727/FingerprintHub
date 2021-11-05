@@ -1,5 +1,7 @@
 name: panabit智能网关
 priority: 3
+nuclei_tags:
+  - - panabit
 fingerprint:
   - path: /
     request_method: get

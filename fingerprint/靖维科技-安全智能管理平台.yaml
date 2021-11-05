@@ -1,5 +1,7 @@
 name: 靖维科技-安全智能管理平台
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: kyan-监控设备
 priority: 1
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

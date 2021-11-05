@@ -1,5 +1,7 @@
 name: 文网亿联-文网卫士安全路由器
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

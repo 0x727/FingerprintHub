@@ -1,5 +1,7 @@
 name: exponent-cms
 priority: 3
+nuclei_tags:
+  - - exponentcms
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: gogs
 priority: 2
+nuclei_tags:
+  - - gogs
 fingerprint:
   - path: /
     request_method: get

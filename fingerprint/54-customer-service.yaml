@@ -1,5 +1,7 @@
 name: 54-customer-service
 priority: 2
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

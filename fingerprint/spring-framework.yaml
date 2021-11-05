@@ -1,5 +1,8 @@
 name: spring-framework
 priority: 2
+nuclei_tags:
+  - - springboot
+  - - springframework
 fingerprint:
   - path: /
     request_method: get

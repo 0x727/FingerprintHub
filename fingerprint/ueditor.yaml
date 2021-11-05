@@ -1,5 +1,7 @@
 name: ueditor
 priority: 3
+nuclei_tags:
+  - - ueditor
 fingerprint:
   - path: /
     request_method: get

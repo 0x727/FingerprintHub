@@ -1,5 +1,7 @@
 name: 科信软件-kxmail
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

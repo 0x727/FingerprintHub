@@ -1,5 +1,9 @@
 name: apache-ofbiz
 priority: 1
+nuclei_tags:
+  - - ofbiz
+    - apache
+  - - ofbiz
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: 三零盛安-安全邮件系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

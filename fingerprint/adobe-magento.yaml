@@ -1,5 +1,7 @@
 name: adobe-magento
 priority: 3
+nuclei_tags:
+  - - magento
 fingerprint:
   - path: /
     request_method: get

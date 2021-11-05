@@ -1,5 +1,7 @@
 name: 佑友-mailgard-webmail
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

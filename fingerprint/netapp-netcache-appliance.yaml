@@ -1,5 +1,7 @@
 name: netapp-netcache-appliance
 priority: 2
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

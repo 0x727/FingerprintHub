@@ -1,5 +1,7 @@
 name: nsfocus-网站安全监测系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

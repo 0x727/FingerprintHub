@@ -1,5 +1,7 @@
 name: sap-web-application-server
 priority: 2
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

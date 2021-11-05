@@ -1,5 +1,7 @@
 name: qcubed-development-framework
 priority: 2
+nuclei_tags:
+  - - qcubed
 fingerprint:
   - path: /
     request_method: get

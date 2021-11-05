@@ -1,5 +1,7 @@
 name: gitlab
 priority: 3
+nuclei_tags:
+  - - gitlab
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: 乾星-oa企业智能办公自动化系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

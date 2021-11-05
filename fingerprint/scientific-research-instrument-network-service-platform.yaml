@@ -1,5 +1,7 @@
 name: scientific-research-instrument-network-service-platform
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: 梭子鱼垃圾邮件防火墙
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

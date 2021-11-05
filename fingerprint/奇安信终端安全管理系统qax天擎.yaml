@@ -1,5 +1,7 @@
 name: 奇安信终端安全管理系统qax天擎
 priority: 2
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: 海峡信息-黑盾运维安全网关
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

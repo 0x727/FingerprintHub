@@ -1,5 +1,7 @@
 name: 金蝶云星空
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

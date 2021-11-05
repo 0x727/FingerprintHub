@@ -1,5 +1,7 @@
 name: elastichd-dashboard
 priority: 1
+nuclei_tags:
+  - - elastic
 fingerprint:
   - path: /
     request_method: get

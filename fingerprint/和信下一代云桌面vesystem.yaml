@@ -1,5 +1,7 @@
 name: 和信下一代云桌面vesystem
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

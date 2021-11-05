@@ -1,5 +1,7 @@
 name: sophos-安全产品
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

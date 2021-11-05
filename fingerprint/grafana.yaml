@@ -1,5 +1,7 @@
 name: grafana
 priority: 3
+nuclei_tags:
+  - - grafana
 fingerprint:
   - path: /
     request_method: get

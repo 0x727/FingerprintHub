@@ -1,5 +1,7 @@
 name: shopxo
 priority: 1
+nuclei_tags:
+  - - shopxo
 fingerprint:
   - path: /
     request_method: get

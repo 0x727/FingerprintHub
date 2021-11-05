@@ -1,5 +1,7 @@
 name: 中电福富-安全基线管理
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

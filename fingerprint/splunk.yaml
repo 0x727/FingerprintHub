@@ -1,5 +1,7 @@
 name: splunk
 priority: 1
+nuclei_tags:
+  - - splunk
 fingerprint:
   - path: /
     request_method: get

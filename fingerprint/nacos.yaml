@@ -1,5 +1,7 @@
 name: nacos
 priority: 1
+nuclei_tags:
+  - - nacos
 fingerprint:
   - path: /
     request_method: get

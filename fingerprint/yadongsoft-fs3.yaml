@@ -1,5 +1,7 @@
 name: yadongsoft-fs3
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

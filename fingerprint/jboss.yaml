@@ -1,5 +1,7 @@
 name: jboss
 priority: 3
+nuclei_tags:
+  - - jboss
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: fastjson
 priority: 3
+nuclei_tags:
+  - - fastjson
 fingerprint:
   - path: /
     request_method: get

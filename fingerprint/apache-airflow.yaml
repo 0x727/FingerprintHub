@@ -1,5 +1,7 @@
 name: apache-airflow
 priority: 3
+nuclei_tags:
+  - - airflow
 fingerprint:
   - path: /
     request_method: get

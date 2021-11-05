@@ -1,5 +1,7 @@
 name: 护卫神-网站安全系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

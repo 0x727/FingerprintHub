@@ -1,5 +1,7 @@
 name: fortinet-fortigate
 priority: 3
+nuclei_tags:
+  - - fortigate
 fingerprint:
   - path: /
     request_method: get

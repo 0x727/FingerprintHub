@@ -1,5 +1,7 @@
 name: nagios-xi
 priority: 3
+nuclei_tags:
+  - - nagios
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: finereport
 priority: 3
+nuclei_tags:
+  - - finereport
 fingerprint:
   - path: /
     request_method: get

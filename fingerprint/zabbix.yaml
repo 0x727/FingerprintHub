@@ -1,5 +1,7 @@
 name: zabbix
 priority: 3
+nuclei_tags:
+  - - zabbix
 fingerprint:
   - path: /
     request_method: get

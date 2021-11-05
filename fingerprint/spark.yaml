@@ -1,5 +1,7 @@
 name: spark
 priority: 2
+nuclei_tags:
+  - - spark
 fingerprint:
   - path: /
     request_method: get

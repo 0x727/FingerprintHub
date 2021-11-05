@@ -1,5 +1,7 @@
 name: gree-logistics
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

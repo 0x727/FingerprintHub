@@ -1,5 +1,8 @@
 name: jenkins
 priority: 3
+nuclei_tags:
+  - - jenkins
+  - - jenkin
 fingerprint:
   - path: /
     request_method: get

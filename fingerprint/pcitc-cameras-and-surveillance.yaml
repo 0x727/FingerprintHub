@@ -1,5 +1,7 @@
 name: pcitc-cameras-and-surveillance
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

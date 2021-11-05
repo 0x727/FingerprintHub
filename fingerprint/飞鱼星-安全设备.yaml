@@ -1,5 +1,7 @@
 name: 飞鱼星-安全设备
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: 天融信-入侵防御系统topidp
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

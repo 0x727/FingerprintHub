@@ -1,5 +1,7 @@
 name: wayos维盟ac集中管理系统
 priority: 1
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

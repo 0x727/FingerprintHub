@@ -1,5 +1,7 @@
 name: kindeditor
 priority: 2
+nuclei_tags:
+  - - kindeditor
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: thinkphp
 priority: 3
+nuclei_tags:
+  - - thinkphp
 fingerprint:
   - path: /
     request_method: get

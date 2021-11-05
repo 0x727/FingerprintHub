@@ -68,6 +68,7 @@ def valid_fingerprint_v3(rule):
 def fingerprint_json_generator(path):
     fingerprint_all_v2_list = []
     fingerprint_all_v3_list = []
+    nuclei_tags_dict = {}
     for site, site_list, file_list in os.walk(path):
         for file_name in file_list:
             abs_filename = os.path.abspath(os.path.join(site, file_name))
@@ -78,6 +79,9 @@ def fingerprint_json_generator(path):
                     valid_rule_v3 = valid_fingerprint_v3(fingerprint)
                     valid_rule_v3['name'] = y_dict.get('name')
                     valid_rule_v3['priority'] = y_dict.get('priority')
+                    if y_dict.get("nuclei_tags") != [[]]:
+                        nuclei_tags_dict.setdefault(y_dict.get("name"),
+                                                    y_dict.get("nuclei_tags", [[]]))
                     valid_rule_v2 = valid_fingerprint_v2(fingerprint)
                     valid_rule_v2['name'] = y_dict.get('name')
                     valid_rule_v2['priority'] = y_dict.get('priority')
@@ -86,9 +90,13 @@ def fingerprint_json_generator(path):
     web_fingerprint_v2 = sorted(fingerprint_all_v2_list, key=itemgetter('name'))
     web_fingerprint_v3 = sorted(fingerprint_all_v3_list, key=itemgetter('name'))
     with open("web_fingerprint_v2.json", 'w') as wfp:
-        json.dump(web_fingerprint_v2, wfp)
+        json.dump(web_fingerprint_v2, wfp, indent=2, ensure_ascii=False)
     with open("web_fingerprint_v3.json", 'w') as wfp:
-        json.dump(web_fingerprint_v3, wfp)
+        json.dump(web_fingerprint_v3, wfp, indent=2, ensure_ascii=False)
+    with open("plugins/tags.yaml", "w") as y:
+        tags_y = yaml.dump(nuclei_tags_dict, Dumper=MyDumper, sort_keys=True, allow_unicode=True,
+                           default_flow_style=False, explicit_start=False, indent=2, width=2)
+        y.write(tags_y)
     return web_fingerprint_v3
 
 
@@ -111,7 +119,7 @@ def format_yaml(format_path):
         y_dict = yaml.safe_load(y)
         fingerprint_rules_origin = y_dict.get('fingerprint', [])
         max_priority = 0
-        sorted_list = {'name': 0, 'priority': 1, 'fingerprint': 2}
+        sorted_list = {'name': 0, 'priority': 1, 'nuclei_tags': 2, 'fingerprint': 3}
         for fingerprint in fingerprint_rules_origin:
             fingerprint['priority'] = y_dict.get('priority')
             valid_rule = valid_fingerprint_v3(fingerprint)
@@ -122,6 +130,7 @@ def format_yaml(format_path):
         y_dict['fingerprint'] = fingerprint_rules
         y_dict['priority'] = max_priority
         y_dict['name'] = suffix_file_name
+        y_dict.setdefault('nuclei_tags', [[]])
         new_y_dict = dict(sorted(y_dict.items(), key=lambda t: sorted_list[t[0]]))
         wfp_y = yaml.dump(new_y_dict, Dumper=MyDumper, sort_keys=False, allow_unicode=True,
                           default_flow_style=False, explicit_start=False, indent=2, width=2)
@@ -130,14 +139,15 @@ def format_yaml(format_path):
 
 
 if __name__ == '__main__':
-    repo = Repo('./')
-    current_sha = repo.head.object.hexsha
-    poc_path_list = []
-    is_change = False
-    for c in repo.commit('HEAD~').diff(current_sha):
-        if c.a_path.startswith('fingerprint/') and c.a_path.endswith('.yaml'):
-            if Path(c.a_path).exists():
-                format_yaml(c.a_path)
-                is_change = True
-    if is_change:
-        fingerprint_json_generator("fingerprint")
+    update_yaml("fingerprint")
+    # repo = Repo('./')
+    # current_sha = repo.head.object.hexsha
+    # poc_path_list = []
+    # is_change = False
+    # for c in repo.commit('HEAD~').diff(current_sha):
+    #     if c.a_path.startswith('fingerprint/') and c.a_path.endswith('.yaml'):
+    #         if Path(c.a_path).exists():
+    #             format_yaml(c.a_path)
+    #             is_change = True
+    # if is_change:
+    fingerprint_json_generator("fingerprint")

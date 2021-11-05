@@ -1,5 +1,7 @@
 name: 终端安全管理系统报表系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

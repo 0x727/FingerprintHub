@@ -1,5 +1,7 @@
 name: 联通时科-信息安全综合管理平台
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: 海康威视流媒体管理服务器
 priority: 1
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

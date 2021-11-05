@@ -1,5 +1,7 @@
 name: alcatel_lucent-企业网关
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

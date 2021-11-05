@@ -1,5 +1,7 @@
 name: dvwa
 priority: 3
+nuclei_tags:
+  - - dvwa
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: sinosoft-technology-e-government-system
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

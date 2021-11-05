@@ -1,5 +1,7 @@
 name: weiphp
 priority: 3
+nuclei_tags:
+  - - weiphp
 fingerprint:
   - path: /
     request_method: get

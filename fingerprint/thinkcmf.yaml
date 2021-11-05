@@ -1,5 +1,7 @@
 name: thinkcmf
 priority: 3
+nuclei_tags:
+  - - thinkcmf
 fingerprint:
   - path: /
     request_method: get

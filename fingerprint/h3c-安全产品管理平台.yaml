@@ -1,5 +1,7 @@
 name: h3c-安全产品管理平台
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

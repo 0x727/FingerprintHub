@@ -1,5 +1,7 @@
 name: dedecms
 priority: 3
+nuclei_tags:
+  - - dedecms
 fingerprint:
   - path: /
     request_method: get

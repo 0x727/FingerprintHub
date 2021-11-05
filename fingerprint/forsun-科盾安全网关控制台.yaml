@@ -1,5 +1,7 @@
 name: forsun-科盾安全网关控制台
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

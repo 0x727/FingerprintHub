@@ -1,5 +1,7 @@
 name: yapi
 priority: 3
+nuclei_tags:
+  - - yapi
 fingerprint:
   - path: /
     request_method: get

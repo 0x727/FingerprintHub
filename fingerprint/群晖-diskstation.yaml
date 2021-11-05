@@ -1,5 +1,7 @@
 name: 群晖-diskstation
 priority: 2
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

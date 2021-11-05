@@ -1,5 +1,7 @@
 name: webmin
 priority: 3
+nuclei_tags:
+  - - webmin
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: apache-cocoon
 priority: 3
+nuclei_tags:
+  - - cocoon
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: wordpress
 priority: 3
+nuclei_tags:
+  - - wordpress
 fingerprint:
   - path: /
     request_method: get

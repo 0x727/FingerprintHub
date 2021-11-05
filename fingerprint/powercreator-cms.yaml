@@ -1,5 +1,7 @@
 name: powercreator-cms
 priority: 3
+nuclei_tags:
+  - - powercreator
 fingerprint:
   - path: /
     request_method: get

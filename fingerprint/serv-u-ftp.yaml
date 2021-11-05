@@ -1,5 +1,7 @@
 name: serv-u-ftp
 priority: 2
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

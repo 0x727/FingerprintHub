@@ -1,5 +1,8 @@
 name: 深信服终端检测响应平台-sangfor-edr
 priority: 3
+nuclei_tags:
+  - - 深信服终端检测响应平台-sangfor-edr
+  - - sangfor
 fingerprint:
   - path: /
     request_method: get

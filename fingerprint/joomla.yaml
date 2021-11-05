@@ -1,5 +1,7 @@
 name: joomla
 priority: 3
+nuclei_tags:
+  - - joomla
 fingerprint:
   - path: /
     request_method: get

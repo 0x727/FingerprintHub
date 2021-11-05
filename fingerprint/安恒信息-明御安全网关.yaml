@@ -1,5 +1,7 @@
 name: 安恒信息-明御安全网关
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

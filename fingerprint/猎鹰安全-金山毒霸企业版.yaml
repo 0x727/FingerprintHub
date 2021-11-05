@@ -1,5 +1,7 @@
 name: 猎鹰安全-金山毒霸企业版
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

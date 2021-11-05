@@ -1,5 +1,7 @@
 name: nextcloud-数据安全产品
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

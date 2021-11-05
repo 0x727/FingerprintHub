@@ -1,5 +1,7 @@
 name: bh-bh5000c
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

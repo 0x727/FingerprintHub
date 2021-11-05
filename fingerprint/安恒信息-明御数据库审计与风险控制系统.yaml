@@ -1,5 +1,7 @@
 name: 安恒信息-明御数据库审计与风险控制系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

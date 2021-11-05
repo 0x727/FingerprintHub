@@ -1,5 +1,7 @@
 name: creatsoft-特种设备安全管理平台
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

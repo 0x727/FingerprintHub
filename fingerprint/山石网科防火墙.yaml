@@ -1,5 +1,7 @@
 name: 山石网科防火墙
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

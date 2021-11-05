@@ -1,5 +1,7 @@
 name: 74cms
 priority: 3
+nuclei_tags:
+  - - 74cms
 fingerprint:
   - path: /
     request_method: get

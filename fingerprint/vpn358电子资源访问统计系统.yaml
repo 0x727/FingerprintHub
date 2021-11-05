@@ -1,5 +1,7 @@
 name: vpn358电子资源访问统计系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

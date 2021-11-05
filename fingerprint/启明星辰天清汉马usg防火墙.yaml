@@ -1,5 +1,7 @@
 name: 启明星辰天清汉马usg防火墙
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

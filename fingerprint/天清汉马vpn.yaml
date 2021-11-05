@@ -1,5 +1,7 @@
 name: 天清汉马vpn
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

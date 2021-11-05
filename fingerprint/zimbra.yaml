@@ -1,5 +1,7 @@
 name: zimbra
 priority: 3
+nuclei_tags:
+  - - zimbra
 fingerprint:
   - path: /
     request_method: get

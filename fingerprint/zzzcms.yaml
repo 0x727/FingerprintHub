@@ -1,5 +1,7 @@
 name: zzzcms
 priority: 1
+nuclei_tags:
+  - - zzzcms
 fingerprint:
   - path: /
     request_method: get

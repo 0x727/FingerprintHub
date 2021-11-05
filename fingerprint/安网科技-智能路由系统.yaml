@@ -1,5 +1,7 @@
 name: 安网科技-智能路由系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

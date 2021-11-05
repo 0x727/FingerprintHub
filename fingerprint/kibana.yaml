@@ -1,5 +1,7 @@
 name: kibana
 priority: 1
+nuclei_tags:
+  - - kibana
 fingerprint:
   - path: /
     request_method: get

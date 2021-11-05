@@ -1,5 +1,7 @@
 name: apache-hadoop
 priority: 1
+nuclei_tags:
+  - - hadoop
 fingerprint:
   - path: /
     request_method: get

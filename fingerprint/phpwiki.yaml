@@ -1,5 +1,7 @@
 name: phpwiki
 priority: 3
+nuclei_tags:
+  - - phpwiki
 fingerprint:
   - path: /
     request_method: get

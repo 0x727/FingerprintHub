@@ -1,5 +1,7 @@
 name: rising-网络安全预警系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

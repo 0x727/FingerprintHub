@@ -1,5 +1,7 @@
 name: apache-activemq
 priority: 1
+nuclei_tags:
+  - - activemq
 fingerprint:
   - path: /
     request_method: get

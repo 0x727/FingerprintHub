@@ -1,5 +1,7 @@
 name: etcd-io
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /version
     request_method: get

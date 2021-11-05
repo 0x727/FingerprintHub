@@ -1,5 +1,7 @@
 name: phpmyadmin
 priority: 3
+nuclei_tags:
+  - - phpmyadmin
 fingerprint:
   - path: /
     request_method: get

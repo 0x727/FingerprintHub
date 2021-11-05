@@ -1,5 +1,7 @@
 name: thinkadmin
 priority: 1
+nuclei_tags:
+  - - thinkadmin
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: h3c-imc
 priority: 3
+nuclei_tags:
+  - - h3c-imc
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: tongda-oa
 priority: 3
+nuclei_tags:
+  - - tongda
 fingerprint:
   - path: /
     request_method: get

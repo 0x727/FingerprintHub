@@ -1,5 +1,7 @@
 name: laravel-framework
 priority: 2
+nuclei_tags:
+  - - laravel
 fingerprint:
   - path: /
     request_method: get

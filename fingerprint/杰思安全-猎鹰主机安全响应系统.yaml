@@ -1,5 +1,7 @@
 name: 杰思安全-猎鹰主机安全响应系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

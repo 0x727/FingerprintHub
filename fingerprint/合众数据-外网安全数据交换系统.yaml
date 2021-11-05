@@ -1,5 +1,7 @@
 name: 合众数据-外网安全数据交换系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

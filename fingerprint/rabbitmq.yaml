@@ -1,5 +1,7 @@
 name: rabbitmq
 priority: 3
+nuclei_tags:
+  - - rabbitmq
 fingerprint:
   - path: /
     request_method: get

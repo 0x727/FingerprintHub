@@ -1,5 +1,7 @@
 name: yonyou-grp-u8
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

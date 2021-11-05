@@ -1,5 +1,7 @@
 name: wuzhicms
 priority: 3
+nuclei_tags:
+  - - wuzhicms
 fingerprint:
   - path: /
     request_method: get

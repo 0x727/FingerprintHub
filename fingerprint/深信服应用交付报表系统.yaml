@@ -1,5 +1,7 @@
 name: 深信服应用交付报表系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

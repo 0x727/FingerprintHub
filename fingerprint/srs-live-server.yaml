@@ -1,5 +1,7 @@
 name: srs-live-server
 priority: 2
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

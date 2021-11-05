@@ -1,5 +1,7 @@
 name: f5-big-ip
 priority: 3
+nuclei_tags:
+  - - bigip
 fingerprint:
   - path: /
     request_method: get

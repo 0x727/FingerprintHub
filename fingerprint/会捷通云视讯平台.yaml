@@ -1,5 +1,8 @@
 name: 会捷通云视讯平台
 priority: 1
+nuclei_tags:
+  - - huijietong
+  - - hjtcloud
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: coremail
 priority: 3
+nuclei_tags:
+  - - coremail
 fingerprint:
   - path: /
     request_method: get

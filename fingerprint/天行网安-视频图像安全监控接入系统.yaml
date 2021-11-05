@@ -1,5 +1,7 @@
 name: 天行网安-视频图像安全监控接入系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

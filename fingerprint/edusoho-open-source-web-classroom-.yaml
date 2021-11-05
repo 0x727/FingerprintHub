@@ -1,5 +1,7 @@
 name: edusoho-open-source-web-classroom-
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

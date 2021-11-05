@@ -1,5 +1,7 @@
 name: ibm-websphere
 priority: 2
+nuclei_tags:
+  - - websphere
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: zte-iad语音网关
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

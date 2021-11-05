@@ -1,5 +1,7 @@
 name: ecology泛微云桥e-bridge
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

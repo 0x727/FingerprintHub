@@ -1,5 +1,7 @@
 name: 力达科讯-ldt安全网关
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

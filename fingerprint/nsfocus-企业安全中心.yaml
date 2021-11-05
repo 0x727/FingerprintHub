@@ -1,5 +1,7 @@
 name: nsfocus-企业安全中心
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

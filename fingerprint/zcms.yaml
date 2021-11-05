@@ -1,5 +1,7 @@
 name: zcms
 priority: 3
+nuclei_tags:
+  - - zcms
 fingerprint:
   - path: /
     request_method: get

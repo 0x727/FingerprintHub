@@ -1,5 +1,7 @@
 name: colasoft-network-information-comprehensive-detection-and-processing-platform
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

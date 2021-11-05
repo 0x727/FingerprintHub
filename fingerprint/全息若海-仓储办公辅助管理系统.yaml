@@ -1,5 +1,7 @@
 name: 全息若海-仓储办公辅助管理系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

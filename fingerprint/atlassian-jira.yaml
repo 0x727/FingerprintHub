@@ -1,13 +1,15 @@
 name: atlassian-jira
 priority: 3
+nuclei_tags:
+  - - jira
+  - - atlassian
 fingerprint:
   - path: /
     request_method: get
-    request_headers: { }
+    request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {
-      "Location": "/secure/SetupMode!default.jspa"
-    }
-    keyword: [ ]
-    favicon_hash: [ ]
+    headers:
+      Location: /secure/SetupMode!default.jspa
+    keyword: []
+    favicon_hash: []

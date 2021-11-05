@@ -1,5 +1,7 @@
 name: 天融信-网络卫士过滤网关
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

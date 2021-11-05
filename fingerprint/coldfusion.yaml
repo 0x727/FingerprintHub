@@ -1,5 +1,7 @@
 name: coldfusion
 priority: 2
+nuclei_tags:
+  - - coldfusion
 fingerprint:
   - path: /
     request_method: get

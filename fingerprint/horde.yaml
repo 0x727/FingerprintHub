@@ -1,5 +1,7 @@
 name: horde
 priority: 3
+nuclei_tags:
+  - - horde
 fingerprint:
   - path: /
     request_method: get

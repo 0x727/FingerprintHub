@@ -1,5 +1,7 @@
 name: drupal
 priority: 3
+nuclei_tags:
+  - - drupal
 fingerprint:
   - path: /
     request_method: get

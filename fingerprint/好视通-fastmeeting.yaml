@@ -1,5 +1,7 @@
 name: 好视通-fastmeeting
 priority: 1
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

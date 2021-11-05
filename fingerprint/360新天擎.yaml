@@ -1,5 +1,7 @@
 name: 360新天擎
 priority: 1
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

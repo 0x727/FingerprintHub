@@ -1,5 +1,7 @@
 name: public-security-checkpoint-document-verification-system
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

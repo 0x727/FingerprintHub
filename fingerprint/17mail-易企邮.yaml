@@ -1,5 +1,7 @@
 name: 17mail-易企邮
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

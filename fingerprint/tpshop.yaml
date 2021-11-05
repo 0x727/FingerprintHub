@@ -1,5 +1,7 @@
 name: tpshop
 priority: 1
+nuclei_tags:
+  - - tpshop
 fingerprint:
   - path: /
     request_method: get

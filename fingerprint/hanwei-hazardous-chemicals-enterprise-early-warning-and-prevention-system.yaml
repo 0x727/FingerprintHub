@@ -1,5 +1,7 @@
 name: hanwei-hazardous-chemicals-enterprise-early-warning-and-prevention-system
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

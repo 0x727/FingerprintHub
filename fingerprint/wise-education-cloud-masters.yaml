@@ -1,5 +1,7 @@
 name: wise-education-cloud-masters
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

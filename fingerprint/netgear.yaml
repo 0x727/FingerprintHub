@@ -1,5 +1,7 @@
 name: netgear
 priority: 3
+nuclei_tags:
+  - - netgear
 fingerprint:
   - path: /
     request_method: get

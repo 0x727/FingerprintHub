@@ -1,5 +1,7 @@
 name: 合众数据-视频安全接入用户认证系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

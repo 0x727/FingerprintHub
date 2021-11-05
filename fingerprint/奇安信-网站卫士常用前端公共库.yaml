@@ -1,5 +1,7 @@
 name: 奇安信-网站卫士常用前端公共库
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

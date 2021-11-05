@@ -1,5 +1,7 @@
 name: websvn
 priority: 3
+nuclei_tags:
+  - - websvn
 fingerprint:
   - path: /
     request_method: get

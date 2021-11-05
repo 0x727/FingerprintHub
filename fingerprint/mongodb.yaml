@@ -1,5 +1,7 @@
 name: mongodb
 priority: 1
+nuclei_tags:
+  - - mongodb
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: hp-3com-officeconnect-vpn-firewall
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

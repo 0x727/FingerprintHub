@@ -1,5 +1,7 @@
 name: apache-flink
 priority: 2
+nuclei_tags:
+  - - flink
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: 中新金盾-信息安全管理系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

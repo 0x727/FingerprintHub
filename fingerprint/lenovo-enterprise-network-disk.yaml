@@ -1,5 +1,7 @@
 name: lenovo-enterprise-network-disk
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: eyou-亿邮邮件系统
 priority: 3
+nuclei_tags:
+  - - eyou
 fingerprint:
   - path: /
     request_method: get

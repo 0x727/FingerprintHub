@@ -1,5 +1,7 @@
 name: 碉堡堡垒机-产品
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

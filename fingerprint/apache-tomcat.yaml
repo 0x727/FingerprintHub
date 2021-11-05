@@ -1,5 +1,7 @@
 name: apache-tomcat
 priority: 3
+nuclei_tags:
+  - - tomcat
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: zotonic
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: elascticsearch
 priority: 3
+nuclei_tags:
+  - - elascticsearch
 fingerprint:
   - path: /
     request_method: get

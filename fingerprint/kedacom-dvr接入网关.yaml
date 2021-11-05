@@ -1,5 +1,7 @@
 name: kedacom-dvr接入网关
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

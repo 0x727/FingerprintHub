@@ -1,5 +1,7 @@
 name: apache-struts
 priority: 1
+nuclei_tags:
+  - - struts
 fingerprint:
   - path: /
     request_method: get

@@ -1,5 +1,7 @@
 name: flower-celery-monitoring-tool
 priority: 2
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

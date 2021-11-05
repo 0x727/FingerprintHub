@@ -1,5 +1,7 @@
 name: weblogic
 priority: 3
+nuclei_tags:
+  - - weblogic
 fingerprint:
   - path: /
     request_method: get

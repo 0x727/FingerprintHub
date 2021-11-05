@@ -1,5 +1,7 @@
 name: nps
 priority: 1
+nuclei_tags:
+  - - nps
 fingerprint:
   - path: /
     request_method: get

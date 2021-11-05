@@ -1,5 +1,7 @@
 name: bullwark
 priority: 1
+nuclei_tags:
+  - - bullwark
 fingerprint:
   - path: /
     request_method: get

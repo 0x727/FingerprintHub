@@ -1,5 +1,7 @@
 name: sonarqube
 priority: 3
+nuclei_tags:
+  - - sonarqube
 fingerprint:
   - path: /
     request_method: get

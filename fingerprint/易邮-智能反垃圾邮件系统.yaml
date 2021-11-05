@@ -1,5 +1,7 @@
 name: 易邮-智能反垃圾邮件系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

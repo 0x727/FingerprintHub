@@ -1,5 +1,7 @@
 name: 云深互联-红芯安全管控平台
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

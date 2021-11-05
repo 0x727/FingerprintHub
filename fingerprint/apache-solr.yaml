@@ -1,5 +1,7 @@
 name: apache-solr
 priority: 3
+nuclei_tags:
+  - - solr
 fingerprint:
   - path: /
     request_method: get

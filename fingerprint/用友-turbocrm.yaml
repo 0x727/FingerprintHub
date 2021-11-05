@@ -1,5 +1,7 @@
 name: 用友-turbocrm
 priority: 3
+nuclei_tags:
+  - - turbocrm
 fingerprint:
   - path: /
     request_method: get

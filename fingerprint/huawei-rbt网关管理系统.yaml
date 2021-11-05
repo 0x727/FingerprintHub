@@ -1,5 +1,7 @@
 name: huawei-rbt网关管理系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

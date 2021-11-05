@@ -1,5 +1,7 @@
 name: openfiler
 priority: 1
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

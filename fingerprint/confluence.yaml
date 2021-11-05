@@ -1,5 +1,7 @@
 name: confluence
 priority: 3
+nuclei_tags:
+  - - confluence
 fingerprint:
   - path: /
     request_method: get

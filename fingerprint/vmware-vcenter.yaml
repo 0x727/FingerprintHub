@@ -1,5 +1,9 @@
 name: vmware-vcenter
 priority: 1
+nuclei_tags:
+  - - vmware-vcenter
+  - - vcenter
+  - - vmware
 fingerprint:
   - path: /
     request_method: get

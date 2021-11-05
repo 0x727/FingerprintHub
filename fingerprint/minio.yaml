@@ -1,5 +1,7 @@
 name: minio
 priority: 1
+nuclei_tags:
+  - - minio
 fingerprint:
   - path: /
     request_method: get

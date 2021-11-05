@@ -1,5 +1,7 @@
 name: 360-安全路由
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

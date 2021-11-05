@@ -1,5 +1,7 @@
 name: ffay-lanproxy
 priority: 1
+nuclei_tags:
+  - - lanproxy
 fingerprint:
   - path: /
     request_method: get

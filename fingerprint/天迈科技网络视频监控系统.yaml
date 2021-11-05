@@ -1,5 +1,7 @@
 name: 天迈科技网络视频监控系统
 priority: 1
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

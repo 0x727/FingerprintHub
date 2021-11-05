@@ -1,5 +1,8 @@
 name: sonicwall-ssl-vpn
 priority: 3
+nuclei_tags:
+  - - sonicwall
+    - vpn
 fingerprint:
   - path: /
     request_method: get

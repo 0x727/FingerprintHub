@@ -1,5 +1,7 @@
 name: faq-manager
 priority: 2
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

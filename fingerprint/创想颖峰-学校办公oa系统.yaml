@@ -1,5 +1,7 @@
 name: 创想颖峰-学校办公oa系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

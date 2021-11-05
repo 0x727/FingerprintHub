@@ -1,5 +1,7 @@
 name: yonyou-seeyon-oa
 priority: 3
+nuclei_tags:
+  - - seeyon
 fingerprint:
   - path: /
     request_method: get

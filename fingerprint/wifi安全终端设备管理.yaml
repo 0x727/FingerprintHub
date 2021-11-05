@@ -1,5 +1,7 @@
 name: wifi安全终端设备管理
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

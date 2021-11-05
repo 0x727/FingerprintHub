@@ -1,5 +1,7 @@
 name: xxl-job
 priority: 2
+nuclei_tags:
+  - - xxljob
 fingerprint:
   - path: /
     request_method: get

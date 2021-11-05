@@ -1,5 +1,7 @@
 name: 科来-网络全流量安全分析系统
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get

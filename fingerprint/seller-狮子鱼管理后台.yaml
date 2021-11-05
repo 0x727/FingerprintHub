@@ -1,5 +1,7 @@
 name: seller-狮子鱼管理后台
 priority: 3
+nuclei_tags:
+  - []
 fingerprint:
   - path: /
     request_method: get
