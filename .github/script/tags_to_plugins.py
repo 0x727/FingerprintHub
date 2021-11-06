@@ -2,10 +2,11 @@ import os
 import shutil
 from pathlib import Path
 from typing import Dict
+
 import yaml
 from git import Repo, Diff
 
-poc_dir_list = ['cves', 'cnvd', 'vulnerabilities', 'default-logins', 'exposures', 'miscellaneous']
+poc_dir_list = ['cves', 'cnvd', 'vulnerabilities', 'default-logins', 'exposures', 'miscellaneous', "misconfiguration"]
 
 
 class MyDumper(yaml.Dumper):
