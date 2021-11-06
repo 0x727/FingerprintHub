@@ -52,3 +52,14 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+      - name: Create Plugins Zip
+        run: |
+          zip -r plugins.zip plugins
+      - name: Upload plugins.zip to release
+        uses: svenstaro/upload-release-action@v1-release
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: plugins.zip
+          asset_name: plugins.zip
+          tag: default
+          overwrite: true
