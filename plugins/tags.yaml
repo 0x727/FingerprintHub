@@ -26,6 +26,9 @@ apache-ofbiz:
   - - ofbiz
     - apache
   - - ofbiz
+apache-shiro:
+  - - shiro
+    - apache
 apache-skywalking:
   - - skywalking
 apache-solr:

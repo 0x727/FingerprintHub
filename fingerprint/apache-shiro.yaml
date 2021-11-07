@@ -1,7 +1,8 @@
 name: apache-shiro
 priority: 3
 nuclei_tags:
-  - ["shiro","apache"]
+  - - shiro
+    - apache
 fingerprint:
   - path: /
     request_method: post
