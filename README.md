@@ -17,6 +17,9 @@
 ```yaml
 name: apache-shiro
 priority: 3
+nuclei_tags:
+  - - "shiro"
+    - "apache"
 fingerprint:
   - path: /
     request_method: post
@@ -49,7 +52,8 @@ fingerprint:
 | headers         | HashMap<String,String> | 相应的请求头，以键值对出现，值填`*`时只匹配键                |
 | keyword         | Vec<String>            | 响应的HTML关键词数组，可以添加多个关键词提高识别精度         |
 | favicon_hash    | Vec<String>            | favicon的MD5哈希数组，取并集关系，只要匹配到一个就算识别到   |
-| priority        | u32                    | 优先程度，用来排序是否为重要组件资产，数字越大越重要，可选：[1,2,3] |
+| priority        | u32                    | 优先程度，用来排序是否为重要组件资产，数字越大越重要，可选：[1,2,3]，有标题和存在漏洞都会+1 |
+| nuclei_tags     | Vec<Vec<String>>       | nuclei中的标签，当标签为[["shiro","apache"]]的时候，<br>yaml中同时有`shiro`，`apache`这两个标签会被分到`apache-shiro`这个文件夹 |
 
 - 一个`path`为一组指纹，像上面的yaml规则中有两组指纹，只要匹配到了一组，就会返回`name`字段，也就是`apache-shiro`。
 
