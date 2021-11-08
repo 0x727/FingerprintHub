@@ -139,15 +139,15 @@ def format_yaml(format_path):
 
 
 if __name__ == '__main__':
-    update_yaml("fingerprint")
-    # repo = Repo('./')
-    # current_sha = repo.head.object.hexsha
-    # poc_path_list = []
-    # is_change = False
-    # for c in repo.commit('HEAD~').diff(current_sha):
-    #     if c.a_path.startswith('fingerprint/') and c.a_path.endswith('.yaml'):
-    #         if Path(c.a_path).exists():
-    #             format_yaml(c.a_path)
-    #             is_change = True
-    # if is_change:
-    fingerprint_json_generator("fingerprint")
+    # update_yaml("fingerprint")
+    repo = Repo('./')
+    current_sha = repo.head.object.hexsha
+    poc_path_list = []
+    is_change = False
+    for c in repo.commit('HEAD~').diff(current_sha):
+        if c.a_path.startswith('fingerprint/') and c.a_path.endswith('.yaml'):
+            if Path(c.a_path).exists():
+                format_yaml(c.a_path)
+                is_change = True
+    if is_change:
+        fingerprint_json_generator("fingerprint")

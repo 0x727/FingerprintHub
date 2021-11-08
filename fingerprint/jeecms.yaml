@@ -1,7 +1,7 @@
 name: jeecms
 priority: 1
 nuclei_tags:
-  - []
+  - ["jeecms"]
 fingerprint:
   - path: /
     request_method: get
@@ -10,5 +10,23 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - '"/cnf/r/cms/common.js"'
+      - /r/cms/www/
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - /u/cms/www/
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - www.jeecms.com
     favicon_hash: []
