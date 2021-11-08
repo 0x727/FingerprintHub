@@ -6175,6 +6175,20 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "开普互联",
+      "CMS内容管理系统"
+    ],
+    "priority": 3,
+    "name": "cmspro"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "/css/cmstop-common.css"
     ],
     "priority": 3,
@@ -16487,7 +16501,33 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "\"/cnf/r/cms/common.js\""
+      "/r/cms/www/"
+    ],
+    "priority": 1,
+    "name": "jeecms"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "/u/cms/www/"
+    ],
+    "priority": 1,
+    "name": "jeecms"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "www.jeecms.com"
     ],
     "priority": 1,
     "name": "jeecms"
@@ -32821,7 +32861,7 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "href=\"http://www.thinkphp.cn\">thinkphp</a><sup>"
+      "href=\"http://www.thinkphp.cn\">thinkphp</a>"
     ],
     "priority": 3,
     "name": "thinkphp"

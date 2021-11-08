@@ -98,6 +98,8 @@ ibm-websphere:
   - - websphere
 jboss:
   - - jboss
+jeecms:
+  - - jeecms
 jellyfin:
   - - jellyfin
 jenkins:
