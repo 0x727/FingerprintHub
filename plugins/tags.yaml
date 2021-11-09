@@ -60,6 +60,8 @@ drupal:
   - - drupal
 dvwa:
   - - dvwa
+ecshop:
+  - - ecshop
 elascticsearch:
   - - elascticsearch
 elastichd-dashboard:
@@ -105,6 +107,8 @@ jellyfin:
 jenkins:
   - - jenkins
   - - jenkin
+jetty:
+  - - jetty
 joomla:
   - - joomla
 kibana:
