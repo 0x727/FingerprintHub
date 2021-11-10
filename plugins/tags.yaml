@@ -42,6 +42,11 @@ atlassian-jira:
   - - atlassian
 bullwark:
   - - bullwark
+cacti:
+  - - cacti
+caucho-resin:
+  - - caucho
+    - resin
 citrix-access-gateway:
   - - citrix
 coldfusion:
@@ -50,6 +55,8 @@ confluence:
   - - confluence
 coremail:
   - - coremail
+couchdb:
+  - - couchdb
 d-link:
   - - dlink
 dedecms:
@@ -58,8 +65,12 @@ django:
   - - django
 drupal:
   - - drupal
+duomicms:
+  - - duomicms
 dvwa:
   - - dvwa
+ecology泛微协同办公oa:
+  - - ecology
 ecshop:
   - - ecshop
 elascticsearch:
@@ -68,6 +79,8 @@ elastichd-dashboard:
   - - elastic
 emby:
   - - emby
+ewebs:
+  - - ewebs
 exponent-cms:
   - - exponentcms
 eyou-亿邮邮件系统:
@@ -76,6 +89,8 @@ f5-big-ip:
   - - bigip
 fastjson:
   - - fastjson
+feifeicms:
+  - - feifeicms
 ffay-lanproxy:
   - - lanproxy
 finereport:
@@ -92,6 +107,8 @@ grafana:
   - - grafana
 h3c-imc:
   - - h3c-imc
+haproxy-report:
+  - - haproxy
 harbor:
   - - harbor
 horde:
@@ -102,6 +119,8 @@ jboss:
   - - jboss
 jeecms:
   - - jeecms
+jeewms:
+  - - jeewms
 jellyfin:
   - - jellyfin
 jenkins:
@@ -131,8 +150,12 @@ nacos:
   - - nacos
 nagios-xi:
   - - nagios
+natshell:
+  - - natshell
 netgear:
   - - netgear
+nextcloud-product:
+  - - nextcloud
 nexus-repository-manager:
   - - nexus
 nps:
@@ -157,12 +180,16 @@ rabbitmq:
   - - rabbitmq
 rconfig:
   - - rconfig
+ruijie-router-nbr:
+  - - ruijie
 saltstack:
   - - saltstack
 shopxo:
   - - shopxo
 showdoc:
   - - showdoc
+siteserver:
+  - - siteserver
 solarwinds:
   - - solarwinds
 sonarqube:
@@ -174,6 +201,8 @@ spark:
   - - spark
 splunk:
   - - splunk
+spring-cloud-netflix:
+  - - springcloud
 spring-framework:
   - - springboot
   - - springframework
@@ -191,6 +220,8 @@ tpshop:
   - - tpshop
 ueditor:
   - - ueditor
+vbulletin:
+  - - vbulletin
 vmware-vcenter:
   - - vmware-vcenter
   - - vcenter
@@ -219,6 +250,8 @@ yapi:
   - - yapi
 yii-framework:
   - - yii
+yonyou-erp-nc:
+  - - erp-nc
 yonyou-seeyon-oa:
   - - seeyon
 zabbix:

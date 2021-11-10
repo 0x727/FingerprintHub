@@ -1,7 +1,7 @@
-name: siteserver
+name: kubernetes
 priority: 3
 nuclei_tags:
-  - - siteserver
+  - []
 fingerprint:
   - path: /
     request_method: get
@@ -10,8 +10,7 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - http://www.siteserver.cn
-      - powered by
+      - href="assets/images/kubernetes-logo.png
     favicon_hash: []
   - path: /
     request_method: get
@@ -20,7 +19,7 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - siteserver cms
+      - <article class="post kubernetes
     favicon_hash: []
   - path: /
     request_method: get
@@ -29,8 +28,7 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - siteserver
-      - t_系统首页模板
+      - <b>kubernetes</b> listening
     favicon_hash: []
   - path: /
     request_method: get
@@ -39,5 +37,14 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - sitefiles
+      - value="kubernetes
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      Www-Authenticate: realm="kubernetes
+    keyword: []
     favicon_hash: []

@@ -1,15 +1,15 @@
-name: ruijie-router-nbr
+name: caucho-resin
 priority: 3
 nuclei_tags:
-  - - ruijie
+  - - caucho
+    - resin
 fingerprint:
   - path: /
     request_method: get
     request_headers: {}
     request_data: ''
-    status_code: 200
-    headers: {}
-    keyword:
-      - web_monitor_config.htm
-      - 锐捷网络
+    status_code: 0
+    headers:
+      Server: Resin
+    keyword: []
     favicon_hash: []

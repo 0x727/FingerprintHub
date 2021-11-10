@@ -1,7 +1,7 @@
 name: vbulletin
 priority: 3
 nuclei_tags:
-  - []
+  - - vbulletin
 fingerprint:
   - path: /
     request_method: get

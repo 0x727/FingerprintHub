@@ -1,7 +1,7 @@
-name: ewebs
+name: jfrog
 priority: 3
 nuclei_tags:
-  - - ewebs
+  - []
 fingerprint:
   - path: /
     request_method: get
@@ -10,8 +10,7 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - ClientDownload.xgi
-      - NewSoft
+      - src=/ui/img/jfrog
     favicon_hash: []
   - path: /
     request_method: get
@@ -20,14 +19,14 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - /js/xajax05/xajax_js/xajax_core.js
+      - <meta http-equiv="refresh" content="0;URL=/artifactory">
     favicon_hash: []
   - path: /
     request_method: get
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {}
-    keyword:
-      - <a href='../client/ewebsclientsetup.exe'></a> </td>
+    headers:
+      Location: /artifactory/
+    keyword: []
     favicon_hash: []

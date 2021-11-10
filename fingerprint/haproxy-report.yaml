@@ -1,7 +1,7 @@
 name: haproxy-report
 priority: 2
 nuclei_tags:
-  - []
+  - - haproxy
 fingerprint:
   - path: /
     request_method: get

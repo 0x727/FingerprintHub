@@ -1,7 +1,7 @@
 name: duomicms
 priority: 1
 nuclei_tags:
-  - []
+  - - duomicms
 fingerprint:
   - path: /
     request_method: get

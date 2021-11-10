@@ -1,4 +1,4 @@
-name: nextcloud-数据安全产品
+name: chamilo
 priority: 3
 nuclei_tags:
   - []
@@ -9,6 +9,6 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword:
-      - nextcloud</a>  给您所有数据一个安全的家
-    favicon_hash: []
+    keyword: []
+    favicon_hash:
+      - 0c53ef3d151cbac70a8486dd1ebc8b25

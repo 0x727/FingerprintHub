@@ -1,7 +1,7 @@
-name: cacti
+name: couchdb
 priority: 3
 nuclei_tags:
-  - - cacti
+  - - couchdb
 fingerprint:
   - path: /
     request_method: get
@@ -9,7 +9,8 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers:
-      Set-Cookie: cacti=
+      x-couchdb-body-time: '0'
+      Server: CouchDB
     keyword: []
     favicon_hash: []
   - path: /
@@ -18,6 +19,6 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword:
-      - /plugins/jqueryskin/include/login.css
-    favicon_hash: []
+    keyword: []
+    favicon_hash:
+      - 2ab2aae806e8393b70970b2eaace82e0

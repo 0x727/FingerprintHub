@@ -1,14 +1,14 @@
-name: feifeicms
+name: spring-cloud-netflix
 priority: 3
 nuclei_tags:
-  - - feifeicms
+  - - springcloud
 fingerprint:
   - path: /
     request_method: get
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {}
-    keyword:
-      - data-target="#navbar-feifeicms"
+    headers:
+      x-application-context: 'hystrix-dashboard:'
+    keyword: []
     favicon_hash: []
