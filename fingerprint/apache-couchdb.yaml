@@ -1,4 +1,4 @@
-name: couchdb
+name: apache-couchdb
 priority: 3
 nuclei_tags:
   - - couchdb
