@@ -1960,6 +1960,31 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "x-couchdb-body-time": "0",
+      "Server": "CouchDB"
+    },
+    "keyword": [],
+    "priority": 3,
+    "name": "apache-couchdb"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "apache-couchdb"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 200,
     "headers": {},
     "keyword": [
@@ -7031,31 +7056,6 @@
     "keyword": [],
     "priority": 2,
     "name": "couchbase"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {
-      "x-couchdb-body-time": "0",
-      "Server": "CouchDB"
-    },
-    "keyword": [],
-    "priority": 3,
-    "name": "couchdb"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [],
-    "priority": 3,
-    "name": "couchdb"
   },
   {
     "path": "/",

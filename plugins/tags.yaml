@@ -14,6 +14,8 @@ apache-axis2:
   - - axis
 apache-cocoon:
   - - cocoon
+apache-couchdb:
+  - - couchdb
 apache-druid:
   - - druid
 apache-flink:
@@ -55,8 +57,6 @@ confluence:
   - - confluence
 coremail:
   - - coremail
-couchdb:
-  - - couchdb
 d-link:
   - - dlink
 dedecms:
