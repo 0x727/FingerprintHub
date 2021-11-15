@@ -3,9 +3,6 @@ name: 📝 Nuclei Update
 on:
   schedule:
     - cron: '1 */6 * * *'
-  push:
-    branches:
-      - main
 
 jobs:
   build:
