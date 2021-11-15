@@ -134,7 +134,7 @@ def tags_to_plugins_all():
 if __name__ == '__main__':
     repo = Repo('nuclei-templates')
     current_sha = repo.head.object.hexsha
-    for c in repo.commit('HEAD~100').diff(current_sha):
+    for c in repo.commit('HEAD~99').diff(current_sha):
         if not c.a_path.startswith('.') and c.a_path.endswith('.yaml') and Path(c.a_path).parts[0] in poc_dir_list:
             NucleiDiffGitMode(c_ins=c, g_tags_dict=tags_dict).run()
     # tags_to_plugins_all()
