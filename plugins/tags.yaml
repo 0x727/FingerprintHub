@@ -101,6 +101,8 @@ gate-one:
   - - gateone
 gitlab:
   - - gitlab
+glpi:
+  - - glpi
 gogs:
   - - gogs
 grafana:
