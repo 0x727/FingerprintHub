@@ -41626,8 +41626,8 @@
     "status_code": 200,
     "headers": {},
     "keyword": [
-      "<title>入口校验失败</title>",
-      "宝塔"
+      "入口校验失败",
+      "面板"
     ],
     "priority": 3,
     "name": "宝塔面板"
