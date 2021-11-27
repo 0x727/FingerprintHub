@@ -148,6 +148,6 @@ if __name__ == '__main__':
         if c.a_path.startswith('fingerprint/') and c.a_path.endswith('.yaml'):
             if Path(c.a_path).exists():
                 format_yaml(c.a_path)
-                is_change = True
+            is_change = True
     if is_change:
         fingerprint_json_generator("fingerprint")

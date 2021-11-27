@@ -59,19 +59,20 @@ fingerprint:
 
 ## 如何贡献
 
-### 验证指纹
+### 验证单个指纹是否有效
 
-- 使用`--verify`参数指定要验证的yaml文件，`-t`指定测试目标。
+- 为了方便验证编写的yaml规则是否有效，可以使用`--verify`参数指定要验证的yaml文件，`-t`指定测试目标对指纹进行验证。
 
 ```bash
-➜  ~ ./observer_ward --verify verification.yaml -t https://httpbin.org
-[ https://httpbin.org | ["swagger"] | 9593 | httpbin.org ]
+➜  ~ ./observer_ward_amd64 --verify 0x727/FingerprintHub/fingerprint/swagger.yaml -t http://httpbin.org
+[ http://httpbin.org/ |["swagger"] | 9593 | 200 | httpbin.org ]
 Important technology:
-+-------------------------+---------+--------+---------------------+----------+
-| Url                     | Name    | Length | Title               | Priority |
-+=========================+=========+========+=====================+==========+
-| https://httpbin.org     | swagger | 9593   | httpbin.org         | 3        |
-+-------------------------+---------+--------+---------------------+----------+
+
++---------------------+---------------+--------+-------------+-------------+----------+
+| url                 | what_web_name | length | status_code | title       | priority |
++=====================+===============+========+=============+=============+==========+
+| http://httpbin.org/ | swagger       | 9593   | 200         | httpbin.org | 5        |
++---------------------+---------------+--------+-------------+-------------+----------+
 ```
 
 ### 提交指纹规则
@@ -88,7 +89,6 @@ git clone git@github.com:你的个人github用户名/FingerprintHub.git
 cd FingerprintHub
 git remote add upstream git@github.com:0x727/FingerprintHub.git
 git fetch upstream
-git checkout -b upstream-main --track upstream/main
 ```
 
 - 配置你的github个人信息
@@ -106,7 +106,7 @@ git fetch --all
 git fetch upstream
 ```
 
-- **不要**直接在`main`分支上修改，创建一个新的分支并切换到新的分支。
+- **不要**直接在`main`分支上修改，例如我想添加一个`thinkphp`的指纹，创建一个新的分支并切换到新的分支。
 
 ```bash
 git checkout -b thinkphp
@@ -122,6 +122,11 @@ git push origin thinkphp
 ```
 
 - 打开你Fork这个项目的地址，点击与上游合并，等待审核合并指纹。
+
+### 谁在使用FingerprintHub
+- 如果你的开源工具中也使用了`FingerprintHub`，我感到非常的荣幸，欢迎补充列表。
+- [ObserverWard](https://github.com/0x727/ObserverWard_0x727)
+- [nuclei](https://github.com/projectdiscovery/nuclei)
 
 ### 指纹反馈
 
