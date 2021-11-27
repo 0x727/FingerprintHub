@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.repository == '0x727/FingerprintHub'
     steps:
 
       - name: Check out code
