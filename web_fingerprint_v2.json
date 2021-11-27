@@ -10060,20 +10060,6 @@
     "name": "esyndicat"
   },
   {
-    "path": "/version",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "etcdserver",
-      "etcdcluster"
-    ],
-    "priority": 3,
-    "name": "etcd-io"
-  },
-  {
     "path": "/",
     "request_method": "get",
     "request_headers": {},
@@ -10320,6 +10306,20 @@
     ],
     "priority": 3,
     "name": "ewei-plagform"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "ewomail.com",
+      "邮箱"
+    ],
+    "priority": 3,
+    "name": "ewomail"
   },
   {
     "path": "/",
@@ -20805,10 +20805,10 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "<title>MinIO Browser</title>"
+      "href=\"/minio/loader.css\""
     ],
-    "priority": 1,
-    "name": "minio"
+    "priority": 3,
+    "name": "minio-browser"
   },
   {
     "path": "/",
@@ -20818,7 +20818,7 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "href=\"/minio/loader.css\""
+      "<title>MinIO Browser</title>"
     ],
     "priority": 3,
     "name": "minio-browser"
