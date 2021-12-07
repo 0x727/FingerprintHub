@@ -65,14 +65,14 @@ fingerprint:
 
 ```bash
 ➜  ~ ./observer_ward_amd64 --verify 0x727/FingerprintHub/fingerprint/swagger.yaml -t http://httpbin.org
-[ http://httpbin.org/ |["swagger"] | 9593 | 200 | httpbin.org ]
+[ http://httpbin.org |["swagger"] | 9593 | 200 | httpbin.org ]
 Important technology:
 
-+---------------------+---------------+--------+-------------+-------------+----------+
-| url                 | what_web_name | length | status_code | title       | priority |
-+=====================+===============+========+=============+=============+==========+
-| http://httpbin.org/ | swagger       | 9593   | 200         | httpbin.org | 5        |
-+---------------------+---------------+--------+-------------+-------------+----------+
++--------------------+---------+--------+-------------+-------------+----------+
+| url                | name    | length | status_code | title       | priority |
++====================+=========+========+=============+=============+==========+
+| http://httpbin.org | swagger | 9593   | 200         | httpbin.org | 5        |
++--------------------+---------+--------+-------------+-------------+----------+
 ```
 
 ### 提交指纹规则
@@ -124,9 +124,12 @@ git push origin thinkphp
 - 打开你Fork这个项目的地址，点击与上游合并，等待审核合并指纹。
 
 ### 谁在使用FingerprintHub
-- 如果你的开源工具中也使用了`FingerprintHub`，我感到非常的荣幸，欢迎补充列表。
-- [ObserverWard](https://github.com/0x727/ObserverWard_0x727)
-- [nuclei](https://github.com/projectdiscovery/nuclei)
+- 如果你的开源工具中也使用了`FingerprintHub`，我感到非常的荣幸，欢迎补充列表，当项目有破坏性更新时可以及时通知到你。
+
+| [ObserverWard](https://github.com/0x727/ObserverWard_0x727) |
+| ----------------------------------------------------------- |
+| [nuclei](https://github.com/projectdiscovery/nuclei)        |
+| [nemo_go](https://github.com/hanc00l/nemo_go)               |
 
 ### 指纹反馈
 

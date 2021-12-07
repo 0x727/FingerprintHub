@@ -21,3 +21,11 @@ fingerprint:
     keyword:
       - href="http://www.thinkphp.cn">thinkphp</a>
     favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword: []
+    favicon_hash: ["f49c4a4bde1eec6c0b80c2277c76e3db"]
