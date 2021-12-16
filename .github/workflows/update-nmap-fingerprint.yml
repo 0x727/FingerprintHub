@@ -1,9 +1,9 @@
-name: 📝 FingerPrint Update
+name: 📝 Nmap FingerPrint Update
 
 on:
   push:
     paths:
-      - 'fingerprint'
+      - '.github/script/nmap-service-probes'
 
 jobs:
   build:
@@ -22,28 +22,23 @@ jobs:
         with:
           python-version: "3.7.7"
 
-      - name: Update FingerPrint
-        id: update-fingerprint
+      - name: Update Nmap FingerPrint
+        id: update-nmap-fingerprint
         run: |
-          python -m pip install --upgrade pip
-          pip install PyYAML
-          pip install GitPython
-          python .github/script/auto_update.py
-          git clone --depth 100 --branch master https://github.com/projectdiscovery/nuclei-templates
-          python .github/script/tags_to_plugins.py
+          python .github/script/update_nmap_fingerprint.py.py
           find . -path "*.pyc" -delete
           echo "::set-output name=changes::$(git status -s | wc -l)"
 
       - name: Commit files
-        if: steps.update-fingerprint.outputs.changes > 0
+        if: steps.update-nmap-fingerprint.outputs.changes > 0
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Auto Update FingerPrint [$(date)] :robot:" -a
+          git commit -m "Auto Update Nmap FingerPrint [$(date)] :robot:" -a
 
       - name: Push changes
-        if: steps.update-fingerprint.outputs.changes > 0
+        if: steps.update-nmap-fingerprint.outputs.changes > 0
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
