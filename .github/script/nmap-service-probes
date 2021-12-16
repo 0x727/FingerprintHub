@@ -7316,265 +7316,6 @@ match virtualgl m|^VGL\x02\x01$| p/VirtualGL/
 # match jetdirect m|^\0\0\(r\xfe\x1d\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xa0\0\x01\x97\x7c\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0$| d/HP printer/
 
 ##############################NEXT PROBE##############################
-Probe UDP RPCCheck q|\x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0|
-rarity 1
-ports 17,88,111,407,500,517,518,1419,2427,4045,10000,10080,12203,27960,32750-32810,38978
-
-match amanda m|^Amanda ([\d.]+) NAK HANDLE  SEQ 0\nERROR expected \"Amanda\", got \"r\xfe\x1d\x13\"\n| p/Amanda backup service/ v/$1/ o/Unix/
-
-# http://xbtt.sourceforge.net/udp_tracker_protocol.html ("scrape output")
-match bittorrent-udp-tracker m|^\0\0\0\x02....\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0$|s p/BitTorrent UDP tracker/
-match bittorrent-udp-tracker m|^\x03\0\0\0\0\x01\x86\xa0Connection ID missmatch\.\0| p/opentracker UDP tracker/ cpe:/a:dirk_engling:opentracker/
-
-# http://bittorrent.org/beps/bep_0029.html
-match bittorrent-utp m|^r\xfe\x1d\x13\0\0\0\0\0\0\0\0\0\0\0\0\xff\0\x03....$|s p/uTorrent uTP/ o/Windows/ cpe:/a:utorrent:utorrent/ cpe:/o:microsoft:windows/a
-# Seems to be a bug here, with a time_t timestamp (0x4B......, ca. Dec 2009) instead of a microsecond count.
-match bittorrent-utp m|^r\xfe\x1d\x13........\x7f\xff\xff\xff\xff\x02\x02..\0\x01\0\x08\0\0\0\0\0\0\0\0$|s
-
-match brio m|^\0\0\x01\(\x16\x85..$|s p/Brio 8 business intelligence/
-
-match dnastar m|^....\0{7}.,PSH,[\x21-\x7e]{55}\0{800}|s p/Dnastar Lasergene/ cpe:/a:dnastar:lasergene/
-
-match slp-srvreg m|^\x02\x05\0\0\x12\0\0\0\0\0\0\x02\0\x02en\0\x0e$| p/IBM Director SLP Service Registration/ i/slp_srvreg.exe/ cpe:/a:ibm:director/
-
-match radius m|^\x03\xfe\0\x14................$|s p/Juniper Steel-Belted Radius radiusd/
-
-match rpcbind m|^\x72\xFE\x1D\x13\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01|
-match rpcbind m|^\x72\xFE\x1D\x13\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x02|
-# OpenAFS 1.2.10 on Linux 2.4.22
-match kerberos-sec m|^\x04\n\0\0\0\0\0\0\0\0\0\0\x04code = 4: packet version number unknown\0| p/OpenAFS/ cpe:/a:openafs:openafs/
-# talk-server-0.17 (linux), ports 517-518/udp
-match talk m|^\x01\xfe\x05\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0| p/Talk server/
-# Mandrake Linux 9.2, xinetd 2.3.11 chargen
-match chargen m|NOPQRSTUVWXYZ\[\\\]\^_`abcdefghijklm|
-match chargen m|^ !\"#\$%&'\(\)\*\+| p/SunOS chargen/ o/SunOS/ cpe:/o:sun:sunos/a
-
-match isakmp m|^r\xfe\x1d\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xa0\x0b\x10\x05\0\0\0\0\0\0\0\0| p/Openswan ISAKMP/ cpe:/a:openswan:openswan/
-match isakmp m|^r\xfe\x1d\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xa0\) % \0\0\0\0\0\0\0\$\0\0\0\x08\0\0\0\x05| p/StrongSwan ISAKMP/ cpe:/a:strongswan:strongswan/
-
-match jetadmin m|^2;http://[\d.]+:\d+/;[\d.]+;\d+:\d+;\w+,[\d.]+,PLUGIN_LOADED| p/HP Jetadmin/
-
-# http://staff.science.uva.nl/~arnoud/activities/NaoIntro/ConnectLantronix.c
-match lantronix-config m|^\xff$| p/Lantronix DSTni networking chip configuration/
-
-# https://github.com/cobyism/edimax-br-6528n/blob/master/AP/RTL8196C_1200/mp-daemon/UDPserver.c
-match mp-automation m|^r\xfe\x1d\x13 ok| p/Realtek MP Automation daemon/ d/WAP/
-
-match nameserver m|^help\r\n\r\n\xff\xbf\xf8\xb0\xff7\0\x18\0\0\0\x01\0\0\0\0| p/Solaris Internet Name Server/ o/Solaris/ cpe:/o:sun:sunos/a
-
-match ppp m|^\x7e\xff\x7d\x23\xc0!}!#} }8}\"}&} } } } }#}\$\xc2'}%}&Q\x93\xee,}'}\"}\(}\"}\(D~| p/pppd/ v/2.4.5/
-
-# Windows qotd service. Same as the TCP version. It's only in this
-# Probe because this is the first UDP Probe that nmap tries.
-match qotd m=^"(?:My spelling is Wobbly\.|Man can climb to the highest summits,|In Heaven an angel is nobody in particular\.|Assassination is the extreme form of censorship\.|When a stupid man is doing|We have no more right to consume happiness without|We want a few mad people now.|The secret of being miserable is to have leisure to|Here's the rule for bargains:|Oh the nerves, the nerves; the mysteries of this machine called man|A wonderful fact to reflect upon,|It was as true as taxes is\.)= p/Windows qotd/ i/English/ o/Windows/ cpe:/a:microsoft:qotd::::en/ cpe:/o:microsoft:windows/a
-match qotd m=^"(?:Mi ortograf\xeda tiembla\. Es bueno revisarla,|un hombre puede escalar a las m\xe1s altas cumbre|Algo maravilloso a poner de manifiesto:|Cuando un necio hace algo de lo que se aveg\xfcenza,|En el cielo, un \xe1ngel no es nadie en concreto|Traigamos unos cuantos locos ahora\.|Era tan verdad como los impuestos\. Y no|Hay libros cortos que, para entenderlos como se merecen,|Quedarse en lo conocido por miedo a lo desconocido,|La prosperidad hace amistades, y la adversidad las|El uso principal de un PC es confirmar la ley de|Quedarse en lo conocido por miedo a lo desconocido,|Cuando las leyes son injustas, no obligan en el fuero|Magia equivale a cualquier avance en la ciencia\.|Vale mejor consumir vanidades de la vida,)= p/Windows qotd/ i/Spanish/ o/Windows/ cpe:/a:microsoft:qotd::::es/ cpe:/o:microsoft:windows/a
-# Some Italian qotds start with a space instead of a "
-match qotd m=^.(?:Voce dal sen fuggita|Semel in anno licet insanire|Cosa bella e mortal passa e non dura|Quando uno stupido compie qualcosa di cui si vergogna,|Se tu pagare come dici tu,|Fatti non foste a viver come bruti,|Sperare senza far niente e` come)= p/Windows qotd/ i/Italian/ o/Windows/ cpe:/a:microsoft:qotd::::it/ cpe:/o:microsoft:windows/a
-match qotd m=^"(?:Prazos longos sao f\xa0ceis de subscrever\.|Deus, para a felicidade do homem, inventou a f\x82 e o amor\.|Ao vencido, \xa2dio ou compaixao, ao vencedor, as batatas\.|Quem nao sabe que ao p\x82 de cada bandeira p\xa3blica,|Nao te irrites se te pagarem mal um benef\xa1cio; antes cair|A vida, como a antiga Tebas, tem cem portas\.)= p/Windows qotd/ i/Portuguese/ cpe:/a:microsoft:qotd::::pt/
-# The German version doesn't start with "
-match qotd m=^(?:Wer wirklich Autorit\xe4t hat, wird sich nicht scheuen,|Moral ist immer die Zuflucht der Leute,|Beharrlichkeit wird zuweilen mit Eigensinn|Wer den Tag mit Lachen beginnt, hat ihn|Wenn uns keine Ausweg mehr bleibt,|Gesichter sind die Leseb\xfccher des Lebens|Grosse Ereignisse werfen mitunter ihre Schatten|Dichtung ist verpflichtet, sich nach den|Ohne Freihet geht das Leben|Liebe ist wie ein Verkehrsunfall\. Man wird angefahren)= p/Windows qotd/ i/German/ cpe:/a:microsoft:qotd::::de/
-match qotd m=^"(?:Clovek ma tri cesty, jak moudre jednat\. Nejprve premyslenim|Co je vubec hodno toho, aby to bylo vykonano,|Fantazie je dulezitejsi nez vedeni\.|Potize narustaji, cim vice se clovek blizi|Kdo nezna pristav, do ktereho se chce plavit,|Lidske mysleni ztraci smysl,|Nikdo nevi, co muze vykonat,|Nic neprekvapi lidi vice nez zdravy rozum|Zadny cil neni tak vysoky,)= p/Windows qotd/ i/Czech/ o/Windows/ cpe:/a:microsoft:qotd::::cs/ cpe:/o:microsoft:windows/a
-match qotd m=^"(?:L'art de persuader consiste autant|Le peu que je sais, c'est \x85 mon ignorance|Certaines \x83mes vont \x85 l'absolu comme l'eau|Le m\x82rite a sa pudeur comme la chastet|Rien de plus futile, de plus faux, de plus|\xb7 vaincre sans p\x82ril, on triomphe|Le comble de l'orgueil, c'est de se)= p/Windows qotd/ i/French/ o/Windows/ cpe:/a:microsoft:qotd::::fr/ cpe:/o:microsoft:windows/a
-
-match mohaa m|\xff\xff\xff\xff\x01disconnect| p/Medal Of Honor Allied Assault game server/
-match mohaa-gamespy m|^\\final\\\\queryid\\\d+\.1| p/Medal Of Honor Allied Assault gamespy query port/
-match ericssontimestep m|^.{8}\0\0\0\0\0\0\0\0\x0b\x10\x05\0\0\0\0\0\0\0\0\(\0\0\0\x0c\0\0\0\0\x01\0\0\x1e$|s p/Ericsson Timestep Permit VPN/
-match rtp m|^501 0 Endpoint is not ready - Unrecognized command verb\n|
-
-match sauerbraten m|^r\xfe\x1d\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xa0\0\x01\x97\x7c\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x05\x80\x02\x01\0\0\x0c\0\0([\w._ -]+)\0$| p/Sauerbraten game server/ i/server name: $1/
-
-match sentinel-lm m|^r\xfe\x1d\x13\0\0\0\0\0\0\0\x02,PSH,'A{\^QOHpe\]\)\]\\\^cRH>%gNQX$| p/SafeNet Sentinel License Manager/
-
-
-# Timbuktu 8.7.1
-match timbuktu m|^\0#\xd1\x1f$| p/Timbuktu remote desktop/
-
-match utorrent-udp m|^\x72\xfe\x1d\x13\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03....$|s p/uTorrent UDP listener/ o/Windows/ cpe:/a:utorrent:utorrent/ cpe:/o:microsoft:windows/a
-
-# This protocol is defined by miniserv.pl to let Webmin servers to find each
-# other's HTTP port. The response format is
-# $address:$port:$ssl:$hostname
-match webmin m|^0\.0\.0\.0:(\d+):0:?$| i/http on TCP port $1/
-match webmin m|^([^:]*):(\d+):0:?$| i/http on TCP $1:$2/
-match webmin m|^0\.0\.0\.0:(\d+):0:(.+)$| i/http on TCP port $1 ($2)/
-match webmin m|^([^:]*):(\d+):0:(.+)$| i/http on $1:$2 ($3)/
-match webmin m|^0\.0\.0\.0:(\d+):1:?$| i/https on TCP port $1/
-match webmin m|^([^:]*):(\d+):1:?$| i/https on TCP $1:$2/
-match webmin m|^0\.0\.0\.0:(\d+):1:(.+)$| i/https on TCP port $1 ($2)/
-match webmin m|^([^:]*):(\d+):1:(.+)$| i/https on $1:$2 ($3)/
-
-
-# Know the device, but not the service. Port 19541.
-# match unknown m|^\xfer\0\0\0\0\0\x12ERR\(NOT SUPPORTED\)$| p/OKI ES3640e GA printer/ d/printer/
-
-match apple-sasl m|How was your weekend\?;[0-9A-F]*\0| p/Mac OS X Server Password Server/ o/Mac OS X/ cpe:/o:apple:mac_os_x/a
-
-match nat-pmp m|^\0\xfe\0\x01\0\0..$|s p/natpmp daemon/ d/router/
-match nat-pmp m|^\0\0\0\x01...\0$|s p/Apple Time Capsule/ d/router/
-
-match xdmcp m|^\0\x01\0\x05..\0\0\0.(.+)\0.(.+)|s p/XDMCP/ i/willing; status: $2/ o/Unix/ h/$1/
-#DTLS 1.0/1.2 alert (there was no DTLS 1.1)
-
-##############################NEXT PROBE##############################
-Probe UDP DNSVersionBindReq q|\0\x06\x01\0\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03|
-rarity 1
-ports 53,1967,2967
-
-# Matches here have been grouped by product and roughly ordered based on prevalence
-# on the Internet
-# Note when generating match lines - TCP responses have two bytes at the beginning
-# of the response that the UDP doesn't, otherwise they are the same. Account for this
-# in the regex so that a matchline will work for both.
-
-# ISC BIND - RedHat / Fedora
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}(\d[-\w.+]*?)-RedHat-[-\w._+]+.fc(\d+)|s p/ISC BIND/ v/$1/ i/Fedora Core $2/ o/Linux/ cpe:/a:isc:bind:$1/ cpe:/o:fedoraproject:fedora_core:$2/
-# 9.9.3-rpz2+rl.13208.13-P2-RedHat-9.9.3-4.P2.el6
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}(\d[-\w.+]*?)-RedHat-[-\w._+]+.el(\d+)|s p/ISC BIND/ v/$1/ i/RedHat Enterprise Linux $2/ o/Linux/ cpe:/a:isc:bind:$1/ cpe:/o:redhat:enterprise_linux:$2/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}(\d[-\w.+]*?)-RedHat-|s p/ISC BIND/ v/$1/ i/RedHat Linux/ o/Linux/ cpe:/a:isc:bind:$1/ cpe:/o:linux:linux_kernel/a
-
-
-# ISC BIND - Ubuntu
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}(\d[-\w.+]*?)-[Uu]buntu|s p/ISC BIND/ v/$1/ i/Ubuntu Linux/ o/Linux/ cpe:/a:isc:bind:$1/ cpe:/o:linux:linux_kernel/a
-
-# ISC BIND - Debian
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}(\d[-\w.+~]*?)-9\+deb8u[-\w._+~]*?[Dd]ebian|s p/ISC BIND/ v/$1/ i/Debian Linux 8.0 (Jessie)/ o/Linux/ cpe:/a:isc:bind:$1/ cpe:/o:linux:linux_kernel/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}(\d[-\w.+~]*?)-9wheezy\w+-[Dd]ebian|s p/ISC BIND/ v/$1/ i/Debian Linux 7.0 (Wheezy)/ o/Linux/ cpe:/a:isc:bind:$1/ cpe:/o:linux:linux_kernel/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}(\d[-\w.+~]*?)-[Dd]ebian|s p/ISC BIND/ v/$1/ i/Debian Linux/ o/Linux/ cpe:/a:isc:bind:$1/ cpe:/o:linux:linux_kernel/a
-
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}(?:BIND )?(\d[-\w.+~]*?)-9\+deb8u[-\w._+~]*?Raspbian|s p/ISC BIND/ v/$1/ i/Raspbian Linux 8.0 (Jessie based)/ o/Linux/ cpe:/a:isc:bind:$1/ cpe:/o:linux:linux_kernel/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}(?:BIND )?(\d[-\w.+~]*?)-Raspbian|s p/ISC BIND/ v/$1/ i/Raspbian Linux/ o/Linux/ cpe:/a:isc:bind:$1/ cpe:/o:linux:linux_kernel/a
-
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}([89][.\d]+-APPLE(?:-[SPW]\d+)?)|s p/ISC BIND/ v/$1/ i/Mac OS X/ o/Mac OS X/ cpe:/a:isc:bind/ cpe:/o:apple:mac_os_x/a
-
-# ISC BIND - Release numbers w/o OS info - may be dragons here
-# rpz = response policy zone patch     rl = rate liming patch
-# 9.8.4-rpz2+rl005.12-P1   9.6-ESV-R11-P2  9.5.0b2  8.3.7-REL 9.4.2-P2-W2
-match domain m=\x07version\x04bind\0\0\x10\0\x03(?:\xc0\x0c|\x07VERSION\x04BIND\0)\0\x10\0\x03.{7}(?:BIND )?([89][.\d]+(?:[ab]\d+)?(?:rc\d)?(?:-REL)?(?:-rpz[\d.]+)?(?:[-+]rl[\d.]+)?(?:-ESV(?:-R\d+)?)?(?:-[SPW][W\d.-]+)?(?:-NOESW)?)(?:\0|\xc0|$)=s p/ISC BIND/ v/$1/ cpe:/a:isc:bind:$1/
-
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}Served by Bind - www\.isc\.org/software/bind|s p/ISC BIND/ cpe:/a:isc:bind/
-# Likely ISC bind w/o version string but w/ Responsible authority mailbox set to "hostmaster.version.bind"
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x06\0\x03.{6}\xc0\x0c\nhostmaster\xc0\x0c|s p/ISC BIND/ cpe:/a:isc:bind/
-
-# dnsmasq
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}dnsmasq-([-\w. +]+)$|s p/dnsmasq/ v/$1/ cpe:/a:thekelleys:dnsmasq:$1/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}dnsmasq-ubnt/([\w.-]+)|s p/dnsmasq/ v/$1/ i/Ubiquiti build/ d/WAP/ cpe:/a:thekelleys:dnsmasq:$1/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\0\0\0\x08\x07dnsmasq| p/dnsmasq/ cpe:/a:thekelleys:dnsmasq/
-
-# Microsoft DNS - assumes hosts running DNS service are the server version of a given kernel
-# Microsoft has 3 configuration states that govern how the version is reported:
-# 0 = Off, no version response, 1 = Full version (6.3.9600 and often build), 2 = minimal (6.3)
-# Ref:  dnscmd /config /EnableVersionQuery <value> - https://msdn.microsoft.com/en-us/library/cc422472.aspx
-
-# match full response
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x01.{7}Microsoft DNS (10\.0\..+)|s p/Microsoft DNS/ v/$1/ i/Windows Server 2016/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2016/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x01.{7}Microsoft DNS (6\.3\.9600.+)|s p/Microsoft DNS/ v/$1/ i/Windows Server 2012 R2/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2012:r2/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x01.{7}Microsoft DNS (6\.2\.9200.+)|s p/Microsoft DNS/ v/$1/ i/Windows Server 2012/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2012/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x01.{7}Microsoft DNS (6\.1\.7601.+)|s p/Microsoft DNS/ v/$1/ i/Windows Server 2008 R2 SP1/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2008:r2:sp1/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x01.{7}Microsoft DNS (6\.1\.7600.+)|s p/Microsoft DNS/ v/$1/ i/Windows Server 2008 R2/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2008:r2/a
-# Windows 2008 and earlier CAN respond with answer class \x00\x03  = 3 (CHAOS), instead of \x00\x01 = 1 (Internet) like more modern versions do
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0[\x01\x03].{7}Microsoft DNS (6\.0\.6002.+)|s p/Microsoft DNS/ v/$1/ i/Windows Server 2008 SP2/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2008::sp2/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0[\x01\x03].{7}Microsoft DNS (6\.0\.6001.+)|s p/Microsoft DNS/ v/$1/ i/Windows Server 2008 SP1/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2008::sp1/a
-
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0[\x01\x03].{7}Microsoft DNS (5\.2\.3790.+)|s p/Microsoft DNS/ v/$1/ i/Windows Server 2003 SP2/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2003::sp2/a
-
-# Match Windows minimal response - dnscmd /config /EnableVersionQuery 2
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x01.{7}Microsoft DNS (10\.0$)|s p/Microsoft DNS/ v/$1/ i/Windows Server 2016/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2016/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x01.{7}Microsoft DNS (6\.3)$|s p/Microsoft DNS/ v/$1/ i/Windows Server 2012 R2/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2012:r2/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x01.{7}Microsoft DNS (6\.2)$|s p/Microsoft DNS/ v/$1/ i/Windows Server 2012/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2012/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x01.{7}Microsoft DNS (6\.1)$|s p/Microsoft DNS/ v/$1/ i/Windows Server 2008 R2/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2008:r2/a
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0[\x01\x03].{7}Microsoft DNS (6\.0)$|s p/Microsoft DNS/ v/$1/ i/Windows Server 2008/ o/Windows/ cpe:/a:microsoft:dns/ cpe:/o:microsoft:windows_server_2008/a
-# Generic Windows DNS match
-
-
-# PowerDNS
-match domain m|\x07version\x04bind\0\0\x10\0[\x01\x03]\xc0\x0c\0\x10\0[\x01\x03].{7}PowerDNS.Authoritative.Server.(\d[\w.-]+)| p/PowerDNS Authoritative Server/ v/$1/ cpe:/a:powerdns:authoritative:$1/
-match domain m|\x07version\x04bind\0\0\x10\0[\x01\x03]\xc0\x0c\0\x10\0[\x01\x03].{7}PowerDNS Recursor (\d[\w.-]+)|s p/PowerDNS Recursor/ v/$1/ cpe:/a:powerdns:recursor:$1/
-match domain m|\x07version\x04bind\0\0\x10\0[\x01\x03]\xc0\x0c\0\x10\0[\x01\x03].{7}PowerDNS Recursor$|s p/PowerDNS Recursor/ cpe:/a:powerdns:recursor/
-match domain m|\x07version\x04bind\0\0\x10\0[\x01\x03]\xc0\x0c\0\x10\0[\x01\x03].{7}Served by PowerDNS - https?://www\.powerdns\.com/?|s p/PowerDNS/ v/3.3 or later/ cpe:/a:powerdns:powerdns/
-match domain m|\x07version\x04bind\0\0\x10\0[\x01\x03]\xc0\x0c\0\x10\0[\x01\x03].{7}Served by POWERDNS (\d[-.\w]+)|s p/PowerDNS/ v/$1/ cpe:/a:powerdns:powerdns:$1/
-
-# Nonimum
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}Nominum Vantio (\w+) ([\d\.]+)$|s p/Nominum Vantio $1/ v/$2/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}Nominum Vantio ([\d\.]+)|s p/Nominum Vantio/ v/$1/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}Nominum ANS(?:Premier)? ([\d\.]+)|s p/Nominum Vantio AuthServ/ v/$1/
-
-# NLNet Labs products - unbound / nsd
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}unbound ([\w.-]+)$| p/Unbound/ v/$1/ cpe:/a:nlnetlabs:unbound:$1/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}unbound$|i p/Unbound/ cpe:/a:nlnetlabs:unbound/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}NSD ([-\w.]+)|s p/NLnet Labs NSD/ v/$1/ cpe:/a:nlnetlabs:nsd:$1/
-
-# UltraDNS
-# Unable to locate cpe info for Neustar UltraDNS
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}UltraDNS Resolver|s p/UltraDNS Resolver/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\x07VERSION\x04BIND\0\0\x10\0\x03.{7}UltraDNS Resolver|s p/UltraDNS Resolver/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}UltraDNS TLD Platform|s p/UltraDNS Resolver/
-
-# Misc
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}ZyWALL DNS|s p/Zyxel ZyWALL dnsd/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}DNSServer\xc0\x0c|s p/Synology DNS Server/ cpe:/a:synology:dns/ cpe:/h:synology/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}Array SmartDNS\xc0|s p/Array SmartDNS/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}DraytekDNS-v([\d\.]+)|s p/Draytek DNS/ v/$1/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}ALU DNS ([\d\.]+) Build (\d+)|s p/Draytek DNS/ v/$1 build $2/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}gdnsd$|s p/Brandon Black gdnsd/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}Knot DNS ([\d.]+(?:-dev)?)|s p/cz.nic Knot DNS/ v/$1/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}rbldnsd (\d[\w.\/-]+) |s p/Michael Tokarev rbldnsd/ v/$1/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}djbdns[\s-](\d.\d+)|s p/D J Bernstein djbdns/ v/$1/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}djbdns|i p/D J Bernstein djbdns/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}Atlas Anchor ([\d\.]+)|s p/RIPE Atlas Anchor/ v/$1/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}Incognito DNS Commander ([\d.]+) \((built \w{3} \d+ \d{4})\)|s p/Incognito DNS Commander/ v/$1/ i/$2/
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}Incognito DNS Service ([\d.]+) \((built \w{3} \d+ \d{4})\)|s p/Incognito DNS Service/ v/$1/ i/$2/
-
-match domain m|\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}Hi:[\w\.=: ]+\d{4}$| p/OzymanDNS DNS tunnel/
-
-# *Probably* Check Point's Meta IP - ~8 seen during Internet survey
-match domain m|n\x04bind\0\0\x10\0\x03\x07VERSION\x04BIND\0\0\x10\0\x03.{7}Meta IP DNS - BIND V([\d.]+)-REL \(Build (\d+)\)| p/Check Point Meta IP ISC BIND/ v/$1 build $2/ cpe:/a:isc:bind:$1/
-
-
-# Not seen in Project Sonar version.bind survey 2017.08.18 and not tested
-# during 2017.08.19 DNS version.bind fingerprint/matchline review
-match domain m|\x07version\x04bind\0\0\x10\0\x03\x07VERSION\x04BIND\0\0\x10\0\x03.{7}Peticion no permitida/Query not allowed| p/ZyXEL Prestige 643 dns cache/ d/switch/
-match domain m|^\0\x06\x81\x80\0\x01\0\x01\0\0\0\0\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x01\0\x01\0\0\0\x05\0\x04\xa3\xc0\x08\x06$| p/ArubaOS 3.3 named/ o/ArubaOS/ cpe:/o:arubanetworks:arubaos:3.3/
-
-# These may be too generic, but unique so far unless corrected.
-match domain m|^(?:..)?\0\x06\x81\x85\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03| p/Unbound/ cpe:/a:nlnetlabs:unbound/
-match domain m|^(?:..)?\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03| p/Simple DNS Plus/ o/Windows/ cpe:/a:jh_software:simple_dns_plus/ cpe:/o:microsoft:windows/a
-match domain m|^(?:..)?\0\x06\x81\x84\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03| p/Cloudflare public DNS/
-match domain m|^(?:..)?\0\x06\x81\x84\0\x01\0\0\0\0\0\x01\x07version\x04bind\0\0\x10\0\x03\0\0\)\x06\0\0\0\0\0\0\0| p/dnscrypt-proxy/ cpe:/a:dnscrypt:dnscrypt-proxy/
-match domain m|^(?:..)?\0\x06\x85\x02\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03| p/PowerDNS/ cpe:/a:powerdns:powerdns/
-match domain m|^(?:..)?\0\x06\x81\x05\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03| p/NLnet Labs NSD/ cpe:/a:nlnetlabs:nsd/
-match domain m|^(?:..)?\0\x06\x81\x83\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03| p/dnsmasq/ cpe:/a:thekelleys:dnsmasq/
-
-# Softmatch section
-
-# the \x0_, \x8_, \x9_ below accounts for recursion / authenticated data flags
-# These echo the question back:
-# End of domain matchlines
-
-# http://packetstormsecurity.com/files/91243/D-Link-DAP-1160-Unauthenticated-Remote-Configuration.html
-match dcc m|^(?:..)?\0\x06\xf5\xff\0\0\x01\0| p/D-Link Click 'n Connect/ d/broadband router/
-
-
-# INVALID-MAJOR-VERSION notification
-
-match kerberos-sec m=^~[\x60-\x62]\x30[\x5e-\x60]\xa0\x03\x02\x01\x05\xa1\x03\x02\x01\x1e\xa4\x11\x18\x0f(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)Z\xa5[\x03-\x05]\x02(?:\x03...|\x02..|\x01.)\xa6\x03\x02\x01\x3c\xa9\x04\x1b\x02NM\xaa\x170\x15\xa0\x03\x02\x01\0\xa1\x0e0\x0c\x1b\x06krbtgt\x1b\x02NM\xab\x16\x1b\x14No client in request=s p/MIT Kerberos/ i/server time: $1-$2-$3 $4:$5:$6Z/ cpe:/a:mit:kerberos/
-
-# Symantec Antivirus (rtvscan.exe)
-match symantec-av m|^\0\x06\x01\x01\0\x10..........$|s p/Symantec rtvscan antivirus/ cpe:/a:symantec:antivirus/
-
-match tunnel-test m|^\0\x06\x01\0\0\x02\0\0\0\0\0\0$| p/Check Point tunnel_test/
-
-match unreal m|^.[\x40\xc0].[\x20\x23\x32\x38].[\x40\xc0].[\x20\x23\x32\x38]|s p/Unreal Tournament 2004 game server/
-
-match cisco-sla-responder m|^..\0\x08\0\x03[\0\r][\0\n]$|s p/Cisco SLA Responder/ d/router/ o/IOS/ cpe:/o:cisco:ios/a
-
-match statd m|^r\xfe\x1d\x13\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01$| p/NFS statd/
-
-#DTLS 1.0/1.2 alert (there was no DTLS 1.1)
-
-match chargen m|^ !\"#\$%&'\(\)\*\+,-\./0123456789:;<=>\?@ABCDEFGHIJKLMNOPQRSTUVWXYZ\[\\\]\^_`abcdefg\r\n!\"#\$%&'\(\)\*\+,-\./0123456789| p/Windows Vista chargen/ o/Windows Vista/ cpe:/o:microsoft:windows_vista/a
-
-
-##############################NEXT PROBE##############################
 Probe TCP DNSVersionBindReqTCP q|\0\x1E\0\x06\x01\0\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03|
 rarity 3
 ports 53,135,512-514,543,544,628,1029,13783,2068,2105,2967,5000,5323,5520,5530,5555,5556,6543,7000,7008
@@ -7722,51 +7463,6 @@ match warcraft m|^\0\0\x09$| p/World of Warcraft game server/
 
 match xtunnels m|^\0\x03\x04\0\x04$| p/XTunnels proxy server/
 
-# Alert (Level: Fatal, Description: Unexpected Message|Protocol Version|Handshake Failure)
-
-# DNS Server status request: http://www.rfc-editor.org/rfc/rfc1035.txt
-##############################NEXT PROBE##############################
-Probe UDP DNSStatusRequest q|\0\0\x10\0\0\0\0\0\0\0\0\0|
-rarity 5
-ports 53,69,135,1761
-
-# Note when generating match lines - TCP DNS responses have two bytes at the beginning
-# of the response that the UDP doesn't, otherwise they are the same. Account for this
-# in the regex so that a matchline will work for both.
-
-# Matches weird txids in bytes 0,1 (UDP) or 2,3 (TCP), we sent txid 0
-# the \x0_, \x8_, \x9_ below accounts for recursion / authenticated data flags
-
-# Responds with an A record for itself?
-match domain m|^.{4,6}\x84\0\0\x01\0\x01\0\0\0\0[^\0]+\0\0\x01\0\x01[^\0]+\0\0\x01\0\x01\0\0\0\x1e\0\x04....$|s p/Incapsula WAF DNS/
-
-match iodine m|^\x80\xa7\x84\0\0\x01\0\x01\0\0\0\0.*\0\0\x0a\0\x01\xc0\x0c\0\n\0\x01\0\0\0\0\0\x05BADIP$| p/iodine IP-over-DNS tunnel/ cpe:/a:kryo:iodine/
-
-
-# This one below came from 2 tested Windows XP boxes
-match msrpc m|^\x04\x06\0\0\x10\0\0\0\0\0\0\0|
-
-match netprobe m|^\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0$| p/Mega System Technologies NetProbe Lite environmental sensor/ d/specialized/
-
-match tftp m|^\0\x05\0\x02\0The IP address is not in the range of allowable addresses\.\0| p/SolarWinds tftpd/ i/IP disallowed/ o/Windows/ cpe:/a:solarwinds:tftp_server/ cpe:/o:microsoft:windows/a
-match tftp m|^\0\x05\0\0Invalid TFTP Opcode| p/Cisco tftpd/ cpe:/a:cisco:tftp_server/
-match tftp m|^\0\x05\0\x04Illegal TFTP operation\0| p/Plan 9 tftpd/ o/Plan 9/ cpe:/o:belllabs:plan_9/a
-match tftp m|^\0\x05\0\x04Error: Illegal TFTP Operation\0\0\0\0\0| p/Zoom X5 ADSL modem tftpd/ d/broadband router/ cpe:/h:zoom:x5/a
-match tftp m|^\0\x05\0\x04Illegal operation\0$| p/Cisco router tftpd/ d/router/ o/IOS/ cpe:/a:cisco:tftp_server/ cpe:/o:cisco:ios/a
-match tftp m|^\0\x05\0\x04Illegal operation error\.\0$| p/Microsoft Windows Deployment Services tftpd/ o/Windows/ cpe:/o:microsoft:windows/
-# version 10.9.0.25
-match tftp m|^\0\x05\0\x04Unknown operatation code: 0 received from [\d.]+:\d+\0| p/SolarWinds Free tftpd/ cpe:/a:solarwinds:tftp_server/
-# Brother MFC-9340CDW
-match tftp m|^\0\x05\0\x04illegal \(unrecognized\) tftp operation\0$| p/Brother printer tftpd/ d/printer/
-# HP IMC 7.1
-match tftp m|^\0\x05\0\0Not defined, see error message\(if any\)\.\0| p/HP Intelligent Management Center tftpd/ cpe:/a:hp:intelligent_management_center/
-match tftp m|^\0\x05\0\x05Unknown transfer ID\0| p/TFTP Server SP/ o/Windows/ cpe:/a:tftp:tftp_server_sp/ cpe:/o:microsoft:windows/a
-
-# TFTP error
-
-match landesk-rc m|^\0\0\0\0USER\x01\0\x10\0\x08\0:\xd0\x08\0:\xd0\x01\x01\.\0O\0\x03\0T\0\xff\xff\0\0\0\xfd\0\0\0\0\0\0\x02\0\0\0LANDeskWorkgroup Manager ver ([\d.]+)\0| p/LANDesk Workgroup Manager/ v/$1/ o/Windows/ cpe:/o:microsoft:windows/a
-
-
 # DNS Server status request: http://www.crynwr.com/crynwr/rfc1035/rfc1035.html
 ##############################NEXT PROBE##############################
 Probe TCP DNSStatusRequestTCP q|\0\x0C\0\0\x10\0\0\0\0\0\0\0\0\0|
@@ -7796,135 +7492,6 @@ match wow m|^\0\0\t.{32}\x01.*?\0\x10..\0\0\0\0......([^\0]+)\x00([\d.]{7,15}:\d
 
 # Know the device but not the service.
 # match unknown m|^\0\0\0\0\0\x03\0\x80\x01$| p/Weintek MT8000 touch screen/ d/media device/
-
-##############################NEXT PROBE##############################
-Probe UDP NBTStat q|\x80\xf0\0\x10\0\x01\0\0\0\0\0\0\x20\x43\x4bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0\x21\0\x01|
-rarity 4
-ports 137
-
-# NBTStat queries use DNS query packet format and so will trigger responses from DNS services
-# the \x0_, \x8_, \x9_ below accounts for recursion / authenticated data flags
-
-match domain m|^\x80\xf0\x81\x83\0\x01\0\0\0\0\0\0 ckaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\0\0!\0\x01| p/Mikrotik DNS/ d/router/
-
-# NBT Response starts with a header:
-# The following fields are each 2 bytes: transaction ID; Flags; question count; answer count; name service count; additional record count
-# Next comes 34 bytes NUL-terminaed name
-# then comes 2 byte fields: question type; question clss
-# 4 byte TTL
-# 2 byte rdata length
-# 1 byte number of names
-### -- End of header
-# Next comes the given number of nbnames - each are a 15 byte name (space padded) followed by a one byte service type, and then 16 BIT flags
-### -- End of name table - finally comes the footer:
-# 48 - Adapter address (eg MAC addy)
-# 8 bit fields: major version; minor version
-# 16 bit fields: duration; frmps received; frmps transmitted; iframe receive errors; transmit aborts
-# 32 bit fields: trasnmitted; received
-# The remaining fields are all 16-bits: iframe transmit errors; number of receive buffers; tl_timeouts; tl_timeouts; free ncbs; ncbs;
-#                                       max_ncbs; number of transmit buffers; max datagram; pending sessions; max sessions; packet_sessions
-
-# I'm not convinced that these next 4 work on a very wide variety of
-# machines.  I think most of the real matching comes in the next block.
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...(\w{1,15}) *\0\x04\0(\w{1,15}) *\0\x84\0\w{1,15} *\x03\x04\0\w{1,15} *\x04\0\w{1,15} *\x1e\x84\0\w{1,15} *\x1d\x04\0\x01\x02__MSBROWSE__\x02\x01\x84\0(\w{1,15}) *\x03|s p/Microsoft Windows XP netbios-ssn/ i/workgroup: $2 user: $3/ o/Windows XP/ h/$1/ cpe:/o:microsoft:windows_xp/
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...(\w{1,15}) *\0\x04\0(\w{1,15}) *\0\x84\0\w{1,15} *\x03\x04\0\w{1,15} *\x04\0\w{1,15} *\x1e\x84\0\w{1,15} *\x1d\x04\0\x01\x02__MSBROWSE__\x02\x01\x84\0\0|s p/Microsoft Windows XP netbios-ssn/ i/workgroup: $2/ o/Windows XP/ h/$1/ cpe:/o:microsoft:windows_xp/
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...(\w{1,15}) *\0\x04\0(\w{1,15}) *\0\x84\0\w{1,15} *\x03\x04\0\w{1,15} *\x04\0(\w{1,15}) *\x03\x04\0\w{1,15} *\x1e\x84\0|s p/Microsoft Windows XP netbios-ssn/ i/workgroup: $2 user: $3/ o/Windows XP/ h/$1/ cpe:/o:microsoft:windows_xp/
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...(\w{1,15}) *\0\x04\0(\w{1,15}) *\0\x84\0\w{1,15} *\x03\x04\0\w{1,15} *\x04\0\w{1,15} *\x1e\x84\0|s p/Microsoft Windows XP netbios-ssn/ i/workgroup: $2/ o/Windows XP/ h/$1/ cpe:/o:microsoft:windows_xp/
-
-# It would be really nice if we could get username and/or OS
-# information from this.  But it is quite hard to parse out the proper
-# information unambiguously, especially with just regular expressions.
-# But it certainly would be nice to get more info:
-#
-# nbtstat
-#
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0\0..([\w\-]{1,15}) *\0D\0.*\0([\w\-]{1,15}) *\0\xc4\0|s p/Microsoft Windows netbios-ssn/ i/workgroup: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows/a
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0\0..([\w\-]{1,15}) *\0D\0([\w\-]{1,15}) *\0\xc4\0|s p/Microsoft Windows netbios-ssn/ i/workgroup: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows/a
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0\0...*\0([\w\-]{1,15}) *\0D\0.*\0([\w\-]{1,15}) *\0\xc4\0|s p/Microsoft Windows netbios-ssn/ i/workgroup: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows/a
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0\0...*\0([\w\-]{1,15}) *\0D\0([\w\-]{1,15}) *\0\xc4\0|s p/Microsoft Windows netbios-ssn/ i/workgroup: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows/a
-
-# Samba
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]{1,15})[\s]{0,14}\x20\x04\0.*?([\w\-]{1,15})[\s]{0,14}\0\x84\0\0\0\0\0\0\0|s p/Samba nmbd netbios-ns/ i/workgroup: $2/ h/$1/ cpe:/a:samba:samba/
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]{1,15})[\s]{0,14}\0\x04\0.*?([\w\-]{1,15})[\s]{0,14}\x1e\x84\0\0\0\0\0\0\0|s p/Samba nmbd netbios-ns/ i/workgroup: $2/ h/$1/ cpe:/a:samba:samba/
-
-# The following lines contain very similar matches but allow for variations in ordering of Workstation (\0\x04\0) and Workgroup (\0\x84\0)
-# Active Directory Controllers - service \x1c
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]{1,15})[\s]{0,14}\0\x04\0.*?[\w\-]{1,15}[\s]{0,14}\0\x84\0.*?([\w\-]{1,15})[\s]{0,14}\x1c\x84\0|s p/Microsoft Windows netbios-ns/ i/Domain controller: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows/a
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...[\w\-]{1,15}[\s]{0,14}\0\x84\0.*?([\w\-]{1,15})[\s]{0,14}\0\x04\0.*?([\w\-]{1,15})[\s]{0,14}\x1c\x84\0|s p/Microsoft Windows netbios-ns/ i/Domain controller: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows/a
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...[\w\-]{1,15}[\s]{0,14}\0\xc4\0.*?([\w\-]{1,15})[\s]{0,14}\0D\0.*?([\w\-]{1,15})[\s]{0,14}\x1c\xc4\0|s p/Microsoft Windows 2012 R2 netbios-ns/ i/Domain controller: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows_server_2012:r2/a
-
-# Member servers, workgroup, etc
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]{1,15})[\s]{0,14}\0\x04\0.*?([\w\-]{1,15})[\s]{0,14}\0\x84\0|s p/Microsoft Windows netbios-ns/ i/workgroup: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows/a
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]{1,15})[\s]{0,14}\0\x84\0.*?([\w\-]{1,15})[\s]{0,14}\0\x04\0|s p/Microsoft Windows netbios-ns/ i/workgroup: $1/ o/Windows/ h/$2/ cpe:/o:microsoft:windows/a
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]{1,15})[\s]{0,14}\x20\x04\0.*?([\w\-]{1,15})[\s]{0,14}\x1e\x84\0|s p/Microsoft Windows 10 netbios-ns/ i/workgroup: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows_10/
-
-# The following allow more flexible ordering of Workstation (\0\x04\0) and Workgroup (\0\x84\0) and the number of other NetBIOS services between
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]{1,15})[\s]{0,14}.*\0([\w\-]{1,15})[\s]{0,14}\0\x84\0|s p/Microsoft Windows or Samba netbios-ns/ i/workgroup: $2/ h/$1/
-
-# Apple seems to just include the Workstation service, with the permanent flag. Second matchline accounts for MAC address included in packet
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0\0A\x01([\w\-]{1,15})[\s]{0,14}\0d\0\0\0\0\0\0\0\0\0| p/Apple Mac OS X netbios-ns/ o/Mac OS X/ h/$1/ cpe:/o:apple:mac_os_x/a
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0\0A\x01([\w\-]{1,15})[\s]{0,14}\0d\0[^\0]{6}\0\0\0\0\0\0\0\0\0| p/Apple Mac OS X netbios-ns/ o/Mac OS X/ h/$1/ cpe:/o:apple:mac_os_x/a
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0\0A\x01([\w\-]{1,15})[\s]{0,14}\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0| p/Apple Mac OS X netbios-ns/ o/Mac OS X/ h/$1/ cpe:/o:apple:mac_os_x/a
-
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]{1,15})[\s]{0,14}\0d\0.*\0([\w\-]{1,15})[\s]{0,14}\0\xe4\0|s p/Samba nmbd netbios-ns/ i/workgroup: $2/ h/$1/ cpe:/a:samba:samba/
-
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0\0/\x00......\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0|s p/Microsoft Windows Mobile netbios-ns/ o/Windows/ cpe:/o:microsoft:windows/a
-
-match netbios-ns m|^\x80\xf0\x85\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]{1,15}).*\04\0([\w\-]{1,15}) *\x1e\x84\0|s p/Novell NetWare netbios-ns/ i/workgroup: $2/ o/NetWare/ h/$1/ cpe:/o:novell:netware/a
-
-
-#
-# Samba has a version too
-# nmbd version 2.2.7 on Linux 2.4.20
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]{1,15}).*\0([\w\-]{1,15}) *|s p/Samba nmbd netbios-ns/ i/workgroup: $2/ h/$1/ cpe:/a:samba:samba/
-
-# From an acer PDA
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...\0\x80H'y\x86\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0| p/WinCE netbios-ns/ o/Windows CE/ cpe:/o:microsoft:windows_ce/a
-
-# From a mikrotik router
-match netbios-ns m|^\x80\xf0\x85\x80\0\x01\0\0\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...\d+\.\d+ \0D\0\0\0| p/MikroTik router netbios-ns/ d/router/
-
-match netbios-ns m|^\x80\xf0\x84\x00\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...\x01\x02__MSBROWSE__\x02\x01\x84\0(MACBOOKPRO-[0-9A-F]{4})\0.*\0([\w._ -]+)\x1d|s p/Apple Mac OS X netbios-ns/ i/workgroup: $2/ o/Mac OS X/ h/$1/ cpe:/o:apple:mac_os_x/
-
-match netbios-ns m|^\x80\xf0\x85\x80\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\0\0\0...([\w\-]+) *\0\x04\0|s p/Xerox WorkCentre netbios-ns/ d/printer/ h/$1/
-# Brother MFC-9340CDW
-match netbios-ns m|^\x80\xf0\x84\0\0\0\0\x01\0\0\0\0 CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01\0\x04\x93\xe0...([\w-]+)\0D\0......\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0|s p/Brother printer netbios-ns/ d/printer/ h/$1/
-
-
-
-match ntp m|^\x04\x01\0\0\0\0\0\0\0\0\0\0LOCL....\0\0\0\0AAAAA\0\0!....\0\0\0\0....\0\0\0\0| p/Actiontec ntpd/ d/broadband router/
-
-# Apparently used on OS X: http://support.apple.com/kb/ts1629
-match osu-nms m|^\x08\x02\0\x03\x03\x11\0\0\x03\x03\x12\0\0\x03\x03\x13\0\0\x03\x03\x14\0\0\x06\x03\x15\0\0\0\0\0\x06\x03\x16\0\0\0\0\0\x03\x03\x18\0\0\x04\x03\x19\0\0\0\x06\x03!\0\0\0\0\0\x06\x03\"\0\0\0\0\0\x06\x03#\0\0\0\0\0\x06\x03\$\0\0\0\0\0\x06\x03%\0\0\0\0\0\x06\x03&\0\0\0\0$| p/OSU Network Monitoring System/
-
-##############################NEXT PROBE##############################
-Probe UDP Help q|help\r\n\r\n|
-rarity 3
-ports 7,13,37,42
-match chargen m|@ABCDEFGHIJKLMNOPQRSTUVWXYZ|
-match echo m|^help\r\n\r\n$|
-# Solaris 8, 9
-match daytime m=^[A-Z][a-z]{2} [A-Z][a-z]{2} +\d{1,2} +\d\d:\d\d:\d\d (?:19|20)\d\d\n\r$= p/Sun Solaris daytime/ o/Solaris/ cpe:/o:sun:sunos/a
-# Mandrake Linux 9.2, xinetd daytime
-match daytime m|^[0-3]\d [A-Z][A-Z][A-Z] 20\d\d \d\d:\d\d:\d\d \S+\r\n|
-# Windows small services daytime
-match daytime m|^\d{1,2}:\d\d:\d\d [AP]M \d{1,2}/\d\d/\d{4}\n$| p/Windows small service daytime/ o/Windows/ cpe:/o:microsoft:windows/a
-match daytime m|^\d{1,2}:\d\d:\d\d \d{1,2}/\d\d/\d{4}\n$| p/Windows daytime/ o/Windows/ cpe:/o:microsoft:windows/a
-match daytime m|^\d\d:\d\d:\d\d \d\d.\d\d.20\d\d\n$| p/Microsoft Windows International daytime/ o/Windows/ cpe:/o:microsoft:windows/a
-match daytime m|^\w\w\w \w\w\w \d\d \d\d:\d\d:\d\d \d\d\d\d\r\n$| p/AIX daytime/ o/AIX/ cpe:/o:ibm:aix/a
-match daytime m|^(\w\w\w \w\w\w \d\d \d\d:\d\d:\d\d \w+ \d\d\d\d)\r\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \0\0\0\x7f\xff\xec0\0\0\0\0\0\0\0\0\0\0\0\0\x04\x01Q\xa0\0\0\0\0\0\x01\0\x15\x90-d\0\0\0\0\0\0\0\0\x1c\0\0\xff\xfe\xff\xff\xff\xff\xc5:H\0\0\x16\xc3\xd8\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xff\xff\xac\x10\x0b\x05\0\xff\0\x06T\xa3\0\0 !\"#\$%&'\(\)\*\+,-\./0123456789:;<=>\?@ABCDEFGHIJKLMNO\xd3\$\x12\xccTUVWOy\x94L\0\r\xd1z\0\0\0\0\x04\x02\x1b`\0\0\0\0\x04\x02\x1b`| i/time: $1/
-
-match drweb m|^\x7csrv_realm=([^\x7c]+)\x7csrv_Uuid=[-\da-f]{36}\x7cdws9=\d+\x7cMajorVer=(\d+)\x7cMinorVer=(\d+)\x7c| p/DrWeb/ v/$2.$3/ i/realm: $1/ cpe:/a:drweb:drweb:$2.$3/
-# TIME
-match time m|^[\xd5-\xef]...$|s i/32 bits/
-match time m|^[\xd5-\xef]....\0\0\0$|s i/64 bits/
-# Solaris Internet Name Server (42/udp), see ien116.txt
-match nameserver m|^help\r\n\r\n\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01| p/Solaris Internet Name Server/ i/IEN 116/ o/Solaris/ cpe:/o:sun:sunos/a
-match nameserver m|^\x03\x03\x02$| p/Solaris Internet Name Server/ i/IEN 116/ o/Solaris/ cpe:/o:sun:sunos/a
-match nameserver m|^\0\x06\x01\0\0\x01\0\0\x03\x03\x02$| p/Solaris Internet Name Server/ i/IEN 116/ o/Solaris/ cpe:/o:sun:sunos/a
-
-match valve-steam m|^\xff\xff\xff\xff!L_\xa0.{28}\0\0\0\x08\x06\x10\x06\x18\x9c\xd3\x01\".([\w.-]+)0\x028| p/Valve Steam In-Home Streaming service/ h/$1/
-match valve-steam m|^\xff\xff\xff\xff!L_\xa0| p/Valve Steam In-Home Streaming service/
 
 ##############################NEXT PROBE##############################
 Probe TCP Hello q|EHLO\r\n|
@@ -9173,16 +8740,6 @@ match ldap m|^0\x84\0\0..\x02\x01.*dsServiceName1\x84\0\0\0.\x04.CN=NTDS\x20Sett
 match ldap m|^0\x84\0\0..\x02\x01.*dsServiceName1\x84\0\0\0.\x04.CN=NTDS\x20Settings,CN=([^,]+),CN=Servers,CN=([^,]+),CN=Sites,CN=Configuration,DC=([^,]+),DC=([^,]+),DC=([^,]+)0\x84\0|s p/Microsoft Windows Active Directory LDAP/ i/Domain: $3.$4.$5, Site: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows/a
 match ldap m|^0\x82\x05.\x02\x01.*vmwPlatformServicesControllerVersion1\x07\x04\x05([\d.]+)0.\x04.*\nserverName1.\x04.cn=([^,.]+)|s p/VMware vCenter or PSC LDAP/ v/PSCv $1/ h/$2/ cpe:/a:vmware:server/
 
-# Ldap searchRequest for objectClass = * over TCP - Active Directory specific
-##############################NEXT PROBE##############################
-Probe UDP LDAPSearchReqUDP q|\x30\x84\x00\x00\x00\x2d\x02\x01\x07\x63\x84\x00\x00\x00\x24\x04\x00\x0a\x01\x00\x0a\x01\x00\x02\x01\x00\x02\x01\x64\x01\x01\x00\x87\x0b\x6f\x62\x6a\x65\x63\x74\x43\x6c\x61\x73\x73\x30\x84\x00\x00\x00\x00|
-rarity 8
-ports 389
-
-match ldap m|^0\x84\0\0..\x02\x01.*dsServiceName1\x84\0\0\0.\x04.CN=NTDS\x20Settings,CN=([^,]+),CN=Servers,CN=([^,]+),CN=Sites,CN=Configuration,DC=([^,]+),DC=([^,]+)0\x84\0|s p/Microsoft Windows Active Directory LDAP/ i/Domain: $3.$4, Site: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows/a
-match ldap m|^0\x84\0\0..\x02\x01.*dsServiceName1\x84\0\0\0.\x04.CN=NTDS\x20Settings,CN=([^,]+),CN=Servers,CN=([^,]+),CN=Sites,CN=Configuration,DC=([^,]+),DC=([^,]+),DC=([^,]+)0\x84\0|s p/Microsoft Windows Active Directory LDAP/ i/Domain: $3.$4.$5, Site: $2/ o/Windows/ h/$1/ cpe:/o:microsoft:windows/a
-
-# Ldap bind request, version 2, null DN, AUTH_TYPE simple, null password
 ##############################NEXT PROBE##############################
 Probe TCP LDAPBindReq q|\x30\x0c\x02\x01\x01\x60\x07\x02\x01\x02\x04\0\x80\0|
 rarity 6
@@ -9401,57 +8958,6 @@ match zabbix m|^OK$| p/Zabbix Monitoring System/ cpe:/a:zabbix:zabbix/
 
 match zeiss-axio m|^SIP/2\.0\rID: 50000\rTIONS\r| p/Zeiss Axio Imager microsocope/
 
-
-##############################NEXT PROBE##############################
-Probe UDP SIPOptions q|OPTIONS sip:nm SIP/2.0\r\nVia: SIP/2.0/UDP nm;branch=foo;rport\r\nFrom: <sip:nm@nm>;tag=root\r\nTo: <sip:nm2@nm2>\r\nCall-ID: 50000\r\nCSeq: 42 OPTIONS\r\nMax-Forwards: 70\r\nContent-Length: 0\r\nContact: <sip:nm@nm>\r\nAccept: application/sdp\r\n\r\n|
-rarity 5
-ports 5060
-# Some VoIP phones take longer to respond
-totalwaitms 7500
-
-
-match sip m|^SIP/2\.0 404 Not Found\r\n(?:[^\r\n]+\r\n)*?User-Agent: Asterisk PBX \(digium\)\r\n|s p/Digium Switchvox PBX/ i/based on Asterisk/ d/PBX/
-match sip m|^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?User-Agent: SAGEM / 3202\.3 / 2601EC \r\n|s p/Sagem ADSL router/ d/broadband router/
-match sip m|^SIP/2\.0 408 Request timeout\r\n(?:[^\r\n]+\r\n)*?Server: sipXecs/([\w._-]+) sipXecs/sipXproxy \(Linux\)\r\n|s p/SIPfoundry sipXecs PBX/ v/$1/ o/Linux/ cpe:/o:linux:linux_kernel/a
-match sip m|^SIP/2\.0 404 Not Found\r\n(?:[^\r\n]+\r\n)*?User-Agent: AVM (FRITZ!Box Fon WLAN [\w._ -]+) (?:Annex A )?(?:\(UI\) )?([\w._ -]+ \(\w+ +\d+ +\d+\))|s p/AVM $1 SIP/ v/$2/ d/WAP/ cpe:/h:avm:$1/
-match sip m|^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: NetSapiens SiPBx 1-1205c\r\n|s p/NetSapiens SiPBX SIP switch/ d/switch/
-match sip m|^SIP/2\.0 481 Call Leg/Transaction Does Not Exist\r\nFrom: <sip:nm@nm>;tag=root\r\nTo: <sip:nm2@nm2>;tag=0-\w+-\w+-\w+-\w+\r\nCall-ID: 50000\r\nCSeq: 42 OPTIONS\r\nVia: SIP/2\.0/UDP nm;received=[\d.]+;rport=\d+;branch=foo\r\nContent-Length: 0\r\n\r\n$| p/Sony PCS-TL50 videoconferencing SIP/ cpe:/h:sony:pcs-tl50/
-match sip m|^SIP/2\.0 200 OK\r\nCSeq: 42 OPTIONS\r\nVia: SIP/2\.0/UDP nm;branch=foo;rport\r\nFrom: <sip:nm@nm>;tag=root\r\nCall-ID: 50000\r\nTo: <sip:nm2@nm2>\r\nContact: <sip:nm2@[\d.]+>\r\nContent-Length: 0\r\n\r\n$| p/Ekiga SIP/ v/3.2.7/ cpe:/a:ekiga:ekiga:3.2.7/
-match sip m|^SIP/2\.0 403 Forbidden\r\n(?:[^\r\n]+\r\n)*?From: <sip:nm@nm>;tag=root\r\nTo: <sip:nm2@nm2>;tag=Mitel-([\w._-]+)_\d+-\d+\r\n|s p/Mitel $1 PBX SIP/ d/PBX/
-match sip m|^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Allow: INVITE, ACK, CANCEL, BYE, OPTIONS, INFO, REFER, SUBSCRIBE, NOTIFY\r\nAccept: application/sdp,application/dtmf-relay,application/simple-message-summary,message/sipfrag\r\nAccept-Encoding: identity\r\n|s p/Siemens Gigaset DX800A VoIP phone SIP/ d/VoIP phone/ cpe:/h:siemens:gigaset_dx800a/a
-match sip m|^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?User-Agent: Zoiper rev\.(\d+)\r\n|s p/Zoiper softphone SIP/ v/$1/ cpe:/a:securax:zoiper:$1/
-match sip m|^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?User-Agent: Ekiga/([\w._-]+)\r\n|s p/Ekiga/ v/$1/ cpe:/a:ekiga:ekiga:$1/
-match sip m|^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?User-Agent: HG4000/([\w._-]+)+\r\n|s p/Hypermedia HG-4000 VoIP GSM gateway SIP/ v/$1/ d/VoIP adapter/
-match sip m|^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?User-Agent: Grandstream (IP\d+) ([\w._-]+)\r\n|s p/Grandstream $1 VoIP phone SIP/ v/$2/ d/VoIP phone/ cpe:/h:grandstream:$1/a
-match sip m|^SIP/2\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?User-Agent: Yealink (SIP-[\w_]+) ([\d.]+)\r\n|s p/Yealink $1 VoIP phone sipd/ v/$2/ d/VoIP phone/ cpe:/h:yealink:$1/
-match sip m|^SIP/2\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?User-Agent: (VP\d+\w*) ([\d.]+)\r\n|s p/Yealink $1 VoIP phone sipd/ v/$2/ d/VoIP phone/ cpe:/h:yealink:$1/
-match sip m|^SIP/2\.0 404 Not Found\r\n(?:[^\r\n]+\r\n)*?User-Agent: FRITZ!OS\r\n|s p/AVM FRITZ!OS SIP/ d/VoIP adapter/
-match sip m|^SIP/2\.0 200 Rawr!!\r\nVia: SIP/2\.0/UDP nm;branch=foo;rport=\d+;received=[\d.]+\r\nFrom: <sip:nm@nm>;tag=root\r\nTo: <sip:nm2@nm2>;tag=[\da-f]{32}\.[\da-f]+\r\nCall-ID: 50000\r\nCSeq: 42 OPTIONS\r\nContent-Length: 0\r\n\r\n| p/Kamailio sipd/ cpe:/a:kamailio:kamailio/
-
-match sip-proxy m|^SIP/2\.0 (?:[^\r\n]*\r\n(?!\r\n))*?Server: FPBX-([\d.]+)\(([\d.]+)\)\r\n|s p/FreePBX/ v/$1/ i/Asterisk $2/ d/PBX/ cpe:/a:digium:asterisk:$2/ cpe:/a:sangoma:freepbx:$1/
-match sip-proxy m|^SIP/2\.0 (?:[^\r\n]*\r\n(?!\r\n))*?Server: Asterisk PBX ([\w._+~-]+)\r\n|s p/Asterisk PBX/ v/$1/ d/PBX/ cpe:/a:digium:asterisk:$1/
-match sip-proxy m|^SIP/2\.0 (?:[^\r\n]*\r\n(?!\r\n))*?Server: OpenS[Ee][Rr] \(([\w\d\.-]+) \(([\d\w/]+)\)\)|s p/OpenSER SIP Server/ v/$1/ i/$2/
-match sip-proxy m|^SIP/2\.0 (?:[^\r\n]*\r\n(?!\r\n))*?Server: Sip EXpress router \(([\w\d\.-]+) \(([\d\w/]+)\)\)|s p/SIP Express Router/ v/$1/ i/$2/
-# OpenSER and SER have joined to become SIP Router
-match sip-proxy m|^SIP/2\.0 (?:[^\r\n]*\r\n(?!\r\n))*?Server: SIP Router \(([\w\d\.-]+) \(([\d\w/]+)\)\)|s p/SIP Router/ v/$1/ i/$2/
-match sip-proxy m|^SIP/2\.0 (?:[^\r\n]*\r\n(?!\r\n))*?User-Agent: Asterisk PBX\r\n|s p/Asterisk PBX/ cpe:/a:digium:asterisk/
-match sip-proxy m|^SIP/2\.0 (?:[^\r\n]*\r\n(?!\r\n))*?Server: OpenSIPS \(([\w\d\.-]+) \(([\d\w/]+)\)\)|s p/OpenSIPS SIP Server/ v/$1/ i/$2/
-match sip-proxy m|^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?\r\nUser-Agent: ComdasysB2BUA([\w._-]+)\r\n|s p/Comdasys SIP Server/ v/$1/
-match sip-proxy m|^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: NEC-i SL Series ([\w._-]+)/2\.1\r\n|s p/NEC SL-series VoIP PBX/ v/$1/ d/PBX/
-match sip-proxy m|^SIP/2\.0 200 OK\r\nVia: SIP/2\.0/UDP nm;branch=foo;received=[\d.]+;rport=\d+\r\nFrom: <sip:nm@nm>;tag=root\r\nTo: <sip:nm2@nm2>;tag=as\d+\r\nCall-ID: 50000\r\nCSeq: 42 OPTIONS\r\nServer: -(\d[\w._-]+)\((\d[\w._-]+)\)\r\nAllow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH\r\nSupported: replaces, timer\r\nContact: .*\r\nAccept: application/sdp\r\nContent-Length: 0\r\n\r\n| p/Asterisk/ v/$2/ i/FreePBX $1/ cpe:/a:digium:asterisk:$2/
-match sip-proxy m|^SIP/2\.0 400 Bad Request - [A-Z] - 16007\r\nv:SIP/2\.0/UDP nm;branch=foo;rport=\d+;received=[\d.]+\r\nf:<sip:nm@nm>;tag=root\r\nt:<sip:nm2@nm2>;tag=\d+\r\ni:50000\r\nCSeq:42 OPTIONS\r\nl:0\r\n\r\n| p/Nokia CFX-5000 SIP core controller/ d/PBX/
-match sip-proxy m|^SIP/2\.0 400 Bad Request - [A-Z] - 16007\r\nVia: SIP/2\.0/UDP nm;branch=foo;rport=\d+;received=[\d.]+\r\nFrom: <sip:nm@nm>;tag=root\r\nTo: <sip:nm2@nm2>;tag=\d+\r\nCall-ID: 50000\r\nCSeq: 42 OPTIONS\r\nContent-Length: 0\r\n\r\n| p/Nokia CFX-5000 SIP core controller/ d/PBX/
-match sip-proxy m|^SIP/2\.0 404 Not Found\r\n(?:[^\r\n]+\r\n)*?Server: Asterisk PBX\r\n(?:[^\r\n]+\r\n)*?Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO|s p/Asterisk/ d/PBX/ cpe:/a:digium:asterisk/
-match sip-proxy m|^SIP/2\.0 (?:[^\r\n]*\r\n(?!\r\n))*?Server: CommuniGatePro/([\w._-]+)\r\n|s p/CommuniGatePro VoIP Gateway/ v/$1/ cpe:/a:stalker:communigate_pro:$1/
-match sip-proxy m|^SIP/2\.0 (?:[^\r\n]*\r\n(?!\r\n))*?Server: STARFACE PBX\r\n|s p/STARFACE PBX/ cpe:/a:starface:starface_pbx/
-
-
-# Supposed to be multicast, but apparently something answers unicast?
-match ws-discovery m|^<\?xml version=\"1\.0\" encoding=\"UTF-8\"\?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://www\.w3\.org/2003/05/soap-envelope\" xmlns:SOAP-ENC=\"http://www\.w3\.org/2003/05/soap-encoding\" xmlns:xsi=\"http://www\.w3\.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www\.w3\.org/2001/XMLSchema\" xmlns:wsa=\"http://schemas\.xmlsoap\.org/ws/2004/08/addressing\" xmlns:d=\"http://schemas\.xmlsoap\.org/ws/2005/04/discovery\" xmlns:d3=\"http://www\.onvif\.org/ver10/network/wsdl/RemoteDiscoveryBinding\" xmlns:d4=\"http://www\.onvif\.org/ver10/network/wsdl/DiscoveryLookupBinding\" xmlns:dn=\"http://www\.onvif\.org/ver10/network/wsdl\"><SOAP-ENV:Body><SOAP-ENV:Fault><faultcode>SOAP-ENV:Client</faultcode><faultstring>No XML element tag</faultstring></SOAP-ENV:Fault></SOAP-ENV:Body></SOAP-ENV:Envelope>| p/Huacam Cyclops ONVIF 1.0 responder/ d/webcam/
-# Brother MFC-9340CDW
-match ws-discovery m|^<\?xml version=\"1\.0\" encoding=\"UTF-8\"\?>\n<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://www\.w3\.org/2003/05/soap-envelope\" xmlns:wsa=\"http://schemas\.xmlsoap\.org/ws/2004/08/addressing\" xmlns:wsdisco=\"http://schemas\.xmlsoap\.org/ws/2005/04/discovery\" xmlns:wsdp=\"http://schemas\.xmlsoap\.org/ws/2006/02/devprof\" xmlns:wse=\"http://schemas\.xmlsoap\.org/ws/2004/08/eventing\" xmlns:xop=\"http://www\.w3\.org/2004/08/xop/include\" xmlns:wsx=\"http://schemas\.xmlsoap\.org/ws/2004/09/mex\" xmlns:wxf=\"http://schemas\.xmlsoap\.org/ws/2004/09/transfer\" xmlns:wprt=\"http://schemas\.microsoft\.com/windows/2006/08/wdp/print\" xmlns:wscn=\"http://schemas\.microsoft\.com/windows/2006/08/wdp/scan\"><SOAP-ENV:Body><SOAP-ENV:Fault><faultcode>SOAP-ENV:Client</faultcode><faultstring>HTTP Error: 405 Method Not Allowed</faultstring></SOAP-ENV:Fault></SOAP-ENV:Body></SOAP-ENV:Envelope>| p/Brother WS-Print 1.0 responder/ d/printer/
-# Softmatch for now, since submission didn't contain specific device
-
 ##############################NEXT PROBE##############################
 Probe TCP LANDesk-RC q|\x54\x4e\x4d\x50\x04\0\0\0\x54\x4e\x4d\x45\0\0\x04\0|
 rarity 6
@@ -9654,68 +9160,6 @@ match radmin m|^\x01\x00\x00\x00\x09\x00\x00\x10\x4f\x2f\x10\x00\x00\x04\x00\x00
 match srcds m|^\n\0\0\0\0\0\0\0\0\0\0\0\0\0$| p/srcds game server/
 
 ##############################NEXT PROBE##############################
-Probe UDP Sqlping q|\x02|
-rarity 6
-ports 1434,19131-19133
-match ms-sql-m m|^\x05..ServerName;([\w\-]+);InstanceName;[\w\-]+;IsClustered;\w{2,3};Version;([\d\.]+);np;.+;tcp;(\d{1,5});| p/Microsoft SQL Server/ v/$2/ i/ServerName: $1; TCPPort: $3/ o/Windows/ cpe:/a:microsoft:sql_server:$2/ cpe:/o:microsoft:windows/a
-match ms-sql-m m|^\x05..ServerName;([\w\-]+);InstanceName;[\w\-]+;IsClustered;\w{2,3};Version;([\d\.]+);tcp;(\d{1,5});np;.+;$| p/Microsoft SQL Server/ v/$2/ i/ServerName: $1; TCPPort: $3/ o/Windows/ cpe:/a:microsoft:sql_server:$2/ cpe:/o:microsoft:windows/a
-match ms-sql-m m|^\x05..ServerName;([\w\-]+);InstanceName;[\w\-]+;IsClustered;\w{2,3};Version;([\d\.]+);tcp;(\d{1,5});;| p/Microsoft SQL Server/ v/$2/ i/ServerName: $1; TCPPort: $3/ o/Windows/ cpe:/a:microsoft:sql_server:$2/ cpe:/o:microsoft:windows/a
-match ms-sql-m m|^\x05..ServerName;([\w\-]+);InstanceName;[\w\-]+;IsClustered;\w{2,3};Version;([\d\.]+);;| p/Microsoft SQL Server/ v/$2/ i/ServerName: $1/ o/Windows/ cpe:/a:microsoft:sql_server:$2/ cpe:/o:microsoft:windows/a
-
-# http://wiki.vg/Pocket_Minecraft_Protocol#ID_UNCONNECTED_PING_OPEN_CONNECTIONS_.280x1C.29
-match minecraft-pe m|^\x1c................\0\xff\xff\0\xfe\xfe\xfe\xfe\xfd\xfd\xfd\xfd\x12\x34\x56\x78..MCCPP;Demo;([^;]+)|s p/Minecraft Pocket Edition server/ v/pre-0.11/ i/Server Name: $P(1)/ cpe:/a:mojang:minecraft_pocket_edition/
-# Server Name field supports colors as \xc2\xa7N where N is a color code (0=black, 2=green, etc)
-match minecraft-pe m|^\x1c................\0\xff\xff\0\xfe\xfe\xfe\xfe\xfd\xfd\xfd\xfd\x12\x34\x56\x78..MCPE;([^;]+);\d+;([^;]+);(\d+);(\d+)|s p/Minecraft Pocket Edition server/ v/$2/ i|Server Name: $P(1); $3/$4 players| cpe:/a:mojang:minecraft_pocket_edition:$2/
-match minecraft-pe m|^\x1c................\0\xff\xff\0\xfe\xfe\xfe\xfe\xfd\xfd\xfd\xfd\x12\x34\x56\x78..MCPE;;\d+;([^;]+);(\d+);(\d+)|s p/Minecraft Pocket Edition server/ v/$1/ i|$2/$3 players| cpe:/a:mojang:minecraft_pocket_edition:$1/
-
-
-##############################NEXT PROBE##############################
-Probe UDP NTPRequest q|\xe3\x00\x04\xfa\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xc5\x4f\x23\x4b\x71\xb1\x52\xf3|
-rarity 5
-ports 123,5353,9100
-
-match ca-mq m|^\xfa\xfe\0\x10\0\0\x01\0\0\0\0\0\0\0\0\0$| p/CA Message Queuing Server/ cpe:/a:ca:messaging/
-
-match echo m|^\xe3\x00\x04\xfa\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xc5\x4f\x23\x4b\x71\xb1\x52\xf3$|
-
-match ntp m|^[\x24\x64\xa4]\x01..............................................$|s p/NTP/ v/v4/ i/primary server/
-match ntp m|^[\x24\x64\xa4][\x02-\x0f]..............................................$|s p/NTP/ v/v4/ i/secondary server/
-# Don't think this is valid, but we can uncomment if we get a submission:
-#match ntp m|^[\x24\x64\xa4]\x10..............................................$|s p/NTP/ v/v4/ i/unsynchronized/
-match ntp m|^\xe4[\0\x10]..............................................$|s p/NTP/ v/v4/ i/unsynchronized/
-match ntp m|^\xe4[\x01]..............................................$|s p/NTP/ v/v4/ i/primary server; unsynchronized/
-match ntp m|^\xe4[\x01-\x0f]..............................................$|s p/NTP/ v/v4/ i/secondary server; unsynchronized/
-
-match ntp m|^\x1c[\x01-\x0f]..............................................$|s p/NTP/ v/v3/
-# This is just unsynchronized NTP v3
-match ntp m|^\xdc[\x00-\x0f]..............................................$|s p/Microsoft NTP/ o/Windows/ cpe:/o:microsoft:windows/a
-match ntp m|^\x5c\x03..............................................$|s p/Microsoft Windows Server 2003 NTP/ v/v3/ o/Windows 2003/ cpe:/o:microsoft:windows_server_2003/a
-
-# Solaris Internet Name Server (42/udp), see ien116.txt
-match nameserver m|^help\r\n\r\n\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01| p/Solaris Internet Name Server/ i/IEN 116/ o/Solaris/ cpe:/o:sun:sunos/a
-
-match mdns m|^\0\0\x84\0\0\0\0\x05\0\0\0\0.Lexmark ([\x20-\x7f]+)\x0c_host-config\x04_udp\x05local\0|s p/Lexmark $1 printer mdns/ d/printer/ cpe:/h:lexmark:$1/a
-match hbn3 m|^\0\0\x84\0\0\0\0\x05\0\0\0\0\x15S300-S400 Series \(32\).+ET(\w{2})(\w{2})(\w{2})(\w{2})(\w{2})(\w{2})| p/Lexmark S300-S400 series HBN3/ i/MAC: $1:$2:$3:$4:$5:$6/ d/printer/
-match hbn3 m|^\0\0\x84\0\0\0\0\x05\0\0\0\0\x15S300-S400 Series.+ET(\w{2})(\w{2})(\w{2})(\w{2})(\w{2})(\w{2})| p/Lexmark S300-S400 Series HBN3/ i/MAC: $1:$2:$3:$4:$5:$6/ d/printer/
-
-
-match sip m|^SIP/2\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, UPDATE, OPTIONS, MESSAGE, NOTIFY, INFO, REFER\r\n(?:[^\r\n]+\r\n)*?User-Agent: SightSpeedClient v\. ([\w._-]+)\r\n|s p/SightSpeedClient sipd/ v/$1/ i/AVM FRITZ!Box Fon WAP/
-
-# These first two probes only serve to determine the NTP version
-# Nessus uses.  The third will match even a newer one, but just show
-# the NTP as 1.0.  So we give the highest rarity to these first two
-# probes so they will usually only be used for port 1241.  But the
-# third is left with a lower rarity to catch Nessus running on
-# non-default ports.
-#
-# These probes have a high likelihood of triggering false positives because
-# any service that echos your command back can match.  The docs on the
-# the protocol make me think a ^ anchor can be added to the response so
-# this should cut down on the the false positives. (Brandon)
-#
-# See ntp_white_paper_11.txt for more information on the Nessus protocol
-#
-##############################NEXT PROBE##############################
 Probe TCP NessusTPv12 q|< NTP/1.2 >\n|
 rarity 9
 ports 1241
@@ -9738,98 +9182,6 @@ sslports 1241
 
 match nessus m|^< NTP/1.0 >\n| p/Nessus Daemon/ i/NTP v1.0/ cpe:/a:tenable:nessus/
 match zabbix m|^NOT OK\n$| p/Zabbix Monitoring System/ cpe:/a:zabbix:zabbix/
-
-
-##############################NEXT PROBE##############################
-Probe UDP SNMPv1public q|0\x82\0/\x02\x01\0\x04\x06public\xa0\x82\0\x20\x02\x04\x4c\x33\xa7\x56\x02\x01\0\x02\x01\0\x30\x82\0\x10\x30\x82\0\x0c\x06\x08\x2b\x06\x01\x02\x01\x01\x05\0\x05\0|
-rarity 4
-ports 161
-
-match bittorrent-udp-tracker m|^\x03\0\0\0lic\xa0Connection ID missmatch\.\0| p/opentracker UDP tracker/ cpe:/a:dirk_engling:opentracker/
-match snmp m|^0.*\x02\x01\0\x04\x06public\xa2.*\x06\x08\+\x06\x01\x02\x01\x01\x05\0\x04[^\0]([^\0]+)|s p/SNMPv1 server/ i/public/ h/$1/
-
-match snmp m|^0.*\x02\x01\0\x04\x06public\xa2|s p/SNMPv1 server/ i/public/
-
-match echo m|^0\x82\0/\x02\x01\0\x04\x06public\xa0\x82\0\x20\x02\x04\x4c\x33\xa7\x56\x02\x01\0\x02\x01\0\x30\x82\0\x10\x30\x82\0\x0c\x06\x08\x2b\x06\x01\x02\x01\x01\x05\0\x05\0$|
-
-##############################NEXT PROBE##############################
-Probe UDP SNMPv3GetRequest q|\x30\x3a\x02\x01\x03\x30\x0f\x02\x02\x4a\x69\x02\x03\0\xff\xe3\x04\x01\x04\x02\x01\x03\x04\x10\x30\x0e\x04\0\x02\x01\0\x02\x01\0\x04\0\x04\0\x04\0\x30\x12\x04\0\x04\0\xa0\x0c\x02\x02\x37\xf0\x02\x01\0\x02\x01\0\x30\0|
-rarity 4
-ports 161
-
-match echo m|^\x30\x3a\x02\x01\x03\x30\x0f\x02\x02\x4a\x69\x02\x03\0\xff\xe3\x04\x01\x04\x02\x01\x03\x04\x10\x30\x0e\x04\0\x02\x01\0\x02\x01\0\x04\0\x04\0\x04\0\x30\x12\x04\0\x04\0\xa0\x0c\x02\x02\x37\xf0\x02\x01\0\x02\x01\0\x30\0$|
-# H.225 bandwidthReject
-match H.323-gatekeeper-discovery m|^8\x02\x01\x10\0$| p/GNU Gatekeeper discovery/ cpe:/a:gnugk:gnu_gatekeeper/
-
-# Enterprise numbers as used in SNMP engine IDs are here:
-# http://www.iana.org/assignments/enterprise-numbers
-
-# Reserved - SNMP Engine ID 0 \x00\x00
-# Netgear GS748TS V5.0.0.23
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x00\x00|s
-
-# Cisco - SNMP Engine ID 9 (CiscoSystems) = \x00\x09
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x00\x09|s p/Cisco SNMP service/
-
-# Cisco - SNMP Engine ID 99 (SNMP Research) = \x00\x63
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x00\x63|s p/Cisco SNMP service/
-
-# Xerox - SNMP Engine ID 253 (Xerox) = \x00\xfd
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x00\xfd|s p/Xerox SNMP service/
-
-# Scientific Atlanta - SNMP Engine ID 1429 = \x05\x95
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x05\x95|s p/Scientific Atlanta SNMP service/
-
-# Brocade - SNMP Engine ID 1588 (Brocade Communications Systems, Inc.) = \x06\x34
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x06\x34|s p/Brocade SNMP service/
-
-# QLogic - SNMP Engine ID 1663 (Ancor Communications) = \x06\x7f
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x06\x7f|s p/QLogic SNMP service/
-
-# IBM - SNMP Engine ID 1104 (First Virtual Holdins Incorporated) = \x04\x50
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x04\x50|s p/IBM SNMP service/
-
-# Huawei - SNMP Engine ID 2011 (HUAWEI Technology Co.,Ltd) = \x07\xdb
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x07\xdb|s p/Huawei SNMP service/
-
-# Lexmark - SNMP Engine ID 2021 (Engine Enterprise ID: U.C. Davis, ECE Dept. Tom) = \x07\xe5
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x07\xe5|s p/Lexmark SNMP service/
-
-# Thomson Inc. - SNMP Engine ID 2863 (Thomson Inc.) = \x0b\x2f
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x0b\x2f|s p/Thomson SNMP service/
-
-# Blue Coat - SNMP Engine ID 3417 (CacheFlow Inc.) = \x0d\x59
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x0d\x59|s p/Blue Coat SNMP service/
-
-# Canon - SNMP Engine ID 4976 (Agent++) = \x13\x70
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x13\x70|s p/Canon SNMP service/
-
-# net-snmp (net-snmp.org) - SNMP Engine ID 8072 (net-snmp) = \x1f\x88
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x1f\x88|s p/net-snmp/ cpe:/a:net-snmp:net-snmp/
-
-# Fortigate-310B v4.0,build0324,110520 (MR2 Patch 7)
-# Fortinet, Inc. - SNMP Engine ID 12356 = \x30\x44
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\x80\0\x30\x44|s p/Fortinet SNMP service/ d/firewall/
-
-# Aruba Networks - SNMP Engine ID 14823 = \x39\xe7
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x39\xe7|s p/Aruba Networks SNMP service/
-
-# OpenBSD Project - SNMP Engine ID 30155 = \x75\xcb
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\0\x75\xcb|s p/OpenBSD SNMP service/
-
-# Wireshark says <MISSING> for the SNMP Engine ID.
-match snmp m|^..\x02\x01\x030.\x02\x02Ji\x02.{3,4}\x04\x01.\x02\x01\x03\x04.{5,6}\x01\0\x02\x03|s p/MikroTik router SNMP service/ d/router/
-
-# Tandberg Video Conferencing equipment
-match snmp m|^0\x82\0\x37\x02\x01\0\x04\x06public\xa2\x82\0\x28\x02.{41,43}\nSoftW:\x20([^\0\n]+)\nMCU:\x20([^\0\n]+)\n|s p/$2/ i/$1/
-
-# Zebra GX430T label printer
-match snmp m|^0\x82\0\x37\x02\x01\0\x04\x06public\xa2\x82\0\x28.{20}\x2b\x06\x01\x02\x01\x01\x05\0\x04\nZBR_SPICE0|s p/Zebra GX430T label printer SNMP service/ d/printer/ cpe:/h:zebra:gx430t/
-
-# P-660HW-D1 from Zyxel
-match snmp m|^0\x82\0\x3a\x02\x01\0\x04\x06public\xa2\x82\0\x2b.{20}\x06\x08\x2b\x06\x01\x02\x01\x01\x05\0\x04\x0bcfr25657985|s p/ZyXEL Prestige 660HW ADSL router/ d/broadband router/ cpe:/h:zyxel:prestige_660hw/
-
-#Generic SNMPv3 matchline
 
 ##############################NEXT PROBE##############################
 Probe TCP WMSRequest q|\x01\0\0\xfd\xce\xfa\x0b\xb0\xa0\0\0\0MMS\x14\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x12\0\0\0\x01\0\x03\0\xf0\xf0\xf0\xf0\x0b\0\x04\0\x1c\0\x03\0N\0S\0P\0l\0a\0y\0e\0r\0/\09\0.\00\0.\00\0.\02\09\08\00\0;\0 \0{\00\00\00\00\0A\0A\00\00\0-\00\0A\00\00\0-\00\00\0a\00\0-\0A\0A\00\0A\0-\00\00\00\00\0A\00\0A\0A\00\0A\0A\00\0}\0\0\0\xe0\x6d\xdf\x5f|
@@ -9886,58 +9238,6 @@ match winbox m|^.\x01\0.M2\x01\0\xff\x88\0\0\x02\0\xff\x88[\x01\x02]\0|s p/Mikro
 
 # TrinityCore
 match wow m|^\0\0\t.{32}\x01..{32}| p/World of Warcraft authserver/
-
-##############################NEXT PROBE##############################
-Probe UDP xdmcp q|\0\x01\0\x02\0\x01\0|
-rarity 6
-ports 177
-match bacnet m|^\x81\n\0\t\x01\0`\x01\t$| p/BACnet building automation/
-match xdmcp m|^\0\x01\0\x05..\0\0\0.(.+)\0.(.+)|s p/XDMCP/ i/willing; status: $2/ o/Unix/ h/$1/
-match xdmcp m|^\0\x01\0\x06..\0.(.+)\0.(.+)|s p/XDMCP/ i/unwilling; status: $2/ o/Unix/ h/$1/
-match tftp m|^\0\x05\0\x04Illegal TFTP operation\0| p/Windows 2003 Server Deployment Service/ o/Windows/ cpe:/o:microsoft:windows_server_2003/a
-match tftp m|^\0\x05\0\x01File not found\.\0$| p/Enistic zone controller tftpd/
-match tftp m|^\0\x05\0\x02No such file or directory\0| p/Windows 10 IoT tftpd/ o/Windows 10/ cpe:/o:microsoft:windows_10/a
-
-
-##############################NEXT PROBE##############################
-# AFS version probing
-Probe UDP AFSVersionRequest q|\0\0\x03\xe7\0\0\0\0\0\0\0\x65\0\0\0\0\0\0\0\0\x0d\x05\0\0\0\0\0\0\0\0\0\0|
-rarity 5
-ports 7001,1719
-# OpenAFS
-match afs m|^[\d\D]{28}\s*OpenAFS\s+([\d\.]+)\s+([^\0]+)\0| p/OpenAFS/ v/$1/ i/$2/ cpe:/a:openafs:openafs:$1/
-match afs m|^[\d\D]{28}\s*OpenAFS\s+stable\s+([\d\.]+)\s+([^\0]+)\0| p/OpenAFS/ v/$1/ i/$2 stable/ cpe:/a:openafs:openafs:$1/
-match afs m|^[\d\D]{28}\s*OpenAFS([\d\.]{3}[^\s\0]*)\s+([^\0]+)\0| p/OpenAFS/ v/$1/ i/$2/ cpe:/a:openafs:openafs:$1/
-match afs m|^[\d\D]{28}\s*OpenAFS([\d\.]{3}[^\s\0]*)\0| p/OpenAFS/ v/$1/ cpe:/a:openafs:openafs:$1/
-# Transarc AFS
-match afs m|^[\d\D]{28}\s*Base\sconfiguration\safs([\d\.]+)\s+[^\s\0\;]+[\0\;]| p/Transarc AFS/ v/$1/
-# Arla
-match afs m|^[\d\D]{28}\s*arla-([\d\.]+)\0| p/Arla/ v/$1/
-
-# OpenSSL 0.9.8g: openssl s_server -dtls1
-# Alert (21), DTLS 1.0 (0xfeff)
-match dtls m|^\x15\xfe\xff\0\0\0\0\0\0\0\0\0\x07\x02\x16\0\0\0\0\0$| p/OpenSSL DTLS 1.0/ cpe:/a:openssl:openssl/
-
-match H.323-gatekeeper-discovery m|^\x04\x80\x03\xe7\0\x08\0D\0E\0U\0G\0K\0......$|s p/GNU Gatekeeper discovery/ cpe:/a:gnugk:gnu_gatekeeper/
-match H.323-gatekeeper-discovery m|^\x04\x80\x03\xe7\0\x10\0D\0E\0U\0C\0O\0S\0R\0V\x003\0\n\x08\x01\x03\x06\xb7$| p/GNU Gatekeeper discovery/ v/2.3.2/ cpe:/a:gnugk:gnu_gatekeeper:2.3.2/
-match H.323-gatekeeper-discovery m|^\x06\x80\x03\xe7\x06\0\x08\x91J\0\x05\x12\0G\0A\0T\0E\0K\0E\0E\0P\0E\0R\0......| p/Cisco Unified Communications Manager Gatekeeper RAS service/ cpe:/a:cisco:unified_communications_manager/
-
-### do not slow down the scan
-
-Probe TCP mydoom q|\x0d\x0d|
-rarity 9
-ports 706,3127-3198
-match mydoom m|\x04\x5b\0\0\0\0\0\0| p/MyDoom virus backdoor/ v/v012604/
-
-match silc m|^\0\x13\0\x01\r\0\x08\0\x01S\x96Rz\xc2\x02\0\xff\0.............4$|s p/SILCd conferencing service/
-
-Probe TCP WWWOFFLEctrlstat q|WWWOFFLE STATUS\r\n|
-rarity 9
-ports 706,8081
-match http-proxy-ctrl m|^WWWOFFLE Server Status\n-*\nVersion *: (\d.*)\n| p/WWWOFFLE proxy control/ v/$1/
-match http-proxy-ctrl m|^WWWOFFLE Incorrect Password\n| p/WWWOFFLE proxy control/ i/Unauthorized/
-
-match silc m|^\0\x13\0\x01\r\0\x08\0\x01S\x96Rz\xc2\x02\0\xff\0.............4$|s p/SILCd conferencing service/
 
 ##########################################################################################################
 # Cross Match Verifier E TCP/IP fingerprint reader (http://www.crossmatch.com/products_singlescan_vE.html)
@@ -10224,14 +9524,6 @@ ports 1583,3351
 rarity 8
 match psql-btrieve m|^A\0K\0\0\0....\0\0\0\0\0\0\xff\xff\xff\xff\0\0\n\x04\xa0|s p/Pervasive.SQL Server - Btrieve Engine/
 
-# Following probe created by Patrik Karlsson:
-##############################NEXT PROBE##############################
-Probe UDP ibm-db2-das-udp q|DB2GETADDR\0SQL08010\0|
-rarity 8
-ports 523
-
-match ibm-db2 m|^DB2RETADDR\0SQL0(\d)(\d\d)(\d+)\0([^\0]+)\0|s p/IBM DB2 Database Server/ v/$1.$2.$3/ i/Hostname: $4/ cpe:/a:ibm:db2:$1.$2.$3/
-
 ##############################NEXT PROBE##############################
 # Apache JServe Protocol (ajp) v1.3 Ping request
 Probe TCP ajp q|\x12\x34\x00\x01\x0a|
@@ -10240,22 +9532,6 @@ ports 8008,8009
 
 # AJP 1.3 Ping response
 match ajp13 m|^\x41\x42\x00\x01\x09$| p/Apache Jserv/ i/Protocol v1.3/
-
-
-##############################NEXT PROBE##############################
-# DNS-based service discovery (DNS-SD). Asks for all services on the host.
-# http://files.dns-sd.org/draft-cheshire-dnsext-dns-sd.txt, section 9.
-Probe UDP DNS-SD q|\0\0\0\0\0\x01\0\0\0\0\0\0\x09_services\x07_dns-sd\x04_udp\x05local\0\0\x0c\0\x01|
-rarity 4
-ports 5353
-
-# mDNSResponder-176.3
-# Avahi under Ubuntu
-match mdns m|^\0\0\x84\0\0\x01..\0\0\0\0\x09_services\x07_dns-sd\x04_udp\x05local\0\0\x0c\0\x01|s p/DNS-based service discovery/
-match hbn3 m|^\0\0\x84\0\0\0\0\x01\0\0\0\0.Lexmark (\w+)\x0c_host-config\x04_udp\x05local\0\0\x10\0\x01\0\0\0<\x01\x19.IPADDRESS [\d.]+.IPNETMASK [\d.]+.IPGATEWAY [\d.]+.IPNAME \"([\w._-]+)\"\x15MACLAA \"000000000000\"\x15MACUAA \"([0-9A-F]{12})\"|s p/Lexmark hbn3 (DNS-SD-like configuration)/ i/Lexmark $1 printer; MAC $3/ d/printer/ h/$2/ cpe:/h:lexmark:$1/a
-
-match isakmp m|^\0\0\0\0\0\x01\0\0\0\0\0\0\t_servic\x0b\x10\x05\0\0\0\0\0\0\0\0\(\0\0\0\x0c\0\0\0\x01\x01\0\0\x05| p/Openswan ISAKMP/ cpe:/a:openswan:openswan/
-match isakmp m|^\0\0\0\0\0\x01\0\0\0\0\0\0\t_servic\) % \0\0\0\0\0\0\0\$\0\0\0\x08\0\0\0\x05| p/StrongSwan ISAKMP/ cpe:/a:strongswan:strongswan/
 
 ##############################NEXT PROBE##############################
 # HP Printer Job Language, supported on most PostScript printers.
@@ -10278,48 +9554,6 @@ match hp-pjl m|@PJL\x20INFO\x20ID\r?\n\r?\n| d/printer/
 # this thread: http://seclists.org/nmap-dev/2010/q2/753
 # But it might be useful for people doing pjl testing specifically.
 # softmatch hp-pjl m|^| i/hp-pjl probe got something back/
-
-##############################NEXT PROBE##############################
-# Citrix MetaFrame application discovery service
-# http://sh0dan.org/oldfiles/hackingcitrix.html
-Probe UDP Citrix q|\x1e\0\x01\x30\x02\xfd\xa8\xe3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0|
-rarity 5
-ports 1604
-
-# Citrix MetaFrame
-match icabrowser m|^\x30\0\x02\x31\x02\xfd\xa8\xe3\x02\0\x06\x44| p/Citrix MetaFrame/ cpe:/a:citrix:metaframe/
-
-match ntp m|^\x1e\xc0\x010\x02\0\xa8\xe3\0\0\0\0$| p/Digium Switchvox PBX ntpd/ d/PBX/
-
-match openvpn m|^\.\x83&SU\xe3_\xd5V\x01\0\0\0\0\0\x010\x02\xfd\xa8\xe3\0| p/SoftEther VPN OpenVPN Clone Function/
-
-##############################NEXT PROBE##############################
-# Kerberos AS_REQ with realm NM, server name krbtgt/NM, missing client name.
-Probe UDP Kerberos q|\x6a\x81\x6e\x30\x81\x6b\xa1\x03\x02\x01\x05\xa2\x03\x02\x01\x0a\xa4\x81\x5e\x30\x5c\xa0\x07\x03\x05\0\x50\x80\0\x10\xa2\x04\x1b\x02NM\xa3\x17\x30\x15\xa0\x03\x02\x01\0\xa1\x0e\x30\x0c\x1b\x06krbtgt\x1b\x02NM\xa5\x11\x18\x0f19700101000000Z\xa7\x06\x02\x04\x1f\x1e\xb9\xd9\xa8\x17\x30\x15\x02\x01\x12\x02\x01\x11\x02\x01\x10\x02\x01\x17\x02\x01\x01\x02\x01\x03\x02\x01\x02|
-rarity 5
-ports 88
-
-# MIT 1.2.8
-match kerberos-sec m=^~\x81[\x86-\x88]0\x81[\x83-\x85]\xa0\x03\x02\x01\x05\xa1\x03\x02\x01\x1e\xa2\x11\x18\x0f\d{14}Z\xa4\x11\x18\x0f(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)Z\xa5[\x03-\x05]\x02(?:\x03...|\x02..|\x01.)\xa6\x03\x02\x01\x06\xa9\x04\x1b\x02NM\xaa\x170\x15\xa0\x03\x02\x01\0\xa1\x0e0\x0c\x1b\x06krbtgt\x1b\x02NM\xab\(\x1b&Client not found in Kerberos database\0$=s p/MIT Kerberos/ v/1.2/ i/server time: $1-$2-$3 $4:$5:$6Z/ cpe:/a:mit:kerberos:5-1.2/
-# OS X 10.6.2; MIT 1.3.5, 1.6.3, 1.7.
-match kerberos-sec m=^~[\x6b-\x6d]0[\x69-\x6b]\xa0\x03\x02\x01\x05\xa1\x03\x02\x01\x1e\xa2\x11\x18\x0f\d{14}Z\xa4\x11\x18\x0f(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)Z\xa5[\x03-\x05]\x02(?:\x03...|\x02..|\x01.)\xa6\x03\x02\x01\x06\xa9\x04\x1b\x02NM\xaa\x170\x15\xa0\x03\x02\x01\0\xa1\x0e0\x0c\x1b\x06krbtgt\x1b\x02NM\xab\x0e\x1b\x0cNULL_CLIENT\0$=s p/MIT Kerberos/ v/1.3 - 1.8/ i/server time: $1-$2-$3 $4:$5:$6Z/ cpe:/a:mit:kerberos:5-1/
-
-# Heimdal 1.0.1-5ubuntu4
-match kerberos-sec m=^~[\x60-\x62]0[\x5e-\x60]\xa0\x03\x02\x01\x05\xa1\x03\x02\x01\x1e\xa4\x11\x18\x0f(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)Z\xa5[\x03-\x05]\x02(?:\x03...|\x02..|\x01.)\xa6\x03\x02\x01<\xa9\x04\x1b\x02NM\xaa\x170\x15\xa0\x03\x02\x01\0\xa1\x0e0\x0c\x1b\x06krbtgt\x1b\x02NM\xab\x16\x1b\x14No client in request$=s p/Heimdal Kerberos/ i/server time: $1-$2-$3 $4:$5:$6Z/ cpe:/a:heimdal:kerberos/
-
-match kerberos-sec m=^~[\x48-\x4a]0[\x46-\x48]\xa0\x03\x02\x01\x05\xa1\x03\x02\x01\x1e\xa4\x11\x18\x0f(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)Z\xa5[\x03-\x05]\x02(?:\x03...|\x02..|\x01.)\xa6\x03\x02\x01D\xa9\x04\x1b\x02NM\xaa\x170\x15\xa0\x03\x02\x01\0\xa1\x0e0\x0c\x1b\x06krbtgt\x1b\x02NM$=s p/Microsoft Windows Kerberos/ i/server time: $1-$2-$3 $4:$5:$6Z/ o/Windows/ cpe:/a:microsoft:kerberos/ cpe:/o:microsoft:windows/a
-
-# DCE RPC Reject
-match msrpc m|^\x04\x06\x20\0\x10\0\0\x03\x02\x01\x05\xa2\x03\x02\x01\n\xa4\x81\x5e0\x5c\xa0\x07\x03\x05\0\x50\x80\0\x10\xa2\x04\x1b\x02NM\xa3\x170\x15\xa0\x03\x02\x01\0\xa1\x0e0\x0c\x1b\x06krbtg....|s p/Microsoft RPC/ o/Windows/ cpe:/o:microsoft:windows/a
-
-##############################NEXT PROBE##############################
-# SqueezeCenter discovery
-Probe UDP SqueezeCenter q|eIPAD\0NAME\0JSON\0VERS\0UUID\0JVID\x06\x12\x34\x56\x78\x12\x34|
-rarity 8
-ports 3483
-
-match squeezecenter m|^ENAME.{1}(.+)JSON.{1}(\d+)VERS.{1}(.+)UUID.{1}(.+)$| p/Logitech SqueezeCenter music server/ v/$3/ i/Server Name: $1, JSON: $2, UUID: $4/
-
 
 ##############################NEXT PROBE##############################
 # AFP - Request GetStatus
@@ -10390,50 +9624,6 @@ match lsf-mbd m|^\0\"\0\0\x17\0\0\0\0\0\0\0\0\0\0\0| p/Platform Load Sharing Fac
 match pigpio m|^\0\x03\0\x01\0\0\0\0\0\0\0\x02\xa8\xff\xff\xff| p/pigpiod/ cpe:/a:pigpio:pigpiod/
 
 ##############################NEXT PROBE##############################
-# Quake1 server info
-Probe UDP Quake1_server_info q|\x80\x00\x00\x0c\x02\x51\x55\x41\x4b\x45\x00\x03|
-rarity 9
-ports 26000-26004
-
-match quake m|^\x80\x00..\x83([^\x00]*)\x00([^\x00]*)\x00| p/Quake 1 server/ i/address: $1, name: $2/
-
-##############################NEXT PROBE##############################
-# Quake2 status
-Probe UDP Quake2_status q|\xff\xff\xff\xffstatus|
-rarity 8
-ports 27910-27914
-
-match quake2 m|^\xff\xff\xff\xffprint\n.*\\version\\([^\\]* Linux)(?=\\).*\\gamename\\data1(?=\\)| p/Alien Arena game server/ v/$1/ o/Linux/ cpe:/o:linux:linux_kernel/a
-
-##############################NEXT PROBE##############################
-# Quake3 getstatus
-Probe UDP Quake3_getstatus q|\xff\xff\xff\xffgetstatus|
-rarity 8
-ports 26000-26004,27960-27964,30720-30724,44400
-
-match quake3 m|^\xff\xff\xff\xffstatusResponse\n.*\\gamename\\Nexuiz(?=\\).*\\gameversion\\([^\\]*)(?=\\)| p/Nexuiz game server/ v/$1/
-match quake3 m|^\xff\xff\xff\xffstatusResponse\n.*\\version\\([^\\]* linux-[^\\]*)(?=\\).*\\gamename\\baseoa(?=\\)| p/OpenArena game server/ v/$1/ o/Linux/ cpe:/o:linux:linux_kernel/a
-match quake3 m|^\xff\xff\xff\xffstatusResponse\n.*\\version\\([^\\]* freebsd-[^\\]*)(?=\\).*\\gamename\\baseoa(?=\\)| p/OpenArena game server/ v/$1/ o/FreeBSD/ cpe:/o:freebsd:freebsd/a
-match quake3 m|^\xff\xff\xff\xffstatusResponse\n.*\\version\\tremulous ([^\\]* linux-[^\\]*)(?=\\)| p/Tremulous game server/ v/$1/ o/Linux/ cpe:/o:linux:linux_kernel/a
-match quake3 m|^\xff\xff\xff\xffstatusResponse\n.*\\version\\tremulous ([^\\]* freebsd-[^\\]*)(?=\\)| p/Tremulous game server/ v/$1/ o/FreeBSD/ cpe:/o:freebsd:freebsd/a
-match quake3 m|^\xff\xff\xff\xffstatusResponse\n.*\\version\\([^\\]* linux-[^\\]*)(?=\\).*\\gamename\\q3ut4(?=\\)| p/Urban Terror game server/ v/$1/ o/Linux/ cpe:/o:linux:linux_kernel/a
-match quake3 m|^\xff\xff\xff\xffstatusResponse\n.*\\version\\([^\\]* freebsd-[^\\]*)(?=\\).*\\gamename\\q3ut4(?=\\)| p/Urban Terror game server/ v/$1/ o/FreeBSD/ cpe:/o:freebsd:freebsd/a
-match quake3 m|^\xff\xff\xff\xffstatusResponse\n.*\\version\\([^\\]* Linux)(?=\\).*\\gamename\\Warsow(?=\\)| p/Warsow game server/ v/$1/ o/Linux/ cpe:/o:linux:linux_kernel/a
-match quake3 m|^\xff\xff\xff\xffstatusResponse\n.*\\version\\([^\\]* linux-[^\\]*)(?=\\)| p/World of Padman game server/ v/$1/ o/Linux/ cpe:/o:linux:linux_kernel/a
-match quake3 m|^\xff\xff\xff\xffstatusResponse\n.*\\version\\([^\\]* freebsd-[^\\]*)(?=\\)| p/World of Padman game server/ v/$1/ o/FreeBSD/ cpe:/o:freebsd:freebsd/a
-
-##############################NEXT PROBE##############################
-# Quake 3 and other games
-# http://svn.icculus.org/twilight/trunk/dpmaster/doc/techinfo.txt?view=markup
-# Protocol 68 is a specific revision of Quake 3, but the server should respond
-# with an empty server list even if it doesn't know that game.
-Probe UDP Quake3_master_getservers q|\xff\xff\xff\xffgetservers 68 empty full|
-rarity 9
-ports 27950,30710
-
-match quake3-master m|^\xff\xff\xff\xffgetserversResponse|
-
-##############################NEXT PROBE##############################
 # SqueezeCenter CLI
 # http://wiki.slimdevices.com/index.php/CLI
 Probe TCP SqueezeCenter_CLI q|serverstatus\r\n|
@@ -10451,16 +9641,6 @@ rarity 8
 ports 7777
 
 match arucer m|^\xbc\xa0\xb6$| p/Arucer backdoor/ i/**BACKDOOR**/ o/Windows/ cpe:/o:microsoft:windows/a
-
-##############################NEXT PROBE##############################
-# Mac OS X Server serialnumberd; checks for other servers with the same serial
-# number on the local network. AAAAAA is a dummy value.
-Probe UDP serialnumberd q|SNQUERY: 127.0.0.1:AAAAAA:xsvr|
-rarity 8
-ports 626
-
-match serialnumber m|^SNRESPS:127\.0\.0\.1:(0x[0-9A-F]{40}):xsvr:(0x[0-9A-F]{40}):(0x[0-9a-f]{8}):(0x[0-9A-F]{40}):127\.0\.0\.1\0$| p/Mac OS X Server serialnumberd/ i/numbers: $1 $2 $3 $4/ o/Mac OS X/ cpe:/o:apple:mac_os_x/a
-match serialnumber m|^SNRESPS:([\w._-]+):(0x[0-9A-F]{40}):xsvr:(0x[0-9A-F]{40}):(0x[0-9a-f]{8}):(0x[0-9A-F]{40}):[\w._-]+\0$| p/Mac OS X Server serialnumberd/ i/numbers: $2 $3 $4 $5/ o/Mac OS X/ h/$1/ cpe:/o:apple:mac_os_x/a
 
 ##############################NEXT PROBE##############################
 # Lotus Domino Console
@@ -10541,18 +9721,6 @@ match sybase-monitor m|^\x04\x01\0\x1a\0\0\0\0\xaa\x01\x0eLogin failed\.\n\xfd$|
 match zend-java-bridge m|^\0\0\0\x15\x04\0\0\0\x10java\.lang\.String$|
 
 ##############################NEXT PROBE##############################
-# BackOrifice PING message, no password. The probe is the encryption of
-# "*!*QWTY?\x13\0\0\0\0\0\0\0\x01\0\0". Servers with a password set will
-# not reply.
-# http://web.cip.com.br/flaviovs/boproto.html
-Probe UDP BackOrifice q|\xCE\x63\xD1\xD2\x16\xE7\x13\xCF\x38\xA5\xA5\x86\xB2\x75\x4B\x99\xAA\x32\x58|
-ports 31337
-rarity 9
-
-# Encryption of "*!*QWTY?........\x01  !PONG!1.20!".
-match BackOrifice m|^\xCE\x63\xD1\xD2\x16\xE7\x13\xCF........\x01\x12\x78\xC4\xE3\xD6\xA6\x65\x51\x75\x51\xEB\x2A\x3F|s p/BackOrifice trojan/ v/1.20/ i/no password/ o/Windows/ cpe:/o:microsoft:windows/a
-
-##############################NEXT PROBE##############################
 Probe TCP gkrellm q|gkrellm 0.0.0|
 rarity 9
 ports 19150
@@ -10581,57 +9749,12 @@ match mongodb m|^.\0\0\0....:0\0\0\x01\0\0\0\x08\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x
 match mongodb m|^.\0\0\0....:0\0\0\x01\0\0\0\x08\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0.\0\0\0\x01ok\0\0\0\0\0\0\0\0\0\x02errmsg\0.\0\0\0not authorized on (\S+) to execute command \{ serverStatus: 1\.0 \}\0\x10code\0\r\0\0\0|s p/MongoDB/ i/not authorized; database: $1/ cpe:/a:mongodb:mongodb/
 
 ##############################NEXT PROBE##############################
-# Sybase SQL Anywhere Ping Probe
-Probe UDP sybaseanywhere q|\x1b\0\0\x3d\0\0\0\0\x12CONNECTIONLESS_TDS\0\0\0\x01\0\0\x04\0\x05\0\x05\0\0\x01\x02\0\0\x03\x01\x01\x04\x08\0\0\0\0\0\0\0\0\x07\x02\x04\xb1|
-rarity 7
-ports 2638
-match sybaseanywhere m|^\x1b\0\0.\0\0\0\0\x12CONNECTIONLESS_TDS\0\0\0\x01\x01\0\x04\0\x05\0\x05\0.(.*)\0\x01\x02..\x03\x01\x02\x04\x08\0\0\0\0\0\0\0\0\x07\x02\x04\xb1|s p/Sybase SQL Anywhere/ i/Instance name: $1/ cpe:/a:sybase:sql_anywhere/
-
-##############################NEXT PROBE##############################
-# Vuze DHT PING probe
-# See http://wiki.vuze.com/w/Distributed_hash_table#PING
-Probe UDP vuze-dht q|\xff\xf0\x97\x0d\x2e\x60\xd1\x6f\0\0\x04\0\0\x55\xab\xec\x32\0\0\0\0\0\x32\x04\x0a\0\xc8\x75\xf8\x16\0\x5c\xb9\x65\0\0\0\0\x4e\xd1\xf5\x28|
-rarity 8
-ports 17555,49152-49156
-match vuze-dht m|^\0\0\x04\x01\0U\xab\xec\xff\xf0\x97\r\.`\xd1o..........|s p/Vuze/ cpe:/a:azureus:vuze/
-
-##############################NEXT PROBE##############################
-# PC-Anywhere probe
-Probe UDP pc-anywhere q|NQ|
-rarity 8
-ports 5632
-match pc-anywhere m|^NR([^_]*)_*AHM_3___\0$|s p/Symantec pcAnywhere/ i/Servername: $1/ cpe:/a:symantec:pcanywhere/
-
-##############################NEXT PROBE##############################
-# PC-DUO host probe
-Probe UDP pc-duo q|\0\x80\x80\x08\xff\0|
-rarity 8
-ports 1505
-match pc-duo m|^.........(.*)\0|s p/Vector PC-Duo/ i/Servername: $1/
-
-##############################NEXT PROBE##############################
-# PC-DUO Gateway probe
-Probe UDP pc-duo-gw q|\x20\x90\x80\x08\xff\0|
-rarity 8
-ports 2303
-match pc-duo-gw m|^.........(.*)\0|s p/Vector PC-Duo Gateway Server/ i/Servername: $1/
-
-##############################NEXT PROBE##############################
 # Redis key-value store
 Probe TCP redis-server q|*1\r\n$4\r\ninfo\r\n|
 rarity 8
 ports 6379
 match redis m|-ERR operation not permitted\r\n|s p/Redis key-value store/ cpe:/a:redislabs:redis/
 match redis m|^\$\d+\r\n(?:#[^\r\n]*\r\n)*redis_version:([.\d]+)\r\n|s p/Redis key-value store/ v/$1/ cpe:/a:redislabs:redis:$1/
-
-##############################NEXT PROBE##############################
-# Memcached distributed memory object caching system
-Probe UDP memcached q|\0\x01\0\0\0\x01\0\0stats\r\n|
-rarity 8
-ports 11211
-match memcached m|^\0\x01\0\0\0\x01\0\0STAT pid \d+\r\nSTAT uptime \d+\r\nSTAT time \d+\r\nSTAT version ([.\d]+)\r\n|s p/Memcached/ v/$1/ cpe:/a:memcached:memcached:$1/
-match memcached m|^\0\x01\0\0\0\x01\0\0STAT pid \d+\r\nSTAT uptime \d+\r\nSTAT time \d+\r\nSTAT version ([.\d]+) \(?Ubuntu\)?\r\n|s p/Memcached/ v/$1/ i/Ubuntu/ o/Linux/ cpe:/a:memcached:memcached:$1/ cpe:/o:canonical:ubuntu_linux/ cpe:/o:linux:linux_kernel/a
-# May as well softmatch to avoid further probing
 
 ##############################NEXT PROBE##############################
 # Sends a ServerInfo PBC request to the Basho Riak distributed database
@@ -10696,13 +9819,6 @@ ports 50505,55552
 sslports 3790
 
 ##############################NEXT PROBE##############################
-# svrloc
-Probe UDP svrloc q|\x02\x01\x00\x006 \x00\x00\x00\x00\x00\x01\x00\x02en\x00\x00\x00\x15service:service-agent\x00\x07default\x00\x00\x00\x00|
-rarity 8
-ports 427
-match svrloc m|^\x02\x0b| p/Service Location Protocol/ v/2/
-
-##############################NEXT PROBE##############################
 # Hazelcast In-Memory Data Grid >= 1.9-RC http://www.hazelcast.com/
 # http://seclists.org/nmap-dev/2013/q2/7
 Probe TCP hazelcast-http q|GET /hazelcast/rest/cluster HTTP/1.0\r\n\r\n\r\n|
@@ -10736,30 +9852,6 @@ rarity 9
 match erlang-node m|^\0\x03sok\0.n\0\0.{8}(.+).|s p/Erlang Distribution Node/ i/Node name: $1/
 match erlang-node m|^\0[^\x03]s(.+)|s p/Erlang Distribution Node/ i/Status: $1/
 
-
-##############################NEXT PROBE##############################
-# UDP ping. "abcdefgh" is an identifier. See
-# http://mumble.sourceforge.net/Protocol.
-# http://seclists.org/nmap-dev/2013/q2/413
-Probe UDP Murmur q|\0\0\0\0abcdefgh|
-rarity 9
-ports 64738
-
-match murmur m|^\0...abcdefgh............$|s p/Murmur/ v/1.2.X/
-
-
-##############################NEXT PROBE##############################
-# Ventrilo 2.1.2+
-# UDP general status request (encrypted).
-# See http://aluigi.altervista.org/papers.htm#ventrilo
-# http://seclists.org/nmap-dev/2013/q2/413
-Probe UDP Ventrilo q|\x01\xe7\xe5\x75\x31\xa3\x17\x0b\x21\xcf\xbf\x2b\x99\x4e\xdd\x19\xac\xde\x08\x5f\x8b\x24\x0a\x11\x19\xb6\x73\x6f\xad\x28\x13\xd2\x0a\xb9\x12\x75|
-rarity 9
-ports 3784
-
-match ventrilo m|^.{111}|s p/Ventrilo/ v/2.1.2+/
-
-
 ##############################NEXT PROBE##############################
 # TeamSpeak 2 TCPQuery "ver" command.
 # http://seclists.org/nmap-dev/2013/q2/413
@@ -10774,50 +9866,6 @@ match uptime-agent m|^up.time agent ([\d.]+) \(build (\d+)\) linux\n| p/Idera Up
 match uptime-agent m|^up.time agent ([\d.]+) \(build (\d+)\) ([\w._-]+)\n| p/Idera Uptime Infrastructure Monitor/ v/$1/ i/build $2/ o/$3/ cpe:/a:idera:uptime_infrastructure_monitor:$1/
 
 ##############################NEXT PROBE##############################
-# Login request.
-# See http://wiki.wireshark.org/TeamSpeak2
-# http://seclists.org/nmap-dev/2013/q2/413
-Probe UDP TeamSpeak2 q|\xf4\xbe\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x32\x78\xba\x85\x09\x54\x65\x61\x6d\x53\x70\x65\x61\x6b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0a\x57\x69\x6e\x64\x6f\x77\x73\x20\x58\x50\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x20\x00\x3c\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x08\x6e\x69\x63\x6b\x6e\x61\x6d\x65\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|
-rarity 9
-ports 8767
-
-# Offset  Type   Value                  Comment
-# 0-1     uint16 0xBEF4                 Class: connection
-# 2-3     uint16 0x0004                 Type: login reply
-# 4-7     uint32 0                      Session key; zero on first reply
-# 8-11    uint32 client id
-# 12-15   uint32 2                      Sequence number; 2 on first reply
-# 16-19   uint32 some crc32 checksum
-# 20      uint8  server name length
-# 21-49   string server name
-# 50      uint8  platform length
-# 51-79   string platform
-# 80-81   uint16 1. version             E.g. the "2" in "2.0.23.19"
-# 82-83   uint16 2. version             E.g. the "0" in "2.0.23.19"
-# 84-85   uint16 3. version             E.g. the "23" in "2.0.23.19"
-# 86-87   uint16 4. version             E.g. the "19" in "2.0.23.19"
-# 88-179  bytes  unknown
-# 180     uint8  welcome message length
-# 181-435 string welcome message
-
-match teamspeak2 m|^\xf4\xbe\x04\x00\x00\x00\x00\x00....\x02\x00\x00\x00.....([^\0]+)\0*.Win32\0*\x02\x00\x00\x00\x17\x00\x13\x00|s p/TeamSpeak 2/ v/2.0.23.19/ i/name: $1; no password/ o/Windows/ cpe:/a:teamspeak:teamspeak2:2.0.23.19/ cpe:/o:microsoft:windows/
-match teamspeak2 m|^\xf4\xbe\x04\x00\x00\x00\x00\x00....\x02\x00\x00\x00.....([^\0]+)\0*.Linux\0*\x02\x00\x00\x00\x17\x00\x13\x00|s p/TeamSpeak 2/ v/2.0.23.19/ i/name: $1; no password/ o/Linux/ cpe:/a:teamspeak:teamspeak2:2.0.23.19/ cpe:/o:linux:linux_kernel/
-match teamspeak2 m|^\xf4\xbe\x04\x00\x00\x00\x00\x00....\x02\x00\x00\x00....\0{60}.{356}$|s p/TeamSpeak 2/ cpe:/a:teamspeak:teamspeak2/
-
-
-##############################NEXT PROBE##############################
-# UDP login request (encrypted)
-# http://seclists.org/nmap-dev/2013/q3/72
-Probe UDP TeamSpeak3 q|\x05\xca\x7f\x16\x9c\x11\xf9\x89\x00\x00\x00\x00\x02\x9d\x74\x8b\x45\xaa\x7b\xef\xb9\x9e\xfe\xad\x08\x19\xba\xcf\x41\xe0\x16\xa2\x32\x6c\xf3\xcf\xf4\x8e\x3c\x44\x83\xc8\x8d\x51\x45\x6f\x90\x95\x23\x3e\x00\x97\x2b\x1c\x71\xb2\x4e\xc0\x61\xf1\xd7\x6f\xc5\x7e\xf6\x48\x52\xbf\x82\x6a\xa2\x3b\x65\xaa\x18\x7a\x17\x38\xc3\x81\x27\xc3\x47\xfc\xa7\x35\xba\xfc\x0f\x9d\x9d\x72\x24\x9d\xfc\x02\x17\x6d\x6b\xb1\x2d\x72\xc6\xe3\x17\x1c\x95\xd9\x69\x99\x57\xce\xdd\xdf\x05\xdc\x03\x94\x56\x04\x3a\x14\xe5\xad\x9a\x2b\x14\x30\x3a\x23\xa3\x25\xad\xe8\xe6\x39\x8a\x85\x2a\xc6\xdf\xe5\x5d\x2d\xa0\x2f\x5d\x9c\xd7\x2b\x24\xfb\xb0\x9c\xc2\xba\x89\xb4\x1b\x17\xa2\xb6|
-rarity 9
-ports 9987
-
-# These are the bytes in common, but a lot of the bytes are close in value
-# #match ts3 m|^........\x00\x00\x02......\xef.....\x19|s p/TeamSpeak 3 server/
-match ts3 m|^........\x00\x00\x02\x97\x76\x8b\x54\xad\x79\xe3\xaf\x87\xeb\xaa\x1a\x19\xba\xcf\x41\xe0\x16\xa2\x32\x6c\xf3\xcf\xf4\x8e\x3c\x44\x83\xc8\x8d\x51\x45\x6f\x90\x95\x23\x33\x08\x86\x2d\x40|s p/TeamSpeak 3 server/ cpe:/a:teamspeak:teamspeak3/
-match ts3 m|^........\x00\x00\x02\x9bj\x90O\xb6/\xef\xb3\xca\xbf\xf6L\x19\xb6\xd0V\xb5\x14\xf33Y\xdc\xd4\xf8\xcd\x12n\xc2\xcb\x8c\x15\x19T\xde\xc7v%\t\x938\x18\(\xd3W\xc4U\xdc\xd5m\xf7Z\xcd~@\x8e\x8fN\x97h|s p/TeamSpeak 3 server/ cpe:/a:teamspeak:teamspeak3/
-
-##############################NEXT PROBE##############################
 # xmlsysd info request
 # http://www.phy.duke.edu/~rgb/brahma/Resources/xmlsysd.php
 Probe TCP xmlsysd q|init\noff all\non identity version\nsend\nquit\n|
@@ -10825,49 +9873,6 @@ rarity 9
 ports 7887
 
 match xmlsysd m|^Content-Length: [0-9]+\n\n<\?xml version=\"1\.0\"\?>\s*<xmlsysd init=\"1\">\s*<system>\s*<identity>\s*<hostname>([^<]*)</hostname>\s*<hostip>([^<]*)</hostip>\s*</identity>\s*</system>\s*<proc>\s*<version>([^<]*)</version>\s*</proc>\s*</xmlsysd>|s p/xmlsysd daemon/ i/IP: $2/ o/$3/ h/$1/ cpe:/a:wulfware:xmlsysd/
-
-##############################NEXT PROBE##############################
-# Freelancer game server status query
-# http://sourceforge.net/projects/gameq/
-# (relevant files: games.ini, packets.ini, freelancer.php)
-Probe UDP FreelancerStatus q|\x00\x02\xf1\x26\x01\x26\xf0\x90\xa6\xf0\x26\x57\x4e\xac\xa0\xec\xf8\x68\xe4\x8d\x21|
-rarity 9
-ports 2302
-
-match freelancer m|^\x00\x03\xf1\x26.{88}(.*)\0\0(?:.*?:){5}(.*)\0\0$|s p/Freelancer/ i/name: $P(1); description: $P(2)/
-
-# All-Seeing Eye service provided by some game servers for querying
-# the server's status
-# For more info on the protocol see:
-# http://int64.org/docs/gamestat-protocols/ase.html
-# http://aluigi.altervista.org/papers.htm#ase
-# http://sourceforge.net/projects/gameq/
-# (relevant files: games.ini, packets.ini, ase.php)
-Probe UDP ASE q|s|
-rarity 9
-ports 1258,2126,3123,12444,13200,23196,26000,27138,27244,27777,28138
-
-match allseeingeye m=^EYE1.(.*?)(\x02\d|\x03\d{2}|\x04\d{3}|\x05\d{4}|\x06\d{5})=s p/All-Seeing Eye/ i/game: $1; port: $P(2)/
-
-##############################NEXT PROBE##############################
-Probe UDP AndroMouse q|AMSNIFF|
-rarity 9
-ports 8888
-
-match AndroMouse m|^GOTBACK$|s p/AndroMouse Android remote mouse server/
-
-##############################NEXT PROBE##############################
-Probe UDP AirHID q|from:airhid|
-rarity 9
-ports 13246
-
-match AirHID m|^andReceiver-\d+\.\d+\.\d+$|s p/AirHID Andrioid remote mouse server/
-
-##############################NEXT PROBE##############################
-Probe UDP NetMotionMobility q|\0\x40\x50\0\0\0\0\x85\x5d\xb4\x91\x28\0\0\0\0\0\x01\x7c\x91\x40\0\0\0\xaa\x39\xda\x42\x37\x65\xcf\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0|
-rarity 7
-ports 5008
-match NetMotionMobility m|^\0\x40\x51\0\0\0\0| p/NetMotion Mobility VPN/
 
 ##############################NEXT PROBE##############################
 # Queries Docker APIs for the /version url containing version information.
@@ -11021,15 +10026,6 @@ rarity 9
 match openvpn m|^\0\x1a@........\x01\0\0\0\x007\xa5&\x08\xa2\x1b\xa0\xb1\0\0\0\0$| p/OpenVPN/
 # No version info submitted; update to hard match when it's available
 
-
-##############################NEXT PROBE##############################
-# P_CONTROL_HARD_RESET_CLIENT_V2
-Probe UDP OpenVPN q|8d\xc1x\x01\xb8\x9b\xcb\x8f\0\0\0\0\0|
-ports 1194,443,500
-rarity 9
-match openvpn m|^@........\x01\0\0\0\0d\xc1x\x01\xb8\x9b\xcb\x8f\0\0\0\0|s p/OpenVPN/
-# INVALID-MAJOR-VERSION
-
 ##############################NEXT PROBE##############################
 # Phoenix Contact PCWorx
 Probe TCP pcworx q|\x01\x01\x00\x1a\x00\x00\x00\x00x\x80\x00\x03\x00\x0cIBETH01N0_M\x00|
@@ -11066,51 +10062,12 @@ sslports 8883
 match mqtt m|^\x20\x02\x00.$|
 
 ##############################NEXT PROBE##############################
-# RMCP Get Channel Auth Capabilities
-Probe UDP ipmi-rmcp q|\x06\0\xff\x07\0\0\0\0\0\0\0\0\0\x09\x20\x18\xc8\x81\0\x38\x8e\x04\xb5|
-rarity 9
-ports 623
-
-
-##############################NEXT PROBE##############################
-# CoAP GET .well-known/core
-Probe UDP coap-request q|@\x01\x01\xce\xbb.well-known\x04core|
-rarity 9
-ports 5683
-sslports 5684
-
-
-##############################NEXT PROBE##############################
-# DTLS Client Hello. Dissection available in nmap-payloads
-Probe UDP DTLSSessionReq q|\x16\xfe\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x36\x01\x00\x00\x2a\x00\x00\x00\x00\x00\x00\x00\x2a\xfe\xfd\x00\x00\x00\x00\x7c\x77\x40\x1e\x8a\xc8\x22\xa0\xa0\x18\xff\x93\x08\xca\xac\x0a\x64\x2f\xc9\x22\x64\xbc\x08\xa8\x16\x89\x19\x30\x00\x00\x00\x02\x00\x2f\x01\x00|
-rarity 5
-ports 443,853,4433,4740,5349,5684,5868,6514,6636,8232,10161,10162,12346,12446,12546,12646,12746,12846,12946,13046
-
-# OpenSSL 1.1.0 s_server -dtls -listen
-# HelloVerifyRequest always uses DTLS 1.1 version, per RFC 6347
-match dtls m|^\x16\xfe\xff\0\0\0\0\0\0\0\0..\x03...\0\0\0\0\0...\xfe\xff.|
-# Except when it doesn't? This was from IKEA's E1526 Trådfri Gateway, but could be anything.
-match dtls m|^\x16\xfe\xfd\0\0\0\0\0\0\0\0..\x03...\0\0\0\0\0...\xfe\xfd.|
-# ServerHello
-match dtls m|^\x16\xfe[\xfd\xff]\0\0\0\0\0\0\0\0..\x02...\0\0\0\0\0...\xfe[\xfd\xff].|
-
-#DTLS 1.0 alert: Handshake Failure
-match dtls m|^\x15\xfe\xff\0\0\0\0\0\0\0\0..\x02\(\0\0\0\0\0|
-
-##############################NEXT PROBE##############################
 # Detects iperf3 servers by sending a string longer than the 37-byte test identifer or cookie
 # https://github.com/esnet/iperf/wiki/IperfProtocolStates#test-initiation
 Probe TCP iperf3 q|0000000000000000000000000000000000000\0\0\0\0|
 ports 5201
 rarity 9
 match iperf3 m|^\t$|
-
-##############################NEXT PROBE##############################
-# QUIC initialization with random CID, advertising version Q999, which should elicit a version negotiation packet from the server
-Probe UDP QUIC q|\r\x89\xc1\x9c\x1c*\xff\xfc\xf1Q999\x00|
-ports 80,443
-rarity 6
-
 
 ##############################NEXT PROBE##############################
 # Detects ClamAV servers and possibly other services that respond to the string VERSION
@@ -11146,16 +10103,6 @@ ports 1599
 match impress-remote m|^LO_SERVER_VALIDATING_PIN\n$| p/LibreOffice Impress remote/ cpe:/a:libreoffice:libreoffice/
 
 ##############################NEXT PROBE##############################
-# Apple Remote Desktop
-Probe UDP ARD q|\0\x14\0\x01\x03|
-rarity 8
-ports 3283
-
-# Need to figure out what is different between these versions:
-match netassistant m|^\0\x01\x03\xea\x001\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x12\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0[^\0]([^\0]+)\0|s p/Apple Remote Desktop/ i/name: $P(1)/
-match netassistant m|^\0\x01\x01d\x001\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x12\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0[^\0]([^\0]+)\0|s p/Apple Remote Desktop/ i/name: $P(1)/
-
-##############################NEXT PROBE##############################
 # LinuxSampler Control Protocol
 # https://www.linuxsampler.org/api/draft-linuxsampler-protocol.html
 Probe TCP LSCP q|GET SERVER INFO\r\n|
@@ -11173,34 +10120,6 @@ ports 4533
 
 # Maybe rigctld also?
 match rotctld m|^get_info: (.*)\nRPRT 0\n| p/Hamlib rotctld/ i/model: $1/
-
-##############################NEXT PROBE##############################
-# Ubiquiti Discovery Protocol
-Probe UDP UbiquitiDiscoveryv1 q|\x01\0\0\0|
-rarity 9
-ports 10001
-
-# Valid response is protocol version (\x01) and cmd (\0) followed
-# by 2 bytes of length then TLV groups
-match ubiquiti-discovery m|^\x01\0.[^\0].*\x0c\0\x06AirCam|s p/Ubiquiti Discovery Service/ i/v1 protocol, AirCam/ cpe:/h:ubnt:aircam:/
-match ubiquiti-discovery m|^\x01\0.[^\0].*\x0c\0\nAirCamDome|s p/Ubiquiti Discovery Service/ i/v1 protocol, AirCamDome/ cpe:/h:ubnt:aircam_dome:/
-
-# Match short model name = \x0c followed by 2 byte len then value
-# No known type bytes fall in \w the following regex should be safe
-match ubiquiti-discovery m|^\x01\0.[^\0].*\x0c\0.([\w-]+)|s p/Ubiquiti Discovery Service/ i/v1 protocol, $1/
-
-
-##############################NEXT PROBE##############################
-# Ubiquiti Discovery Protocol
-Probe UDP UbiquitiDiscoveryv2 q|\x02\x08\0\0|
-rarity 9
-ports 10001
-
-# Valid response is protocol version (\x02 ) and cmd followed
-# by 2 bytes of length then TLV groups
-# Known cmd values are \x06, \x09, and \x0b
-match ubiquiti-discovery m|^\x02[\x06\x09\x0b].[^\0].*\x15\0.([\w-]+)\x16\0.([\d.]+)|s p/Ubiquiti Discovery Service/ i/v2 protocol, $1 software ver. $2/
-match ubiquiti-discovery m|^\x02[\x06\x09\x0b].[^\0].*\x15\0.([\w-]+)|s p/Ubiquiti Discovery Service/ i/v2 protocol, $1/
 
 ##############################NEXT PROBE##############################
 # Sharp TV IP/Serial remote control protocol
