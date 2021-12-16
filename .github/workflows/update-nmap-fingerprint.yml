@@ -25,7 +25,7 @@ jobs:
       - name: Update Nmap FingerPrint
         id: update-nmap-fingerprint
         run: |
-          python .github/script/update_nmap_fingerprint.py.py
+          python .github/script/update_nmap_fingerprint.py
           find . -path "*.pyc" -delete
           echo "::set-output name=changes::$(git status -s | wc -l)"
 
