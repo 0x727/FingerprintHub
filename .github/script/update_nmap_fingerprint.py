@@ -3,6 +3,14 @@
 import json
 import os
 
+import yaml
+
+
+class MyDumper(yaml.Dumper):
+
+    def increase_indent(self, flow=False, indentless=False):
+        return super(MyDumper, self).increase_indent(flow, False)
+
 
 class ServiceScanException(Exception):
     pass
@@ -16,10 +24,22 @@ class ServiceProbe(object):
     def __init__(self):
         base_path = os.path.dirname(os.path.realpath(__file__))
         self.probe_raw_filename = os.path.join(base_path, "nmap-service-probes")
-        self.probe_json_filename = os.path.join(base_path, "../", "../", 'nmap-service-probes.json')
+        self.probe_json_filename = os.path.join(base_path, "../", "../", 'nmap_service_probes.json')
 
     def parse(self):
         r = self.get_probe_raw_file()
+        sorted_list = {"protocol": 0, "directive_name": 1, "directive_str": 2, "rarity": 3, "ports": 4, "fallback": 5,
+                       "matches": 6}
+        for nmap_fingerprint in r:
+            sorted_nmap_fingerprint = {k: v for k, v in
+                                       sorted(nmap_fingerprint.items(), key=lambda item: sorted_list[item[0]])}
+
+            nmap_fingerprint_yaml = yaml.dump(sorted_nmap_fingerprint, Dumper=MyDumper, sort_keys=False,
+                                              allow_unicode=True,
+                                              default_flow_style=False, explicit_start=False, indent=2, width=2)
+            save_path = os.path.join("service_fingerprint", nmap_fingerprint.get("directive_name") + ".yaml")
+            with open(save_path, "w") as y:
+                y.write(nmap_fingerprint_yaml)
         json.dump(r, open(self.probe_json_filename, 'w'), indent=2, ensure_ascii=False)
         return r
 
@@ -194,7 +214,15 @@ class ServiceProbe(object):
         :return:
         """
         ports = data[len("ports") + 1:]
-        return ports
+        ports_string_list = ports.split(",")
+        ports_ranges = []
+        for ports_string in ports_string_list:
+            if "-" in ports_string:
+                start, end = ports_string.split("-")
+                ports_ranges.extend(range(int(start), int(end)))
+            else:
+                ports_ranges.append(int(ports_string))
+        return ports_ranges
 
     @staticmethod
     def get_ssl_ports(data):
@@ -230,7 +258,7 @@ class ServiceProbe(object):
     def get_rarity(data):
         # Syntax: rarity <value between 1 and 9>
         # Syntax: tcp_wrapped_ms <milliseconds>
-        rarity = data[len("rarity") + 1:]
+        rarity = int(data[len("rarity") + 1:])
         # record = {
         #     "rarity": rarity
         # }
@@ -245,6 +273,22 @@ class ServiceProbe(object):
         return fallback
 
 
+def update_nmap_fingerprint(path):
+    nmap_fingerprint_json = []
+    for site, site_list, file_list in os.walk(path):
+        for file_name in file_list:
+            abs_filename = os.path.abspath(os.path.join(site, file_name))
+            if abs_filename.endswith(".yaml"):
+                with open(abs_filename) as n:
+                    n_dict = yaml.safe_load(n)
+                    nmap_fingerprint_json.append(n_dict)
+    nmap_fingerprint_json_sorted = sorted(nmap_fingerprint_json, key=lambda t: t.get("rarity", 0))
+    with open("nmap_service_probes.json", "w") as nsp:
+        json.dump(nmap_fingerprint_json_sorted, nsp, indent=2, ensure_ascii=False)
+
+
+# https://svn.nmap.org/nmap/nmap-service-probes
 if __name__ == '__main__':
-    service_probe = ServiceProbe()
-    service_probe.parse()
+    update_nmap_fingerprint("service_fingerprint")
+# service_probe = ServiceProbe()
+# service_probe.parse()

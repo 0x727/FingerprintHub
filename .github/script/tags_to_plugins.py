@@ -42,7 +42,7 @@ for site, site_list, file_list in os.walk("nuclei-templates"):
             if not file_name.startswith('.') and file_name.endswith('.yaml'):
                 nuclei_path_dict.setdefault(file_name, nuclei_abs_filename)
 
-for site, site_list, file_list in os.walk("fingerprint"):
+for site, site_list, file_list in os.walk("web_fingerprint"):
     for file_name in file_list:
         fingerprint_path_dict.setdefault(file_name[:-len(Path(file_name).suffix)], file_name)
 
