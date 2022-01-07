@@ -2,8 +2,8 @@ name: 📝 FingerPrint Update
 
 on:
   push:
-    paths:
-      - 'web_fingerprint'
+    branches:
+      - main
 
 jobs:
   build:

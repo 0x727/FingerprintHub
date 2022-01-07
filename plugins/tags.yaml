@@ -113,6 +113,9 @@ haproxy-report:
   - - haproxy
 harbor:
   - - harbor
+hjtcloud:
+  - - huijietong
+  - - hjtcloud
 horde:
   - - horde
 ibm-websphere:
@@ -184,6 +187,9 @@ ruijie-router-nbr:
   - - ruijie
 saltstack:
   - - saltstack
+sangfor-edr:
+  - - 深信服终端检测响应平台-sangfor-edr
+  - - sangfor
 shopxo:
   - - shopxo
 showdoc:
@@ -262,11 +268,5 @@ zimbra:
   - - zimbra
 zzzcms:
   - - zzzcms
-hjtcloud:
-  - - huijietong
-  - - hjtcloud
-sangfor-edr:
-  - - 深信服终端检测响应平台-sangfor-edr
-  - - sangfor
 用友-turbocrm:
   - - turbocrm
