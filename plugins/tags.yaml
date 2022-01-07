@@ -262,10 +262,10 @@ zimbra:
   - - zimbra
 zzzcms:
   - - zzzcms
-会捷通云视讯平台:
+hjtcloud:
   - - huijietong
   - - hjtcloud
-深信服终端检测响应平台-sangfor-edr:
+sangfor-edr:
   - - 深信服终端检测响应平台-sangfor-edr
   - - sangfor
 用友-turbocrm:

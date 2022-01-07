@@ -1,8 +1,7 @@
-name: 深信服终端检测响应平台-sangfor-edr
+name: xenforo
 priority: 3
 nuclei_tags:
-  - - 深信服终端检测响应平台-sangfor-edr
-  - - sangfor
+  - []
 fingerprint:
   - path: /
     request_method: get
@@ -11,5 +10,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - 'windows_download_name: "/download_installer_win.php",'
+      - default/xenforo/bell.png
     favicon_hash: []
