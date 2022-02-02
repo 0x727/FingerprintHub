@@ -1,0 +1,15 @@
+name: yunanbao-yunxz
+priority: 3
+nuclei_tags:
+  - []
+fingerprint:
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - 'id=mtokenplugin width=0 height=0 style="position: absolute;left: 0px; top:
+        0px"'
+    favicon_hash: []

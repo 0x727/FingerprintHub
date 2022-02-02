@@ -1,0 +1,14 @@
+name: chamilo
+priority: 3
+nuclei_tags:
+  - []
+fingerprint:
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword: []
+    favicon_hash:
+      - 0c53ef3d151cbac70a8486dd1ebc8b25

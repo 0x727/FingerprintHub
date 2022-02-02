@@ -1,0 +1,14 @@
+name: 用友软件fe协作办公平台
+priority: 1
+nuclei_tags:
+  - []
+fingerprint:
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 200
+    headers: {}
+    keyword:
+      - FE协作办公平台
+    favicon_hash: []

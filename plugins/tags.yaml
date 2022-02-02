@@ -1,0 +1,272 @@
+74cms:
+  - - 74cms
+adminer:
+  - - adminer
+adobe-magento:
+  - - magento
+apache-activemq:
+  - - activemq
+apache-airflow:
+  - - airflow
+apache-ambari:
+  - - ambari
+apache-axis2:
+  - - axis
+apache-cocoon:
+  - - cocoon
+apache-couchdb:
+  - - couchdb
+apache-druid:
+  - - druid
+apache-flink:
+  - - flink
+apache-guacamole:
+  - - guacamole
+apache-hadoop:
+  - - hadoop
+apache-ofbiz:
+  - - ofbiz
+    - apache
+  - - ofbiz
+apache-shiro:
+  - - shiro
+    - apache
+apache-skywalking:
+  - - skywalking
+apache-solr:
+  - - solr
+apache-struts:
+  - - struts
+apache-tomcat:
+  - - tomcat
+atlassian-jira:
+  - - jira
+  - - atlassian
+bullwark:
+  - - bullwark
+cacti:
+  - - cacti
+caucho-resin:
+  - - caucho
+    - resin
+citrix-access-gateway:
+  - - citrix
+coldfusion:
+  - - coldfusion
+confluence:
+  - - confluence
+coremail:
+  - - coremail
+d-link:
+  - - dlink
+dedecms:
+  - - dedecms
+django:
+  - - django
+drupal:
+  - - drupal
+duomicms:
+  - - duomicms
+dvwa:
+  - - dvwa
+ecology泛微协同办公oa:
+  - - ecology
+ecshop:
+  - - ecshop
+elascticsearch:
+  - - elascticsearch
+elastichd-dashboard:
+  - - elastic
+emby:
+  - - emby
+ewebs:
+  - - ewebs
+exponent-cms:
+  - - exponentcms
+eyou-亿邮邮件系统:
+  - - eyou
+f5-big-ip:
+  - - bigip
+fastjson:
+  - - fastjson
+feifeicms:
+  - - feifeicms
+ffay-lanproxy:
+  - - lanproxy
+finereport:
+  - - finereport
+fortinet-fortigate:
+  - - fortigate
+gate-one:
+  - - gateone
+gitlab:
+  - - gitlab
+glpi:
+  - - glpi
+gogs:
+  - - gogs
+grafana:
+  - - grafana
+h3c-imc:
+  - - h3c-imc
+haproxy-report:
+  - - haproxy
+harbor:
+  - - harbor
+hjtcloud:
+  - - huijietong
+  - - hjtcloud
+horde:
+  - - horde
+ibm-websphere:
+  - - websphere
+jboss:
+  - - jboss
+jeecms:
+  - - jeecms
+jeewms:
+  - - jeewms
+jellyfin:
+  - - jellyfin
+jenkins:
+  - - jenkins
+  - - jenkin
+jetty:
+  - - jetty
+joomla:
+  - - joomla
+kibana:
+  - - kibana
+kindeditor:
+  - - kindeditor
+landray-蓝凌oa系统:
+  - - landray
+laravel-framework:
+  - - laravel
+microsoft-sharepoint:
+  - - sharepoint
+mongodb:
+  - - mongodb
+moodle:
+  - - moodle
+nacos:
+  - - nacos
+nagios-xi:
+  - - nagios
+natshell:
+  - - natshell
+netgear:
+  - - netgear
+nextcloud-product:
+  - - nextcloud
+nexus-repository-manager:
+  - - nexus
+nps:
+  - - nps
+openfire:
+  - - openfire
+panabit智能网关:
+  - - panabit
+parallels-plesk-panel:
+  - - plesk
+phpmyadmin:
+  - - phpmyadmin
+phpwiki:
+  - - phpwiki
+powercreator-cms:
+  - - powercreator
+prometheus:
+  - - prometheus
+qcubed-development-framework:
+  - - qcubed
+rabbitmq:
+  - - rabbitmq
+rconfig:
+  - - rconfig
+ruijie-router-nbr:
+  - - ruijie
+saltstack:
+  - - saltstack
+sangfor-edr:
+  - - 深信服终端检测响应平台-sangfor-edr
+  - - sangfor
+shopxo:
+  - - shopxo
+showdoc:
+  - - showdoc
+siteserver:
+  - - siteserver
+solarwinds:
+  - - solarwinds
+sonarqube:
+  - - sonarqube
+sonicwall-ssl-vpn:
+  - - sonicwall
+    - vpn
+spark:
+  - - spark
+splunk:
+  - - splunk
+spring-cloud-netflix:
+  - - springcloud
+spring-framework:
+  - - springboot
+  - - springframework
+swagger:
+  - - swagger
+thinkadmin:
+  - - thinkadmin
+thinkcmf:
+  - - thinkcmf
+thinkphp:
+  - - thinkphp
+tongda-oa:
+  - - tongda
+tpshop:
+  - - tpshop
+ueditor:
+  - - ueditor
+vbulletin:
+  - - vbulletin
+vmware-vcenter:
+  - - vmware-vcenter
+  - - vcenter
+  - - vmware
+vmware-vrealize-operations-manager:
+  - - vrealize
+weblogic:
+  - - weblogic
+webmin:
+  - - webmin
+websvn:
+  - - websvn
+weiphp:
+  - - weiphp
+wordpress:
+  - - wordpress
+wuzhicms:
+  - - wuzhicms
+xdcms:
+  - - xdcms
+xiuno:
+  - - xiuno
+xxl-job:
+  - - xxljob
+yapi:
+  - - yapi
+yii-framework:
+  - - yii
+yonyou-erp-nc:
+  - - erp-nc
+yonyou-seeyon-oa:
+  - - seeyon
+zabbix:
+  - - zabbix
+zcms:
+  - - zcms
+zimbra:
+  - - zimbra
+zzzcms:
+  - - zzzcms
+用友-turbocrm:
+  - - turbocrm

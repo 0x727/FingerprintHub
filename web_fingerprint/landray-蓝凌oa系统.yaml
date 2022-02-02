@@ -1,0 +1,14 @@
+name: landray-蓝凌oa系统
+priority: 3
+nuclei_tags:
+  - - landray
+fingerprint:
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - lui_login_message_td
+    favicon_hash: []

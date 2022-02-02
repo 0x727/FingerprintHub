@@ -1,0 +1,24 @@
+name: finereport
+priority: 3
+nuclei_tags:
+  - - finereport
+fingerprint:
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - =fs
+      - ReportServer
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - content="finereport--web reporting tool"
+    favicon_hash: []
