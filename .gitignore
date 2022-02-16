@@ -2,3 +2,4 @@
 .github/.private
 /nuclei-templates/
 /plugins.zip
+.drone.yml
