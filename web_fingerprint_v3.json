@@ -34292,7 +34292,7 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
-    "status_code": 0,
+    "status_code": 200,
     "headers": {
       "Content-Type": "application/json",
       "Content-Length": "46"
