@@ -9,8 +9,8 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers:
-      Content-Type: "application/json"
-      Content-Length: "46"
+      Content-Type: application/json
+      Content-Length: '46'
     keyword:
       - '{"success":false,"msg":"Verification failure"}'
     favicon_hash: []
