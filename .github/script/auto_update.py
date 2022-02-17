@@ -57,6 +57,10 @@ def valid_fingerprint_v3(rule):
     for key in list(rule):
         if key not in fields:
             rule.pop(key)
+    headers = rule.get("headers", {})  # 转字符串
+    for k in list(headers):
+        headers[k] = str(headers[k])
+    rule["headers"] = headers
     for key in fields:
         if key not in rule:
             rule[key] = fields[key]
