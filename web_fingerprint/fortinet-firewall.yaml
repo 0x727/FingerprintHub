@@ -1,4 +1,4 @@
-name: fortinet-防火墙
+name: fortinet-firewall
 priority: 3
 nuclei_tags:
   - []
