@@ -152,5 +152,4 @@ if __name__ == '__main__':
             if Path(c.a_path).exists():
                 format_yaml(c.a_path)
             is_change = True
-    if is_change:
-        fingerprint_json_generator("web_fingerprint")
+    fingerprint_json_generator("web_fingerprint")
