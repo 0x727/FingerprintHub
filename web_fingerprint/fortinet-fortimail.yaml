@@ -1,7 +1,8 @@
 name: fortinet-fortimail
 priority: 3
 nuclei_tags:
-  - [[fortimail,fortinet]]
+  - - fortimail
+    - fortinet
 fingerprint:
   - path: /
     request_method: get
