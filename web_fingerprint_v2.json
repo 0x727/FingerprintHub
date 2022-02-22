@@ -11401,6 +11401,20 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "fortitoken",
+      "str_table.mail_token_msg"
+    ],
+    "priority": 3,
+    "name": "fortinet-firewall"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 200,
     "headers": {},
     "keyword": [
@@ -11443,11 +11457,11 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "/sslvpn/portal.html",
-      "fgt_lang"
+      "location=\"/m/webmail/\";",
+      "<script language=javascript>"
     ],
     "priority": 3,
-    "name": "fortinet-sslvpn"
+    "name": "fortinet-fortimail"
   },
   {
     "path": "/",
@@ -11457,11 +11471,11 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "fortitoken",
-      "str_table.mail_token_msg"
+      "/sslvpn/portal.html",
+      "fgt_lang"
     ],
     "priority": 3,
-    "name": "fortinet-防火墙"
+    "name": "fortinet-sslvpn"
   },
   {
     "path": "/",

@@ -97,6 +97,9 @@ finereport:
   - - finereport
 fortinet-fortigate:
   - - fortigate
+fortinet-fortimail:
+  - - fortimail
+    - fortinet
 gate-one:
   - - gateone
 gitlab:
