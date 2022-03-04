@@ -1,7 +1,7 @@
-name: 用友-grp-u8
+name: eyou-email-system
 priority: 3
 nuclei_tags:
-  - []
+  - - eyou
 fingerprint:
   - path: /
     request_method: get
@@ -10,5 +10,6 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - 用友GRP-U8行政事业内控管理软件
+      - eYouWS
+      - eYouMail
     favicon_hash: []

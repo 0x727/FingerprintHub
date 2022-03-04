@@ -1,7 +1,8 @@
 name: vmware-vsphere
 priority: 3
 nuclei_tags:
-  - []
+  - - vsphere
+    - vmware
 fingerprint:
   - path: /
     request_method: get

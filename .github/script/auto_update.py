@@ -142,6 +142,16 @@ def format_yaml(format_path):
             y.write(wfp_y)
 
 
+def no_git():
+    for site, site_list, file_list in os.walk("web_fingerprint"):
+        for file_name in file_list:
+            plugins_abs_filename = os.path.abspath(os.path.join(site, file_name))
+            if not file_name.startswith('.') and file_name.endswith('.yaml') and not file_name == "tags.yaml":
+                print(plugins_abs_filename)
+                format_yaml(plugins_abs_filename)
+    fingerprint_json_generator("web_fingerprint")
+
+
 if __name__ == '__main__':
     repo = Repo('./')
     current_sha = repo.head.object.hexsha

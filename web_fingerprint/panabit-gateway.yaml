@@ -1,4 +1,4 @@
-name: panabit智能网关
+name: panabit-gateway
 priority: 3
 nuclei_tags:
   - - panabit

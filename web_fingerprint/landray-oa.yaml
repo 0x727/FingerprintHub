@@ -1,7 +1,7 @@
-name: thinker-智能网关系统
+name: landray-oa
 priority: 3
 nuclei_tags:
-  - []
+  - - landray
 fingerprint:
   - path: /
     request_method: get
@@ -10,5 +10,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - 智能网关系统<br>"
+      - lui_login_message_td
     favicon_hash: []

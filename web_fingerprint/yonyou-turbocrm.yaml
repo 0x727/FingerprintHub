@@ -1,4 +1,4 @@
-name: 用友-turbocrm
+name: yonyou-turbocrm
 priority: 3
 nuclei_tags:
   - - turbocrm

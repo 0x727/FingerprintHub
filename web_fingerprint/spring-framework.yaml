@@ -3,6 +3,8 @@ priority: 2
 nuclei_tags:
   - - springboot
   - - springframework
+  - - spring
+    - vmware
 fingerprint:
   - path: /
     request_method: get
