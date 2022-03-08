@@ -29092,6 +29092,20 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "login_psw.csp",
+      "VDI"
+    ],
+    "priority": 3,
+    "name": "sangfor-vd"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "content=\"webkit|ie-stand\"",
       "id=\"privacytipwin\""
     ],
