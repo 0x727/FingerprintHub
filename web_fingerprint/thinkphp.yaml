@@ -36,6 +36,6 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword: 
+    keyword:
       - thinkphp_show_page_trace
     favicon_hash: []
