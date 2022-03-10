@@ -145,6 +145,8 @@ laravel-framework:
   - - laravel
 microsoft-sharepoint:
   - - sharepoint
+minio-browser:
+  - - minio
 mongodb:
   - - mongodb
 moodle:
