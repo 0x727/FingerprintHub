@@ -1,7 +1,7 @@
 name: minio-browser
 priority: 3
 nuclei_tags:
-  - []
+  - [minio]
 fingerprint:
   - path: /
     request_method: get
