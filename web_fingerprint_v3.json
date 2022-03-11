@@ -10819,7 +10819,7 @@
     "name": "esyndicat"
   },
   {
-    "path": "/",
+    "path": "/version",
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
