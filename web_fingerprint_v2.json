@@ -10054,6 +10054,20 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "etcdserver",
+      "etcdcluster"
+    ],
+    "priority": 3,
+    "name": "etcd-io"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "<a class=\"navbar-brand\" href=\"./home\">etcd viewer</a>"
     ],
     "priority": 2,

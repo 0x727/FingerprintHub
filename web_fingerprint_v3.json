@@ -10826,6 +10826,21 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "etcdserver",
+      "etcdcluster"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "etcd-io"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "<a class=\"navbar-brand\" href=\"./home\">etcd viewer</a>"
     ],
     "favicon_hash": [],
