@@ -10658,6 +10658,34 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "type=\"text/javascript\" SourceControl=\"EpointCommon\" ></script>"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "epoint-oa"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "epoint-web-zwdt"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "epoint-web-zwdt"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "href=\"eqmail.ico"
     ],
     "favicon_hash": [],
