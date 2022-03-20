@@ -8,6 +8,7 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {"Server":"mini_httpd"}
+    headers:
+      Server: mini_httpd
     keyword: []
     favicon_hash: []

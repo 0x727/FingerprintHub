@@ -9898,6 +9898,20 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>新点运维监控平台单机版</title>",
+      "新点运维监控平台单机版,请耐心等待"
+    ],
+    "priority": 3,
+    "name": "epoint-devops-monitor"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "type=\"text/javascript\" SourceControl=\"EpointCommon\" ></script>"
     ],
     "priority": 3,
@@ -20811,6 +20825,19 @@
     ],
     "priority": 3,
     "name": "mingyuanyun-sales"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "Server": "mini_httpd"
+    },
+    "keyword": [],
+    "priority": 3,
+    "name": "mini-httpd"
   },
   {
     "path": "/",
