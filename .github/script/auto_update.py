@@ -57,6 +57,10 @@ def valid_fingerprint_v3(rule):
     for key in list(rule):
         if key not in fields:
             rule.pop(key)
+    headers = rule.get("headers", {})  # 转字符串
+    for k in list(headers):
+        headers[k] = str(headers[k])
+    rule["headers"] = headers
     for key in fields:
         if key not in rule:
             rule[key] = fields[key]
@@ -138,6 +142,16 @@ def format_yaml(format_path):
             y.write(wfp_y)
 
 
+def no_git():
+    for site, site_list, file_list in os.walk("web_fingerprint"):
+        for file_name in file_list:
+            plugins_abs_filename = os.path.abspath(os.path.join(site, file_name))
+            if not file_name.startswith('.') and file_name.endswith('.yaml') and not file_name == "tags.yaml":
+                print(plugins_abs_filename)
+                format_yaml(plugins_abs_filename)
+    fingerprint_json_generator("web_fingerprint")
+
+
 if __name__ == '__main__':
     repo = Repo('./')
     current_sha = repo.head.object.hexsha
@@ -148,5 +162,4 @@ if __name__ == '__main__':
             if Path(c.a_path).exists():
                 format_yaml(c.a_path)
             is_change = True
-    if is_change:
-        fingerprint_json_generator("web_fingerprint")
+    fingerprint_json_generator("web_fingerprint")

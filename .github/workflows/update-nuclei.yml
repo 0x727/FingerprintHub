@@ -3,7 +3,9 @@ name: 📝 Nuclei Update
 on:
   schedule:
     - cron: '1 */6 * * *'
-
+  push:
+    paths:
+      - 'plugins'
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -65,7 +65,7 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - <meta http-equiv="refresh" contect="0;url=/owa">
+      - <meta http-equiv="refresh" content="0;url=/owa">
     favicon_hash: []
   - path: /
     request_method: get

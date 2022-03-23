@@ -3,3 +3,5 @@
 /nuclei-templates/
 /plugins.zip
 .drone.yml
+/observer_ward_amd64
+*.rhai

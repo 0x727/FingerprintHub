@@ -83,7 +83,7 @@ ewebs:
   - - ewebs
 exponent-cms:
   - - exponentcms
-eyou-亿邮邮件系统:
+eyou-email-system:
   - - eyou
 f5-big-ip:
   - - bigip
@@ -97,6 +97,9 @@ finereport:
   - - finereport
 fortinet-fortigate:
   - - fortigate
+fortinet-fortimail:
+  - - fortimail
+    - fortinet
 gate-one:
   - - gateone
 gitlab:
@@ -113,9 +116,6 @@ haproxy-report:
   - - haproxy
 harbor:
   - - harbor
-hjtcloud:
-  - - huijietong
-  - - hjtcloud
 horde:
   - - horde
 ibm-websphere:
@@ -139,12 +139,14 @@ kibana:
   - - kibana
 kindeditor:
   - - kindeditor
-landray-蓝凌oa系统:
+landray-oa:
   - - landray
 laravel-framework:
   - - laravel
 microsoft-sharepoint:
   - - sharepoint
+minio-browser:
+  - - minio
 mongodb:
   - - mongodb
 moodle:
@@ -165,7 +167,7 @@ nps:
   - - nps
 openfire:
   - - openfire
-panabit智能网关:
+panabit-gateway:
   - - panabit
 parallels-plesk-panel:
   - - plesk
@@ -212,6 +214,8 @@ spring-cloud-netflix:
 spring-framework:
   - - springboot
   - - springframework
+  - - spring
+    - vmware
 swagger:
   - - swagger
 thinkadmin:
@@ -228,12 +232,18 @@ ueditor:
   - - ueditor
 vbulletin:
   - - vbulletin
+vmware-horizon:
+  - - horizon
+    - vmware
 vmware-vcenter:
   - - vmware-vcenter
   - - vcenter
-  - - vmware
+    - vmware
 vmware-vrealize-operations-manager:
   - - vrealize
+vmware-vsphere:
+  - - vsphere
+    - vmware
 weblogic:
   - - weblogic
 webmin:
@@ -260,6 +270,8 @@ yonyou-erp-nc:
   - - erp-nc
 yonyou-seeyon-oa:
   - - seeyon
+yonyou-turbocrm:
+  - - turbocrm
 zabbix:
   - - zabbix
 zcms:
@@ -268,5 +280,6 @@ zimbra:
   - - zimbra
 zzzcms:
   - - zzzcms
-用友-turbocrm:
-  - - turbocrm
+会捷通云视讯平台:
+  - - huijietong
+  - - hjtcloud
