@@ -16648,6 +16648,17 @@
     "name": "jeecgboot"
   },
   {
+    "path": "/logo.png",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 1,
+    "name": "jeecgboot"
+  },
+  {
     "path": "/",
     "request_method": "get",
     "request_headers": {},
@@ -17485,6 +17496,19 @@
     ],
     "priority": 3,
     "name": "jymusic"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "k8s.io"
+    ],
+    "priority": 3,
+    "name": "k8s"
   },
   {
     "path": "/",

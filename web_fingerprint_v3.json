@@ -17925,6 +17925,20 @@
     "name": "jeecgboot"
   },
   {
+    "path": "/logo.png",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "dc7a0b69060a0262530b47b46ba7f9b6"
+    ],
+    "priority": 1,
+    "name": "jeecgboot"
+  },
+  {
     "path": "/",
     "request_method": "get",
     "request_headers": {},
@@ -18828,6 +18842,20 @@
     "favicon_hash": [],
     "priority": 3,
     "name": "jymusic"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "k8s.io"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "k8s"
   },
   {
     "path": "/",
