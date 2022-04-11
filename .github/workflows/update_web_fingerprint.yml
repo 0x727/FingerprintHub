@@ -1,4 +1,4 @@
-name: 📝 FingerPrint Update
+name: 📝 fingerprint-update
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: 会捷通云视讯平台
+name: hjtcloud
 priority: 1
 nuclei_tags:
   - - huijietong

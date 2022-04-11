@@ -116,6 +116,9 @@ haproxy-report:
   - - haproxy
 harbor:
   - - harbor
+hjtcloud:
+  - - huijietong
+  - - hjtcloud
 horde:
   - - horde
 ibm-websphere:
@@ -280,6 +283,3 @@ zimbra:
   - - zimbra
 zzzcms:
   - - zzzcms
-会捷通云视讯平台:
-  - - huijietong
-  - - hjtcloud

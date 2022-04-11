@@ -1,4 +1,4 @@
-name: 📝 Nuclei Update
+name: 📝 nuclei-update
 
 on:
   schedule:
