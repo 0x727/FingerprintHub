@@ -2152,6 +2152,20 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "www-authenticate": "Basic realm=\"dubbo\""
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "apache-dubbo"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 200,
     "headers": {},
     "keyword": [
@@ -19918,6 +19932,20 @@
     "favicon_hash": [],
     "priority": 1,
     "name": "lanmp"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<title>Lansweeper - Login</title>"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "lansweeper"
   },
   {
     "path": "/",
