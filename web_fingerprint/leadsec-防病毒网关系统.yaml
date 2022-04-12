@@ -1,4 +1,4 @@
-name: 网御星云-soc
+name: leadsec-防病毒网关系统
 priority: 3
 nuclei_tags:
   - []
@@ -10,6 +10,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - action="/leadsec-soc/signin
-      - /leadsec-soc
+      - 网御防病毒网关系统
     favicon_hash: []

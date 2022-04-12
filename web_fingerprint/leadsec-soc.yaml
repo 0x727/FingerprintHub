@@ -1,4 +1,4 @@
-name: 网御星云-vpn
+name: leadsec-soc
 priority: 3
 nuclei_tags:
   - []
@@ -10,6 +10,6 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - src="/vpn/user/common/
-      - /js/leadsec.js
+      - action="/leadsec-soc/signin
+      - /leadsec-soc
     favicon_hash: []

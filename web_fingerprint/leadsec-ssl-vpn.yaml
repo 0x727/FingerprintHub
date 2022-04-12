@@ -1,4 +1,4 @@
-name: 网御星云-ssl-vpn
+name: leadsec-ssl-vpn
 priority: 3
 nuclei_tags:
   - []

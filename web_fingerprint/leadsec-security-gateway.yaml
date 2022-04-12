@@ -1,4 +1,4 @@
-name: 安恒信息-明御综合日志审计
+name: leadsec-security-gateway
 priority: 3
 nuclei_tags:
   - []
@@ -10,6 +10,7 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - 明御
-      - 综合日志审计分析平台
+      - login
+      - 安全系统
+      - 网御星云
     favicon_hash: []

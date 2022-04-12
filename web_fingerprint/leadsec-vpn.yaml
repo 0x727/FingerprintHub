@@ -1,4 +1,4 @@
-name: topsec天融信防火墙
+name: leadsec-vpn
 priority: 3
 nuclei_tags:
   - []
@@ -10,7 +10,6 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - TOPSEC
-      - image/aaa.png
-      - username
+      - src="/vpn/user/common/
+      - /js/leadsec.js
     favicon_hash: []

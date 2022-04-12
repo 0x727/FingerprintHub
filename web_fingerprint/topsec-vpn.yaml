@@ -1,4 +1,4 @@
-name: 网御星云-上网行为管理系统
+name: topsec-vpn
 priority: 3
 nuclei_tags:
   - []
@@ -8,8 +8,7 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {}
+    headers: {"server":"TopWebServer","set-cookie":"topsecsvuilanguage"}
     keyword:
-      - txtmac
-      - asdf</div>-->
+      - /portal_default/index.html
     favicon_hash: []

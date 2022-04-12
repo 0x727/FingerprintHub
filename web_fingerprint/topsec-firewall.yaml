@@ -1,4 +1,4 @@
-name: 网御-安全网关
+name: topsec-firewall
 priority: 3
 nuclei_tags:
   - []
@@ -10,7 +10,7 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - login
-      - 安全系统
-      - 网御星云
+      - TOPSEC
+      - image/aaa.png
+      - username
     favicon_hash: []

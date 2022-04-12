@@ -10,6 +10,6 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - <img id="company_logo" src="images/waf.company.png
+      - scripts/app.waf.system.login.js
       - 明御web应用防火墙
     favicon_hash: []
