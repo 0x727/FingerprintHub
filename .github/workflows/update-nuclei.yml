@@ -2,7 +2,7 @@ name: 📝 nuclei-update
 
 on:
   schedule:
-    - cron: '1 */4 * * *'
+    - cron: '1 */6 * * *'
   push:
     paths:
       - 'plugins'

@@ -163,4 +163,4 @@ if __name__ == '__main__':
                 format_yaml(c.a_path)
             is_change = True
     fingerprint_json_generator("web_fingerprint")
-    no_git()
+    # no_git()
