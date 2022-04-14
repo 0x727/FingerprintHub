@@ -1,4 +1,4 @@
-name: foosun
+name: foosun-dotnet
 priority: 3
 nuclei_tags:
   - []
@@ -21,4 +21,15 @@ fingerprint:
     headers: {}
     keyword:
       - powered by www.foosun.net,products:foosun content manage system
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - encodeURIComponent(obj
+      - Search.html?type
+      - function SearchGo
     favicon_hash: []
