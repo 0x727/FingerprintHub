@@ -8,7 +8,8 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {"www-authenticate": "Basic realm=\"rocketmq\""}
+    headers:
+      www-authenticate: Basic realm="rocketmq"
     keyword:
       - <title>RocketMq-console-ng</title>
     favicon_hash: []
