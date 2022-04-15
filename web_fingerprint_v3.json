@@ -37957,6 +37957,20 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "valley-platform.js"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "valley-platform"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "href=\"/viewcmscac.do",
       "href=\"viewcmscac.do"
     ],
