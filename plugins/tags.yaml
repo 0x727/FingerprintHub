@@ -148,6 +148,10 @@ lansweeper:
   - - lansweeper
 laravel-framework:
   - - laravel
+lighttpd:
+  - - lighttpd
+microsoft-exchange:
+  - - exchange
 microsoft-sharepoint:
   - - sharepoint
 minio-browser:

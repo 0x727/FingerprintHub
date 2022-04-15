@@ -1,7 +1,7 @@
 name: microsoft-exchange
 priority: 3
 nuclei_tags:
-  - []
+  - - exchange
 fingerprint:
   - path: /
     request_method: get

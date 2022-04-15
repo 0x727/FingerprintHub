@@ -6,6 +6,10 @@ on:
   push:
     paths:
       - 'plugins'
+
+env:
+  IS_GITHUB: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
