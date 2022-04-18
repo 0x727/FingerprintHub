@@ -29363,6 +29363,30 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "sangfor-zero-trust-integrated-gateway"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 302,
+    "headers": {},
+    "keyword": [
+      "<title>aTrust"
+    ],
+    "priority": 3,
+    "name": "sangfor-zero-trust-integrated-gateway"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
     "keyword": [
       "window.open(\"/loginout.php\", \"_top\"\""
     ],
