@@ -1,4 +1,4 @@
-name: weblogic
+name: oracle-weblogic
 priority: 3
 nuclei_tags:
   - - weblogic
