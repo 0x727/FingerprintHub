@@ -178,6 +178,8 @@ nps:
   - - nps
 openfire:
   - - openfire
+oracle-weblogic:
+  - - weblogic
 panabit-gateway:
   - - panabit
 parallels-plesk-panel:
@@ -255,8 +257,6 @@ vmware-vrealize-operations-manager:
 vmware-vsphere:
   - - vsphere
     - vmware
-weblogic:
-  - - weblogic
 webmin:
   - - webmin
 websvn:
