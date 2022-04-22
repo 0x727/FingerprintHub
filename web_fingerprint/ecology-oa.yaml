@@ -1,4 +1,4 @@
-name: ecology泛微协同办公oa
+name: ecology-oa
 priority: 3
 nuclei_tags:
   - - ecology
@@ -9,9 +9,8 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword:
-      - '"/login/Login.jsp?logintype=1"'
-    favicon_hash: []
+    keyword: []
+    favicon_hash: ["41eca7a9245394106a09b2534d8030df"]
   - path: /
     request_method: get
     request_headers: {}
