@@ -2394,6 +2394,19 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "x-powered-by": "Tomcat"
+    },
+    "keyword": [],
+    "priority": 3,
+    "name": "apache-tomcat"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [
       "logo apache unomi"
@@ -16630,6 +16643,30 @@
     "keyword": [
       "jboss.css"
     ],
+    "priority": 3,
+    "name": "jboss"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "x-powered-by": "JBoss"
+    },
+    "keyword": [],
+    "priority": 3,
+    "name": "jboss"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
     "priority": 3,
     "name": "jboss"
   },

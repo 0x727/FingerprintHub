@@ -2578,6 +2578,20 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "x-powered-by": "Tomcat"
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "apache-tomcat"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [
       "logo apache unomi"
@@ -17908,6 +17922,34 @@
       "jboss.css"
     ],
     "favicon_hash": [],
+    "priority": 3,
+    "name": "jboss"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "x-powered-by": "JBoss"
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "jboss"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "799f70b71314a7508326d1d2f68f7519"
+    ],
     "priority": 3,
     "name": "jboss"
   },

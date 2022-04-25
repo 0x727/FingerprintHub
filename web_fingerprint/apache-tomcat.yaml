@@ -63,6 +63,7 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {"x-powered-by":"Tomcat"}
+    headers:
+      x-powered-by: Tomcat
     keyword: []
     favicon_hash: []

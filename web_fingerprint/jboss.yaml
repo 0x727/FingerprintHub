@@ -26,7 +26,8 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {"x-powered-by":"JBoss"}
+    headers:
+      x-powered-by: JBoss
     keyword: []
     favicon_hash: []
   - path: /
@@ -36,4 +37,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword: []
-    favicon_hash: ["799f70b71314a7508326d1d2f68f7519"]
+    favicon_hash:
+      - 799f70b71314a7508326d1d2f68f7519
