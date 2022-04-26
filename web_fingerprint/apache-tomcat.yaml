@@ -67,3 +67,11 @@ fingerprint:
       x-powered-by: Tomcat
     keyword: []
     favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword: []
+    favicon_hash: ["4644f2d45601037b8423d45e13194c93"]

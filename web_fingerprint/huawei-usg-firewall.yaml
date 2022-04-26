@@ -1,4 +1,4 @@
-name: huawei-安全设备
+name: huawei-usg-firewall
 priority: 3
 nuclei_tags:
   - []
@@ -10,6 +10,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - sweb-lib/plat/login/login_new.js
-      - sweb-lib/resource/
+      - ui_component/css/xtheme-black.css
     favicon_hash: []

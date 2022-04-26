@@ -1,5 +1,5 @@
-name: sangfor-下一代防火墙数据中心
-priority: 3
+name: h3c-er6300g2
+priority: 1
 nuclei_tags:
   - []
 fingerprint:
@@ -10,5 +10,7 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - window.open("/loginout.php", "_top""
+      - ER6300G2
+      - h3c.com
+      - login
     favicon_hash: []

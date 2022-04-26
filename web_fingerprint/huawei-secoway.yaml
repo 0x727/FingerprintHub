@@ -1,5 +1,5 @@
-name: h3cer6300g2
-priority: 1
+name: huawei-secoway
+priority: 3
 nuclei_tags:
   - []
 fingerprint:
@@ -10,7 +10,6 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - ER6300G2
-      - h3c.com
-      - login
+      - sweb-lib/plat/login/login_new.js
+      - sweb-lib/resource/
     favicon_hash: []
