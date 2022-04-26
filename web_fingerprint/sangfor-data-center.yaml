@@ -27,5 +27,7 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword: ["/cfwloginout.php","_top"]
+    keyword:
+      - /cfwloginout.php
+      - _top
     favicon_hash: []
