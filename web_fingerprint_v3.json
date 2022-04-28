@@ -30801,12 +30801,24 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
-    "headers": {
-      "www-authenticate": "Basic realm=\"rocketmq\""
-    },
+    "headers": {},
     "keyword": [
       "<title>RocketMq-console-ng</title>"
     ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "rocketmq-console"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "www-authenticate": "Basic realm=\"rocketmq\""
+    },
+    "keyword": [],
     "favicon_hash": [],
     "priority": 3,
     "name": "rocketmq-console"
