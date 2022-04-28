@@ -73,10 +73,10 @@ ecology-oa:
   - - ecology
 ecshop:
   - - ecshop
-elascticsearch:
-  - - elascticsearch
 elastichd-dashboard:
   - - elastic
+elasticsearch:
+  - - elasticsearch
 emby:
   - - emby
 ewebs:
