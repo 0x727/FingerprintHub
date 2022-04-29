@@ -2928,6 +2928,45 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "jira.webresources"
+    ],
+    "priority": 3,
+    "name": "atlassian-jira"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "ams-build-number"
+    ],
+    "priority": 3,
+    "name": "atlassian-jira"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "com.atlassian.jira"
+    ],
+    "priority": 3,
+    "name": "atlassian-jira"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "powered by atmail"
     ],
     "priority": 3,
@@ -17042,58 +17081,6 @@
     "keyword": [],
     "priority": 3,
     "name": "jigsaw"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {
-      "Location": "/secure/SetupMode!default.jspa"
-    },
-    "keyword": [],
-    "priority": 3,
-    "name": "jira"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "jira.webresources"
-    ],
-    "priority": 3,
-    "name": "jira"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "ams-build-number"
-    ],
-    "priority": 3,
-    "name": "jira"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "com.atlassian.jira"
-    ],
-    "priority": 3,
-    "name": "jira"
   },
   {
     "path": "/",

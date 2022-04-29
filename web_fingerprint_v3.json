@@ -3155,6 +3155,48 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "jira.webresources"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "atlassian-jira"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "ams-build-number"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "atlassian-jira"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "com.atlassian.jira"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "atlassian-jira"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "powered by atmail"
     ],
     "favicon_hash": [],
@@ -18360,62 +18402,6 @@
     "favicon_hash": [],
     "priority": 3,
     "name": "jigsaw"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {
-      "Location": "/secure/SetupMode!default.jspa"
-    },
-    "keyword": [],
-    "favicon_hash": [],
-    "priority": 3,
-    "name": "jira"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "jira.webresources"
-    ],
-    "favicon_hash": [],
-    "priority": 3,
-    "name": "jira"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "ams-build-number"
-    ],
-    "favicon_hash": [],
-    "priority": 3,
-    "name": "jira"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "com.atlassian.jira"
-    ],
-    "favicon_hash": [],
-    "priority": 3,
-    "name": "jira"
   },
   {
     "path": "/",
