@@ -1,7 +1,7 @@
 name: sunlogin
 priority: 3
 nuclei_tags:
-  - []
+  - [["sunflower"]]
 fingerprint:
   - path: /
     request_method: get
