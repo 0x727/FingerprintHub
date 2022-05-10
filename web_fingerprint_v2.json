@@ -2314,6 +2314,45 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "struts problem report"
+    ],
+    "priority": 1,
+    "name": "apache-struts"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "there is no action mapped for namespace"
+    ],
+    "priority": 1,
+    "name": "apache-struts"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "no result defined for action and result input"
+    ],
+    "priority": 1,
+    "name": "apache-struts"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 404,
     "headers": {},
     "keyword": [
@@ -31933,45 +31972,6 @@
     ],
     "priority": 2,
     "name": "storm"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "struts problem report"
-    ],
-    "priority": 2,
-    "name": "struts2"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "there is no action mapped for namespace"
-    ],
-    "priority": 2,
-    "name": "struts2"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "no result defined for action and result input"
-    ],
-    "priority": 2,
-    "name": "struts2"
   },
   {
     "path": "/",
