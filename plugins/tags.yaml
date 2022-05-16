@@ -200,6 +200,8 @@ rabbitmq:
   - - rabbitmq
 rconfig:
   - - rconfig
+roundcube-webmail:
+  - - roundcube
 ruijie-router-nbr:
   - - ruijie
 saltstack:

@@ -1,7 +1,7 @@
 name: roundcube-webmail
 priority: 3
 nuclei_tags:
-  - ["roundcube"]
+  - - roundcube
 fingerprint:
   - path: /
     request_method: get
