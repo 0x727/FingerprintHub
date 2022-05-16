@@ -233,6 +233,7 @@ spring-framework:
   - - springframework
   - - spring
     - vmware
+  - - spring
 sunlogin:
   - - sunflower
 swagger:
