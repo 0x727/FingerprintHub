@@ -5,6 +5,7 @@ nuclei_tags:
   - - springframework
   - - spring
     - vmware
+  - - spring
 fingerprint:
   - path: /
     request_method: get
