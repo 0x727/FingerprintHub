@@ -188,6 +188,8 @@ phpmyadmin:
   - - phpmyadmin
 phpwiki:
   - - phpwiki
+portainer:
+  - - portainer
 powercreator-cms:
   - - powercreator
 prometheus:
