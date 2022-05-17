@@ -216,6 +216,8 @@ roundcube-webmail:
   - - roundcube
 ruijie-router-nbr:
   - - ruijie
+ruoyi-system:
+  - - ruoyi
 saltstack:
   - - saltstack
 sangfor-edr:
@@ -234,6 +236,7 @@ sonarqube:
 sonicwall-ssl-vpn:
   - - sonicwall
     - vpn
+  - - sonicwall
 spark:
   - - spark
 splunk:

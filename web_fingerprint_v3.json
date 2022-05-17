@@ -31213,6 +31213,21 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 200,
+    "headers": {},
+    "keyword": [
+      "/ruoyi/css/ry-ui.css",
+      "/ruoyi/js/ry-ui.js"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "ruoyi-system"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 0,
     "headers": {},
     "keyword": [
@@ -46391,21 +46406,6 @@
     "favicon_hash": [],
     "priority": 3,
     "name": "联通时科-信息安全综合管理平台"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 200,
-    "headers": {},
-    "keyword": [
-      "/ruoyi/css/ry-ui.css",
-      "/ruoyi/js/ry-ui.js"
-    ],
-    "favicon_hash": [],
-    "priority": 3,
-    "name": "若依ruoyi管理系统"
   },
   {
     "path": "/",

@@ -1,7 +1,7 @@
-name: 若依ruoyi管理系统
+name: ruoyi-system
 priority: 3
 nuclei_tags:
-  - []
+  - - ruoyi
 fingerprint:
   - path: /
     request_method: get
