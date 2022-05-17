@@ -2,6 +2,7 @@ name: finereport
 priority: 3
 nuclei_tags:
   - - finereport
+  - - fanruan
 fingerprint:
   - path: /
     request_method: get
@@ -21,4 +22,13 @@ fingerprint:
     headers: {}
     keyword:
       - content="finereport--web reporting tool"
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - FineReport/decision
     favicon_hash: []

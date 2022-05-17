@@ -1,7 +1,7 @@
-name: 齐治堡垒机
+name: qizhi-fortress-aircraft
 priority: 3
 nuclei_tags:
-  - []
+  - ["qizhi"]
 fingerprint:
   - path: /
     request_method: get

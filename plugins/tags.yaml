@@ -18,6 +18,9 @@ apache-couchdb:
   - - couchdb
 apache-druid:
   - - druid
+apache-dubbo:
+  - - dubbo
+    - apache
 apache-flink:
   - - flink
 apache-guacamole:
@@ -85,6 +88,7 @@ exponent-cms:
   - - exponentcms
 eyou-email-system:
   - - eyou
+  - - eyoumail
 f5-big-ip:
   - - bigip
 fastjson:
@@ -95,6 +99,7 @@ ffay-lanproxy:
   - - lanproxy
 finereport:
   - - finereport
+  - - fanruan
 fortinet-fortigate:
   - - fortigate
 fortinet-fortimail:
@@ -123,6 +128,8 @@ horde:
   - - horde
 ibm-websphere:
   - - websphere
+influxdata-influxdb:
+  - - influxdb
 jboss:
   - - jboss
 jeecms:
@@ -142,6 +149,9 @@ kibana:
   - - kibana
 kindeditor:
   - - kindeditor
+kubernetes:
+  - - kubernetes
+  - - k8
 landray-oa:
   - - landray
 lansweeper:
@@ -196,6 +206,8 @@ prometheus:
   - - prometheus
 qcubed-development-framework:
   - - qcubed
+qizhi-fortress-aircraft:
+  - - qizhi
 rabbitmq:
   - - rabbitmq
 rconfig:

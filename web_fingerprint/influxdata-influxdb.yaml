@@ -1,7 +1,7 @@
 name: influxdata-influxdb
 priority: 2
 nuclei_tags:
-  - []
+  - ["influxdb"]
 fingerprint:
   - path: /
     request_method: get

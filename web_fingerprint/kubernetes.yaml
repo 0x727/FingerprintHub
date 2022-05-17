@@ -1,7 +1,8 @@
 name: kubernetes
 priority: 3
 nuclei_tags:
-  - []
+  - ["kubernetes"]
+  - ["k8"]
 fingerprint:
   - path: /
     request_method: get
