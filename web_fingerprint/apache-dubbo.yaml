@@ -1,7 +1,8 @@
 name: apache-dubbo
 priority: 3
 nuclei_tags:
-  - ["dubbo","apache"]
+  - - dubbo
+    - apache
 fingerprint:
   - path: /
     request_method: get

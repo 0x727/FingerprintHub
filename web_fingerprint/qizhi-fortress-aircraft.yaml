@@ -1,7 +1,7 @@
 name: qizhi-fortress-aircraft
 priority: 3
 nuclei_tags:
-  - ["qizhi"]
+  - - qizhi
 fingerprint:
   - path: /
     request_method: get
