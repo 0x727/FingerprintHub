@@ -163,5 +163,5 @@ if __name__ == '__main__':
                 format_yaml(c.a_path)
             is_change = True
     fingerprint_json_generator("web_fingerprint")
-    if os.getenv("IS_GITHUB") is not None:
+    if os.getenv("USER") == "kali-team":
         no_git()
