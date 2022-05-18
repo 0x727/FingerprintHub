@@ -1,4 +1,4 @@
-name: zyxel-vmg系列网关
+name: zyxel-vmg
 priority: 3
 nuclei_tags:
   - []
