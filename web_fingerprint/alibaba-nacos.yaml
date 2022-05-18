@@ -1,4 +1,4 @@
-name: nacos
+name: alibaba-nacos
 priority: 1
 nuclei_tags:
   - - nacos
