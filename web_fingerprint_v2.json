@@ -40597,7 +40597,21 @@
       ".::welcome to the web-based configurator::."
     ],
     "priority": 3,
-    "name": "zyxel-vmg系列网关"
+    "name": "zyxel-vmg"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<title>zywall",
+      "zyfunction.js"
+    ],
+    "priority": 3,
+    "name": "zyxel-zywall"
   },
   {
     "path": "/",
