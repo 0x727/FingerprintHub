@@ -1,9 +1,11 @@
-name: 📝 FingerPrint Update
+name: 📝 fingerprint-update
 
 on:
   push:
     branches:
       - main
+env:
+  IS_GITHUB: true
 
 jobs:
   build:

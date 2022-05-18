@@ -1,0 +1,14 @@
+name: elasticsearch
+priority: 3
+nuclei_tags:
+  - - elasticsearch
+fingerprint:
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 200
+    headers: {}
+    keyword:
+      - '  "tagline" : "You Know, for Search"'
+    favicon_hash: []

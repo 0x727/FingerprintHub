@@ -3,6 +3,7 @@ priority: 3
 nuclei_tags:
   - - sonicwall
     - vpn
+  - - sonicwall
 fingerprint:
   - path: /
     request_method: get

@@ -1,7 +1,7 @@
 name: netsweeper
 priority: 3
 nuclei_tags:
-  - []
+  - - netsweeper
 fingerprint:
   - path: /
     request_method: get

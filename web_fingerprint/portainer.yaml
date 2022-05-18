@@ -1,7 +1,7 @@
 name: portainer
 priority: 1
 nuclei_tags:
-  - []
+  - - portainer
 fingerprint:
   - path: /
     request_method: get

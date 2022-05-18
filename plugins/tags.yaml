@@ -4,6 +4,8 @@ adminer:
   - - adminer
 adobe-magento:
   - - magento
+alibaba-nacos:
+  - - nacos
 apache-activemq:
   - - activemq
 apache-airflow:
@@ -18,6 +20,9 @@ apache-couchdb:
   - - couchdb
 apache-druid:
   - - druid
+apache-dubbo:
+  - - dubbo
+    - apache
 apache-flink:
   - - flink
 apache-guacamole:
@@ -69,14 +74,14 @@ duomicms:
   - - duomicms
 dvwa:
   - - dvwa
-ecology泛微协同办公oa:
+ecology-oa:
   - - ecology
 ecshop:
   - - ecshop
-elascticsearch:
-  - - elascticsearch
 elastichd-dashboard:
   - - elastic
+elasticsearch:
+  - - elasticsearch
 emby:
   - - emby
 ewebs:
@@ -85,6 +90,7 @@ exponent-cms:
   - - exponentcms
 eyou-email-system:
   - - eyou
+  - - eyoumail
 f5-big-ip:
   - - bigip
 fastjson:
@@ -95,6 +101,7 @@ ffay-lanproxy:
   - - lanproxy
 finereport:
   - - finereport
+  - - fanruan
 fortinet-fortigate:
   - - fortigate
 fortinet-fortimail:
@@ -116,10 +123,15 @@ haproxy-report:
   - - haproxy
 harbor:
   - - harbor
+hjtcloud:
+  - - huijietong
+  - - hjtcloud
 horde:
   - - horde
 ibm-websphere:
   - - websphere
+influxdata-influxdb:
+  - - influxdb
 jboss:
   - - jboss
 jeecms:
@@ -139,10 +151,19 @@ kibana:
   - - kibana
 kindeditor:
   - - kindeditor
+kubernetes:
+  - - kubernetes
+  - - k8
 landray-oa:
   - - landray
+lansweeper:
+  - - lansweeper
 laravel-framework:
   - - laravel
+lighttpd:
+  - - lighttpd
+microsoft-exchange:
+  - - exchange
 microsoft-sharepoint:
   - - sharepoint
 minio-browser:
@@ -151,14 +172,14 @@ mongodb:
   - - mongodb
 moodle:
   - - moodle
-nacos:
-  - - nacos
 nagios-xi:
   - - nagios
 natshell:
   - - natshell
 netgear:
   - - netgear
+netsweeper:
+  - - netsweeper
 nextcloud-product:
   - - nextcloud
 nexus-repository-manager:
@@ -167,6 +188,8 @@ nps:
   - - nps
 openfire:
   - - openfire
+oracle-weblogic:
+  - - weblogic
 panabit-gateway:
   - - panabit
 parallels-plesk-panel:
@@ -175,18 +198,26 @@ phpmyadmin:
   - - phpmyadmin
 phpwiki:
   - - phpwiki
+portainer:
+  - - portainer
 powercreator-cms:
   - - powercreator
 prometheus:
   - - prometheus
 qcubed-development-framework:
   - - qcubed
+qizhi-fortress-aircraft:
+  - - qizhi
 rabbitmq:
   - - rabbitmq
 rconfig:
   - - rconfig
+roundcube-webmail:
+  - - roundcube
 ruijie-router-nbr:
   - - ruijie
+ruoyi-system:
+  - - ruoyi
 saltstack:
   - - saltstack
 sangfor-edr:
@@ -205,6 +236,7 @@ sonarqube:
 sonicwall-ssl-vpn:
   - - sonicwall
     - vpn
+  - - sonicwall
 spark:
   - - spark
 splunk:
@@ -216,6 +248,9 @@ spring-framework:
   - - springframework
   - - spring
     - vmware
+  - - spring
+sunlogin:
+  - - sunflower
 swagger:
   - - swagger
 thinkadmin:
@@ -244,8 +279,6 @@ vmware-vrealize-operations-manager:
 vmware-vsphere:
   - - vsphere
     - vmware
-weblogic:
-  - - weblogic
 webmin:
   - - webmin
 websvn:
@@ -270,6 +303,7 @@ yonyou-erp-nc:
   - - erp-nc
 yonyou-seeyon-oa:
   - - seeyon
+  - - zhiyuan
 yonyou-turbocrm:
   - - turbocrm
 zabbix:
@@ -280,6 +314,3 @@ zimbra:
   - - zimbra
 zzzcms:
   - - zzzcms
-会捷通云视讯平台:
-  - - huijietong
-  - - hjtcloud
