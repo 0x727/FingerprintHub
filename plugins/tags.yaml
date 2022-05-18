@@ -4,6 +4,8 @@ adminer:
   - - adminer
 adobe-magento:
   - - magento
+alibaba-nacos:
+  - - nacos
 apache-activemq:
   - - activemq
 apache-airflow:
@@ -170,8 +172,6 @@ mongodb:
   - - mongodb
 moodle:
   - - moodle
-nacos:
-  - - nacos
 nagios-xi:
   - - nagios
 natshell:
