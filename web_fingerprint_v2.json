@@ -12206,6 +12206,33 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "search gitlab",
+      "navbar-gitlab"
+    ],
+    "priority": 3,
+    "name": "gitlab"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "set-cookie": "_gitlab_session="
+    },
+    "keyword": [],
+    "priority": 3,
+    "name": "gitlab"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "powered by gitorious"
     ],
     "priority": 3,

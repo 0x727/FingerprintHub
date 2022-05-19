@@ -13146,6 +13146,35 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "search gitlab",
+      "navbar-gitlab"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "gitlab"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "set-cookie": "_gitlab_session="
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "gitlab"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "powered by gitorious"
     ],
     "favicon_hash": [],
