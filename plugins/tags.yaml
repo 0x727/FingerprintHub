@@ -29,6 +29,9 @@ apache-guacamole:
   - - guacamole
 apache-hadoop:
   - - hadoop
+apache-http:
+  - - apache
+    - mod-proxy
 apache-ofbiz:
   - - ofbiz
     - apache
