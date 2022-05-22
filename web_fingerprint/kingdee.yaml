@@ -1,7 +1,7 @@
 name: kingdee
 priority: 3
 nuclei_tags:
-  - []
+  - ["kingdee"]
 fingerprint:
   - path: /
     request_method: get

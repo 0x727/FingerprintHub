@@ -135,6 +135,8 @@ ibm-websphere:
   - - websphere
 influxdata-influxdb:
   - - influxdb
+jamf-panel:
+  - - jamf
 jboss:
   - - jboss
 jeecms:

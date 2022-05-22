@@ -18031,6 +18031,21 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "Jamf Pro Login",
+      "Jamf Cloud Node"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "jamf-panel"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "powered by <a href=\"http://www.jasig.org/cas"
     ],
     "favicon_hash": [],

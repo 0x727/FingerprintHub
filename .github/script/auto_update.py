@@ -7,7 +7,10 @@ from pathlib import Path
 import yaml
 import os
 
-from git import Repo
+try:
+    from git import Repo, Diff
+except ModuleNotFoundError:
+    pass
 
 allow_string = string.digits + string.ascii_letters + '-_ '
 
@@ -153,15 +156,18 @@ def no_git():
 
 
 if __name__ == '__main__':
-    repo = Repo('./')
-    current_sha = repo.head.object.hexsha
-    poc_path_list = []
-    is_change = False
-    for c in repo.commit('HEAD~').diff(current_sha):
-        if c.a_path.startswith('web_fingerprint/') and c.a_path.endswith('.yaml'):
-            if Path(c.a_path).exists():
-                format_yaml(c.a_path)
-            is_change = True
+    try:
+        repo = Repo('./')
+        current_sha = repo.head.object.hexsha
+        poc_path_list = []
+        is_change = False
+        for c in repo.commit('HEAD~').diff(current_sha):
+            if c.a_path.startswith('web_fingerprint/') and c.a_path.endswith('.yaml'):
+                if Path(c.a_path).exists():
+                    format_yaml(c.a_path)
+                is_change = True
+    except NameError:
+        pass
     fingerprint_json_generator("web_fingerprint")
     if os.getenv("USER") == "kali-team":
         no_git()

@@ -4,8 +4,11 @@ from pathlib import Path
 from typing import Dict
 
 import yaml
-from git import Repo, Diff
 
+try:
+    from git import Repo, Diff
+except ModuleNotFoundError:
+    pass
 poc_dir_list = ['cves', 'cnvd', 'vulnerabilities', 'default-logins', 'exposures', 'miscellaneous', "misconfiguration"]
 
 
@@ -48,7 +51,7 @@ for site, site_list, file_list in os.walk("web_fingerprint"):
 
 
 class NucleiDiffGitMode:
-    def __init__(self, c_ins: Diff, g_tags_dict: Dict):
+    def __init__(self, c_ins, g_tags_dict: Dict):
         self.c_ins = c_ins
         self.tags_dict = g_tags_dict
         self.mode_map = {"A": 'added', "C": 'added', "D": 'deleted', "R": 'renamed', "M": 'added', "T": 'changed'}
@@ -132,10 +135,13 @@ def tags_to_plugins_all():
 
 
 if __name__ == '__main__':
-    repo = Repo('nuclei-templates')
-    current_sha = repo.head.object.hexsha
-    for c in repo.commit('HEAD~99').diff(current_sha):
-        if not c.a_path.startswith('.') and c.a_path.endswith('.yaml') and Path(c.a_path).parts[0] in poc_dir_list:
-            NucleiDiffGitMode(c_ins=c, g_tags_dict=tags_dict).run()
+    try:
+        repo = Repo('nuclei-templates')
+        current_sha = repo.head.object.hexsha
+        for c in repo.commit('HEAD~99').diff(current_sha):
+            if not c.a_path.startswith('.') and c.a_path.endswith('.yaml') and Path(c.a_path).parts[0] in poc_dir_list:
+                NucleiDiffGitMode(c_ins=c, g_tags_dict=tags_dict).run()
+    except NameError:
+        pass
     if os.getenv("USER") == "kali-team":
         tags_to_plugins_all()
