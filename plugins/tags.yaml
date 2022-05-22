@@ -156,6 +156,8 @@ kibana:
   - - kibana
 kindeditor:
   - - kindeditor
+kingdee:
+  - - kingdee
 kubernetes:
   - - kubernetes
   - - k8
