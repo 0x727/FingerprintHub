@@ -47,6 +47,8 @@ apache-struts:
   - - struts
 apache-tomcat:
   - - tomcat
+argocd:
+  - - argocd
 atlassian-jira:
   - - jira
   - - atlassian
