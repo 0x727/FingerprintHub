@@ -67,6 +67,8 @@ confluence:
   - - confluence
 coremail:
   - - coremail
+cpanel:
+  - - cpanel
 d-link:
   - - dlink
 dedecms:

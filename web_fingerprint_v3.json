@@ -7763,6 +7763,21 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "cpanel_magic_revision",
+      "go.cpanel.net"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "cpanel"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "href=\"javascript:update_news('board/noticelist.jsp')"
     ],
     "favicon_hash": [],
