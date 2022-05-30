@@ -52,6 +52,8 @@ argocd:
 atlassian-jira:
   - - jira
   - - atlassian
+bt-control-pane:
+  - - bt
 bullwark:
   - - bullwark
 cacti:
