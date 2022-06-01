@@ -1,4 +1,4 @@
-name: fastjson
+name: alibaba-fastjson
 priority: 3
 nuclei_tags:
   - - fastjson
