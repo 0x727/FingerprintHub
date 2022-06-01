@@ -4,6 +4,8 @@ adminer:
   - - adminer
 adobe-magento:
   - - magento
+alibaba-fastjson:
+  - - fastjson
 alibaba-nacos:
   - - nacos
 apache-activemq:
@@ -102,8 +104,6 @@ eyou-email-system:
   - - eyoumail
 f5-big-ip:
   - - bigip
-fastjson:
-  - - fastjson
 feifeicms:
   - - feifeicms
 ffay-lanproxy:
