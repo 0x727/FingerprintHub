@@ -17083,10 +17083,11 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "hudson.model.Hudson.Administer"
-    ],
+    "headers": {
+      "x-jenkins": "*",
+      "x-jenkins-session": "*"
+    },
+    "keyword": [],
     "priority": 3,
     "name": "jenkins"
   },
@@ -17097,9 +17098,7 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
-    "keyword": [
-      "jenkins-agent-protocols"
-    ],
+    "keyword": [],
     "priority": 3,
     "name": "jenkins"
   },
@@ -17111,7 +17110,7 @@
     "status_code": 200,
     "headers": {},
     "keyword": [
-      "[Jenkins]"
+      "jenkins-agent-protocols"
     ],
     "priority": 3,
     "name": "jenkins"
