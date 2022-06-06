@@ -9,7 +9,7 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {"x-jenkins":"*","x-jenkins-session":""}
+    headers: {"x-jenkins":"*","x-jenkins-session":"*"}
     keyword:[]
     favicon_hash: []
   - path: /
