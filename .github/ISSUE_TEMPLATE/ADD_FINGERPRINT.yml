@@ -25,22 +25,8 @@ body:
       placeholder: "```yaml\n参考0example文件格式\n```"
       value: "
       ```yaml
-name: 0example
-priority: 3
-nuclei_tags:
-  - []
-fingerprint:
-  - path: /
-    request_method: get
-    request_headers: {}
-    request_data: 'base64'
-    status_code: 0
-    headers: {}
-    keyword:
-      - <title>Example Domain</title>
-    favicon_hash: []
-```
-"
+      
+      ```"
     validations:
       required: true
 
