@@ -20,7 +20,7 @@ body:
   - type: textarea
     id: yaml_data
     attributes:
-      label: 指纹的Yaml文件内容
+      label: 指纹的Yaml规则
       description: 粘贴你验证过后的Yaml文件内容
       placeholder: "```yaml\n参考0example文件格式\n```"
       value: "
