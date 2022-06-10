@@ -2,6 +2,7 @@ import json
 import os
 import subprocess
 import sys
+from pathlib import Path
 
 PAYLOAD_ENV = os.getenv("PAYLOAD")
 
@@ -16,17 +17,19 @@ def get_string_between(o_string, start, end):
 
 def create_fingerprint(name):
     yaml_data = get_string_between(ISSUE_BODY, "```yaml", "```").strip()
-    test_file_path = "web_fingerprint/" + name + ".yaml"
-    with open(test_file_path, "w") as y:
-        y.write(yaml_data)
+    base_path = Path("web_fingerprint").resolve()
+    n = Path("web_fingerprint/").joinpath(name).with_suffix(".yaml").resolve()
+    if n.parent == base_path:
+        with open(n, "w") as y:
+            y.write(yaml_data)
 
 
 def run_observer_ward(name):
-    test_file_path = "web_fingerprint/" + name + ".yaml"
+    n = Path("web_fingerprint/").joinpath(name).with_suffix(".yaml").resolve()
     target = get_string_between(ISSUE_BODY, "### 测试目标", "### 指纹的Yaml").strip()
     observer_ward = os.path.expanduser("~") + '/.config/observer_ward/observer_ward_amd64'
     proc = subprocess.Popen(args=[observer_ward, "-t", target,
-                                  "--verify", test_file_path, "--silent"], shell=False, stdout=subprocess.PIPE,
+                                  "--verify", n, "--silent"], shell=False, stdout=subprocess.PIPE,
                             stderr=subprocess.PIPE)
     try:
         outs, errs = proc.communicate(timeout=30)
