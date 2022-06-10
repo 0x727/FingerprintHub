@@ -1,6 +1,6 @@
-name: 添加指纹
-description: 添加指纹
-title: "添加指纹-[全英文组件名称]"
+name: 修改指纹
+description: 修改指纹
+title: "修改指纹-[全英文组件名称]"
 labels: [ ]
 assignees:
   - cn-kali-team
@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        请按照提示提交指纹：如果不填写测试目标则无法自动验证指纹，指纹规则按照markdown的Yaml代码格式提交。
+        请按照提示修改指纹：如果不填写测试目标则无法自动验证指纹，指纹规则按照markdown的Yaml代码格式修改。
   - type: input
     id: target
     attributes:
