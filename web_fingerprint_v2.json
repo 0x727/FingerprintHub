@@ -39741,19 +39741,6 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "id=mtokenplugin width=0 height=0 style=\"position: absolute;left: 0px; top: 0px\""
-    ],
-    "priority": 3,
-    "name": "yunanbao-yunxz"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
       "云翌ip呼叫中心</span>"
     ],
     "priority": 3,
