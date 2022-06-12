@@ -9,6 +9,13 @@ body:
     attributes:
       value: |
         标题填想要删除的指纹就行了。
-
+  - type: input
+    id: target
+    attributes:
+      label: 删除原因
+      description: 删除原因
+      placeholder: 重复了
+    validations:
+      required: false
 
 
