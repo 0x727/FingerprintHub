@@ -78,6 +78,7 @@ Important technology:
 ### 在线提交指纹
 
 - 当前项目支持通过issue提交指纹，但是这样不会把你添加进贡献者列表，如果你希望加入贡献者请选择使用提交PR贡献指纹。
+- 查看例子：[提交指纹示例](https://github.com/0x727/FingerprintHub/issues/13)
 - [点击在线提交指纹](https://github.com/0x727/FingerprintHub/issues/new?assignees=cn-kali-team&labels=&template=SUBMIT_FINGERPRINT.yml&title=%E6%8F%90%E4%BA%A4%E6%8C%87%E7%BA%B9-%5B%E5%85%A8%E8%8B%B1%E6%96%87%E7%BB%84%E4%BB%B6%E5%90%8D%E7%A7%B0%5D)
 - 提交指纹的标题必须要以`提交指纹`开头，组件名称使用方括号引起来的全英文，例如`提交指纹-[apache-shiro]`，为`apache-shiro`组件提交指纹。
 - 规则使用覆盖的方式提交，按照markdown的Yaml代码格式，预填了，直接在中间插入规则就可以了。
