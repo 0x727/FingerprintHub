@@ -37,3 +37,13 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+
+      - name: Create Pending Review Comment
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'create-comment,close-issue'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ## 审核通过:
+            - 指纹规则已经合并，感谢提交。
