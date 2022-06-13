@@ -1,0 +1,16 @@
+name: 华为云堡垒机
+priority: 3
+nuclei_tags:
+  - []
+fingerprint:
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - event_onusbkeychange=OnUsbKeyChange
+      - id=mTokenPlugin
+      - value=pluginLoaded
+    favicon_hash: []
