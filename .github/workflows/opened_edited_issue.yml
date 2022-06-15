@@ -41,9 +41,15 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           body: |
             ## 验证过程:
+            <details><summary>点击展开查看</summary>
+            <p>
+            
             ```bash
             ${{ steps.verify_log.outputs.content }}
             ```
+            
+            </p>
+            </details>
             ## 验证结果：
             - 是否识别成功： ${{ contains(steps.verify_log.outputs.content,'WebFingerPrintMatch') }}
 
