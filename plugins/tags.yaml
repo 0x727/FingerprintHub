@@ -223,6 +223,8 @@ qizhi-fortress-aircraft:
   - - qizhi
 rabbitmq:
   - - rabbitmq
+rancher:
+  - - rancher
 rconfig:
   - - rconfig
 roundcube-webmail:
