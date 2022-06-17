@@ -1,7 +1,7 @@
 name: bt-control-pane
 priority: 3
 nuclei_tags:
-  - ["bt"]
+  - - bt
 fingerprint:
   - path: /
     request_method: get

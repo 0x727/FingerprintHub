@@ -150,7 +150,6 @@ def no_git():
         for file_name in file_list:
             plugins_abs_filename = os.path.abspath(os.path.join(site, file_name))
             if not file_name.startswith('.') and file_name.endswith('.yaml') and not file_name == "tags.yaml":
-                print(plugins_abs_filename)
                 format_yaml(plugins_abs_filename)
     fingerprint_json_generator("web_fingerprint")
 

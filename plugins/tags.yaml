@@ -108,6 +108,8 @@ feifeicms:
   - - feifeicms
 ffay-lanproxy:
   - - lanproxy
+finecms:
+  - - finecms
 finereport:
   - - finereport
   - - fanruan

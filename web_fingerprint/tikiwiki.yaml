@@ -1,4 +1,4 @@
-name: 华为云堡垒机
+name: tikiwiki
 priority: 3
 nuclei_tags:
   - []
@@ -9,8 +9,5 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword:
-      - event_onusbkeychange=OnUsbKeyChange
-      - id=mTokenPlugin
-      - value=pluginLoaded
-    favicon_hash: []
+    keyword: []
+    favicon_hash: ["e789cc1db6eefad0b58c9dda94f57d3c"]
