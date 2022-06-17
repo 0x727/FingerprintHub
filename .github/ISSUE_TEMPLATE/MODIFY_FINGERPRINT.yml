@@ -9,6 +9,21 @@ body:
     attributes:
       value: |
         请按照提示修改指纹：如果不填写测试目标则无法自动验证指纹，指纹规则按照markdown的Yaml代码格式修改。
+  - type: markdown
+    attributes:
+      value: |
+        提交前请先在本地验证指纹规则，本地验证示例：
+        ```bash
+        ➜  ~ ./observer_ward_amd64 --verify 0x727/FingerprintHub/fingerprint/swagger.yaml -t http://httpbin.org
+        [ http://httpbin.org |["swagger"] | 9593 | 200 | httpbin.org ]
+        Important technology:
+
+        +--------------------+---------+--------+-------------+-------------+----------+
+        | url                | name    | length | status_code | title       | priority |
+        +====================+=========+========+=============+=============+==========+
+        | http://httpbin.org | swagger | 9593   | 200         | httpbin.org | 5        |
+        +--------------------+---------+--------+-------------+-------------+----------+
+        ```
   - type: input
     id: target
     attributes:

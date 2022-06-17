@@ -73,8 +73,11 @@ jobs:
           body: |
             ## 验证失败:
             - 请在本地测试识别成功后重新修改当前Issue的Yaml内容。
+            ```bash
+            ➜  ~ ./observer_ward_amd64 --verify 0x727/FingerprintHub/fingerprint/swagger.yaml -t http://httpbin.org
+            ```
       - name: Create Pending Review Comment
-        if: contains(steps.verify_log.outputs.content,'WebFingerPrintMatch') != 'false'
+        if: contains(steps.verify_log.outputs.content,'WebFingerPrintMatch') == 'true'
         uses: actions-cool/issues-helper@v3
         with:
           actions: 'create-comment'
