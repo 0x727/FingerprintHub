@@ -17,6 +17,7 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {"set-cookie":"BIGipServerpool"}
+    headers:
+      set-cookie: BIGipServerpool
     keyword: []
     favicon_hash: []
