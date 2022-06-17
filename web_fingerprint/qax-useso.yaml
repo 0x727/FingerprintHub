@@ -1,5 +1,5 @@
-name: 金笛邮件-系统
-priority: 3
+name: qax-useso
+priority: 2
 nuclei_tags:
   - []
 fingerprint:
@@ -10,5 +10,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - /jdwm/cgi/login.cgi?login
+      - libs.useso.com
     favicon_hash: []

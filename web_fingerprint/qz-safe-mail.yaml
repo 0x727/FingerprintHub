@@ -1,4 +1,4 @@
-name: redseal-数字防御平台
+name: qz-safe-mail
 priority: 3
 nuclei_tags:
   - []
@@ -10,5 +10,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - alt="redseal, inc."/></a>
+      - /qzmail/index.php
     favicon_hash: []

@@ -1,4 +1,4 @@
-name: raiden-邮件服务器
+name: hejia-oa
 priority: 3
 nuclei_tags:
   - []
@@ -10,5 +10,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - /webimages/raidenmaild.jpg
+      - href="/templates/everythingisok/index.css"
     favicon_hash: []
