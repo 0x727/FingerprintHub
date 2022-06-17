@@ -10895,19 +10895,6 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "content=\"f5 networks, inc."
-    ],
-    "priority": 3,
-    "name": "f5-bigip"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
       "class=\"subnav\">飞视美</div>"
     ],
     "priority": 3,
