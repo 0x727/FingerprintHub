@@ -29056,8 +29056,8 @@
     "status_code": 200,
     "headers": {},
     "keyword": [
-      "/ruoyi/css/ry-ui.css",
-      "/ruoyi/js/ry-ui.js"
+      "ry-ui.css",
+      "ry-ui.js"
     ],
     "priority": 3,
     "name": "ruoyi-system"
