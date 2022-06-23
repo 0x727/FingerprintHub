@@ -10,5 +10,13 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - window.location.replace("login.jsp?up=1")
+      - window.location.replace("login.jsp?up=1");
     favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword: []
+    favicon_hash: ["b41be1ccc6f9f2894e0cfcf23acf5fc0"]
