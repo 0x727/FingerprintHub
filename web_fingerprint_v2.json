@@ -39178,8 +39178,19 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "window.location.replace(\"login.jsp?up=1\")"
+      "window.location.replace(\"login.jsp?up=1\");"
     ],
+    "priority": 3,
+    "name": "yonyou-grp-u8"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
     "priority": 3,
     "name": "yonyou-grp-u8"
   },
