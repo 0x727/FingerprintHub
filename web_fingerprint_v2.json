@@ -39178,7 +39178,8 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "window.location.replace(\"login.jsp?up=1\");"
+      "key2 = \"grp\", key3 = \"u8\"",
+      "用友grp-u8"
     ],
     "priority": 3,
     "name": "yonyou-grp-u8"
