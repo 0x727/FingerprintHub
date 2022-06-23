@@ -10,7 +10,8 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - window.location.replace("login.jsp?up=1");
+      - key2 = "grp", key3 = "u8"
+      - 用友grp-u8
     favicon_hash: []
   - path: /
     request_method: get
