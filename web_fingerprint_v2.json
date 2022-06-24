@@ -39952,9 +39952,7 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
-    "keyword": [
-      "<a id='zentaopro' href='/pro/'"
-    ],
+    "keyword": [],
     "priority": 3,
     "name": "zentao-system"
   },
@@ -39964,10 +39962,10 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "$('#zentaopro').addclass"
-    ],
+    "headers": {
+      "set-cookie": "zentaosid"
+    },
+    "keyword": [],
     "priority": 3,
     "name": "zentao-system"
   },
