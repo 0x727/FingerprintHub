@@ -27,17 +27,15 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword:
-      - <a id='zentaopro' href='/pro/'
-    favicon_hash: []
+    keyword: []
+    favicon_hash: ["b1d3deb4bd16c8c1637235515deea114"]
   - path: /
     request_method: get
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {}
-    keyword:
-      - $('#zentaopro').addclass
+    headers: {"set-cookie":"zentaosid"}
+    keyword: []
     favicon_hash: []
   - path: /
     request_method: get
