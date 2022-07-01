@@ -1949,6 +1949,30 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>apache apisix dashboard</title>"
+    ],
+    "priority": 3,
+    "name": "apache-apisix"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "apache-apisix"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "/archiva.js"
     ],
     "priority": 2,
