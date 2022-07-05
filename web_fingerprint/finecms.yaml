@@ -1,7 +1,7 @@
 name: finecms
 priority: 3
 nuclei_tags:
-  - []
+  - - finecms
 fingerprint:
   - path: /
     request_method: get

@@ -9,9 +9,10 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {}
-    keyword:
-      - hudson.model.Hudson.Administer
+    headers:
+      x-jenkins: '*'
+      x-jenkins-session: '*'
+    keyword: []
     favicon_hash: []
   - path: /
     request_method: get
@@ -19,9 +20,9 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword:
-      - jenkins-agent-protocols
-    favicon_hash: []
+    keyword: []
+    favicon_hash:
+      - 23e8c7bd78e8cd826c5a6073b15068b1
   - path: /
     request_method: get
     request_headers: {}
@@ -29,5 +30,5 @@ fingerprint:
     status_code: 200
     headers: {}
     keyword:
-      - '[Jenkins]'
+      - jenkins-agent-protocols
     favicon_hash: []

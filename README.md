@@ -75,6 +75,15 @@ Important technology:
 +--------------------+---------+--------+-------------+-------------+----------+
 ```
 
+### 在线提交指纹
+
+- 当前项目支持通过issue提交指纹，但是这样不会把你添加进贡献者列表，如果你希望加入贡献者请选择使用提交PR贡献指纹。
+- 查看例子：[提交指纹示例](https://github.com/0x727/FingerprintHub/issues/13)
+- [点击在线提交指纹](https://github.com/0x727/FingerprintHub/issues/new?assignees=cn-kali-team&labels=&template=SUBMIT_FINGERPRINT.yml&title=%E6%8F%90%E4%BA%A4%E6%8C%87%E7%BA%B9-%5B%E5%85%A8%E8%8B%B1%E6%96%87%E7%BB%84%E4%BB%B6%E5%90%8D%E7%A7%B0%5D)
+- 提交指纹的标题必须要以`提交指纹`开头，组件名称使用方括号引起来的全英文，例如`提交指纹-[apache-shiro]`，为`apache-shiro`组件提交指纹。
+- 规则使用覆盖的方式提交，按照markdown的Yaml代码格式，预填了，直接在中间插入规则就可以了。
+- 如果填写了测试目标会自动验证，没有就等着管理员审核通过再合并。
+
 ### 提交指纹规则
 
 - 点击Fork按钮克隆这个项目到你的仓库
@@ -124,12 +133,14 @@ git push origin thinkphp
 - 打开你Fork这个项目的地址，点击与上游合并，等待审核合并指纹。
 
 ### 谁在使用FingerprintHub
+
 - 如果你的开源工具中也使用了`FingerprintHub`，我感到非常的荣幸，欢迎补充列表，当项目有破坏性更新时可以及时通知到你。
 
-| [ObserverWard](https://github.com/0x727/ObserverWard_0x727) |
-| ----------------------------------------------------------- |
-| [nuclei](https://github.com/projectdiscovery/nuclei)        |
-| [nemo_go](https://github.com/hanc00l/nemo_go)               |
+| [ObserverWard](https://github.com/0x727/ObserverWard) |
+|-------------------------------------------------------|
+| [nuclei](https://github.com/projectdiscovery/nuclei)  |
+| [nemo_go](https://github.com/hanc00l/nemo_go)         |
+| [afrog](https://github.com/zan8in/afrog)              |
 
 ### 指纹反馈
 

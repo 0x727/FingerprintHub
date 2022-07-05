@@ -4,6 +4,8 @@ adminer:
   - - adminer
 adobe-magento:
   - - magento
+alibaba-fastjson:
+  - - fastjson
 alibaba-nacos:
   - - nacos
 apache-activemq:
@@ -12,6 +14,8 @@ apache-airflow:
   - - airflow
 apache-ambari:
   - - ambari
+apache-apisix:
+  - - apisix
 apache-axis2:
   - - axis
 apache-cocoon:
@@ -29,6 +33,9 @@ apache-guacamole:
   - - guacamole
 apache-hadoop:
   - - hadoop
+apache-http:
+  - - apache
+    - mod-proxy
 apache-ofbiz:
   - - ofbiz
     - apache
@@ -44,9 +51,13 @@ apache-struts:
   - - struts
 apache-tomcat:
   - - tomcat
+argocd:
+  - - argocd
 atlassian-jira:
   - - jira
   - - atlassian
+bt-control-pane:
+  - - bt
 bullwark:
   - - bullwark
 cacti:
@@ -62,6 +73,8 @@ confluence:
   - - confluence
 coremail:
   - - coremail
+cpanel:
+  - - cpanel
 d-link:
   - - dlink
 dedecms:
@@ -93,12 +106,12 @@ eyou-email-system:
   - - eyoumail
 f5-big-ip:
   - - bigip
-fastjson:
-  - - fastjson
 feifeicms:
   - - feifeicms
 ffay-lanproxy:
   - - lanproxy
+finecms:
+  - - finecms
 finereport:
   - - finereport
   - - fanruan
@@ -132,6 +145,8 @@ ibm-websphere:
   - - websphere
 influxdata-influxdb:
   - - influxdb
+jamf-panel:
+  - - jamf
 jboss:
   - - jboss
 jeecms:
@@ -151,6 +166,8 @@ kibana:
   - - kibana
 kindeditor:
   - - kindeditor
+kingdee:
+  - - kingdee
 kubernetes:
   - - kubernetes
   - - k8
@@ -210,6 +227,8 @@ qizhi-fortress-aircraft:
   - - qizhi
 rabbitmq:
   - - rabbitmq
+rancher:
+  - - rancher
 rconfig:
   - - rconfig
 roundcube-webmail:

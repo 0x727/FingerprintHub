@@ -48,3 +48,22 @@ fingerprint:
     keyword:
       - class="col-sm-7 brand-holder pull-left"
     favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - search gitlab
+      - navbar-gitlab
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      set-cookie: _gitlab_session=
+    keyword: []
+    favicon_hash: []
