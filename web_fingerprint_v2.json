@@ -40795,6 +40795,20 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "体检档案查询系统",
+      "技术支持：中卫信软件"
+    ],
+    "priority": 3,
+    "name": "中卫信-体验档案查询系统"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "loid_regist()",
       "login"
     ],
