@@ -39150,19 +39150,6 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "sheight*window.screen.deviceydpi"
-    ],
-    "priority": 3,
-    "name": "yongyou-ism"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
       "login_main_bg"
     ],
     "priority": 3,
@@ -39245,6 +39232,19 @@
     ],
     "priority": 3,
     "name": "yonyou-intelligentplant"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "sheight*window.screen.deviceydpi"
+    ],
+    "priority": 3,
+    "name": "yonyou-ism"
   },
   {
     "path": "/",
