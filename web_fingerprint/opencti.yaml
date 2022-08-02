@@ -1,7 +1,7 @@
 name: opencti
 priority: 1
 nuclei_tags:
-  - ["opencti"]
+  - - opencti
 fingerprint:
   - path: /
     request_method: get

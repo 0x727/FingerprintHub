@@ -23378,6 +23378,22 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "content=木云科技",
+      "webvpn",
+      "应用安全网关"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "mu-yun-webvpn"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "<label>打开m18 app， 扫描二维码</label>"
     ],
     "favicon_hash": [],

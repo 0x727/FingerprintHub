@@ -203,6 +203,8 @@ nexus-repository-manager:
   - - nexus
 nps:
   - - nps
+opencti:
+  - - opencti
 openfire:
   - - openfire
 oracle-weblogic:
@@ -331,5 +333,7 @@ zcms:
   - - zcms
 zimbra:
   - - zimbra
+zzcms:
+  - - zzcms
 zzzcms:
   - - zzzcms
