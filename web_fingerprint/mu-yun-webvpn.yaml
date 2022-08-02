@@ -1,7 +1,7 @@
-name: opencti
-priority: 1
+name: mu-yun-webvpn
+priority: 3
 nuclei_tags:
-  - ["opencti"]
+  - []
 fingerprint:
   - path: /
     request_method: get
@@ -10,5 +10,7 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - webpackJsonpopencti-front
+      - content=木云科技
+      - webvpn
+      - 应用安全网关
     favicon_hash: []

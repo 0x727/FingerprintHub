@@ -1,7 +1,7 @@
 name: zzcms
 priority: 3
 nuclei_tags:
-  - []
+  - ["zzcms"]
 fingerprint:
   - path: /
     request_method: get
