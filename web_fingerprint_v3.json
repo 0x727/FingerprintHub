@@ -16265,8 +16265,9 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "var apppath = \"/app/hw/\"",
-      "href=\"./logo/&logo&.ico\""
+      "Clear SSL cache successfully",
+      "getCookie(\"SGDPortal\")",
+      "SVN_GetLoginContextValue("
     ],
     "favicon_hash": [],
     "priority": 3,

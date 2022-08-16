@@ -15101,8 +15101,9 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "var apppath = \"/app/hw/\"",
-      "href=\"./logo/&logo&.ico\""
+      "Clear SSL cache successfully",
+      "getCookie(\"SGDPortal\")",
+      "SVN_GetLoginContextValue("
     ],
     "priority": 3,
     "name": "huawei-ssl-vpn"
