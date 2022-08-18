@@ -37379,6 +37379,34 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "content-security-policy": "*.traefik.io;"
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "traefik"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "010d94298a0b83cc87846064dc26db44"
+    ],
+    "priority": 3,
+    "name": "traefik"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [
       "lastrow_right"
