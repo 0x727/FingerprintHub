@@ -32587,6 +32587,20 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "ng-app=\"sentineldashboardapp\""
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "sentinel-dashboard"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       " sentora_logo.png "
     ],
     "favicon_hash": [],
