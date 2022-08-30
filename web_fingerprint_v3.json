@@ -16222,6 +16222,24 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "event_onusbkeychange=OnUsbKeyChange",
+      "id=mTokenPlugin",
+      "value=pluginLoaded"
+    ],
+    "favicon_hash": [
+      "1f2d27250647de902d396b75d9a2b0cf"
+    ],
+    "priority": 3,
+    "name": "huawei-jump-server"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "/netopen/theme/css/inframe.css"
     ],
     "favicon_hash": [],
@@ -18246,7 +18264,7 @@
     "name": "jeecgboot"
   },
   {
-    "path": "/logo.png",
+    "path": "/",
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
@@ -30147,6 +30165,23 @@
     "favicon_hash": [],
     "priority": 2,
     "name": "qcubed-development-framework"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "type=application/x-xtx-axhost",
+      "id=mtokenplugin width=0 height=0 style=\"position: absolute;left: 0px; top: 0px\""
+    ],
+    "favicon_hash": [
+      "f3147f50cfd23455cb5fdf0dcd890dac"
+    ],
+    "priority": 3,
+    "name": "qi-an-xin-secfox"
   },
   {
     "path": "/",
@@ -44594,22 +44629,6 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "event_onusbkeychange=OnUsbKeyChange",
-      "id=mTokenPlugin",
-      "value=pluginLoaded"
-    ],
-    "favicon_hash": [],
-    "priority": 3,
-    "name": "华为云堡垒机"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
       "<div class=\"sys-name\">视频综合安全网关</div>",
       "华域数安"
     ],
@@ -45213,21 +45232,6 @@
     "favicon_hash": [],
     "priority": 3,
     "name": "奇安信-ngsoc"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "type=application/x-xtx-axhost",
-      "id=mtokenplugin width=0 height=0 style=\"position: absolute;left: 0px; top: 0px\""
-    ],
-    "favicon_hash": [],
-    "priority": 3,
-    "name": "奇安信-secfox"
   },
   {
     "path": "/",
