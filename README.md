@@ -141,6 +141,7 @@ git push origin thinkphp
 | [nuclei](https://github.com/projectdiscovery/nuclei)  |
 | [nemo_go](https://github.com/hanc00l/nemo_go)         |
 | [afrog](https://github.com/zan8in/afrog)              |
+| [ShuiZe](https://github.com/0x727/ShuiZe_0x727)              |
 
 ### 指纹反馈
 
