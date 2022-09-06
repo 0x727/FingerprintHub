@@ -1,0 +1,14 @@
+name: 华磊科技物流信息系统
+priority: 3
+nuclei_tags:
+  - []
+fingerprint:
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - img/lg_bj.png
+    favicon_hash: []

@@ -1,0 +1,13 @@
+name: 合肥易用信息科技有限公司CRM系统
+priority: 3
+nuclei_tags:
+  - []
+fingerprint:
+  - path: /main/login.asp
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+    favicon_hash: [cfe0cf07749b6c6abb777a596901350c]
