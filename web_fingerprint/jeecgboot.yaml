@@ -13,7 +13,7 @@ fingerprint:
       - JeecgBoot
       - polyfill_
     favicon_hash: []
-  - path: /logo.png
+  - path: /
     request_method: get
     request_headers: {}
     request_data: ''
