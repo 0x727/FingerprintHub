@@ -3,12 +3,11 @@ priority: 3
 nuclei_tags:
   - []
 fingerprint:
-  - path: /mis/images/loading_cs.gif
+  - path: /
     request_method: get
     request_headers: {}
     request_data: ''
     status_code: 0
     headers: {}
-    keyword:
-
-    favicon_hash: [a72aedf872a97db784f3a892bb2f5e15]
+    keyword: []
+    favicon_hash: ["a72aedf872a97db784f3a892bb2f5e15"]
