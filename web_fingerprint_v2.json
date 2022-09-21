@@ -41467,6 +41467,21 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "content=\"华磊科技",
+      "快递系统",
+      "erp对接"
+    ],
+    "priority": 3,
+    "name": "华磊科技物流信息系统"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 302,
     "headers": {
       "Location": "index.php?app=main&func=passport&action=login",
@@ -41529,6 +41544,17 @@
     ],
     "priority": 3,
     "name": "合众数据-视频安全接入用户认证系统"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "合肥易用信息科技有限公司CRM系统"
   },
   {
     "path": "/",
@@ -42800,6 +42826,17 @@
     ],
     "priority": 1,
     "name": "深信服行为感知系统"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "点晴MIS管理信息系统"
   },
   {
     "path": "/",
