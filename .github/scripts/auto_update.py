@@ -115,6 +115,7 @@ def update_yaml(path):
 
 
 def format_yaml(format_path):
+    print(format_path)
     suffix = Path(format_path).suffix
     suffix_file_name = Path(format_path).name[0:-len(suffix)]
     if suffix_file_name != replace_name(suffix_file_name):
