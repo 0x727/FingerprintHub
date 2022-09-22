@@ -244,8 +244,6 @@ saltstack:
 sangfor-edr:
   - - 深信服终端检测响应平台-sangfor-edr
   - - sangfor
-shopxo:
-  - - shopxo
 showdoc:
   - - showdoc
 siteserver:

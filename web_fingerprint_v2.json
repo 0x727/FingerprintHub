@@ -26766,9 +26766,7 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
-    "keyword": [
-      "content=\"phpok"
-    ],
+    "keyword": [],
     "priority": 3,
     "name": "phpok"
   },
@@ -30716,10 +30714,8 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
-    "keyword": [
-      "Powered by <a href=\"http://shopxo.net/\" title=\"ShopXO电商系统\" target=\"_blank\">"
-    ],
-    "priority": 1,
+    "keyword": [],
+    "priority": 3,
     "name": "shopxo"
   },
   {

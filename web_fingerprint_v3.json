@@ -28840,10 +28840,11 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
-    "keyword": [
-      "content=\"phpok"
+    "keyword": [],
+    "favicon_hash": [
+      "1091f8722e63111e50302ecbfdd6e975",
+      "aea2803f24d6f4156bde7681f17c3253"
     ],
-    "favicon_hash": [],
     "priority": 3,
     "name": "phpok"
   },
@@ -33100,11 +33101,11 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
-    "keyword": [
-      "Powered by <a href=\"http://shopxo.net/\" title=\"ShopXO电商系统\" target=\"_blank\">"
+    "keyword": [],
+    "favicon_hash": [
+      "6774ad0b380e1ffeee4e380352e51f15"
     ],
-    "favicon_hash": [],
-    "priority": 1,
+    "priority": 3,
     "name": "shopxo"
   },
   {
