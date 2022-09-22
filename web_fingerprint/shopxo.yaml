@@ -1,7 +1,7 @@
 name: shopxo
-priority: 1
+priority: 3
 nuclei_tags:
-  - - shopxo
+  - []
 fingerprint:
   - path: /
     request_method: get
@@ -9,6 +9,6 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword:
-      - Powered by <a href="http://shopxo.net/" title="ShopXO电商系统" target="_blank">
-    favicon_hash: []
+    keyword: []
+    favicon_hash:
+      - 6774ad0b380e1ffeee4e380352e51f15
