@@ -121,9 +121,9 @@ def format_yaml(format_path):
     if suffix_file_name != replace_name(suffix_file_name):
         suffix_file_name = replace_name(suffix_file_name)
         new_path = Path(format_path).with_name(suffix_file_name).with_suffix(suffix)
-        Path(format_path).rename(new_path)
+        Path(format_path).rename(new_path)  # 重命名
     fingerprint_rules = []
-    with open(format_path) as y:
+    with open(new_path) as y:
         y_dict = yaml.safe_load(y)
         fingerprint_rules_origin = y_dict.get('fingerprint', [])
         max_priority = 0
@@ -142,7 +142,7 @@ def format_yaml(format_path):
         new_y_dict = dict(sorted(y_dict.items(), key=lambda t: sorted_list[t[0]]))
         wfp_y = yaml.dump(new_y_dict, Dumper=MyDumper, sort_keys=False, allow_unicode=True,
                           default_flow_style=False, explicit_start=False, indent=2, width=2)
-        with open(format_path, "w") as y:
+        with open(new_path, "w") as y:
             y.write(wfp_y)
 
 
