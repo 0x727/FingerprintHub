@@ -9664,6 +9664,34 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "DTCloud"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "dtcloud"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "49fe0618acdcd7c9dc443faca20d7bd9"
+    ],
+    "priority": 3,
+    "name": "dtcloud"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "window.appname = 'alidts';"
     ],
     "favicon_hash": [],

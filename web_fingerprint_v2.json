@@ -8971,6 +8971,30 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "DTCloud"
+    ],
+    "priority": 3,
+    "name": "dtcloud"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "dtcloud"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "window.appname = 'alidts';"
     ],
     "priority": 3,
