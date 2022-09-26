@@ -10,5 +10,14 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - Jumpserver开源堡垒机
+      - jumpserver
     favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword: []
+    favicon_hash:
+      - 20334371817c7368907b5ea52aab2d9e
