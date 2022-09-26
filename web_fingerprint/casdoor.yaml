@@ -12,4 +12,4 @@ fingerprint:
     keyword:
       - <title>casdoor
       - casdoor/manifest.json
-    favicon_hash: [ ]
+    favicon_hash: []
