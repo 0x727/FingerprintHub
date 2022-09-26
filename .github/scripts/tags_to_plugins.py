@@ -135,6 +135,9 @@ def tags_to_plugins_all():
 
 
 if __name__ == '__main__':
+    if os.getenv("USER") == "kali-team":
+        tags_to_plugins_all()
+        exit(0)
     try:
         repo = Repo('nuclei-templates')
         current_sha = repo.head.object.hexsha
@@ -143,5 +146,3 @@ if __name__ == '__main__':
                 NucleiDiffGitMode(c_ins=c, g_tags_dict=tags_dict).run()
     except NameError:
         pass
-    if os.getenv("USER") == "kali-team":
-        tags_to_plugins_all()

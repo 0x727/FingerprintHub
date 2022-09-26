@@ -1,7 +1,7 @@
 name: tikiwiki
 priority: 3
 nuclei_tags:
-  - []
+  - - tikiwiki
 fingerprint:
   - path: /
     request_method: get
