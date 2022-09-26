@@ -1,0 +1,14 @@
+name: 中远麒麟iaudit堡垒机
+priority: 3
+nuclei_tags:
+  - []
+fingerprint:
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword: []
+    favicon_hash:
+      - 0c3f9b770b14279fef0b5a827406c3ae

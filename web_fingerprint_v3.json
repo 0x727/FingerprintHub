@@ -44364,6 +44364,20 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "0c3f9b770b14279fef0b5a827406c3ae"
+    ],
+    "priority": 3,
+    "name": "中远麒麟iaudit堡垒机"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
     "keyword": [
       "科博安全隔离与信息交换系统",
       "科博安全隔离与信息单向导入系统</span>"
