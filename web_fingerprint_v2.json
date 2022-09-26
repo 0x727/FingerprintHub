@@ -43116,6 +43116,19 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "紫光档案管理系统"
+    ],
+    "priority": 3,
+    "name": "紫光档案管理系统"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "紫光防火墙",
       "name=\"adminlogin\" action=\"/cgi-bin/manageaccount\">"
     ],
