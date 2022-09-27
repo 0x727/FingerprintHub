@@ -1,4 +1,4 @@
-name: iceflow
+name: iceflow-vpn
 priority: 3
 nuclei_tags:
   - []
@@ -9,7 +9,7 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword: 
+    keyword:
       - iceflow/tweb
     favicon_hash: []
   - path: /
