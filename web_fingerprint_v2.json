@@ -40720,6 +40720,30 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "zkteco"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "智慧园区综合管理平台"
+    ],
+    "priority": 3,
+    "name": "zkteco"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
     "keyword": [
       "src='/login/images/zksecurity.png'",
       "百傲瑞达"
