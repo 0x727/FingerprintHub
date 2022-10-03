@@ -34151,7 +34151,7 @@
     "name": "solarwinds"
   },
   {
-    "path": "/favicon.ico",
+    "path": "/",
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
