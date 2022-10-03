@@ -7246,6 +7246,30 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "cool-admin"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "cool-admin"
+    ],
+    "priority": 3,
+    "name": "cool-admin"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 200,
     "headers": {},
     "keyword": [

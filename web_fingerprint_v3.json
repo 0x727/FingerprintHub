@@ -7807,6 +7807,34 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "0a1a4905050aeb5bcc9d0c124bb96eb6"
+    ],
+    "priority": 3,
+    "name": "cool-admin"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "cool-admin"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "cool-admin"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 200,
     "headers": {},
     "keyword": [
