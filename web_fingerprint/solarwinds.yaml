@@ -12,7 +12,7 @@ fingerprint:
     keyword:
       - solarwinds
     favicon_hash: []
-  - path: /favicon.ico
+  - path: /
     request_method: get
     request_headers: {}
     request_data: ''
