@@ -11,7 +11,7 @@ fingerprint:
     headers: {}
     keyword: []
     favicon_hash:
-      - 699adaf4da1b0dc76ea5464df13755d7 
+      - 699adaf4da1b0dc76ea5464df13755d7
   - path: /
     request_method: get
     request_headers: {}
