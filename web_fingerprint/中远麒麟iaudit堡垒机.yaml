@@ -9,5 +9,5 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: { }
-    keyword: [ "www.tosec.com.cn/doc","(atype==\"fingersecauth\"||atype==\"localfingersecauth\www.tosec.com.cn/doc")" ]
+    keyword: [ "www.tosec.com.cn/doc","(atype==\"fingersecauth\"||atype==\"localfingersecauth\")" ]
     favicon_hash: [ ]
