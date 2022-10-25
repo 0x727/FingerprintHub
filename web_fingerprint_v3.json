@@ -10692,6 +10692,36 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "kbn-license-sig": "*"
+    },
+    "keyword": [
+      "<title>elastic</title>"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "elastic"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "7d0688b40ba64da737b12a3257e6c7b3"
+    ],
+    "priority": 3,
+    "name": "elastic"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [
       "<title>Elastic HD Dashboard</title>"

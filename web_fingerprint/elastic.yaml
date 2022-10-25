@@ -8,7 +8,8 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {"kbn-license-sig":"*"}
+    headers:
+      kbn-license-sig: '*'
     keyword:
       - <title>elastic</title>
     favicon_hash: []
@@ -19,4 +20,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword: []
-    favicon_hash: ["7d0688b40ba64da737b12a3257e6c7b3"]
+    favicon_hash:
+      - 7d0688b40ba64da737b12a3257e6c7b3

@@ -9916,6 +9916,32 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "kbn-license-sig": "*"
+    },
+    "keyword": [
+      "<title>elastic</title>"
+    ],
+    "priority": 3,
+    "name": "elastic"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "elastic"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [
       "<title>Elastic HD Dashboard</title>"
