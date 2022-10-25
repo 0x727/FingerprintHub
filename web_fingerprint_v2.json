@@ -41464,7 +41464,10 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
-    "keyword": [],
+    "keyword": [
+      "www.tosec.com.cn/doc",
+      "(atype==\"fingersecauth\"||atype==\"localfingersecauth\")"
+    ],
     "priority": 3,
     "name": "中远麒麟iaudit堡垒机"
   },
