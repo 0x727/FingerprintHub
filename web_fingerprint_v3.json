@@ -24272,6 +24272,22 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "neo4j://",
+      "neo4j_version",
+      "neo4j_edition"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "neo4j-browser"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "<!-- net2ftp version"
     ],
     "favicon_hash": [],
