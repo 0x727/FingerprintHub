@@ -10778,6 +10778,20 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 200,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "6177bfb75b498e0bb356223ed76ffe43"
+    ],
+    "priority": 3,
+    "name": "elasticsearch"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 0,
     "headers": {},
     "keyword": [
