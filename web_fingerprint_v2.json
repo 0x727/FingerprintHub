@@ -37855,6 +37855,45 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "not a WebSocket handshake"
+    ],
+    "priority": 3,
+    "name": "websocket"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "wss://"
+    ],
+    "priority": 3,
+    "name": "websocket"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "ws://"
+    ],
+    "priority": 3,
+    "name": "websocket"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "WebSVN",
       "subversion"
     ],
