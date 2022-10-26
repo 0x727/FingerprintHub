@@ -19,4 +19,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword: []
-    favicon_hash: ["7d56c3bcc4d9522bdc958785f1866776"]
+    favicon_hash:
+      - 7d56c3bcc4d9522bdc958785f1866776
