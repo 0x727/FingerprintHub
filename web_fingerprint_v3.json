@@ -9132,6 +9132,35 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "django settings file."
+    ],
+    "favicon_hash": [],
+    "priority": 2,
+    "name": "django"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "Django REST framework",
+      "href='https://www.django-rest-framework.org/'>"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "django-rest-framework"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "/css/portfoliomanager/styles_display_page.css"
     ],
     "favicon_hash": [],
