@@ -9863,6 +9863,17 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "edoc"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
     "keyword": [
       "powered by edusoho"
     ],
