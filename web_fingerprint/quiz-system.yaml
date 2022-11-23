@@ -1,8 +1,7 @@
 name: quiz-system
 priority: 2
 nuclei_tags:
-  - - "cms"
-    - "quiz_system"
+  - []
 fingerprint:
   - path: /
     request_method: get
@@ -12,4 +11,5 @@ fingerprint:
     headers: { }
     keyword:
       - quiz system
+      - <title>| Online Quiz System |</title>
     favicon_hash: [ ]
