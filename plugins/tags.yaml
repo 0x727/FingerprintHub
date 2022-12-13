@@ -162,6 +162,8 @@ jetty:
   - - jetty
 joomla:
   - - joomla
+kafka-manager:
+  - - kafka
 kibana:
   - - kibana
 kindeditor:
