@@ -12,5 +12,5 @@ repos:
       stages: [commit]
     - id: check-case-conflict
       stages: [commit]
-    - id: detect-private-key
-      stages: [commit]
+#    - id: detect-private-key
+#      stages: [commit]
