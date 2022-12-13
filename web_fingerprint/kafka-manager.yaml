@@ -1,7 +1,7 @@
 name: kafka-manager
 priority: 2
 nuclei_tags:
-  - []
+  - ["kafka"]
 fingerprint:
   - path: /
     request_method: get

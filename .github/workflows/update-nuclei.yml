@@ -24,7 +24,7 @@ jobs:
 
       - name: Clone nuclei-templates
         run: |
-          git clone --depth 100 --branch master https://github.com/projectdiscovery/nuclei-templates
+          git clone --depth 100 --branch main https://github.com/projectdiscovery/nuclei-templates
 
       - name: Set up Python
         uses: actions/setup-python@v2
