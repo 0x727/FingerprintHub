@@ -1952,7 +1952,7 @@
       "<title>apache apisix dashboard</title>"
     ],
     "priority": 3,
-    "name": "apache-apisix"
+    "name": "apache-apisix-dashboard"
   },
   {
     "path": "/",
@@ -1963,7 +1963,7 @@
     "headers": {},
     "keyword": [],
     "priority": 3,
-    "name": "apache-apisix"
+    "name": "apache-apisix-dashboard"
   },
   {
     "path": "/",

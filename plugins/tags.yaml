@@ -14,7 +14,7 @@ apache-airflow:
   - - airflow
 apache-ambari:
   - - ambari
-apache-apisix:
+apache-apisix-dashboard:
   - - apisix
 apache-axis2:
   - - axis

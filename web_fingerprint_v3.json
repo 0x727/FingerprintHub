@@ -2101,7 +2101,7 @@
     ],
     "favicon_hash": [],
     "priority": 3,
-    "name": "apache-apisix"
+    "name": "apache-apisix-dashboard"
   },
   {
     "path": "/",
@@ -2115,7 +2115,7 @@
       "6d07440dcda38480ac6fd8c32edf0102"
     ],
     "priority": 3,
-    "name": "apache-apisix"
+    "name": "apache-apisix-dashboard"
   },
   {
     "path": "/",
