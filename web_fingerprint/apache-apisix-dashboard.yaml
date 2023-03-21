@@ -1,4 +1,4 @@
-name: apache-apisix
+name: apache-apisix-dashboard
 priority: 3
 nuclei_tags:
   - - apisix
