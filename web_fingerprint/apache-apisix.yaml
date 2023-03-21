@@ -8,7 +8,8 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
-    headers: {"server":"apisix"}
+    headers:
+      server: apisix
     keyword:
       - '{"error_msg":"404 Route Not Found"}'
     favicon_hash: []
