@@ -185,8 +185,6 @@ microsoft-exchange:
   - - exchange
 microsoft-sharepoint:
   - - sharepoint
-minio:
-  - - minio
 minio-browser:
   - - minio
 mongodb:
