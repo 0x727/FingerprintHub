@@ -5,37 +5,47 @@ nuclei_tags:
 fingerprint:
   - path: /
     request_method: get
-    request_headers: {}
+    request_headers: { }
     request_data: ''
     status_code: 0
-    headers: {}
+    headers: { }
     keyword:
       - js/base/fastjson
-    favicon_hash: []
+    favicon_hash: [ ]
   - path: /
     request_method: get
-    request_headers: {}
+    request_headers: { }
     request_data: ''
     status_code: 0
-    headers: {}
+    headers: { }
     keyword:
       - var json = json.parse
-    favicon_hash: []
+    favicon_hash: [ ]
   - path: /
     request_method: get
-    request_headers: {}
+    request_headers: { }
     request_data: ''
     status_code: 0
-    headers: {}
+    headers: { }
     keyword:
       - com.alibaba.fastjson.JSONException
-    favicon_hash: []
+    favicon_hash: [ ]
   - path: /
     request_method: get
-    request_headers: {}
+    request_headers: { }
     request_data: ''
     status_code: 0
-    headers: {}
+    headers: { }
     keyword:
       - unclosed string
-    favicon_hash: []
+    favicon_hash: [ ]
+  - path: /
+    request_method: post
+    request_headers: { }
+    request_data: e0B0eXBlOmphdmEubGFuZy5BdXRvQ2xvc2VhYmxlCg==
+    status_code: 0
+    headers: { }
+    keyword:
+      - fastjson
+      - version
+    favicon_hash: [ ]
