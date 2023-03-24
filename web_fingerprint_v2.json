@@ -21626,6 +21626,45 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>MinIO Console</title>"
+    ],
+    "priority": 3,
+    "name": "minio"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "href=\"/minio/loader.css\""
+    ],
+    "priority": 3,
+    "name": "minio"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<title>MinIO Browser</title>"
+    ],
+    "priority": 3,
+    "name": "minio"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "href=\"/minio/loader.css\""
     ],
     "priority": 3,

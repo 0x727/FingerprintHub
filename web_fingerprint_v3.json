@@ -23331,6 +23331,48 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>MinIO Console</title>"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "minio"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "href=\"/minio/loader.css\""
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "minio"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<title>MinIO Browser</title>"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "minio"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "href=\"/minio/loader.css\""
     ],
     "favicon_hash": [],
