@@ -14,6 +14,8 @@ apache-airflow:
   - - airflow
 apache-ambari:
   - - ambari
+apache-apisix:
+  - - apisix
 apache-apisix-dashboard:
   - - apisix
 apache-axis2:
@@ -36,6 +38,8 @@ apache-hadoop:
 apache-http:
   - - apache
     - mod-proxy
+apache-nifi:
+  - - nifi
 apache-ofbiz:
   - - ofbiz
     - apache
@@ -51,6 +55,8 @@ apache-struts:
   - - struts
 apache-tomcat:
   - - tomcat
+apollo-adminservice:
+  - - apollo
 argocd:
   - - argocd
 atlassian-jira:
@@ -122,6 +128,8 @@ fortinet-fortimail:
     - fortinet
 gate-one:
   - - gateone
+geoserver:
+  - - geoserver
 gitlab:
   - - gitlab
 glpi:
