@@ -170,6 +170,8 @@ jetty:
   - - jetty
 joomla:
   - - joomla
+jupyter-notebook:
+  - - jupyter
 kafka-manager:
   - - kafka
 kibana:

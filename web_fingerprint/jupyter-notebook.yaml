@@ -1,7 +1,7 @@
 name: jupyter-notebook
 priority: 3
 nuclei_tags:
-  - [jupyter]
+  - - jupyter
 fingerprint:
   - path: /
     request_method: get
@@ -37,4 +37,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword: []
-    favicon_hash: ["97c6417ed01bdc0ae3ef32ae4894fd03"]
+    favicon_hash:
+      - 97c6417ed01bdc0ae3ef32ae4894fd03

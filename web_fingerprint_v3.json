@@ -19451,6 +19451,20 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "97c6417ed01bdc0ae3ef32ae4894fd03"
+    ],
+    "priority": 3,
+    "name": "jupyter-notebook"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
     "keyword": [
       "var _usermenusurl = '/appcenter/functions/getusermenu'"
     ],
