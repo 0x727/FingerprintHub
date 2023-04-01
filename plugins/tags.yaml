@@ -189,6 +189,8 @@ laravel-framework:
   - - laravel
 lighttpd:
   - - lighttpd
+mcms:
+  - - mcms
 microsoft-exchange:
   - - exchange
 microsoft-sharepoint:
