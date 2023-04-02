@@ -1,7 +1,7 @@
 name: apache-nifi
 priority: 1
 nuclei_tags:
-  - [nifi]
+  - - nifi
 fingerprint:
   - path: /
     request_method: get
