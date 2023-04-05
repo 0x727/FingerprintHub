@@ -328,6 +328,8 @@ xdcms:
   - - xdcms
 xiuno:
   - - xiuno
+xstream:
+  - - xstream
 xxl-job:
   - - xxljob
 yapi:

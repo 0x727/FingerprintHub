@@ -3,13 +3,13 @@ priority: 3
 nuclei_tags:
   - - xstream
 fingerprint:
- - path: /
-   request_method: get
-   request_headers: {}
-   request_data: ''
-   status_code: 0
-   headers: {}
-   keyword:
-    - com.thoughtworks.xstream
-    - Exception
-   favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - com.thoughtworks.xstream
+      - Exception
+    favicon_hash: []
