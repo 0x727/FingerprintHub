@@ -6,6 +6,12 @@ on:
   push:
     paths:
       - 'plugins'
+  workflow_dispatch:
+    - 📝 fingerprint-update
+  workflow_run:
+    workflows: [ "📝 fingerprint-update" ]
+    types:
+      - completed
 
 env:
   IS_GITHUB: true
