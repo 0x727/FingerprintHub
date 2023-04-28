@@ -2679,6 +2679,34 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<title>Superset</title>"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "apache-superset"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "src=\"/static/assets/images/superset-logo-"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "apache-superset"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 404,
     "headers": {},
     "keyword": [

@@ -53,6 +53,8 @@ apache-solr:
   - - solr
 apache-struts:
   - - struts
+apache-superset:
+  - - superset
 apache-tomcat:
   - - tomcat
 apollo-adminservice:
