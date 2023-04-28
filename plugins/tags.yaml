@@ -359,6 +359,8 @@ zabbix:
   - - zabbix
 zcms:
   - - zcms
+zeppelin:
+  - - zeppelin
 zimbra:
   - - zimbra
 zzcms:
