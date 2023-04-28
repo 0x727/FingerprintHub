@@ -245,6 +245,8 @@ portainer:
   - - portainer
 powercreator-cms:
   - - powercreator
+powerjob:
+  - - powerjob
 prometheus:
   - - prometheus
 qcubed-development-framework:
