@@ -1,7 +1,7 @@
 name: powerjob
 priority: 3
 nuclei_tags:
-  - []
+  - - powerjob
 fingerprint:
   - path: /
     request_method: get
