@@ -15,7 +15,7 @@ info:
     verified: true
   tags: misconfig,springboot,exposure
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/scheduledtasks"

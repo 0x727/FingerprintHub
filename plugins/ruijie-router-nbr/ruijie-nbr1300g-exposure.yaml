@@ -14,7 +14,7 @@ info:
     cwe-id: CWE-200
   tags: ruijie,exposure
 
-http:
+requests:
   - raw:
       - |
         POST /WEB_VMS/LEVEL15/ HTTP/1.1

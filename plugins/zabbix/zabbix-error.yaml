@@ -13,7 +13,7 @@ info:
     shodan-query: http.title:"Warning [refreshed every 30 sec.]"
   tags: zabbix,misconfig
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}'

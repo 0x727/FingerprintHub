@@ -14,7 +14,7 @@ info:
     cwe-id: CWE-522
   tags: default-login,weblogic,vulhub
 
-http:
+requests:
   - raw:
       - |
         GET /console/ HTTP/1.1

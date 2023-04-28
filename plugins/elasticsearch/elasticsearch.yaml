@@ -9,7 +9,7 @@ info:
     shodan-query: "ElasticSearch"
   tags: elastic,unauth,elasticsearch
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/?pretty'

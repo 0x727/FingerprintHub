@@ -13,7 +13,7 @@ info:
     cwe-id: CWE-22
   tags: lfi,erp-nc
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/NCFindWeb?service=IPreAlertConfigService&filename="

@@ -9,7 +9,7 @@ info:
     shodan-query: http.component:"Drupal"
   tags: drupal,misconfig
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/user/0"

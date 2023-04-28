@@ -9,7 +9,7 @@ info:
     - https://wya.pl/2021/12/20/bring-your-own-ssrf-the-gateway-actuator/
   tags: springboot,exposure
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/gateway/routes"

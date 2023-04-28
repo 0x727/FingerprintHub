@@ -8,7 +8,7 @@ info:
     - https://next.sonarqube.com/sonarqube/web_api/api/components/suggestions?internal=true
   tags: sonarqube,misconfig
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/api/components/suggestions?recentlyBrowsed="

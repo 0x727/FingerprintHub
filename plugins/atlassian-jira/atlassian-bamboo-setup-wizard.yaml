@@ -9,7 +9,7 @@ info:
     shodan-query: title:"Bamboo setup wizard"
   tags: misconfig,atlassian,bamboo,setup,installer
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/setup/setupLicense.action"

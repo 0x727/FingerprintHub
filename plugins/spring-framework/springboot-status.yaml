@@ -14,7 +14,7 @@ info:
     shodan-query: title:"Eureka"
   tags: misconfig,springboot,exposure
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/status"

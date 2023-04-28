@@ -7,7 +7,7 @@ info:
   description: Displays a complete list of all the Spring beans in the application
   tags: springboot,exposure
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/beans"

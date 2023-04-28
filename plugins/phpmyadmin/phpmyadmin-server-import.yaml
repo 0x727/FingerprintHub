@@ -11,7 +11,7 @@ info:
     cwe-id: CWE-200
   tags: phpmyadmin,misconfig
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/pma/server_import.php"

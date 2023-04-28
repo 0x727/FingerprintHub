@@ -6,7 +6,7 @@ info:
   severity: low
   tags: prometheus
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/prometheus"

@@ -11,7 +11,7 @@ info:
     cwe-id: CWE-200
   tags: exposure,config,airflow,apache
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/airflow.cfg'

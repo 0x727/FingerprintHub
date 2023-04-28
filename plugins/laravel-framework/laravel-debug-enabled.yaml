@@ -10,7 +10,7 @@ info:
     Disable Laravel's debug mode by setting APP_DEBUG to false.
   tags: debug,laravel,misconfig
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/_ignition/health-check"

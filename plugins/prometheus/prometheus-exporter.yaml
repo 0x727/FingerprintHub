@@ -9,7 +9,7 @@ info:
     - https://github.com/prometheus/prometheus/wiki/Default-port-allocations
   tags: prometheus
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"

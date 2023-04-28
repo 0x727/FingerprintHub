@@ -7,7 +7,7 @@ info:
   description: View recent HTTP requests and responses
   tags: springboot,exposure
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/httptrace"

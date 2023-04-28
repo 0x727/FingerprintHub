@@ -16,7 +16,7 @@ info:
     cwe-id: CWE-77
   tags: cnvd,cnvd2020,sunflower,rce
 
-http:
+requests:
   - raw:
       - |
         POST /cgi-bin/rpc HTTP/1.1

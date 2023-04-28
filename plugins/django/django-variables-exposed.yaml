@@ -17,7 +17,7 @@ info:
     verified: true
   tags: exposure,config,django
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"

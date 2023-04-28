@@ -6,7 +6,7 @@ info:
   severity: low
   tags: logs,struts,apache,exposure,setup
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}'

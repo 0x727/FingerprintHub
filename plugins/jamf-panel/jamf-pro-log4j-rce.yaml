@@ -22,7 +22,7 @@ info:
     verified: "true"
   tags: cve,cve2021,rce,jndi,log4j,jamf,oast,kev
 
-http:
+requests:
   - raw:
       - |
         POST / HTTP/1.1

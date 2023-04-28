@@ -14,7 +14,7 @@ info:
     cwe-id: CWE-77
   tags: natshell,rce
 
-http:
+requests:
   - method: POST
     path:
       - "{{BaseURL}}/debug.php"

@@ -8,7 +8,7 @@ info:
     shodan-query: http.title:"Kafka Cruise Control UI"
   tags: kafka,misconfig
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}'

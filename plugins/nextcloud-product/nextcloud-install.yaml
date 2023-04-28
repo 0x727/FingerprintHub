@@ -8,7 +8,7 @@ info:
     - https://docs.nextcloud.com/server/latest/admin_manual/installation/installation_wizard.html
   tags: tech,nextcloud,storage
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}'

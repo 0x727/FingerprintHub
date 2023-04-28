@@ -1,19 +1,18 @@
 id: springboot-env
 
 info:
-  name: Springboot Env Actuator - Detect
+  name: Detect Springboot Env Actuator
   author: that_juan_,dwisiswant0,wdahlenb,philippedelteil,stupidfish
   severity: low
   description: Sensitive environment variables may not be masked
-  tags: misconfig,springboot,env,exposure
+  tags: springboot,exposure
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/env"
       - "{{BaseURL}}/actuator/env"
       - "{{BaseURL}}/actuator;/env;"
-      - "{{BaseURL}}/message-api/actuator/env"
 
     stop-at-first-match: true
     matchers-condition: and

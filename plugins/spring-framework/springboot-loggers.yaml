@@ -6,7 +6,7 @@ info:
   severity: low
   tags: springboot,exposure
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/loggers"

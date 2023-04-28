@@ -16,7 +16,7 @@ info:
     cwe-id: CWE-77
   tags: yapi,rce
 
-http:
+requests:
   - raw:
       - | # REQUEST 1
         POST /api/user/reg HTTP/1.1

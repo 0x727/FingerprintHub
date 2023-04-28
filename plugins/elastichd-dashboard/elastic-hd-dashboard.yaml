@@ -9,7 +9,7 @@ info:
     shodan-query: title:"Elastic HD Dashboard"
   tags: misconfig,exposure,elastic
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"

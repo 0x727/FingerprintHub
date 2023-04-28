@@ -14,11 +14,10 @@ info:
     shodan-query: http.html:"phpMyAdmin"
   tags: phpmyadmin,misconfig
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/phpmyadmin/scripts/setup.php"
-      - "{{BaseURL}}/phpMyAdmin/scripts/setup.php"
       - "{{BaseURL}}/_phpmyadmin/scripts/setup.php"
       - "{{BaseURL}}/forum/phpmyadmin/scripts/setup.php"
       - "{{BaseURL}}/php/phpmyadmin/scripts/setup.php"
@@ -28,10 +27,8 @@ http:
       - "{{BaseURL}}/sysadmin/phpMyAdmin/scripts/setup.php"
       - "{{BaseURL}}/phpmyadmin/setup/index.php"
       - "{{BaseURL}}/pma/setup/index.php"
-      - "{{BaseURL}}/admin/pma/setup/index.php"
       - "{{BaseURL}}/phpmyadmin/setup/"
       - "{{BaseURL}}/setup/index.php"
-      - "{{BaseURL}}/admin/"
 
     stop-at-first-match: true
     matchers-condition: and
@@ -46,3 +43,5 @@ http:
       - type: status
         status:
           - 200
+
+# Enhanced by md on 2023/03/10

@@ -15,7 +15,7 @@ info:
     cwe-id: CWE-22
   tags: apache,solr,lfi
 
-http:
+requests:
   - raw:
       - |
         GET /solr/admin/cores?wt=json HTTP/1.1

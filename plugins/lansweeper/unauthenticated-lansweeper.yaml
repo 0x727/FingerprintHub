@@ -6,7 +6,7 @@ info:
   severity: high
   tags: lansweeper,unauth
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/Default.aspx"

@@ -16,7 +16,7 @@ info:
     cwe-id: CWE-22
   tags: thinkcmf,lfi
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/?a=display&templateFile=README.md"

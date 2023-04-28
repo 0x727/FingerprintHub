@@ -6,7 +6,7 @@ info:
   severity: high
   tags: aws,s3,wordpress,disclosure
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/wp-config.php-backup'

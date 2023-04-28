@@ -8,7 +8,7 @@ info:
     - https://github.com/vulhub/vulhub/tree/master/spark/unacc
   tags: unauth,vulhub,spark
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"

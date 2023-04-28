@@ -15,7 +15,7 @@ info:
     cwe-id: CWE-77
   tags: ruijie,cnvd,cnvd2021,rce
 
-http:
+requests:
   - raw:
       - |
         POST /guest_auth/guestIsUp.php

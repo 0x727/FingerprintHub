@@ -8,7 +8,7 @@ info:
     - https://xz.aliyun.com/t/2941
   tags: dlink
 
-http:
+requests:
   - method: POST
     path:
       - "{{BaseURL}}/hedwig.cgi"

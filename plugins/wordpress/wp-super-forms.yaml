@@ -9,7 +9,7 @@ info:
     - https://www.exploit-db.com/ghdb/6776
   tags: listing,plugin,edb,wordpress
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/wp-content/plugins/super-forms/"

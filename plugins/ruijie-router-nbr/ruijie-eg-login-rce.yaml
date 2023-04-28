@@ -14,7 +14,7 @@ info:
     - https://www.ruijienetworks.com
   tags: ruijie,rce
 
-http:
+requests:
   - raw:
       - |
         POST /login.php HTTP/1.1

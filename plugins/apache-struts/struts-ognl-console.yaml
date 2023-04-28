@@ -14,7 +14,7 @@ info:
     shodan-query: html:"Struts Problem Report"
   tags: apache,struts,ognl,panel
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/struts/webconsole.html?debug=console'

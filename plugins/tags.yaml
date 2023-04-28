@@ -57,6 +57,8 @@ apache-tomcat:
   - - tomcat
 apollo-adminservice:
   - - apollo
+appwrite:
+  - - appwrite
 argocd:
   - - argocd
 atlassian-jira:
@@ -144,6 +146,8 @@ haproxy-report:
   - - haproxy
 harbor:
   - - harbor
+hfs:
+  - - hfs
 hjtcloud:
   - - huijietong
   - - hjtcloud
@@ -199,6 +203,8 @@ microsoft-sharepoint:
   - - sharepoint
 minio-browser:
   - - minio
+mlflow:
+  - - mlflow
 mongodb:
   - - mongodb
 moodle:
@@ -225,6 +231,8 @@ oracle-weblogic:
   - - weblogic
 panabit-gateway:
   - - panabit
+papercut:
+  - - papercut
 parallels-plesk-panel:
   - - plesk
 phpmyadmin:

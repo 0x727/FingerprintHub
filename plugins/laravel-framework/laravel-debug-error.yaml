@@ -6,7 +6,7 @@ info:
   severity: medium
   tags: debug,laravel
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}"
