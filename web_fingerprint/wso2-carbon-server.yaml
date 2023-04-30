@@ -1,7 +1,7 @@
 name: wso2-carbon-server
 priority: 2
 nuclei_tags:
-  - []
+  - - wso2
 fingerprint:
   - path: /
     request_method: get
