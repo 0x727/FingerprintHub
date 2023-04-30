@@ -1,7 +1,7 @@
 name: jfrog
 priority: 3
 nuclei_tags:
-  - []
+  - - jfrog
 fingerprint:
   - path: /
     request_method: get
