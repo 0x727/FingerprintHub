@@ -329,6 +329,8 @@ sunlogin:
   - - sunflower
 swagger:
   - - swagger
+tableau:
+  - - tableau
 thinkadmin:
   - - thinkadmin
 thinkcmf:
