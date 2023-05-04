@@ -1,23 +1,14 @@
 name: adobe-experience-manager
 priority: 3
 nuclei_tags:
-  - []
+ - - aem
 fingerprint:
-  - path: /
-    request_method: get
-    request_headers: {}
-    request_data: ''
-    status_code: 0
-    headers: {}
-    keyword:
-      - adobe experience manager
-    favicon_hash: []
-  - path: /
-    request_method: get
-    request_headers: {}
-    request_data: ''
-    status_code: 0
-    headers: {}
-    keyword:
-      - ' class="coral-heading coral-heading--1"'
-    favicon_hash: []
+ - path: /
+   request_method: get
+   request_headers: {}
+   request_data: ''
+   status_code: 0
+   headers: {}
+   keyword:
+     - tag{background:url(login/clientlib/resources/adobe-logo.png)
+   favicon_hash: []
