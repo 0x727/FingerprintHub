@@ -190,6 +190,8 @@ joomla:
   - - joomla
 jupyter-notebook:
   - - jupyter
+jupyterhub:
+  - - jupyterhub
 kafka-manager:
   - - kafka
 kibana:
@@ -198,6 +200,8 @@ kindeditor:
   - - kindeditor
 kingdee:
   - - kingdee
+kkfileview:
+  - - kkFileView
 kubernetes:
   - - kubernetes
   - - k8
