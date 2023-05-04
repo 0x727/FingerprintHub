@@ -54,6 +54,9 @@ apache-skywalking:
   - - skywalking
 apache-solr:
   - - solr
+apache-storm:
+  - - storm
+    - apache
 apache-struts:
   - - struts
 apache-superset:
