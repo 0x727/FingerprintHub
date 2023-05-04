@@ -226,6 +226,8 @@ manageengine-admanager-plus:
   - - admanager
 mcms:
   - - mcms
+metinfo:
+  - - metinfo
 microsoft-exchange:
   - - exchange
 microsoft-sharepoint:

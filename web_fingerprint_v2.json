@@ -21233,7 +21233,7 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "content=\"metinfo"
+      "<meta name=\"generator\" content=\"MetInfo"
     ],
     "priority": 3,
     "name": "metinfo"
@@ -21246,20 +21246,7 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "powered_by_metinfo"
-    ],
-    "priority": 3,
-    "name": "metinfo"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "/images/css/metinfo.css"
+      "<div class=\"powered_by_metinfo\"></div>"
     ],
     "priority": 3,
     "name": "metinfo"
