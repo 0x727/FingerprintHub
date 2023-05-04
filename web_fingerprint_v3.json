@@ -25488,6 +25488,34 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "X-Powered-By": "Next.js"
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "nextjs"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<meta name=\"next-head-count"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "nextjs"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [
       "<title>Nexus Repository Manager</title>"

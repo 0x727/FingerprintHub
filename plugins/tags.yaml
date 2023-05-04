@@ -237,6 +237,8 @@ netsweeper:
   - - netsweeper
 nextcloud-product:
   - - nextcloud
+nextjs:
+  - - nextjs
 nexus-repository-manager:
   - - nexus
 nps:
