@@ -352,6 +352,8 @@ websvn:
   - - websvn
 weiphp:
   - - weiphp
+werkzeug:
+  - - werkzeug
 wordpress:
   - - wordpress
 wso2-carbon-server:

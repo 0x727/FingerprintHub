@@ -41511,6 +41511,20 @@
     "request_data": "",
     "status_code": 0,
     "headers": {
+      "Server": "Werkzeug"
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "werkzeug"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
       "Server": "wstl cpe"
     },
     "keyword": [],
