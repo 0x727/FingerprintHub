@@ -2546,6 +2546,20 @@
   },
   {
     "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<img src=\"images/ranger_logo.png\" alt=\"Ranger logo\">"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "apache-ranger"
+  },
+  {
+    "path": "/",
     "request_method": "post",
     "request_headers": {
       "Cookie": "rememberMe=admin;rememberMe-K=admin"
