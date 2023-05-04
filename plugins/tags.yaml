@@ -277,6 +277,8 @@ rconfig:
   - - rconfig
 roundcube-webmail:
   - - roundcube
+ruby-on-rails:
+  - - rails
 ruijie-router-nbr:
   - - ruijie
 ruoyi-system:
