@@ -99,6 +99,8 @@ dell-idrac:
   - - idrac
 django:
   - - django
+doccms:
+  - - doccms
 dolphinscheduler:
   - - dolphinscheduler
 drupal:
