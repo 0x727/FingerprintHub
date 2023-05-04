@@ -12211,6 +12211,19 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>frps dashboard</title>"
+    ],
+    "priority": 3,
+    "name": "frp"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "powered by: fudforum"
     ],
     "priority": 3,

@@ -91,6 +91,8 @@ dedecms:
   - - dedecms
 django:
   - - django
+dolphinscheduler:
+  - - dolphinscheduler
 drupal:
   - - drupal
 duomicms:
@@ -130,6 +132,8 @@ fortinet-fortigate:
 fortinet-fortimail:
   - - fortimail
     - fortinet
+frp:
+  - - frp
 gate-one:
   - - gateone
 geoserver:
@@ -174,6 +178,8 @@ jenkins:
   - - jenkin
 jetty:
   - - jetty
+jfrog:
+  - - jfrog
 joomla:
   - - joomla
 jupyter-notebook:
@@ -334,6 +340,8 @@ weiphp:
   - - weiphp
 wordpress:
   - - wordpress
+wso2-carbon-server:
+  - - wso2
 wuzhicms:
   - - wuzhicms
 xdcms:
