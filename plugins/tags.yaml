@@ -215,6 +215,9 @@ laravel-framework:
   - - laravel
 lighttpd:
   - - lighttpd
+maccms:
+  - - maccmsv10
+  - - maccms
 mcms:
   - - mcms
 microsoft-exchange:
