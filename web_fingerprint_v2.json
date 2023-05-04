@@ -1044,20 +1044,7 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "adobe experience manager"
-    ],
-    "priority": 3,
-    "name": "adobe-experience-manager"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      " class=\"coral-heading coral-heading--1\""
+      "tag{background:url(login/clientlib/resources/adobe-logo.png)"
     ],
     "priority": 3,
     "name": "adobe-experience-manager"
@@ -20571,6 +20558,19 @@
     ],
     "priority": 3,
     "name": "manageengine-adaudit"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<title>ManageEngine - ADManager Plus</title>"
+    ],
+    "priority": 3,
+    "name": "manageengine-admanager-plus"
   },
   {
     "path": "/",

@@ -2,6 +2,8 @@
   - - 74cms
 adminer:
   - - adminer
+adobe-experience-manager:
+  - - aem
 adobe-magento:
   - - magento
 alibaba-fastjson:
@@ -220,6 +222,8 @@ lighttpd:
 maccms:
   - - maccmsv10
   - - maccms
+manageengine-admanager-plus:
+  - - admanager
 mcms:
   - - mcms
 microsoft-exchange:
