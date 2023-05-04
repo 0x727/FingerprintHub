@@ -8107,6 +8107,19 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>Dell Remote Management Controller</title>"
+    ],
+    "priority": 3,
+    "name": "dell-idrac"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "class=\"login_server_default\">n1108p-on"
     ],
     "priority": 1,
@@ -37216,6 +37229,19 @@
     ],
     "priority": 2,
     "name": "vmware-server-2"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<header alt=\"VMware Site Recovery Manager"
+    ],
+    "priority": 3,
+    "name": "vmware-site-recovery-manager"
   },
   {
     "path": "/",

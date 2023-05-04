@@ -95,6 +95,8 @@ d-link:
   - - dlink
 dedecms:
   - - dedecms
+dell-idrac:
+  - - idrac
 django:
   - - django
 dolphinscheduler:
@@ -337,6 +339,9 @@ vbulletin:
 vmware-horizon:
   - - horizon
     - vmware
+vmware-site-recovery-manager:
+  - - siterecovery
+  - - recovery
 vmware-vcenter:
   - - vmware-vcenter
   - - vcenter
