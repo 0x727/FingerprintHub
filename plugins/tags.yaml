@@ -382,6 +382,8 @@ wuzhicms:
   - - wuzhicms
 xdcms:
   - - xdcms
+xdebug:
+  - - xdebug
 xiuno:
   - - xiuno
 xstream:

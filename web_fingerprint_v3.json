@@ -42690,6 +42690,20 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "X-Xdebug-Profile-Filename": "/"
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "xdebug"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [
       "http://www.xdoa.cn</a>"
