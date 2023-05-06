@@ -1005,8 +1005,60 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "https://www.adminer.org"
+      "://www.adminer.org/' target=\"_blank\" rel=\"noreferrer"
     ],
+    "priority": 1,
+    "name": "adminer"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "Content-Security-Policy": "script-src 'self' 'unsafe-inline' 'nonce-"
+    },
+    "keyword": [],
+    "priority": 1,
+    "name": "adminer"
+  },
+  {
+    "path": "/adminer/index.php",
+    "request_method": "head",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 200,
+    "headers": {
+      "Content-Security-Policy": "script-src 'self' 'unsafe-inline' 'nonce-"
+    },
+    "keyword": [],
+    "priority": 1,
+    "name": "adminer"
+  },
+  {
+    "path": "/adminer.php",
+    "request_method": "head",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 200,
+    "headers": {
+      "Content-Security-Policy": "script-src 'self' 'unsafe-inline' 'nonce-"
+    },
+    "keyword": [],
+    "priority": 1,
+    "name": "adminer"
+  },
+  {
+    "path": "/tools/adminer.php",
+    "request_method": "head",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 200,
+    "headers": {
+      "Content-Security-Policy": "script-src 'self' 'unsafe-inline' 'nonce-"
+    },
+    "keyword": [],
     "priority": 1,
     "name": "adminer"
   },
