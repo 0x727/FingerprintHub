@@ -29511,10 +29511,80 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "Set-Cookie": "pma_lang="
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "phpmyadmin"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [
       "pma_password"
     ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "phpmyadmin"
+  },
+  {
+    "path": "/phpmyadmin/index.php",
+    "request_method": "head",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "Set-Cookie": "phpmyadmin="
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "phpmyadmin"
+  },
+  {
+    "path": "/phpMyAdmin/index.php",
+    "request_method": "head",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "Set-Cookie": "phpmyadmin="
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "phpmyadmin"
+  },
+  {
+    "path": "/phpmyadmin/index.php",
+    "request_method": "head",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "Set-Cookie": "pma_lang="
+    },
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "phpmyadmin"
+  },
+  {
+    "path": "/phpMyAdmin/index.php",
+    "request_method": "head",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "Set-Cookie": "pma_lang="
+    },
+    "keyword": [],
     "favicon_hash": [],
     "priority": 3,
     "name": "phpmyadmin"
