@@ -2500,6 +2500,71 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "Location": "/index.action"
+    },
+    "keyword": [],
+    "priority": 1,
+    "name": "apache-struts"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "Location": "/login.action"
+    },
+    "keyword": [],
+    "priority": 1,
+    "name": "apache-struts"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "=\"struts.token.name\""
+    ],
+    "priority": 1,
+    "name": "apache-struts"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<form action=\"login.action\" method=\"post"
+    ],
+    "priority": 1,
+    "name": "apache-struts"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<form action=\"/login.action\" method=\"post"
+    ],
+    "priority": 1,
+    "name": "apache-struts"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [
       "content=\"Struts2 Showcase for Apache Struts Project\""
