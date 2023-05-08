@@ -8,6 +8,51 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
+    headers:
+      Location: /index.action
+    keyword: []
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      Location: /login.action
+    keyword: []
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - ="struts.token.name"
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <form action="login.action" method="post
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword:
+      - <form action="/login.action" method="post
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
     headers: {}
     keyword:
       - content="Struts2 Showcase for Apache Struts Project"
