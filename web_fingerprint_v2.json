@@ -27656,6 +27656,32 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>phpStudy 探针 2"
+    ],
+    "priority": 3,
+    "name": "phpstudy"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<title>站点创建成功-phpstudy for"
+    ],
+    "priority": 3,
+    "name": "phpstudy"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "var stargeturl = \"index.php?disp=dynamic"
     ],
     "priority": 3,
