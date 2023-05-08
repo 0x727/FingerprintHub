@@ -37208,6 +37208,19 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>vRealize Log Insight -"
+    ],
+    "priority": 1,
+    "name": "vmware-aria-operations-for-logs"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "content=\"vmware esxi"
     ],
     "priority": 3,

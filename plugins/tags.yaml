@@ -351,6 +351,9 @@ umami:
   - - umami
 vbulletin:
   - - vbulletin
+vmware-aria-operations-for-logs:
+  - - aria
+    - vmware
 vmware-horizon:
   - - horizon
     - vmware
