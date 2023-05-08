@@ -26,7 +26,52 @@ fingerprint:
     request_headers: {}
     request_data: ''
     status_code: 0
+    headers:
+      Set-Cookie: pma_lang=
+    keyword: []
+    favicon_hash: []
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
     headers: {}
     keyword:
       - pma_password
+    favicon_hash: []
+  - path: /phpmyadmin/index.php
+    request_method: head
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      Set-Cookie: phpmyadmin=
+    keyword: []
+    favicon_hash: []
+  - path: /phpMyAdmin/index.php
+    request_method: head
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      Set-Cookie: phpmyadmin=
+    keyword: []
+    favicon_hash: []
+  - path: /phpmyadmin/index.php
+    request_method: head
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      Set-Cookie: pma_lang=
+    keyword: []
+    favicon_hash: []
+  - path: /phpMyAdmin/index.php
+    request_method: head
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers:
+      Set-Cookie: pma_lang=
+    keyword: []
     favicon_hash: []
