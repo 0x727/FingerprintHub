@@ -150,6 +150,8 @@ gate-one:
   - - gateone
 geoserver:
   - - geoserver
+ghostcms:
+  - - ghostcms
 gitlab:
   - - gitlab
 glpi:

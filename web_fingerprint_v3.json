@@ -13678,6 +13678,34 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "noopener\">Powered by Ghost</a></div>"
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "ghostcms"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "Search this site\" data-ghost-search><"
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "ghostcms"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "gitbook"
     ],
     "favicon_hash": [],
