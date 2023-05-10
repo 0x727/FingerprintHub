@@ -16333,6 +16333,43 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>Icinga Web 2 Login</title>"
+    ],
+    "priority": 1,
+    "name": "icinga"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "mask-icon\" href=\"/icingaweb2/img/website-icon.svg\" color="
+    ],
+    "priority": 1,
+    "name": "icinga"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 1,
+    "name": "icinga"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "/clipboard/zeroclipboard.min"
     ],
     "priority": 3,

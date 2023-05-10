@@ -175,6 +175,8 @@ horde:
   - - horde
 ibm-websphere:
   - - websphere
+icinga:
+  - - icinga
 influxdata-influxdb:
   - - influxdb
 jamf-panel:
