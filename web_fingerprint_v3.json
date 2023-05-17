@@ -34615,6 +34615,48 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "alt=\"Sitecore\" id=\"scLogo\" />"
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "sitecore"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "title=\"Sitecore Documentation site\">"
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "sitecore"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "7e7727c980ccf9d9a3d11bbc702f6363"
+    ],
+    "priority": 1,
+    "name": "sitecore"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "content=\"boka siteengine"
     ],
     "favicon_hash": [],

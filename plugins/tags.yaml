@@ -309,6 +309,8 @@ sangfor-edr:
   - - sangfor
 showdoc:
   - - showdoc
+sitecore:
+  - - sitecore
 siteserver:
   - - siteserver
 solarwinds:
