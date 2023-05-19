@@ -30164,6 +30164,43 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>Ruckus Wireless Admin</title>"
+    ],
+    "priority": 1,
+    "name": "ruckus-wireless"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "alt=\"Ruckus Wireless\" title="
+    ],
+    "priority": 1,
+    "name": "ruckus-wireless"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 1,
+    "name": "ruckus-wireless"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "杭州瑞成信息技术有限公司"
     ],
     "priority": 3,

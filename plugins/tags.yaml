@@ -304,6 +304,8 @@ roundcube-webmail:
   - - roundcube
 ruby-on-rails:
   - - rails
+ruckus-wireless:
+  - - ruckus
 ruijie-router-nbr:
   - - ruijie
 ruoyi-system:

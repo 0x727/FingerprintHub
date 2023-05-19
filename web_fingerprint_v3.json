@@ -32551,6 +32551,48 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>Ruckus Wireless Admin</title>"
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "ruckus-wireless"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "alt=\"Ruckus Wireless\" title="
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "ruckus-wireless"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "ed8cf53ef6836184587ee3a987be074a"
+    ],
+    "priority": 1,
+    "name": "ruckus-wireless"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "杭州瑞成信息技术有限公司"
     ],
     "favicon_hash": [],
