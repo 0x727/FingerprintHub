@@ -3738,8 +3738,45 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "please visit 'www.avtech.com.tw'"
+    ],
+    "priority": 2,
+    "name": "avtech-video-web-server"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<title>Remote Surveillance, Any time &amp; Any where</title>"
+    ],
+    "priority": 2,
+    "name": "avtech-video-web-server"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "/av732e/setup.exe"
     ],
+    "priority": 2,
+    "name": "avtech-video-web-server"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
     "priority": 2,
     "name": "avtech-video-web-server"
   },
@@ -24789,6 +24826,43 @@
     ],
     "priority": 3,
     "name": "octopussy"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "odoo.__session_info__ = {"
+    ],
+    "priority": 1,
+    "name": "odoo"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<script id=\"web.layout.odooscript"
+    ],
+    "priority": 1,
+    "name": "odoo"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 1,
+    "name": "odoo"
   },
   {
     "path": "/",

@@ -4031,9 +4031,51 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "please visit 'www.avtech.com.tw'"
+    ],
+    "favicon_hash": [],
+    "priority": 2,
+    "name": "avtech-video-web-server"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<title>Remote Surveillance, Any time &amp; Any where</title>"
+    ],
+    "favicon_hash": [],
+    "priority": 2,
+    "name": "avtech-video-web-server"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "/av732e/setup.exe"
     ],
     "favicon_hash": [],
+    "priority": 2,
+    "name": "avtech-video-web-server"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "ed8cf53ef6836184587ee3a987be074a"
+    ],
     "priority": 2,
     "name": "avtech-video-web-server"
   },
@@ -26749,6 +26791,48 @@
     "favicon_hash": [],
     "priority": 3,
     "name": "octopussy"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "odoo.__session_info__ = {"
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "odoo"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<script id=\"web.layout.odooscript"
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "odoo"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "a342fe863a8e41dff2a55410c7f118c5"
+    ],
+    "priority": 1,
+    "name": "odoo"
   },
   {
     "path": "/",

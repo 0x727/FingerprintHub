@@ -74,6 +74,8 @@ argocd:
 atlassian-jira:
   - - jira
   - - atlassian
+avtech-video-web-server:
+  - - avtech
 bt-control-pane:
   - - bt
 bullwark:
@@ -262,6 +264,8 @@ nexus-repository-manager:
   - - nexus
 nps:
   - - nps
+odoo:
+  - - odoo
 opencti:
   - - opencti
 openfire:
