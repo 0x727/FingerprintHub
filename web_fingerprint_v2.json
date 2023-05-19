@@ -17621,6 +17621,19 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
+    "keyword": [
+      "onlinePreviewDomainURL'] = 'http://fileview.jeecg.com"
+    ],
+    "priority": 1,
+    "name": "jeecgboot"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
     "keyword": [],
     "priority": 1,
     "name": "jeecgboot"

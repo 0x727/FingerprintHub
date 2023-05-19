@@ -183,6 +183,8 @@ jamf-panel:
   - - jamf
 jboss:
   - - jboss
+jeecgboot:
+  - - jeecg
 jeecms:
   - - jeecms
 jeewms:

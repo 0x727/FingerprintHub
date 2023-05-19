@@ -19007,6 +19007,20 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
+    "keyword": [
+      "onlinePreviewDomainURL'] = 'http://fileview.jeecg.com"
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "jeecgboot"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
     "keyword": [],
     "favicon_hash": [
       "dc7a0b69060a0262530b47b46ba7f9b6"
