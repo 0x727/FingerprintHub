@@ -37759,6 +37759,34 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<img alt=\"TeslaMate\" src="
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "teslamate"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "0e3b30468f89fa98cb22983c89e49d0a"
+    ],
+    "priority": 1,
+    "name": "teslamate"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "<a href=\"http://thehostingtool.com\" target=\"_blank\">thehostingtool</a>"
     ],
     "favicon_hash": [],

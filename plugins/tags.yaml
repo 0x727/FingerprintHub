@@ -347,6 +347,8 @@ swagger:
   - - swagger
 tableau:
   - - tableau
+teslamate:
+  - - teslamate
 thinkadmin:
   - - thinkadmin
 thinkcmf:

@@ -34989,6 +34989,30 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<img alt=\"TeslaMate\" src="
+    ],
+    "priority": 1,
+    "name": "teslamate"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 1,
+    "name": "teslamate"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "<a href=\"http://thehostingtool.com\" target=\"_blank\">thehostingtool</a>"
     ],
     "priority": 2,
