@@ -35347,6 +35347,32 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "Refresh\" content=\"3; URL=Solar_Menu.php"
+    ],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "solarview-compact"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [],
+    "priority": 1,
+    "name": "solarview-compact"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "solarwinds"
     ],
     "favicon_hash": [],

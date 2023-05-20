@@ -321,6 +321,8 @@ sitecore:
   - - sitecore
 siteserver:
   - - siteserver
+solarview-compact:
+  - - solarview
 solarwinds:
   - - solarwinds
 sonarqube:
