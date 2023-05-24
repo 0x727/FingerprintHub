@@ -19078,7 +19078,7 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "/r/cms/www/"
+      "<script src=\"/r/cms/www/"
     ],
     "favicon_hash": [],
     "priority": 1,
@@ -19092,7 +19092,7 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "/u/cms/www/"
+      "<script src=\"/u/cms/www/"
     ],
     "favicon_hash": [],
     "priority": 1,

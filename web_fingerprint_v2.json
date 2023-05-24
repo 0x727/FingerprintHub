@@ -17683,7 +17683,7 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "/r/cms/www/"
+      "<script src=\"/r/cms/www/"
     ],
     "priority": 1,
     "name": "jeecms"
@@ -17696,7 +17696,7 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "/u/cms/www/"
+      "<script src=\"/u/cms/www/"
     ],
     "priority": 1,
     "name": "jeecms"
