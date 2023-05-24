@@ -6193,6 +6193,19 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "Set-Cookie": "webvpncontext="
+    },
+    "keyword": [],
+    "priority": 3,
+    "name": "cisco-ssl-vpn"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [
       "/ccmadmin/"
