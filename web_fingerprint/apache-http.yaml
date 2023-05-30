@@ -1,8 +1,8 @@
 name: apache-http
 priority: 3
 nuclei_tags:
-  - - apache
-    - mod-proxy
+  - - mod-proxy
+    - apache
 fingerprint:
   - path: /
     request_method: get
