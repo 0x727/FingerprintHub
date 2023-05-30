@@ -38,8 +38,8 @@ apache-guacamole:
 apache-hadoop:
   - - hadoop
 apache-http:
-  - - apache
-    - mod-proxy
+  - - mod-proxy
+    - apache
 apache-nifi:
   - - nifi
 apache-ofbiz:
