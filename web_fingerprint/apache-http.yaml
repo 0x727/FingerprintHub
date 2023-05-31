@@ -2,6 +2,7 @@ name: apache-http
 priority: 3
 nuclei_tags:
   - - mod-proxy
+  - - mod-jk
     - apache
 fingerprint:
   - path: /
