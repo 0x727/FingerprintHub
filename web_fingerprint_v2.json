@@ -25354,19 +25354,6 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "class=\"row justify-content-center\""
-    ],
-    "priority": 2,
-    "name": "openfire"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
       "<title>openfire 管理界面</title>"
     ],
     "priority": 2,
