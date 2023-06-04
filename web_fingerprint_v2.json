@@ -2709,6 +2709,19 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {
+      "Server": "Apache-Coyote/"
+    },
+    "keyword": [],
+    "priority": 3,
+    "name": "apache-tomcat"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {},
     "keyword": [],
     "priority": 3,
@@ -27578,58 +27591,6 @@
     "name": "phpmyadmin"
   },
   {
-    "path": "/phpmyadmin/index.php",
-    "request_method": "head",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {
-      "Set-Cookie": "phpmyadmin="
-    },
-    "keyword": [],
-    "priority": 3,
-    "name": "phpmyadmin"
-  },
-  {
-    "path": "/phpMyAdmin/index.php",
-    "request_method": "head",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {
-      "Set-Cookie": "phpmyadmin="
-    },
-    "keyword": [],
-    "priority": 3,
-    "name": "phpmyadmin"
-  },
-  {
-    "path": "/phpmyadmin/index.php",
-    "request_method": "head",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {
-      "Set-Cookie": "pma_lang="
-    },
-    "keyword": [],
-    "priority": 3,
-    "name": "phpmyadmin"
-  },
-  {
-    "path": "/phpMyAdmin/index.php",
-    "request_method": "head",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {
-      "Set-Cookie": "pma_lang="
-    },
-    "keyword": [],
-    "priority": 3,
-    "name": "phpmyadmin"
-  },
-  {
     "path": "/",
     "request_method": "get",
     "request_headers": {},
@@ -33243,6 +33204,45 @@
     "keyword": [
       "whitelabel error page"
     ],
+    "priority": 2,
+    "name": "spring-framework"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "\",\"status\":404,\"error\":\"Not Found\",\"message\":\"No message available\",\"path\":\"/"
+    ],
+    "priority": 2,
+    "name": "spring-framework"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "Www-Authenticate": "Basic realm=\"Spring\""
+    },
+    "keyword": [],
+    "priority": 2,
+    "name": "spring-framework"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "X-Application-Context": "None"
+    },
+    "keyword": [],
     "priority": 2,
     "name": "spring-framework"
   },
