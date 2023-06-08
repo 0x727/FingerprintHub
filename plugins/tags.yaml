@@ -207,6 +207,8 @@ jupyter-notebook:
   - - jupyter
 jupyterhub:
   - - jupyterhub
+kafka-center:
+  - - kafka
 kafka-manager:
   - - kafka
 kibana:
