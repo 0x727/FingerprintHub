@@ -10,7 +10,7 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - 'png" alt="Lucee">'
+      - png" alt="Lucee">
     favicon_hash: []
   - path: /
     request_method: get
@@ -19,5 +19,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - 'by the Lucee Association Switzerland</p>'
+      - by the Lucee Association Switzerland</p>
     favicon_hash: []

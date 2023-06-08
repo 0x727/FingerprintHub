@@ -228,6 +228,8 @@ laravel-framework:
   - - laravel
 lighttpd:
   - - lighttpd
+lucee:
+  - - lucee
 maccms:
   - - maccmsv10
   - - maccms
