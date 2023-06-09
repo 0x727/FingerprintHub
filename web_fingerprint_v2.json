@@ -2395,7 +2395,7 @@
     "request_data": "",
     "status_code": 0,
     "headers": {
-      "Set-Cookie": "rememberMe=deleteMe"
+      "Set-Cookie": "rememberMe"
     },
     "keyword": [],
     "priority": 3,
@@ -2410,7 +2410,7 @@
     "request_data": "",
     "status_code": 0,
     "headers": {
-      "Set-Cookie": "rememberMe=deleteMe"
+      "Set-Cookie": "rememberMe"
     },
     "keyword": [],
     "priority": 3,

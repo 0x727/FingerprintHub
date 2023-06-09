@@ -2581,7 +2581,7 @@
     "request_data": "",
     "status_code": 0,
     "headers": {
-      "Set-Cookie": "rememberMe=deleteMe"
+      "Set-Cookie": "rememberMe"
     },
     "keyword": [],
     "favicon_hash": [],
@@ -2597,7 +2597,7 @@
     "request_data": "",
     "status_code": 0,
     "headers": {
-      "Set-Cookie": "rememberMe=deleteMe"
+      "Set-Cookie": "rememberMe"
     },
     "keyword": [],
     "favicon_hash": [],
