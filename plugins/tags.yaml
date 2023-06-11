@@ -295,6 +295,8 @@ powerjob:
   - - powerjob
 prometheus:
   - - prometheus
+pulsesecure-ssl-vpn:
+  - - pulsesecure
 qcubed-development-framework:
   - - qcubed
 qizhi-fortress-aircraft:

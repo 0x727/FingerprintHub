@@ -28950,6 +28950,19 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>Pulse Connect Secure</title>"
+    ],
+    "priority": 3,
+    "name": "pulsesecure-ssl-vpn"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "<b>pulse connect secure</b>"
     ],
     "priority": 3,
