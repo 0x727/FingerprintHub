@@ -31018,7 +31018,8 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
-      "login_psw.csp"
+      "/portal\",right:0}];",
+      "/por/login_psw.csp"
     ],
     "priority": 3,
     "name": "sangfor-ssl-vpn"

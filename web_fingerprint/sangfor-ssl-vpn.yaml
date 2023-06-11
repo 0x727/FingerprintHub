@@ -10,6 +10,6 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword:
-      - '/portal",right:0}];'
-      - '/por/login_psw.csp'
+      - /portal",right:0}];
+      - /por/login_psw.csp
     favicon_hash: []
