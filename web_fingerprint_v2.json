@@ -5646,6 +5646,20 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "check point software technologies",
+      "<img src=\"/sslvpn/login/images/companylogo.png"
+    ],
+    "priority": 3,
+    "name": "check-point-vpn"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "iaus/media/js/login/login.js"
     ],
     "priority": 3,
