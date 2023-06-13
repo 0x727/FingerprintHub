@@ -39,7 +39,6 @@ apache-hadoop:
   - - hadoop
 apache-http:
   - - mod-proxy
-  - - mod-jk
     - apache
 apache-nifi:
   - - nifi
