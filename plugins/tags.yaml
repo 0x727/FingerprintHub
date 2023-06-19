@@ -77,6 +77,8 @@ atlassian-jira:
   - - atlassian
 avtech-video-web-server:
   - - avtech
+bitbucket:
+  - - bitbucket
 bt-control-pane:
   - - bt
 bullwark:
