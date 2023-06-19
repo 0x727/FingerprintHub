@@ -26648,6 +26648,21 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "__nuxt",
+      "buildAssetsDir"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "nuxtjs"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "<div style='display: none;' id=\"setstatusiconstatediv\"></div>"
     ],
     "favicon_hash": [],
