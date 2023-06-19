@@ -86,6 +86,8 @@ cacti:
 caucho-resin:
   - - caucho
     - resin
+chamilo:
+  - - chamilo
 citrix-access-gateway:
   - - citrix
 coldfusion:

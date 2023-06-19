@@ -6018,10 +6018,10 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
-    "keyword": [],
-    "favicon_hash": [
-      "0c53ef3d151cbac70a8486dd1ebc8b25"
+    "keyword": [
+      "<meta name=\"generator\" content=\"Chamilo"
     ],
+    "favicon_hash": [],
     "priority": 3,
     "name": "chamilo"
   },

@@ -5582,7 +5582,9 @@
     "request_data": "",
     "status_code": 0,
     "headers": {},
-    "keyword": [],
+    "keyword": [
+      "<meta name=\"generator\" content=\"Chamilo"
+    ],
     "priority": 3,
     "name": "chamilo"
   },
