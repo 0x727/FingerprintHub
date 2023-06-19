@@ -241,6 +241,8 @@ manageengine-admanager-plus:
   - - admanager
 mcms:
   - - mcms
+metersphere:
+  - - metersphere
 metinfo:
   - - metinfo
 microsoft-exchange:
