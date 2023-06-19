@@ -8248,6 +8248,47 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "name=\"dede_fields",
+      "name=\"dede_fieldshash"
+    ],
+    "priority": 3,
+    "name": "dedecms"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "content=\"order by dede58.com\" />"
+    ],
+    "priority": 3,
+    "name": "dedecms"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<form  name=\"formsearch\" action=\"/plus/search.php\">",
+      "name=\"q\""
+    ],
+    "priority": 3,
+    "name": "dedecms"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 200,
     "headers": {},
     "keyword": [
