@@ -167,6 +167,8 @@ gogs:
   - - gogs
 grafana:
   - - grafana
+gravcms:
+  - - grav
 h3c-imc:
   - - h3c-imc
 haproxy-report:
