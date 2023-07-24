@@ -66,6 +66,7 @@ apache-superset:
   - - superset
 apache-tomcat:
   - - tomcat
+    - apache
 apollo-adminservice:
   - - apollo
 appwrite:
