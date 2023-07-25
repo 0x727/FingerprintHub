@@ -123,6 +123,8 @@ ecology-oa:
   - - ecology
 ecshop:
   - - ecshop
+elastic:
+  - - elasticsearch
 elastichd-dashboard:
   - - elastic
 elasticsearch:
