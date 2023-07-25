@@ -40691,6 +40691,19 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "data-xwiki-reference="
+    ],
+    "priority": 3,
+    "name": "xwiki"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
     "status_code": 200,
     "headers": {},
     "keyword": [

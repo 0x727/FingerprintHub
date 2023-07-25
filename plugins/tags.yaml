@@ -425,6 +425,8 @@ xiuno:
   - - xiuno
 xstream:
   - - xstream
+xwiki:
+  - - xwiki
 xxl-job:
   - - xxljob
 yapi:
