@@ -6,6 +6,8 @@ adobe-experience-manager:
   - - aem
 adobe-magento:
   - - magento
+alibaba-anyproxy:
+  - - anyproxy
 alibaba-fastjson:
   - - fastjson
 alibaba-nacos:

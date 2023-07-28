@@ -1453,6 +1453,20 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>AnyProxy</title>",
+      "dist/main.css"
+    ],
+    "priority": 3,
+    "name": "alibaba-anyproxy"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "js/base/fastjson"
     ],
     "priority": 3,
