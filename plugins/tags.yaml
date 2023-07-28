@@ -280,6 +280,8 @@ nextjs:
   - - nextjs
 nexus-repository-manager:
   - - nexus
+nginx-webui:
+  - - nginxwebui
 nps:
   - - nps
 odoo:

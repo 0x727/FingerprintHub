@@ -24127,6 +24127,19 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>nginxWebUI</title>"
+    ],
+    "priority": 3,
+    "name": "nginx-webui"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "/images/nitc1.png",
       "nitc web marketing service"
     ],
