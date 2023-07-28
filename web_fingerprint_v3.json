@@ -23262,6 +23262,21 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "_metabaseBootstrap",
+      "_metabaseLocalization"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "metabase"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "metasploit",
       "r7bottom-strip"
     ],

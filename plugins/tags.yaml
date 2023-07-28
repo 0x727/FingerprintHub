@@ -248,6 +248,8 @@ manageengine-admanager-plus:
   - - admanager
 mcms:
   - - mcms
+metabase:
+  - - metabase
 metersphere:
   - - metersphere
 metinfo:
