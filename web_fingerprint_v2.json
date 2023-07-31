@@ -22404,6 +22404,19 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "/whitelabel/mobileiron/img/favicon.ico"
+    ],
+    "priority": 3,
+    "name": "mobileiron-mdm"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "click here for more information about mobilityguard"
     ],
     "priority": 1,

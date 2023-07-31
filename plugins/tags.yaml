@@ -264,6 +264,8 @@ minio-browser:
   - - minio
 mlflow:
   - - mlflow
+mobileiron-mdm:
+  - - mobileiron
 mongodb:
   - - mongodb
 moodle:
