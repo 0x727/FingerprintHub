@@ -41179,6 +41179,19 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<meta http-equiv=refresh content=0;url=nccloud>"
+    ],
+    "priority": 3,
+    "name": "yonyou-nc-cloud"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "href=\"clientfile/rmisupdate.exe"
     ],
     "priority": 3,

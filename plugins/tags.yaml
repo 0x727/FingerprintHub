@@ -447,6 +447,9 @@ yii-framework:
   - - yii
 yonyou-erp-nc:
   - - erp-nc
+yonyou-nc-cloud:
+  - - yonyou-nc-cloud
+    - yonyou-nc-cloud
 yonyou-seeyon-oa:
   - - seeyon
   - - zhiyuan
