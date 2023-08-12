@@ -298,12 +298,16 @@ oracle-weblogic:
   - - weblogic
 panabit-gateway:
   - - panabit
+panabit-ixcache:
+  - - ixcache
 papercut:
   - - papercut
 parallels-plesk-panel:
   - - plesk
 phpmyadmin:
   - - phpmyadmin
+phpok:
+  - - phpok
 phpwiki:
   - - phpwiki
 portainer:
