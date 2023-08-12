@@ -239,6 +239,8 @@ lansweeper:
   - - lansweeper
 laravel-framework:
   - - laravel
+lexmark:
+  - - lexmark
 lighttpd:
   - - lighttpd
 lucee:
