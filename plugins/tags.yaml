@@ -308,6 +308,8 @@ phpmyadmin:
   - - phpmyadmin
 phpok:
   - - phpok
+phpstudy:
+  - - phpstudy
 phpwiki:
   - - phpwiki
 portainer:

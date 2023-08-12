@@ -28093,6 +28093,43 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>404 错误 - phpstudy</title>"
+    ],
+    "priority": 3,
+    "name": "phpstudy"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {
+      "Server": "xpserver"
+    },
+    "keyword": [],
+    "priority": 3,
+    "name": "phpstudy"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "priority": 3,
+    "name": "phpstudy"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "var stargeturl = \"index.php?disp=dynamic"
     ],
     "priority": 3,
