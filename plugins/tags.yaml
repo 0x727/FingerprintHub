@@ -109,6 +109,8 @@ dedecms:
   - - dedecms
 dell-idrac:
   - - idrac
+discuz:
+  - - discuz
 django:
   - - django
 doccms:
