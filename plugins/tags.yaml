@@ -232,6 +232,8 @@ kingdee:
   - - kingdee
 kkfileview:
   - - kkFileView
+kong:
+  - - kong
 kubernetes:
   - - kubernetes
   - - k8

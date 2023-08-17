@@ -27,6 +27,6 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers:
-      X-Kong-Response-Latency:
+      X-Kong-Response-Latency: None
     keyword: []
     favicon_hash: []
