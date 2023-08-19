@@ -382,6 +382,8 @@ spark:
   - - spark
 splunk:
   - - splunk
+spring-boot-admin:
+  - - springboot
 spring-cloud-netflix:
   - - springcloud
 spring-framework:
@@ -486,3 +488,5 @@ zzcms:
   - - zzcms
 zzzcms:
   - - zzzcms
+红帆ioffice:
+  - - hongfan

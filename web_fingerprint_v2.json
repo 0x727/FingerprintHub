@@ -33593,6 +33593,19 @@
     "request_headers": {},
     "request_data": "",
     "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "<img src=\"assets/img/icon-spring-boot-admin.svg"
+    ],
+    "priority": 2,
+    "name": "spring-boot-admin"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
     "headers": {
       "x-application-context": "hystrix-dashboard:"
     },
