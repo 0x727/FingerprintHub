@@ -31653,6 +31653,20 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "<title>Welcome to pypiserver!</title>"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "pypiserver"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "content=\"pyspider dashboard\""
     ],
     "favicon_hash": [],

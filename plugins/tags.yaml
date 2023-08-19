@@ -75,6 +75,8 @@ appwrite:
   - - appwrite
 argocd:
   - - argocd
+aspcms:
+  - - aspcms
 atlassian-jira:
   - - jira
   - - atlassian
@@ -331,6 +333,8 @@ prometheus:
   - - prometheus
 pulsesecure-ssl-vpn:
   - - pulsesecure
+pypiserver:
+  - - pypiserver
 qcubed-development-framework:
   - - qcubed
 qizhi-fortress-aircraft:
