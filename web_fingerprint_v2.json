@@ -33659,7 +33659,7 @@
     "request_data": "",
     "status_code": 0,
     "headers": {
-      "X-Application-Context": "None"
+      "X-Application-Context": "*"
     },
     "keyword": [],
     "priority": 2,
