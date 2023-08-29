@@ -57,12 +57,17 @@ def valid_fingerprint_v3(rule):
                    'headers': 5, 'keyword': 6, 'favicon_hash': 7, 'priority': 8}
     fields = {'path': '/', 'status_code': 0, 'keyword': [], 'headers': {}, 'favicon_hash': [],
               'priority': 1, 'request_method': 'get', 'request_headers': {}, 'request_data': ''}
+    # 弹出无关的字段
     for key in list(rule):
         if key not in fields:
             rule.pop(key)
     headers = rule.get("headers", {})  # 转字符串
     for k in list(headers):
-        headers[k] = str(headers[k])
+        v = headers.pop(k)
+        if v is None or v == "None":
+            headers[k] = "*"
+        else:
+            headers[k] = str(v)
     rule["headers"] = headers
     for key in fields:
         if key not in rule:
