@@ -2142,9 +2142,7 @@
     "headers": {
       "server": "apisix"
     },
-    "keyword": [
-      "{\"error_msg\":\"404 Route Not Found\"}"
-    ],
+    "keyword": [],
     "favicon_hash": [],
     "priority": 3,
     "name": "apache-apisix"
@@ -2158,7 +2156,60 @@
     "headers": {
       "server": "apisix"
     },
-    "keyword": [],
+    "keyword": [
+      "{\"error_msg\":\"404 Route Not Found\"}"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "apache-apisix"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 404,
+    "headers": {
+      "server": "nginx",
+      "content-type": "text/plain"
+    },
+    "keyword": [
+      "{\"error_msg\":\"404 Route Not Found\"}"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "apache-apisix"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 404,
+    "headers": {
+      "server": "openresty",
+      "content-type": "text/plain"
+    },
+    "keyword": [
+      "{\"error_msg\":\"404 Route Not Found\"}"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "apache-apisix"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 404,
+    "headers": {
+      "server": "tengine",
+      "content-type": "text/plain"
+    },
+    "keyword": [
+      "{\"error_msg\":\"404 Route Not Found\"}"
+    ],
     "favicon_hash": [],
     "priority": 3,
     "name": "apache-apisix"
@@ -4373,20 +4424,6 @@
     "favicon_hash": [],
     "priority": 3,
     "name": "bbpress"
-  },
-  {
-    "path": "/",
-    "request_method": "get",
-    "request_headers": {},
-    "request_data": "",
-    "status_code": 0,
-    "headers": {},
-    "keyword": [
-      "powerd by"
-    ],
-    "favicon_hash": [],
-    "priority": 3,
-    "name": "bees_cms"
   },
   {
     "path": "/",
