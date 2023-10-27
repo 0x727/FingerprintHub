@@ -277,6 +277,8 @@ mlflow:
   - - mlflow
 mobileiron-mdm:
   - - mobileiron
+mojarra-jsf:
+  - - mojarra
 mongodb:
   - - mongodb
 moodle:
