@@ -33245,13 +33245,27 @@
     "request_method": "get",
     "request_headers": {},
     "request_data": "",
-    "status_code": 200,
+    "status_code": 0,
     "headers": {},
     "keyword": [
-      "ry-ui.css",
-      "ry-ui.js"
+      "href=\"/ruoyi/css/ry-ui.css",
+      "src=\"/ruoyi/js/ry-ui.js"
     ],
     "favicon_hash": [],
+    "priority": 3,
+    "name": "ruoyi-system"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [],
+    "favicon_hash": [
+      "e49fd30ea870c7a820464ca56a113e6e"
+    ],
     "priority": 3,
     "name": "ruoyi-system"
   },
