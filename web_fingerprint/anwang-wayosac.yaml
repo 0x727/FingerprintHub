@@ -1,7 +1,8 @@
 name: anwang-wayosac
 priority: 3
 nuclei_tags:
-  - [wayosac,anwang]
+  - - wayosac
+    - anwang
 fingerprint:
   - path: /
     request_method: get
@@ -10,4 +11,5 @@ fingerprint:
     status_code: 0
     headers: {}
     keyword: []
-    favicon_hash: ["715c49c5512d763084a4082c27d935e1"]
+    favicon_hash:
+      - 715c49c5512d763084a4082c27d935e1
