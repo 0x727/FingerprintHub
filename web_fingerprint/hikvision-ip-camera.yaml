@@ -1,7 +1,7 @@
 name: hikvision-ip-camera
 priority: 3
 nuclei_tags:
-  - - Hikvision
+  - - "Hikvision"
 fingerprint:
   - path: /
     request_method: get
@@ -9,6 +9,5 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword: null
-    favicon_hash:
-      - 89b932fcc47cf4ca3faadb0cfdef89cf
+    keyword: []
+    favicon_hash: ['89b932fcc47cf4ca3faadb0cfdef89cf']
