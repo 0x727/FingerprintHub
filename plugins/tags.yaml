@@ -192,6 +192,8 @@ harbor:
   - - harbor
 hfs:
   - - hfs
+hikvision-ip-camera:
+  - - Hikvision
 hjtcloud:
   - - huijietong
   - - hjtcloud
