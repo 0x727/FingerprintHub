@@ -28,6 +28,6 @@ fingerprint:
     request_data: ''
     status_code: 0
     headers: {}
-    keyword: 
+    keyword:
       - webman/modules
     favicon_hash: []
