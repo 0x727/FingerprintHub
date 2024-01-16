@@ -1,0 +1,14 @@
+name: 群晖 Nas
+priority: 3
+nuclei_tags:
+  - - ""
+fingerprint:
+  - path: /
+    request_method: get
+    request_headers: {}
+    request_data: ''
+    status_code: 0
+    headers: {}
+    keyword: 
+      - webman/modules
+    favicon_hash: []
