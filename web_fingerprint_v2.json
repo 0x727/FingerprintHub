@@ -17848,6 +17848,21 @@
     "status_code": 0,
     "headers": {},
     "keyword": [
+      "color: #222222;",
+      "lang=zh-cmn-Hans",
+      "loader-"
+    ],
+    "priority": 1,
+    "name": "jeecgboot"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
       "JeecgBoot",
       "polyfill_"
     ],
