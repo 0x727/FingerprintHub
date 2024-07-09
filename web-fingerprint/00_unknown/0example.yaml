@@ -15,8 +15,5 @@ http:
   matchers:
   - type: word
     words:
-    - <title>httpbin.org</title>
+    - <title>example domain</title>
     case-insensitive: true
-  - type: favicon
-    hash:
-    - 3aa2067193b2ed83f24c30bd238a717c
