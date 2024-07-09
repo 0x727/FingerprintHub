@@ -69,5 +69,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: plugins.zip
           asset_name: plugins.zip
-          tag: v4
+          tag: defaultv4
           overwrite: true
