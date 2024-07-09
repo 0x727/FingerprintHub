@@ -1,5 +1,6 @@
 mod error;
 mod service;
+pub mod nmap;
 
 use crate::error::{new_io_error, Result};
 pub use crate::service::match_line::MatchLine;
