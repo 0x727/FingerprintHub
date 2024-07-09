@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: WatchGuard http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad request: request-line invalid\r\nContent-type: text/html; charset="iso-8859-1"\r\n\r\n<html>\r\n<body>\r\n<h3> Request denied by WatchGuard HTTP proxy\. </h3>'

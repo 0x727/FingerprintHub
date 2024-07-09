@@ -1,0 +1,20 @@
+id: http
+info:
+  name: WindWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Hughes $2 satellite modem http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nConnection: close\r\nServer: WindWeb/([\d.]+)\r\nDate: .*\r\nContent-Type: text/html\r\n\r\n<html>\n<head>\n<title>(\w+) System Control Center</title>\n'

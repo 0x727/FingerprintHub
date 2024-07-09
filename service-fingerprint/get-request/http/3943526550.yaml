@@ -1,0 +1,20 @@
+id: http
+info:
+  name: NG VoIP Phone 2 http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nContent-Length: \d+\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n<HTML><HEAD><TITLE>   IP PHONE 2 V([\d.]+)         </TITLE>'

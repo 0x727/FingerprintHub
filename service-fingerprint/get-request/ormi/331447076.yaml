@@ -1,0 +1,17 @@
+id: ormi
+info:
+  name: Oracle Remote Method Invocation
+  author: nmap,cn-kali-team
+  tags: detect,tech,ormi,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ormi
+    type: regex
+    regex:
+    - (?i)^\xe3\r\n\r\n\0\x01\0.\0vInvalid protocol verification, illegal ORMI request or request performed with an incompatible version of this protocol

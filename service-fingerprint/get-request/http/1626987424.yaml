@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Trapeze-Srv
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Trapeze Mobile Data Terminal SOAP over HTTP
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 Failed to find service name in request URI and no default service available\r\n.*x-trapeze-fault-response: y\r\n(?:[^\r\n]+\r\n)*?Server: Trapeze-Srv/([\d.]+)\r\n.*<SOAP-ENV:Fault rowsetMode=\"struct\" xmlns=\"http://www\.trapezegroup\.com/\"><faultcode tcftype=''10''>SOAP-ENV:Client</faultcode><faultstring tcftype=''10''>Failed to find service name in request URI and no default service available</faultstring><detail tcftype=''10''></detail></SOAP-ENV:Fault>'

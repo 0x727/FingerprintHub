@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Cisco VPN 3000 Concentrator http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: Web Server\r\n.*\n<title>Cisco Systems, Inc\. VPN 3000 Concentrator \[vpn-conc-3030\]</title>\n'

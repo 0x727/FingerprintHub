@@ -1,0 +1,19 @@
+id: caldav
+info:
+  name: Daylite Server Admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,caldav,service
+  severity: info
+  metadata:
+    operating_system: Mac OS X
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: caldav
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nContent-Length: 0\r\nWww-Authenticate: Digest realm=\"Daylite\", qop=\"auth\", nonce=\"[\dA-F]{8}-[\dA-F]{4}-[\dA-F]{4}-[\dA-F]{4}-[\dA-F]{12}\"\r\nAccept-Ranges: bytes\r\nDate: .* GMT\r\n\r\n'

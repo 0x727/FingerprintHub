@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Johnson Metasys building management system http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 File not Found\r\nServer: NAE01\r\nDate: .*\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 0\r\nConnection: Close\r\n\r\n$'

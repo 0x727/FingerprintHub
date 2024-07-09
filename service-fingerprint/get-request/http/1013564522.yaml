@@ -1,0 +1,20 @@
+id: http
+info:
+  name: T-Com Speedport W 700 http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: German
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nServer: Apache\r\n.*<title>HTML-Konfiguration</title>.*<style type=\"text/css\">\r\n#startseite'

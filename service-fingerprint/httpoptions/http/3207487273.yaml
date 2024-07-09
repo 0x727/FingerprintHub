@@ -1,0 +1,17 @@
+id: http
+info:
+  name: VMware ESXi 4.1 Server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 501 Not Implemented\r\nDate: .* GMT\r\nConnection: close\r\nContent-Type: text/html\r\nContent-Length: 54\r\n\r\n<HTML><BODY><H1>501 Not Implemented</H1></BODY></HTML>$'

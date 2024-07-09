@@ -1,0 +1,21 @@
+id: smtp
+info:
+  name: Linuxmagic qmail-based smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: with Anti-Spam
+    operating_system: Linux
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - '^220-([-\w_.]+) ESMTP\r\n220-MagicMail Daemon with Built-In Anti-Spam\r\n220 See http://www\.linuxmagic\.com for info\r\n214 qmail home page: http://cr\.yp\.to/qmail\.html, LinuxMagic Support http://www\.linuxmagic\.com\r\n'

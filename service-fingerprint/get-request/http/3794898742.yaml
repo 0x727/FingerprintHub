@@ -1,0 +1,21 @@
+id: http
+info:
+  name: MoxaHttp
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    info: Moxa NPort serial to IP http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 (?:[^\r\n]*\r\n(?!\r\n))*?Server: MoxaHttp/([\w._-]+)\r\n.*<TITLE>NPort Web Console</TITLE>'

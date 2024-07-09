@@ -1,0 +1,17 @@
+id: bigant
+info:
+  name: BigAnt Messenger server
+  author: nmap,cn-kali-team
+  tags: detect,tech,bigant,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bigant
+    type: regex
+    regex:
+    - ^ERR 0 222\n\n

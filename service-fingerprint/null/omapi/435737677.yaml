@@ -1,0 +1,17 @@
+id: omapi
+info:
+  name: ISC (BIND|DHCPD) OMAPI
+  author: nmap,cn-kali-team
+  tags: detect,tech,omapi,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: omapi
+    type: regex
+    regex:
+    - ^\0\0\0d\0\0\0\x18$

@@ -1,0 +1,19 @@
+id: netprobe
+info:
+  name: Mega System Technologies NetProbe Lite environmental sensor
+  author: nmap,cn-kali-team
+  tags: detect,tech,netprobe,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: dnsstatus-request
+  inputs:
+  - data: \0\0\x10\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: netprobe
+    type: regex
+    regex:
+    - ^\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0$

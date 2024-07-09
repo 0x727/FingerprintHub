@@ -1,0 +1,19 @@
+id: http
+info:
+  name: SAINTexploit http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\n.*Server: SAINT/([\w._-]+)\n.*<HTML>\n<HEAD>\n<TITLE>Bad client authentication code</TITLE>\n<LINK REV=\"made\" HREF=\"mailto:saint@saintcorporation\.com\">\n</HEAD>\n<BODY>\n<H1>Bad client authentication code</H1>\nThe command: <TT>GET / HTTP/1\.0\r\n</TT> was not properly authenticated\.\n</BODY>\n</HTML>\n$'

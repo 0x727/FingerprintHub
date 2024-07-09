@@ -1,0 +1,19 @@
+id: http
+info:
+  name: ZentriOS Web App
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: ZentriOS
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nContent-Length: \d+\r\nCache-Control: private, no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0\r\nExpires: 0\r\nPragma: no-cache\r\n\r\n<!DOCTYPE html><html><head><title>ZentriOS Web App</title>'

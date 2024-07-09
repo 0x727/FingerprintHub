@@ -1,0 +1,17 @@
+id: http
+info:
+  name: D-Link printer/webcam http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 405 Method Not Allowed\r\nAllow: GET, HEAD\r\n\r\n405 Method Not Allowed\r\n\r\n'

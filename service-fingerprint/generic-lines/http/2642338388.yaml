@@ -1,0 +1,17 @@
+id: http
+info:
+  name: SQLite Book database frontend
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nConnection: close\r\nContent-type: text/html; charset:UTF-8\r\n\r\n.*<TITLE>SQLite Book</TITLE>'

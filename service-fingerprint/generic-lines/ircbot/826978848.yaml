@@ -1,0 +1,17 @@
+id: ircbot
+info:
+  name: Diverse IRC bot
+  author: nmap,cn-kali-team
+  tags: detect,tech,ircbot,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ircbot
+    type: regex
+    regex:
+    - ^ \r\nSorry, that nickname format is invalid\.\r\r\n$

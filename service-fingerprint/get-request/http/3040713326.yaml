@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Arch webinterface to Kodi
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Length: \d+\r\nLast-Modified: .* GMT\r\nContent-Type: text/html\r\nCache-Control: private, max-age=0, no-cache\r\nAccept-Ranges: bytes\r\nDate: .* GMT\r\n\r\n<!DOCTYPE html>\n<html ng-app="app" ng-csp  ng-controller="AppCtrl">\n  <head>\n    <title>Arch</title>'

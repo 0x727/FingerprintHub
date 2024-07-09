@@ -1,0 +1,20 @@
+id: http-proxy
+info:
+  name: HAProxy http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    device_type: load balancer
+    version: 1.3.1 or later
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 408 Request Time-out\r\nCache-Control: no-cache\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n<html><body><h1>408 Request Time-out</h1>\nYour browser didn''t send a complete request in time\.\n</body></html>\n$'

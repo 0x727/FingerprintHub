@@ -1,0 +1,19 @@
+id: http
+info:
+  name: IBM Tivoli Enterprise Portal
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Servlet $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nX-Powered-By: Servlet/([\d.]+)\r\nContent-Type: text/html\r\nDate: .*\r\n\r\n<H1>SRVE0255E: A WebGroup/Virtual Host to handle / has not been defined\.</H1><BR><H3>SRVE0255E: A WebGroup/Virtual Host to handle localhost:\d+ has not been defined\.</H3><BR><I>IBM WebSphere Application Server</I>'

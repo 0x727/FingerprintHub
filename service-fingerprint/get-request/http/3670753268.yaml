@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Triax TSS 400 SATIP server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 FOUND\r\nLocation:/public/login\.html\r\nContent-Length: 0\r\n\r\n'

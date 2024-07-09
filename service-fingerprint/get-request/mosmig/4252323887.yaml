@@ -1,0 +1,19 @@
+id: mosmig
+info:
+  name: OpenMosix Process Migration Service
+  author: nmap,cn-kali-team
+  tags: detect,tech,mosmig,service
+  severity: info
+  metadata:
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mosmig
+    type: regex
+    regex:
+    - ^GET \0\0\0\0TP/1\.0\r\n$

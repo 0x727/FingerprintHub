@@ -1,0 +1,20 @@
+id: telnet
+info:
+  name: RADLINX PASSaPORT CS terminal server telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: terminal server
+    info: $1 ports; SW $2; HW $3
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^\xff\xfb\x01\xff\xfd\x03\xff\xfb\x03\x1b\[2J\x1b\[H \n\r\0\x1b\[H\x1b\[JPASSaPORT CS-(\d+)  SW V([-\w_.]+) , HW V([-\w_.]+)\r\n\r\n

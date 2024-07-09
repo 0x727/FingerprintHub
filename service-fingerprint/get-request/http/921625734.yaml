@@ -1,0 +1,21 @@
+id: http
+info:
+  name: DC-MPSERVER
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Lenovo K91 TV
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nDate: .* GMT\+00:00\r\nServer: DC-MPSERVER/([\w._-]+)\r\nContent-Length: \d+\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\n{\"error\":\"\",\"result\":106}$'

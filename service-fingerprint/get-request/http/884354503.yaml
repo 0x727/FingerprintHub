@@ -1,0 +1,19 @@
+id: http
+info:
+  name: TRENDnet TV-IP100 or TV-IP110 webcam display httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nContent-Type: text/html\r\nConnection: close\r\nPragma: no-cache\r\nWWW-Authenticate: Basic realm=\"netcam\"\r\nContent-Length: 17\r\n\r\n401 Unauthorized\n$'

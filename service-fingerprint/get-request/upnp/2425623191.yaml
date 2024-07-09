@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: Pronet $1 WAP UPnP
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: UPnP $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nSERVER: PRONET (PN-\w+), UPnP/([\d.]+)\r\nCONTENT-LENGTH: 48\r\nCONTENT-TYPE: text/html\r\n\r\n<html><body><h1>404 Not Found</h1></body></html>$'

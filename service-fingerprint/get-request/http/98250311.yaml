@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Cisco Application Control Engine 4710 DM http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: load balancer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 200 OK\r\n.*<meta name=\"COPYRIGHT\" content=\"&copy; \d+ Cisco Systems\. All Rights Reserved\.\">.*<title>ACE 4710 DM - Login</title>

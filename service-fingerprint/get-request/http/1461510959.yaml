@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Floosietek FTgate webmail httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 Ok\r\nContent-Type: text/html\r\nCache-Control: no-cache\r\nSet-Cookie: SessId=.*HREF=\"/theme/main\.css\".*TD\.calMonth SPAN\n'

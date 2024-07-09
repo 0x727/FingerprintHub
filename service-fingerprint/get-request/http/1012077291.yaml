@@ -1,0 +1,19 @@
+id: http
+info:
+  name: BladeCenter/IBM RSA2 http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: remote management
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Document Follows\r\nLocation: https?:///private/welcome\.ssi\r\nConnection: close\r\n\r\n$'

@@ -1,0 +1,17 @@
+id: pigpio
+info:
+  name: pigpiod
+  author: nmap,cn-kali-team
+  tags: detect,tech,pigpio,service
+  severity: info
+tcp:
+- name: ncp
+  inputs:
+  - data: \x44\x6d\x64\x54\0\0\0\x17\0\0\0\x01\0\0\0\0\x11\x11\0\xff\x01\xff\x13
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pigpio
+    type: regex
+    regex:
+    - ^DmdT\0\0\0\x17\0\0\0\x01\xa8\xff\xff\xff

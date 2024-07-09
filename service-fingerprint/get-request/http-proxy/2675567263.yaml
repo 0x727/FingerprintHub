@@ -1,0 +1,20 @@
+id: http-proxy
+info:
+  name: HAProxy http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    device_type: load balancer
+    version: before 1.5.0
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nCache-Control: no-cache\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n<html><body><h1>200 OK</h1>\nHAProxy: service ready\.\n</body></html>\n$'

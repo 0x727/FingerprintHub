@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: FirstClass telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    info: CLI disabled
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^\r\n\r\nThis is a FirstClass system, from Open Text Corporation\.\r\n\r\n\r\nFirstClass is an e-mail and conferencing system with a graphical user interface\.\r\n\r\n\r\nThe Command Line Interface is not available on this sy

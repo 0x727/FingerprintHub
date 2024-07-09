@@ -1,0 +1,20 @@
+id: http
+info:
+  name: cPanel httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: unauthorized
+    operating_system: Linux
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nDate: .*\r\nServer: cPanel\r\nConnection: close\r\nWWW-Authenticate: Basic realm=\"cPanel WebDisk\"\r\n\r\n'

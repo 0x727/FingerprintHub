@@ -1,0 +1,19 @@
+id: kkfileview
+info:
+  name: kkfileview
+  author: cn-kali-team
+  tags: detect,tech,kkfileview
+  severity: info
+  metadata:
+    product: kkfileview
+    vendor: 00_unknown
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - 'repo: ''kkfileview'''
+    case-insensitive: true

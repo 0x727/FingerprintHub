@@ -1,0 +1,17 @@
+id: minecraft
+info:
+  name: Spigot Minecraft game server
+  author: nmap,cn-kali-team
+  tags: detect,tech,minecraft,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: minecraft
+    type: regex
+    regex:
+    - ^\xff\0\x0e\0P\0r\0o\0t\0o\0c\0o\0l\0 \0e\0r\0r\0o\0r$

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Citrix Access Gateway firewall http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nConneccept-Ranges: none\r\n.*<title>Citrix Access Portal</title>'

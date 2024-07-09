@@ -1,0 +1,17 @@
+id: daap
+info:
+  name: DAAPsharp DAAP
+  author: nmap,cn-kali-team
+  tags: detect,tech,daap,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: daap
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nDAAP-Server: daap-sharp\r\nContent-Type: application/x-dmap-tagged\r\nContent-Length: \d+\r\n\r\ninvalid session id'

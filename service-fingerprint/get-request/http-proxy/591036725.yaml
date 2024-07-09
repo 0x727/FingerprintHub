@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: CoDeeN Content Distribution Network http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nContent-Type: text/html\r\n\r\nYou are trying to use a node of the CoDeeN CDN Network\.'

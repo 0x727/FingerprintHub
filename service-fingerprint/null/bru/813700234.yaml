@@ -1,0 +1,19 @@
+id: bru
+info:
+  name: Tolis BRU
+  author: nmap,cn-kali-team
+  tags: detect,tech,bru,service
+  severity: info
+  metadata:
+    info: Backup and Restore Utility
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bru
+    type: regex
+    regex:
+    - ^0x[0-9a-fA-F]{32}L

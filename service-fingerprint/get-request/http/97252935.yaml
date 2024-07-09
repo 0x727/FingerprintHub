@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Thomson TR-069 remote access
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nWWW-Authenticate: Digest realm=\"Thomson_cwmp_([\w._-]+)\", nonce='

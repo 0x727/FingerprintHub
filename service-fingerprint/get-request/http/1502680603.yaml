@@ -1,0 +1,19 @@
+id: http
+info:
+  name: TP-LINK $1 powerline WiFi extender http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nServer: Router Webserver\r\nConnection: close\r\nContent-Type: text/html\r\nWWW-Authenticate: Basic realm="TP-LINK AV\d+(?: Gigabit)? Powerline(?: ac)? WiFi Extender (TL-\w+)"\r\n'

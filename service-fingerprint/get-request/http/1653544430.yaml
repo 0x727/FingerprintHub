@@ -1,0 +1,21 @@
+id: http
+info:
+  name: NetPort httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: Polycom VSX 8000 http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nServer: NetPort Software ([\w._-]+)\r\n.*<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    <meta http-equiv=\"no-cache\">\n    <link rel=\"stylesheet\" href=\"sabre\.css\"'

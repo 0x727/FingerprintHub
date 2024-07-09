@@ -1,0 +1,19 @@
+id: http
+info:
+  name: ESP-12 ESP8266 dev board httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: lwIP $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 BadRequest\r\nContent-Length: 0\r\nServer: lwIP/(\d[\d.]+)\r\n\n$'

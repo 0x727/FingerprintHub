@@ -1,0 +1,17 @@
+id: http
+info:
+  name: VeriSign Advanced Transaction Look-up Signaling http redirector
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.[01] 40[04] (?:[^\r\n]*\r\n(?!\r\n))*?Server: ATLAS Platform\r\n'

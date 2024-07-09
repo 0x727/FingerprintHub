@@ -1,0 +1,19 @@
+id: finger
+info:
+  name: IBM Infoprint $1 fingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+  metadata:
+    device_type: print server
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - '^\r\nIntegrated port\r\nPrinter Type: IBM Infoprint (.*)\r\n'

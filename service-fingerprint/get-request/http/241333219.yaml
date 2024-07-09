@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Leadtek BVA8055 VoIP adapter http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nCache-control: no-cache\r\n.*<title>BVA8055 Web Configuration Pages</title>'

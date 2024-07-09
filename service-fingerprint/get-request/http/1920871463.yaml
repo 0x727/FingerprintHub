@@ -1,0 +1,21 @@
+id: http
+info:
+  name: wgt_http
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Eumex 704PC ADSL router
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Authorization Required\r\nServer: wgt_http ([\d.]+)\r\nWWW-Authenticate: Basic realm=\"Anlage\"\r\nConnection: close\r\n$'

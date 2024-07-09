@@ -1,0 +1,21 @@
+id: soap
+info:
+  name: gSOAP
+  author: nmap,cn-kali-team
+  tags: detect,tech,soap,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: Sagem F@st 3464 WAP soap
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: soap
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nWWW-Authenticate: Digest realm=\"gSOAP_Web_Service\",.*Server: gSOAP/([\d.]+)\r\n.*<SOAP-ENV:Fault><faultcode>Client</faultcode><faultstring>HTTP Error: 401 Unauthorized</faultstring></SOAP-ENV:Fault>'

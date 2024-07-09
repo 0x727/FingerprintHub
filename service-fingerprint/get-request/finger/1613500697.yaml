@@ -1,0 +1,17 @@
+id: finger
+info:
+  name: ffingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - ^That user does not want to be fingered\.\n$

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: BBC httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: HP OpenView AutoDiscovery http interface
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: BBC ([\d.]+) ; /Hewlett-Packard/OpenView/AutoDiscovery/com\.hp\.openview\.OvAgency\.OvAgencyCommand [\d.]+\r\n\r\n'

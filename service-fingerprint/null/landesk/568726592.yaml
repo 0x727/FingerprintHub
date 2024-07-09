@@ -1,0 +1,19 @@
+id: landesk
+info:
+  name: LANDesk Management Suite
+  author: nmap,cn-kali-team
+  tags: detect,tech,landesk,service
+  severity: info
+  metadata:
+    info: Targeted Multicast Service
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: landesk
+    type: regex
+    regex:
+    - ^TDMM\x1c\0\0\0\x14\0\0\0

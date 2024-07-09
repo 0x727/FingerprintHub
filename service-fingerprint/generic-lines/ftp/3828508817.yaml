@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: Power Shield UPS ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    device_type: power-device
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 Service ready for new user\r\n500 '\r\n\r\n':command not understood\.\r\n

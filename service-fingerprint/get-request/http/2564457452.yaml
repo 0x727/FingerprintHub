@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Wind River Web Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    info: HP StorageWorks MSA http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nServer: WindRiver-WebServer/([\w._-]+)\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n.*<!-- \(c\) Copyrighted Materials, 2006\. -->.*<script language=\"JavaScript\" src=\"js_utility_JW420R45_____________\.js\"></script>.*<title>HP StorageWorks MSA Storage Management Utility</title>'

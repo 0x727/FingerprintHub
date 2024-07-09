@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Popcorn Time JSONRPC
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: application/json\r\nContent-Length: 76\r\nAccess-Control-Allow-Headers: Content-Type\r\nAllow: POST\r\nAccess-Control-Allow-Origin: \*\r\nDate: .*\r\nConnection: close\r\n\r\n\{"jsonrpc":"2\.0","error":\{"code":-32602,"message":"Unauthorized"\},"id":null\}'

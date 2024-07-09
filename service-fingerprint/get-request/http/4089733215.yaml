@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Somfy alarm system http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nConnection: close\r\nContent-Type: text/html\r\nCache-Control: no-cache\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1\.0 Strict//EN\" \"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-strict\.dtd\">\r\n<html xmlns=\"http://www\.w3\.org/1999/xhtml\" xml:lang=\"fr\" lang=\"fr\">\r\n  <head>\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=iso-8859-15\" />\r\n    <meta http-equiv=\"content-style-type\" content=\"text/css\" />\r\n    <title>Mon syst\xe8me d''alarme Somfy\r\n    </title>\r\n'

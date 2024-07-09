@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Z-Way home automation controller
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: .*\r\nLast-Modified: .*\r\nEtag: "[a-f\d]+\.\d+"\r\nContent-Type: text/html\r\nContent-Length: \d+\r\nConnection: close\r\nAccept-Ranges: bytes\r\n\r\n<!doctype html>\n<html lang="en">\n    <head>\n {8}<meta charset="utf-8">\n {8}<title>Z-Way UI selection</title>'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: smarterDroid WiFi File Transfer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: phone
+    operating_system: Android
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Moved Temporarily\r\nConnection: Close\r\nDate: .* GMT\r\nContent-Type: text/html\r\nLocation: http://null/storage/emulated/0\r\nContent-Length: 103\r\n\r\nYou are being redirected to <a href=\"http://null/storage/emulated/0\">http://null/storage/emulated/0</a>\r\n'

@@ -1,0 +1,19 @@
+id: remote-control
+info:
+  name: Alchemy Lab Remote Control PRO remote management
+  author: nmap,cn-kali-team
+  tags: detect,tech,remote-control,service
+  severity: info
+  metadata:
+    device_type: remote management
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: remote-control
+    type: regex
+    regex:
+    - ^\x01\0\0\0\0\0\0$

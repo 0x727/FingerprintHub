@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: GlobespanVirata-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: Billion BIPAC-743GE V1 ADSL WAP UPnP; UPnP $1
+    version: $SUBST(2,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nServer: Unknown/[\d.]+ UPnP/([\d.]+) GlobespanVirata-EmWeb/R([\d_]+)\r\nContent-Type: text/html\r\n.*<head>\n<title>Wireless ADSL VPN Firewall Router</title>\n'

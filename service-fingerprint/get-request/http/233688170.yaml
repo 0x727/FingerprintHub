@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Allnet ALL0277DSL ADSL router http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\r\nServer: \r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: Basic realm=\"ADSL Router \(ANNEX B\)\"\r\n.*<meta HTTP-EQUIV=\"Expires\" CONTENT=\"Mon, 06 Jan 1990 00:00:01 GMT\">.*<meta name=\"description\" content=\"806GA M 2073\">'

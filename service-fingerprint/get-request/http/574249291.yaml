@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Unify OpenStage or OpenScape VoIP phone
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 301 Moved Permanently\r\nDate: [^\r\n]*\r\nServer: \r\nContent-Length: \d+\r\nContent-Type: text/html\r\nConnection: close\r\nLocation: https://[0-9:.]*:443/\r\n\r\n<!DOCTYPE html>\r\n<html><head><title>Moved Permanently</title></head>\r\n.*<address> at 127\.0\.0\.1:\d+ Port \d+</address></body>\r\n</html>\r\n$'

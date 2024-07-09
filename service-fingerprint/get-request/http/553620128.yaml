@@ -1,0 +1,20 @@
+id: http
+info:
+  name: TiVo Web Project http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Connection: close\r\nContent-Type: text/html; charset=iso-8859-1\r\n\r\n.*<th width=\"50%\">TiVo Web Project - TCL - v([\d.]+)&nbsp;</th><th>&nbsp;'

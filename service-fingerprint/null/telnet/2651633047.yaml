@@ -1,0 +1,20 @@
+id: telnet
+info:
+  name: WebCTRL diagnostic telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    hostname: $2
+    info: 'site: $1'
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^Welcome to \"([^"]+)\" running WEBSERVER on host \"([\w.-]+)\"

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Crestron automation system httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    operating_system: Windows CE $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 403 Forbidden\r\nDate: .*\r\nServer: Microsoft-WinCE/([\w._-]+)\r\nContent-Type: text/html\r\nContent-Length: 125\r\n\r\n<html><head><title>Access Denied</title></head><body><B>Access denied\.</B><P>The action requested is forbidden\.</body></html>$'

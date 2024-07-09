@@ -1,0 +1,20 @@
+id: http
+info:
+  name: m0n0wall FreeBSD firewall web interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    operating_system: FreeBSD
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nDate: .*\r\nCache-Control: no-cache,no-store\r\nWWW-Authenticate: Basic realm=\"\.\"\r\nContent-Type: text/html; charset=%s\r\nConnection: close\r\n\r\n<html>\n<head><title>401 Unauthorized</title></head>\n<body>\n<h3>401 Unauthorized</h3>\nAuthorization required\.\n</body>\n</html>\n'

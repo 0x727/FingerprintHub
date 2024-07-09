@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: I2P https proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 405 Bad Method\r\n.*<H1>I2P ERROR: METHOD NOT ALLOWED</H1>The request uses a bad protocol\. The Connect Proxy supports CONNECT requests ONLY\. Other methods such as GET are not allowed - Maybe you wanted the HTTP Proxy\?\.<BR>'

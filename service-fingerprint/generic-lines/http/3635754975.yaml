@@ -1,0 +1,20 @@
+id: http
+info:
+  name: A2 httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: A2
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/0\.0 400 Bad request\r\nServer: Aos HTTP Server/([\w._-]+)\r\nHTTP/0\.0 400 Bad request\r\nServer: Aos HTTP Server/[\w._-]+\r\nHTTP/0\.0 400 Bad request\r\nServer: Aos HTTP Server/[\w._-]+\r\nHTTP/0\.0 400 Bad request\r\nServer: Aos HTTP Server/[\w._-]+\r\nHTTP/0\.0 400 Bad request\r\nServer: Aos HTTP Server/[\w._-]+\r\nHTTP/0\.0 400 Bad request\r\nServer: Aos HTTP Server/[\w._-]+\r\nHTTP/0\.0 400 Bad request\r\nServer: Aos HTTP Server/[\w._-]+\r\nHTTP/0\.0 400 Bad request\r\nServer: Aos HTTP Server/[\w._-]+\r\nHTTP/0\.0 400 Bad request\r\nServer: Aos HTTP Server/[\w._-]+\r\n'

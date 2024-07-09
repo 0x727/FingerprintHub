@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Sendmail Mailstream Manager http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 500 Internal server error\r\nContent-Length: 7\r\n\r\nBummah\.'

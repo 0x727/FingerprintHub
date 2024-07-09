@@ -1,0 +1,17 @@
+id: http
+info:
+  name: JBoss WildFly web console
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 301 Moved Permanently\r\nConnection: close\r\nLocation: http://[\w.:-]+/console/index\.html\r\nContent-Length: 0\r\nDate: Mon, 18 Apr 2016 11:08:30 GMT\r\n\r\n'

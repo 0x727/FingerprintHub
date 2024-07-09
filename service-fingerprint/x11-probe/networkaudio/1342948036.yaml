@@ -1,0 +1,17 @@
+id: networkaudio
+info:
+  name: Network Audio System
+  author: nmap,cn-kali-team
+  tags: detect,tech,networkaudio,service
+  severity: info
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: networkaudio
+    type: regex
+    regex:
+    - ^\0\x19\x02\0\x02\0\x07\0Protocol version mismatch\0

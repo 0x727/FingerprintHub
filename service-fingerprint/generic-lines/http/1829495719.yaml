@@ -1,0 +1,19 @@
+id: http
+info:
+  name: ThinKnx web ui
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nDate: .*\r\nExpires: .*\r\nServer: PulsarCoreEmbeddedPlantServer/1\.0\r\nConnection: close\r\nCache-Control: public, max-age=2592000\r\nContent-Encoding: utf-8\r\nContent-Length: 28\r\nContent-Type: text/html\r\n\r\nIncorrect first header line '

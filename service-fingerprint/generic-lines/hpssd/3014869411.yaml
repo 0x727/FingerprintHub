@@ -1,0 +1,19 @@
+id: hpssd
+info:
+  name: HP Services and Status Daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,hpssd,service
+  severity: info
+  metadata:
+    operating_system: Linux
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: hpssd
+    type: regex
+    regex:
+    - ^msg=messageerror\nresult-code=5\n

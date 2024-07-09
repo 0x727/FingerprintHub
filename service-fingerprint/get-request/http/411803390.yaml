@@ -1,0 +1,20 @@
+id: http
+info:
+  name: MiniShare http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: $1 files, $2 shared
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\n\r\n.*<title>MiniShare</title>\r\n.*<td class=\"total\" colspan=\"2\">Total: (\d+) files</td><td class=\"totalsize\">([^<]+)</td></tr>'

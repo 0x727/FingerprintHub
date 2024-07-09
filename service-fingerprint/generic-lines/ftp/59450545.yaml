@@ -1,0 +1,17 @@
+id: ftp
+info:
+  name: pyftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 Welcome to pyftpd\. Happy downloading\.\r\n500 I'm gonna ignore this command\.\.\. maybe later\.\.\.\r\n

@@ -1,0 +1,19 @@
+id: xns
+info:
+  name: Relax XBOX file server
+  author: nmap,cn-kali-team
+  tags: detect,tech,xns,service
+  severity: info
+  metadata:
+    device_type: game console
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: xns
+    type: regex
+    regex:
+    - ^HELLO XBOX!$

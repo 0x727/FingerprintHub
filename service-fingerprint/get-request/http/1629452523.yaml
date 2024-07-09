@@ -1,0 +1,21 @@
+id: http
+info:
+  name: JC-HTTPD
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: Kyocera FS-1030D printer http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nMIME-Version: 1\.0\r\nServer: JC-HTTPD/([\d.]+)\r\n(?:[^\r\n]+\r\n)*?Content-Length: 748\r\n.*\r\n<frame name=topframe noresize scrolling=no src=\"\./top\.htm\">\r\n<frame name=main src=\"\./eng/start/start\.htm\">\r\n'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: BitTorrent P2P tracker
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: bttrack.py
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1\.1//EN\" \"http://www\.w3\.org/TR/xhtml11/DTD/xhtml11\.dtd\">\n<html><head><title>BitTorrent download info</title>\n?</head>\n<body>\n<h3>BitTorrent download info</h3>\n<ul>\n<li><strong>tracker version:</strong> (\d[-.\w]+)</li>

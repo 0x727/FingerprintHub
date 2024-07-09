@@ -1,0 +1,17 @@
+id: exalead
+info:
+  name: Exalead search appliance
+  author: nmap,cn-kali-team
+  tags: detect,tech,exalead,service
+  severity: info
+tcp:
+- name: hello
+  inputs:
+  - data: EHLO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: exalead
+    type: regex
+    regex:
+    - ^\? 1 illegal command\n\0

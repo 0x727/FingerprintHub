@@ -1,0 +1,20 @@
+id: gnutella
+info:
+  name: gtk-gnutella P2P client
+  author: nmap,cn-kali-team
+  tags: detect,tech,gnutella,service
+  severity: info
+  metadata:
+    info: $2; browse host disabled
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gnutella
+    type: regex
+    regex:
+    - '^HTTP/1\.[01] 403 Browse Host Disabled\r\nServer: gtk-gnutella/(\d[-.\w]+) \(([^\)\r\n]+)\)\r\n'

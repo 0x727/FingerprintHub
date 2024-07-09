@@ -1,0 +1,17 @@
+id: rtsp
+info:
+  name: Hikvision DVR rtspd
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^RTSP/1\.0 200 OK\r\nPublic: OPTIONS, DESCRIBE, SETUP, PLAY, TEARDOWN, PAUSE\r\n\r\n$'

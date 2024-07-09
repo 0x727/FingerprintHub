@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Apache httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Authorization Required\r\n(?:[^\r\n]+\r\n)*?Server: Apache\r\n(?:[^\r\n]+\r\n)*?\r\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2\.0//EN\">\n<html><head>\n<title>401 Authorization Required</title>\n</head><body>\n<h1>Authorization Required</h1>\n<p>This server could not verify that you\nare authorized to access the document\nrequested\.  Either you supplied the wrong\ncredentials \(e\.g\., bad password\), or your\nbrowser doesn''t understand how to supply\nthe credentials required\.</p>\n</body></html>\n$'

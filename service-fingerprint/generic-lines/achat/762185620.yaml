@@ -1,0 +1,17 @@
+id: achat
+info:
+  name: AChat chat system
+  author: nmap,cn-kali-team
+  tags: detect,tech,achat,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: achat
+    type: regex
+    regex:
+    - ^ERROR\r\n$

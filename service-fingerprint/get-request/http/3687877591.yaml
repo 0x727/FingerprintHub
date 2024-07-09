@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Apple Server Monitor http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Mac OS X
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nServer: servermgrd\r\nConnection: close\r\nContentType: text/html\r\n'

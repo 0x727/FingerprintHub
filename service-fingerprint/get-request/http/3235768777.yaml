@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Kerio MailServer Webmail
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: PHP $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.[01] (?:[^\r\n]*\r\n(?!\r\n))*?Server: Kerio MailServer ([\d.]+)\r\n(?:[^\r\n]+\r\n)*?X-Powered-By: PHP/([\d.]+)\r\n'

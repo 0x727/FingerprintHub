@@ -1,0 +1,17 @@
+id: zenimaging
+info:
+  name: Novell ZENworks Imaging Proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,zenimaging,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: zenimaging
+    type: regex
+    regex:
+    - ^\xff\xff\xfb&$

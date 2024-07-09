@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Amazon S3 httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 307 Temporary Redirect\r\n(?:[^\r\n]+\r\n)*?Content-Length: 0\r\nConnection: keep-alive\r\nServer: AmazonS3\r\n\r\n$'

@@ -1,0 +1,20 @@
+id: telnet
+info:
+  name: Alcatel SpeedTouch DSL router
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: router
+    info: MAC $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfe\"\xff\xfb\x01\xff\xfb\x03User : \r\n\r?SpeedTouch \(([-\w]+)\)\r\n\r?Password : Invalid Password\r\n\r?Closing connection\r\n'

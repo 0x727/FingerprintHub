@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Port25 PowerMTA mail gateway http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 403 Access denied\.  Please consult the http-access directive in the User''s Guide for more information\.\r\nContent-Type: text/html\r\n\r\n<html><body>Access denied\.  Please consult the http-access directive in the User''s Guide for more information\.</body></html>\r\n$'

@@ -1,0 +1,17 @@
+id: imap
+info:
+  name: Dovecot imapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,imap,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: imap
+    type: regex
+    regex:
+    - ^\* OK .*\r\nGET BAD Error in IMAP command received by server\.\r\n\* BAD Error in IMAP command received by server\.\r\n

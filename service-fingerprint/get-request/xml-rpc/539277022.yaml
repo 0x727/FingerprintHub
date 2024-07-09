@@ -1,0 +1,19 @@
+id: xml-rpc
+info:
+  name: Atheme IRC Services
+  author: nmap,cn-kali-team
+  tags: detect,tech,xml-rpc,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: xml-rpc
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nServer: Atheme/([\w._-]+)\r\nContent-Type: text/plain\r\nContent-Length: 24\r\n\r\nHTTP/1\.1 404 Not Found\r\n'

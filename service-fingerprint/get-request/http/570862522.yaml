@@ -1,0 +1,21 @@
+id: http
+info:
+  name: NET-DK
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Motorola SB5101 or SB6120 cable modem http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 Ok\r\nServer: NET-DK/([\w._-]+)\r\n.*<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4\.0 Transitional//EN\">\n<!-- saved from url=\(0033\)http://[\d.]+/startup\.html -->\n<HTML>\n<HEAD>\n<META content=\"text/html; charset=windows-1252\" http-equiv=Content-Type>\n<META content=\"Microsoft FrontPage 4\.0\" name=GENERATOR>'

@@ -1,0 +1,17 @@
+id: wbem
+info:
+  name: SBLIM Small Footprint CIM Broker
+  author: nmap,cn-kali-team
+  tags: detect,tech,wbem,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: wbem
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nServer: sfcHttpd\r\nContent-Length: 0\r\n\r\n'

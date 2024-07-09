@@ -1,0 +1,19 @@
+id: unreal-media
+info:
+  name: Unreal Media Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,unreal-media,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: unreal-media
+    type: regex
+    regex:
+    - (?i)^\xb1\x36\x00\x00\x19\x00\x00\x00\x30\x05\xff\x8f\x00\x00\x00\x00\x88\xff.\x03.\xef.\x00$

@@ -1,0 +1,19 @@
+id: printer
+info:
+  name: Canon MF4360-4390 lpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,printer,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: terminal-server
+  inputs:
+  - data: \x03\0\0\x0b\x06\xe0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: printer
+    type: regex
+    regex:
+    - ^Fictive printer queue short information\n$

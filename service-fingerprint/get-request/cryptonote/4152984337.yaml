@@ -1,0 +1,19 @@
+id: cryptonote
+info:
+  name: node-cryptonote-pool CryptoNote miner
+  author: nmap,cn-kali-team
+  tags: detect,tech,cryptonote,service
+  severity: info
+  metadata:
+    info: Node.js
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: cryptonote
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\nContent-Type: text/plain\nContent-Length: 20\n\nmining server online'

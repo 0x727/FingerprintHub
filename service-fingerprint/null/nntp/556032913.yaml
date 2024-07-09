@@ -1,0 +1,19 @@
+id: nntp
+info:
+  name: InterNetNews (INN)
+  author: nmap,cn-kali-team
+  tags: detect,tech,nntp,service
+  severity: info
+  metadata:
+    info: HDD full
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nntp
+    type: regex
+    regex:
+    - ^400 No space left on device writing SMstore file -- throttling\r\n

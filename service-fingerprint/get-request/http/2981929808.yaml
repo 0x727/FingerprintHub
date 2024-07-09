@@ -1,0 +1,17 @@
+id: http
+info:
+  name: WatchGuard Quarantine Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nDate: .*\r\nServer: WatchGuard\r\nContent-Length: \d+\r\nExpires: Sun, 28 Jan 2007 00:00:00 GMT\r\nVary: Accept-Encoding\r\nLocation: https://[^/]+/quarantine\r\nPragma: no-cache\r\nSet-Cookie: session_id='

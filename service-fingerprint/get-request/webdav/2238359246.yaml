@@ -1,0 +1,19 @@
+id: webdav
+info:
+  name: The Olive Tree WebDAV Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,webdav,service
+  severity: info
+  metadata:
+    operating_system: Android
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: webdav
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?nEtag: -?\d+_-?\d+\r\nContent-Length: \d+\r\nDate: [^\r\n]+ GMT\+00:00\r\n\r\n<html><head><script type=\"text/javascript\" language=\"javascript1\.1\">\n    var fNewDoc = false;\n  </script>\n  <script LANGUAGE=\"VBSCRIPT\">\n'

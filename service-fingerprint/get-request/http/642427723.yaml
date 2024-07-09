@@ -1,0 +1,19 @@
+id: http
+info:
+  name: NetApp http vFiler
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Data ONTAP $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 503 HTTP is not licensed\.<p>To set up this filer, use <a href=/api>/api</a> \.\r\nServer: Data ONTAP/([\w._-]+)\r\n'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Oasis Micro-Web
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Uptime $1; MAC $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 Document follows\r\nConnection: Close\r\nServer: Micro-Web\r\n.*<title>Oasis Semiconductor, Inc\.</title>.*<b>Welcome to a live demo of the TCP/IP network stack running Micro-Web!</b>.*\r\nSystem Up Time:  ([^\r\n<]+)\r\n(?:[^\r\n]+\r\n)*?MAC Address:\r\n([\w:]+)\r\n'

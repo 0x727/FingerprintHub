@@ -1,0 +1,17 @@
+id: megafillers
+info:
+  name: MegaFillers game server
+  author: nmap,cn-kali-team
+  tags: detect,tech,megafillers,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: megafillers
+    type: regex
+    regex:
+    - ^400 Unknown command\.\.\. Are you surprised\?\r\n$

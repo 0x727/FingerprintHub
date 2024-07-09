@@ -1,0 +1,17 @@
+id: hddtemp
+info:
+  name: hddtemp hard drive info server
+  author: nmap,cn-kali-team
+  tags: detect,tech,hddtemp,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: hddtemp
+    type: regex
+    regex:
+    - ^\|$

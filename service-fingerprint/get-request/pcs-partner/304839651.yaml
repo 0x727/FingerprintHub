@@ -1,0 +1,19 @@
+id: pcs-partner
+info:
+  name: SpliceCom PCS Partner Protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,pcs-partner,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pcs-partner
+    type: regex
+    regex:
+    - ^notAuthenticated\n

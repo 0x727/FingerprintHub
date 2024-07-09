@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Code-Crafters Ability FTP Server http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Windows
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 400 Bad Request\r\nConnection: close\r\n\r\n.*<br>Ability FTP Server ([\w._-]+) by Code-Crafters<br>'

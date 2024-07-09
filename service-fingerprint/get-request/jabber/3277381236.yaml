@@ -1,0 +1,17 @@
+id: jabber
+info:
+  name: jabberd instant messaging server
+  author: nmap,cn-kali-team
+  tags: detect,tech,jabber,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jabber
+    type: regex
+    regex:
+    - ^<stream:error><invalid-xml xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text xmlns='urn:ietf:params:xml:ns:xmpp-streams' xml:lang='en'>Invalid XML</text></stream:error>

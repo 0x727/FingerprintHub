@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Cassini httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Ateas Security webcam management httpd; ASP.NET $2
+    operating_system: Windows
+    version: $1
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 405 Method Not Allowed\r\nServer: Cassini/([\w._-]+)\r\n(?:[^\r\n]+\r\n)*?X-AspNet-Version: ([\w._-]+)\r\n.*<title>Runtime Error</title>\r\n        <style>\r\n         body {font-family:\"Verdana\";font-weight:normal;font-size: \.7em;color:black;}'

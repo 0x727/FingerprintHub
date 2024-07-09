@@ -1,0 +1,17 @@
+id: x11
+info:
+  name: Xvnc
+  author: nmap,cn-kali-team
+  tags: detect,tech,x11,service
+  severity: info
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: x11
+    type: regex
+    regex:
+    - (?i)^\x01\0\x0b\0\0\0%\0\x04\r\0\0\0\0..\xff\xff\?\0\0\x01\0\0\x1b\0\xff\xff\x01\x02\0\0  \x08\xff....AT&T Laboratories Cambridge\0

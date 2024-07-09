@@ -1,0 +1,19 @@
+id: ipp
+info:
+  name: Ecosys ipp
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipp,service
+  severity: info
+  metadata:
+    device_type: print server
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 405 Method Not Allowed\r\nContent-Length: 23\r\nContent-Type: text/html\r\nUpgrade: TLS/1\.0\r\n\r\n 405 Method Not Allowed'

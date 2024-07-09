@@ -1,0 +1,19 @@
+id: allseeingeye
+info:
+  name: All-Seeing Eye
+  author: nmap,cn-kali-team
+  tags: detect,tech,allseeingeye,service
+  severity: info
+  metadata:
+    info: 'game: $1; port: $P(2)'
+tcp:
+- name: ase
+  inputs:
+  - data: s
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: allseeingeye
+    type: regex
+    regex:
+    - (?i)^EYE1.(.*?)(\x02\d|\x03\d{2}|\x04\d{3}|\x05\d{4}|\x06\d{5})

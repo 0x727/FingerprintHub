@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Effekta MH 6000 UPS telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: power-device
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\x01\xff\xfb\x03\xff\xfc\"\r\n\r\n\n\rauthentication failed!\n\rpassword: '

@@ -1,0 +1,17 @@
+id: netbackup
+info:
+  name: Veritas Netbackup Professional
+  author: nmap,cn-kali-team
+  tags: detect,tech,netbackup,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: netbackup
+    type: regex
+    regex:
+    - (?i)^\xea\xdd\xbe\xef\0\0\0\x05\0\0\x000\0\0\x000\0\0..\0\0\0\x08\0a\0f\0f\0s\0p\0r\0n\0g\0\0\0\0\0\0\0\0$

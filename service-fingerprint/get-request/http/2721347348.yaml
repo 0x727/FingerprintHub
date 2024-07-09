@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Allegro RomPager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Roku Sound Bridge http config; name $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\n(?:[^\r\n]+\r\n)*?Server: Allegro-Software-RomPager/([\w.]+)\r\n\r\n\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4\.01 Transitional//EN\">\n<html>\n<head>\n<title>\n([^&\r\n]+)&nbsp;- Status</title>'

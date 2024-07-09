@@ -1,0 +1,19 @@
+id: icy
+info:
+  name: VirtualDJ streaming audio
+  author: nmap,cn-kali-team
+  tags: detect,tech,icy,service
+  severity: info
+  metadata:
+    info: Bitrate $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: icy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-type: application/ogg\r\nicy-br:(\d+)\r\nicy-description:VirtualDJ Direct Broadcast\r\nicy-genre:\r\nicy-name:VirtualDJ\r\nicy-pub:0\r\nicy-url:http://www\.virtualdj\.com/\r\nServer: VirtualDJ\r\n\r\n'

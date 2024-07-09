@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Siemens Simatic S7-1200 PLC httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Object Moved\r\nContent-Type:text/html\r\nContent-Length: 0\r\nConnection: close\r\nLocation: /Default\.mwsl\r\n\r\n$'

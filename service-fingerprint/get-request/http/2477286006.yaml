@@ -1,0 +1,20 @@
+id: http
+info:
+  name: BenQ projector
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Crestron RoomView
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nConnection: close\r\nContent-Type: text/html\r\nContent-Encoding: gzip\r\nCache-Control: max-age=600\r\n\r\n\x1f\x8b\x08\0\0\0\0\0'

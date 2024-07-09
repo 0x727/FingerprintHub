@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Node.js
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Faye Bayeux protocol
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/plain\r\nConnection: close\r\n\r\nHello, non-Bayeux request\. Yet another one$'

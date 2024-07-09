@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Cisco VG248 http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: telecom-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nContent-type: text/html\r\nWWW-Authenticate: Basic realm=\"Login\"\r\n<HTML><HEAD><TITLE>401 Unauthorized</TITLE></HEAD>\n<BODY><H1>401 Unauthorized Access Attempt</H1>\nYou are not authorized to access the requested file\.</BODY></HTML>$'

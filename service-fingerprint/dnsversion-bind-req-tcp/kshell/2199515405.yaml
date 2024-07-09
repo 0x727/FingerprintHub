@@ -1,0 +1,20 @@
+id: kshell
+info:
+  name: AIX kerberised rsh
+  author: nmap,cn-kali-team
+  tags: detect,tech,kshell,service
+  severity: info
+  metadata:
+    info: French
+    operating_system: AIX
+tcp:
+- name: dnsversion-bind-req-tcp
+  inputs:
+  - data: \0\x1E\0\x06\x01\0\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: kshell
+    type: regex
+    regex:
+    - '^\x01krshd: Echec de l''authentification Kerberos\.\r\n\0'

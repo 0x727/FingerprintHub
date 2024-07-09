@@ -1,0 +1,19 @@
+id: datamaxdb
+info:
+  name: MailMax DataMaxDB
+  author: nmap,cn-kali-team
+  tags: detect,tech,datamaxdb,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: datamaxdb
+    type: regex
+    regex:
+    - ^X01\r\nX01\r\n$

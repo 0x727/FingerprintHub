@@ -1,0 +1,19 @@
+id: ident
+info:
+  name: Klient identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+  metadata:
+    info: IRC Nick $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^ : USERID : UNIX : ([-\w_]+)$'

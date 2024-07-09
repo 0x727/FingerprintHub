@@ -1,0 +1,19 @@
+id: sybase-monitor
+info:
+  name: Sybase Monitor Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,sybase-monitor,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: terminal-server
+  inputs:
+  - data: \x03\0\0\x0b\x06\xe0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sybase-monitor
+    type: regex
+    regex:
+    - ^\0\x01\0\x08\0\0\x01\0$

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Trend 963 Supervisor building control system
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    info: Portuguese
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nDate: .* GMT\r\nExpires: .* GMT\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Length: \d+\r\n\r\n<html><head><title>Benvenuti al 963</title>'

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Jetty
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n\r\n<HTML>\n<HEAD>\n<TITLE>Error 404 - Not Found</TITLE>\n<BODY>\n<H2>Error 404 - Not Found\.</H2>\nNo context on this server matched or handled this request\.'

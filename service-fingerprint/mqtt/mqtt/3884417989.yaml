@@ -1,0 +1,17 @@
+id: mqtt
+info:
+  name: ''
+  author: nmap,cn-kali-team
+  tags: detect,tech,mqtt,service
+  severity: info
+tcp:
+- name: mqtt
+  inputs:
+  - data: \x10\x10\x00\x04MQTT\x04\x02\x00\x1e\x00\x04nmap
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mqtt
+    type: regex
+    regex:
+    - ^\x20\x02\x00.$

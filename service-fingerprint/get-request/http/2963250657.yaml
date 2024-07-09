@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Modtronix SBC65EC Web Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-type: text/html\r\nContent-Encoding: gzip\r\nCache-Control: max-age=600, must-revalidate\r\n\r\n\x1f\x8b\x08\0\0\0\0\0\0\0'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: SecuritySpy webcam viewer httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Mac OS X
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nServer: BBVS/([\w._-]+)\r\nKeep-Alive: timeout=20, max=100\r\nConnection: Keep-Alive\r\nAccept-Ranges: bytes\r\nContent-Length: 6258\r\nContent-Type: text/html\r\n\r\n<html>\n<head>\n<title>SecuritySpy Web Server</title>\n'

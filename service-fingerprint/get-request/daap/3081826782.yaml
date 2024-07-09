@@ -1,0 +1,17 @@
+id: daap
+info:
+  name: mt-daapd DAAP
+  author: nmap,cn-kali-team
+  tags: detect,tech,daap,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: daap
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nDate: .*\r\nContent-Length: 0\r\n\r\n$'

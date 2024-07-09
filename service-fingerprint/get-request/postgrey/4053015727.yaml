@@ -1,0 +1,17 @@
+id: postgrey
+info:
+  name: Postfix Greylist Daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,postgrey,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: postgrey
+    type: regex
+    regex:
+    - ^action=dunno\n\n$

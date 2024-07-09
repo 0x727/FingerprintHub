@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: D-Link DWL-3200AP WAP telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\0\*\*\*\*\*\*\*\*\*\*\*\*\*\*\r\n\r\nD-Link Access Point login: '

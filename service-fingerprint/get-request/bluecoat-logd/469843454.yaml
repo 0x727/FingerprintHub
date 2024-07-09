@@ -1,0 +1,17 @@
+id: bluecoat-logd
+info:
+  name: Blue Coat Reporter log server
+  author: nmap,cn-kali-team
+  tags: detect,tech,bluecoat-logd,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bluecoat-logd
+    type: regex
+    regex:
+    - ^\x03\0\0\x01$

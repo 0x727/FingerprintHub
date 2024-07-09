@@ -1,0 +1,19 @@
+id: murmur
+info:
+  name: Murmur
+  author: nmap,cn-kali-team
+  tags: detect,tech,murmur,service
+  severity: info
+  metadata:
+    version: 1.2.X
+tcp:
+- name: murmur
+  inputs:
+  - data: \0\0\0\0abcdefgh
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: murmur
+    type: regex
+    regex:
+    - (?i)^\0...abcdefgh............$

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Emerson Network Power PSNA Web/SNMP Agent
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: power-misc
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nServer: ENP-PSNA-WEB/([\d.]+)\r\nWWW-Authenticate: Basic realm="Welcome to PSNA Web/SNMP Agent\. Please use IE5\.0 or higher\. "\r\n'

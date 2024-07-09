@@ -1,0 +1,17 @@
+id: http
+info:
+  name: MySQL Enterprise Agent Aggregator
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nContent-Length: 23\r\nServer: MySQL Aggregator\r\nConnection: close\r\nWWW-Authenticate: Basic realm=\"CTA\"\r\nContent-Type: text/plain\r\n\r\nAuthorization required\n'

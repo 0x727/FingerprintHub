@@ -1,0 +1,17 @@
+id: kdb
+info:
+  name: kdb+ http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,kdb,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: kdb
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nConnection: close\r\nContent-Length: 107\r\n\r\n<html><head><title></title><frameset cols=",\*"><frame src=\?><frame name=v src="\?"></frameset></head></html>'

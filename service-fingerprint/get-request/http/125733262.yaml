@@ -1,0 +1,17 @@
+id: http
+info:
+  name: WDLinux Control Panel
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Found\r\nLocation: /login\r\nSet-Cookie: wdcpsessionID=[a-f\d]{32};'

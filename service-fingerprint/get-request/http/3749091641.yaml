@@ -1,0 +1,21 @@
+id: http
+info:
+  name: WindWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: Pirelli Smartgate Ethernet DSL router web config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nServer: WindWeb/([\d.]+)\r\nConnection: close\r\nContent-Type: text/html\r\nWWW-Authenticate: Basic realm=\"Home Gateway\"\r\n\r\n<html>\r\n\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\r\n<meta name=\"GENERATOR\" content=\"Microsoft FrontPage 4\.0\">\r\n<meta name=\"ProgId\" content=\"FrontPage\.Editor\.Document\">\r\n<title>Pirelli Smart Gate</title>\r\n\r\n'

@@ -1,0 +1,20 @@
+id: ftp
+info:
+  name: Microsoft Forefront TMG firewall ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    device_type: firewall
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220-Authenticate for FTP Access\. \r\n220 \r\n500-Syntax error -- unknown command\r\n500 \r\n500-Syntax error -- unknown command\r\n500 \r\n

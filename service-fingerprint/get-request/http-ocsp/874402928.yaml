@@ -1,0 +1,17 @@
+id: http-ocsp
+info:
+  name: OCSP over HTTP
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-ocsp,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-ocsp
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-type: application/ocsp-response\r\nContent-Transfer-Encoding: Binary\r\nContent-Length: 5\r\n\r\n0\x03\n\x01\x01$'

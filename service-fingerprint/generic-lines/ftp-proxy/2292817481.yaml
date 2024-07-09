@@ -1,0 +1,17 @@
+id: ftp-proxy
+info:
+  name: Cisco Web Security ftp proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp-proxy,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp-proxy
+    type: regex
+    regex:
+    - ^220 .*FTP Proxy\r\n500 Syntax error, command unrecognized\.\r\n

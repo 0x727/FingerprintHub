@@ -1,0 +1,20 @@
+id: vnc
+info:
+  name: Ultr@VNC
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc,service
+  severity: info
+  metadata:
+    operating_system: Windows
+    version: 1.0.8.0
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc
+    type: regex
+    regex:
+    - ^0\x82\x01\n\x02\x82\x01\x01\0

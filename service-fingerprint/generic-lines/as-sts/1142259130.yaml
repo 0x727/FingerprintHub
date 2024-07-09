@@ -1,0 +1,17 @@
+id: as-sts
+info:
+  name: IBM Service Tool Server AS-STS
+  author: nmap,cn-kali-team
+  tags: detect,tech,as-sts,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: as-sts
+    type: regex
+    regex:
+    - ^\0\0\0\0\0\0\0\x08$

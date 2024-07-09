@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Symantec PGP Universal Server http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nX-Frame-Options: SAMEORIGIN\r\nLocation: https?://([\w._-]+):\d+/omc/GetLoginScreen\.uevent\r\nContent-Length: \d+\r\nConnection: close\r\nContent-Type: text/html; charset=iso-8859-1\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2\.0//EN\">'

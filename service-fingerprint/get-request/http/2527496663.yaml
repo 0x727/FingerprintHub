@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Zero One Technology $1 httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: print server
+    info: TP-LINK $3 print server
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nDate: .*\r\nMIME-version: 1\.0\r?\nServer: ZOT-PS-(\d+)/([\w._-]+)\r?\nWWW-Authenticate: Basic realm=\"(TL-[\w._-]+)\"\n'

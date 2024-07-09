@@ -1,0 +1,17 @@
+id: soap
+info:
+  name: gSOAP
+  author: nmap,cn-kali-team
+  tags: detect,tech,soap,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: soap
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nServer: gSOAP\r\n'

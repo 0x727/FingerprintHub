@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Open Lighting Architecture daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Length: \d+\r\nContent-Type: text/html\r\nDate: .*\r\n\r\n\n<!DOCTYPE html>\n<html>\n  <head>\n    <script language=\"JavaScript\">\n      var a = navigator\.userAgent\x7c\x7cnavigator\.vendor\x7c\x7cwindow\.opera;\n      if\(/android\x7cavantgo\x7cblackberry\x7cblazer\x7ccompal\x7celaine'

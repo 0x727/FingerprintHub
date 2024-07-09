@@ -1,0 +1,20 @@
+id: http-proxy
+info:
+  name: BaseHTTPServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    info: GAppProxy Google App Engine proxy; Python $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 400 Bad Request\r\n(?:[^\r\n]+\r\n)*?Server: BaseHTTP/([\d.]+) Python/([\w._-]+)\r\n.*<head>\n<title>Error response</title>\n</head>\n<body>\n<h1>Error response</h1>\n<p>Error code 400\.\n<p>Message: Bad Request\.\n<p>Error code explanation: 400 = Bad request syntax or unsupported method\.\n</body>\n$'

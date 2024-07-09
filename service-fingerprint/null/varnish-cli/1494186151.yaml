@@ -1,0 +1,19 @@
+id: varnish-cli
+info:
+  name: Varnish Cache CLI
+  author: nmap,cn-kali-team
+  tags: detect,tech,varnish-cli,service
+  severity: info
+  metadata:
+    info: authentication required
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: varnish-cli
+    type: regex
+    regex:
+    - ^107 59      \n[a-z]{32}\n\nAuthentication required\.\n\n

@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: LG TV upnp
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: UPnP $1; DLNADOC $2; LGE_DLNA_SDK $3
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nDate: .*\r\nServer: Linux/i686 UPnP/([\d.]+) DLNADOC/([\d.]+) LGE_DLNA_SDK/([\d.]+)\r\n'

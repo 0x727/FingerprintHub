@@ -1,0 +1,19 @@
+id: http
+info:
+  name: FRITZ!WLAN Repeater N/G http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Content-Type: text/html;charset=utf-8\r\n(?:[^\r\n]+\r\n)*?Mime-Version: 1\.0\r\n.*<title>FRITZ!WLAN Repeater</title>'

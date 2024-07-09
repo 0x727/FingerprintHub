@@ -1,0 +1,17 @@
+id: caldav
+info:
+  name: Zarafa CalDav Gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,caldav,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: caldav
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\n.*WWW-Authenticate: Basic realm=\"Zarafa CalDav Gateway\"\r\nContent-Length: 0\r\nServer: Zarafa\r\n'

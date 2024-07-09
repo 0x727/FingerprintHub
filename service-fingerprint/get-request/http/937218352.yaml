@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Syabas Popcorn Hour media player BitTorrent interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\nContent-Type: text/html\n\n<HTML><BODY>\n<TITLE>404 Not Found</TITLE><H1>Requested file not exist! \(404 Not Found\)</H1>\n<BR>\n</BODY></HTML>\n$'

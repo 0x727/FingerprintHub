@@ -1,0 +1,20 @@
+id: http
+info:
+  name: xupnpd http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'uptime: $1'
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nPragma: no-cache\r\nCache-control: no-cache\r\nDate: .*\r\nServer: eXtensible UPnP agent\r\nAccept-Ranges: none\r\nConnection: close\r\nContent-Type: text/html\r\nEXT:\r\n\r\n.*Uptime: (\d+ days, [\d:]+).*Model: <a href=http://xupnpd\.org>xupnpd-([\w._-]+)</a>'

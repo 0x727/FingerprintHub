@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Gigaset telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^Enter PIN>\nBAD PIN\n

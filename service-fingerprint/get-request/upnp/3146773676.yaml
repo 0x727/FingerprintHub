@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Platinum upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: 'LG TV model: $2; Neptune $1'
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nDate: .*\r\nServer: Neptune/([\d.]+)\r\nDLNADeviceName\.lge\.com: %5bTV%5d%5bLG%5d([\w-]+)\r\n'

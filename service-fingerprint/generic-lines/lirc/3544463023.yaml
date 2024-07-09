@@ -1,0 +1,17 @@
+id: lirc
+info:
+  name: LIRC infrared receiver daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,lirc,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: lirc
+    type: regex
+    regex:
+    - ^BEGIN\n\r\nERROR\nDATA\n1\nbad send packet\nEND\nBEGIN\n\r\nERROR\nDATA\n1\nbad send packet\nEND\n

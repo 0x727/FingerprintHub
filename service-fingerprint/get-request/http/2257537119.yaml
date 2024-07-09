@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Apple QTSS Admin Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: from QTSS $1
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nDate: .*\r\nServer: QTSS (\d[-.\w]+) Admin Server/(\d[-.\w]+)\r\n'

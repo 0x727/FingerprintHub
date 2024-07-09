@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Vertical Edge 5000i VoIP phone http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Redirect\r\nServer: IP-Phone-Web\r\nDate: [A-Z]+ [A-Z]+ \d+ \d+:\d+:\d+ \d+\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\nLocation: http://dummy:\d+/index\.asp\r\n\r\n<html><head></head><body>\r\n\t\tThis document has moved to a new <a href=\"http://dummy:8000/index\.asp\">location</a>\.\r\n\t\tPlease update your documents to reflect the new location\.\r\n\t\t</body></html>\r\n\r\n$'

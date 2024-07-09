@@ -1,0 +1,19 @@
+id: finger
+info:
+  name: XMail fingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - '^EMail       : [-\w_.]+@([-\w_.]+)\r\n  Real Name : \?\?\r\n  Home Page : \?\?\r\n'

@@ -1,0 +1,19 @@
+id: icontrolav2
+info:
+  name: Pioneer iControlAV2 control port
+  author: nmap,cn-kali-team
+  tags: detect,tech,icontrolav2,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: icontrolav2
+    type: regex
+    regex:
+    - ^E04\r\nR\r\n

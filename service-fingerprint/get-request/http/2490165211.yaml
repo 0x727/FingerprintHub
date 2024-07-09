@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Xen Orchestra
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Node.js Express middleware
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nX-DNS-Prefetch-Control: off\r\nX-Frame-Options: SAMEORIGIN\r\n(?:Strict-Transport-Security: max-age=\d+; includeSubDomains\r\n)?X-Download-Options: noopen\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nLocation: /signin\r\nVary: Accept\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: \d+\r\nset-cookie: connect\.sid='

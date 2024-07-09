@@ -1,0 +1,19 @@
+id: printer
+info:
+  name: Kyocera Mita KM-1530 lpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,printer,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: terminal-server
+  inputs:
+  - data: \x03\0\0\x0b\x06\xe0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: printer
+    type: regex
+    regex:
+    - '^SB06D2F0: \xe5\x9f\xf0\x18\xe5\x9f\xf0\x18\xe5\x9f\xf0\x18\xe5\x9f\xf0\x18\xe5\x9f\xf0\x18\xe1\xa0 no entries\n$'

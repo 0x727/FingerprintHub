@@ -1,0 +1,21 @@
+id: http
+info:
+  name: KDH httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: remote management
+    info: IBM Tivoli Monitoring http config
+    version: $1 $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 KDH1_STC_OK\r\nServer: KDH/([\w_.-]+) \(([\w:]+)\)\r\n.*<title>IBM Tivoli Monitoring Service Index</title>'

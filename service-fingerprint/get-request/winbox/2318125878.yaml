@@ -1,0 +1,17 @@
+id: winbox
+info:
+  name: MikroTik WinBox management console
+  author: nmap,cn-kali-team
+  tags: detect,tech,winbox,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: winbox
+    type: regex
+    regex:
+    - ^\x01\0\0\0\x02\0\0

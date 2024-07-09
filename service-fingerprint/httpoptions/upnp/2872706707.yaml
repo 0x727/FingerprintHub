@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Virata-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: DVArchive UPnP; UPnP $2
+    operating_system: Linux
+    version: $SUBST(1,"_",".")
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 405 METHOD NOT ALLOWED\r\nCache-Control: no-cache\r\nLast-Modified: .*\r\nX-User-Agent: DVArchive\r\nServer: Unknown/0\.0 UPnP/([\d.]+) Virata-EmWeb/R([\d_]+)\r\n'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Microsoft Commerce Server 2002 httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nDate: .*\r\nCOMMERCE-SERVER-SOFTWARE: Microsoft Commerce Server 2002, Enterprise Edition\r\n'

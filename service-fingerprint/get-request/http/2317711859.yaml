@@ -1,0 +1,20 @@
+id: http
+info:
+  name: HP Guardian Service Processor httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $1
+    operating_system: HP-UX
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nDate: [A-Z]{3}, \d\d [A-Z]{3} \d\d\d\d \d\d:\d\d:\d\d GMT\r\n.*<TITLE>HP Web Console on ([\w._-]+)</TITLE>'

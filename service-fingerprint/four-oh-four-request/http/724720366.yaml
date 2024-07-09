@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Konica Minolta LPC httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    version: $1
+tcp:
+- name: four-oh-four-request
+  inputs:
+  - data: GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type:text/html\r\nExpires: .*\r\nPragma: no-cache\r\nServer: LPC Http Server/V([\d.]+)\r\n\r\n'

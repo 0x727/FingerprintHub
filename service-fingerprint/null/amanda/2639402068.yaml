@@ -1,0 +1,21 @@
+id: amanda
+info:
+  name: Amanda backup system index server
+  author: nmap,cn-kali-team
+  tags: detect,tech,amanda,service
+  severity: info
+  metadata:
+    hostname: $1
+    operating_system: Unix
+    version: $2
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: amanda
+    type: regex
+    regex:
+    - ^220 ([-.\w]+) AMANDA index server \((\d[-.\w ]+)\) ready\.\r\n

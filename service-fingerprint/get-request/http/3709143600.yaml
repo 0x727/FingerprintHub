@@ -1,0 +1,19 @@
+id: http
+info:
+  name: MoxaHttp
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: Wed, 19 Feb 2003 09:00:00 GMT\r\nServer: Http/1\.0\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nContent-type: text/html\r\nContent-length: 22016\r\nSet-Cookie: ChallID=\d+\r\n\r\n'

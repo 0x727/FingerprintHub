@@ -1,0 +1,17 @@
+id: secure-socket
+info:
+  name: CA Secure Socket Adapter
+  author: nmap,cn-kali-team
+  tags: detect,tech,secure-socket,service
+  severity: info
+tcp:
+- name: verifier
+  inputs:
+  - data: Subscribe\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: secure-socket
+    type: regex
+    regex:
+    - ^\0$

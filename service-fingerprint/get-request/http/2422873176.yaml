@@ -1,0 +1,19 @@
+id: http
+info:
+  name: GoldStar iPECS 50B PBX http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: PBX
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Connection: Keep-Alive\r\nKeep-Alive: timeout=5, max=100\r\n.*<HTML>\r\n<HEAD>\r\n<TITLE></TITLE>\r\n<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>\r\n<!--\r\nfunction loadpasswd\(\)\r\n{\r\n\ttop\.location = \"index\.htm\"\r\n}\r\nsetTimeout\(\"loadpasswd\(\)\",1\);\r\n//-->\r\n</SCRIPT>\r\n</HEAD>\r\n<BODY>\r\n</BODY>\r\n</HTML>\r\n$'

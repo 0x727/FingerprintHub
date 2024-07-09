@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Devolo access point http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nServer: \r\nContent-Type: text/html; charset=iso-8859-1\r\nDate: .*\r\nLast-Modified: .*\r\nAccept-Ranges: bytes\r\nConnection: close\r\n(?:Cache-Control: no-cache,no-store\r\n(?:Cache-Control: max-age=86400\r\nExpires: .*\r\n)?)?WWW-Authenticate: Basic realm="restricted (?:devolo )?configuration website"\r\n\r\n'

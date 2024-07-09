@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Catwalk
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: Canon imageRUNNER C5000-series printer http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Moved Temporarily\r\nServer: Catwalk\r\nDate: .*\r\nLocation: https://null:8443/\r\nContent-Length: 0\r\nConnection: close\r\n\r\n$'

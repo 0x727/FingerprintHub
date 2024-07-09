@@ -1,0 +1,17 @@
+id: pgpool
+info:
+  name: pgpool-II
+  author: nmap,cn-kali-team
+  tags: detect,tech,pgpool,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pgpool
+    type: regex
+    regex:
+    - ^E\0\0\0.S[^\0]+\0CXX000\0M[^\0]*\0D[^\0]*\0Fpcp_worker\.c\0L176\0\0

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: InterTel $1 VoIP phone http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+    info: firmware $2; MAC $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 401 Authorization Required\r\n.*www-authenticate:Basic realm=\"(\w+)v(\d+)POE \(([0-9A-F]{12})\)\"\r\n

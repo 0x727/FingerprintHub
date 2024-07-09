@@ -1,0 +1,19 @@
+id: http
+info:
+  name: WatchGuard Firebox http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request 2\r\nContent-Type: text/html\r\n\r\n<body><h1>HTTP/1\.0 400 Bad Request 2</h1></body>\r\n$'

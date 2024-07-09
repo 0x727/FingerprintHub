@@ -1,0 +1,20 @@
+id: smtp
+info:
+  name: Sendmail
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    operating_system: Unix
+    version: $1
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - '(?i)214-2\.0\.0 This is sendmail version (\S+)\r?\n214-2\.0\.0 Topics:'

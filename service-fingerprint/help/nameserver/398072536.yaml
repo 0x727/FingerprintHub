@@ -1,0 +1,20 @@
+id: nameserver
+info:
+  name: Solaris Internet Name Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,nameserver,service
+  severity: info
+  metadata:
+    info: IEN 116
+    operating_system: Solaris
+tcp:
+- name: help
+  inputs:
+  - data: help\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nameserver
+    type: regex
+    regex:
+    - ^help\r\n\r\n\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01

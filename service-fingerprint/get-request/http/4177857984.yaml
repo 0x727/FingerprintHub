@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Comrex Access BRIC http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: telecom-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK\r\n.*\r\n<TITLE>bric_web_gui</TITLE>\r\n</HEAD>\r\n<BODY bgcolor=\"#555577\">\r\n<!-- URL's used in the movie-->\r\n<!-- text used in the movie-->

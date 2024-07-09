@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Conexant-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+    info: Scarlet One UPnP; UPnP $2; ISOS $1
+    version: $SUBST(3,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: ISOS/([-\w_.]+) UPnP/([\d.]+) Conexant-EmWeb/R([\d_]+)\r\n.*<title>Scarlet One</title>'

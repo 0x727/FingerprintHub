@@ -1,0 +1,19 @@
+id: modbus
+info:
+  name: Modbus TCP
+  author: nmap,cn-kali-team
+  tags: detect,tech,modbus,service
+  severity: info
+  metadata:
+    info: gateway
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: modbus
+    type: regex
+    regex:
+    - ^\r\n\r\n\0\x03[\0\x01]\x80[\x0a\x0b]

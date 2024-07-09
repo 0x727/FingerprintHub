@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Vivotek Network Camera http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nContent-Type: text/html\r\n(?:[^\r\n]+\r\n)*?Server: Wireless Network Camera with Pan/Tilt\r\n'

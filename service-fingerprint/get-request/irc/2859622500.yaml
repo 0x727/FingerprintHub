@@ -1,0 +1,19 @@
+id: irc
+info:
+  name: WebMaster ConferenceRoom ircd
+  author: nmap,cn-kali-team
+  tags: detect,tech,irc,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: irc
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Wrong Port\r\nServer: ConferenceRoom/IRC (\d[\w._-]+)\r\n'

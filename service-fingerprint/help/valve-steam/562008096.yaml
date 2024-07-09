@@ -1,0 +1,17 @@
+id: valve-steam
+info:
+  name: Valve Steam In-Home Streaming service
+  author: nmap,cn-kali-team
+  tags: detect,tech,valve-steam,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: help\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: valve-steam
+    type: regex
+    regex:
+    - ^\xff\xff\xff\xff!L_\xa0

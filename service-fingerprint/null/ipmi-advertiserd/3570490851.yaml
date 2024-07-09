@@ -1,0 +1,19 @@
+id: ipmi-advertiserd
+info:
+  name: SuperMicro IPMI advertiserd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipmi-advertiserd,service
+  severity: info
+  metadata:
+    device_type: remote management
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipmi-advertiserd
+    type: regex
+    regex:
+    - ^\x0e\0\0\0\0\0\0$

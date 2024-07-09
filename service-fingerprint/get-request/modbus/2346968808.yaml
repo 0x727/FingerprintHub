@@ -1,0 +1,19 @@
+id: modbus
+info:
+  name: Modbus TCP
+  author: nmap,cn-kali-team
+  tags: detect,tech,modbus,service
+  severity: info
+  metadata:
+    info: gateway
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: modbus
+    type: regex
+    regex:
+    - ^GET [\0/]\x03H\xd4[\x0a-\x0b]

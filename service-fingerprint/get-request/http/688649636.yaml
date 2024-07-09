@@ -1,0 +1,19 @@
+id: http
+info:
+  name: SecuritySpy webcam viewer httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Mac OS X
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nServer: BBVS\r\nContent-type: text/plain\r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: Basic realm=\"SecuritySpy Web Server\"\r\n\r\n401 Unauthorized\r\n$'

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Allegro RomPager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: Netopia Cayman 334x router http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Content-Type: text/html\r\nDate: .*\r\nPragma: no-cache\r\nServer: Allegro-Software-RomPager/([\d.]+)\r\n\r\n\n<html>\n<head>\n<title>\nNetopia Router</title>\n'

@@ -1,0 +1,20 @@
+id: ovs-agent
+info:
+  name: Oracle OVSAgentServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,ovs-agent,service
+  severity: info
+  metadata:
+    info: BaseHTTPServer $1; Python SimpleXMLRPCServer; Python $2
+    version: '22'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ovs-agent
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: BaseHTTP/([\d.]+) Python/([\w.]+)\r\n.*<title>Python: OVSAgentServer Document</title>'

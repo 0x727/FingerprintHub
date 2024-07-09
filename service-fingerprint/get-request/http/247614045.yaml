@@ -1,0 +1,17 @@
+id: http
+info:
+  name: PowerDNS stats httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 OK\nWWW-Authenticate: Basic realm="PowerDNS"\nConnection: close\nContent-type: text/html; charset=UTF-8\n\nPlease enter a valid password!\n'

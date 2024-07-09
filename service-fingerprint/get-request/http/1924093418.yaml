@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Microsoft IIS httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Spanish
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.1 403 Forbidden \( El servidor deneg\xc3\xb3 la direcci\xc3\xb3n URL \(Uniform Resource Locator\) especificada\. P\xc3\xb3ngase en contacto con el administrador del servidor\.

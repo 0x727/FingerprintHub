@@ -1,0 +1,17 @@
+id: ssl/pop3
+info:
+  name: Cyrus pop3sd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ssl/pop3,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ssl/pop3
+    type: regex
+    regex:
+    - '^-ERR Fatal error: pop3s: required OpenSSL options not present\r\n'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: AirStash WiFi flash drive http ui
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 301 Moved Permanently\r\nConnection: close\r\nContent-Type: text/html; charset=utf-8\r\nLocation: http://([\w_.-]+)\.local/myconnect/\r\nX-UA-Compatible: IE=edge\r\n\r\n'

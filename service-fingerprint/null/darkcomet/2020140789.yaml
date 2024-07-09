@@ -1,0 +1,19 @@
+id: darkcomet
+info:
+  name: DarkComet RAT
+  author: nmap,cn-kali-team
+  tags: detect,tech,darkcomet,service
+  severity: info
+  metadata:
+    info: '**BACKDOOR**'
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: darkcomet
+    type: regex
+    regex:
+    - ^[0-9A-F]{12}$

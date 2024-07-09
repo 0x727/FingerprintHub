@@ -1,0 +1,20 @@
+id: airdroid
+info:
+  name: AirDroid status port
+  author: nmap,cn-kali-team
+  tags: detect,tech,airdroid,service
+  severity: info
+  metadata:
+    device_type: phone
+    info: 'Android; wi-fi name: $1'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: airdroid
+    type: regex
+    regex:
+    - '^#connected,all connect count: 1{\"event\":\"device_status\",\"data\":{\"wifi_name\":\"([^\"]+)\",\"wifi_signal\":\d+,\"battery\":\d+,\"batterycharging\":\w+,\"gsm_signal\":\d+,\"sms_unread\":\d+,\"sdcard\":\d+,\"updateinfo\":null}}'

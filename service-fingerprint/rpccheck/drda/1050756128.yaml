@@ -1,0 +1,17 @@
+id: drda
+info:
+  name: IBM DRDA
+  author: nmap,cn-kali-team
+  tags: detect,tech,drda,service
+  severity: info
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x80\0\0\x28\x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: drda
+    type: regex
+    regex:
+    - ^\0\x15\xd0\x02\xff\xff\0\x0f\x12E\0\x06\x11I\0\x08\0\x05\x11\?\x06$

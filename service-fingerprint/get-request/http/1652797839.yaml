@@ -1,0 +1,21 @@
+id: http
+info:
+  name: lighttpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Avatron Air Sharing HD $1
+    operating_system: iOS
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nConnection: close\r\n(?:[^\r\n]+\r\n)*?Server: AvatronHTTP \(com\.avatron\.AirSharingHD,([\w._-]+)\)\r\n\r\n'

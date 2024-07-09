@@ -1,0 +1,19 @@
+id: siemens-logo
+info:
+  name: Siemens LOGO! PLC
+  author: nmap,cn-kali-team
+  tags: detect,tech,siemens-logo,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: zend-java-bridge
+  inputs:
+  - data: \0\0\0\x1f\0\0\0\0\0\0\0\x0cGetClassName\0\0\0\x02\x04\0\0\0\0\x01\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: siemens-logo
+    type: regex
+    regex:
+    - ^\x06\x03\x04\0\0\x002

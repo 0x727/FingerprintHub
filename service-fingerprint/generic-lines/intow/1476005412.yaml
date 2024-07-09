@@ -1,0 +1,20 @@
+id: intow
+info:
+  name: InTow Mobile
+  author: nmap,cn-kali-team
+  tags: detect,tech,intow,service
+  severity: info
+  metadata:
+    info: out of date
+    operating_system: iOS
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: intow
+    type: regex
+    regex:
+    - ^<status><code>9999</code><result>App\.Version is out of date please update your version of InTow Mobile</result>

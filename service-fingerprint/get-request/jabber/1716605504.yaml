@@ -1,0 +1,20 @@
+id: jabber
+info:
+  name: ejabberd
+  author: nmap,cn-kali-team
+  tags: detect,tech,jabber,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: Protocol $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jabber
+    type: regex
+    regex:
+    - ^<\?xml version='1\.0'\?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx\.jabber\.org/streams' id='none' from='([\w._-]+)' version='([\d.]+)'>

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Netgear or Linksys WAP http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 301 Moved Premanently\r\nLocation: https://[\d.]+/\r\nContent-type: text/html\r\n\r\n<html><head><title>Access Denied</title></head><body><h1>You must use SSL based http\(HTTPS\) server\.</h1></body></html>$'

@@ -1,0 +1,17 @@
+id: elasticsearch
+info:
+  name: Elasticsearch binary API
+  author: nmap,cn-kali-team
+  tags: detect,tech,elasticsearch,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: elasticsearch
+    type: regex
+    regex:
+    - ^This is not a HTTP port$

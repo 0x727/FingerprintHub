@@ -1,0 +1,17 @@
+id: ms-wbt-server
+info:
+  name: xrdp
+  author: nmap,cn-kali-team
+  tags: detect,tech,ms-wbt-server,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ms-wbt-server
+    type: regex
+    regex:
+    - ^\x03\0\0\t\x02\xf0\x80!\x80

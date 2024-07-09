@@ -1,0 +1,17 @@
+id: portlistener
+info:
+  name: Port Listener
+  author: nmap,cn-kali-team
+  tags: detect,tech,portlistener,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: portlistener
+    type: regex
+    regex:
+    - ^Hello !\r\n

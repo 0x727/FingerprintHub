@@ -1,0 +1,19 @@
+id: sunscreen-adm
+info:
+  name: SunScreen Remote Administration server
+  author: nmap,cn-kali-team
+  tags: detect,tech,sunscreen-adm,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sunscreen-adm
+    type: regex
+    regex:
+    - '^\x01\0\0\0\0\0\0\0T\x03\0\0\0\0\0\x01\x1e\0\0\0\0\0\0;\0\0\0\0\0\0\0\0Error: incompatible with administration server \(version (\d[-.\w ]*)\)\nc\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0$'

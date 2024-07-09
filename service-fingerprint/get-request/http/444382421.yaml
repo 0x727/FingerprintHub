@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Dell iDRAC 8 admin httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'time zone: $1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Moved Temporarily\r\nContent-Type: application/x-gzip\r\nLocation: https://idrac(?::\d+)?/start\.html\r\nDate: .* GMT\r\nETag: \w{3} \w{3} \d\d \d\d:\d\d:\d\d \d\d\d\d ([-A-Z]+)\r\n'

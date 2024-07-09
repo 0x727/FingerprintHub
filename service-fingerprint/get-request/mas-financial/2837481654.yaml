@@ -1,0 +1,19 @@
+id: mas-financial
+info:
+  name: MAS200 Financial System
+  author: nmap,cn-kali-team
+  tags: detect,tech,mas-financial,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mas-financial
+    type: regex
+    regex:
+    - ^409 Invalid Protocol PVXAS/1\.0\r\n

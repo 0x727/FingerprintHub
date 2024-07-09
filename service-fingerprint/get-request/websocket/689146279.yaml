@@ -1,0 +1,20 @@
+id: websocket
+info:
+  name: OverSIP
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+  metadata:
+    info: 'WebSocket versions: $1'
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - '^HTTP/1\.0 426 Upgrade Required\r\nX-Supported-WebSocket-Versions: ([\d, ]+)\r\nServer: OverSIP/([\w._-]+)\r\n\r\n'

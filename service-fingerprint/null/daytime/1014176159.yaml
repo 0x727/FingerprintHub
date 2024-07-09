@@ -1,0 +1,17 @@
+id: daytime
+info:
+  name: TrueTime nts100
+  author: nmap,cn-kali-team
+  tags: detect,tech,daytime,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: daytime
+    type: regex
+    regex:
+    - ^[A-Z][a-z]{2}, [A-Z][a-z]{2} \d{1,2}, 20\d\d, \d\d:\d\d:\d\d-UTC$

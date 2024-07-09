@@ -1,0 +1,17 @@
+id: policy
+info:
+  name: Postfix mail policyd
+  author: nmap,cn-kali-team
+  tags: detect,tech,policy,service
+  severity: info
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: policy
+    type: regex
+    regex:
+    - '^action=defer_if_permit Policy Rejection: Invalid data\n\n$'

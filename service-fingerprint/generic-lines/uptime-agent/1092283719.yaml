@@ -1,0 +1,17 @@
+id: uptime-agent
+info:
+  name: up.time server monitor
+  author: nmap,cn-kali-team
+  tags: detect,tech,uptime-agent,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: uptime-agent
+    type: regex
+    regex:
+    - ^ERR\n$

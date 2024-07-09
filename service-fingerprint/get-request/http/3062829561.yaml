@@ -1,0 +1,17 @@
+id: http
+info:
+  name: WibuKey license server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 501 Not Implemented\r\nContent-Type: text/html\r\nContent-Length: 63\r\n\r\n<html><body><h2>Error: 501 / Not Implemented</h2></body></html>'

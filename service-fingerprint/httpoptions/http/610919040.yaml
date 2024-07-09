@@ -1,0 +1,19 @@
+id: http
+info:
+  name: APC SmartUPS http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: power-device
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nLocation: https?:///home\.htm\r\nContent-Length: 0\r\nWebServer:\r\n\r\n$'

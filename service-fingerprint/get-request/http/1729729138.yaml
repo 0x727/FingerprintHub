@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Embedded HTTP Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: USRobotics $2 wireless router http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nServer: Embedded HTTP Server ([\w_.]+)\r\nWWW-Authenticate: Basic realm=\"(USR\d+)\"\r\nConnection: close\r\n\r\n'

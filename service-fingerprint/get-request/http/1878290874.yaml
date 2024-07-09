@@ -1,0 +1,17 @@
+id: http
+info:
+  name: SinusBot TS3 bot http ui
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nAccess-Control-Allow-Headers: Authorization, Content-Type\r\nAccess-Control-Allow-Origin: http://.*\r\nDate: .*\r\nContent-Type: text/html; charset=utf-8\r\n\r\n<!DOCTYPE html>\n<html ng-app="ts3soundboard-bot" ng-controller="base">\n<head>\n<title>SinusBot</title>'

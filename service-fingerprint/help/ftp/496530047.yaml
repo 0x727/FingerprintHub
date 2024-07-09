@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: Sami ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220-\r\n220 Features p a \.\r\n214 Please refer to FTP documentation\.\r\n

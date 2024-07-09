@@ -1,0 +1,20 @@
+id: http
+info:
+  name: ESERV-10
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: ProfiLux 3 eX aquarium computer
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nLast-modified: .* GMT\r\nExpires: .* GMT\r\nCache-Control: no-cache, no-store, must-revalidate\r\nCache-Control: post-check=0, pre-check=0\r\nPragma: no-cache\r\nServer: ESERV-10/([\w._-]+)\n'

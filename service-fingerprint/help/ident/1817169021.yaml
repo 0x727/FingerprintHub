@@ -1,0 +1,19 @@
+id: ident
+info:
+  name: Windows NT identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^0, 0 : ERROR : UNKNOWN-ERROR$'

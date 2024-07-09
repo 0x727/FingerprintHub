@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Greenbone Security Assistant
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.[01] 406 Not Acceptable\r\nContent-Length: 51\r\nContent-Type: text/html; charset=utf-8\r\nDate: .* GMT\r\n\r\n<html><body>HTTP Method not supported</body></html>$'

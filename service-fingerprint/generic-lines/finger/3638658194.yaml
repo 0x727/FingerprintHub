@@ -1,0 +1,19 @@
+id: finger
+info:
+  name: SLMail fingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - ^Finger online user list request denied\.\r\n

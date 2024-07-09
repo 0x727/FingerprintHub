@@ -1,0 +1,17 @@
+id: msrpc
+info:
+  name: ''
+  author: nmap,cn-kali-team
+  tags: detect,tech,msrpc,service
+  severity: info
+tcp:
+- name: dnsstatus-request
+  inputs:
+  - data: \0\0\x10\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: msrpc
+    type: regex
+    regex:
+    - ^\x04\x06\0\0\x10\0\0\0\0\0\0\0

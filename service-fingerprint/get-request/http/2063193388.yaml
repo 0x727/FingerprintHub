@@ -1,0 +1,19 @@
+id: http
+info:
+  name: HP JetDirect printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.0 200 OK\r\n\r\n<HTML>\r\n<HEAD>\r\n<TITLE>JetDirect Home Page</TITLE>\r\n\r\n</HEAD>\r\n<BODY>\r\n<P>\r\nWelcome to the HP JetDirect print server!\r\n

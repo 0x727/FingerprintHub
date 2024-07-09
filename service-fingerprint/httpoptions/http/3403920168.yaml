@@ -1,0 +1,19 @@
+id: http
+info:
+  name: DirecTV satellite receiver http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 405 Method Not Allowed\.\r\nContent-Type: application/json; charset=ISO-8859-1\r\nDate: .* GMT\r\nContent-Length: 142\r\nReason: Only HTTP GET or POST methods are supported\.\r\n\r\n{\"status\": {\n  \"code\": 405,\n  \"commandResult\": 1,\n  \"msg\": \"Method Not Allowed\.Only HTTP GET or POST methods are supported\.\",\n  \"query\": \"\"\n}}'

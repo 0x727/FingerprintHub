@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: UnleashX Xbox shell ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    device_type: game console
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 UnleashX FTP ready\.\r\n503 Login with USER first\.\r\n

@@ -1,0 +1,19 @@
+id: g15daemon
+info:
+  name: g15daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,g15daemon,service
+  severity: info
+  metadata:
+    info: Logitech G15 keyboard control
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: g15daemon
+    type: regex
+    regex:
+    - ^G15 daemon HELLO$

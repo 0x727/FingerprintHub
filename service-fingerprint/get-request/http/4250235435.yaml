@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Amazon Dash Button http ui
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nAccess-Control-Allow-Origin: \*\r\nAccess-Control-Allow-Methods: GET, POST, OPTIONS\r\nAccess-Control-Allow-Headers: Authorization,Content-Type,Accept,Origin,User-Agent,DNT,Cache-Control,X-Mx-ReqToken,Keep-Alive,X-Requested-With,If-Modified-Since\r\nContent-Type: text/html\r\nTransfer-Encoding: chunked\r\n\r\n\d+;\r\n<html lang="en">\r\n<head>\r\n  <meta charset="utf-8">\r\n  <title>Amazon Dash: Device Info</title>'

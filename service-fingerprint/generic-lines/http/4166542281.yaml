@@ -1,0 +1,19 @@
+id: http
+info:
+  name: SAS/IntrNet
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1 $2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^SAS/IntrNet Application Server Release ([\w._-]+) \((build \d+)\)\n\n$

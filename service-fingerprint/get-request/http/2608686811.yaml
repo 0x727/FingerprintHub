@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Check Point VPN-1/UTM NGX firewall http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    version: R70
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-type: text/html\r\nPragma: no-cache\r\nCache-Control: no-cache\r\n\r\n<html>\n<head>\n<meta http-equiv=\"Content-type\" content=\"text/html; charset=iso-8859-1\">\n<title>Client Authentication</title>'

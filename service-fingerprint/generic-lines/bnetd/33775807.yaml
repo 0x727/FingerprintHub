@@ -1,0 +1,19 @@
+id: bnetd
+info:
+  name: PvPGN BnetD Mod
+  author: nmap,cn-kali-team
+  tags: detect,tech,bnetd,service
+  severity: info
+  metadata:
+    version: 1.5.0
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bnetd
+    type: regex
+    regex:
+    - '^BOT or Telnet Connection from \[[\d.]+\]\r\n\r\nEnter your account name and password\.\r\nSorry, there is no guest account\.\r\n\r\nUsername: '

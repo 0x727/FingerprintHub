@@ -1,0 +1,17 @@
+id: abc
+info:
+  name: ABC Torrent http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,abc,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: abc
+    type: regex
+    regex:
+    - ^Feedback\nError=You need unique ID to command ABC!

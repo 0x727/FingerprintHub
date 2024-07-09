@@ -1,0 +1,17 @@
+id: jabber
+info:
+  name: Prosody Jabber server
+  author: nmap,cn-kali-team
+  tags: detect,tech,jabber,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jabber
+    type: regex
+    regex:
+    - ^<\?xml version='1\.0'\?><stream:stream xmlns:stream='http://etherx\.jabber\.org/streams' xml:lang='en' xmlns:db='jabber:server:dialback' xmlns='jabber:server'><stream:error><not-well-formed xmlns='urn:ietf:params:xml:ns:xmpp-streams'/></stream:error></stream:stream>

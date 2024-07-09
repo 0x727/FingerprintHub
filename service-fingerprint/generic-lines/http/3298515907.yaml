@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Patton mawebserver httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+    info: MSOS $1
+    version: $2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nDate: .* GMT\r\nConnection: Keep-Alive\r\nKeep-Alive: timeout=300\r\nServer: MSOS/([\d.]+) mawebserver/([\d.]+)\r\n'

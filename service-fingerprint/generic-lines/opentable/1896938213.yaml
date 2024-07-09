@@ -1,0 +1,17 @@
+id: opentable
+info:
+  name: OpenTable restaurant reservation system
+  author: nmap,cn-kali-team
+  tags: detect,tech,opentable,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: opentable
+    type: regex
+    regex:
+    - ^\xc1\x02\0\0\x14\0\0\0\0\0\0\0\0\0\0\0\x44\x28\0\0$

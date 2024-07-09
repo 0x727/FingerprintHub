@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Virata-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: HP LaserJet printer http config
+    version: $SUBST(1,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: Virata-EmWeb/([-.\w]+)\r\n(?:[^\r\n]+\r\n)*?\r\n\n<!--\nFile name: index\.html\n\nThis is the ''parent'' file that calls the individual child frames\. \nThis is the file that is first accessed when the user types http://<ipaddress> \nin the browser toolbar\. \n\nThe UI Architecture consists of a total of 4 frames\. This file calls 3 high-level '

@@ -1,0 +1,19 @@
+id: memcached
+info:
+  name: Memcached
+  author: nmap,cn-kali-team
+  tags: detect,tech,memcached,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: memcached
+  inputs:
+  - data: \0\x01\0\0\0\x01\0\0stats\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: memcached
+    type: regex
+    regex:
+    - (?i)^\0\x01\0\0\0\x01\0\0STAT pid \d+\r\nSTAT uptime \d+\r\nSTAT time \d+\r\nSTAT version ([.\d]+)\r\n

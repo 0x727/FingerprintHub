@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Zope httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: SchoolTool calendar
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 302 Moved Temporarily\r\n(?:[^\r\n]+\r\n)*?Server: zope\.server\.http \(zope\.server\.http\)\r\n(?:[^\r\n]+\r\n)*?Location: http://([\w._-]+):\d+/calendar\r\n'

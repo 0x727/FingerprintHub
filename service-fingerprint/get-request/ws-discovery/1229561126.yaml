@@ -1,0 +1,19 @@
+id: ws-discovery
+info:
+  name: Ricoh WS Discovery
+  author: nmap,cn-kali-team
+  tags: detect,tech,ws-discovery,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ws-discovery
+    type: regex
+    regex:
+    - ^HTTP/1\.1 400 Bad Request$

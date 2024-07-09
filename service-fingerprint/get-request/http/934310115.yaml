@@ -1,0 +1,17 @@
+id: http
+info:
+  name: KCodes NetUSB http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nCache-control: no-cache\r\nConnection: Close\r\n\r\n(?:<!-T0004->\r\n)?<HTML>\r\n<HEAD>\r\n<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML">\r\n<TITLE></TITLE>\r\n</HEAD>\r\n<BODY BGCOLOR=#FFFFFF>\r\n<SCRIPT LANGUAGE=JavaScript>\r\n\tdocument\.location\.href="system30\.htm";\r\n</script>\r\n</BODY>\r\n</HTML>'

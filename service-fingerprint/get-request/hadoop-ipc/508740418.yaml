@@ -1,0 +1,19 @@
+id: hadoop-ipc
+info:
+  name: Hadoop IPC
+  author: nmap,cn-kali-team
+  tags: detect,tech,hadoop-ipc,service
+  severity: info
+  metadata:
+    info: IPC version $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: hadoop-ipc
+    type: regex
+    regex:
+    - ^\0\0\0\x7c{\x08\xff\xff\xff\xff\x0f\x10\x02\x18\t\"\)org\.apache\.hadoop\.ipc\.RPC\$VersionMismatch\*>Server IPC version (\d+) cannot communicate with client version \d+\x0e:\0@\x01

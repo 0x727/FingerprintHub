@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: Lutron RadioRA 2 home control system telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^login: password: bad login\r\nlogin: \0'

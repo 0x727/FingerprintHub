@@ -1,0 +1,19 @@
+id: desktop-central
+info:
+  name: ManageEngine Desktop Central DesktopCentralServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,desktop-central,service
+  severity: info
+  metadata:
+    device_type: remote management
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: desktop-central
+    type: regex
+    regex:
+    - ^\x10\0\0\0\t\xe7\xa0o\xde&\xdc\xfec\xbf\xb91\xef\xc3\?\xc9\x10\0\0\0\xd9\xe1\x14\xed\xb2\x7f\xccGc\xbf\xb91\xef\xc3\?\xc9\x08\0\xe4\xd0\xdfAl\xf7\x88y

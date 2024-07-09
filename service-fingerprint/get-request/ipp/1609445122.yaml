@@ -1,0 +1,21 @@
+id: ipp
+info:
+  name: Web-Server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipp,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: NRG copier or Ricoh Aficio printer http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipp
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nCache-Control: no-cache\r\nDate: .*\r\nPragma: no-cache\r\nContent-Type: text/html\r\nContent-Length: 91\r\nServer: Web-Server/([\d.]+)\r\n\r\n<HTML><HEAD><TITLE>404 Not Found</TITLE></HEAD>\n<BODY><H1>404 Not Found</H1></BODY></HTML>\0'

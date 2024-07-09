@@ -1,0 +1,21 @@
+id: http-proxy
+info:
+  name: Microsoft ISA Server http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: Portuguese
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 502 Proxy Error \( O URL n\xc3\xa3o usa um protocolo reconhecido\. N\xc3\xa3o h\xc3\xa1 suporte para o protocolo ou a solicita\xc3\xa7\xc3\xa3o n\xc3\xa3o foi digitada corretamente\. Confirme se um protocolo v\xc3\xa1lido est\xc3\xa1 em uso \(por exemplo, HTTP para uma solicita\xc3\xa7\xc3\xa3o da Web\)\.  \)\r\nVia: 1\.1 ([\w.-]+)\r\n'

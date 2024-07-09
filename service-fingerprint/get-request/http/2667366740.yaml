@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Check Point firewall SmartPortal
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    info: CPWS $1
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.[01] 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: CPWS/([^\s]+).*content=\"WEBUI LOGIN PAGE\" /><TITLE>Gaia</TITLE>.*var version=''([\d\w.]+)'';var formAction'

@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: Symantec Raptor firewall secure gateway telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^\r\nRaptor Firewall Secure Gateway\.\r\n

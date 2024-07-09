@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Intermec P4i label printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Look here\r\nLocation: /rom/default\.html\r\nContent-Length: 0\r\n\r\n$'

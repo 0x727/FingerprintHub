@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Jetty
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Openfire chat server http admin
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nExpires: Thu, 01 Jan 1970 00:00:00 GMT\r\nSet-Cookie: JSESSIONID=\w+;Path=/\r\nContent-Type: text/html\r\nLast-Modified: .*\r\nAccept-Ranges: bytes\r\nContent-Length: 115\r\n\r\n<html>\n<head><title></title>\n<meta http-equiv=\"refresh\" content=\"0;URL=index\.jsp\">\n</head>\n<body>\n</body>\n</html>\n\n'

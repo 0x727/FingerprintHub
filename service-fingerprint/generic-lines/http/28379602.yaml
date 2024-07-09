@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Seagull BarTender printer driver httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/plain\r\nCache-Control: no-cache\r\nConnection: \r\nDate: .* GMT\r\nServer: DT-UMESHKAL\r\nAccept-Ranges: None\r\nContent-Length: 4\r\n\r\n\r\n\r\n'

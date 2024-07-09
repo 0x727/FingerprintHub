@@ -1,0 +1,19 @@
+id: pc-duo
+info:
+  name: Vector PC-Duo
+  author: nmap,cn-kali-team
+  tags: detect,tech,pc-duo,service
+  severity: info
+  metadata:
+    info: 'Servername: $1'
+tcp:
+- name: pc-duo
+  inputs:
+  - data: \0\x80\x80\x08\xff\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pc-duo
+    type: regex
+    regex:
+    - (?i)^.........(.*)\0

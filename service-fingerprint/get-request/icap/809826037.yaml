@@ -1,0 +1,17 @@
+id: icap
+info:
+  name: Symantec DLP Web Prevent icapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,icap,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: icap
+    type: regex
+    regex:
+    - '^ICAP/1\.0 501 Method not implemented\r\nConnection: close\r\n\r\n$'

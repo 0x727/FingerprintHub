@@ -1,0 +1,17 @@
+id: wbem
+info:
+  name: OpenWBEM
+  author: nmap,cn-kali-team
+  tags: detect,tech,wbem,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: wbem
+    type: regex
+    regex:
+    - '^HTTP/1\.0 405 Method not allowed: Method not allowed by server: GET\r\nDate: .*\r\nCache-Control: no-cache\r\nServer: / \(CIMOM\)\r\nContent-Length: 0\r\n\r\n'

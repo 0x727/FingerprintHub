@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: MiniUPnP
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: Linux $1; UPnP $3
+    operating_system: Linux
+    version: $4
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^ 501 Not Implemented\r\n(?:[^\r\n]+\r\n)*?Server: Linux/(([234]\.[\d.]+)[\w._-]+) UPnP/([\w._-]+) [Mm]ini[Uu][Pp]n[Pp]d/([\w._-]+)\r\n'

@@ -1,0 +1,17 @@
+id: syncplay-json
+info:
+  name: Syncplay JSON server
+  author: nmap,cn-kali-team
+  tags: detect,tech,syncplay-json,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: syncplay-json
+    type: regex
+    regex:
+    - '^\{"Error": \{"message": "Not a json encoded string GET / HTTP/1\.0"\}\}\r\n'

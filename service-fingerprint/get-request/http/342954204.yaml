@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Aastra BusinessPhone Management Suite
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: text/html\r\nLast-Modified: .*\r\nContent-Length: \d+\r\n\r\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3\.2//EN">\r\n<HTML>\r\n\r\n<HEAD>\r\n\t<link rel="SHORTCUT ICON" href="/ras\.ico">\r\n\r\n<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">\r\n<SCRIPT language="JavaScript">\r\nvar MainWindow = null;\r\n\r\nfunction StartWindow\(\)\r\n\{\t\t\t\t\t\t\t\t \r\nvar width \t= window\.screen\.availWidth-10;\r\nvar height\t= window\.screen\.availHeight-80;\r\nif \(\(MainWindow ==null\) \x7c\x7c \(MainWindow\.closed==true\)\)\r\nMainWindow = window\.open\("/servlet/smt", "AASTRA"'

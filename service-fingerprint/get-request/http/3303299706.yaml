@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Metasploit multi/browser/mozilla_compareto exploit
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nServer: Apache\r\nContent-Type: text/html\r\nContent-Length: 3587\r\nConnection: close\r\n\r\n\n<html>\n<head>\n<!-- \n     Copyright \(C\) 2005-2006 Aviv Raff \(with minor modifications by HDM for the MSF module\)\n     From: http://aviv\.raffon\.net/2005/12/11/MozillaUnderestimateVulnerabilityYetAgainPlusOldVulnerabilityNewExploit\.aspx\n     Greets: SkyLined, The Insider and shutdown \n-->'

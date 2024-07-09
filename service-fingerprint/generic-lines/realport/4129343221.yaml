@@ -1,0 +1,19 @@
+id: realport
+info:
+  name: Digi RealPort
+  author: nmap,cn-kali-team
+  tags: detect,tech,realport,service
+  severity: info
+  metadata:
+    device_type: terminal server
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: realport
+    type: regex
+    regex:
+    - ^\xf0\xff\x14Port is out of range\0

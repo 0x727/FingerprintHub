@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Canon LBP-2000 printer httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nPragma: no-cache\r\nExpires: .*\r\nContent-Type: text/html\r\n\r\n\n<html>\n\n  <head>\n    <meta http-equiv=\"content-type\" content=\"text/html;charset=iso-8859-1\">\n    \n    <title>Remote UI &lt;Top Page&gt; :  ; [\d ]+</title>\n'

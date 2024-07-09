@@ -1,0 +1,17 @@
+id: http
+info:
+  name: HP System Management httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2\.0//EN\">\n<html><head>\n<title>302 Found</title>\n</head><body>\n<h1>Found</h1>\n<p>The document has moved <a href=\"/red2301\.html\?RedirectUrl=/\">here</a>\.</p>\n<p>Additionally, a 302 Found\nerror was encountered while trying to use an ErrorDocument to handle the request\.</p>\n</body></html>\n$

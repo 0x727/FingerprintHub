@@ -1,0 +1,19 @@
+id: http
+info:
+  name: ConfigServer Security & Firewall httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 403 OK\r\nContent-type: text/html\r\n\r\n<!doctype html>\r\n<html lang="en">\r\n<head>\r\n\t<title>Unauthorized Access</title>\r\n\t<meta charset="UTF-8">(?:\r\n\t<script src=''https://www\.google\.com/recaptcha/api\.js''></script>)?\r\n</head>\r\n<body>\r\n\t<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAA8CAYAAACEhkNqAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz\r\nAAALEgAACxIB0t1\+/AAAAB90RVh0U29mdHdhcmUATWFjcm9tZWRpYSBGaXJld29ya3MgOLVo0ngA'

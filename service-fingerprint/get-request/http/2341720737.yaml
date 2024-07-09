@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Spotify json
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 \r\nContent-Type: application/json\r\nContent-Length: 72\r\n\r\n\{"status": 102, "statusString": "ERROR-BAD-REQUEST", "spotifyError": 0\}\n'

@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: Oops! http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 400 Bad Request\r\nCache-Control: no-cache\r\nPragma: no-cache\r\n.*<br>Protocol:http\n<br>Host: [N]ULL\n<br>Path:/\n<tr>'

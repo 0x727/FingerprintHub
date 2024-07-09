@@ -1,0 +1,19 @@
+id: http
+info:
+  name: D-Link DHP-540 VoIP Phone http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 \d\d\d(?:[^\r\n]+\r\n)*?\r\n<html>\n<script language=JavaScript>\nfunction show\(\)\n{\n\tform1\.submit\(\);\n}\n</script>\n<body onload=\"show\(\);\">\n<form name=form1 action=\"/cgi-bin/webconfig\?page=first&action=check\">\n</form>\n</body>\n</html>\n

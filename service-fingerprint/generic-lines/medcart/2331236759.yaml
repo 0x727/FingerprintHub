@@ -1,0 +1,19 @@
+id: medcart
+info:
+  name: Howard Medical Med Display
+  author: nmap,cn-kali-team
+  tags: detect,tech,medcart,service
+  severity: info
+  metadata:
+    version: 1.5.4.298
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: medcart
+    type: regex
+    regex:
+    - ^PAR1\.750800000002B123456\?;\?\?;\?\?;\?\?;\?\?;\?08AC

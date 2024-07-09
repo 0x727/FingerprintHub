@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Sonos Play:5 streaming media server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 403 Forbidden\r\nCache-Control: no-cache\r\nContent-type: text/html\r\nConnection: close\r\n\r\n<HTML><HEAD><TITLE>Error 403</TITLE></HEAD><BODY><H1>Error 403</H1><P>Forbidden</P></BODY></HTML>$'

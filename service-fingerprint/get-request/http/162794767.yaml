@@ -1,0 +1,20 @@
+id: http
+info:
+  name: True North Soft WebMail httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Windows
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nServer: WebMail/([\d.]+)\r\nDate: .*\r\nContent-type: text/html\r\n\r\n<!-- top\.txt -->\r\n\r\n<HTML>\r\n<HEAD>\r\n<TITLE>WebMail Server</TITLE>\r\n'

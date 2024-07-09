@@ -1,0 +1,17 @@
+id: msn
+info:
+  name: amsn
+  author: nmap,cn-kali-team
+  tags: detect,tech,msn,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: msn
+    type: regex
+    regex:
+    - '^{?Syntax Error : GET / HTTP/1\.0}? error\r\n$'

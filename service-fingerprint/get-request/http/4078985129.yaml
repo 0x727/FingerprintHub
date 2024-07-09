@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Intermac scanner http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 301 File moved Permanently\nLocation: /cgi-bin/menu/TCP/IP Settings/\r\nDate: Mon, 23 Sep 1996 16:00:00 GMT\r\nExpires: Thu, 01 Dec 1994 16:00:00 GMT\r\nPragma: no-cache\r\nSet-Cookie: Login=DELETED; path=/;\r\n\r\n'

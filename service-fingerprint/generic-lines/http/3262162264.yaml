@@ -1,0 +1,20 @@
+id: http
+info:
+  name: ZebraNet print server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: print server
+    info: MpSconServer $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nServer: MpSconServer/([\d.]+)\r\n'

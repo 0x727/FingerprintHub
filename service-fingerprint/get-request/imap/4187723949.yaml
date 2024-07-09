@@ -1,0 +1,17 @@
+id: imap
+info:
+  name: GNU Mailutils imapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,imap,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: imap
+    type: regex
+    regex:
+    - ^\* OK IMAP4rev1\r\nGET BAD  Invalid command\r\n\* BAD  Null command\r\n$

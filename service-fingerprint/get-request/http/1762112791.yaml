@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Kerio MailServer Webmail
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $1
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 302 Found\r\nConnection: Close\r\nContent-Length: 0\r\n(?:[^\r\n]+\r\n)*?Location: https?:///([\w._-]+)/login\.php\r\nServer: Kerio MailServer ([^\r\n]+)\r\n\r\n$'

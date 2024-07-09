@@ -1,0 +1,19 @@
+id: uucp
+info:
+  name: AIX uucpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,uucp,service
+  severity: info
+  metadata:
+    operating_system: AIX
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: uucp
+    type: regex
+    regex:
+    - '^login: uucpd: \d+-\d+ The user is not known\.\n'

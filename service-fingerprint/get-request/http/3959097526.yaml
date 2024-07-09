@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Sockso music server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 Ok\r\nContent-type: text/html; charset=\"UTF-8\"\r\nConnection: close\r\nAccept-Ranges: none\r\nServer: Sockso\r\nCache-Control: private\r\n'

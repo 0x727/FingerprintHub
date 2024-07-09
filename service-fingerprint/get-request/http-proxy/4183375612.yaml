@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: Privoxy http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.[01] 400 Invalid header received from client\r\nProxy-Agent: Privoxy ([\w._-]+)\r\n'

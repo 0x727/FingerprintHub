@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Synchronet BBS httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: BBS name $2
+    operating_system: Windows
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nDate: .*\r\nConnection: Close\r\nServer: Synchronet BBS for Win32  Version ([-\w_.]+)\r\n.*<h1 id=\"siteName\">([^<]+)</h1>'

@@ -1,0 +1,20 @@
+id: http-proxy
+info:
+  name: Etisalat censorship http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: site blocked
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 403 Forbidden\r\n.*<title>This site is blocked</title>.*<img border=\"0\" src=\"http://([\w._-]+)/images-ip/siteblocked\.jpg\" useMap=#links border=0>.*<area title=\"\" shape=RECT alt=\"\" coords=\"154, 449, 254, 463\" href=\"http://www\.etisalat\.ae/proxy\">

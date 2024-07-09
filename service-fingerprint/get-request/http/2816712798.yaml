@@ -1,0 +1,22 @@
+id: http
+info:
+  name: SnapStream Web Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    hostname: $2
+    info: Beyond TV http config; redirect to port $3
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nServer: SnapStream Web Server/([\d.]+)\r\n.*<title>\r\nBeyond TV - Web Admin Redirector\r\n</title>\r\n<meta HTTP-EQUIV=\"REFRESH\" CONTENT=\"2; URL=http://([\w_.-]+):(\d+)\">\r\n'

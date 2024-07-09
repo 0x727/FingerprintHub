@@ -1,0 +1,17 @@
+id: air-hid
+info:
+  name: AirHID Andrioid remote mouse server
+  author: nmap,cn-kali-team
+  tags: detect,tech,air-hid,service
+  severity: info
+tcp:
+- name: air-hid
+  inputs:
+  - data: from:airhid
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: air-hid
+    type: regex
+    regex:
+    - (?i)^andReceiver-\d+\.\d+\.\d+$

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Oce Print Exec Workgroup
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^\0\x18HTTP/1\.0 404 Not Found\r\n\0\x18Cache-Control:no-cache\r\n\0\x18Content-Type:text/html\r\n\0\x12Connection:close\r\n\0\x14Content-Length:108\r\n\0\x04\r\n\r\n<html>\n<head>\n<title>Error: 404</title>\n<body>\nGot the error: <b>Not Found</b><br><br>\nError\n</body>\n</html>'

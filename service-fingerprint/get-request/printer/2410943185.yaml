@@ -1,0 +1,19 @@
+id: printer
+info:
+  name: Lexmark lpd service
+  author: nmap,cn-kali-team
+  tags: detect,tech,printer,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: printer
+    type: regex
+    regex:
+    - (?i)^An lpd test connection was completed successfully\r\n

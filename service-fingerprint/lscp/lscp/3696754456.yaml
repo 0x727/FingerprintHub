@@ -1,0 +1,20 @@
+id: lscp
+info:
+  name: LinuxSampler
+  author: nmap,cn-kali-team
+  tags: detect,tech,lscp,service
+  severity: info
+  metadata:
+    info: LSCP $2
+    version: $1
+tcp:
+- name: lscp
+  inputs:
+  - data: GET SERVER INFO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: lscp
+    type: regex
+    regex:
+    - '^DESCRIPTION: LinuxSampler - modular, streaming capable sampler\r\nVERSION: ([\d.]+)\r\nPROTOCOL_VERSION: ([\d.]+)\r\n'

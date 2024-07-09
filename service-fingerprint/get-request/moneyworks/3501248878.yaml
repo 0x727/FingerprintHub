@@ -1,0 +1,19 @@
+id: moneyworks
+info:
+  name: MoneyWorks accounting software
+  author: nmap,cn-kali-team
+  tags: detect,tech,moneyworks,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: moneyworks
+    type: regex
+    regex:
+    - ^This is MoneyWorks; Server is on Windows\n$

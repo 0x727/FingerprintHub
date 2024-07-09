@@ -1,0 +1,19 @@
+id: sassafras
+info:
+  name: Sassafras Key Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,sassafras,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sassafras
+    type: regex
+    regex:
+    - ^/0 0 ([-\w_.]+)\r\n/0 0 HUH\r\n

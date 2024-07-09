@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Cisco ODN set-top box httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: 'time zone: $1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nDate: [^\r\n]+ ([A-Z]+) \d\d\d\d\r\nServer: User Agent Web Server\r\n.*<title>STB WebServer</title>'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Microsoft Windows Media Services
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Windows
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: video/x-ms-asf\r\nCache-Control: max-age=0, no-cache\r\nServer: Cougar/(\d[-.\w]+)\r\n'

@@ -1,0 +1,17 @@
+id: bzr
+info:
+  name: Bazaar VCS bzr serve
+  author: nmap,cn-kali-team
+  tags: detect,tech,bzr,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bzr
+    type: regex
+    regex:
+    - '^error\x01Generic bzr smart protocol error: bad request ''\\r''\n$'

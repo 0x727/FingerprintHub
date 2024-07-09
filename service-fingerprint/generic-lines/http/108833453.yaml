@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Panasonic webcam http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.0 -1 Internal Server Error\r\n\r\n

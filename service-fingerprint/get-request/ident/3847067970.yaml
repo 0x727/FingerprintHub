@@ -1,0 +1,19 @@
+id: ident
+info:
+  name: Nullidentd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+  metadata:
+    info: 'Claimed user: $1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^GET / HTTP/1\.0 : USERID : UNIX : ([-.\w]+)\r\n : USERID : UNIX : [-.\w]+\r\n'

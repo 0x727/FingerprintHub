@@ -1,0 +1,17 @@
+id: arcserve-gdd
+info:
+  name: Arcserve Unified Data Protection Global Deduplication DataStore
+  author: nmap,cn-kali-team
+  tags: detect,tech,arcserve-gdd,service
+  severity: info
+tcp:
+- name: terminal-server
+  inputs:
+  - data: \x03\0\0\x0b\x06\xe0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: arcserve-gdd
+    type: regex
+    regex:
+    - (?i)^\0\0\x0b\x06\xe0\0\0\0\0\0\0\0\0\0\0\0......\0\0\xa0\xf9\x7f\xee\xfb\x7f\0\0

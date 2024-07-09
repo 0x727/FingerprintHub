@@ -1,0 +1,19 @@
+id: mobilemouse
+info:
+  name: Mobile Air Mouse server
+  author: nmap,cn-kali-team
+  tags: detect,tech,mobilemouse,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mobilemouse
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK \r\nServer: Mobile Air Mouse Server\r\n.*>The Mobile Air Mouse server running on \"([\w._-]+)\"'

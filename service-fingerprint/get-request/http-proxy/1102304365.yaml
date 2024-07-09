@@ -1,0 +1,20 @@
+id: http-proxy
+info:
+  name: Apache Traffic Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    device_type: proxy server
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nServer: Traffic Manager ([\w._-]+)\r\nDate: .*\r\nCache-Control: no-store\r\nPragma: no-cache\r\nContent-type: application/x-ns-proxy-autoconfig\r\n'

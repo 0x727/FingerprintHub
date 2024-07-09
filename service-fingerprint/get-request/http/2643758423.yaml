@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Clearswift Secure Web Gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d .*\nDate: .*\r\nConnection: close\r\nServer: Clearswift\r\n\r\n'

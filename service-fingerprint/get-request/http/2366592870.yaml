@@ -1,0 +1,20 @@
+id: http
+info:
+  name: HP $1 printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: Serial $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 [45]\d\d .*\r\nServer: HP HTTP Server; (?:HP )+([^-]+) (?:series |MFP )?- \w+; Serial Number: (\w+);'

@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: CCProxy http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^<pre>\r\nIP Address: [\d.]+\r\nMAC Address: \r\nServer Time: .*\r\nAuth result: Invalid user\.\r\n</pre>'

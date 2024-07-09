@@ -1,0 +1,17 @@
+id: irc-proxy
+info:
+  name: muh irc proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,irc-proxy,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: irc-proxy
+    type: regex
+    regex:
+    - ^\+OK \r\n-ERR XXX authorization first\r\n$

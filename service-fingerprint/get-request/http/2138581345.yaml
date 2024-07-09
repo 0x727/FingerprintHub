@@ -1,0 +1,20 @@
+id: http
+info:
+  name: GoAhead WebServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    info: Allen-Bradley ControlLogix 1769-L35E automation controller http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Redirect\r\nServer: GoAhead-Webs\r\nDate: .*\r\nConnection: Close\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\nLocation: http://\xee{64}/index\.html\r\n\r\n<html><head></head><body>\r\n\t\tThis document has moved to a new'

@@ -1,0 +1,17 @@
+id: solfe
+info:
+  name: HP PNM Solid FlowEngine
+  author: nmap,cn-kali-team
+  tags: detect,tech,solfe,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: solfe
+    type: regex
+    regex:
+    - ^\x02\0\x01\xfb\xff\xfb\xff\xff\xff\xff\xffNOSUP

@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: SafeSquid http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nContent-Type: text/html\r\nContent-Length: \d+\r\nCache-Control: no-cache\r\nConnection: close\r\nProxy-Connection: close\r\n\r\n<style type=\"text/css\">\nbody{ font-family: Tahoma, Arial, sans-serif, Helvetica, Verdana; font-size: 11px; color: #000000; background-color: #FFFFFF; margin: 2 }\n'

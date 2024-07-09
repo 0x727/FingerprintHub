@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Advanced Network Devices IP Speaker web interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: 'MAC: $1:$2:$3:$4:$5:$6'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nServer: IP Speaker Web interface\r\nContent-type: text/html\r\nContent-length: \d+\r\nConnection: close\r\n\r\n.*<title>IP Speaker ([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})([a-f\d]{2}) at '

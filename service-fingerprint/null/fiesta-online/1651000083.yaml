@@ -1,0 +1,17 @@
+id: fiesta-online
+info:
+  name: Fiesta Online game server
+  author: nmap,cn-kali-team
+  tags: detect,tech,fiesta-online,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: fiesta-online
+    type: regex
+    regex:
+    - ^\x04\x07\x08..$

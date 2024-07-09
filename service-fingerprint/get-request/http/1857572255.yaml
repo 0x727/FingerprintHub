@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Allegro RomPager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: NetIron XMR 4000 router http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Expires: Thu, 26 Oct 1995 00:00:00 GMT\r\n(?:[^\r\n]+\r\n)*?Server: Allegro-Software-RomPager/([\w._-]+)\r\n.*<PRE>\*{60}<BR>\* WARNING ALERT: AUTHORIZED USERS ONLY! +\*<BR>\* +\*<BR>\* All activities conducted on this system may be monitored \*<BR>'

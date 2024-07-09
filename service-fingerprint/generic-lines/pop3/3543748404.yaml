@@ -1,0 +1,21 @@
+id: pop3
+info:
+  name: IBM Notes pop3d
+  author: nmap,cn-kali-team
+  tags: detect,tech,pop3,service
+  severity: info
+  metadata:
+    hostname: $2
+    info: 'domain: $3'
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pop3
+    type: regex
+    regex:
+    - ^\+OK IBM Notes POP3 server version Release ([\d.]+) ready on ([^/]+)/(.+)\.\r\n

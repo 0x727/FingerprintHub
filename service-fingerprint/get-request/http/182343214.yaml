@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Pandora FMS
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'timezone: $1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request \(missing Host: header\)\r\nConnection: close\r\nDate: .* ([-+]\d\d\d\d)\r\nTransfer-Encoding: chunked\r\n\r\n0\r\n\r\n'

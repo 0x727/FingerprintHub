@@ -1,0 +1,19 @@
+id: pop3
+info:
+  name: MailGate pop3d
+  author: nmap,cn-kali-team
+  tags: detect,tech,pop3,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pop3
+    type: regex
+    regex:
+    - ^\+OK pop server ready\r\n$

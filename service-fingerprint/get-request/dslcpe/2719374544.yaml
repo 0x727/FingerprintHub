@@ -1,0 +1,19 @@
+id: dslcpe
+info:
+  name: dsl_cpe_control
+  author: nmap,cn-kali-team
+  tags: detect,tech,dslcpe,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: dslcpe
+    type: regex
+    regex:
+    - '^GET: command not found\n\r   acog,          AutobootConfigOptionGet\n\r'

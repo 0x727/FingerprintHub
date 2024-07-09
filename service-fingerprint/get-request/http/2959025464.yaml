@@ -1,0 +1,19 @@
+id: http
+info:
+  name: McAfee virus scanner http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\ncontent-length : 90\r\ncontent-type : text/html\r\n\r\n<html>\n<pre><html><h2>404 Not Found</h2>The server could not locate the resource you requested</html>\0</pre>\n</html>$'

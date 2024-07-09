@@ -1,0 +1,17 @@
+id: http
+info:
+  name: FirstClass Internet Access Server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Last-Modified: Mon, 13 Mar 2006 11:22:33 \+1300\r\n.*<title>Welcome</title>.*<script language=\"JavaScript\" type=\"text/JavaScript\">\r<!--\rfunction MM_preloadImages\(\) { //v3\.0\r'

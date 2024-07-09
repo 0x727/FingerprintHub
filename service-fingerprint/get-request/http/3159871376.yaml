@@ -1,0 +1,21 @@
+id: http
+info:
+  name: BaseHTTPServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $3
+    info: 'NGAS $1 http interface; date: $2'
+    version: '0.3'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 400 Bad Request\r\nServer: NGAMS/v([\w._-]+)/(\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d)\r\n.*<!DOCTYPE NgamsStatus SYSTEM \"http://([\w._-]+):\d+/RETRIEVE\?internal=ngamsStatus\.dtd\">\n'

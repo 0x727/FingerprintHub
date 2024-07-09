@@ -1,0 +1,17 @@
+id: lcdproc
+info:
+  name: LCDProc screen interface daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,lcdproc,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: lcdproc
+    type: regex
+    regex:
+    - ^huh\? Invalid command \"GET\"\n

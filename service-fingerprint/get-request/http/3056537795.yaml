@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Delta Networks Embedded HTTPD $2
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Netgear $1 router http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nWWW-Authenticate: Basic realm=\"((?:RP|WGU)\w+)\"\r\nServer: Embedded HTTPD v([\w._-]+), '

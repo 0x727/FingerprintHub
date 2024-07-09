@@ -1,0 +1,19 @@
+id: automate
+info:
+  name: AutoMate Task Service
+  author: nmap,cn-kali-team
+  tags: detect,tech,automate,service
+  severity: info
+  metadata:
+    version: '9'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: automate
+    type: regex
+    regex:
+    - ^\x031[\w+/]{54}nXAvc01KqG\x03\r\n$

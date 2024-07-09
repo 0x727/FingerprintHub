@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Microsoft Xbox 360 upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: UPnP $2; Xbox Dashboard 2.0.$3.0
+    operating_system: Xbox 360
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?SERVER: XboxUpnp/([\w._-]+) UPnP/([\w._-]+) Xbox/2\.0\.(\d+)\.0\r\n'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: DrayTek Vigor 3300 router http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\r\nServer: http\r\n(?:[^\r\n]+\r\n)*?Connection: close\r\nWWW-Authenticate: Basic realm=\"Login to Vigor 3300\"\r\n\r\n'

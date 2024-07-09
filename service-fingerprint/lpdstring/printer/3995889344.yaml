@@ -1,0 +1,19 @@
+id: printer
+info:
+  name: Microsoft lpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,printer,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: lpdstring
+  inputs:
+  - data: \x01default\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: printer
+    type: regex
+    regex:
+    - ^\x01\x01$

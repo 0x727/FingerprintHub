@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: vsftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    version: 2.0.8 or later
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - (?i)^(?:220-.*\r\n)?220 .*\r\n530 Please login with USER and PASS\.\r\n

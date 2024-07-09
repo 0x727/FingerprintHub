@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Stalker Mail Server web config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $2
+    operating_system: Mac OS
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Length: \d+\r\nContent-Type: text/html\r\nServer: SIMS/([\w.]+)\r\n\r\n<HTML>\r<HEAD>\r  <TITLE>Stalker Internet Mail Server: Setup Entrance</TITLE>\r</HEAD>\r<BODY BGCOLOR=white>\r\r<H2><TABLE WIDTH=\"100%\" BORDER=0 CELLSPACING=0 CELLPADDING=0>\r<TR>\r<TD><H3><IMG SRC=\"/Icon\.gif\" ALIGN=MIDDLE>([-\w_.]+)</H3>'

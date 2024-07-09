@@ -1,0 +1,19 @@
+id: webdav
+info:
+  name: cPanel webdav
+  author: nmap,cn-kali-team
+  tags: detect,tech,webdav,service
+  severity: info
+  metadata:
+    operating_system: Linux
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: webdav
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: cPanel\r\nPersistent-Auth: false\r\nCache-Control: no-cache[^\r\n]*\r\nConnection: Keep-Alive\r\nVary: Accept-Encoding\r\nAllow: [A-Z, ]+\r\nContent-Length: 0\r\nContent-Type: text/plain\r\nExpires: Fri, 01 Jan 1990 00:00:00 GMT\r\nDAV: 1, 2\r\nKeep-Alive: timeout=15, max=96\r\nMS-Author-Via: DAV\r\n\r\n'

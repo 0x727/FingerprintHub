@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Gate One http terminal emulator
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'apps: $1'
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: GateOne\r\nX-Ua-Compatible: IE=edge\r\nAllow: HEAD,GET,POST,OPTIONS\r\nDate: .*\r\nAccess-Control-Allow-Origin: \*\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n{\"applications\": \[([^]]+)\]'

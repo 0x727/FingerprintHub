@@ -1,0 +1,17 @@
+id: printer
+info:
+  name: BusyBox lpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,printer,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: printer
+    type: regex
+    regex:
+    - ^Command 48 is not supported\n

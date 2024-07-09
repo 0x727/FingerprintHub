@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Orange Livebox config httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: 'language: $1; model: Sagem $2'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nCache-Control: must-revalidate\r\n(?:Set-Cookie: [a-f0-9]{8}/accept-language=; path=/\r\n)?ETAG: [a-f0-9]{8}\r\n(?:Cache-Control: must-revalidate\r\n)?Content-Type: text/html; charset=utf-8\r\nContent-Length: \d+\r\n\r\n\n\n\n\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1\.0 Transitional//EN"\n        "http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd">\n<html xmlns="http://www\.w3\.org/1999/xhtml" dir="ltr" lang="en">\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>\n<meta name="viewport" content="width=1085"/>\n<meta http-equiv="X-UA-Compatible" content="IE=edge"/>\n<title>[^<]*</title>\n<script type="text/javascript">\n\tappUrl = '''';\n\tappConfig = ''(\w\w)'';\n\tappUid = (?:''[a-f0-9]*''|getEtag\(\));\n\tconfig = \{\n\t\tBUILD_CUSTOMER: ''[^'']+'',\n\t\tBUILD_PROJECT: ''[^'']+'',\n\t\tBUILD_HARDWARE: ''sagem_([\w_]+)'','

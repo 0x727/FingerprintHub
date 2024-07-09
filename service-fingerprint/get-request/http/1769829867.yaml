@@ -1,0 +1,17 @@
+id: http
+info:
+  name: NetWare FTP stats httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.0 200 OK\r\nContent-Type:text/html\r\nContent-Length:\d+\r\n\n\n<HTML>\n<HEAD>\n<TITLE>Not Supported</TITLE>\n</HEAD>\n<body>\n\n<H1 ALIGN=CENTER>The Command sent is not Supported</H1>\n\n\n</BODY>\n</HTML>\n\n\0\0

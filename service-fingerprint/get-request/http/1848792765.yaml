@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Thunder Xware
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Length: 23\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: close\r\n\r\n\{"rtn":108545,"msg":""\}'

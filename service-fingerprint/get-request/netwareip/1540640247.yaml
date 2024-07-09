@@ -1,0 +1,19 @@
+id: netwareip
+info:
+  name: Novell NetWare/IP
+  author: nmap,cn-kali-team
+  tags: detect,tech,netwareip,service
+  severity: info
+  metadata:
+    operating_system: NetWare
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: netwareip
+    type: regex
+    regex:
+    - ^\xfb\xff\xfe\xff\xfb\xff\xfe\xff\xfb\xff\xfe\xff$

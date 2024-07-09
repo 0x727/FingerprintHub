@@ -1,0 +1,17 @@
+id: niprint
+info:
+  name: Network Instruments NIPrint network analyzer
+  author: nmap,cn-kali-team
+  tags: detect,tech,niprint,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: niprint
+    type: regex
+    regex:
+    - '^NIPrint received command: ET / HTTP/1\.0\r\.\r\nThis command is not in LPD specification, ignored\r\nNIPrint received command: \.\r\nThis command is not in LPD specification, ignored\r\n'

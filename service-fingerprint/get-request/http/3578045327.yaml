@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Syncthing WebUI
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nContent-Type: text/plain; charset=utf-8\r\nWww-Authenticate: Basic realm="Authorization Required"\r\nX-Content-Type-Options: nosniff\r\nDate: .* GMT\r\nContent-Length: 15\r\n\r\nNot Authorized\n$'

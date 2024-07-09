@@ -1,0 +1,20 @@
+id: sip
+info:
+  name: AVM FRITZ!Box WLAN $1
+  author: nmap,cn-kali-team
+  tags: detect,tech,sip,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sip
+    type: regex
+    regex:
+    - '^SIP/2\.0 400 Illegal request line\r\nFrom: <sip:missing>\r\nTo: <sip:missing>;tag=badrequest\r\nUser-Agent: AVM FRITZ!Box Fon WLAN ([\d.]+) ([^\r\n]+)\r\n'

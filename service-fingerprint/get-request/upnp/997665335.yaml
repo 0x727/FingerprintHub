@@ -1,0 +1,22 @@
+id: upnp
+info:
+  name: Philips Intel UPnP SDK
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Philips Smart TV; UPnP $2
+    operating_system: Linux $1
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.[01] \d\d\d .*\r\nSERVER: Linux([\d.]+)/0\.0 UPnP/([\w._+-]+) PhilipsIntelSDK/([\w._-]+) \r\n'

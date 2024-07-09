@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: ProFTPD
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    info: requires SSL
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - (?i)^220[ -].*\r\n550 SSL/TLS required on the control channel\r\n

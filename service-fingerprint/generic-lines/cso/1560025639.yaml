@@ -1,0 +1,19 @@
+id: cso
+info:
+  name: Columbia University QIL Gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,cso,service
+  severity: info
+  metadata:
+    info: Qi to LDAP
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: cso
+    type: regex
+    regex:
+    - ^598:\(null\):Command not recognized\.\n

@@ -1,0 +1,20 @@
+id: haproxy-stats
+info:
+  name: HAProxy stats socket
+  author: nmap,cn-kali-team
+  tags: detect,tech,haproxy-stats,service
+  severity: info
+  metadata:
+    info: 'uptime: $2'
+    version: $1
+tcp:
+- name: tarantool
+  inputs:
+  - data: show info\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: haproxy-stats
+    type: regex
+    regex:
+    - '(?i)^Name: HAProxy\nVersion: (\d[\w._~+-]*)\n.*\nUptime: (.+)\n'

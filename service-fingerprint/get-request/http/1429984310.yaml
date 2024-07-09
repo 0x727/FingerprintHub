@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Speakerbus iD101 VoIP phone http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nCache-control: no-cache\r\nContent-length: \d+\r\nContent-type: text/html\r\n\r\n<html>\n\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\">\n<title> Password Required</title>\n<link rel=\"shortcut icon\" href=\"favicon\.ico\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"ic\.css\">\n<script src=\"product\.js\"></script>\n<script src=\"script\.js\"></script>\n<script src=\"md5\.js\"></script>\n'

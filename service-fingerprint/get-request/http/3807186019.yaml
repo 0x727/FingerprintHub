@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Cyberoam SSL VPN
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: .*\r\n(?:X-Frame-Options: SAMEORIGIN\r\n)?Content-Type: text/html; charset=UTF-8\r\nExpires: Thu, 01 Jan 1970 00:00:00 GMT\r\nContent-Length: \d+\r\nSet-Cookie: JSESSIONID=[^;]*;Path=.*\r\nConnection: close\r\n\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n<html>\n<head>\n\n<link href="/graycss/common_min\.css" rel="stylesheet" type="text/css">\n\n\t<title>Cyberoam SSL VPN Portal</title>'

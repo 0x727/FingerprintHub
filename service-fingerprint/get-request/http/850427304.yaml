@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Mbedthis-Appweb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: Ruckus WAP http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Moved Temporarily\r\nDate: .*\r\nServer: Mbedthis-Appweb/([\w._-]+)\r\nCache-Control: no-cache\r\nETag: \"1b8056-34-531868\"\r\nContent-length: 0\r\nConnection: close\r\nLocation: https://https/admin/login\.jsp\r\n\r\n$'

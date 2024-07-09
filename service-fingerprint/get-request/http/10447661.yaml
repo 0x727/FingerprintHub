@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Embedthis httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: remote management
+    hostname: $1
+    info: Dell iDRAC 7
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Moved Temporarily\r\nX_Language: .*\r\nContent-Type: text/html\r\nServer: Embedthis-http\r\nLocation: https://([^/]+)/start\.html\n\r\n'

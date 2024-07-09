@@ -1,0 +1,17 @@
+id: http
+info:
+  name: MediaCoder media converter http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nServer: MiniWeb\r\nConnection: Keep-Alive\r\nContent-length: 125\r\nContent-Type: text/html\r\n\r\n<html><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL has no content\.</p></body></html>$'

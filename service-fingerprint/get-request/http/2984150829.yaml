@@ -1,0 +1,20 @@
+id: http
+info:
+  name: 4D WebStar $1
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Mac OS
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.[01] \d\d\d .*\r\nServer: 4D_WebStar_(\w+)/([\d.]+)\r\n'

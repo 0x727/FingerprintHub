@@ -1,0 +1,17 @@
+id: listserv
+info:
+  name: LISTSERV Administration service
+  author: nmap,cn-kali-team
+  tags: detect,tech,listserv,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: listserv
+    type: regex
+    regex:
+    - ^The file name you specified is invalid\. LISTSERV files have names like\r\n\"BOARD\.MINUTES\" or \"XYZ-L LOG9303\" \(without the quotes\)\.\r\n

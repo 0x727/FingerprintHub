@@ -1,0 +1,20 @@
+id: cassandra-native
+info:
+  name: Apache Cassandra
+  author: nmap,cn-kali-team
+  tags: detect,tech,cassandra-native,service
+  severity: info
+  metadata:
+    info: native protocol version $1-$2
+    version: 3.0.0 - 3.9
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: cassandra-native
+    type: regex
+    regex:
+    - ^.\0\0\0\0\0\0\0.\0\0\0\n\0[eE]Invalid or unsupported protocol version \(13\); the lowest supported version is (\d+) and the greatest is (\d+)

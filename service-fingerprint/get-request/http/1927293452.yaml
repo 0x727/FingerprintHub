@@ -1,0 +1,20 @@
+id: http
+info:
+  name: ControlByWeb httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    info: 'Temperature (F): indoor $1 (set to $2), outdoor $3'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-type: text/html\r\nConnection: close\r\n\r\n.*<title>Hollis</title>.*<td id=b>Indoor</td><td id=c bgcolor=green>([\d.]+)</td><td id=b>&deg;F</td></tr><tr><td id=b>Indoor Set Temp\.</td><td id=c><input type=text name=setTemp size=10 maxlength=10 value=([\d.]+)></td><td id=b>&deg;F&nbsp;<input type=submit name=7 value=\"Apply\"></td></tr><tr><td id=b>Outdoor temp</td><td id=c bgcolor=green>([\d.]+)</td><td id=b>&deg;F</td></tr></table></form></body></html>$'

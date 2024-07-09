@@ -1,0 +1,20 @@
+id: http
+info:
+  name: MicroDigital MDR-4600 DVR httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Resolution $1x$2; CmdPort $3; StreamPort $4
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\nContent-type: text/html\r\n.*<title>DVR WebViewer</title>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=euc-kr\">\r\n.*<OBJECT\r\n\t  classid=\"clsid:EE479A40-C128-40DD-93DA-000556AF9607\"\r\n\t  codebase=\"CtrWeb\.cab#version=1,1,1,1\"\r\n\t  width=(\d+)\r\n\t  height=(\d+)\r\n\t  align=center\r\n\t  hspace=0\r\n\t  vspace=0\r\n>\r\n<param name=\"CmdPort\" value=\"(\d+)\">\r\n<param name=\"StreamPort\" value=\"(\d+)\">'

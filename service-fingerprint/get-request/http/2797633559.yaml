@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Oracle GlassFish
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Servlet $1; JSP $2; Java $4
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?X-Powered-By: Servlet/([\w._-]+) JSP/([\w._-]+) \(Oracle GlassFish Server ([\w._-]+) Java/Sun Microsystems Inc\./([\w._-]+)\)\r\n'

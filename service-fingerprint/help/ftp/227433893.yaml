@@ -1,0 +1,17 @@
+id: ftp
+info:
+  name: Pure-FTPd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - (?i)^214-The following SITE commands are recognized\r\n.*214 Pure-FTPd - http://pureftpd\.org/\r\n

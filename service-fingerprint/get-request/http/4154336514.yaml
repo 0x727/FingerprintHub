@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Lotus Domino httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Proxied by Oracle9iAS $1 Web Cache $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: Oracle9iAS/(\d[-.\w]+)  Lotus-Domino Oracle9iAS-Web-Cache/(\d[-.\w]+) '

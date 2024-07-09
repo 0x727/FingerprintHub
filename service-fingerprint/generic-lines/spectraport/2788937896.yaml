@@ -1,0 +1,19 @@
+id: spectraport
+info:
+  name: AirTight SpectraGuard server-to-server communication
+  author: nmap,cn-kali-team
+  tags: detect,tech,spectraport,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: spectraport
+    type: regex
+    regex:
+    - ^\0\x01\0\0\0\x8e\0\x03\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x002\.1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0([\w._-]+)\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0[\w._-]+\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x02'$

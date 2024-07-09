@@ -1,0 +1,19 @@
+id: http
+info:
+  name: AverMedia WebCamX httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 200 OK\r\n.*<!-- saved from url=\(0022\)http://internet\.e-mail -->\r\n<html>\r\n<head>\r\n<title>WebCam</title>\r\n</head>\r\n<body link=\"#505050\" bgcolor=\"#505050\" vlink=\"#505050\" alink=\"#505050\" topmargin=\"3\">

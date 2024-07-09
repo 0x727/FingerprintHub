@@ -1,0 +1,19 @@
+id: ms-wbt-server
+info:
+  name: Microsoft Terminal Service
+  author: nmap,cn-kali-team
+  tags: detect,tech,ms-wbt-server,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: terminal-server
+  inputs:
+  - data: \x03\0\0\x0b\x06\xe0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ms-wbt-server
+    type: regex
+    regex:
+    - (?i)^\x03\0\0\x0b\x06\xd0\0\0\x12.\0$

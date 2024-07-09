@@ -1,0 +1,19 @@
+id: vnc-http
+info:
+  name: Ultr@VNC
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc-http,service
+  severity: info
+  metadata:
+    info: 'Name $1; resolution: $2x$3; VNC TCP port: $4'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc-http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\n\n<HTML>\n  <HEAD><TITLE> \[([-. \w]+)\] </TITLE></HEAD>\n  <BODY>\n  <SPAN style=''position: absolute; top:0px;left:0px''>\n    <APPLET CODE=VncViewer\.class ARCHIVE=VncViewer\.jar WIDTH=(\d+) HEIGHT=(\d+)>\n      <PARAM NAME=PORT VALUE=(\d+)>\n      <PARAM NAME=ENCODING VALUE=Tight>\n    </APPLET>  </SPAN>\n  </BODY>\n</HTML>\n'

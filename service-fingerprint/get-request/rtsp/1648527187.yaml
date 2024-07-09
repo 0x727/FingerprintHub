@@ -1,0 +1,20 @@
+id: rtsp
+info:
+  name: Freebox rtspd
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    device_type: media device
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^RTSP/1\.0 400 Bad Request\r\nCseq: \d+\r\nServer: fbxrtspd/([\w._-]+) Freebox RTSP server\r\n'

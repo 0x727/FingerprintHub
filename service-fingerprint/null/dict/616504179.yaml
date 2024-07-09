@@ -1,0 +1,19 @@
+id: dict
+info:
+  name: dictd
+  author: nmap,cn-kali-team
+  tags: detect,tech,dict,service
+  severity: info
+  metadata:
+    info: access denied
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: dict
+    type: regex
+    regex:
+    - ^530 access denied\r\n$

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: DD-WRT milli_httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: build $1
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 Ok\r\nContent-Type: text/html\r\nServer: httpd\r\n.*<title>[^<]* \(build (\d+)\) - Info</title>'

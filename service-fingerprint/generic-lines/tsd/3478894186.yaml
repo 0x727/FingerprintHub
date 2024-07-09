@@ -1,0 +1,19 @@
+id: tsd
+info:
+  name: OpenTSDB TSD
+  author: nmap,cn-kali-team
+  tags: detect,tech,tsd,service
+  severity: info
+  metadata:
+    info: also http
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: tsd
+    type: regex
+    regex:
+    - '^unknown command: \.  Try `help''\.\nunknown command: \.  Try `help''\.\n'

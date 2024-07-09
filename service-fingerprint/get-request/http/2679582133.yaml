@@ -1,0 +1,20 @@
+id: http
+info:
+  name: alphapd httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: D-Link $1 IP camera
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Authorization Required\r\nServer: alphapd\r\nDate: .* \d\d\d\d\r\nCache-Control: no-cache\r\nContent-type: text/html\r\nWWW-Authenticate: Basic realm=\"(DCS-\w+)\"\r\n\r\n'

@@ -1,0 +1,19 @@
+id: scmm
+info:
+  name: SerComm manufacturer backdoor
+  author: nmap,cn-kali-team
+  tags: detect,tech,scmm,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: scmm
+    type: regex
+    regex:
+    - ^MMcS\xff\xff\xff\xff\0\0\0\0

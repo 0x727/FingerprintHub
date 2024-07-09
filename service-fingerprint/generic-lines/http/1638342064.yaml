@@ -1,0 +1,19 @@
+id: http
+info:
+  name: FRITZ!Box TR-069 service
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nContent-Length: 0\r\n\r\n'

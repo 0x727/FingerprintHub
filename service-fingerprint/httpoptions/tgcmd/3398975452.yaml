@@ -1,0 +1,19 @@
+id: tgcmd
+info:
+  name: tgcmd.exe support daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,tgcmd,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: tgcmd
+    type: regex
+    regex:
+    - ^\d+ \d+ \d+,Invalid command\.\n$

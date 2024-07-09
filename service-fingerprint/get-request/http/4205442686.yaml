@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Linksys BEFW11S4 router http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d .*{FONT: bold 10pt Arial,Helvetica,sans-serif; COLOR: white;}.*{FONT: 10pt Arial,Helvetica,sans-serif; COLOR: black; BORDER: Medium White None; border-collapse: collapse}.*{\tCOLOR: #b5b5e6}.*{COLOR: #b5b5e6}.*src=Gozila\.js>'

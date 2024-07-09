@@ -1,0 +1,17 @@
+id: rtsp
+info:
+  name: Avtech MPEG4 DVR control rtspd
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nConnection: close\r\nContent-Type: text/html; charset=ISO-8859-1\r\nWWW-Authenticate: Basic realm=\"server\r\nContent-Length: 166\r\n'

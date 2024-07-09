@@ -1,0 +1,19 @@
+id: http
+info:
+  name: AudioCodes Session Border Controller httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 203 Non-Authoritative Information\r\nContent-Type: text/html\r\nServer: AudioCodes Web Server/ \r\n'

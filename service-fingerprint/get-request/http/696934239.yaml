@@ -1,0 +1,17 @@
+id: http
+info:
+  name: InfluxDB http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nAccept-Ranges: bytes\r\nContent-Length: \d+\r\nContent-Type: text/html; charset=utf-8\r\nLast-Modified: .* GMT\r\nDate: .* GMT\r\n\r\n<!doctype html>\n<html lang="en">\n<head>\n    <meta charset="utf-8">\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta name="viewport" content="width=device-width, initial-scale=1">\n    <meta name="description" content="">\n    <meta name="author" content="">\n\n    <title>InfluxDB - Admin Interface</title>'

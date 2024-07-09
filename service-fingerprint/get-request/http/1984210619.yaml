@@ -1,0 +1,21 @@
+id: http
+info:
+  name: CERN httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Edimax BR-6004 broadband router http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?MIME-Version: [\d.]+\r\nServer: CERN/([\d.]+)\r\n.*alert\(\"\\r\\nThis version of your browser cannot support the router''s configuration completely\. Please refer to the router''s CD-ROM for upgrade information\.\"\);'

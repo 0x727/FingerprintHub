@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Axeda remote management http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: remote management
+    info: Resolution $2x$3
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nServer: Axeda Agent Web Server/([\w._-]+)\r\n(?:[^\r\n]+\r\n)*?Last-Modified: 1200004200\r\n.*<title>IM_v8_Data </title>\r\n</head>\r\n<body bgcolor=\"ffffff\">\r\n<center>\r\n<DIV style=\"position:absolute; top:6; left:6; width:(\d+); height:(\d+); z-layer:1;\" >\r\n<applet codebase=\"/aagweb/classes\" code=aglance\.jag\.AAGApplet'

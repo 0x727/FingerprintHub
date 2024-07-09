@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Juniper router http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: HTTPD $1
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 501 Not Implemented\r\nServer: HTTPD/[\d.]+\r\n.*<a href=\"/\">Return to Web Management</a>.*<A HREF=\"http://www\.juniper\.net/support/\">HTTPD release ([-\w_.]+) built by'

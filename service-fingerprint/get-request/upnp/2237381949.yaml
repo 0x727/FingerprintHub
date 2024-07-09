@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Intel UPnP reference SDK
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: Mac OS X $1; UPnP $2
+    operating_system: Mac OS X
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.[01] \d\d\d .*\r\nSERVER: Darwin/([\w._+-]+), UPnP/([\w._-]+), Portable SDK for UPnP devices/([\w._~-]+)\r\n'

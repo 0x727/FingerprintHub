@@ -1,0 +1,21 @@
+id: http
+info:
+  name: World Client WDaemon httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Alt-N MDaemon webmail
+    operating_system: Windows
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nServer: WDaemon/([\d.]+)\r\n'

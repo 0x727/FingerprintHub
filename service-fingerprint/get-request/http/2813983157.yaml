@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Keil Embedded Web Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Cedar Audio DNS 8 noise supressor
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nServer: Keil-EWEB/(\d[\w._-]*)\r\nContent-type: text/html\r\nConnection: close\r\n\r\n<head><title>DNS8 Web Server Error</title>'

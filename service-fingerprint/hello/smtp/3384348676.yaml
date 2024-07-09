@@ -1,0 +1,21 @@
+id: smtp
+info:
+  name: SonicWALL Email Security smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    device_type: security-misc
+    hostname: $1
+    version: $2
+tcp:
+- name: hello
+  inputs:
+  - data: EHLO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 ([\w_.-]+) ESMTP SonicWALL \(([\d.]+)\)\r\n

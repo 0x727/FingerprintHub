@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Panasonic GT30 TV http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    operating_system: FreeBSD 8.0
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nCONNECTION: close\r\n\r\n$'

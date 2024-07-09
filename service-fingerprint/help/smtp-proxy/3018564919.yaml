@@ -1,0 +1,19 @@
+id: smtp-proxy
+info:
+  name: Surfcontrol smtp proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp-proxy,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp-proxy
+    type: regex
+    regex:
+    - ^421 ([-\w_.]+) is too busy\. Please try again later\.\r\n

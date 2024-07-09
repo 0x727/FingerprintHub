@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Xerox WorkCentre Pro httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: Webserver\r\n.*\tCopyright \(c\) 2002-2006 Xerox Corporation\. All Rights Reserved\. \n\n'

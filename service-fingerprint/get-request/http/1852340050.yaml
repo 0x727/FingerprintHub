@@ -1,0 +1,19 @@
+id: http
+info:
+  name: IBM Remote Supervisor Adapter httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Document Follows\r\nSet-Cookie: SESSID=[a-f0-9]{32}\r\nPragma: no-cache\r\nLocation: http:///([\w.-]+)/testcookie\.ssi\?SESSID=[a-f0-9]{32}\r\nConnection: close\r\n\r\n'

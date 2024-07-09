@@ -1,0 +1,19 @@
+id: textui
+info:
+  name: Vizio television textui
+  author: nmap,cn-kali-team
+  tags: detect,tech,textui,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: textui
+    type: regex
+    regex:
+    - ^cannot find method GET\n\n$

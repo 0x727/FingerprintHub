@@ -1,0 +1,20 @@
+id: daap
+info:
+  name: Apple iTunes DAAP
+  author: nmap,cn-kali-team
+  tags: detect,tech,daap,service
+  severity: info
+  metadata:
+    operating_system: $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: daap
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\n(?:Date: .*\r\n)?DAAP-Server: iTunes/(\d[-.\w]+) \((.*)\)\r\n'

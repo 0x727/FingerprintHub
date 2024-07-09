@@ -1,0 +1,21 @@
+id: http
+info:
+  name: WindWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: 3Com router http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nServer: WindWeb/([\d.]+)\r\nWWW-Authenticate: Basic realm=\"Home Gateway\"\r\nContent-Type: text/html\r\nDate: .*\r\nAge: 0\r\n\r\nHasbani Web Server Error Report:<HR>\n<H1>Server Error: 401 Unauthorized</H1>\r\n<P><HR><H2>Access denied</H2><P><P><HR><H1>/doc/index\.htm</H1><P>'

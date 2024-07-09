@@ -1,0 +1,20 @@
+id: tarantool
+info:
+  name: Tarantool
+  author: nmap,cn-kali-team
+  tags: detect,tech,tarantool,service
+  severity: info
+  metadata:
+    info: 'Uptime: $2, PID: $3, Config: $4'
+    version: $1
+tcp:
+- name: tarantool
+  inputs:
+  - data: show info\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: tarantool
+    type: regex
+    regex:
+    - '---\r\ninfo:\r\n  version: \"([^\"]*)\"\r\n  uptime: (\d*)\r\n  pid: (\d*)\r\n  (?:[._\w\s]*: .*\r\n)*  config: \"([^\"]*)\"'

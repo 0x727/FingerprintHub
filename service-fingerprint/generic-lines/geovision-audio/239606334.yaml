@@ -1,0 +1,19 @@
+id: geovision-audio
+info:
+  name: Geovision webcam audio
+  author: nmap,cn-kali-team
+  tags: detect,tech,geovision-audio,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: geovision-audio
+    type: regex
+    regex:
+    - ^\$\0\0\0\xd4\x17\0\0\x01\0\0\0\x05\0\0\0\x01\0\0\0\x05\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0$

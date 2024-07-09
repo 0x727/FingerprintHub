@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Ruchomy Terminal Gadu-Gadu http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Debian
+    operating_system: Linux
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nDate: .*\r\nServer: GG/([\d.]+) \(Unix\) Debian GNU/Linux\r\nWWW-Authenticate: Basic realm=\"gg zone\"\r\n'

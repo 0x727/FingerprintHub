@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: Symantec Enterprise Firewall smtp proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 ([-.+\w]+) Generic SMTP handler\r\n214 Help not supported by this implementation\r\n$

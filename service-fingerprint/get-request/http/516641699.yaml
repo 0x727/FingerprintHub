@@ -1,0 +1,21 @@
+id: http
+info:
+  name: ICOM httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: UltraQuest mainframe reporting
+    operating_system: OS/390
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nLast-Modified: Mon, 07 Apr  2009  04:00:00 GMT\r\nContent-Type: TEXT/HTML\r\nDate: \w\w\w, \d\d \w\w\w  \d\d\d\d  \d\d:\d\d:\d\d GMT00:00 GMT\r\nServer: ICOM ([\w._-]+)    from SBS\r\nMIME-Version: 1\.0\r\nServer: ICOM [\w._-]+    from SBS\r\nConnection: close\r\nContent-Length:             861\r\n\r\n<HTML>\r\n<HEAD>\r\n<TITLE>UltraQuest Index HTML</TITLE>'

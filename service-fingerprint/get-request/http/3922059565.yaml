@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Karma JavaScript test runner
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nDate: .*\r\nConnection: close\r\n\r\n<!DOCTYPE html>\n<!--\nThe entry point for client\. This file is loaded just once when the client is captured\.\nIt contains socket\.io and all the communication logic\.\n-->\n<html>'

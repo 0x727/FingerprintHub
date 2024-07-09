@@ -1,0 +1,17 @@
+id: h2-pg
+info:
+  name: H2 database PostgreSQL daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,h2-pg,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: h2-pg
+    type: regex
+    regex:
+    - ^\0\0\0\0\0\0\0\x05\x009\x000\x000\x004\x007\0\0\0A\0V\0e\0r\0s\0i\0o\0n\0 \0m\0i\0s\0m\0a\0t\0c\0h\0,\0 \0d\0r\0i\0v\0e\0r\0 \0v\0e\0r\0s\0i\0o\0n\0 \0i\0s\0 \0\"\x000\0\"\0 \0b\0u\0t\0 \0s\0e\0r\0v\0e\0r\0 \0v\0e\0r\0s\0i\0o\0n\0 \0i\0s\0 \0\"\x008\0\"\xff\xff\xff\xff\0\x01_\xbf\0\0\x01W\0o\0r\0g\0\.\0h\x002\0\.\0j\0d\0b\0c\0\.\0J\0d\0b\0c\0S\0Q\0L\0E\0x\0c\0e\0p\0t\0i\0o\0n\0:\0 \0V\0e\0r\0s\0i\0o\0n\0 \0m\0i\0s\0m\0a\0t\0c\0h\0,\0 \0d\0r\0i\0v\0e\0r\0 \0v\0e\0r\0s\0i\0o\0n\0 \0i\0s\0 \0\"\x000\0\"\0 \0b\0u\0t\0 \0s\0e\0r\0v\0e\0r\0 \0v\0e\0r\0s\0i\0o\0n\0 \0i\0s\0 \0\"\x008\0\"\0 \0\[\x009\x000\x000\x004\x007\0-\x001\x005\x001\0\]\0\n\0\t\0a\0t\0 \0o\0r\0g\0\.\0h\x002\0\.\0m\0e\0s\0s\0a\0g\0e\0\.\0D\0b\0E\0x\0c\0e\0p\0t\0i\0o\0n\0\.\0g\0e\0t\0J\0d\0b\0c\0S\0Q\0L\0E\0x\0c\0e\0p\0t\0i\0o\0n\0\(\0D\0b\0E\0x\0c\0e\0p\0t\0i\0o\0n\0\.\0j\0a\0v\0a\0:\x003\x002\x007\0

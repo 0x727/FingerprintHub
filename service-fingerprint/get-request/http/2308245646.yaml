@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Teradata Viewpoint
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nCache-Control: public, no-store, max-age=0\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-XSS-Protection: 1; mode=block\r\nLocation: http://[^/]*/login\.html\r\nDate: .*\r\nConnection: close\r\nServer: Teradata-Viewpoint\r\n\r\n'

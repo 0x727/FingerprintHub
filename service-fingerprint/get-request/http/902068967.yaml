@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Gigablast search engine httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Length: \d+\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: Close\r\nAccess-Control-Allow-Origin: \*\r\nServer: Gigablast/1\.0\r\nDate: .*\r\nLast-Modified: .*\r\n\r\n'

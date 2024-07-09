@@ -1,0 +1,19 @@
+id: http
+info:
+  name: UserGate http report area
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nPragma: no-cach\r\nContent-Type: text/html; charset=windows-1251\r\n\r\n<HTML>\r\n<HEAD>\r\n<TITLE>UserGate report area</TITLE>\r\n'

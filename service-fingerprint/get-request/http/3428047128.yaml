@@ -1,0 +1,21 @@
+id: http
+info:
+  name: TwistedWeb httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Twisted $1; Mac OS X teamsserver
+    operating_system: Mac OS X
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 404 Not Found\r\n(?:[^\r\n]+\r\n)*?Server: Twisted/([\w._-]+) TwistedWeb/([\w._-]+)\r\n.*<meta name=\"generator\" content=\"\">\n<meta name=\"apple_required_ui_revision\" content=\"\">\n<meta name=\"apple_collab_uid\" content=\"\">\n'

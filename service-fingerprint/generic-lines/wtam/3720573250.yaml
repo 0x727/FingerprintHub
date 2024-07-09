@@ -1,0 +1,17 @@
+id: wtam
+info:
+  name: Webtrends WTAM
+  author: nmap,cn-kali-team
+  tags: detect,tech,wtam,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: wtam
+    type: regex
+    regex:
+    - ^WTAM/1\.0 401 Unrecognized Command\n\n$

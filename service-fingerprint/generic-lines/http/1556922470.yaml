@@ -1,0 +1,20 @@
+id: http
+info:
+  name: sw-cp-server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Parallels Plesk WebAdmin version
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 400 Bad Request\r\n(?:[^\r\n]+\r\n)*?Server: sw-cp-server/([\w._-]+)\r\n.*<title>400 - Bad Request</title>'

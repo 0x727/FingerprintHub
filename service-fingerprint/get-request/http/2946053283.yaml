@@ -1,0 +1,17 @@
+id: http
+info:
+  name: McAfee ePolicy Orchestrator Agent Activity Log httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n(?:X-FRAME-OPTIONS: SAMEORIGIN\r\n)?Content-Disposition: \r\n\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<script src=\"js/AgentLog\.js\">'

@@ -1,0 +1,19 @@
+id: tor-control
+info:
+  name: Tor control port
+  author: nmap,cn-kali-team
+  tags: detect,tech,tor-control,service
+  severity: info
+  metadata:
+    info: Authentication required
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: tor-control
+    type: regex
+    regex:
+    - ^514 Authentication required\.\r\n$

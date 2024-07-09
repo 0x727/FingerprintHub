@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Golang net/http server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Google cAdvisor
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 307 Temporary Redirect\r\nLocation: /containers/\r\nDate: .*\r\nContent-Length: \d+\r\nContent-Type: text/html; charset=utf-8\r\n\r\n<a href="/containers/">Temporary Redirect</a>\.'

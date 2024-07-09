@@ -1,0 +1,19 @@
+id: priv-print
+info:
+  name: AXIS 560 print server
+  author: nmap,cn-kali-team
+  tags: detect,tech,priv-print,service
+  severity: info
+  metadata:
+    device_type: print server
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: priv-print
+    type: regex
+    regex:
+    - ^\xc0\0\x12Data field missing$

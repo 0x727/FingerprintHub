@@ -1,0 +1,19 @@
+id: http
+info:
+  name: AudioCodes MP-202 VoIP adapter http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: text/html\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nExpires: .*\r\nDate: .*\r\nAccept-Ranges: bytes\r\nConnection: close\r\nSet-Cookie: session_id=\d+; path=/;\r\n\r\n<!--- Page\(9055\)=\[Login\] --->'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Corrad Development httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Meteor $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\ncontent-type: text/html; charset=utf-8\r\nvary: Accept-Encoding\r\ndate: .*<title>Coral Rapid Application Development Framework - Corrad</title>.*__meteor_runtime_config__ = JSON\.parse\(decodeURIComponent\("%7B%22meteorRelease%22%3A%22METEOR%40([\d.]+)%22'

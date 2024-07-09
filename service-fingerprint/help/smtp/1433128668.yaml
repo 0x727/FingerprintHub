@@ -1,0 +1,20 @@
+id: smtp
+info:
+  name: Postfix smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+    operating_system: Linux
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - '^220 ([-\w_.]+) ESMTP (?:[^(]+? )?\(Ubuntu\)\r\n502 5\.5\.2 Error: command not recognized\r\n'

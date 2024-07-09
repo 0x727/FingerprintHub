@@ -1,0 +1,19 @@
+id: pmcd
+info:
+  name: SGI performance metrics collector daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,pmcd,service
+  severity: info
+  metadata:
+    operating_system: IRIX
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pmcd
+    type: regex
+    regex:
+    - (?i)^\0\0\0\x14\0\0p\0\0\0\x03.\xff\xff\xfc\x11\x02\0..$

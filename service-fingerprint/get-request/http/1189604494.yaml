@@ -1,0 +1,17 @@
+id: http
+info:
+  name: LANDesk html5 remote control
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n\r\n<!DOCTYPE html>.*<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\.0, maximum-scale=1\.0, minimum-scale=1\.0, user-scalable=no\"/>\r\n<html>\r\n<head>\r\n\t<meta name=\"author\" content=\"Dave Jensen\" />\r\n\t<meta name=\"keywords\" content=\"LANDesk, Remote Control\" />'

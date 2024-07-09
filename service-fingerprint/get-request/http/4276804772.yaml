@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Bosch Logamatic Gateway web KM200 httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 The request has succeeded\r\nContent-Type: text/html\r\nExpires: Sun, 03 Jan 2100 12:00:00 GMT\r\n\r\n $'

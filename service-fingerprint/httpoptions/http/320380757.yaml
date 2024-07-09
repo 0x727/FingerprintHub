@@ -1,0 +1,20 @@
+id: http
+info:
+  name: HP JetDirect Card in a LaserJet printer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: HP-ChaiServer Embedded VM $1
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 501 Unknown or unimplemented http action\r\nMIME-Version: 1\.0\r\nServer: HP-ChaiServer/([\d.]+)\r\nContent-length: \d+\r\nContent-Type: text/html\r\n\r\n<TITLE>Request Not Implemented</TITLE><P><B>Cannot process request, not implemented at server\.</B></P><P>Unknown or unimplemented http action'

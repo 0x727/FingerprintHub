@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Cisco Integrated Management Controller
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^UnknownMethod 403 Forbidden\r\nDate: .*\r\nConnection: keep-alive\r\nKeep-Alive: timeout=60, max=2000\r\nContent-Type: text/html\r\nContent-length: \d+\r\n\r\n<HTML><HEAD><TITLE>Document Error: Forbidden</TITLE></HEAD>\r\n<BODY><H2>Access Error: 403 -- Forbidden</H2>\r\n</BODY></HTML>\r\n\r\nHTTP/1\.0 400 Bad Request\r\nDate:'

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: REALbasic 2008 example httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4\.01 Transitional//EN\" \"http://www\.w3\.org/TR/1999/REC-html401-19991224/loose\.dtd\">\n<HTML>\n<HEAD>\n<TITLE>Mac OS X Personal Web Sharing</TITLE>.*<H1>Your website here\.</H1>

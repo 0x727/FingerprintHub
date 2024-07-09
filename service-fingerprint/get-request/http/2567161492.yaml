@@ -1,0 +1,19 @@
+id: http
+info:
+  name: FHEM Connector for Amazon Alexa
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'payloadVersion: $1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: .*\r\nConnection: close\r\n\r\n\{"header":\{"name":"UnsupportedOperationError","payloadVersion":"(\d+)","namespace":"Alexa\.ConnectedHome\.Control",'

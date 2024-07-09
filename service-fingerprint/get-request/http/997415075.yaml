@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Ricoh Aficio IS200e scanner http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: Apache  NetFile/([\w._-]+)\r\n(?:[^\r\n]+\r\n)*?Content-Length: 177\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4\.01//EN\">\n\n<html>\n\n<head>\n        <META HTTP-EQUIV=\"refresh\" CONTENT=\"0; URL=/cgi-bin/set_index\.cgi\">\n</head>\n\n<body>\n\n</body>\n\n</html>\n$'

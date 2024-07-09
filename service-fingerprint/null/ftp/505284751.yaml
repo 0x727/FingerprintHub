@@ -1,0 +1,20 @@
+id: ftp
+info:
+  name: Titan ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    info: Evaluation period expired
+    operating_system: Windows
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^421-\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+=\+\r\n421-The evaluation period for this Titan FTP Server has expired\.\r\n

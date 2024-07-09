@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Aventail SSL VPN Concentrator http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nDate: .*\r\nServer: unknown\r\nLocation: https://xweb-ext/__extraweb__/\r\nSet-Cookie: EXTRAWEB_REFERER='

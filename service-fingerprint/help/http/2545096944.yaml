@@ -1,0 +1,17 @@
+id: http
+info:
+  name: FortiWifi 60CM wireless security appliance httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^<HTML><HEAD></HEAD><BODY>HTTP Error: 400</BODY></HTML>\n\n'

@@ -1,0 +1,19 @@
+id: mysql
+info:
+  name: MySQL
+  author: nmap,cn-kali-team
+  tags: detect,tech,mysql,service
+  severity: info
+  metadata:
+    info: unauthorized; German
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mysql
+    type: regex
+    regex:
+    - (?i)^.\0\0\0\xff..Host '[-\w_.]+' hat keine Berechtigung, sich mit diesem MySQL-Server zu verbinden

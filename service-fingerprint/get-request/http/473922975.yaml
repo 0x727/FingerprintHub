@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Lime Technology unRAID Server Unmenu http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nConnection: Close\r\nPragma: no-cache\r\nCache-Control: private, max-age=0\r\nDate: .*\r\nExpires: -1\r\nContent-Type: text/html\r\nTransfer-Encoding: chunked\r\nRefresh: 60; URL=\r\n\r\n[0-9a-f]+\r\n<HTML><title>([\w._-]+) unRAID Server</title>'

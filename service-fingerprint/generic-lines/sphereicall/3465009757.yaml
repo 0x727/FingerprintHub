@@ -1,0 +1,17 @@
+id: sphereicall
+info:
+  name: Sphericall DBServer MediaServer VoIP
+  author: nmap,cn-kali-team
+  tags: detect,tech,sphereicall,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sphereicall
+    type: regex
+    regex:
+    - ^\x01\0\0\0z\0\0\x003,DBServer,\d+,Restarts,\d+,\d+,UpTime,\d+,\d+,MediaServer

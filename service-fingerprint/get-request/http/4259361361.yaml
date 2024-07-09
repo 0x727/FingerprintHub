@@ -1,0 +1,17 @@
+id: http
+info:
+  name: D-Link ffserver httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-type: text/html\r\nPragma: no-cache\r\n\r\n<html><head><title>ffserver Status</title>\n<link rel=\"shortcut icon\" href=\"http://dlink\.ru/favicon\.ico\">\n'

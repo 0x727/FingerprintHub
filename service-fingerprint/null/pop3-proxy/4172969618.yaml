@@ -1,0 +1,19 @@
+id: pop3-proxy
+info:
+  name: PGP Universal pop3 proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,pop3-proxy,service
+  severity: info
+  metadata:
+    info: 'Proxied greeting: $1'
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pop3-proxy
+    type: regex
+    regex:
+    - ^\+OK (.*) \(PGP Universal service is proxying this connection\)\r\n

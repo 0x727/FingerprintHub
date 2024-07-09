@@ -1,0 +1,17 @@
+id: ftp
+info:
+  name: Bftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - '^220 \r\n500 Unknown command: \"\"\r\n500 Unknown command: \"\"\r\n$'

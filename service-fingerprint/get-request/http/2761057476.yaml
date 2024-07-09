@@ -1,0 +1,21 @@
+id: http
+info:
+  name: WYM httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: A+V Link NVS-4000 surveillance system http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: WYM/([\w._-]+)\r\n(?:[^\r\n]+\r\n)*?Content-Length: 1029\r\nLast-Modified: Tue, 19 May 2009 02:17:02 GMT\r\n\r\n\xef\xbb\xbf<html>\r\n<head>\r\n<title>NVS</title>'

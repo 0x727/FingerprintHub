@@ -1,0 +1,20 @@
+id: http
+info:
+  name: SonicWall SSL VPN
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $2
+    info: 'resource: $SUBST(1,"%25252F","/")'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nDate: .*\r\nServer: unknown\r\nLocation: https://[^/]+/__extraweb__EPCmicrointerrogatorpage\?success=%2F__extraweb__EPCmicrointerrogatordata%3Fsuccess%3D%252F__extraweb__realmform%253Fresource%253D((?:[^%]+|%(?!2526))+?)%2526alias%253D([\w._-]+)%2526r0%253D'

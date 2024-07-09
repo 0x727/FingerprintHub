@@ -1,0 +1,20 @@
+id: http
+info:
+  name: GoAhead WebServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: Ovislink WAP http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nServer: GoAhead-Webs\r\nDate: (?:[^\r\n]*\r\n(?!\r\n))*?WWW-Authenticate: Basic realm=\"Wireless Access Point\"\r\n.*\r\n<html><head><title>Document Error: Unauthorized</title></head>\r\n\t\t<body><h2>Access Error: Unauthorized</h2>\r\n\t\twhen trying to obtain <b>/</b><br><p>Access to this document requires a User ID</p></body></html>\r\n\r\n'

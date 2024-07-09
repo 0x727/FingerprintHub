@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Technicolor TG787 VoIP gateway http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+    info: redirect to port $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Found\r\nLocation: http://[\w._-]+:(\d+)\r\n\r\nHTTP/1\.0 404 Not Found\r\nContent-Type: text/html\r\nContent-Length: 112\r\n\r\n<HTML><HEAD><TITLE>HTTP/1\.0 404 Not Found</TITLE></HEAD><BODY>\r\n<H1>HTTP/1\.0 404 Not Found\.</H1>\r\n</BODY></HTML>$'

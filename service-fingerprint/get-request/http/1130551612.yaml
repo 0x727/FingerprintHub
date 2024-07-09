@@ -1,0 +1,20 @@
+id: http
+info:
+  name: antid httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: ZyXEL Keenetic Lite WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nServer: antid\r\nDate: .* \d\d\d\d\r\nWWW-Authenticate: Digest realm="KEENETIC LITE", qop="auth", nonce="[0-9a-f]{32}", opaque="[0-9a-f]{32}", algorithm="MD5", stale="FALSE"\r\n'

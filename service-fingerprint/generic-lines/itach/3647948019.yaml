@@ -1,0 +1,19 @@
+id: itach
+info:
+  name: Global Cache iTach API
+  author: nmap,cn-kali-team
+  tags: detect,tech,itach,service
+  severity: info
+  metadata:
+    device_type: bridge
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: itach
+    type: regex
+    regex:
+    - ^ERR 001\rERR 001\r

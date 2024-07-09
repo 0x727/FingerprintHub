@@ -1,0 +1,19 @@
+id: oracle-vs
+info:
+  name: Oracle Virtual Service Agent
+  author: nmap,cn-kali-team
+  tags: detect,tech,oracle-vs,service
+  severity: info
+  metadata:
+    info: Xen
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: oracle-vs
+    type: regex
+    regex:
+    - '^\(err \(type xen\.xend\.XendError\.XendError\) \(value ''Invalid operation: GET''\)\)\n$'

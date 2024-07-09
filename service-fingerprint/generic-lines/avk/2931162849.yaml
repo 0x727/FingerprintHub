@@ -1,0 +1,17 @@
+id: avk
+info:
+  name: G Data AVK anti-virus
+  author: nmap,cn-kali-team
+  tags: detect,tech,avk,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: avk
+    type: regex
+    regex:
+    - ^Unknown command\r\n$

@@ -1,0 +1,17 @@
+id: honeypot
+info:
+  name: Network Flight Recorder BackOfficer Friendly http honeypot
+  author: nmap,cn-kali-team
+  tags: detect,tech,honeypot,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: honeypot
+    type: regex
+    regex:
+    - ^HTTP/1\.0 401 Unauthorized\r\n\r\n<BODY><HTML><H1>401 - Authorization Failed</H1></HTML></BODY>\0

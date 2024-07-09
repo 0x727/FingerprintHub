@@ -1,0 +1,22 @@
+id: upnp
+info:
+  name: Sony Bravia $3 TV DLNA
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: UPnP $2
+    operating_system: RTOS $1
+    version: $4
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nConnection: close\r\nDate: .* GMT\r\nServer: RTOS/([\w._-]+) UPnP/([\w._]+) ([\w._-]+)\s*/([\w._-]+)\r\nX-AV-Server-Info: av=5\.0; cn=\"Sony Corporation\"; mn=\"BRAVIA '

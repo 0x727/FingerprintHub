@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Sockso personal music player httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Not Found\r\nConnection: close\r\nLocation: /user/login\r\nAccept-Ranges: none\r\nServer: Sockso\r\n\r\n$'

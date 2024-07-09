@@ -1,0 +1,20 @@
+id: gopher
+info:
+  name: Gopher Cannon
+  author: nmap,cn-kali-team
+  tags: detect,tech,gopher,service
+  severity: info
+  metadata:
+    hostname: $1
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gopher
+    type: regex
+    regex:
+    - ^iUnable to locate requested resource\.\t\t([\w._-]+)\t\d+\r\n\.\r\n

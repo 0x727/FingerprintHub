@@ -1,0 +1,17 @@
+id: http
+info:
+  name: OpenConnect Server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nConnection: Keep-Alive\r\nContent-Type: text/xml\r\nContent-Length: \d+\r\nX-Transcend-Version: 1\r\n\r\n<\?xml version="1\.0" encoding="UTF-8"\?>\n<config-auth client="vpn" type="auth-request">\n<version who="sg">0\.1\(1\)</version>\n<auth id="main">\n<message>Please enter your username</message>\n<form method="post" action="/auth">\n<input type="text" name="username" label="Username:" />\n</form></auth>\n</config-auth>'

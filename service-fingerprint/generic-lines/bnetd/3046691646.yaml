@@ -1,0 +1,17 @@
+id: bnetd
+info:
+  name: bnetd open source Blizzard Battlenet server
+  author: nmap,cn-kali-team
+  tags: detect,tech,bnetd,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bnetd
+    type: regex
+    regex:
+    - '^\r\nEnter your account name and password\.\r\n\r\nUsername:'

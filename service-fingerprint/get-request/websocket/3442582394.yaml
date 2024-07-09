@@ -1,0 +1,17 @@
+id: websocket
+info:
+  name: SockJS
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\ncontent-type: text/plain; charset=UTF-8\r\nDate: .*\r\nConnection: close\r\n\r\nWelcome to SockJS!\n'

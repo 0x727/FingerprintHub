@@ -1,0 +1,20 @@
+id: paromed
+info:
+  name: Paromed milling machine
+  author: nmap,cn-kali-team
+  tags: detect,tech,paromed,service
+  severity: info
+  metadata:
+    device_type: specialized
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: paromed
+    type: regex
+    regex:
+    - '^PCS-[\w._-]+,V([\w._-]+),OK\nERROR:102: ENERROR:102: EN'

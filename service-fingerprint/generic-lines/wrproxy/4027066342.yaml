@@ -1,0 +1,17 @@
+id: wrproxy
+info:
+  name: Wind River wrproxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,wrproxy,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: wrproxy
+    type: regex
+    regex:
+    - '^error wrproxy: Error parsing command line\0'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Nicira bridge http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: bridge
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 500 Internal Server Error\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Length: 148\r\nDate: .* GMT\r\nConnection: close\r\n\r\n500 Internal Server Error\n\nThe server has either erred or is incapable of performing the requested operation\. \n\n ''NoneType'' object is not iterable  $'

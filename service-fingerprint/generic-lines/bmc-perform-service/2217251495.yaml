@@ -1,0 +1,17 @@
+id: bmc-perform-service
+info:
+  name: BMC Perform Service Daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,bmc-perform-service,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bmc-perform-service
+    type: regex
+    regex:
+    - ^SDPACK$

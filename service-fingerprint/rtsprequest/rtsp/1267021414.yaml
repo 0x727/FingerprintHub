@@ -1,0 +1,19 @@
+id: rtsp
+info:
+  name: Wowza Streaming Engine rtspd
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    version: $1 build $2
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^RTSP/1\.0 200 OK\r\nCSeq: 0\r\nServer: Wowza Streaming Engine ([\d.]+) build ?(\d+)\r\nCache-Control: no-cache\r\nPublic: DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, OPTIONS, ANNOUNCE, RECORD, GET_PARAMETER\r\n'

@@ -1,0 +1,20 @@
+id: qotd
+info:
+  name: Windows qotd
+  author: nmap,cn-kali-team
+  tags: detect,tech,qotd,service
+  severity: info
+  metadata:
+    info: Czech
+    operating_system: Windows
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: qotd
+    type: regex
+    regex:
+    - ^"(?:Clovek ma tri cesty, jak moudre jednat\. Nejprve premyslenim|Co je vubec hodno toho, aby to bylo vykonano,|Fantazie je dulezitejsi nez vedeni\.|Potize narustaji, cim vice se clovek blizi|Kdo nezna pristav, do ktereho se chce plavit,|Lidske mysleni ztraci smysl,|Nikdo nevi, co muze vykonat,|Nic neprekvapi lidi vice nez zdravy rozum|Zadny cil neni tak vysoky,)

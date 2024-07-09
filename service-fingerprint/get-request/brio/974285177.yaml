@@ -1,0 +1,19 @@
+id: brio
+info:
+  name: Brio 8 business intelligence tool
+  author: nmap,cn-kali-team
+  tags: detect,tech,brio,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: brio
+    type: regex
+    regex:
+    - '^com\.sqribe\.null\0java\.lang\.String\0com\.sqribe\.transformer\.TransformerException\0java\.lang\.String\0TRCP version mismatch: Current version: (\d+) Client version: unknown\0$'

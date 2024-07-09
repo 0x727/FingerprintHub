@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: Check Point Firewall-1 telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^Check Point FireWall-1 authenticated Telnet server running on

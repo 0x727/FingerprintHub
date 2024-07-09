@@ -1,0 +1,20 @@
+id: http
+info:
+  name: XBMC Web Media Manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nContent-Length: 0\r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: Basic realm=XBMC\r\n'

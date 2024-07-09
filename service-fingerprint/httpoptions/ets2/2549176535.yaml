@@ -1,0 +1,19 @@
+id: ets2
+info:
+  name: newfreight Euro Truck Simulator 2
+  author: nmap,cn-kali-team
+  tags: detect,tech,ets2,service
+  severity: info
+  metadata:
+    info: 'level: $P(1)'
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ets2
+    type: regex
+    regex:
+    - ^\xff\xfe\\\0n\0e\0w\0f\0r\0e\0i\0g\0h\0t\0 \0E\0u\0r\0o\0 \0T\0r\0u\0c\0k\0 \0S\0i\0m\0u\0l\0a\0t\0o\0r\0 \x002\0;([^;]+);

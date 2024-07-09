@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Cricut Hyperion httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Plugin version $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: Cricut Hyperion v([\d.]+)\r\n.*"Plugin" : \n\t\{\n\t\t"Debug" : false,\n\t\t"Version" : "([\d.]+)"\n\t\},'

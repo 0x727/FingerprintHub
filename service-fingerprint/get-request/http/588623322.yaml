@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Hiawatha
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Echostar ViP 722k satellite receiver
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nDate: .*\r\nServer: Hiawatha v([\w._-]+)\r\nConnection: close\r\nWWW-Authenticate: Digest realm=\"Private page\", nonce=\"[0-9A-F]+\", algorithm=MD5, stale=false\r\nContent-Length: 404\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4\.01//EN\" \"http://www\.w3\.org/TR/html4/strict\.dtd\">\n<html>\n<head>\n<title>401 - Unauthorized</title>\n<style type=\"text/css\">BODY { color:#ffffff ; background-color:#00000a }\nDIV { font-family:sans-serif ; font-size:30px ; letter-spacing:20px ; text-align:center ; position:relative ; top:250px }\n</style>\n</head>\n<body>\n<div>401 - Unauthorized</div>\n</body>\n</html>\n$'

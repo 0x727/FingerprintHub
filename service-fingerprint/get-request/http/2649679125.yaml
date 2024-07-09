@@ -1,0 +1,22 @@
+id: http
+info:
+  name: RapidLogic httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: OneAccess ONE100A router http config
+    operating_system: OneOS
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nServer: RapidLogic/([\w._-]+)\r\n.*<title>OneAccess WCF</title>'

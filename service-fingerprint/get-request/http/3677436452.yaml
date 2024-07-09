@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Canon imageRUNNER $1 printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n.*<title>Remote UI &lt;Top Page&gt; : iR(\w+) ;'

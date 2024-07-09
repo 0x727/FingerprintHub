@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Netgear WNDR3300 WAP http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^\(null\) 400 Bad Request\r\nServer: \r\nDate: .*<TITLE>400 Bad Request</TITLE></HEAD>\n<BODY BGCOLOR=\"white\" TEXT=\"#000000\" LINK=\"#2020ff\" VLINK=\"#4040cc\">\n<H4>400 Bad Request</H4>\nCan''t parse request\.\n</BODY>\n</HTML>\n'

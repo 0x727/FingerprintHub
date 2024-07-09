@@ -1,0 +1,17 @@
+id: ipp
+info:
+  name: PrinterOn Print Delivery Gateway ipp
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipp,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipp
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nreturn_code=FCS9015\?error_text=This server does not support this API\.'

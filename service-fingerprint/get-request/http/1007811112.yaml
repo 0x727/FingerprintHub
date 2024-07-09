@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Cisco ASA firewall http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    info: Cisco AWARE $1
+    operating_system: IOS
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 (?:Temporary|Object) [Mm]oved\r\nServer: Cisco AWARE ([-\w_.]+)\r\n'

@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: WebSphere DataStage telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^Welcome to the DataStage Telnet Server\.\r\0\r\nEnter user name: '

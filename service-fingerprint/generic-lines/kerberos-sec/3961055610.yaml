@@ -1,0 +1,20 @@
+id: kerberos-sec
+info:
+  name: MIT Kerberos
+  author: nmap,cn-kali-team
+  tags: detect,tech,kerberos-sec,service
+  severity: info
+  metadata:
+    hostname: $7
+    info: 'server time: $1-$2-$3 $4:$5:$6Z'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: kerberos-sec
+    type: regex
+    regex:
+    - (?i)^\x00\x00\x00.~.0.\xa0\x03\x02\x01\x05\xa1\x03\x02\x01\x1e\xa4\x11\x18\x0f(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)Z\xa5[\x03-\x05]\x02(?:\x03...|\x02..|\x01.)\xa6\x03\x02\x01=\xa9.\x1b.([\w._-]+)\xaa

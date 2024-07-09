@@ -1,0 +1,19 @@
+id: arcserve
+info:
+  name: ARCserve Client Agent
+  author: nmap,cn-kali-team
+  tags: detect,tech,arcserve,service
+  severity: info
+  metadata:
+    info: backup software
+tcp:
+- name: dnsstatus-request-tcp
+  inputs:
+  - data: \0\x0C\0\0\x10\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: arcserve
+    type: regex
+    regex:
+    - ^h\0\0\0\0\0\0\0$

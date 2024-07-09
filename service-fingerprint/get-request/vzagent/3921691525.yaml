@@ -1,0 +1,19 @@
+id: vzagent
+info:
+  name: Parallels Virtuozzo Agent
+  author: nmap,cn-kali-team
+  tags: detect,tech,vzagent,service
+  severity: info
+  metadata:
+    info: protocol $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vzagent
+    type: regex
+    regex:
+    - ^<packet xmlns:xsi=\"http://www\.w3\.org/2001/XMLSchema-instance\" id=\"0\" priority=\"0\" version=\"([\d.]+)\">\n<origin>[\w._-]+</origin>\n<target>agent</target>\n<data>\n<ok/>\n<eid>[\w._-]+</eid>\n</data>\n</packet>\n\0

@@ -1,0 +1,19 @@
+id: rtsp
+info:
+  name: DoorBird video doorbell rtspd
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 405 Method Not Allowed\r\nDate: .*\r\n\r\n\r\n$'

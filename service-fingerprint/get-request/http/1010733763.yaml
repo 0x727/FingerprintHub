@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Palo Alto firewall http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Moved Temporarily\r\nServer: \r\nDate: .*\r\nContent-Type: text/html\r\nContent-Length: 0\r\nConnection: close\r\nETag: "\w+-\w+-\w+"\r\nPragma: no-cache\r\nLocation: /php/login\.php\r\nCache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0\r\nExpires: Thu, 19 Nov 1981 08:52:00 GMT\r\nX-FRAME-OPTIONS: SAMEORIGIN\r\nSet-Cookie: PHPSESSID=\w+; path=/; HttpOnly\r\n\r\n'

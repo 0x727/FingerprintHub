@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Zapya file transfer app
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n<\?xml version="1\.0" encoding="UTF-8"\?>\r\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1\.0 Strict//EN" "http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-strict\.dtd">\r\n<html xmlns="http://www\.w3\.org/1999/xhtml">\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<meta http-equiv="Cache-Control" content="no-cache"/>\r\n<meta name="viewport" content="width=device-width; initial-scale=1\.0; minimum-scale=1\.0; maximum-scale=2\.0"/>\r\n<meta name="MobileOptimized" content="260"/>\r\n<title>zapya download</title>'

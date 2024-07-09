@@ -1,0 +1,20 @@
+id: net-rpc
+info:
+  name: OpenERP NET-RPC
+  author: nmap,cn-kali-team
+  tags: detect,tech,net-rpc,service
+  severity: info
+  metadata:
+    info: 'path: $1'
+    operating_system: Unix
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: net-rpc
+    type: regex
+    regex:
+    - '^     5051\(lp1\ncexceptions\nException\np2\n\(Vinvalid literal for int\(\) with base 10: ''GET / HT''\np3\ntp4\nRp5\naS''Traceback \(most recent call last\):\\n  File \"([\w._/-]+)/netrpc_server\.py\", line 63, in run\\n'

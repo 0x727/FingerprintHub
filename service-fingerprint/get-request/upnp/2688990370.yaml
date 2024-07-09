@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: KooRaRoo upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: UPnP $2; DLNADOC $3
+    operating_system: $1
+    version: $4
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 412 Precondition Failed\r\nDate: .*\r\nContent-Length: 0\r\nConnection: close\r\nServer: ([^,]+), UPnP/([\d.]+) DLNADOC/([\d.]+), KooRaRoo Media Server/([\d.]+)\r\n\r\n'

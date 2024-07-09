@@ -1,0 +1,19 @@
+id: http
+info:
+  name: H2 Database console
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: remote connections disabled
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nCache-Control: no-cache\r\nContent-Length: \d+\r\n\r\n.*<!--\nCopyright 2004-20\d\d H2 Group\.\n.*Sorry, remote connections \(''webAllowOthers''\) are disabled on this server\.'

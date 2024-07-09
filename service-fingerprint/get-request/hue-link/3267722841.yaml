@@ -1,0 +1,17 @@
+id: hue-link
+info:
+  name: Philips Hue link/debug
+  author: nmap,cn-kali-team
+  tags: detect,tech,hue-link,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: hue-link
+    type: regex
+    regex:
+    - ^GET  HTTP1\.0\n\n$

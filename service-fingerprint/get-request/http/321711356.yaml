@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Amazon S3 httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: application/xml; charset=UTF-8\r\nContent-Length: 154\r\nDate: .* GMT\r\nConnection: close\r\n\r\n<\?xml version=\"1\.0\" encoding=\"UTF-8\"\?>\n<ListAllMyBucketsResult xmlns=\"http://doc\.s3\.amazonaws\.com/2006-03-01\"><Buckets></Buckets></ListAllMyBucketsResult>$'

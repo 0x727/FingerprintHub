@@ -1,0 +1,19 @@
+id: gnutella
+info:
+  name: GhostWhiteCrab gnutella cache
+  author: nmap,cn-kali-team
+  tags: detect,tech,gnutella,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gnutella
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nDate: .*\r\nServer: GhostWhiteCrab/([\d.]+)\r\nConnection: close\r\n\r\n'

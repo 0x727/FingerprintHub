@@ -1,0 +1,20 @@
+id: http-proxy
+info:
+  name: RabbIT http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    hostname: $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nServer: RabbIT proxy version ([\w._-]+)\r\nContent-type: text/html; charset=utf-8\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nDate: .*\r\nWWW-Authenticate: Basic realm=\"([\w._-]+):\d+\"\r\n'

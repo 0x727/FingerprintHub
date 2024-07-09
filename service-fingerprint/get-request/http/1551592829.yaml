@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Microsoft Wireless Base Station http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nCache-Control: max-age=3600\r\nContent-Type: text/html\r\n\r\n<html>\n<head>\n<META HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\"> \n<title>Base Station Management Tool</title>\n<META HTTP-EQUIV=\"MSThemeCompatible\"'

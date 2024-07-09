@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: TigerLogic D3 Database telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\x01\xff\xfb\x03\xff\xfd!\r\n\r\n\d+:\d+:\d+  \d+ \w+ \d+\r\nEnter your user id: \x07'

@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: NT httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: load balancer
+    info: HotBrick Load Balancer $3 UPnP; UPnP $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nServer: NT/([\d.]+) UPnP/([\d.]+)\r\nDate: .*\r\nContent-type: text/html\r\n\r\n<html>\r\n<head>\r\n<title>HotBrick Load Balancer ([-\w_.]+)</title>\r\n'

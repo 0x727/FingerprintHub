@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Lingo VoIP config telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\x01Login: \r\nLogin: \r\nLogin: '

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: CMSHTTPD
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: z/VM $2; $3
+    operating_system: z/VM
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: CMSHTTPD/([\w._-]+) z_VM/([\w._-]+) ([^\r\n]+)\r\n'

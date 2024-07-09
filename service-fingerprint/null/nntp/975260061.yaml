@@ -1,0 +1,20 @@
+id: nntp
+info:
+  name: InterNetNews NNRP server
+  author: nmap,cn-kali-team
+  tags: detect,tech,nntp,service
+  severity: info
+  metadata:
+    hostname: $1
+    version: $2
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nntp
+    type: regex
+    regex:
+    - ^200 ([-\w._]+) InterNetNews NNRP server INN (.*) ready \(posting ok\)\r\n

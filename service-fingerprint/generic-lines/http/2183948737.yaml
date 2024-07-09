@@ -1,0 +1,20 @@
+id: http
+info:
+  name: JBidWatcher httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Java
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Authorization Required\nServer: JBidWatcher/([\d.]+) \(Java\)\nWWW-Authenticate: Basic realm=\"JBidWatcher\"\n'

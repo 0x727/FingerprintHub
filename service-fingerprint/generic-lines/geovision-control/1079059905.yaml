@@ -1,0 +1,19 @@
+id: geovision-control
+info:
+  name: Geovision webcam control
+  author: nmap,cn-kali-team
+  tags: detect,tech,geovision-control,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: geovision-control
+    type: regex
+    regex:
+    - (?i)^..\0\0\xff\xff\xff\xff$

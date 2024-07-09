@@ -1,0 +1,13 @@
+[package]
+name = "helper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+argh = "0.1.12"
+serde = { version = "1.0.196", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1"
+engine = { git = "https://github.com/emo-crab/observer_ward.git" }

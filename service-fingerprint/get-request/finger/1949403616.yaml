@@ -1,0 +1,17 @@
+id: finger
+info:
+  name: Post.Office fingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - ^No information available\r\n$

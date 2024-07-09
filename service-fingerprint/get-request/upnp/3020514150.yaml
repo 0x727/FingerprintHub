@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: FUPPES UPnP media server
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: FreeBSD $1; UPnP $2
+    operating_system: FreeBSD
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: FreeBSD/([\w_.-]+), UPnP/([\w_.-]+), Free UPnP Entertainment Service/([^\r\n]+)\r\n'

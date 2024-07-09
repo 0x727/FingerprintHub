@@ -1,0 +1,17 @@
+id: spamassassin
+info:
+  name: SpamAssassin spamd
+  author: nmap,cn-kali-team
+  tags: detect,tech,spamassassin,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: spamassassin
+    type: regex
+    regex:
+    - '^SPAMD/1\.0 76 Bad header line: \r\n'

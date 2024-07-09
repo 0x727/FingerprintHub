@@ -1,0 +1,19 @@
+id: http
+info:
+  name: IBM WebSphere Application Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Servlet $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nX-Powered-By: Servlet/([\w._-]+)\r\nContent-Type: text/html;charset=[^\r\n;]+\r\n\$WSEP: \r\n'

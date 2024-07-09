@@ -1,0 +1,21 @@
+id: http
+info:
+  name: TwistedWeb httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Twisted $1; Mac OS X teamsserver
+    operating_system: Mac OS X
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nContent-Length: 141\r\nServer: Twisted/([\w._+-]+) TwistedWeb/([\w._+-]+)\r\nDAV: 1, access-control\r\nDate: .*\r\nContent-Type: text/html\r\nWWW-Authenticate: digest nonce=\"\d+\", realm=\"/Search\", algorithm=\"md5\"\r\nConnection: close\r\n\r\n<html><head><title>Unauthorized</title></head><body><h1>Unauthorized</h1><p>You are not authorized to access this resource\.</p></body></html>$'

@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: ipOS upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: D-Link WAP dynamic DNS; UPnP $2; ipUPnP $3
+    operating_system: ipOS $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 500 Internal Server Error\r\nSERVER: ipOS/([\d.]+) UPnP/([\d.]+) ipUPnP/([\d.]+)\r\n'

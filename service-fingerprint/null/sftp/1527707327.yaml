@@ -1,0 +1,17 @@
+id: sftp
+info:
+  name: Shiva LanRover SFTP service
+  author: nmap,cn-kali-team
+  tags: detect,tech,sftp,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sftp
+    type: regex
+    regex:
+    - ^\+Shiva SFTP Service\0$

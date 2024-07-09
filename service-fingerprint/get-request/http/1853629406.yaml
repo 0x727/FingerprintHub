@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Miranda mbot plugin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: PHP $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\ncontent-type: text/html\r\nconnection: close\r\npragma: no-cache\r\nX-Powered-By: PHP/([\d.]+)\r\nContent-type: text/html\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1\.0 Transitional//EN\" \"DTD/xhtml1-transitional\.dtd\">\n<html><head>\n<style type=\"text/css\"><!--\nbody {background-color: #ffffff;'

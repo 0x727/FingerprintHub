@@ -1,0 +1,20 @@
+id: ftp
+info:
+  name: bsd-ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    hostname: $1
+    operating_system: Linux
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 ([-.\w]+) FTP server ready\.\r\n214- The following commands are recognized \(\* =>'s unimplemented\)\.\r\n   USER    PORT    TYPE    MLFL\*   MRCP\*   DELE    SYST    RMD     STOU \r\n   PASS    LPRT    STRU    MAIL\*   ALLO    CWD     STAT    XRMD    SIZE \r\n   ACCT\*   EPRT    MODE    MSND\*   REST    XCWD    HELP    PWD     MDTM \r\n   SMNT\*   PASV    RETR    MSOM\*   RNFR    LIST    NOOP    XPWD \r

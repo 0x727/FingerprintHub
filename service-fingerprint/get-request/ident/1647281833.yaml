@@ -1,0 +1,19 @@
+id: ident
+info:
+  name: Linux-identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+  metadata:
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^GET / HTTP/1\.0 : ERROR : INVALID-PORT\r\n : ERROR : INVALID-PORT\r\n$'

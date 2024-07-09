@@ -1,0 +1,19 @@
+id: kmldonkey
+info:
+  name: KMLDonkey
+  author: nmap,cn-kali-team
+  tags: detect,tech,kmldonkey,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: kmldonkey
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nServer: KMLDonkey/(\d\S+)'

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Parrot S.A. embedded httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nSERVER: Parrot\r\nCONTENT-TYPE: text/html\r\nCONTENT-LENGTH: \d+\r\n\r\n<html><head><title>400 Bad Request</title></head><body></body></html>'

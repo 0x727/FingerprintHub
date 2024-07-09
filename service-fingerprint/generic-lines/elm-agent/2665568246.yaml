@@ -1,0 +1,20 @@
+id: elm-agent
+info:
+  name: TNT ELM log agent
+  author: nmap,cn-kali-team
+  tags: detect,tech,elm-agent,service
+  severity: info
+  metadata:
+    operating_system: Windows
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: elm-agent
+    type: regex
+    regex:
+    - ^ELM Manager Agent ([\w._-]+)\r\nCopyright \xa9 \d+-\d+ TNT Software, Inc\.\r\n

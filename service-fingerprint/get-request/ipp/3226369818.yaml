@@ -1,0 +1,19 @@
+id: ipp
+info:
+  name: Konica Minolta BizHub C224e printer ipp
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipp,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nContent-Length: 29\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n 400 Bad Request from Browser'

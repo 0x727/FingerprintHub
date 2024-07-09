@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: Dell OpenManage telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\r\n\xff\xfb\x01\xff\xfb\x03\r\nUser:GET / HTTP/1\.0\r\nPassword:\r\nUser:'

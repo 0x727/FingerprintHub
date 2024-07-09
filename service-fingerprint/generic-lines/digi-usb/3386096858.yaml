@@ -1,0 +1,19 @@
+id: digi-usb
+info:
+  name: Digi USB-over-TCP bridge
+  author: nmap,cn-kali-team
+  tags: detect,tech,digi-usb,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: digi-usb
+    type: regex
+    regex:
+    - ^\xff\x14Port is out of range\0\xff\x14Port is out of range\0\xff\x14Port is out of range\0\xff\x14Port is out of range\0\xff\x14Port is out of range\0

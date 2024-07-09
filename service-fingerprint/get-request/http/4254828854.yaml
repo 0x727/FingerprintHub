@@ -1,0 +1,20 @@
+id: http
+info:
+  name: ArenaNet ArenaSrv game server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Instance $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nConnection: close\r\nContent-Length: \d+\r\nServer: ArenaSrv/([\d.]+) Instance/([\d.]+)\r\n'

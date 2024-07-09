@@ -1,0 +1,20 @@
+id: caldav
+info:
+  name: DavMail CalDAV http gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,caldav,service
+  severity: info
+  metadata:
+    device_type: proxy server
+    version: $1
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: caldav
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nServer: DavMail Gateway ([\w._-]+)\r\nDAV: 1, calendar-access, calendar-schedule, calendarserver-private-events, addressbook\r\n'

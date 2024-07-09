@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: Postfix smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - '^220 ([-\w_.]+) ESMTP\r\n402 Error: command not implemented\r\n$'

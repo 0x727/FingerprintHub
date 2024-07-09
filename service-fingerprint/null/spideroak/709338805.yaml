@@ -1,0 +1,17 @@
+id: spideroak
+info:
+  name: SpiderOak
+  author: nmap,cn-kali-team
+  tags: detect,tech,spideroak,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: spideroak
+    type: regex
+    regex:
+    - (?i)^\x60\0\0\0\0\0\0\0\0\0.{90}$

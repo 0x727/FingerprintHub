@@ -1,0 +1,20 @@
+id: finger
+info:
+  name: MiamiDx fingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+  metadata:
+    info: 'site: $1'
+    operating_system: AmigaOS
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - '^Site: (.+)\n\nLogin     Name\n'

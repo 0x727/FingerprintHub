@@ -1,0 +1,17 @@
+id: iota-api
+info:
+  name: IOTA Node API
+  author: nmap,cn-kali-team
+  tags: detect,tech,iota-api,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: iota-api
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nConnection: close\r\nAccess-Control-Allow-Origin: \*\r\nKeep-Alive: timeout=500, max=100\r\nContent-Type: application/json\r\nContent-Length: 44\r\nDate: .*\r\n\r\n\{"error":"Invalid API Version","duration":0\}'

@@ -1,0 +1,20 @@
+id: rtsp
+info:
+  name: RealMedia Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    operating_system: $2
+    version: $1
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^RTSP/1\.0 200 OK\r\nCSeq: 0\r\nDate: .*\r\nServer: RealMedia Server Version ([\d.]+) \(([^)]+)\)\r\nPublic: OPTIONS, DESCRIBE, ANNOUNCE, SETUP, GET_PARAMETER, SET_PARAMETER, TEARDOWN\r\nRealChallenge1: '

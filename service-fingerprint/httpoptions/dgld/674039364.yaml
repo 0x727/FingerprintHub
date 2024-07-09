@@ -1,0 +1,19 @@
+id: dgld
+info:
+  name: IRIX Distributed GL Daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,dgld,service
+  severity: info
+  metadata:
+    operating_system: IRIX
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: dgld
+    type: regex
+    regex:
+    - ^OPTI$

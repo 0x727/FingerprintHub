@@ -1,0 +1,22 @@
+id: http
+info:
+  name: Dell KACE Management Appliance
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: remote management
+    hostname: $2
+    info: model $1; Apache httpd
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r.*\nServer: Apache\r.*\nX-DellKACE-Appliance: (\w+)\r\nX-DellKACE-Host: ([\w.-]+)\r\nX-DellKACE-Version: ([\d.]+)\r\n'

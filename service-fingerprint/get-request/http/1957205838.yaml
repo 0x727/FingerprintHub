@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Teradata Parallel Upgrade Tool
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nX-Frame-Options: SAMEORIGIN\r\nContent-Length: \d+\r\nCache-Control:no-cache\r\nContent-Type:text/html\r\nSet-Cookie: PUTCOOKIE=[^;]+; path=/; HttpOnly; \r\n\r\n<html>\n\n<head>\n    <META HTTP-EQUIV="Expires" CONTENT="0">\n    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">\n    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">\n    <title>Teradata Parallel Upgrade Tool 0?(\d[\d.]*)<'

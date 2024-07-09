@@ -1,0 +1,19 @@
+id: lsx
+info:
+  name: EA Origin
+  author: nmap,cn-kali-team
+  tags: detect,tech,lsx,service
+  severity: info
+  metadata:
+    version: $SUBST(1,",",".")
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: lsx
+    type: regex
+    regex:
+    - ^<LSX>\n\t<Event sender=\"EALS\">\n\t\t<Challenge version=\"([\d,]+)\" key=\"[\da-f]{32}\" />\n\t</Event>\n</LSX>\n\0

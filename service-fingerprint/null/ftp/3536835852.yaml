@@ -1,0 +1,20 @@
+id: ftp
+info:
+  name: FileZilla ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    info: Mandatory SSL
+    operating_system: Windows
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^431 Could not initialize SSL connection\r\n

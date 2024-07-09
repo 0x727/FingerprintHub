@@ -1,0 +1,17 @@
+id: athinfod
+info:
+  name: Athena athinfod
+  author: nmap,cn-kali-team
+  tags: detect,tech,athinfod,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: athinfod
+    type: regex
+    regex:
+    - '^athinfod: invalid query\.\n$'

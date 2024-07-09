@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Ganeti httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/0\.9 400 Bad Request\r\n\r\n$

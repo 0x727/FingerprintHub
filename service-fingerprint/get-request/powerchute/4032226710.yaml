@@ -1,0 +1,19 @@
+id: powerchute
+info:
+  name: APC Powerchute
+  author: nmap,cn-kali-team
+  tags: detect,tech,powerchute,service
+  severity: info
+  metadata:
+    device_type: power-device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: powerchute
+    type: regex
+    regex:
+    - ^server=&type=0&id=&count=1&oid=[\d.]+&value=&error=4\n

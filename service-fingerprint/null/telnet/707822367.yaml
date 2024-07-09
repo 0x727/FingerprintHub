@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Compaq 5450 switch telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: switch
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\x01Copyright \(C\) \d+ by Compaq Computer Corp\. \r\n\rlogin: '

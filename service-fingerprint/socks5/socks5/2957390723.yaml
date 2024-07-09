@@ -1,0 +1,19 @@
+id: socks5
+info:
+  name: GSSAPI authentication required
+  author: nmap,cn-kali-team
+  tags: detect,tech,socks5,service
+  severity: info
+  metadata:
+    info: GSSAPI authentication required
+tcp:
+- name: socks5
+  inputs:
+  - data: \x05\x04\x00\x01\x02\x80\x05\x01\x00\x03\x0agoogle.com\x00\x50GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: socks5
+    type: regex
+    regex:
+    - ^\x05\x01

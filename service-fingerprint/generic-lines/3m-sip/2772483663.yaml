@@ -1,0 +1,19 @@
+id: 3m-sip
+info:
+  name: Standard Interchange Prototol 2.0
+  author: nmap,cn-kali-team
+  tags: detect,tech,3m-sip,service
+  severity: info
+  metadata:
+    info: Integrated Library System authentication; Civica Spydus 7
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: 3m-sip
+    type: regex
+    regex:
+    - '^Invalid request string: Request string is: \"\r\"$'

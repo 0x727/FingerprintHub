@@ -1,0 +1,19 @@
+id: nameserver
+info:
+  name: Solaris Internet Name Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,nameserver,service
+  severity: info
+  metadata:
+    operating_system: Solaris
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nameserver
+    type: regex
+    regex:
+    - ^help\r\n\r\n\xff\xbf\xf8\xb0\xff7\0\x18\0\0\0\x01\0\0\0\0

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Zodianet ZiBASE home automation httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/0\.0 501 Not Implemented\r\nServer: ZiBASE([\d.]+)\r\n'

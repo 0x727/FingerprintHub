@@ -1,0 +1,21 @@
+id: http
+info:
+  name: uClinux-httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: DxClient NetViewer DVR viewer $SUBST(2,",",".")
+    operating_system: Linux
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\n.*Server: uClinux-httpd ([\w._-]+)\nExpires: 0\n\n.*<title>DxClient NetViewer</title>.*<OBJECT\r\n\tclassid=\"clsid:EF34051A-402A-4ABE-AA20-04E1B4422BD9\"\r\n\tcodebase=\"DxClient_NetViewer\.cab#version=([\d,]+)\"\r\n'

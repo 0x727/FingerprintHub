@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Tridium Niagara httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    operating_system: $1
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?xi)^HTTP/1\.[01] \d\d\d .*\r\nNiagara-Platform: ([^\r\n]+).*Server: Niagara Web Server/([\d.]+)\r\n'

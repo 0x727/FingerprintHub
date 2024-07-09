@@ -1,0 +1,19 @@
+id: daap
+info:
+  name: daapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,daap,service
+  severity: info
+  metadata:
+    info: Hughes embedded
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: daap
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\nServer: Hughes Technologies Embedded Server \(persistent patch\)\r\n'

@@ -1,0 +1,19 @@
+id: rethinkdb-client
+info:
+  name: RethinkDB client driver
+  author: nmap,cn-kali-team
+  tags: detect,tech,rethinkdb-client,service
+  severity: info
+  metadata:
+    version: 1.13.2 or newer
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rethinkdb-client
+    type: regex
+    regex:
+    - '^ERROR: Received an unsupported protocol version\. This port is for RethinkDB queries\. Does your client driver version not match the server\?\n\0?'

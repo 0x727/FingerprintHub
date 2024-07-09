@@ -1,0 +1,19 @@
+id: icap
+info:
+  name: C-ICAP
+  author: nmap,cn-kali-team
+  tags: detect,tech,icap,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: icap
+    type: regex
+    regex:
+    - '^ICAP/1\.0 400 Bad request\r\nServer: C-ICAP/([\w._-]+)\r\nConnection: close\r\n\r\n$'

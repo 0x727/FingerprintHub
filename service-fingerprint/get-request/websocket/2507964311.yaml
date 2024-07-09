@@ -1,0 +1,17 @@
+id: websocket
+info:
+  name: Autobahn WAMP server
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - ^HTTP/1\.1 400 HTTP Host header missing in opening handshake request\r\n\r\n

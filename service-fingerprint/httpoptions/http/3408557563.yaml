@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Televes CoaxData coax-to-Ethernet bridge
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: bridge
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 501 Method Not Implemented\r\nContent-Type: text/plain\r\nContent-Length: 12\r\n\r\nError: 501\r\n'

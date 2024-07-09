@@ -1,0 +1,17 @@
+id: istat
+info:
+  name: istatd server for iStat iPhone app
+  author: nmap,cn-kali-team
+  tags: detect,tech,istat,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: istat
+    type: regex
+    regex:
+    - ^<\?xml version=\"1\.0\" encoding=\"UTF-8\"\?><isr athrej=\"1\"></isr>$

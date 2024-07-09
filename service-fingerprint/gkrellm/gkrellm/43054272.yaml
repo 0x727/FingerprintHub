@@ -1,0 +1,19 @@
+id: gkrellm
+info:
+  name: GKrellM System Monitor
+  author: nmap,cn-kali-team
+  tags: detect,tech,gkrellm,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: gkrellm
+  inputs:
+  - data: gkrellm 0.0.0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gkrellm
+    type: regex
+    regex:
+    - ^<gkrellmd_setup>\n<version>\ngkrellmd ([\w._-]+)\n

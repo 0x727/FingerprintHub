@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Good.iWare WebDAV Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: GoodReader PDF reader; iPad
+    operating_system: iOS
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 505 HTTP Version not supported\r\n(?:[^\r\n]+\r\n)*?Server: GoodReader for iPad\r\n.*If you have any questions, please contact <a href=\"mailto:support@goodreader\.net\">support@goodreader\.net</a>'

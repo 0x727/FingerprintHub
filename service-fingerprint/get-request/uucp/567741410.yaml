@@ -1,0 +1,17 @@
+id: uucp
+info:
+  name: Taylor uucpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,uucp,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: uucp
+    type: regex
+    regex:
+    - '^login: Password:$'

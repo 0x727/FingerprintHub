@@ -1,0 +1,19 @@
+id: jmon
+info:
+  name: JMON for zOS (FMID HALG300)
+  author: nmap,cn-kali-team
+  tags: detect,tech,jmon,service
+  severity: info
+  metadata:
+    operating_system: z/OS
+tcp:
+- name: jmon
+  inputs:
+  - data: CONNECT01 v09\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jmon
+    type: regex
+    regex:
+    - ^ACKNOWLEDGE

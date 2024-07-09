@@ -1,0 +1,21 @@
+id: http
+info:
+  name: TreeNeWS httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: switch
+    info: Enterasys RBT-8200 switch http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 OK\r\nDate: \w\w\w \d\d, \d\d:\d\d:\d\d\.\d\d\d\r\nServer: TreeNeWS/([\w._-]+)\r\nMime-Version: 1\.0\r\nLocation: https://index\.html\r\nContent-Length: 67\r\nContent-Type: text/html\r\n\r\n<HTML><HEAD><TITLE>Redirect</TITLE></HEAD>\n<BODY></BODY></HTML>\r\r\n\n$'

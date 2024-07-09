@@ -1,0 +1,19 @@
+id: whois
+info:
+  name: gwhois
+  author: nmap,cn-kali-team
+  tags: detect,tech,whois,service
+  severity: info
+  metadata:
+    info: Uses $1:$2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: whois
+    type: regex
+    regex:
+    - '^Process query: ''''\nQuery recognized as IP(?:v4)?\.\nQuerying ([\w\d_.-]+):(\d+) with whois\.\n\n'

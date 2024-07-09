@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Hay Systems HSL 2.75G Femtocell http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\nServer: Integrity\nContent-type: text/html\n\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2\.0//EN\">\n<html>\n<head>\n<title>Welcome to INTEGRITY</title>'

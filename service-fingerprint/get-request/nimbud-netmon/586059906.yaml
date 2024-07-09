@@ -1,0 +1,19 @@
+id: nimbud-netmon
+info:
+  name: Nimsoft Nimbus network monitor
+  author: nmap,cn-kali-team
+  tags: detect,tech,nimbud-netmon,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nimbud-netmon
+    type: regex
+    regex:
+    - ^nimbus/([\d.]+) \d+ \d+\r\nmtype

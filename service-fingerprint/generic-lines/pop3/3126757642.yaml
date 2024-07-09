@@ -1,0 +1,19 @@
+id: pop3
+info:
+  name: SurgeMail pop3d
+  author: nmap,cn-kali-team
+  tags: detect,tech,pop3,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pop3
+    type: regex
+    regex:
+    - ^\+OK ([\w._-]+) Welcome\r\n-ERR Invalid command \(\) \(\) p1=\(\)\r\n-ERR Invalid command \(\) \(\) p1=\(\)\r\n

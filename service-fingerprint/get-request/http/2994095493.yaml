@@ -1,0 +1,20 @@
+id: http
+info:
+  name: T-Com Speedport W 101V http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: German
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Mime-Version: 1\.0\r\n.*<TITLE>HTML-Konfiguration</TITLE>\n<SCRIPT type=\"text/javascript\" src=\"/html/dom\.js\">'

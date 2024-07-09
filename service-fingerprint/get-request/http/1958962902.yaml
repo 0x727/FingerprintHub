@@ -1,0 +1,21 @@
+id: http
+info:
+  name: avtech httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Postef-8840 ADSL router
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nDate: Thu, 01 Jan 1970 00:00:00 GMT\r\nnServer: avtech/([\w._-]+)\.\.Expires: 0\r\nPragma:  no-cache\r\nCache-Control:  no-cache\r\nConnection: close\r\nContent-type: text/html;charset=ISO-8859-1\r\nWWW-Authenticate: Basic realm=server\r\nContent-Length: 163\r\n'

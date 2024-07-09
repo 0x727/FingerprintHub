@@ -1,0 +1,21 @@
+id: finger
+info:
+  name: IQinVision fingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+  metadata:
+    device_type: webcam
+    hostname: $1
+    info: Camera
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - ^\n Nodename:\s+(\w+)\r\n

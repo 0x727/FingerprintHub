@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: Check Point FireWall-1 Client Authentication Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^Check Point FireWall-1 Client Authentication Server running on [-.\w]+\r\n\r\xff\xfb\x01\xff\xfe\x01\xff\xfb\x03User: '

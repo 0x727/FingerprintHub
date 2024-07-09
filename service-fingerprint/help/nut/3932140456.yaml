@@ -1,0 +1,17 @@
+id: nut
+info:
+  name: Network UPS Tools upsd
+  author: nmap,cn-kali-team
+  tags: detect,tech,nut,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nut
+    type: regex
+    regex:
+    - '^Commands: VER REQ HELP LISTVARS LOGOUT LOGIN PASSWORD LISTRW VARTYPE VARDESC ENUM SET INSTCMD LISTINSTCMD INSTCMDDESC FSD MASTER USERNAME STARTTLS\n'

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Conexant-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Allied Telesis broadband router http config
+    version: $SUBST(1,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nServer: Conexant-EmWeb/R([\d_]+)\r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: Basic realm=\"Connecting to router\".*\(C\) Copyright \w+ Allied Telesis'

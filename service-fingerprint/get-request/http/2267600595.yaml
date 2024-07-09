@@ -1,0 +1,19 @@
+id: http
+info:
+  name: WWWinamp remote control httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.0 200 OK\r\ncontent-type:text/html\r\n\r\n<HTML><HEAD><TITLE>WWWinamp</TITLE>

@@ -1,0 +1,17 @@
+id: tsdns
+info:
+  name: TeamSpeak domain name server
+  author: nmap,cn-kali-team
+  tags: detect,tech,tsdns,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: tsdns
+    type: regex
+    regex:
+    - ^[\d.]+:\$PORT$

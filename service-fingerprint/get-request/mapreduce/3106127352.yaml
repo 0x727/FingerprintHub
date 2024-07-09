@@ -1,0 +1,19 @@
+id: mapreduce
+info:
+  name: Hadoop MapReduce
+  author: nmap,cn-kali-team
+  tags: detect,tech,mapreduce,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mapreduce
+    type: regex
+    regex:
+    - name:\x20mapreduce\r\nversion:\x20(.+)\r\n\r\n

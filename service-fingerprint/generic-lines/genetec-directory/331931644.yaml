@@ -1,0 +1,17 @@
+id: genetec-directory
+info:
+  name: Genetec Security Center directory connection service
+  author: nmap,cn-kali-team
+  tags: detect,tech,genetec-directory,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: genetec-directory
+    type: regex
+    regex:
+    - ^\xde\xad\xad\xde\x0f\x03\0\0\xeed\xab\x99\x01\x05\x06\x05\x07Content}\x02\0\0\x01\0=Genetec\.Net,

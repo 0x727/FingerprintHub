@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Tandberg videoconference httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: '"$1"'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\r\nPragma: no-cache\r\nWWW-Authenticate: Digest realm=\"([^"]+)\", domain=\"/\", nonce=\"[\da-f]+\", algorithm=\"MD5\", qop=\"auth\"\r\nWWW-Authenticate: Basic realm=\"\1\"\r\nContent-Type: text/html\r\n.*<HTML>\r\n<HEAD>\r\n<TITLE>Error 401</TITLE>'

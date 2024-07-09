@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: Audi MIB High $1 entertainment system
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: DLNADOC $3
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 412 Precondition Failed\r\nDate: .*\r\nContent-Length: 0\r\nConnection: close\r\nServer: Audi-MIB2HIGH-(G\d+)/([\d.]+) DLNADOC/([\d.]+)/1\r\n\r\n'

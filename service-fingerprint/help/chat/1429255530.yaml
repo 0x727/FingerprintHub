@@ -1,0 +1,17 @@
+id: chat
+info:
+  name: Simple Instant Messenger control plugin
+  author: nmap,cn-kali-team
+  tags: detect,tech,chat,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: chat
+    type: regex
+    regex:
+    - ^\r\n>STATUS\tset status\r\nINVISIBLE\tset invisible mode\r\nMAINWINDOW\tshow/hide main window\r\n

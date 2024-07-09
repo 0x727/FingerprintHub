@@ -1,0 +1,20 @@
+id: http
+info:
+  name: iTP Secure WebServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: HP Tandem NonStop
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: iTP Secure WebServer/([\w._() -]+)\r\n.*<TITLE>Index of /</TITLE>'

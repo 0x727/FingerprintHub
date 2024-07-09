@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Edgecast ECD httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.[01] (?:[^\r\n]*\r\n(?!\r\n))*?Date: [^\r\n]+ GMT\r\nServer: ECD \(\w+/[0-9A-F]+\)\r\n'

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Ninja Blocks home automation httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Moved Temporarily\r\nX-Powered-By: Express\r\nVary: Accept\r\nContent-Type: text/plain\r\nLocation: /plugin\r\nContent-Length: 41\r\nDate: .*\r\nConnection: close\r\n\r\nMoved Temporarily\. Redirecting to /plugin$'

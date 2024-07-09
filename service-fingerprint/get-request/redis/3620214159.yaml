@@ -1,0 +1,17 @@
+id: redis
+info:
+  name: Redis key-value store
+  author: nmap,cn-kali-team
+  tags: detect,tech,redis,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: redis
+    type: regex
+    regex:
+    - ^-ERR wrong number of arguments for 'get' command\r\n$

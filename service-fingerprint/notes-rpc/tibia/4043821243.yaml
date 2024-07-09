@@ -1,0 +1,17 @@
+id: tibia
+info:
+  name: Tibia graphical MUD
+  author: nmap,cn-kali-team
+  tags: detect,tech,tibia,service
+  severity: info
+tcp:
+- name: notes-rpc
+  inputs:
+  - data: \x3A\x00\x00\x00\x2F\x00\x00\x00\x02\x00\x00\x40\x02\x0F\x00\x01\x00\x3D\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x2F\x00\x00\x00\x00\x00\x00\x00\x00\x00\x40\x1F\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: tibia
+    type: regex
+    regex:
+    - ^V\0\x02\0Your terminal version is too old\.\nPlease get a new version at\nhttp://www\.tibia\.com\.\0$

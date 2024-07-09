@@ -1,0 +1,17 @@
+id: whois
+info:
+  name: Public Interest Registry whois server
+  author: nmap,cn-kali-team
+  tags: detect,tech,whois,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: whois
+    type: regex
+    regex:
+    - ^Query may not be an empty string\n

@@ -1,0 +1,17 @@
+id: smtp
+info:
+  name: Lotus Notes smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+tcp:
+- name: hello
+  inputs:
+  - data: EHLO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^552 Invalid domain name in HELO command \(DLH use case\)\.\r\n

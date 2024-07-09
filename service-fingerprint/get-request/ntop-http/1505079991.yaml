@@ -1,0 +1,17 @@
+id: ntop-http
+info:
+  name: Ntop web interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,ntop-http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ntop-http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized to access the document\nWWW-Authenticate: Basic realm=\"ntop HTTP server\"\n'

@@ -1,0 +1,17 @@
+id: tor-info
+info:
+  name: Tor nodes info httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,tor-info,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: tor-info
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not found\r\nDate: \w\w\w, \d\d? \w\w\w \d\d\d\d \d\d:\d\d:\d\d GMT\r\n\r\n$'

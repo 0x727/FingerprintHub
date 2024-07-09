@@ -1,0 +1,21 @@
+id: http
+info:
+  name: DMRND httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Samsung TV
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nConnection: close\r\nContent-Length: 0\r\nServer: DMRND/([\w._-]+)\r\n\r\n'

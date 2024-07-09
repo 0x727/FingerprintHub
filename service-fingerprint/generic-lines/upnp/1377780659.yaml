@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: QNAP DLNA
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: DLNADOC $2; UPnP $3
+    operating_system: Linux $1
+    version: $4
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 501 Not Implemented\r\n(?:[^\r\n]+\r\n)*?Server: ([34][\d.]+)(?:-generic)? Microsoft-Windows/[\d.]+ Windows-Media-Player-DMS/[\d.]+ DLNADOC/([\d.]+) UPnP/([\d.]+) QNAPDLNA/([\d.]+)\r\n'

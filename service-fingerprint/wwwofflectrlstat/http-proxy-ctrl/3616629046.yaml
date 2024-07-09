@@ -1,0 +1,19 @@
+id: http-proxy-ctrl
+info:
+  name: WWWOFFLE proxy control
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy-ctrl,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: wwwofflectrlstat
+  inputs:
+  - data: WWWOFFLE STATUS\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy-ctrl
+    type: regex
+    regex:
+    - '^WWWOFFLE Server Status\n-*\nVersion *: (\d.*)\n'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: GoPro HERO3 camera http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \xff\xfbAllow: GET \r\nAccept-Ranges: bytes\r\nCache-Control: no-cache\r\nCache-Control: no-store\r\nConnection: Keep-Alive\r\nServer: GoPro Web Server v([\w._-]+)\r\nContent-Type: text/plain\r\nContent-Length: 2\r\n\r\n$'

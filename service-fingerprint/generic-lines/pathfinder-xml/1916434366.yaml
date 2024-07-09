@@ -1,0 +1,17 @@
+id: pathfinder-xml
+info:
+  name: Avaya Scopia Pathfinder XML API
+  author: nmap,cn-kali-team
+  tags: detect,tech,pathfinder-xml,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pathfinder-xml
+    type: regex
+    regex:
+    - ^<\?xml version=\"1\.0\" encoding=\"UTF-8\"\?> <FatalError><Reason>Invalide XML!</Reason></FatalError>\r\n<\?xml version=\"1\.0\" encoding=\"UTF-8\"\?> <FatalError><Reason>Invalide XML!</Reason></FatalError>\r\n

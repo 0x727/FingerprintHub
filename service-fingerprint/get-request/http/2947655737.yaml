@@ -1,0 +1,19 @@
+id: http
+info:
+  name: PostX IP Reporting alarm system httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 Ok\r\nSet-Cookie: PostX_Level=0\r\nRefresh: 0;url=/login\.php\r\n\r\n'

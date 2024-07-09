@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Western Digital My Book http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    hostname: $2
+    info: PHP $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nX-Powered-By: PHP/([\w._-]+)\r\n.*<title>My Book World Edition - ([\w._-]+)</title>\n.*<!-- Framework CSS -->\n<link rel=\"stylesheet\" href=\"/blueprint/screen\.css\" type=\"text/css\" media=\"screen, projection\">'

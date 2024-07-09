@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Cisco Application Control Engine XML Gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: load balancer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Service not found\r\nDate: .* GMT\r\nServer: ACE XML Gateway\r\nContent-Type: text/plain\r\nContent-Length: 42\r\nConnection: close\r\n\r\nNo handler was found matching the request\.'

@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: Panasonic DP-1820E printer ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 FTP server ready\.\r\n510 command not supported\.\r\n

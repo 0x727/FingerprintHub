@@ -1,0 +1,19 @@
+id: http
+info:
+  name: C# Webserver
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: OpenSimulator http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 404 NotFound\r\nContent-type: text/html\r\n(?:[^\r\n]+\r\n)*?Server: Tiny WebServer\r\n.*<H1>Ooops!</H1><P>The page you requested has been obsconded with by knomes\. Find hippos quick!</P><P>If you are trying to log-in, your link parameters should have: &quot;-loginpage http:///\?method=login -loginuri http:///&quot; in your link </P></BODY></HTML>'

@@ -1,0 +1,20 @@
+id: icy
+info:
+  name: SHOUTcast server
+  author: nmap,cn-kali-team
+  tags: detect,tech,icy,service
+  severity: info
+  metadata:
+    operating_system: Unix
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: icy
+    type: regex
+    regex:
+    - ^ICY 401 Service Unavailable\r\n.*SHOUTcast Distributed Network Audio Server/UNIX OS-3 v([\d.]+)

@@ -1,0 +1,17 @@
+id: gopher
+info:
+  name: Bucktooth gopherd
+  author: nmap,cn-kali-team
+  tags: detect,tech,gopher,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gopher
+    type: regex
+    regex:
+    - ^0'/GET / HTTP/1\.0' doesn't exist!\t\terror\.host\t1\r\n\.\r\n$

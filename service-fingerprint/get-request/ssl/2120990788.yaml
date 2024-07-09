@@ -1,0 +1,19 @@
+id: ssl
+info:
+  name: TLS
+  author: nmap,cn-kali-team
+  tags: detect,tech,ssl,service
+  severity: info
+  metadata:
+    version: '1.0'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ssl
+    type: regex
+    regex:
+    - ^\x15\x03\x01\0\x02\x02\x0a$

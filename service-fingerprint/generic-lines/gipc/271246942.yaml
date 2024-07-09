@@ -1,0 +1,20 @@
+id: gipc
+info:
+  name: Oracle Grid Plug and Play daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,gipc,service
+  severity: info
+  metadata:
+    hostname: $1
+    version: $2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gipc
+    type: regex
+    regex:
+    - '^gipc....................HTTP/1\.0 503 Service Unavailable\r\nHost: ([^\r\n]+)\r\nServer: GPnPD/([\d.]+)\r\n\r\n'

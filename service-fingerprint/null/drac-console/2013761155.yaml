@@ -1,0 +1,17 @@
+id: drac-console
+info:
+  name: Dell Remote Access Controller 4 console
+  author: nmap,cn-kali-team
+  tags: detect,tech,drac-console,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: drac-console
+    type: regex
+    regex:
+    - ^\0\0\0\x0c\0\0\0\?\0\0\0\x02$

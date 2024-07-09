@@ -1,0 +1,17 @@
+id: http
+info:
+  name: VMware VirtualCenter Web service
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 403 Forbidden\r\nDate: .* GMT\r\nConnection: close\r\nContent-Type: text; charset=plain\r\nContent-Length: 0\r\n\r\n$'

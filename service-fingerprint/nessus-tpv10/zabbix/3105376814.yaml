@@ -1,0 +1,17 @@
+id: zabbix
+info:
+  name: Zabbix Monitoring System
+  author: nmap,cn-kali-team
+  tags: detect,tech,zabbix,service
+  severity: info
+tcp:
+- name: nessus-tpv10
+  inputs:
+  - data: < NTP/1.0 >\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: zabbix
+    type: regex
+    regex:
+    - ^NOT OK\n$

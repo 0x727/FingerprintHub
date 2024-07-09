@@ -1,0 +1,19 @@
+id: nntp
+info:
+  name: INN NNTPd
+  author: nmap,cn-kali-team
+  tags: detect,tech,nntp,service
+  severity: info
+  metadata:
+    info: broken
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nntp
+    type: regex
+    regex:
+    - '^nnrpd: invalid option -- S\nUsage error\.\n'

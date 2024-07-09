@@ -1,0 +1,19 @@
+id: http
+info:
+  name: mini_httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 501 Not Implemented\r\nServer: mini_httpd/([^\r\n]+)\r\nDate: .*\r\nCache-Control: no-cache,no-store\r\nContent-Type: text/html; charset=[\w_-]+\r\nContent-Length: \d+\r\nConnection: close\r\n\r\n'

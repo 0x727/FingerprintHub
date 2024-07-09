@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: Bestellen SecTitan reverse http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nACCEPT-RANGES: none\r\n\r\n<html><head><Title>SecTitan&#153; Reverse Proxy</title></head><body><center><h1>Error 107</h1>Invalid Request!<br><b>SecTitan&#153; Reverse Proxy ([\w._-]+)</b><br>Copyright &copy; \d+ Bestellen Software, LLC All rights reserved\.</center></body></html>'

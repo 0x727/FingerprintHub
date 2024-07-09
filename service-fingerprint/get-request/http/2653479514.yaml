@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Alcatel-Lucent $1 WAP http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nServer: httpd\r\nDate: .*\r\nWWW-Authenticate: Basic realm=\"Alcatel Lucent ([\w._-]+) ([\w._-]+)\"\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n$'

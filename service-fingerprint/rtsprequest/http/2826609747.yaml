@@ -1,0 +1,17 @@
+id: http
+info:
+  name: nginx
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^<head><title>400 Bad Request</title></head>\r\n<h1>400 Bad Request</h1>\r\n\r\n

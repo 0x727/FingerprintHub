@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Netgear ProSafe VPN firewall http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 \d\d\d .*<link rel=\"icon\" type=\"image/ico\" href=\"images/favicon\.ico\">\n<title>NETGEAR ProSafe&#8482; - Welcome to Configuration Manager Login</title>\n<!--\nCopyright \(c\) 2005-2007 TeamF1, Inc\. \(www\.TeamF1\.com\)\nAll rights reserved\.\n-->

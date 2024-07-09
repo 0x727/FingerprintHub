@@ -1,0 +1,20 @@
+id: dbsnmp
+info:
+  name: Oracle Intelligent Agent
+  author: nmap,cn-kali-team
+  tags: detect,tech,dbsnmp,service
+  severity: info
+  metadata:
+    info: RPC v$2
+    version: $1
+tcp:
+- name: oracle-tns
+  inputs:
+  - data: \0Z\0\0\x01\0\0\0\x016\x01,\0\0\x08\0\x7F\xFF\x7F\x08\0\0\0\x01\0 \0:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\04\xE6\0\0\0\x01\0\0\0\0\0\0\0\0(CONNECT_DATA=(COMMAND=version))
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: dbsnmp
+    type: regex
+    regex:
+    - (?i)^\0.\0\0\x02\0\0\0.*\(IAGENT = \(AGENT_VERSION = ([\d.]+)\)\(RPC_VERSION = ([\d.]+)\)\)

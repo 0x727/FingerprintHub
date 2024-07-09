@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Fortinet FortiGate firewall http proxy admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Last-Modified: Wed, 11 Jan 2012 03:34:20 GMT\r\nETag: \"610_4f_4f0d033c\"\r\n(?:[^\r\n]+\r\n)*?Content-Length: 79\r\n.*location=\"/login\";\n\n</script>\n</html>\n'

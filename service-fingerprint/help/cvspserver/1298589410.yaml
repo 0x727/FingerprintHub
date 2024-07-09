@@ -1,0 +1,17 @@
+id: cvspserver
+info:
+  name: CVSNT cvs pserver
+  author: nmap,cn-kali-team
+  tags: detect,tech,cvspserver,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: cvspserver
+    type: regex
+    regex:
+    - '^cvs \[server aborted\]: bad auth protocol start: HELP\r\n$'

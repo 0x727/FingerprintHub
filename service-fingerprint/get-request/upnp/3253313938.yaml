@@ -1,0 +1,17 @@
+id: upnp
+info:
+  name: Sony Bravia $1 TV DLNA
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nConnection: close\r\nDate: .*\r\nX-AV-Client-Info: av=5\.0; cn="Sony Corporation"; mn="BRAVIA (KD-[^"]+)";'

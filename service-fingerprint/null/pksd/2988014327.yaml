@@ -1,0 +1,19 @@
+id: pksd
+info:
+  name: PGP Public Key Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,pksd,service
+  severity: info
+  metadata:
+    info: broken
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pksd
+    type: regex
+    regex:
+    - '^usage: [/\w]*/etc/pksd\.conf conf_file\n$'

@@ -1,0 +1,19 @@
+id: retrospect
+info:
+  name: Dantz Retrospect
+  author: nmap,cn-kali-team
+  tags: detect,tech,retrospect,service
+  severity: info
+  metadata:
+    version: '6.0'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: retrospect
+    type: regex
+    regex:
+    - ^\0\xca\0\0\0\0\0\x04\0\0\0\0$

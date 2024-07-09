@@ -1,0 +1,19 @@
+id: upnp
+info:
+  name: Fast $1 WAP upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nContent-Type: text/xml\r\nConnection: close\r\nContent-Length: 127\r\nServer: \w+ Wireless [\w/] Router ([\w-]+), UPnP/1\.0\r\n\r\n<HTML><HEAD><TITLE>404 Not Found</TITLE></HEAD><BODY><H1>Not Found</H1>Invalid device or service descriptor !\r\n</BODY></HTML>\r\n'

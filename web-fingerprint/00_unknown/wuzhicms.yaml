@@ -1,0 +1,25 @@
+id: wuzhicms
+info:
+  name: wuzhicms
+  author: cn-kali-team
+  tags: detect,tech,wuzhicms
+  severity: info
+  metadata:
+    product: wuzhicms
+    vendor: 00_unknown
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - content="wuzhicms
+    - powered by wuzhicms
+    condition: and
+    case-insensitive: true
+  - type: word
+    words:
+    - <meta name="generator" content="wuzhicms
+    case-insensitive: true

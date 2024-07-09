@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: Java Object Oriented Telnet Talker
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^Please wait \.\.\. Connecting \.\.\.

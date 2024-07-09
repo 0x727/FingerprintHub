@@ -1,0 +1,17 @@
+id: ident
+info:
+  name: mlidentd or bqidentd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - ^0,0:ERROR:UNKNOWN-ERROR\r\n$

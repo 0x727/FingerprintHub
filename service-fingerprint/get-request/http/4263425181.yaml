@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Wapapi
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Brown Bear iCal web calendar
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: Wapapi/([\w._-]+)\r\nContent-Type: text/html\r\n.*<META name=\"description\" content=\"iCal Web Calendar Server by Brown Bear Software www\.brownbearsw\.com\">\r\n'

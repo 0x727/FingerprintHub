@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Transmission BitTorrent management httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: '2.52'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nContent-Type: text/html\r\nCache-Control: public,max-age=86400\r\nPragma: cache\r\nExpires: .*\r\nDate: .*\r\nLast-Modified: .*\r\nAccept-Ranges: bytes\r\nConnection: close\r\n\r\n<html>\n<head>\n  <title>400 Bad Request</title>\n</head>\n<body bgcolor=\"ffffff\">\n  <h2>400 Bad Request<h2>\n  <p>\n  \n</body>\n</html>\n$'

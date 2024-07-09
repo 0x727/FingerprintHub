@@ -1,0 +1,20 @@
+id: rtsp
+info:
+  name: H264DVR rtspd
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: application/x-rtsp-tunnelled\r\nServer: H264DVR ([\d.]+)\r\nConnection: close\r\nCache-Control: private\r\n\r\n'

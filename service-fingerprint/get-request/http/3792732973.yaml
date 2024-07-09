@@ -1,0 +1,21 @@
+id: http
+info:
+  name: SiliconDust HDHomeRun $1 DVR http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: 'device ID: $2'
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?S[eE][rR][vV][eE][rR]: HDHomeRun/1\.0\r\n.*<div class=\"S\">Model: ([\w._-]+)\n?<br/>Device ID: ([\w._-]+)\n?<br/>Firmware: ([\w._-]+)\n?</div>'

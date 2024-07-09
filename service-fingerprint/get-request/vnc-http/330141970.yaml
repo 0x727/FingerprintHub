@@ -1,0 +1,19 @@
+id: vnc-http
+info:
+  name: X11VNC
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc-http,service
+  severity: info
+  metadata:
+    info: 'user: $1; Resolution $2x$3; VNC TCP port: $4'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc-http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK\r\n.*<TITLE>\n([\w._-]+)'s [\w._:-]+ desktop \([\w._:-]+\)\n</TITLE>\n<APPLET CODE=VncViewer\.class ARCHIVE=VncViewer\.jar\n        WIDTH=(\d+) HEIGHT=(\d+)>\n<param name=PORT value=(\d+)>\n<param name=\"Open New Window\" value=yes>\n</APPLET>\n<BR>\n<A href=\"http://www\.tightvnc\.com/\">

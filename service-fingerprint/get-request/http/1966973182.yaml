@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Yello Strom Sparzaehler electricity meter httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nDate: .*\r\nCache-Control: no-cache\r\nContent-type: text/html\r\nETag: \"19c-a4-4ab218f6\"\r\nContent-length: 164\r\n'

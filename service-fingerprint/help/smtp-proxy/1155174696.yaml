@@ -1,0 +1,19 @@
+id: smtp-proxy
+info:
+  name: 602LAN Suite smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp-proxy,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp-proxy
+    type: regex
+    regex:
+    - ^220 ready\r\n214-Commands:\r\n214-    HELO    MAIL    RCPT    DATA\r\n214-    RSET    NOOP    QUIT    HELP\r\n214-    VRFY    EXPN\r\n214-For more info use HELP <topic>\r\n214 End of HELP info\r\n

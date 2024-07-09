@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Ipswitch WS_FTP http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Error\r\nContent-Length: 138\r\nContent-Type:text/html\r\nServer: Ipswitch ([\w._-]+)\r\nConnection: close\r\nCache-Control: private\r\nDate: .*\r\n\r\n<html><head><title>404 Page Not Found</title></head>\r\n<body>404 Page Not Found<br>The system cannot find the file specified\.</body></html>'

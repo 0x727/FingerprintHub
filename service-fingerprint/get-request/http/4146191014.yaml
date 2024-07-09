@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Avtech TemPageR $1 temperature monitor httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200\r\n.*<title>AVTECH Software, Inc\. - TemPageR (\w+) - Real-Time Temperature Monitor For IT &amp; Facilities Environment Monitoring</title>

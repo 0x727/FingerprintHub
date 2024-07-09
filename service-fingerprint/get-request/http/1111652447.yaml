@@ -1,0 +1,20 @@
+id: http
+info:
+  name: thttpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Zebra ZTE F660 broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nServer: Mini web server 1\.0 ZTE corp 2005\.\r\nContent-Type: text/html; charset=iso-8859-1\r\nAccept-Ranges: bytes\r\nConnection: close\r\nCache-Control: no-cache,no-store\r\n\r\n                                              <HTML>\n                                              <HEAD><TITLE>400 Bad Request</TITLE></HEAD>\n                                              <BODY BGCOLOR=\"#FFFFFF\" TEXT=\"#000000\" LINK=\"#2020ff\" VLINK=\"#4040cc\">\n                                              <H2>400 Bad Request</H2>\nYour request has bad syntax or is inherently impossible to satisfy\.\n'

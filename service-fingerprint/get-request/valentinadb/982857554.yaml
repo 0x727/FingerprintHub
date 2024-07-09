@@ -1,0 +1,17 @@
+id: valentinadb
+info:
+  name: Valentina DB
+  author: nmap,cn-kali-team
+  tags: detect,tech,valentinadb,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: valentinadb
+    type: regex
+    regex:
+    - ^dddd\0\0\0\0\0\0\0\x0b\xf2\xf2\xf2\xf2\0\0\0_\0\0\0\0\0\0\0\0\0\0\0\0\0F\0\0\0\x02\0\0\0=\0\x08%\x15\0\0\0\x1a\0R\0e\0c\0e\0i\0v\0e\0d\0 \0p\0a\0c\0k\0e\0t\0 \0i\0s\0 \0b\0r\0o\0k\0e\0n\0\.\0\xf4\xf4\xf4\xf4

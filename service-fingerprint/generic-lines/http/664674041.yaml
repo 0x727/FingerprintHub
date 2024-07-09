@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Phoenix Labs PeerGuardian httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Unix
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nServer: peerguardnf/([\w._-]+) \(Unix\)\r\nX-Powered-By: You need to wind it\r\n'

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: JWS based on Acme.Serve
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: SageTV PVR remote control
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 Ok\r\nDate: .*\r\nMIME-Version: 1\.0\r\nServer: Rogatkin''s JWS based on Acme\.Serve/.Revision: ([\d.]+) .\r\nLast-modified: .*\r\nContent-Range: bytes [-\d/]+\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n\r\n<html>\r\n<head>\r\n<title>\r\nblank page\r\n</title>\r\n<META HTTP-EQUIV=\"Refresh\" CONTENT=\"2;URL=about:blank\">\r\n</head>\r\n<body>\r\nThere is nothing to see here, please move along!\r\n</body>\r\n</html>\r\n'

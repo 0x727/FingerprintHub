@@ -1,0 +1,19 @@
+id: mydoom
+info:
+  name: MyDoom virus backdoor
+  author: nmap,cn-kali-team
+  tags: detect,tech,mydoom,service
+  severity: info
+  metadata:
+    version: v012604
+tcp:
+- name: mydoom
+  inputs:
+  - data: \x0d\x0d
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mydoom
+    type: regex
+    regex:
+    - \x04\x5b\0\0\0\0\0\0

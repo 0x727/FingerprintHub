@@ -1,0 +1,20 @@
+id: quake3
+info:
+  name: Urban Terror game server
+  author: nmap,cn-kali-team
+  tags: detect,tech,quake3,service
+  severity: info
+  metadata:
+    operating_system: Linux
+    version: $1
+tcp:
+- name: quake3_getstatus
+  inputs:
+  - data: \xff\xff\xff\xffgetstatus
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: quake3
+    type: regex
+    regex:
+    - ^\xff\xff\xff\xffstatusResponse\n.*\\version\\([^\\]* linux-[^\\]*)(?=\\).*\\gamename\\q3ut4(?=\\)

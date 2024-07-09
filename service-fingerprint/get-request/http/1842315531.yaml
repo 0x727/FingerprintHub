@@ -1,0 +1,17 @@
+id: http
+info:
+  name: HornetQ JMS http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 301 Moved Permanently\r\nLocation: http://null/console/index\.html\r\nConnection: close\r\nDate: .*\r\n\r\n$'

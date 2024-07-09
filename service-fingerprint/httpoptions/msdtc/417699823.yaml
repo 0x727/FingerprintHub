@@ -1,0 +1,19 @@
+id: msdtc
+info:
+  name: Microsoft Distributed Transaction Coordinator
+  author: nmap,cn-kali-team
+  tags: detect,tech,msdtc,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: msdtc
+    type: regex
+    regex:
+    - ^\x10\x1a\x0b\x00\x60\x4d$

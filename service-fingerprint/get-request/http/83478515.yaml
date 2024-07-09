@@ -1,0 +1,21 @@
+id: http
+info:
+  name: NetPort httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: NEC Projector http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nServer: NetPort Software ([\d.]+)\r\nDate: .*\r\nContent-type: text/html\r\n\r\n<html>\r\n<head>\r\n<meta http-equiv=\"content-type\" content=\"text/html;charset=Shift_JIS\">\r\n<title>NEC Projector LAN Control</title>\r\n'

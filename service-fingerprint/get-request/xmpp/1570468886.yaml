@@ -1,0 +1,17 @@
+id: xmpp
+info:
+  name: Trixbox HUD xmpp
+  author: nmap,cn-kali-team
+  tags: detect,tech,xmpp,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: xmpp
+    type: regex
+    regex:
+    - ^Use XMPP$

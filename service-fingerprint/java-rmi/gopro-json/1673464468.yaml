@@ -1,0 +1,19 @@
+id: gopro-json
+info:
+  name: GoPro or similar camera json service
+  author: nmap,cn-kali-team
+  tags: detect,tech,gopro-json,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: java-rmi
+  inputs:
+  - data: \x4a\x52\x4d\x49\0\x02\x4b
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gopro-json
+    type: regex
+    regex:
+    - '^\{"rval": -7, "param_size": 0 \}\0'

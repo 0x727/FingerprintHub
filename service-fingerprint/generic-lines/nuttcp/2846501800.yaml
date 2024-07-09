@@ -1,0 +1,19 @@
+id: nuttcp
+info:
+  name: nuttcp network throughput tester
+  author: nmap,cn-kali-team
+  tags: detect,tech,nuttcp,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nuttcp
+    type: regex
+    regex:
+    - '^KO\nnuttcp-t: v([\d.]+): error scanning parameters\nmay be using older client version than server\n\r\nKO\n'

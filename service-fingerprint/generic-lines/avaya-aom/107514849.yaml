@@ -1,0 +1,19 @@
+id: avaya-aom
+info:
+  name: Avaya Alarm Origination Manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,avaya-aom,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: avaya-aom
+    type: regex
+    regex:
+    - ^\0\0\0T\0\0\0\x03\0\0\0\0\0\0\0\x01\x1b\xde\x83B\xca\xc0\xf3\?\0\0\0\x06aomSrv\0\0\0\0\0\x01\*\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\r[\d.]+\0\0\0\0\0\0\x04root\0\0\x06\(\0\0\0J$

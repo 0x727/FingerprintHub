@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Port25 PowerMTA web monitor
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0\x20250\x20Ok\r\n.*<title>PowerMTA monitoring</title>

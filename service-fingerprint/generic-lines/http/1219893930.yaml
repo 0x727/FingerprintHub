@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Amazon FireTV Stick
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nContent-Length: 22\r\nContent-Type: text/plain; charset=US-ASCII\r\nConnection: Close\r\n\r\nInvalid request line: '

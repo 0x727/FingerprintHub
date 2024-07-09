@@ -1,0 +1,19 @@
+id: sstp
+info:
+  name: Sakura Script Transfer Protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,sstp,service
+  severity: info
+  metadata:
+    info: Protocol $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sstp
+    type: regex
+    regex:
+    - ^SSTP/([\d.]+) 400 Bad Request\r\n\r\n\0$

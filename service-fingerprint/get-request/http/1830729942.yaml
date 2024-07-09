@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Tandberg Border Controller VoIP proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: proxy server
+    operating_system: Linux 2.6
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 302 Moved Temporarily\r\nPragma: no-cache\r\nLocation: https://[\w._-]+/\r\n.*<TITLE>Redirect Notification</TITLE>.*<P>Please click <a href=\"https://[\w._-]+/\">here</a> to go to the correct location\.'

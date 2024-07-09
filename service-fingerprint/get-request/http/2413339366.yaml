@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Apache Tomcat
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 \r\nAccept-Ranges: bytes\r\nETag: W/"[^"]+"\r\nLast-Modified: .*\r\nContent-Type: text/html\r\nContent-Length: \d+\r\nDate: .*\r\nConnection: close\r\n\r\n<\?xml version="1\.0" encoding="ISO-8859-1"\?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1\.0 Strict//EN"\n   "http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-strict\.dtd">\n<html xmlns="http://www\.w3\.org/1999/xhtml" xml:lang="en" lang="en">\n<head>\n    <title>Apache Tomcat</title>'

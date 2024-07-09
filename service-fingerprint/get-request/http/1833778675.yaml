@@ -1,0 +1,19 @@
+id: http
+info:
+  name: OpenRT httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: OpenRT
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Moved Temporarily\r\nContent-Type: text/html\r\nSet-Cookie: cookie_session_id_0=\d+; path=/;\r\nCache-Control: public\r\nPragma: cache\r\nExpires: .*\r\nDate: .*\r\nLast-Modified: Thu, 01 Jan 1970 00:00:00 GMT\r\nAccept-Ranges: bytes\r\nConnection: close\r\nLocation: https?://[\w._-]+:\d+/index\.cgi\?active%5fpage=9091&req%5fmode=0\r\n\r\n'

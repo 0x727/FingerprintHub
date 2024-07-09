@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: AirWatch Mobile Access Gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    device_type: proxy server
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 407 Proxy Authentication Required\r\nContent-Length: 36\r\nContent-Type: text/html; charset=UTF-8\r\naw-error-code: 1\r\n\r\nMissing \[Proxy-Authorization\] header'

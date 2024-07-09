@@ -1,0 +1,19 @@
+id: ph-addressbook
+info:
+  name: Mercury/32 PH addressbook server
+  author: nmap,cn-kali-team
+  tags: detect,tech,ph-addressbook,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ph-addressbook
+    type: regex
+    regex:
+    - ^598::Command not recognized\.\r\n598::Command not recognized\.\r\n$

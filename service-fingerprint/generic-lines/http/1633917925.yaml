@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Rapid7 NeXpose http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 400 Bad Request\r\n.*<link rel=\"shortcut icon\" href=\"/style/image/favicon\.ico\" type=\"image/vnd\.microsoft\.icon\"></link>\n   <script type=\"text/javascript\" src=\"/scripts/controller\.js\"></script>\n   <script type=\"text/javascript\" src=\"/scripts/sarissa\.js\"></script>

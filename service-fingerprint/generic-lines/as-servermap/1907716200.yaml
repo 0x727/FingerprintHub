@@ -1,0 +1,19 @@
+id: as-servermap
+info:
+  name: IBM OS/400 as-servermapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,as-servermap,service
+  severity: info
+  metadata:
+    operating_system: OS/400
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: as-servermap
+    type: regex
+    regex:
+    - ^-\0\0\0\0$

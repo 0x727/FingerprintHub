@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Dr.Web Enterprise Security Suite httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'arch: $3; Lua $4; OpenSSL $5; zlib $6'
+    operating_system: $SUBST(2,"_"," ")
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: DrWebServer/REL-1000-([\w._-]+) ([^/]+)/(\w+) Lua/([\w._-]+) OpenSSL/([\w._-]+) zlib/([\w._-]+) UNICODE/[\d.]+\r\n'

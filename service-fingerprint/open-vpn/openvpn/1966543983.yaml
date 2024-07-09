@@ -1,0 +1,17 @@
+id: openvpn
+info:
+  name: OpenVPN
+  author: nmap,cn-kali-team
+  tags: detect,tech,openvpn,service
+  severity: info
+tcp:
+- name: open-vpn
+  inputs:
+  - data: 8d\xc1x\x01\xb8\x9b\xcb\x8f\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: openvpn
+    type: regex
+    regex:
+    - (?i)^@........\x01\0\0\0\0d\xc1x\x01\xb8\x9b\xcb\x8f\0\0\0\0

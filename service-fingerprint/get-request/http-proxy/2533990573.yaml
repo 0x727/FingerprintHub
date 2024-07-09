@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: HughesNet Web Acceleration http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 504 Web Acceleration Client Error \(400\.3\) - Missing Host Field in Request Header\r\nContent-type: text/html\r\nContent-length: \d+\r\n\r\n'

@@ -1,0 +1,19 @@
+id: timeedit
+info:
+  name: Evolvera TimeEdit
+  author: nmap,cn-kali-team
+  tags: detect,tech,timeedit,service
+  severity: info
+  metadata:
+    version: 1.3.1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: timeedit
+    type: regex
+    regex:
+    - ^\0\0\0H\0\0\0\x02\x0fTimeEdit131\.

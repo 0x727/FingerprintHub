@@ -1,0 +1,19 @@
+id: irc
+info:
+  name: ircu ircd
+  author: nmap,cn-kali-team
+  tags: detect,tech,irc,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: irc
+    type: regex
+    regex:
+    - ^:([-\w_.]+) 451  HELP :Register first\.\r\n

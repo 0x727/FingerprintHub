@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: EvolutionX ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    device_type: game console
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 Please enter your login name now\.\r\n502 help is not implemented\.\r\n

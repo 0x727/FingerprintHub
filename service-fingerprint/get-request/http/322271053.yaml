@@ -1,0 +1,20 @@
+id: http
+info:
+  name: ntopng http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: SVN $2; auth bypass
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nSet-Cookie: session=; path=/; expires=Thu, 01-Jan-1970 00:00:01 GMT; max-age=0; HttpOnly\r\nLocation: /login\.html\r\n\r\nHTTP/1\.1 200 OK\r\nCache-Control: max-age=0, no-cache, no-store\r\nPragma: no-cache\r\nServer: ntopng ([\d.]+) \((r\d*)\)\r\n'

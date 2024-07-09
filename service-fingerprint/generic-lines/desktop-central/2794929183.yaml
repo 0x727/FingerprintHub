@@ -1,0 +1,19 @@
+id: desktop-central
+info:
+  name: ManageEngine Desktop Central DesktopCentralServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,desktop-central,service
+  severity: info
+  metadata:
+    device_type: remote management
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: desktop-central
+    type: regex
+    regex:
+    - ^Invalid FT GWADDR / START protocol\n$

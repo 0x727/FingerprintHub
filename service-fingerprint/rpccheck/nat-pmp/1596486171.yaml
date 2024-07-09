@@ -1,0 +1,19 @@
+id: nat-pmp
+info:
+  name: natpmp daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,nat-pmp,service
+  severity: info
+  metadata:
+    device_type: router
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nat-pmp
+    type: regex
+    regex:
+    - (?i)^\0\xfe\0\x01\0\0..$

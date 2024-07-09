@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Pogoplug Office NAS httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    operating_system: Linux
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 500 Server Error\r\nContent-Length: 0\r\nServer: HBHTTP POGOMVOFFICE - ([\w._-]+) - Linux\r\nDate: .*\r\nConnection: close\r\n\r\n'

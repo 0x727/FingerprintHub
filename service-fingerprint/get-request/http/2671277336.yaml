@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Nicira bridge http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: bridge
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nDate: .* GMT\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Length: 52\r\nConnection: close\r\n\r\n404 Not Found\n\nThe resource could not be found\.\n\n   $'

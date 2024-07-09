@@ -1,0 +1,19 @@
+id: pc-anywhere
+info:
+  name: Symantec pcAnywhere
+  author: nmap,cn-kali-team
+  tags: detect,tech,pc-anywhere,service
+  severity: info
+  metadata:
+    info: 'Servername: $1'
+tcp:
+- name: pc-anywhere
+  inputs:
+  - data: NQ
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pc-anywhere
+    type: regex
+    regex:
+    - (?i)^NR([^_]*)_*AHM_3___\0$

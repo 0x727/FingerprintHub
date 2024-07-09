@@ -1,0 +1,19 @@
+id: omniback
+info:
+  name: HP OpenView OmniBackII
+  author: nmap,cn-kali-team
+  tags: detect,tech,omniback,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: omniback
+    type: regex
+    regex:
+    - '^HP OpenView OmniBack II ([-.\w]+): INET, '

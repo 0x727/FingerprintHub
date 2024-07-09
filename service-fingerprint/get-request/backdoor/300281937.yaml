@@ -1,0 +1,20 @@
+id: backdoor
+info:
+  name: No-auth shell
+  author: nmap,cn-kali-team
+  tags: detect,tech,backdoor,service
+  severity: info
+  metadata:
+    info: '**BACKDOOR**'
+    operating_system: Unix
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: backdoor
+    type: regex
+    regex:
+    - ^<HTML>\n<HEAD>\n<TITLE>Directory /</TITLE>\n<BASE HREF=\"file:/\">\n</HEAD>\n<BODY>\n<H1>Directory listing of /</H1>

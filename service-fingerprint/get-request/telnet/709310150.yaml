@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: MagicUnix telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\x03\xff\xfb\x01\xff\xfbi\r\n\tWelcome to Magicunix''s TCP Server\.\r\n\r\n\r\nLogin: P/1\.0\r\nPassword: \r\nLogin incorrect\r\nLogin: '

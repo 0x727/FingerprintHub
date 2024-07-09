@@ -1,0 +1,19 @@
+id: daytime
+info:
+  name: AIX daytime
+  author: nmap,cn-kali-team
+  tags: detect,tech,daytime,service
+  severity: info
+  metadata:
+    operating_system: AIX
+tcp:
+- name: help
+  inputs:
+  - data: help\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: daytime
+    type: regex
+    regex:
+    - ^\w\w\w \w\w\w \d\d \d\d:\d\d:\d\d \d\d\d\d\r\n$

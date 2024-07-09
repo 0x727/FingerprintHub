@@ -1,0 +1,21 @@
+id: http
+info:
+  name: WindWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    info: HP E1200 storage http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nConnection: close\r\nServer: WindWeb/([\d.]+)\r\nDate: .*\r\nContent-Type: text/html\r\nWWW-Authenticate: Basic realm=\"HP\"\r\n.*<script language=\"JavaScript\" src=\"/js/module_utils\.js\"></script>\r\n<script language=\"JavaScript\" src=\"/js/branding_utils\.js\">'

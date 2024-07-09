@@ -1,0 +1,21 @@
+id: http
+info:
+  name: NET-DK httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Compal CH7465LG-ZG cable modem
+    version: $1
+tcp:
+- name: four-oh-four-request
+  inputs:
+  - data: GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Moved Temporarily\r\nLocation: \.\./index\.html\r\nServer: NET-DK/([\d.]+)\r\nDate: .*\r\nConnection: close\r\nSet-Cookie: sessionToken=\d+; path=/;\r\n\r\n'

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Google Web Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?P3P: CP="This is not a P3P policy! See https://www\.google\.com/support/accounts/answer/151657\?hl=.. for more info\."\r\nServer: gws\r\n'

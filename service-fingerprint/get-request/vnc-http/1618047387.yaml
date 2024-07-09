@@ -1,0 +1,17 @@
+id: vnc-http
+info:
+  name: x11vnc
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc-http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc-http
+    type: regex
+    regex:
+    - ^HTTP/1\.0 404 Not found\r\n\r\n<html><head><title>File Not Found</title></head>\n<body><h1>File Not Found</h1></body></html\n$

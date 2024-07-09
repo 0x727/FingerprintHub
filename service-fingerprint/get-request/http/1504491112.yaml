@@ -1,0 +1,21 @@
+id: http
+info:
+  name: aPod Access Control system master controller
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+    info: 'site: $SUBST(1,"%20"," "); address: $SUBST(2,"%20"," "); build: $3'
+    version: $SUBST(4,"%2E",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: .*\r\nSet-Cookie: SiteName64=[^;]+; Expires=Sat, 31 Dec 2050 23:59:59 GMT\r\nSet-Cookie: SiteName=([^;]+);.*\r\nSet-Cookie: SiteAddress64=.*\r\nSet-Cookie: SiteAddress=([^;]+);.*\r\nSet-Cookie: Build64=.*\r\nSet-Cookie: Build=(\d+);.*\r\nSet-Cookie: Version64=.*\r\nSet-Cookie: Version=([^;]+);.*\r\nCONTENT-LENGTH: \d+\r\n'

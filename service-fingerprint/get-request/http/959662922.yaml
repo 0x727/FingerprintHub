@@ -1,0 +1,20 @@
+id: http
+info:
+  name: ServersCheck Monitoring Server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'credentials: $2'
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\nContent-Type: text/html; charset=iso-8859-1\nExpires: Thu, 01 Dec 1994 23:12:40 GMT\nServer: ServersCheck_Monitoring_Server/([\w._-]+)\n.*<p>Username / Password is still <strong>(\w+/\w+)</strong>\.  Please update\.</p>'

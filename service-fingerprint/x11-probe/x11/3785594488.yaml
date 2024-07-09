@@ -1,0 +1,21 @@
+id: x11
+info:
+  name: Digital UNIX X-Window
+  author: nmap,cn-kali-team
+  tags: detect,tech,x11,service
+  severity: info
+  metadata:
+    info: Version is X Server and not of Digital UNIX
+    operating_system: Digital UNIX
+    version: $1
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: x11
+    type: regex
+    regex:
+    - (?i)^\x01\0\x0b\0\0\0=\0\x01\0\0\0\0\0\xc0\x06\xff\xff\?.*\0DECWINDOWS Digital Equipment Corporation Digital UNIX V(\d[-.\w]+)\0\0\x01\x01

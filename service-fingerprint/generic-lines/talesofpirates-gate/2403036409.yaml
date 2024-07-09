@@ -1,0 +1,17 @@
+id: talesofpirates-gate
+info:
+  name: Tales of Pirates game gate server
+  author: nmap,cn-kali-team
+  tags: detect,tech,talesofpirates-gate,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: talesofpirates-gate
+    type: regex
+    regex:
+    - ^\0\x02\0\x02\0\x02\0\x02\0\x02$

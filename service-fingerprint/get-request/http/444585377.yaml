@@ -1,0 +1,20 @@
+id: http
+info:
+  name: NessusWWW
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Nessus vulnerability scanner http UI
+    version: '6'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 302 Found\r\nDate: .*\r\nServer: NessusWWW\r\n(?:[^\r\n]+\r\n)*?Content-Type: text/html\r\n(?:[^\r\n]+\r\n)*?Location: https://[\w:._-]+/nessus6\.html\r\n'

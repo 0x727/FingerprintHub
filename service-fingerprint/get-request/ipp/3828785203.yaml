@@ -1,0 +1,19 @@
+id: ipp
+info:
+  name: Epson 980N Printer
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipp,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipp
+    type: regex
+    regex:
+    - ^<HEAD><TITLE>Not Found</TITLE></HEAD><BODY><H1><B>Not Found</B></H1><P>The requested URL \"\"was not found on this server\.</BODY>\r\n

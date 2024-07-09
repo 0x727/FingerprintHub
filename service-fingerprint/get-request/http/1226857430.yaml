@@ -1,0 +1,19 @@
+id: http
+info:
+  name: NightOwl DVR http viewer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 Ok\r\nDate: .*\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4\.01 Frameset//EN" "http://www\.w3\.org/TR/html4/frameset\.dtd">\n<html>\n\t<head>\n\t\t<TITLE>Web Application Manager</TITLE>\n\t\t<meta http-equiv="Content-Type" content="text/html; charset=gb2312">\n'

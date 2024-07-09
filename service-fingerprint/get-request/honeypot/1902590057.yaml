@@ -1,0 +1,17 @@
+id: honeypot
+info:
+  name: Valhalla honeypot
+  author: nmap,cn-kali-team
+  tags: detect,tech,honeypot,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: honeypot
+    type: regex
+    regex:
+    - '^\r\nHTTP/1\.1 404 Not Found\r\nConnection: close\r\nContent-Type: text/html\r\nContent-Length: 36\r\nServer: IIS 5\.0\r\n\r\nErro\. URL n\xe3o encontrada no servidor'

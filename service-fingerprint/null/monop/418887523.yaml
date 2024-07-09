@@ -1,0 +1,19 @@
+id: monop
+info:
+  name: GtkAtlantic monopd
+  author: nmap,cn-kali-team
+  tags: detect,tech,monop,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: monop
+    type: regex
+    regex:
+    - ^<monopd><server host="" version="([\d.]+)"/></monopd>\n

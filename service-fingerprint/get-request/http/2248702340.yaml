@@ -1,0 +1,21 @@
+id: http
+info:
+  name: udpxy multicast UDP-to-HTTP
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: '$2; arch: $4'
+    operating_system: $3
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Unrecognized request\r\nServer: udpxy ([\d.-]+) \(prod\) (\w+) \[([^]]+) ([\w_]+)\]\r\nContent-Type:application/octet-stream\r\n\r\n'

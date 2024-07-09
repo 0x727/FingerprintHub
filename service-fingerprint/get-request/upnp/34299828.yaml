@@ -1,0 +1,23 @@
+id: upnp
+info:
+  name: Promise SmartStor Media Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    hostname: $4
+    info: UPnP $2; SQLite $5
+    operating_system: Linux $1
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: text/html\r\nContent-Length: \d+\r\nAccept-Ranges: bytes\r\nConnection: close\r\nDATE: .*\r\ncontentFeatures\.dlna\.org: \r\ntransferMode\.dlna\.org: \r\nEXT:\r\nServer: Linux/(\d[\d.]+)SR[\d_]+, UPnP/([\d.]+), SmartStor Media Server/([\d.]+)\r\n\r\n<\?xml version="1\.0" encoding="UTF-8"\?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1\.0 Strict//EN" \nhttp://www\.w3\.org/TR/xhtml1/DTD/xhtml1-strict\.dtd">\n<html>\n<script :language="javascript">\nthis\.location = "http://[^"]*"\n</script>\n<h1>system information</h1>\n<p>\nVersion: [\d.]+<br />\nHostname: ([\w.-]+)<br />\nOS: Linux [^<]*<br />\nSQLite: ([\d.]+)\n</p>'

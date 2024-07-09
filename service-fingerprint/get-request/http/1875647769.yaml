@@ -1,0 +1,19 @@
+id: http
+info:
+  name: ESET NOD32 windows anti-virus http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nConnection: close\r\nContent-type: text/html\r\n\r\n<html>404 Not Found \(Error 3\)<BR></html>$'

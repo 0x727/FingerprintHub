@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Thomson TWG850 router http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nContent-type: text/html\r\nWWW-Authenticate: Basic realm=\"Thomson\"\r\nConnection: close\r\nPragma: no-cache\r\n\r\n<html><head><title>HTTP 401 - Unauthorized</title></head><body><h4>HTTP 401 - Unauthorized</h4><p>Authorization is required to access the configuration server\.<p>You must enter the correct username and/or password\.</body></html>\r\n$'

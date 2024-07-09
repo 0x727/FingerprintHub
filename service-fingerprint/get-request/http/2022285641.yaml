@@ -1,0 +1,19 @@
+id: http
+info:
+  name: The Energy Detective MTU$1 http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: power-device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nConnection: close\r\nContent-Type: text/html\r\nCache-Control: max-age=600\r\n\r\n<!DOCTYPE html>.*<link rel=\"stylesheet\" title=\"default\" href=\"style/mtu(\w+)\.css\"'

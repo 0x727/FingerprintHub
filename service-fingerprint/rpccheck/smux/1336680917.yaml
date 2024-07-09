@@ -1,0 +1,20 @@
+id: smux
+info:
+  name: HP-UX smux
+  author: nmap,cn-kali-team
+  tags: detect,tech,smux,service
+  severity: info
+  metadata:
+    info: SNMP Unix Multiplexer
+    operating_system: HP-UX
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x80\0\0\x28\x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smux
+    type: regex
+    regex:
+    - ^A\x01\x02$

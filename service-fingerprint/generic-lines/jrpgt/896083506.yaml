@@ -1,0 +1,19 @@
+id: jrpgt
+info:
+  name: JRPGT game server
+  author: nmap,cn-kali-team
+  tags: detect,tech,jrpgt,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jrpgt
+    type: regex
+    regex:
+    - ^<<jrpgt!>>\x7c$

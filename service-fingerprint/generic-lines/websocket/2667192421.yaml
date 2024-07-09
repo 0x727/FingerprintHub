@@ -1,0 +1,19 @@
+id: websocket
+info:
+  name: WebSocket++
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 \r\nServer: WebSocket\+\+/([\d.]+)\r\n\r\n'

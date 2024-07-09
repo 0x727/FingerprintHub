@@ -1,0 +1,19 @@
+id: rpcapd
+info:
+  name: WinPcap remote packet capture daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,rpcapd,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rpcapd
+    type: regex
+    regex:
+    - '^\0\x01\0\x03\0\0\0/Incompatible version number: message discarded\.$'

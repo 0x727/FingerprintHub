@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Tivoli Storage Manager http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: discontinued
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nServer: ADSM_HTTP/([\d.]+)\r\nContent-type: text/html\r\n\r\n<html><head><title>Server Administration</title></head><body><h1>Not Supported</h1><p>ANR4747W The web administrative interface is no longer supported\. Begin using the Integrated Solutions Console instead\.</p></body></html>'

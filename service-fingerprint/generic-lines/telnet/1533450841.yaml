@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Enterasys 1H582-25 switch telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: switch
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\x03\xff\xfb\x01\r\r\nUsername:\r\r\nError: Username must be non-NULL\r\r\nUsername:\r\r\nError: Username must be non-NULL\r\r\nUsername:'

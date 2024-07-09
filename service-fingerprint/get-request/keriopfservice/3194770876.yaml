@@ -1,0 +1,19 @@
+id: keriopfservice
+info:
+  name: Kerio PF 4 Service
+  author: nmap,cn-kali-team
+  tags: detect,tech,keriopfservice,service
+  severity: info
+  metadata:
+    info: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: keriopfservice
+    type: regex
+    regex:
+    - '^(HTTP/1\.0) 200 OK\r\nServer: Kerio Personal Firewall\r\n'

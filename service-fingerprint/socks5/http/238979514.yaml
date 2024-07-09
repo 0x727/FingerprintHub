@@ -1,0 +1,17 @@
+id: http
+info:
+  name: DeviceWISE Enterprise M2M httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: socks5
+  inputs:
+  - data: \x05\x04\x00\x01\x02\x80\x05\x01\x00\x03\x0agoogle.com\x00\x50GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^\x05\x04\0\x01\x02\x80\x05\x01\0\x03\ngoogle\.com\0PGET / HTTP/1\.0\r\n\r\n\0HTTP/1\.0 500 Internal Server Error\r\nContent-Length: 0\r\n\r\n'

@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: One1Stream Fastlane accelerating http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK\r\n.*This request is not allowed\n\n\n by One1Stream Fastlane Acceleration Server\.,  Accelerating Server ([\d.]+)</font></p></body></html>

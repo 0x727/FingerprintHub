@@ -1,0 +1,19 @@
+id: rtsp
+info:
+  name: Amino AmiNET set-top box rtspd
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '(?i)^RTSP/1\.0 200 OK 200\r\n(?:[^\r\n]+\r\n)*?Server: Amino streamer\r\n'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Verizon router http UI
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nConnection: close\r\nDate: .* GMT\r\nLast-Modified: .* GMT\r\nContent-Type: text/html\r\nContent-Length: \d+\r\nCache-Control: no-cache\r\n\r\n<!doctype html>\n<html lang="en" xmlns:ng="http://angularjs\.org" id="ng-app" ng-app="vzui">\n  <head>\n    <meta charset="utf-8">\n    <meta http-equiv="cache-control" content="no-cache"/>\n    <meta http-equiv="cache-control" content="max-age=0" />\n    <meta http-equiv="pragma" content="no-cache"/>\n    <meta http-equiv="expires" content="0"/>\n    <title>Verizon Router</title>\n    <link rel="stylesheet" href="css/app\.css\?v=v([\d.]+)"/>'

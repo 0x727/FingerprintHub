@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: TrueTime GPS clock telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\x01\n\rWelcome to TrueTime Network Interface\n\r\rUser name: '

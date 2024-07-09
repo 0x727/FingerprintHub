@@ -1,0 +1,19 @@
+id: finger
+info:
+  name: IcculusFinger
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - ^iFinger v(\d[-.\w]+)\n\n

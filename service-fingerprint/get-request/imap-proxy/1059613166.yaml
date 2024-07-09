@@ -1,0 +1,17 @@
+id: imap-proxy
+info:
+  name: nginx imap proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,imap-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: imap-proxy
+    type: regex
+    regex:
+    - ^\* OK IMAP4 ready\r\nGET BAD invalid command\r\n

@@ -1,0 +1,20 @@
+id: irc
+info:
+  name: Wircsrv
+  author: nmap,cn-kali-team
+  tags: detect,tech,irc,service
+  severity: info
+  metadata:
+    hostname: $1
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: irc
+    type: regex
+    regex:
+    - ^:([-\w_.]+) 451  :You have not registered your connection\r\n$

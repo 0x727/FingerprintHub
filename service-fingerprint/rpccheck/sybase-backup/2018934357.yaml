@@ -1,0 +1,19 @@
+id: sybase-backup
+info:
+  name: Sybase Backup Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,sybase-backup,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x80\0\0\x28\x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sybase-backup
+    type: regex
+    regex:
+    - ^\0\x01\0\x08\0\0\x01\0$

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: UPS_Server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: power-misc
+    info: Eaton 9355 UPS http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 ;unauthorized\r\nServer: UPS_Server/([\w._-]+)\r\nContent-Type: text/html\r\nConnection: Close\r\nSet-Cookie: ups=\d+\r\nWWW-Authenticate: Basic realm=\"UPS Web Card\"\r\n'

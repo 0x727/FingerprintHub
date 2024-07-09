@@ -1,0 +1,17 @@
+id: ident
+info:
+  name: widentd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^1 , 1 : USERID : OTHER : chuck-the-bsd-deamon\r\n$'

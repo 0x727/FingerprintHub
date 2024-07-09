@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Sunbelt Software CounterSpy Agent antimalware SOAP over HTTP
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 400 Bad Request\r\nServer: ATL Server - CounterSpyAgentSoapService\r\n.*<SOAP:Envelope xmlns:SOAP=\"http://schemas\.xmlsoap\.org/soap/envelope/\">\r\n  <SOAP:Body>\r\n   <SOAP:Fault>\r\n     <faultcode>SOAP:Client</faultcode>\r\n     <faultcode>Invalid Request</faultcode>\r\n     <detail>Not a recognized HTTP Verb &amp;Empty URL &amp;Not a recognized HTTP Version \(only 1\.1 is supported\) &amp;</detail>\r\n   </SOAP:Fault>\r\n  </SOAP:Body>\r\n</SOAP:Envelope>'

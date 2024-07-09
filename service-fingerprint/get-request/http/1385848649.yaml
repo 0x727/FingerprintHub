@@ -1,0 +1,22 @@
+id: http
+info:
+  name: D-Link SharePort web access
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    info: model $2, version $3
+    operating_system: Linux
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nServer: Linux, WEBACCESS/([\w._-]+), (DIR-\w+) Ver ([\w._-]+)\r\n'

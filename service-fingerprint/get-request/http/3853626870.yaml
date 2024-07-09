@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Nexpose Security Console
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nX-Frame-Options: SAMEORIGIN\r\nX-UA-Compatible: IE=edge,chrome=1\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nLocation: https://[^/]+/login\.jsp\r\nContent-Length: 0\r\nDate: .*\r\nConnection: close\r\nServer: Security Console\r\n\r\n'

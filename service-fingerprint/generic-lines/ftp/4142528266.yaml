@@ -1,0 +1,20 @@
+id: ftp
+info:
+  name: Generic WAP ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    device_type: WAP
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 FTPd ([\d.]+)\r\n500 Bad command\r\n

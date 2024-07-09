@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Barracuda NextGen Firewall SSL VPN
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Moved Temporarily\r\nContent-Length: 22\r\nConnection: close\r\nLocation: /portal/index\.html\r\nContent-Type: text/plain\r\nX-Frame-Options: SAMEORIGIN\r\n\r\n302 Moved Temporarily\n'

@@ -1,0 +1,19 @@
+id: tftp
+info:
+  name: Windows 2003 Server Deployment Service
+  author: nmap,cn-kali-team
+  tags: detect,tech,tftp,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: xdmcp
+  inputs:
+  - data: \0\x01\0\x02\0\x01\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: tftp
+    type: regex
+    regex:
+    - ^\0\x05\0\x04Illegal TFTP operation\0

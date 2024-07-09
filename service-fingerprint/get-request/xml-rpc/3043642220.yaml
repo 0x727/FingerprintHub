@@ -1,0 +1,19 @@
+id: xml-rpc
+info:
+  name: Apache XML-RPC
+  author: nmap,cn-kali-team
+  tags: detect,tech,xml-rpc,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: xml-rpc
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nServer: Apache XML-RPC (\d[-.\w ]+)\r\n\r\nMethod GET not implemented \(try POST\)$'

@@ -1,0 +1,20 @@
+id: nntp
+info:
+  name: Intersquish nntpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,nntp,service
+  severity: info
+  metadata:
+    hostname: $1
+    operating_system: Windows
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nntp
+    type: regex
+    regex:
+    - ^200 ([\w._-]+) news server ready - posting ok\r\n100 Help text follows\r\n$

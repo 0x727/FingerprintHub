@@ -1,0 +1,17 @@
+id: rsa-authmgr
+info:
+  name: RSA Authentication Manager node manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,rsa-authmgr,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rsa-authmgr
+    type: regex
+    regex:
+    - '^-ERR Invalid command: \r\n-ERR Invalid command: \r\n'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Mitsubishi Projector XD1000 http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 200\r\n.*<TITLE>ProjectorView Control System</TITLE>.*CODE=com\.mitsubishi\.x500u\.X500UApplet\.class\r\n

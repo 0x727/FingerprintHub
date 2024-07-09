@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: TP-LINK $1 WAP upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: UPnP $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - 'HTTP/1\.0 404 Not Found\r\nSERVER: TP-LINK (?:Portable )?Wireless (?:(?:Lite )?(?:N|G) (?:3G(?:/4G)? )?)?(?:Dual Band |Nano )?(?:Gigabit )?(?:AP|Router|Access Point|Range Extender) ([\w /+-]+), UPnP/([\d.]+)\r\n'

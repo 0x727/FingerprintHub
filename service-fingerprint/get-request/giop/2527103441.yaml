@@ -1,0 +1,19 @@
+id: giop
+info:
+  name: omniORB omniNames
+  author: nmap,cn-kali-team
+  tags: detect,tech,giop,service
+  severity: info
+  metadata:
+    info: Corba naming service
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: giop
+    type: regex
+    regex:
+    - ^GIOP\x01\0\x01\x06\0\0\0\0$

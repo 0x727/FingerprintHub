@@ -1,0 +1,17 @@
+id: http
+info:
+  name: NetApp DFM httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 501 Unimplemented\r\nContent-Type: text/plain\r\nContent-Length: 17\r\n\r\n501 Unimplemented$'

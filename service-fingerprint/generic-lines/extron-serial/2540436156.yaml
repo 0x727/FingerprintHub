@@ -1,0 +1,19 @@
+id: extron-serial
+info:
+  name: Extron $1 serial port
+  author: nmap,cn-kali-team
+  tags: detect,tech,extron-serial,service
+  severity: info
+  metadata:
+    version: $2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: extron-serial
+    type: regex
+    regex:
+    - ^\r\n\(c\) Copyright 2\d\d\d, Extron Electronics, ([^,]+), V([\d.]+)\r\n

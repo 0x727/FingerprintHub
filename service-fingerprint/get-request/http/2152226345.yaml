@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Agranat-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: switch
+    info: HP $2 Ethernet Blade Switch http config
+    version: $SUBST(1,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nDate: .*\r\nServer: Agranat-EmWeb/R([\w._-]+)\r\nWWW-Authenticate: Basic realm=\"(GbE2c) L2/L3 Ethernet Blade Switch(?: \(TACACS server enabled\))?\"\r\n\r\n401 Unauthorized\r\n'

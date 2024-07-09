@@ -1,0 +1,19 @@
+id: upnp
+info:
+  name: Sony Ericsson $1 UPnP AV client
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: phone
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nConnection: close\r\nDate: .*\r\nX-AV-Client-Info: av=5\.0; cn=\"Sony Ericsson\"; mn=\"([^"]+)\"; mv=\"2\.0\";\r\n\r\n'

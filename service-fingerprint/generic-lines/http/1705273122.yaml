@@ -1,0 +1,20 @@
+id: http
+info:
+  name: UBServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: NBS smart card printer
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nDate: .*\r\nServer: UBServer ([\w._-]+)\r\nConnection: close\r\n\r\n$'

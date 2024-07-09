@@ -1,0 +1,17 @@
+id: http
+info:
+  name: VMware Horizon View
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Language: en-US\r\nContent-Length: \d+\r\nSet-Cookie: JSESSIONID=[A-F\d]{32}; Path=/; Secure; HttpOnly\r\nContent-Type: text/html;charset=UTF-8\r\n(?:Strict-Transport-Security: max-age=31536000\r\n)?\r\n\r\r\n\r\r\n<!DOCTYPE html>\r\r\n<html lang="en">\r\r\n<head>\r\r\n   <meta charset="utf-8">\r\r\n   <meta http-equiv="X-UA-Compatible" content="IE=edge">\r\r\n   <title>VMware Horizon View</title>'

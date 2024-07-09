@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Conexant-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Zoom A6 ADSL modem UPnP; UPnP $1
+    version: $SUBST(2,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: Unknown/0\.0 UPnP/([\d.]+) Conexant-EmWeb/R([\d_]+)\r\n.*<TITLE>Zoom - USB Endpoint</TITLE>.*<TITLE>Zoom DSL Modem Web-Console</TITLE>'

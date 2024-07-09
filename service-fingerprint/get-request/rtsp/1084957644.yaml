@@ -1,0 +1,19 @@
+id: rtsp
+info:
+  name: feng rtspd
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^RTSP/1\.0 505 RTSP Version Not Supported\r\nServer: ALi feng/([\w._-]+)\r\nDate: Week \d+, .* GMT\r\n\r\n'

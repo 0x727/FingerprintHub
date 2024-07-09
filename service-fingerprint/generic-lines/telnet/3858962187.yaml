@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: Pollin AVR-NET-IO Ethernet module telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^NAK COMMAND\r\n

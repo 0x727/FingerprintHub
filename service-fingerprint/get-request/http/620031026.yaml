@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Coldfusion httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: SSL support
+    operating_system: Unix
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: .*\r\nServer: HTTP/x\.y\.z \(Unix\) PHP/x\.y\.z mod_ssl/x\.y\.z SSL/x\.y\.z\r\nLast-Modified: .*\r\nETag: \".*\"\r\nAccept-Ranges: bytes\r\nContent-Length: .*\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n<HTML>\n<HEAD>\n<TITLE>Loading\.\.\.</TITLE>\n'

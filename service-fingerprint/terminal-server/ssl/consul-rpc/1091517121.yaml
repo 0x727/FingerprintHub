@@ -1,0 +1,17 @@
+id: ssl/consul-rpc
+info:
+  name: HashiCorp Consul RPC
+  author: nmap,cn-kali-team
+  tags: detect,tech,ssl/consul-rpc,service
+  severity: info
+tcp:
+- name: terminal-server
+  inputs:
+  - data: \x03\0\0\x0b\x06\xe0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ssl/consul-rpc
+    type: regex
+    regex:
+    - ^\x15\x03\x01\0\x02\x02\n

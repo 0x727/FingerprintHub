@@ -1,0 +1,19 @@
+id: sip
+info:
+  name: AVM FRITZ!OS SIP
+  author: nmap,cn-kali-team
+  tags: detect,tech,sip,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sip
+    type: regex
+    regex:
+    - '^SIP/2\.0 400 Illegal request line\r\nFrom: <sip:missing>\r\nTo: <sip:missing>;tag=badrequest\r\nUser-Agent: FRITZ!OS\r\nContent-Length: 0\r\n\r\n'

@@ -1,0 +1,17 @@
+id: d-mp
+info:
+  name: Dark MultiPlayer Kerbel Space Program mod
+  author: nmap,cn-kali-team
+  tags: detect,tech,d-mp,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: d-mp
+    type: regex
+    regex:
+    - ^\x01\0\0\0\x08\x04\0\0\x04\x04\0\0\0\x04\0\0.{100}

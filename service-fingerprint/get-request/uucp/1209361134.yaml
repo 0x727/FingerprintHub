@@ -1,0 +1,19 @@
+id: uucp
+info:
+  name: Solaris uucpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,uucp,service
+  severity: info
+  metadata:
+    operating_system: Solaris
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: uucp
+    type: regex
+    regex:
+    - '^login: Login incorrect\.$'

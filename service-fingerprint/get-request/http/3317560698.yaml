@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Ericom Access Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'arch: x64'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\n(?:Location: .*)?\r\nDate: .*\r\nServer: Ericom Access Server x64\r\n'

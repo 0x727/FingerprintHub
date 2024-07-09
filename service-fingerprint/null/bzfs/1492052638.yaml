@@ -1,0 +1,17 @@
+id: bzfs
+info:
+  name: BZFlag game server
+  author: nmap,cn-kali-team
+  tags: detect,tech,bzfs,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bzfs
+    type: regex
+    regex:
+    - ^BZFS\d\d\d\d\0$

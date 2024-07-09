@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Mbedthis-Appweb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    info: PA-4050 firewall http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: Mbedthis-Appweb/([\w.-]+)\r\n(?:[^\r\n]+\r\n)*?\r\n\n<HTML>\n<HEAD>\n  <META HTTP-EQUIV=\"Refresh\" CONTENT=\"0; URL=/esp/login\.esp\">\n</HEAD>\n<BODY>\n</BODY>\n</HTML>\n\n$'

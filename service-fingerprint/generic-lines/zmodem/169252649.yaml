@@ -1,0 +1,17 @@
+id: zmodem
+info:
+  name: ZMODEM
+  author: nmap,cn-kali-team
+  tags: detect,tech,zmodem,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: zmodem
+    type: regex
+    regex:
+    - ^\*\*\x18B0100000023be50\r\x8a\x11$

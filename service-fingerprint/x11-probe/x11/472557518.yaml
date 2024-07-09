@@ -1,0 +1,20 @@
+id: x11
+info:
+  name: Android X Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,x11,service
+  severity: info
+  metadata:
+    device_type: phone
+    operating_system: Android
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: x11
+    type: regex
+    regex:
+    - (?i)^\x01\0\x0b\0\0.....\0\0\0\0.*Open source\0

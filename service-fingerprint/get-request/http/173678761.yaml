@@ -1,0 +1,17 @@
+id: http
+info:
+  name: ShellInABox
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n\r\n<\?xml version="1\.0" encoding="utf-8"\?>\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1\.0 Transitional//EN" "http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd">\n<html xmlns="http://www\.w3\.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xml:lang="en" lang="en">\n  <head>\n    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">\n    <!--\n    ShellInABox'

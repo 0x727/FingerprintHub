@@ -1,0 +1,17 @@
+id: honeypot
+info:
+  name: Network Flight Recorder BackOfficer Friendly telnet honeypot
+  author: nmap,cn-kali-team
+  tags: detect,tech,honeypot,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: honeypot
+    type: regex
+    regex:
+    - '^\r\nlogin: \0$'

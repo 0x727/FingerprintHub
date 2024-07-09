@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Citrix NetScaler SSL VPN
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Object Moved\r\nLocation: /vpn/index\.html\r\n(?:Set-Cookie: NSC_[^\r\n]+\r\n)*?Set-Cookie: NSC_AAAC=xyz;Path=/;expires=Wednesday, 09-Nov-1999 23:12:40 GMT;Secure\r\n'

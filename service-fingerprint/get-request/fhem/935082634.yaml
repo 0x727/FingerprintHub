@@ -1,0 +1,20 @@
+id: fhem
+info:
+  name: LaCrosse IT+ Reader
+  author: nmap,cn-kali-team
+  tags: detect,tech,fhem,service
+  severity: info
+  metadata:
+    device_type: specialized
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: fhem
+    type: regex
+    regex:
+    - ^\n\[LaCrosseITPlusReader\.(\d[\w.]+) \w\w\w \d\d \d\d\d\d \(RFM\d+ f:\d+ t:[\d~]+\) \+ DHT\d+\]\r\n

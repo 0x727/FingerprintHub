@@ -1,0 +1,17 @@
+id: ca-mq
+info:
+  name: CA Message Queuing Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,ca-mq,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ca-mq
+    type: regex
+    regex:
+    - ^ACK\x01

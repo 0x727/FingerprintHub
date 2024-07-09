@@ -1,0 +1,20 @@
+id: http
+info:
+  name: QNAP Turbo or TS-459 Pro+ NAS http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 501 Not Implemented\r\nServer: http server ([\w._-]+)\r\nContent-type: text/html\r\n.*<script type=\"text/javascript\" src=\"/ajax_obj/extjs/adapter/ext/ext-base\.js\"></script>\n<script> IEI_NAS_BUTTON_BACK=\"Back\";</script>'

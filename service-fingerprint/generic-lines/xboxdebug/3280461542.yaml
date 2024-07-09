@@ -1,0 +1,19 @@
+id: xboxdebug
+info:
+  name: Microsoft XBox Debugging Kit
+  author: nmap,cn-kali-team
+  tags: detect,tech,xboxdebug,service
+  severity: info
+  metadata:
+    device_type: game console
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: xboxdebug
+    type: regex
+    regex:
+    - ^201- connected\r\n407- unknown command\r\n$

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Octtel SP4220 VoIP Gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html;charset=BIG5\r\nContent-Length: 677\r\n\r\n<html>  <head> <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" > <title>VoIP Gateway</title> </head>\r\n <frameset rows="110,\*" framespacing="0" border="0" frameborder="0" id="FRAME_ROWS" >'

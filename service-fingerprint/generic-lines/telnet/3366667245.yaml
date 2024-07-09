@@ -1,0 +1,20 @@
+id: telnet
+info:
+  name: Motorola Canopy WAP telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: telecom-misc
+    info: SSE $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfd\"\xff\xfb\x01SSE version ([\d.]+)\r\nCopyright [\d, ]+ by Motorola\r\nUsername:'

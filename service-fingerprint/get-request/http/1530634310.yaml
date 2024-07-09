@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Prosody XMPP BOSH httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 [45]\d\d .*\r\nDate: .* GMT\r\nContent-Length: \d+\r\n\r\n<!DOCTYPE html>\n<html>\n<head><meta charset="utf-8"><style>body\{margin-top:14%;text-align:center;background-color:#F8F8F8;font-family:sans-serif;\}h1\{font-size:xx-large;\}p\{font-size:x-large;\}p\+p \{ font-size: large; font-family: courier \}</style>\n</head>\n<body><h1>[45]\d\d [^<]*</h1>'

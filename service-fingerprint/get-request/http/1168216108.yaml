@@ -1,0 +1,20 @@
+id: http
+info:
+  name: American Dynamics Intellex Digital Video Management System httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Redirection\r\nServer: Intellex-Http Server ([\w._-]+)\r\nDate: .* GMT\r\nLocation: http://([\w._-]+)/default\.html\r\n\r\n$'

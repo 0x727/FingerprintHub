@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: MiniUPnP
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: router
+    info: DrayTek Vigor $1 router; UPnP $2
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 404 Not Found\r\n(?:[^\r\n]+\r\n)*?Server: DrayTek/Vigor(\w+) UPnP/([\w._-]+) MiniUPnPd/([\w._-]+)\r\n'

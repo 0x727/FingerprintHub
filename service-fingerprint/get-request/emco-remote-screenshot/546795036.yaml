@@ -1,0 +1,17 @@
+id: emco-remote-screenshot
+info:
+  name: EMCO Remote Screenshot
+  author: nmap,cn-kali-team
+  tags: detect,tech,emco-remote-screenshot,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: emco-remote-screenshot
+    type: regex
+    regex:
+    - ^\x06!\x01\0\0\0\0\0\xff\xd8\xff\xe0\0\x10JFIF

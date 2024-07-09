@@ -1,0 +1,21 @@
+id: http
+info:
+  name: ZING httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: SanDisk Sansa Connect MP3 player; $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nConnection: close\r\nServer: ZING-(\d+/[\d.]+) \([0-9a-f]{32}; [\w-]+\) ([^\r\n]*)\r\n\r\n$'

@@ -1,0 +1,17 @@
+id: donkey
+info:
+  name: MLDonkey multi-network P2P GUI port
+  author: nmap,cn-kali-team
+  tags: detect,tech,donkey,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: donkey
+    type: regex
+    regex:
+    - (?i)^.*\0\0\0\x06\0Donkey\x01\x0c\0\./donkey\.ini\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0

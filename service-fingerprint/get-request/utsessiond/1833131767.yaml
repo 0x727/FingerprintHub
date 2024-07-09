@@ -1,0 +1,17 @@
+id: utsessiond
+info:
+  name: Sun Ray utsessiond
+  author: nmap,cn-kali-team
+  tags: detect,tech,utsessiond,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: utsessiond
+    type: regex
+    regex:
+    - ^ERR/InvalidCommand\n$

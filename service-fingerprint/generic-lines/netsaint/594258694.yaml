@@ -1,0 +1,17 @@
+id: netsaint
+info:
+  name: NC_Net nagios server
+  author: nmap,cn-kali-team
+  tags: detect,tech,netsaint,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: netsaint
+    type: regex
+    regex:
+    - '^ERROR: Unknown request number\.'

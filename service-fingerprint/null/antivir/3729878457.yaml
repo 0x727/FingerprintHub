@@ -1,0 +1,17 @@
+id: antivir
+info:
+  name: Symantec AntiVirus Scan Engine
+  author: nmap,cn-kali-team
+  tags: detect,tech,antivir,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: antivir
+    type: regex
+    regex:
+    - ^220 Symantec AntiVirus Scan Engine ready\.\r\n

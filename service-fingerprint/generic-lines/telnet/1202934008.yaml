@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Burroughs MCP telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    operating_system: Burroughs MCP
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^\xff\xfd\x03\xff\xfb\x03\xff\xfd\x18\xff\xfd\x17Please wait\. The connection to your station is still in the process of being established\. Your last input has been discarded\.\r\nPlease wait\. The connection to your station is still in the process of being established\. Your last input has been discarded\.\r\n

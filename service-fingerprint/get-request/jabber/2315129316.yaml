@@ -1,0 +1,17 @@
+id: jabber
+info:
+  name: Jabber instant messaging server
+  author: nmap,cn-kali-team
+  tags: detect,tech,jabber,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jabber
+    type: regex
+    regex:
+    - ^<stream:error>Invalid XML</stream:error>$

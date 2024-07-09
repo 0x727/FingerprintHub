@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Cisco Evolution Media Server upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: UPnP $3; DLNADOC $4; Linux $1
+    operating_system: Linux $2
+tcp:
+- name: four-oh-four-request
+  inputs:
+  - data: GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.[01] \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?SERVER: Linux/(([\d.]+)-[\d.]+) UPnP/([\d.]+) Evolution Media Server DLNADOC/([\d.]+)\r\n'

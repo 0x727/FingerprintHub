@@ -1,0 +1,17 @@
+id: backupexec-remote
+info:
+  name: Veritas Backup Exec Remote Agent
+  author: nmap,cn-kali-team
+  tags: detect,tech,backupexec-remote,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: backupexec-remote
+    type: regex
+    regex:
+    - ^\xf6\xff\xff\xff\x10\0\0\0\0\0\0\0\0\0\0\0$

@@ -1,0 +1,19 @@
+id: printer
+info:
+  name: LPRng
+  author: nmap,cn-kali-team
+  tags: detect,tech,printer,service
+  severity: info
+  metadata:
+    info: Not authorized
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: printer
+    type: regex
+    regex:
+    - ^\x01no connect permissions\n$

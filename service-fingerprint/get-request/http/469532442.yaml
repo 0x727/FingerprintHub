@@ -1,0 +1,20 @@
+id: http
+info:
+  name: MicroWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Walchem WebAlert remote monitoring
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: MicroWeb/([\w._-]+)\r\n.*<html>\n<head><title>WebAlert Login Page</title></head>\n<script LANGUAGE=\"JavaScript\">\n<!--\nfunction check\(\)\n{\n\t  if\(\(document\.frmLogin\.txtUserName\.value\.length<3\)'

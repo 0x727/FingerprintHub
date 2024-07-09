@@ -1,0 +1,17 @@
+id: ssl/http
+info:
+  name: Nessus vulnerability scanner http UI
+  author: nmap,cn-kali-team
+  tags: detect,tech,ssl/http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ssl/http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nConnection: close\r\nContent-Type: text/html\r\nContent-Length: 349\r\nServer: NessusWWW\r\nDate: : '

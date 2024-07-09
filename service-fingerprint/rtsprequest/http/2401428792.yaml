@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Virata-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: HP printer http config
+    version: $SUBST(1,"_",".")
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nServer: Virata-EmWeb/R([\d_]+)\r\nContent-Length: 0\r\n\r\n400 Bad Request\r\n$'

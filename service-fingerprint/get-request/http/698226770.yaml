@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Nexpose Security Console
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: maintenance mode
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nX-UA-Compatible: IE=edge,chrome=1\r\nSet-Cookie: JSESSIONID=[\dA-F]+; Path=/; Secure; HttpOnly\r\nDate: .*\r\nLocation: /maintenance-login\.html\r\nContent-Type: text/html;charset=UTF-8\r\nContent-Length: 0\r\nVary: Accept-Encoding\r\nConnection: close\r\nServer: NSC/([\w._-]+) \(JVM\)\r\n\r\n'

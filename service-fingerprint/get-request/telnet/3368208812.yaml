@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Samsung PBX telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: PBX
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\x01\r\nMGI Login: GET / HTTP/1\.0\r\n\r\nPassword: \r\nLogin incorrect\r\n\r\nMGI Login: '

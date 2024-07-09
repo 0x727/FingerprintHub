@@ -1,0 +1,17 @@
+id: ident
+info:
+  name: gidentd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^0, 0 : ERROR : INVALID-PORT\r\n$'

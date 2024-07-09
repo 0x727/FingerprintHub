@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: XX-Net web proxy tool
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 405 Method Not Allowed\r\nContent-Length: 1059\r\nContent-Type: text/html; charset=utf-8\r\n\r\n$'

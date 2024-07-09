@@ -1,0 +1,20 @@
+id: http
+info:
+  name: ShadowBot
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: HP Opsware
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad request version \(crypto mismatch\?\)\r\nServer: ShadowBot/([\d.]+)\r\n'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Code Crafters Ability httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 400 OK\r\n(?:[^\r\n]+\r\n)*?Server: Ability Server ([\w._-]+) by Code-Crafters\r\n'

@@ -1,0 +1,17 @@
+id: scanager
+info:
+  name: Indiana University Scanager DB
+  author: nmap,cn-kali-team
+  tags: detect,tech,scanager,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: scanager
+    type: regex
+    regex:
+    - ^\*\*\* ITSO_DB_FAIL \*\*\* invalid request\r\n

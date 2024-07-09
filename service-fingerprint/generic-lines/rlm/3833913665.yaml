@@ -1,0 +1,17 @@
+id: rlm
+info:
+  name: Reprise License Manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,rlm,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rlm
+    type: regex
+    regex:
+    - ^\x01\0\x0c\0LYEfffffff0\0\0\0

@@ -1,0 +1,22 @@
+id: imap
+info:
+  name: Cyrus imapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,imap,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: RedHat
+    operating_system: Linux
+    version: $2
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: imap
+    type: regex
+    regex:
+    - ^\* OK ([-.\w]+) Cyrus IMAP4 v([-.\w\+]+)-Red Hat [-.\w\+]+ server ready\r\n

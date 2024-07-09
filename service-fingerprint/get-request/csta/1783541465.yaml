@@ -1,0 +1,19 @@
+id: csta
+info:
+  name: Alcatel OmniPCX Enterprise
+  author: nmap,cn-kali-team
+  tags: detect,tech,csta,service
+  severity: info
+  metadata:
+    device_type: PBX
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: csta
+    type: regex
+    regex:
+    - ^<HTML>\r\n<HEAD>\r\n<TITLE>CSTA-Mono Server Home Page </TITLE>\r\n

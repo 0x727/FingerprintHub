@@ -1,0 +1,21 @@
+id: http-proxy
+info:
+  name: Microsoft ISA Server http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: German
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 502 Proxy Error \( Die URL \(Uniform Resource Locator\) verwendet ein unbekanntes Protokoll\. Entweder wird das Protokoll nicht unterst\xc3\xbctzt, oder die Anforderung wurde nicht richtig eingegeben\. Vergewissern Sie sich, dass ein g\xc3\xbcltiges Protokoll, wie z\.B\. HTTP f\xc3\xbcr eine Webanforderung, verwendet wird\.  \)\r\nVia: 1\.1 ([\w.-]+)\r\n'

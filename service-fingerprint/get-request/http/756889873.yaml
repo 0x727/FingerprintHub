@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Kemp 2500 load balancer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: load balancer
+    info: mini-http $1
+    operating_system: Unix
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Authorization Required\r\nDate: .*\r\nServer: mini-http/([\w._-]+) \(unix\)\r\nConnection: close\r\nContent-Type: text/html\r\nWWW-Authenticate: Basic realm=user\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2\.0//EN\">'

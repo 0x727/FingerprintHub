@@ -1,0 +1,22 @@
+id: emc-pp-mgmtsvc
+info:
+  name: EMC PowerPath
+  author: nmap,cn-kali-team
+  tags: detect,tech,emc-pp-mgmtsvc,service
+  severity: info
+  metadata:
+    hostname: $3
+    info: protocol $1.$2
+    operating_system: $6
+    version: $4
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: emc-pp-mgmtsvc
+    type: regex
+    regex:
+    - (?i)^<EMCP_Len\d+><\?xml version=\"1\.0\" encoding=\"iso-8859-1\"\?>\n<pp_mgmt_packet>.*<version_protocol_major>(\d+)</version_protocol_major>\n\t<version_protocol_minor>(\d+)</version_protocol_minor>.*<host_name>([\w._-]+)</host_name>.*<host_pp_version>(([\d.]+)[^<]*)</host_pp_version>.*<host_os_version>([^<]+)</host_os_version>

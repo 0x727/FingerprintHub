@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Enistic Smart Energy Controller httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: power-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: .*\r\nExpires: .*\r\nCache-control: private\r\nContent-type: text/html\r\n\r\n<html><body><table width=\"100%\" border=\"0\" cellspacing=\"10\" cellpadding=\"5\">  <tr>    <td colspan=\"2\"  bgcolor=\"#00304B\"><h1><FONT COLOR=\"white\">Enistic Smart Energy Controller</FONT></h1>'

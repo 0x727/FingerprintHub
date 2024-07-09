@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: Cyberoam captive portal
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nDate: .*\r\nServer: xxxx\r\n(?:X-Frame-Options: SAMEORIGIN\r\n(?:Strict-Transport-Security: max-age=\d+\r\n)?)?Location: https?://[^\r\n]+?/webpages/(?:myaccount/)?login\.jsp\r\nCache-Control: max-age=2592000\r\nExpires: .*\r\n(?:Vary: Accept-Encoding\r\n)?Content-Length: \d+\r\nConnection: close\r\nContent-Type: text/html; charset=iso-8859-1\r\n\r\n'

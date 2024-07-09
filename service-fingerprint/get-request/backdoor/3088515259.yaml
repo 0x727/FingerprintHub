@@ -1,0 +1,19 @@
+id: backdoor
+info:
+  name: '**BACKDOOR**'
+  author: nmap,cn-kali-team
+  tags: detect,tech,backdoor,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: backdoor
+    type: regex
+    regex:
+    - ^:[-\w_.]+ 451 GET :\r\n

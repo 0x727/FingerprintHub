@@ -1,0 +1,20 @@
+id: caldav
+info:
+  name: TwistedWeb httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,caldav,service
+  severity: info
+  metadata:
+    info: Calendar and Contacts Server $1; Twisted $2
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: caldav
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: CalendarServer/([\w._()-]+) Twisted/([\w._-]+) TwistedWeb/([\w._-]+)\r\n(?:[^\r\n]+\r\n)*?DAV: 1'

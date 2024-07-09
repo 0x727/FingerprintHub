@@ -1,0 +1,17 @@
+id: foolscap
+info:
+  name: foolscap RPC
+  author: nmap,cn-kali-team
+  tags: detect,tech,foolscap,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: foolscap
+    type: regex
+    regex:
+    - '^HTTP/1\.1 500 Internal Server Error: internal server error, see logs\r\n\r\n'

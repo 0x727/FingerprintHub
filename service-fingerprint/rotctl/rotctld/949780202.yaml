@@ -1,0 +1,19 @@
+id: rotctld
+info:
+  name: Hamlib rotctld
+  author: nmap,cn-kali-team
+  tags: detect,tech,rotctld,service
+  severity: info
+  metadata:
+    info: 'model: $1'
+tcp:
+- name: rotctl
+  inputs:
+  - data: get_info\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rotctld
+    type: regex
+    regex:
+    - '^get_info: (.*)\nRPRT 0\n'

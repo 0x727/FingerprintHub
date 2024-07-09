@@ -1,0 +1,17 @@
+id: smtp
+info:
+  name: Lotus Domino smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+tcp:
+- name: hello
+  inputs:
+  - data: EHLO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 .* SMTP ready at .*\r\n501 Command \"EHLO\" requires an argument\r\n

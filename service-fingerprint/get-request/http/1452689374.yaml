@@ -1,0 +1,17 @@
+id: http
+info:
+  name: ConferenceRoom ircd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Wrong Port\r\nServer: ConferenceRoom/IRC\r\nConnection: Close\r\nContent-type: text/html\r\n\r\n<HTML><HEAD><TITLE>Connection to Wrong Port</TITLE></HEAD>\r\n<BODY>You have connected to an IRC server as if it were a web server</BODY>\r\n</HTML>\r\n'

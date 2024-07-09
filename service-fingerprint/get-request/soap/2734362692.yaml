@@ -1,0 +1,19 @@
+id: soap
+info:
+  name: Dell 1130n printer soap
+  author: nmap,cn-kali-team
+  tags: detect,tech,soap,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: soap
+    type: regex
+    regex:
+    - '^HTTP/1\.1 405 Method Not Allowed\r\nDate:\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d\r\nContent-Type: application/soap\+xml; charset=\"utf-8\"\r\n\r\n$'

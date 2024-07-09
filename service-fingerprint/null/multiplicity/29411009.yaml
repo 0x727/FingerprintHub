@@ -1,0 +1,19 @@
+id: multiplicity
+info:
+  name: Stardock Multiplicity KVM daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,multiplicity,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: multiplicity
+    type: regex
+    regex:
+    - ^MULTIPLICITYP$

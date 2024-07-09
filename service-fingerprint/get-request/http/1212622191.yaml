@@ -1,0 +1,17 @@
+id: http
+info:
+  name: 2Wire TR-069 access
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nServer: 2Wire TR-069\r\nContent-Length: 0\r\nAllow: GET\r\nWWW-Authenticate: d=\d+ +set_mask=0x[\da-f]+ +handle_evt=0x[\da-f]+.+\r\n'

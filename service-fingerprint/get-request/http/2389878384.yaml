@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Tandberg 2500 video conferencing http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 200 Document Follows\r\n.*<META content=\"text/html; charset=windows-1252\" http-equiv=Content-Type>\n<meta NAME=\"AUTHOR\" CONTENT=\"TANDBERG ASA \(http://www\.tandberg\.net\)\">\n

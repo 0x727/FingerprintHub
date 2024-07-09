@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Speco IP camera httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nContent-Type: text/html\r\nAccept-Ranges: bytes\r\nETag: "1899773965"\r\nLast-Modified: [^\r\n]*\r\nContent-Length: \d+\r\nConnection: close\r\nDate: [^\r\n]*\r\nServer: httpd\r\n\r\n.*<title>Speco IP Camera</title>'

@@ -1,0 +1,19 @@
+id: mtap
+info:
+  name: Adobe Virtual Network
+  author: nmap,cn-kali-team
+  tags: detect,tech,mtap,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mtap
+    type: regex
+    regex:
+    - ^WATSON!WATSON!\x13Tx\xa3\xfee\xc0\x9b\0\0\0\x01\0\0\0\0\0\0\0\0\0v\0\0\0\0\x84\x84\0\x02\0\x13\0\xd9\0\0\0\x16\x13Virtual Network ([\d.]+)\0

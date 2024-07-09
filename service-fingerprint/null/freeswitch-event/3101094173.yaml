@@ -1,0 +1,17 @@
+id: freeswitch-event
+info:
+  name: FreeSWITCH mod_event_socket
+  author: nmap,cn-kali-team
+  tags: detect,tech,freeswitch-event,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: freeswitch-event
+    type: regex
+    regex:
+    - '^Content-Type: auth/request\n\n'

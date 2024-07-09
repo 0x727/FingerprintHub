@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Apache httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: load balancer
+    info: F5 BIG-IP load balancer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: Apache\r\n.*<title>BIG-IP&reg;- Redirect</title>'

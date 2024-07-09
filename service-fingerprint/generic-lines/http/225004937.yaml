@@ -1,0 +1,20 @@
+id: http
+info:
+  name: TJWS httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Based on Acme.Serve $1
+    version: $2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^<HTML><HEAD><TITLE>400 Malformed request line</TITLE></HEAD><BODY.*http://tjws\.sourceforge\.net\">Rogatkin''s JWS based on Acme\.Serve Version ([-\w_.]+), .Revision: ([-\w_.]+)'

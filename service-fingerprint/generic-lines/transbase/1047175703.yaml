@@ -1,0 +1,17 @@
+id: transbase
+info:
+  name: Transbase Database
+  author: nmap,cn-kali-team
+  tags: detect,tech,transbase,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: transbase
+    type: regex
+    regex:
+    - ^\0\0\+\x04\0\0\0@TransBase Multiplexer error report:\nIllegal request

@@ -1,0 +1,17 @@
+id: symantec-av
+info:
+  name: Symantec rtvscan antivirus
+  author: nmap,cn-kali-team
+  tags: detect,tech,symantec-av,service
+  severity: info
+tcp:
+- name: dnsversion-bind-req
+  inputs:
+  - data: \0\x06\x01\0\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: symantec-av
+    type: regex
+    regex:
+    - (?i)^\0\x06\x01\x01\0\x10..........$

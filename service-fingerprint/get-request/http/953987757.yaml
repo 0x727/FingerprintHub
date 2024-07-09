@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Allegro RomPager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: power-device
+    info: APC Masterswitch power controller http admin; server busy
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.[01] 403 Forbidden\r\nContent-Type: text/html\r\nServer: Allegro-Software-RomPager/ *([\w._-]+)\r\n.*<H1>Notice</H1>\nSomeone is currently logged into the APC Management Web Server\.<p>'

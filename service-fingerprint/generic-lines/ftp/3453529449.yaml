@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: IronPort WSA firewall ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 IronPort WSA ready\.\r\n500 Syntax error, command unrecognized\.\r\n

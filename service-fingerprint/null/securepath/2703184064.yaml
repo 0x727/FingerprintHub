@@ -1,0 +1,19 @@
+id: securepath
+info:
+  name: HP StorageWorks SecurePath
+  author: nmap,cn-kali-team
+  tags: detect,tech,securepath,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: securepath
+    type: regex
+    regex:
+    - '^GENERAL: \d+ \d+<EoM>\n$'

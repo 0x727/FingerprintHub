@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Campbell Scientific NL-100/105 Ethernet-to-serial bridge telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: bridge
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfc\"\xff\xfb\x01\r\nPassword: \r\nbad password\r\n'

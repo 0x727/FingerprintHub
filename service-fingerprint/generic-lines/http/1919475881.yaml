@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Serviio media server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: $2
+    operating_system: $1
+    version: $3
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 400 Bad Request\r.*\nServer: ([^,]+), (UPnP/[\d.]+ DLNADOC/[\d.]+), Serviio/([\d.]+)\r\n'

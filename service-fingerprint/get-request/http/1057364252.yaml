@@ -1,0 +1,21 @@
+id: http
+info:
+  name: IWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: March Networks VisionWEB webcam http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Date: \d\d\d\d-\d\d-\d\d [^\r\n]*\r\n(?:[^\r\n]+\r\n)*?Server: IWeb/([\d.]+)\r\n.*<title>VisionWEB</title>.*<meta name=\"AUTHOR\" content=\"Insignis Technologies\" />.*<meta name=\"DESCRIPTION\" content=\"Linearis VisionWEB\. Cieffe srl, manufactures and markets CCTV digital video recorders and Remote Surveillance products for the security market\" />'

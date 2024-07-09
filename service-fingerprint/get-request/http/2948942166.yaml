@@ -1,0 +1,20 @@
+id: http
+info:
+  name: micro_httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: Belkin WAP http config; BSSID $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 Ok\r\nServer: micro_httpd\r\n.*\r\nvar isRouter\t=''1'' \? ''1'' : ''0'';\r\nvar\tisPS\t\t='''' \? '''' : ''0'';\r\nvar isAPmode\r\nif\(''[\w-]*'' =='''' \|\| ''1''==''0''\)\r\n\tisAPmode=''1'';\r\nelse\tisAPmode=''0'';\r\nvar bssid = ''([\w:]+)'';'

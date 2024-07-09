@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Oracle WebLogic Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Servlet $1; JSP $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Connection: close\r\nDate: .*\nX-Powered-By: Servlet/([\w._-]+) JSP/([\w._-]+)\r\n'

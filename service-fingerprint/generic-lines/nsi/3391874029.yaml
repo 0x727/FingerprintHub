@@ -1,0 +1,17 @@
+id: nsi
+info:
+  name: Cisco Network Spectrum Interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,nsi,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nsi
+    type: regex
+    regex:
+    - ^%NSI\x91\xceWb\0\x08\x02\x04\x0f\x05\0\0

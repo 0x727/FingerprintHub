@@ -1,0 +1,19 @@
+id: banner-ivu
+info:
+  name: Banner Engineering iVu Command Channel
+  author: nmap,cn-kali-team
+  tags: detect,tech,banner-ivu,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: banner-ivu
+    type: regex
+    regex:
+    - ^ERROR 10000_EMPTY_FRAME_RECEIVED\r\n

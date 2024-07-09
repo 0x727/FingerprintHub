@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Chorus Web UI for XBMC/Kodi
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Chorus Web UI for XBMC/Kodi
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Length: \d+\r\nLast-Modified: .*\r\nContent-Type: text/html\r\nCache-Control: private, max-age=0, no-cache\r\nAccept-Ranges: bytes\r\nDate: .*\r\n\r\n<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8">\n    <title>Chorus\.</title>'

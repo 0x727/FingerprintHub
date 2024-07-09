@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Telekom Speedport http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 \r\nContent-Type: text/html\r\nConnection: Close\r\nLOCATION: http://speedport\.ip/html/login/index\.html\r\nContent-Length: 0\r\n\r\n'

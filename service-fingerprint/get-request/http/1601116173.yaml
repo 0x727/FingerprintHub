@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Allegro RomPager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: Cyclades PR2000 router http admin
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\r\nWWW-Authenticate: Basic realm=\"PR2000 - Login\"\r\nContent-Type: text/html\r\nServer: Allegro-Software-RomPager/ ?([\w.]+)\r\n\r\n.*</H1>This object on the Cyclades PR2000 - RomPager server is protected'

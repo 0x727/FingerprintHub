@@ -1,0 +1,19 @@
+id: http
+info:
+  name: NessusWWW
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: 6.7 - 6.9
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nCache-Control: \r\nX-Frame-Options: DENY\r\n(?:Etag: [a-z0-9]{32}\r\n)?Content-Type: .*\r\nDate: : .*\r\nConnection: close\r\nServer: NessusWWW\r\n'

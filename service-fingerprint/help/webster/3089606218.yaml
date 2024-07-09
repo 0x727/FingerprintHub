@@ -1,0 +1,17 @@
+id: webster
+info:
+  name: Webster dictionary server
+  author: nmap,cn-kali-team
+  tags: detect,tech,webster,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: webster
+    type: regex
+    regex:
+    - ^DICTIONARY server protocol:\r\n\r\nContact name is

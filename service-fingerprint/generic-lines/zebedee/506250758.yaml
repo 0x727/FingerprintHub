@@ -1,0 +1,17 @@
+id: zebedee
+info:
+  name: Zebedee encrypted tunnel
+  author: nmap,cn-kali-team
+  tags: detect,tech,zebedee,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: zebedee
+    type: regex
+    regex:
+    - ^\x02\x01$

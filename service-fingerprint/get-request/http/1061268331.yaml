@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Dual DHCP DNS Server http viewer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Windows
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nDate: .*\r\nLast-Modified: .*\r\nContent-Type: text/html\r\nConnection: Close\r\nContent-Length: \d+ +\r\n\r\n.+>Dual DHCP DNS Server Version ([\w._-]+ Windows Build \d+)<'

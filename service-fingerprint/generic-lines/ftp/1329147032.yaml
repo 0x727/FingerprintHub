@@ -1,0 +1,17 @@
+id: ftp
+info:
+  name: vsftpd (before 2.0.8) or WU-FTPD
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 .*\r\n530 Please login with USER and PASS\.\r\n530 Please login with USER and PASS\.\r\n

@@ -1,0 +1,17 @@
+id: lucent-fwadm
+info:
+  name: Lucent Security Management Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,lucent-fwadm,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: lucent-fwadm
+    type: regex
+    regex:
+    - ^0001;2$

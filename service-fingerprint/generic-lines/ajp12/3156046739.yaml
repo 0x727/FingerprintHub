@@ -1,0 +1,17 @@
+id: ajp12
+info:
+  name: Apache Jserv
+  author: nmap,cn-kali-team
+  tags: detect,tech,ajp12,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ajp12
+    type: regex
+    regex:
+    - '^Status: 400 Bad Request\r\nServlet-Error: Malformed data sent to JServ\r\n\r\n$'

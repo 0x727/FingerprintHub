@@ -1,0 +1,20 @@
+id: synergy
+info:
+  name: Synergy KVM switch
+  author: nmap,cn-kali-team
+  tags: detect,tech,synergy,service
+  severity: info
+  metadata:
+    info: encrypted
+    version: '>1.4.11'
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: synergy
+    type: regex
+    regex:
+    - (?i)^\0\0\0\x0b.{11}$

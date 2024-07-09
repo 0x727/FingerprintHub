@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Sitecom $1 http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\nContent-Type: text/html;\nConnection: close\nWWW-Authenticate: Basic realm=\"Default: admin/admin\"\nContent-Length: <HTML>\r\n<HEAD>\r\n<TITLE>Sitecom Multi-Functional USB Server ([^<]+)</TITLE>'

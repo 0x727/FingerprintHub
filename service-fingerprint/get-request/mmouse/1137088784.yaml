@@ -1,0 +1,19 @@
+id: mmouse
+info:
+  name: Mobile Air Mouse
+  author: nmap,cn-kali-team
+  tags: detect,tech,mmouse,service
+  severity: info
+  metadata:
+    info: 'server name: $1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mmouse
+    type: regex
+    regex:
+    - ^HTTP/1\.0\x20200\x20OK\x20\n\x20Server:\x20Mobile\x20Air\x20Mouse\x20Server\x20\n\x20Content-Type:\x20text/html\x20\n\x20Content-Length:\x20344\n\n<HTML><HEAD><TITLE>Success!</TITLE><meta\x20name=\"viewport\"\x20content=\"width=device-width,user-scalable=no\"\x20/></HEAD><BODY\x20BGCOLOR=#000000><br><br><p\x20style=\"font:12pt\x20arial,geneva,sans-serif;\x20text-align:center;\x20color:green;\x20font-weight:bold;\"\x20>The\x20Mobile\x20Air\x20Mouse\x20server\x20running\x20on\x20\"([^\"]*)\"\x20was\x20able\x20to\x20receive\x20your\x20request\.</p></BODY></HTML>$

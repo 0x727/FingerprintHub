@@ -1,0 +1,17 @@
+id: mogilefs
+info:
+  name: MogileFS distributed filesystem
+  author: nmap,cn-kali-team
+  tags: detect,tech,mogilefs,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mogilefs
+    type: regex
+    regex:
+    - ^ERR unknown_command Unknown\+server\+command\r\n

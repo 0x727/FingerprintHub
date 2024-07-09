@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Sierra Wireless ALEOS WAP http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 ERROR\r\nWWW-Authenticate: Digest qop=\"auth\", realm=\"Modem@AirLink\.com\", nonce=\"[0-9a-f]+\"\r\nContent-Length: 0\r\n\r\n'

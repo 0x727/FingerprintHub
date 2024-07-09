@@ -1,0 +1,17 @@
+id: oracle-db-rmi
+info:
+  name: Oracle Database Lite RMI
+  author: nmap,cn-kali-team
+  tags: detect,tech,oracle-db-rmi,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: oracle-db-rmi
+    type: regex
+    regex:
+    - ^\0\0\xfa\xda\0\x02$

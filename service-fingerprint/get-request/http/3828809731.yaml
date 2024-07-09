@@ -1,0 +1,20 @@
+id: http
+info:
+  name: TINIWebServer Java httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Device temperature $1F
+    operating_system: TiniOS
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nDate: .*\r\nServer: Java/[\d.]+\r\nContent-type: text/html\r\nContent-length: \d+\r\n\r\n.*<TITLE>TINIWebServer</TITLE>.*Current temperature ([\d.]+) F<BR>'

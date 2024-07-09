@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Agranat-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: HP Designjet 800ps printer http config
+    version: $SUBST(1,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nServer: Agranat-EmWeb/R([\d_]+)\r\nContent-Type: text/html\r\nCache-Control: no-cache\r\nPragma: no-cache\r\n\r\n<HTML> \n<HEAD>\n<TITLE> [\w._-]+  \n</TITLE>\n\n<SCRIPT TYPE = \"text/javascript\">\n netscapeVersion = navigator\.appVersion\.substring\(0,4\);\n ieVersion = navigator\.appVersion\.substring\(17,25\);\n'

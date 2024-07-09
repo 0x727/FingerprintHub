@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Tomato WAP firmware httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nDate: .*\r\nContent-Type: text/html; charset=utf-8\r\nCache-Control: no-cache, no-store, must-revalidate, private\r\nExpires: Thu, 31 Dec 1970 00:00:00 GMT\r\nPragma: no-cache\r\nWWW-Authenticate: Basic realm=\"[^"]*\"\r\nConnection: close\r\n\r\n<html><head><title>Error</title></head><body><h2>401 Unauthorized</h2> Unauthorized</body></html>$'

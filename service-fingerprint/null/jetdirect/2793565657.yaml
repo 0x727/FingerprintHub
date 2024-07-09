@@ -1,0 +1,19 @@
+id: jetdirect
+info:
+  name: JetDirect
+  author: nmap,cn-kali-team
+  tags: detect,tech,jetdirect,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jetdirect
+    type: regex
+    regex:
+    - ^ $

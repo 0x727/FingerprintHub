@@ -1,0 +1,19 @@
+id: git
+info:
+  name: Git
+  author: nmap,cn-kali-team
+  tags: detect,tech,git,service
+  severity: info
+  metadata:
+    info: GitHub
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: git
+    type: regex
+    regex:
+    - ^0077ERR \n  Your Git client has made an invalid request:\n  GET / HTTP/1\.0\r\n\r\n\n  Visit http://support\.github\.com for help$

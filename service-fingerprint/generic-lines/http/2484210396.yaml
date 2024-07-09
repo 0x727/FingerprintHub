@@ -1,0 +1,19 @@
+id: http
+info:
+  name: D-Link DI-$1 router http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 \d\d\d .*var l1=\"([^"]+)\"\n.*document\.write\(\"D-Link DI-\"\+l1\)

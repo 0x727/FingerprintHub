@@ -1,0 +1,17 @@
+id: bprd
+info:
+  name: Veritas Netbackup
+  author: nmap,cn-kali-team
+  tags: detect,tech,bprd,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bprd
+    type: regex
+    regex:
+    - ^request daemon can't accept sessions\nanother instance may already be running\.\nAddress already in use\n$

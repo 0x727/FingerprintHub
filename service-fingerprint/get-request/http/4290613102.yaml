@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Samsung CLX-3175FW printer SOAP over HTTP
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 405 Method Not Allowed\r\nDate:0000-01-01T18:54:43\r\nContent-Type: application/soap\+xml; charset=\"utf-8\"\r\n\r\n$'

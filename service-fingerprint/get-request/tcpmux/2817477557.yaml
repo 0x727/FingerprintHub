@@ -1,0 +1,17 @@
+id: tcpmux
+info:
+  name: ''
+  author: nmap,cn-kali-team
+  tags: detect,tech,tcpmux,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: tcpmux
+    type: regex
+    regex:
+    - ^-Service not available\r\n$

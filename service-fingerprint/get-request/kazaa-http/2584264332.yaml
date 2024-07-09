@@ -1,0 +1,20 @@
+id: kazaa-http
+info:
+  name: K-Lite FastTrack P2P client
+  author: nmap,cn-kali-team
+  tags: detect,tech,kazaa-http,service
+  severity: info
+  metadata:
+    info: 'network: $2'
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: kazaa-http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nServer: giFT-FastTrack ([\d.]+)\r\nX-Kazaa-Username: www\.k-lite\.com\.br\r\nX-Kazaa-Network: ([-.\w]+)\r\n'

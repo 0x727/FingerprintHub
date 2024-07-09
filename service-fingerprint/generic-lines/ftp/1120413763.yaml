@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: VBrick 4300 video encoder ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 FTP server ready\.\r\n530 USER and PASS required\r\n530 USER and PASS required\r\n

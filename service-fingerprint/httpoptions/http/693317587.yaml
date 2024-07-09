@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Tablo Network TV tuner
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 204 \r\ncontent-type: text/html\r\ncontent-length: 0\r\n\r\n'

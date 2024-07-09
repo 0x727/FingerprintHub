@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Ajenti http control panel
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nSet-Cookie: session=[0-9a-f]{40}; Path=/; HttpOnly\r\nX-Auth-Status: none\r\nContent-Type: text/html\r\nDate: .*\r\nConnection: close\r\nContent-Length: \d+\r\n\r\n.* href=\"/ajenti:static/'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Intel Active Management Technology User Notification Service http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nLocation: https?:///logon\.htm\r\nContent-Length: 0\r\nServer: Intel\(R\) Active Management Technology ([\w._-]+)\r\n\r\n$'

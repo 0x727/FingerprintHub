@@ -1,0 +1,19 @@
+id: http
+info:
+  name: CleanMail antispam http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 400 Bad Request\r\n(?:[^\r\n]+\r\n)*?Server: CleanMail Service ([\w._-]+)\r\n'

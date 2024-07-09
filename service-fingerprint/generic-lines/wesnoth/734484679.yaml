@@ -1,0 +1,17 @@
+id: wesnoth
+info:
+  name: Battle For Wesnoth game server
+  author: nmap,cn-kali-team
+  tags: detect,tech,wesnoth,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: wesnoth
+    type: regex
+    regex:
+    - ^\0\0\0.\0\0\0.\x1f\x8b\x08\0\0\0\0\0\0\xff\x8b\.K-\*\xce\xcc\xcf\x8b\xe5\x8a\xd6\x873\x01 \xbc\x17\x06\x15\0\0\0

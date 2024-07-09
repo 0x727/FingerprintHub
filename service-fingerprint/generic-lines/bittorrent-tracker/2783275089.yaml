@@ -1,0 +1,17 @@
+id: bittorrent-tracker
+info:
+  name: Transmission bittorrent tracker
+  author: nmap,cn-kali-team
+  tags: detect,tech,bittorrent-tracker,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bittorrent-tracker
+    type: regex
+    regex:
+    - ^This is not a rootkit or other backdoor, it's a BitTorrent\r\nclient\. Really\.

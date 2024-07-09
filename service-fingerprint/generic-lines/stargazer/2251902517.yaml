@@ -1,0 +1,17 @@
+id: stargazer
+info:
+  name: Stargazer Billing System
+  author: nmap,cn-kali-team
+  tags: detect,tech,stargazer,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: stargazer
+    type: regex
+    regex:
+    - ^ERHD$

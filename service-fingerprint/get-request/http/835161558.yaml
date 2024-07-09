@@ -1,0 +1,19 @@
+id: http
+info:
+  name: TP-LINK $1 switch http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: switch
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nConnection: close\r\nContent-Type: text/html\r\nCache-Control:no-cache\r\nPragma:no-cache\r\nExpires:[smtwf].*\r\n\r\n<!DOCTYPE html>\n<script>\nvar g_Lan=\d+,g_level=\d+,g_year=\d+,g_title=''([^'']+)'';'

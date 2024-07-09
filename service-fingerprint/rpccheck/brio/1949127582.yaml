@@ -1,0 +1,17 @@
+id: brio
+info:
+  name: Brio 8 business intelligence
+  author: nmap,cn-kali-team
+  tags: detect,tech,brio,service
+  severity: info
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: brio
+    type: regex
+    regex:
+    - (?i)^\0\0\x01\(\x16\x85..$

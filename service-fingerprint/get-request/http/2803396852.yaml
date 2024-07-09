@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Repetier Server $2 3d printer controller
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nDate: .* GMT\r\nConnection: Close\r\nServer: ([\d.]+)\r\nContent-Type: text/html; charset=utf-8\r\nETag: W/"[a-f\d]{32}"\r\nTransfer-Encoding: chunked\r\nContent-Length: \d+\r\n\r\n\d+\r\n<!DOCTYPE html> <html lang="en" ng-app="server" ng-strict-di ng-controller="ServerController"> <head> <script type="text/javascript">window\.lang = "en";</script> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta name="description" content="Repetier-Server (Free|Pro) for 3d printer">'

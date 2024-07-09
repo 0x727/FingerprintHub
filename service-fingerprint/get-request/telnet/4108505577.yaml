@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Quatech Airborne CLI server
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: bridge
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\n\rError 0xf802: Command not recognized\.\r\n'

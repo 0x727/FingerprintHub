@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Crate.io CrateDB
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'Cluster name: $1, Lucene version: $3'
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d \w+\r\ncontent-type: application/json\r\ncontent-length: \d+\r\n\r\n{\n  \"ok\" : \w+,\n  \"status\" : \d+,\n  \"name\" : \"[^\"]+\",\n  \"cluster_name\" : \"([^\"]+)\",\n  \"version\" : {\n    \"number\" : \"([\d.]+)\",\n    \"build_hash\" : \"[^\"]+\",\n    \"build_timestamp\" : \"[^\"]+\",\n    \"build_snapshot\" : \w+,\n    \"lucene_version\" : \"([\d.]+)\"\n  }\n}\n$'

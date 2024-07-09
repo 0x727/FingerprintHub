@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Kathrein SAT>IP-Server http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Moved Temporarily\r\nLocation: http://[^:]*:9527/\r\n\r\nHTTP/1\.1 404 Not Found\r\nContent-Length: 0\r\n\r\n'

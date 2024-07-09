@@ -1,0 +1,17 @@
+id: antivir
+info:
+  name: drweb anti-virus
+  author: nmap,cn-kali-team
+  tags: detect,tech,antivir,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: antivir
+    type: regex
+    regex:
+    - ^\0\0\x80\0$

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Certec atvise SCADA control httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nConnection: Close\r\nContent-Length: \d+\r\nContent-Type: text/html\r\nDate: .*\r\nLast-Modified: .*\r\nServer: atvise\r\n'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: AVM FRITZ!Box 7300-series WAP http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/[10]\.0 200 OK\nPragma: no-cache\nContent-Type: text/html; charset=iso-8859-1\nContent-Length: 63\n\n<html><body>ERROR ERR_INVALID_REQ<hr>Bad Request</body></html>\n'

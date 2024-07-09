@@ -1,0 +1,21 @@
+id: http
+info:
+  name: RapidLogic httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: Sharp MX-2700N printer
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Moved Temporarily\r\nServer: RapidLogic/([\d.]+)\r\nMIME-version: 1\.0\r\nContent-type: text/html; charset=UTF-8\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nLocation: /main\.html\r\n\r\n\r\n$'

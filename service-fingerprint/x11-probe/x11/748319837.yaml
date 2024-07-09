@@ -1,0 +1,19 @@
+id: x11
+info:
+  name: open
+  author: nmap,cn-kali-team
+  tags: detect,tech,x11,service
+  severity: info
+  metadata:
+    info: open
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: x11
+    type: regex
+    regex:
+    - ^\x01\0\x0b\0\0\0\x4C\0\xA0\xE0\x63\x02\0\0

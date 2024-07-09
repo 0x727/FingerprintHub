@@ -1,0 +1,19 @@
+id: ipp
+info:
+  name: Xerox WorkCentre IPP
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipp,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipp
+    type: regex
+    regex:
+    - ^HTTP/1\.0 404 Not found\r\n\r\n404 Not found$

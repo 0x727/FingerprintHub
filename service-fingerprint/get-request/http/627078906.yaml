@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Spyglass_MicroServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: Tektronix Phaser printer http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nDate: .*\r\nAllow: GET, HEAD\r\nServer: Spyglass_MicroServer/([\w.]+)\r\n\r\n<html>\n\n<head>\n\n<title>  Software de administraci&#243;n de impresora PhaserLink  </title>\n\n'

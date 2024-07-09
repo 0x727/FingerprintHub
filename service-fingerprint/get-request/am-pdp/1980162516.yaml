@@ -1,0 +1,19 @@
+id: am-pdp
+info:
+  name: amavisd-new AM.PDP
+  author: nmap,cn-kali-team
+  tags: detect,tech,am-pdp,service
+  severity: info
+  metadata:
+    version: 2.4.0
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: am-pdp
+    type: regex
+    regex:
+    - ^setreply=450 4\.5\.0 Failure:%20Missing%20'request'%20field%20at%20\(eval%20\d+\)%20line%20(?:195),%20<GEN\d+>%20line%20\d\.\r\n

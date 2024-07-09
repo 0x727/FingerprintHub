@@ -1,0 +1,22 @@
+id: textui
+info:
+  name: CipherLab Ethernet Cradle command shell
+  author: nmap,cn-kali-team
+  tags: detect,tech,textui,service
+  severity: info
+  metadata:
+    device_type: specialized
+    hostname: $4
+    info: 'Kernel-$1; MAC: $3'
+    version: $2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: textui
+    type: regex
+    regex:
+    - '^\r\n <{5}-{35}>{5}\r\n <{5}    CipherLab  Ethernet Cradle {5}>{5}\r\n <{5}-{35}>{5}\r\n {10}\[Press ''Enter'' to continue\.\]\r\nKernel Version: Kernel-([\w._-]+)\r\nLib Version: Ethernet Cradle-([\w._-]+)\r\nMACID: ([\dA-F:]+)\r\nIP: [\d.]+\r\nLocal Name: ([^\r\n]+)\r\n\r\n'

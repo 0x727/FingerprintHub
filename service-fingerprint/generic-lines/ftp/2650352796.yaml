@@ -1,0 +1,21 @@
+id: ftp
+info:
+  name: HP FTP Print Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: HP LaserJet 4250 printer
+    version: '3.0'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^230 FTP Server Ready\r\n530 Authentication required\.\r\n530 Authentication required\.\r\n

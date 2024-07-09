@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: TwonkyMedia UPnP
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: Linux $1; UPnP $2; SDK $3
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: *Linux/([\w._-]+), UPnP/([\w._-]+), TwonkyVision UPnP SDK/([\w._-]+)\r\n'

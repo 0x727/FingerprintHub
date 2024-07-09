@@ -1,0 +1,19 @@
+id: pop3-proxy
+info:
+  name: Perdition pop3 proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,pop3-proxy,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pop3-proxy
+    type: regex
+    regex:
+    - ^\+OK POP3 Ready ([-\w_.]+) \w+\r\n-ERR Null command, mate\r\n

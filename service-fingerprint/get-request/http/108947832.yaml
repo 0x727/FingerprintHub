@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Agranat-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: switch
+    info: 3Com SuperStack II Switch http config
+    version: $SUBST(1,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nDate: .*\r\nServer: Agranat-EmWeb/R([\d._]+)\r\nWWW-Authenticate: Basic realm=\"read@\"\r\n\r\n401 Unauthorized\r\n'

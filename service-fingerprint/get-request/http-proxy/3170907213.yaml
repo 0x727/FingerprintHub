@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: Pound http reverse proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Found\r\nLocation: .*\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n\r\n<html><head><title>Redirect</title></head><body><h1>Redirect</h1><p>You should go to <a href="[^"]+">here</a></p></body></html>'

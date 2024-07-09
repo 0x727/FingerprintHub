@@ -1,0 +1,17 @@
+id: authpoint
+info:
+  name: Authpoint payment processing
+  author: nmap,cn-kali-team
+  tags: detect,tech,authpoint,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: authpoint
+    type: regex
+    regex:
+    - '^\[AUTHPOINT RESPONSE\]\r\nreturn_code=AUTHPOINT ERROR\r\nreturn_code_text=Error response parsed by base message object: Invalid or missing register #\r\nresponse=\r\nidentifier=\r\napproval_code=\r\n$'

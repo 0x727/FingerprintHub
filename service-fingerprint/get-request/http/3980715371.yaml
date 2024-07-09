@@ -1,0 +1,20 @@
+id: http
+info:
+  name: JavaHttpServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: HP Web-Based Enterprise Services obligation server
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 302 Moved Temporarily\r\n(?:[^\r\n]+\r\n)*?Server: JavaHttpServer/([\w._-]+)\r\n(?:[^\r\n]+\r\n)*?Pragma: /obligation\r\n'

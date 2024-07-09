@@ -1,0 +1,19 @@
+id: http
+info:
+  name: LanSafe Status@aGlance
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'Server: $1, Status: $2'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^<html>\r\n<META HTTP-EQUIV=\"Refresh\" CONTENT=\"10\">\r\n<head>\r\n<title>([\w\d.-]+) LanSafe: ([\w\d\s]+)</title>\r\n'

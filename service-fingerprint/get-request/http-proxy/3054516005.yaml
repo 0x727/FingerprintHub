@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: 3Proxy http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 407 Proxy Authentication Required\r\nProxy-Authenticate: Basic realm=.*<h3>Access to requested resource disallowed by administrator or you need valid username/password to use this resource'

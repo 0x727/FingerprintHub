@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Metasploit Framework web console
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?X-Runtime: 2\r\n.*<title>Metasploit Framework Web Console ([\w._-]+)</title>\n'

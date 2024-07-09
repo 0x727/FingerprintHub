@@ -1,0 +1,19 @@
+id: bindshell
+info:
+  name: Bash shell
+  author: nmap,cn-kali-team
+  tags: detect,tech,bindshell,service
+  severity: info
+  metadata:
+    info: '**BACKDOOR**'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bindshell
+    type: regex
+    regex:
+    - '^bash: line 1: \$''\\r'': command not found\nbash: line 2: \$''\\r'': command not found\n'

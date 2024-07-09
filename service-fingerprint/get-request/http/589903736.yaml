@@ -1,0 +1,20 @@
+id: http
+info:
+  name: eCos Embedded Web Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: D-Link WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nContent-Length: 149\r\nDate: [^\r\n]+\r\nServer: eCos Embedded Web Server\r\nConnection: keep-alive\r\nContent-Type: text/html\r\n(?:[^\r\n]+\r\n)*?\r\n\xef\xbb\xbf<html>\r\n<head>\r\n<meta http-equiv="refresh" content="0; url=first\.asp">\r\n<title>D-LINK SYSTEMS, INC\. \x7c WIRELESS ROUTER </title>\r\n</head>\r\n</html>\r\n'

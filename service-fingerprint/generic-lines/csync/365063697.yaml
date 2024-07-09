@@ -1,0 +1,17 @@
+id: csync
+info:
+  name: csync2
+  author: nmap,cn-kali-team
+  tags: detect,tech,csync,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: csync
+    type: regex
+    regex:
+    - ^Expecting SSL \(optional\) and CONFIG as first commands\.\n

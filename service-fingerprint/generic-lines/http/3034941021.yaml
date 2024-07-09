@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Generic router http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nContent-Type: text/html\r\n\r\n<title>400 Bad Request</title><body>400 Bad Request</body>$'

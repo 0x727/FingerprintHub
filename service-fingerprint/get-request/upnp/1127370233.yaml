@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: TwonkyMedia UPnP
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: UPnP $1; pvConnect SDK $2; SDK $3
+    operating_system: Windows NT
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: Windows NT/[\w._-]+, UPnP/([\w._-]+), pvConnect UPnP SDK/([\w._-]+),  TwonkyMedia UPnP SDK/([\w._-]+)\r\n'

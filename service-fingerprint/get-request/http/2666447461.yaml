@@ -1,0 +1,20 @@
+id: http
+info:
+  name: HP Client Automation httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: messaging service
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nDate: .*\r\nServer: HP Client Automation Messaging Service ([\w._-]+)\r\n'

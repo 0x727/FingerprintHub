@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: McAfee Email Gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: hello
+  inputs:
+  - data: EHLO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 ([\w.-]+) Ready\r\n250-Requested mail action okay, completed\.\r\n250 STARTTLS\r\n

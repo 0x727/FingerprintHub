@@ -1,0 +1,20 @@
+id: http
+info:
+  name: com.sec.android.app.FileTransferServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Linux $1
+    operating_system: Android
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nContent-Type: text/html; charset=\"utf-8\"\r\nServer: Linux/((2\.[46]\.\d+|\d\.\d+)\S*) DoaHTTP\r\nContent-Length: 0\r\nDate: .* GMT\r\n\r\n$'

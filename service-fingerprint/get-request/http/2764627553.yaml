@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Visualware NetQCheck httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nServer: NetQCheck\r\nLocation: /myspeed/.*\r\nContent-type: text/html\r\nContent-length: \d+\r\n\r\n'

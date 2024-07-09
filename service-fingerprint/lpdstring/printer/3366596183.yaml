@@ -1,0 +1,19 @@
+id: printer
+info:
+  name: print server
+  author: nmap,cn-kali-team
+  tags: detect,tech,printer,service
+  severity: info
+  metadata:
+    device_type: print server
+tcp:
+- name: lpdstring
+  inputs:
+  - data: \x01default\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: printer
+    type: regex
+    regex:
+    - ^Printer default not found \([\w_]+\)\.\n

@@ -1,0 +1,17 @@
+id: netbackup
+info:
+  name: Veritas Netbackup java listener
+  author: nmap,cn-kali-team
+  tags: detect,tech,netbackup,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: netbackup
+    type: regex
+    regex:
+    - ^1000      2\n43\nunexpected message received\n$

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Active WebCam httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: Unregistered
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 \d\d\d .*\r\n<meta name=\"GENERATOR\" content=\"Active WebCam ([\d.]+) \(http://www\.pysoft\.com\) \[Unregistered\]\">\r\n\r\n

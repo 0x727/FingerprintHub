@@ -1,0 +1,19 @@
+id: check_mk
+info:
+  name: check_mk extension for Nagios
+  author: nmap,cn-kali-team
+  tags: detect,tech,check_mk,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: check_mk
+    type: regex
+    regex:
+    - '^<<<check_mk>>>\nVersion: ([\w._-]+)\n'

@@ -1,0 +1,20 @@
+id: omniinet
+info:
+  name: HP Data Protector
+  author: nmap,cn-kali-team
+  tags: detect,tech,omniinet,service
+  severity: info
+  metadata:
+    info: build $P(2)
+    version: $P(1)
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: omniinet
+    type: regex
+    regex:
+    - ^H\0P\0 \0D\0a\0t\0a\0 \0P\0r\0o\0t\0e\0c\0t\0o\0r\0 \0A\0\.\x00[0\0]*([\0\w._-]+):\0 \0I\0N\0E\0T\0,\0 \0i\0n\0t\0e\0r\0n\0a\0l\0 \0b\0u\0i\0l\0d\0 \x00([\0\d]+),\0 \0b\0u\0i\0l\0t\0 \0o\0n\0 \0.*\n\0\0\0$

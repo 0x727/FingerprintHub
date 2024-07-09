@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: LG WebOS TV upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: 'model: $1; WebOS $4; UPnP $SUBST(2,",","."); DLNADOC $3'
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nDLNADeviceName\.lge\.com: %5bLG%5d%20webOS%20TV%20([\w-]+)\r\nDate: .*\r\nServer: Linux/i686 UPnP/([\d,.]+) DLNADOC/([\d.]+) LGE WebOS TV/Version ([\d.]+)\r\n'

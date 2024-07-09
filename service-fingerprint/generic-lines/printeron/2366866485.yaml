@@ -1,0 +1,19 @@
+id: printeron
+info:
+  name: PrinterOn mobile print server
+  author: nmap,cn-kali-team
+  tags: detect,tech,printeron,service
+  severity: info
+  metadata:
+    device_type: print server
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: printeron
+    type: regex
+    regex:
+    - ^\xc4\t$

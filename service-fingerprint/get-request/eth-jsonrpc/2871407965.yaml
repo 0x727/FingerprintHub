@@ -1,0 +1,19 @@
+id: eth-jsonrpc
+info:
+  name: Ethereum JSON-RPC
+  author: nmap,cn-kali-team
+  tags: detect,tech,eth-jsonrpc,service
+  severity: info
+  metadata:
+    info: jsonrpc $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: eth-jsonrpc
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: application/json\r\nVary: Origin\r\nDate: .*\r\nContent-Length: \d+\r\n\r\n\{"jsonrpc":"([\d.]+)","error":\{"code":-32600,"message":"EOF"\}\}\n'

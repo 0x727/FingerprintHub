@@ -1,0 +1,20 @@
+id: http
+info:
+  name: MX4J
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: OpenNMS http admin
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Authentication requested\r\nWWW-Authenticate: Basic realm=\"MX4J\"\r\nServer: MX4J-HTTPD/([\w._-]+)\r\n\r\n$'

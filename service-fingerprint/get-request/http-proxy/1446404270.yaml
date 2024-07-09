@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: LittleProxy http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nContent-Length: 21\r\nContent-Type: text/html; charset=utf-8\r\nVia: 1\.1 ([\w.-]+)\r\nDate: .*\r\n\r\nBad Request to URI: /'

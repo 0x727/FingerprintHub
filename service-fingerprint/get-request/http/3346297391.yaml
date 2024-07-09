@@ -1,0 +1,17 @@
+id: http
+info:
+  name: streamdev VDR plugin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nContent-type: text/html(?:; charset=UTF-8)?\r\n\r\n.*background:url\(data:image/gif;base64,R0lGODdhAQAeAIQeAJub/5yc/6Cf/6Oj/6am/6qq/66u/7Gx/7S0/7i4/7u8/7\+//8LD/8bG/8nK/83N/9HQ/9TU/9fX/9va/97e/\+Lh/\+Xl/\+no/\+3t//Dw//Pz//b3//v7//7\+/////////ywAAAAAAQAeAAAFGCAQCANRGAeSKAvTOA8USRNVWReWaRvXhQA7\)'

@@ -1,0 +1,17 @@
+id: webcache
+info:
+  name: webcache
+  author: nmap,cn-kali-team
+  tags: detect,tech,webcache,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: webcache
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nExpires: .*\r\nContent-Type: text/html\r\n\r\n<html>\n<head><title>Bad formed request or url</title>\n'

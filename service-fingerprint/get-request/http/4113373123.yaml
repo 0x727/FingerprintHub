@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Pirelli DRG A125G WAP http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: redirect to port $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 302 Moved Temporarily\r\n(?:[^\r\n]+\r\n)*?Set-Cookie: rg_cookie_session_id=\d+; path=/; expires=Fri, 01 Jan 2038 00:00:00 GMT\r\n(?:[^\r\n]+\r\n)*?Location: http://[\w._-]+:(\d+)/index\.cgi\?active%5fpage=9069&req%5fmode=0&strip%5fpage%5ftop=0\r\n'

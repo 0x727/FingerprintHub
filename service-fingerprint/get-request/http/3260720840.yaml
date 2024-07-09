@@ -1,0 +1,19 @@
+id: http
+info:
+  name: KwartzCtl
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\r\n(?:[^\r\n]+\r\n)*?Server: KwartzCtl/([\w._-]+)\r\nWWW-authenticate: Basic realm=\"KWARTZ~Control\"\r\nConnection: close\r\nContent-type: text/html\r\n'

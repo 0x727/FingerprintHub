@@ -1,0 +1,20 @@
+id: exportfs
+info:
+  name: Plan 9 exportfs
+  author: nmap,cn-kali-team
+  tags: detect,tech,exportfs,service
+  severity: info
+  metadata:
+    hostname: $1
+    operating_system: Plan 9
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x80\0\0\x28\x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: exportfs
+    type: regex
+    regex:
+    - '^(?:p9sk1@[\w._-]+ )*p9sk1@([\w._-]+)\0/bin/exportfs: auth_proxy: auth_proxy rpc write: : invalid argument\n'

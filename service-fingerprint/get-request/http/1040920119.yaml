@@ -1,0 +1,19 @@
+id: http
+info:
+  name: 3M Filtrete 3M-50 thermostat http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 505 HTTP Version Not Supported\r\nServer: Marvell 8688WM\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/plain\r\n\r\n22\r\nHTTP/1\.0 clients are not supported\r\n0\r\n\r\n$'

@@ -1,0 +1,20 @@
+id: listserv
+info:
+  name: listserv
+  author: cn-kali-team
+  tags: detect,tech,listserv
+  severity: info
+  metadata:
+    product: listserv
+    vendor: 00_unknown
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - <title>welcome to listserv
+    - powered by the listserv email list manager
+    case-insensitive: true

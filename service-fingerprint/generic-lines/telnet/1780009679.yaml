@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Tru64 UNIX gated
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    operating_system: Tru64 UNIX
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^\xff\xfb\x01Password\? \r\n500 Configuration error\. Disconnecting!\n

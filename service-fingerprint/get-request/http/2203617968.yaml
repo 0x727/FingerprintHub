@@ -1,0 +1,20 @@
+id: http
+info:
+  name: NessusWWW
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Nessus vulnerability scanner http UI
+    version: '6.4'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nDate: .*\r\nServer: NessusWWW\r\n(?:[^\r\n]+\r\n)*?\r\n<!doctype html>\n<html lang="en">\n    <head>\n        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />\n        <meta charset="utf-8" />\n        <meta name="viewport" content="width=device-width, initial-scale=1\.0, maximum-scale=1\.0, user-scalable=0" />\n        <meta name="apple-mobile-web-app-capable" content="yes" />\n        <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAACYCAIAAACXoLd2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6e'

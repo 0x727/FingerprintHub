@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Technicolor DSL modem http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Moved Temporarily\r\nDate: .* GMT\r\nServer: \r\nContent-length: 0\r\nConnection: close\r\nLocation: http://[\w.-]+:80/login\.lp\r\nSet-Cookie: xAuth_SESSION_ID=[\w/+]+=; path=/; \r\nCache-control: no-cache=\"set-cookie\"\r\n\r\n$'

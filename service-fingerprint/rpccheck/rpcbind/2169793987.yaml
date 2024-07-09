@@ -1,0 +1,17 @@
+id: rpcbind
+info:
+  name: ''
+  author: nmap,cn-kali-team
+  tags: detect,tech,rpcbind,service
+  severity: info
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x80\0\0\x28\x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rpcbind
+    type: regex
+    regex:
+    - ^\x80\0\0.\x72\xfe\x1d\x13\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0[\x00-\x07]

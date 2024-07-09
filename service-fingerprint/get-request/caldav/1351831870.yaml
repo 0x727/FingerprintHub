@@ -1,0 +1,20 @@
+id: caldav
+info:
+  name: TwistedWeb httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,caldav,service
+  severity: info
+  metadata:
+    info: Apple iCal Server; Twisted $1
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: caldav
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: negotiate \r\nWWW-Authenticate: digest nonce=\"\d+\", realm=\"/Search\", algorithm=\"md5\"\r\n(?:[^\r\n]+\r\n)*?Server: Twisted/([\w._-]+) TwistedWeb/([\w._-]+)\r\n'

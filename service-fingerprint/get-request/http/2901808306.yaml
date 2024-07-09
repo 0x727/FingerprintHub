@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Evological Evocam http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Mac OS X
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 \d\d\d .*<title>EvoCam</title>\n</head>\n\n<body bgcolor=\"e3e3e3\">\n<center>\n<applet archive=\"evocam\.jar\" code=\"com\.evological\.evocam\.class\"

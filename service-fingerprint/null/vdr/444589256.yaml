@@ -1,0 +1,19 @@
+id: vdr
+info:
+  name: VDR
+  author: nmap,cn-kali-team
+  tags: detect,tech,vdr,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vdr
+    type: regex
+    regex:
+    - ^Access denied!\n$

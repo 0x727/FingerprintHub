@@ -1,0 +1,19 @@
+id: upnp
+info:
+  name: TP-LINK upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: 'model: $1; UPnP $2'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nSERVER: TP-LINK SMB (TL-[\w]+), UPnP/([\d.]+)\r\nCONTENT-LENGTH: \d+\r\nCONTENT-TYPE: text/html\r\n\r\n'

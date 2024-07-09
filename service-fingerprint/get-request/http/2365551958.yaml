@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Toshiba e-STUDIO printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 303 See Other\r\nLocation: http://[\d.]+:\d+\r\n\0.* GMT\r\nSContent-Length: 0\r\n\r\n$'

@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: ''
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nDate: .*\r\nServer: xxxx\r\nX-Frame-Options: SAMEORIGIN\r\nStrict-Transport-Security: max-age=31536000\r\nLocation: https:///webconsole/webpages/login\.jsp\r\n'

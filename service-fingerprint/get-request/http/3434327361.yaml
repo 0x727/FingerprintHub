@@ -1,0 +1,19 @@
+id: http
+info:
+  name: ArubaOS WebUI http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: ArubaOS
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Authorization Required\r\nDate: .*\r\nServer: \r\nExpires: 0\r\nSet-Cookie: SESSION=; path=/;\r\nExpires: 0\r\nVary: Accept-Encoding\r\nContent-Length: \d\d\d\d\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\n<link rel=\"shortcut icon\" href=\"/images/favicon\.ico\" type=\"image/x-icon\"/>\n<title>Login</title>'

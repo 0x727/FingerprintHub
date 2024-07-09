@@ -1,0 +1,20 @@
+id: pbs-maui
+info:
+  name: PBS/Maui Roll
+  author: nmap,cn-kali-team
+  tags: detect,tech,pbs-maui,service
+  severity: info
+  metadata:
+    device_type: specialized
+    info: Rocks Cluster
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pbs-maui
+    type: regex
+    regex:
+    - ^\+2\+15\+15056\+\d+\+\d+

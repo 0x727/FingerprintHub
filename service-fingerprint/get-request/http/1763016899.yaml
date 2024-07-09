@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Termika OlimpOKS PHttpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: ASP.NET $3; MVC $2
+    operating_system: Windows
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nDate: .* GMT\r\nServer: PHttp/([\d.]+) Win32NT\r\nX-AspNetMvc-Version: ([\d.]+)\r\nX-AspNet-Version: ([\d.]+)\r\nContent-Length: \d+\r\nCache-Control: private\r\nContent-Type: text/html; charset=utf-8\r\nSet-Cookie: WorkplaceToken=[a-f\d]{8}-[a-f\d]{4}-[a-f\d]{4}-[a-f\d]{4}-[a-f\d]{12}; path=/; expires=.* GMT\r\nConnection: close\r\n\r\n'

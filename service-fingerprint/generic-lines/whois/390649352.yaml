@@ -1,0 +1,17 @@
+id: whois
+info:
+  name: Uninet whois
+  author: nmap,cn-kali-team
+  tags: detect,tech,whois,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: whois
+    type: regex
+    regex:
+    - '(?i)^ -{62}\n \| UNINET WHOIS Server {40}\|\n \| Created by i-DNS\.net\t\t\t\t\t      \|\n.* INFO: This domain name has not been registered\.\n'

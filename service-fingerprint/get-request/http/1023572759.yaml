@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Etherpad lite
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nX-Powered-By: Express\r\nServer: Etherpad-Lite ([0-9a-f]+) \((?:http://j\.mp/ep-lite|http://etherpad\.org)\)\r\n'

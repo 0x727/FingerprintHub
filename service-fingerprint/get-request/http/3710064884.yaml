@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Kubernetes jsonapi
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: application/json\r\nDate: Mon, 28 Mar 2016 15:58:03 GMT\r\nContent-Length: 365\r\n\r\n\{\n  "paths": \[\n    "/api",\n    "/api/v1",\n    "/apis",\n    "/apis/autoscaling",\n    "/apis/autoscaling/v1",\n    "/apis/batch",\n    "/apis/batch/v1",\n    "/apis/extensions",\n    "/apis/extensions/v1beta1",\n    "/healthz",\n    "/healthz/ping",\n    "/logs/",\n    "/metrics",\n    "/resetMetrics",\n    "/swagger-ui/",\n    "/swaggerapi/",\n    "/ui/",\n    "/version"\n  \]\n\}'

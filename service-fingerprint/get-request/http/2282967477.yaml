@@ -1,0 +1,21 @@
+id: http
+info:
+  name: EverFocus webcam http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: EDSR Applet $2; HyNetOS $1
+    operating_system: HyNetOS
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nDate: .*\r\nContent-Length: \d+\r\nContent-Type: text/html\r\nServer: HyNetOS/([\d.]+)\r\n\r\n<HTML>\r\n<HEAD>\r\n<TITLE>EverFocus EDSR Applet \(([\d.]+)\)</TITLE>'

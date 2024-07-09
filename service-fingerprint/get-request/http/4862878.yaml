@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Arris cm450 cable modem http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^<html><head><title>Cannot find server</title></head><body>\n<br>Access to this web page is currently unavailable\.<P><HR></BODY></HTML>\n$

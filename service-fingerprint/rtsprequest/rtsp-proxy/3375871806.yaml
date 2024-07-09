@@ -1,0 +1,17 @@
+id: rtsp-proxy
+info:
+  name: RTSP Proxy Reference Implementation
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp-proxy,service
+  severity: info
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp-proxy
+    type: regex
+    regex:
+    - ^RTSP/1\.0 451 Parameter Not Understood\r\n\r\n$

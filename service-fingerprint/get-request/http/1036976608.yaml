@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Huawei HG532e ADSL router httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nCACHE-CONTROL: no-cache\r\nDate: .* GMT\r\nConnection: Keep-Alive\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n\r\n<html>\n<head>\n<META http-equiv="Content-Type" content="text/html; charset=UTF-8">\r\n<META http-equiv="Pragma" content="no-cache">\n<META http-equiv="expires" CONTENT="-1">\n<link rel="icon" type="image/icon" href="/favicon\.ico"/>\n<title>Login</title>\n'

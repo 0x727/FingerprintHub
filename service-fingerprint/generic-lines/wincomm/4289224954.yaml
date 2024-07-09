@@ -1,0 +1,17 @@
+id: wincomm
+info:
+  name: Windows Communicator
+  author: nmap,cn-kali-team
+  tags: detect,tech,wincomm,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: wincomm
+    type: regex
+    regex:
+    - ^128 System Incompatible Windows Communicator client or server version\r\n128 System Incompatible Windows Communicator client or server version\r\n

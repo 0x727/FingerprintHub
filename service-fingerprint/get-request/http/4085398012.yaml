@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Wifi Pineapple Jasager httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: PHP $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nConnection: close\r\nX-Powered-By: PHP/([\w._-]+)\r\nContent-type: text/html\r\n\r\n<html>\n<head>\n<meta http-equiv=\"REFRESH\" content=\"0;url=/nyan/index\.html\">\n</head>\n<body>\n</body>\n</html>\n\n\n$'

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: ADB P.DG A4001N WAP, Cisco Telepresence MCU 4505, Digifort Enterprise 6.5, or Telekom Speedport W723V httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nConnection: close\r\n\r\n$'

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Cardax FT security system http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+    info: 'Controller #$1; BootMon $3'
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\nServer: Cardax Embedded Interface\n.*<H1>CardaxFT Controller #  (\d+)  \(ETS\)</H1>.*<br>Version: v([\w._/-]+) BootMon-([\w._-]+)</body>\n$'

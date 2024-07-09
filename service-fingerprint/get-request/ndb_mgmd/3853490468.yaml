@@ -1,0 +1,19 @@
+id: ndb_mgmd
+info:
+  name: MySQL cluster management server
+  author: nmap,cn-kali-team
+  tags: detect,tech,ndb_mgmd,service
+  severity: info
+  metadata:
+    version: '5.1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ndb_mgmd
+    type: regex
+    regex:
+    - '^result: Unknown command, ''GET / HTTP/1\.0''\n\n'

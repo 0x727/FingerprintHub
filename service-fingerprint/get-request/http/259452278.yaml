@@ -1,0 +1,17 @@
+id: http
+info:
+  name: nwts Nixie clock sync
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nContent-Encoding: gzip\r\nContent-Length: \d+\r\nConnection: close\r\nAccess-Control-Allow-Origin: \*\r\n\r\n\x1f\x8b\x08\x08....\0\x03index\.html\0'

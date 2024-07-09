@@ -1,0 +1,19 @@
+id: telecom-misc
+info:
+  name: Radio IP MTG gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,telecom-misc,service
+  severity: info
+  metadata:
+    device_type: telecom-misc
+tcp:
+- name: dnsversion-bind-req-tcp
+  inputs:
+  - data: \0\x1E\0\x06\x01\0\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telecom-misc
+    type: regex
+    regex:
+    - ^\0\x1e\x02\x06\x01\0\0\0\0\0\0\xf1\0

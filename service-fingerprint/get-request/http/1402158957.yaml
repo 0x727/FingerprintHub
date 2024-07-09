@@ -1,0 +1,21 @@
+id: http
+info:
+  name: BlueBOLT-CV1 network interface card
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: power-device
+    info: 'SN: $1'
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK\r\n\r\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4\.01 Transitional//EN" "http://www\.w3\.org/TR/html4/loose\.dtd">\r\n<html><head>\r\n<meta http-equiv="content-type"content="no-cache, text/html">\r\n<title>&micro;BlueBOLT - Menu</title>.*?<font color=#eaaf0f style=font-size:30px>\r\nBlueBOLT-CV1\r\n.*?<th align=right>Serial number:</th>\r\n<th align=left><input name=r value="([\d-]+)" disabled></th>\r\n</tr>\r\n<tr>\r\n<th align=right>IP Card Software Version:</th>\r\n<th align=left><input name=r value="V([\d.]+)" disabled>

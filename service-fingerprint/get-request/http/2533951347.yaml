@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Netasq firewall http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Moved Temporarily\r\nDate: .*\r\nConnection: Close\r\nLocation: /admin/\r\nCache-Control: no-store,no-cache,must-revalidate\r\nPragma: no-cache\r\nExpires: -1\r\nLast-Modified: Mon, 12 Jan 2000 13:42:42 GMT\r\nContent-Type: text/html\r\n\r\n'

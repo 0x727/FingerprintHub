@@ -1,0 +1,20 @@
+id: rtsp
+info:
+  name: Apple QuickTime Streaming Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    operating_system: Linux
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^RTSP/1\.0 400 Bad Request\r\nServer: QTSS/([\d.]+ \[\d+\]-Linux)\r\nCseq: \r\n'

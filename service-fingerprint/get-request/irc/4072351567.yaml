@@ -1,0 +1,19 @@
+id: irc
+info:
+  name: Microsoft Exchange 2000 Server Chat Service
+  author: nmap,cn-kali-team
+  tags: detect,tech,irc,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: irc
+    type: regex
+    regex:
+    - ^:Default-Chat-Community 421 \* GET :Unknown command\r\n

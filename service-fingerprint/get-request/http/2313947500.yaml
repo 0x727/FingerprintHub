@@ -1,0 +1,17 @@
+id: http
+info:
+  name: SyncML PIM sync server for MultiSync
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Accept: application/vnd\.syncml\+xml, application/vnd\.syncml\+wbxml\r\nCache-Control: no-store\r\nServer: MultiSync Plugin\r\n\r\nNo such file or directory\.'

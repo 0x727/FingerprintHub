@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Moto Phone Portal httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: phone
+    info: Linux $1; Motorola Defy $2
+    operating_system: Android
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nCONTENT-ENCODING: gzip\r\nEXPIRES: .*\r\nCONTENT-LENGTH: \d+\r\nLAST-MODIFIED: .*\r\nDATE: .*\r\nCONTENT-TYPE: text/html; charset=UTF-8\r\nCACHE-CONTROL: max-age=0, no-cache, public\r\nSERVER: Linux/([\w._-]+) Motorola/([\w._-]+) DAV/2\r\n'

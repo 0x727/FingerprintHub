@@ -1,0 +1,20 @@
+id: http
+info:
+  name: SafeNet Sentinel Keys License Monitor httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Java Console
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nDate: .*\r\nServer: SentinelKeysServer/([\w._-]+)\r\nMIME-Version: 1\.1\r\nContent-Type: text/html\r\n'

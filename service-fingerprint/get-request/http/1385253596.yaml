@@ -1,0 +1,20 @@
+id: http
+info:
+  name: NEC Multeos M461 TV http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'MAC: $1; nameserver $2.$3.$4.$5'
+    version: $6
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nDate: Wed, 31 Dec 1969 15:00:00 GMT\r\nConnection: close\r\nContent-Type: text/html; charset=ISO-8859-1\r\n.*<title>MONITOR NETWORK SETTINGS</title>.*<!--\nvar mac=\"(\w+)\";\nvar ip3=\d+;\nvar ip2=\d+;\nvar ip1=\d+;\nvar ip0=\d+;\nvar nm3=\d+;\nvar nm2=\d+;\nvar nm1=\d+;\nvar nm0=\d+;\nvar gw3=\d+;\nvar gw2=\d+;\nvar gw1=\d+;\nvar gw0=\d+;\nvar dh=\"0\";\nvar vDns1_0=(\d+);\nvar vDns1_1=(\d+);\nvar vDns1_2=(\d+);\nvar vDns1_3=(\d+);\nvar vDns2_0=\d+;\nvar vDns2_1=\d+;\nvar vDns2_2=\d+;\nvar vDns2_3=\d+;\nvar vVer=\"([\w._-]+)\";'

@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: ZTE $2 router upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: UPnP $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nContent-Type: text/xml\r\nDate: [^\r\n]*\r\nExpires: [^\r\n]*\r\nLast-Modified: [^\r\n]*\r\nPragma: no-cache\r\nServer: WebServer/1\.0 UPnP/([\d.]+)\r\n\r\n<\?xml version="1\.0"\?>\n.*<manufacturer>ZTE</manufacturer>\n.*<modelName>([^<]+)</modelName>'

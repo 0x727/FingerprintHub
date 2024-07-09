@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Digital Stream DPS-1000 set-top box http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nDate: .*\r\nContent-Length: 131\r\nContent-Type: text/html\r\n\r\n\n\n<HTML>\n<HEAD>\n<meta http-equiv=\"Refresh\" content=\"0;URL=/dynamic/action\?Page=general&Action=get\">\n</HEAD>\n<BODY>\n</BODY>\n</HTML>\n$'

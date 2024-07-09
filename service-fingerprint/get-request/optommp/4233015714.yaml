@@ -1,0 +1,17 @@
+id: optommp
+info:
+  name: OptoMMP
+  author: nmap,cn-kali-team
+  tags: detect,tech,optommp,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: optommp
+    type: regex
+    regex:
+    - ^GET / P\0\0\0\0\0

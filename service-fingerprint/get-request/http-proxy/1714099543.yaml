@@ -1,0 +1,21 @@
+id: http-proxy
+info:
+  name: Fortech Proxy+ http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    info: $1 concurrent users allowed
+    operating_system: Windows
+    version: $2 Build $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 403 Forbidden\r\nDate: .*\r\n\r\n<html><body>.*</b> Registration key allows only ([\d]+) simultaneous users\..*>Proxy</font><font color=\"#0000FF\">\+</font> ([\d.]+) \(Build #(\d+)\),'

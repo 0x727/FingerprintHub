@@ -1,0 +1,17 @@
+id: mon
+info:
+  name: mon service monitoring daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,mon,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mon
+    type: regex
+    regex:
+    - ^520 invalid command\n$

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: CherryPy wsgiserver
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nContent-Length: 22\r\nContent-Type: text/plain\r\n\r\nMalformed Request-Line'

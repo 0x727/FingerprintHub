@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Vina Technologies T1 Integrator http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: telecom-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nWWW-authenticate: basic realm=\"Vina Technologies T1 Integrator\"\r\n'

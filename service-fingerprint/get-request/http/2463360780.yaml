@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Konica Minolta $1 printer http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nContent-Type:text/html\r\nExpires: Thu, 1 Jan 1998 00:00:00 GMT\r\nPragma: no-cache\r\nServer: LPC Http Server/V1\.0\r\n.*<TITLE>KONICA MINOLTA Page Scope Web Connection for (\d+)</TITLE>'

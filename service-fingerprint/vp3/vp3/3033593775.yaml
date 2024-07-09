@@ -1,0 +1,17 @@
+id: vp3
+info:
+  name: Voldemort
+  author: nmap,cn-kali-team
+  tags: detect,tech,vp3,service
+  severity: info
+tcp:
+- name: vp3
+  inputs:
+  - data: vp3
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vp3
+    type: regex
+    regex:
+    - ^ok$

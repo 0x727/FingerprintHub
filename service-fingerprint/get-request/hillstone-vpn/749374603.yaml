@@ -1,0 +1,17 @@
+id: hillstone-vpn
+info:
+  name: Hillstone SSL VPN
+  author: nmap,cn-kali-team
+  tags: detect,tech,hillstone-vpn,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: hillstone-vpn
+    type: regex
+    regex:
+    - '^HTTP/1\.1 301 Moved Permanently\r\nLocation: /login\.html\r\nContent-Length: 157\r\nContent-Type: text/html\r\n\r\n<html><head><title>301 Moved Permanently</title></head><body>\n<h1>Moved Permanently</h1>\nMoved to: <a href=\"/login\.html\">/login\.html</a>\n<hr>\n</body></html>\n$'

@@ -1,0 +1,17 @@
+id: pi-hole-stats
+info:
+  name: pi-hole Telnet API
+  author: nmap,cn-kali-team
+  tags: detect,tech,pi-hole-stats,service
+  severity: info
+tcp:
+- name: pihole-version
+  inputs:
+  - data: '>version\n'
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pi-hole-stats
+    type: regex
+    regex:
+    - '(?i)^unknown command: .*---EOM---\n\n$'

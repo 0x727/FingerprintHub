@@ -1,0 +1,20 @@
+id: linuxconf
+info:
+  name: Linuxconf
+  author: nmap,cn-kali-team
+  tags: detect,tech,linuxconf,service
+  severity: info
+  metadata:
+    info: Access denied
+    operating_system: Linux
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: linuxconf
+    type: regex
+    regex:
+    - '^500 access denied: Check config/networking/misc/linuxconf network access\r\n<p>\r\nBy default,'

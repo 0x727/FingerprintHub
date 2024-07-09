@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Beck IPC@CHIP embedded httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: power-misc
+    info: SolarLog 200 power monitor httpd
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: IPC@CHIP\r\n.*<title>Start</title>'

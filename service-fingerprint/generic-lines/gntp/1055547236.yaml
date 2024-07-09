@@ -1,0 +1,21 @@
+id: gntp
+info:
+  name: Growl notification platform
+  author: nmap,cn-kali-team
+  tags: detect,tech,gntp,service
+  severity: info
+  metadata:
+    hostname: $3
+    operating_system: Mac OS X $2
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gntp
+    type: regex
+    regex:
+    - '^GNTP/1\.0 -ERROR NONE\r\nError-Code: 301\r\nError-Description: Growl does not recognize the protocol beginning with \r\n\r\n\r\nOrigin-Software-Name: Growl\r\nOrigin-Software-Version: ([\d.]+)\r\nOrigin-Platform-Version: ([\d.]+)\r\nOrigin-Machine-Name: (.*)\r\nOrigin-Platform-Name: Mac OS X\r\n\r\n\r\n'

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: PRINT_SERVER WEB
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: print server
+    info: LevelOne FPS-3001TXU print server http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 Document follows\r\nServer: PRINT_SERVER WEB ([\w._-]+)\r\n.*<title>Print Server Setup</title>.*name=\"main\" src=\"ps_stat\.htm\"'

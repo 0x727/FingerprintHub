@@ -1,0 +1,19 @@
+id: loglogic
+info:
+  name: LogLogic protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,loglogic,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: loglogic
+    type: regex
+    regex:
+    - ^\x02\x02$

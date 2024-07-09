@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Inteno X5669B broadband router
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^<html>\n   <head>\n      <meta HTTP-EQUIV='Pragma' CONTENT='no-cache'>\n      <script language=\"javascript\">\n</script>\n   </head>\n   <body>\n   \t<center> \n<table align=center style=\"margin:25px;width:480px\" cellspacing=0 cellpadding=0 border=0> \n \n    <tr> \n        <td align=center><span style=\"font-size:1\.2em\"> VoIP Router</span> \n

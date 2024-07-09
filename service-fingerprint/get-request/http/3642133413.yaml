@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Hauppauge DVB EPG http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    version: $SUBST(1,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 (?:[^\r\n]*\r\n(?!\r\n))*?Server: HCW_DVB_EPG_SERVER_([\w._-]+)\r\n.*<title>Hauppauge EPG</title>\r\n'

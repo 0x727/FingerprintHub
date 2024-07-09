@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Virata-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Allied Data CopperJet http config
+    version: $SUBST(1,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nServer: Virata-EmWeb/R([\d_]+)\r\n.*<hr noshade size=\"3\" width=\"100%\">\n<p class=\"alert\">\nYou need to supply a valid user name and password\.\n'

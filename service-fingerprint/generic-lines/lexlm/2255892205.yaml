@@ -1,0 +1,17 @@
+id: lexlm
+info:
+  name: Lexmark language monitor
+  author: nmap,cn-kali-team
+  tags: detect,tech,lexlm,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: lexlm
+    type: regex
+    regex:
+    - (?i)^.\x08\0\0$

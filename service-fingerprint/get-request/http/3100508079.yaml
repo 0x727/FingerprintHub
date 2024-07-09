@@ -1,0 +1,19 @@
+id: http
+info:
+  name: HP TippingPoint 10 IPS http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nServer: UOS\r\n.*<title>TippingPoint Log On \x7c LSM - Device \(tp\)</title>\r\n\r\n<meta http-equiv=\"Cache-Control\" content=\"no-store\" />.*<!--\r\n////////////////////////////////////////////\r\n// Copyright TippingPoint 2002, 2003, 2004 and 2005\r\n'

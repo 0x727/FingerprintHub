@@ -1,0 +1,20 @@
+id: telnet
+info:
+  name: Tripp Lite PowerAlert telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    info: 'sn: $2'
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\x01\xff\xfb\x03\r\nPowerAlert TelNet Console: ([\d.]+)\r\nSerial Number:\t(\w+)\r\n\r\n\r \r\nlogin: \r\n'

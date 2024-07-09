@@ -1,0 +1,17 @@
+id: oracle-mts
+info:
+  name: Oracle MTS Recovery Service
+  author: nmap,cn-kali-team
+  tags: detect,tech,oracle-mts,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: oracle-mts
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-length: 7\r\n\r\nunknown$'

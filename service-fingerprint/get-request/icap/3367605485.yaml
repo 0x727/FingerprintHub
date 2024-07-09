@@ -1,0 +1,19 @@
+id: icap
+info:
+  name: Traffic Spicer icapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,icap,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: icap
+    type: regex
+    regex:
+    - '^ICAP/1\.0 501 Other\r\nServer: Traffic Spicer ([\d.]+)\r\n'

@@ -1,0 +1,17 @@
+id: ms-wbt-server-proxy
+info:
+  name: nmproxy NetMeeting proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,ms-wbt-server-proxy,service
+  severity: info
+tcp:
+- name: terminal-server
+  inputs:
+  - data: \x03\0\0\x0b\x06\xe0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ms-wbt-server-proxy
+    type: regex
+    regex:
+    - '^nmproxy: Procotol byte is not 8\n$'

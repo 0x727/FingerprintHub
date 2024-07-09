@@ -1,0 +1,17 @@
+id: ssl
+info:
+  name: Plesk Parallels Virtual Automation https redirect
+  author: nmap,cn-kali-team
+  tags: detect,tech,ssl,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ssl
+    type: regex
+    regex:
+    - ^<html>\n<head>\n<script>\n\tvar redirect = "https://" \+ window\.location\.host;\n\tfunction redirectPage\(\) \{\n\t\twindow\.location\.href= redirect;\n\t\}\n</script>\n<noscript>\n\t<META http-equiv='Refresh' content='0; URL=https://[^']*'>\n</noscript>\n</head>\n\n<body onLoad="redirectPage\(\);">\nRedirecting to SSL secured connection\.\n<p>

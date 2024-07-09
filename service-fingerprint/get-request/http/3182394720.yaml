@@ -1,0 +1,21 @@
+id: http
+info:
+  name: TwistedWeb httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Twisted $1
+    operating_system: Mac OS X
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.[01].*\r\nServer: Twisted/([\.\d]+) TwistedWeb/([\.\d]+)'

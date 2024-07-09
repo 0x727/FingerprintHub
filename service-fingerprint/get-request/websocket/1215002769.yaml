@@ -1,0 +1,17 @@
+id: websocket
+info:
+  name: libwebsockets
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 \r\nserver: libwebsockets\r\ncontent-type'

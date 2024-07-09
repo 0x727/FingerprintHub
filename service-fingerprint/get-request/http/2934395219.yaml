@@ -1,0 +1,22 @@
+id: http
+info:
+  name: Cisco IronPort Web Security Appliance http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    hostname: $2
+    info: 'time zone: $1'
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 500 Internal Server Error\r\nMime-Version: 1\.0\r\nDate: [^\r\n]* (\w+)\r\n(?:[^\r\n]+\r\n)*?Via: 1\.0 ([\w._-]+):\d+ \(IronPort-WSA/([\w._-]+)\)'

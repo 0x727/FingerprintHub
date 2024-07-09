@@ -1,0 +1,19 @@
+id: imap
+info:
+  name: MailSite imapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,imap,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: imap
+    type: regex
+    regex:
+    - ^\* OK  MailSite IMAP4 Server ([-.\w]+) ready

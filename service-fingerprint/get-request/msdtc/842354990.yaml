@@ -1,0 +1,20 @@
+id: msdtc
+info:
+  name: Microsoft Distributed Transaction Coordinator
+  author: nmap,cn-kali-team
+  tags: detect,tech,msdtc,service
+  severity: info
+  metadata:
+    info: error
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: msdtc
+    type: regex
+    regex:
+    - (?i)^ERROR\n$

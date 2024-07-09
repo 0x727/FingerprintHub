@@ -1,0 +1,21 @@
+id: http
+info:
+  name: RedTitan-eNterpriseQueue
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: bridge
+    info: RedTitan Print2PC parallel-to-USB bridge
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: RedTitan-eNterpriseQueue/([\w._-]+)\r\n.*<TITLE>Enterprise Portal</TITLE>\r\n'

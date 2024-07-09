@@ -1,0 +1,17 @@
+id: weather
+info:
+  name: TrueWeather Desktop Weather Authority server
+  author: nmap,cn-kali-team
+  tags: detect,tech,weather,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: weather
+    type: regex
+    regex:
+    - ^TrueWeather\r\n\r\n>

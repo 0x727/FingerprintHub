@@ -1,0 +1,17 @@
+id: ibank2
+info:
+  name: ''
+  author: nmap,cn-kali-team
+  tags: detect,tech,ibank2,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ibank2
+    type: regex
+    regex:
+    - ^\x02\0\0\x01E\(\x18.{25}$

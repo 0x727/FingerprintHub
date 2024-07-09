@@ -1,0 +1,20 @@
+id: http
+info:
+  name: IronPort WSA firewall http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    info: 'timezone: $1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 504 Gateway Timeout\r\nMime-Version: 1\.0\r\nDate: .*? ([A-Z]+)\r\nContent-Type: text/html\r\nConnection: close\r\n'

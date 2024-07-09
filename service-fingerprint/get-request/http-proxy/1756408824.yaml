@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: SafeSquid http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nContent-Length: 0\r\nWWW-Authenticate: Basic realm=\"proxy1\"\r\nConnection: keep-alive\r\nProxy-Connection: keep-alive\r\n\r\n$'

@@ -1,0 +1,17 @@
+id: bittorrent-tracker
+info:
+  name: MLDonkey P2P client http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,bittorrent-tracker,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bittorrent-tracker
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nServer: MLdonkey\r\n'

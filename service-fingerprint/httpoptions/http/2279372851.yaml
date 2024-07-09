@@ -1,0 +1,19 @@
+id: http
+info:
+  name: BlackBox LWU0200-POE-M ethernet-optical bridge http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: bridge
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 \r\nLocation: ,\r\n\r\n$'

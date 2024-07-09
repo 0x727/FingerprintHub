@@ -1,0 +1,21 @@
+id: pop3
+info:
+  name: Microsoft Exchange pop3d
+  author: nmap,cn-kali-team
+  tags: detect,tech,pop3,service
+  severity: info
+  metadata:
+    info: German
+    operating_system: Windows
+    version: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pop3
+    type: regex
+    regex:
+    - ^\+OK Der Microsoft Exchange POP3-Server \(Version ([\d\.]+)\) ist betriebsbereit\.\r\n

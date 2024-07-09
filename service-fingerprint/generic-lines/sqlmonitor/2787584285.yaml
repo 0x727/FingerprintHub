@@ -1,0 +1,19 @@
+id: sqlmonitor
+info:
+  name: Red-Gate SQL Monitor
+  author: nmap,cn-kali-team
+  tags: detect,tech,sqlmonitor,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sqlmonitor
+    type: regex
+    regex:
+    - ^\0\0\0\0\0$

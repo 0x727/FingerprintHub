@@ -1,0 +1,21 @@
+id: telemecanique
+info:
+  name: Telemecanique Magelis XBTGT 7340 industrial control
+  author: nmap,cn-kali-team
+  tags: detect,tech,telemecanique,service
+  severity: info
+  metadata:
+    device_type: specialized
+    info: Subsystem $3; Name $1
+    version: $2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telemecanique
+    type: regex
+    regex:
+    - ^220 Service ready on ([\w._-]+) system Version:([\w._:-]+) Subsystem:([\w._:-]+)\r\n500 Unsupported command\r\n

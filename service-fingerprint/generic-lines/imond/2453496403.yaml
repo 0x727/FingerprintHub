@@ -1,0 +1,19 @@
+id: imond
+info:
+  name: imond fli4l router config
+  author: nmap,cn-kali-team
+  tags: detect,tech,imond,service
+  severity: info
+  metadata:
+    device_type: router
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: imond
+    type: regex
+    regex:
+    - ^ERR password required\r\nERR password required\r\n

@@ -1,0 +1,19 @@
+id: patrol
+info:
+  name: BMC Patrol Agent
+  author: nmap,cn-kali-team
+  tags: detect,tech,patrol,service
+  severity: info
+  metadata:
+    operating_system: Unix
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: patrol
+    type: regex
+    regex:
+    - (?i)^\0\0\0\r..Who are you\?\n\0

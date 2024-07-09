@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Red Condor antispam appliance http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: proxy server
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Expires: Thu, 01 Jan 1970 00:00:00 GMT\r\n.*<TITLE>Dashboard</TITLE>.*<META name=''copyright'' content=''Copyright 2003-2010, Red Condor, Inc\.''>'

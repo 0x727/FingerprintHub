@@ -1,0 +1,19 @@
+id: upnp
+info:
+  name: Netgear WGU624 WAP UPnP
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - ^HTTP/1\.1 511 Not Implemented\r\n\r\n$

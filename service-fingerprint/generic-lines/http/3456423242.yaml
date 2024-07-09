@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Globus Toolkit Java Container httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 500 Internal Server Error\r\n.*<h2>Error parsing HTTP header</h2><pre>\njava\.net\.ProtocolException: Cannot handle non-GET, non-POST, non-HEAD request\n\tat org\.globus\.wsrf\.container\.ServiceThread\.parseHeaders\(ServiceThread\.java:1103\)\n'

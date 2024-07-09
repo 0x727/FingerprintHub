@@ -1,0 +1,21 @@
+id: http
+info:
+  name: iTP WebServer with NSJSP
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $2
+    info: HP Tandem NonStop
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 302 Moved Temporarily\r\n(?:[^\r\n]+\r\n)*?Server: iTP WebServer with NSJSP/([\w._() -]+) \(HTTP/1\.1 Connector\)\r\nLocation: http://([\w._-]+):\d+/index\.html\r\n'

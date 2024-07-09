@@ -1,0 +1,17 @@
+id: utsvc
+info:
+  name: Sun Ray utsvcd
+  author: nmap,cn-kali-team
+  tags: detect,tech,utsvc,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: utsvc
+    type: regex
+    regex:
+    - ^protocolErrorInf error=Missing\\040hw\\040string\\040from\\040:\\040null\.\\040Check\\040hardware state=disconnected\n

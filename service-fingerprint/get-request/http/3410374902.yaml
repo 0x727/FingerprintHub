@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Smeagol httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: telecom-misc
+    info: Telcen Blue's IP Buffer
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: Wed, 17 Jan 2007 22:21:12 GMT\r\nServer: Smeagol/([\w._-]+)\r\nAccept-Ranges: bytes\r\nConnection: Close\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n\r\n<html>\n<head>\n<title>Blue''s IP Buffer Front Page</title>'

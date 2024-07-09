@@ -1,0 +1,20 @@
+id: telnet
+info:
+  name: Optibase MGW5100 TV streaming device telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: media device
+    operating_system: VxWorks
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^\xff\xfb\x01OPTIBASE MGW5100 COMMAND LINE INTERFACE\r\n

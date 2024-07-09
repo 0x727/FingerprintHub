@@ -1,0 +1,19 @@
+id: http
+info:
+  name: GoAhead WebServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: LogiLink WC0002B webcam http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nServer: GoAhead-Webs\r\nDate: .* \d\d\d\d\r\nWWW-Authenticate: Basic realm=\"Internet Camera\"\r\n.*<CENTER><FONT SIZE=\"5\" COLOR=\"#FF0000\" face=\"Arial\">Access Denied</FONT></CENTER></BODY></HTML> {500}'

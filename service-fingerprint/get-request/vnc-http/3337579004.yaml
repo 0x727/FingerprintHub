@@ -1,0 +1,19 @@
+id: vnc-http
+info:
+  name: Synergy VNC
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc-http,service
+  severity: info
+  metadata:
+    info: 'user: $1; resolution: $2x$3; VNC TCP port: $4'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc-http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK\n.*<HTML><HEAD><TITLE>(.*)'s desktop</TITLE></HEAD>\n<BODY>\n<APPLET CODE=(?:vncviewer/)?[vV][nN][cC][vV]iewer\.class ARCHIVE=[vV]nc[vV]iewer\.jar WIDTH=(\d+) HEIGHT=(\d+)>\n\t<param name=PORT value=(\d+)>\n</APPLET>\n</BODY></HTML>\n

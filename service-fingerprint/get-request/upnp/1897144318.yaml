@@ -1,0 +1,19 @@
+id: upnp
+info:
+  name: Wink Hub $1 API httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\ncontent-length: \d+\r\nDate: .*\r\nConnection: close\r\n\r\n<\?xml version="1\.0"\?>\n<root xmlns="urn:schemas-wink-com:device-1-0">\n<specVersion>\n<major>1</major>\n<minor>0</minor>\n</specVersion>\n<URLBase>https://[^<]+</URLBase>\n<device>\n<deviceType>urn:wink-com:device:hub:([^<:]+)</deviceType>\n'

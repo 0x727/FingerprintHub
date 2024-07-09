@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Power Admin Server Monitor http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nCache-Control: max-age=0\r\nPragma: no-cache\r\nContent-Type: text/html\r\nContent-Length: \d+\r\nX-UA-Compatible: IE=Edge\r\nConnection: close\r\nSet-Cookie: web_session_id=\w+; path=/; HttpOnly; \r\n\r\n.*<title>PA Server Monitor</title>'

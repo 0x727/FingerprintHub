@@ -1,0 +1,17 @@
+id: http
+info:
+  name: BMC MainView Explorer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 403 Forbidden\r\nContent-Length: 70\r\nContent-Type: text/html\r\n\r\n<HTML><HEAD></HEAD><BODY>Error detected by Host Server</BODY></HTML>  \r\n\r\n'

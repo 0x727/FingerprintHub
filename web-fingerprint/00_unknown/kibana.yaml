@@ -1,0 +1,20 @@
+id: kibana
+info:
+  name: kibana
+  author: cn-kali-team
+  tags: detect,tech,kibana
+  severity: info
+  metadata:
+    product: kibana
+    vendor: 00_unknown
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - 'kbn-name: kibana'
+    part: header
+    case-insensitive: true

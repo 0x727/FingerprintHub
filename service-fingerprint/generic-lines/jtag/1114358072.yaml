@@ -1,0 +1,19 @@
+id: jtag
+info:
+  name: Macraigor mpDemon JTAG debugger
+  author: nmap,cn-kali-team
+  tags: detect,tech,jtag,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jtag
+    type: regex
+    regex:
+    - ^\x55\x0a\x04\x0d\xe5$

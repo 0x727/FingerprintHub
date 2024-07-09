@@ -1,0 +1,17 @@
+id: modbus
+info:
+  name: Modbus TCP
+  author: nmap,cn-kali-team
+  tags: detect,tech,modbus,service
+  severity: info
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: modbus
+    type: regex
+    regex:
+    - ^l\0\0\0\0\x03\0\x80\x01

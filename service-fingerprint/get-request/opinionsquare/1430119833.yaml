@@ -1,0 +1,17 @@
+id: opinionsquare
+info:
+  name: OpinionSquare application
+  author: nmap,cn-kali-team
+  tags: detect,tech,opinionsquare,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: opinionsquare
+    type: regex
+    regex:
+    - ^HTTP/1\.0 505 HTTP Version not supported\r\n\r\n$

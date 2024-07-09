@@ -1,0 +1,21 @@
+id: http
+info:
+  name: HP Apache-based httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: $2
+    operating_system: HP-UX
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.[01] \d\d\d .*\r\nDate: .*\r\nServer: HP Apache-based Web Server/(\d[\w.]+) \(Unix\) ?([^\r\n]+)\r\n'

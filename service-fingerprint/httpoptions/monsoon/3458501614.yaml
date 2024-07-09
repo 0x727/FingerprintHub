@@ -1,0 +1,19 @@
+id: monsoon
+info:
+  name: Monsoon HAVA media streaming
+  author: nmap,cn-kali-team
+  tags: detect,tech,monsoon,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: monsoon
+    type: regex
+    regex:
+    - ^\0\x14\0\x01\xff\xff\xff\xfd\0\0\0\0\0\0\0\0\0\0\0\0$

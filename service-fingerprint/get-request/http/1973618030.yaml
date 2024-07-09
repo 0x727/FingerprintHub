@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Node.js
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: rabbit.js messaging example page
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nDate: .*\r\nConnection: close\r\n\r\n<!doctype html>\n<html>\n  <head>\n    <title>rabbit\.js and Socket\.IO publish/subscribe example</title>'

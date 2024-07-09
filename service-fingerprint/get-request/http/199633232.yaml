@@ -1,0 +1,21 @@
+id: http
+info:
+  name: IP_SHARER WEB
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: TRENDnet TW100-BRV204 router http config; no admin pass
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nServer: IP_SHARER WEB ([\w._-]+)\r\n.*<title>Setup</title>.*type=\"text/javascript\">\nfunction loadnext\(\)'

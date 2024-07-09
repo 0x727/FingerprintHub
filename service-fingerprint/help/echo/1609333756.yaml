@@ -1,0 +1,17 @@
+id: echo
+info:
+  name: ''
+  author: nmap,cn-kali-team
+  tags: detect,tech,echo,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: help\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: echo
+    type: regex
+    regex:
+    - ^help\r\n\r\n$

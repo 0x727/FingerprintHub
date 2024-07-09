@@ -1,0 +1,19 @@
+id: ndmp
+info:
+  name: Symantec/Veritas Backup Exec ndmp
+  author: nmap,cn-kali-team
+  tags: detect,tech,ndmp,service
+  severity: info
+  metadata:
+    info: NDMPv3
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ndmp
+    type: regex
+    regex:
+    - (?i)^\x80\0\0\x24\0\0\0\x01....\0\0\0\0\0\0\x05\x02\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x03\0\0\0\x00$

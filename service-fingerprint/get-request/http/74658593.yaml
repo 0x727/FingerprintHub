@@ -1,0 +1,21 @@
+id: http
+info:
+  name: awarrenhttp httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: proxy server
+    info: Cyberoam CR200 SSL VPN
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 cyberoam authentication response\r\nServer: awarrenhttp/([\w._-]+)\r\n'

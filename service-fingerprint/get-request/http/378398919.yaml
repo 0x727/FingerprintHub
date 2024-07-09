@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Napco Netlink NL-MOD http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200\r\nContent-type: text/html\r\nConnection: close\r\nCONTENT-LENGTH: 240\r\n\r\n<HTML>\r\n<HEAD>\r\n<title>Web-Manager ([\w._-]+)</title>\r\n</HEAD>\r\n<BODY bgcolor=\"#FFFFFF\">\r\n<center>\r\n<applet code=\"container\.class\" archive=web\.jar width=\"743\" height=\"1250\" style=\"border: thick ridge\" VIEWASTEXT>\r\n</applet>\r\n</body>\r\n</html>\r\n\r\n$'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Sagem Livebox WAP http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK\r\n.*<title>(?:Livebox|HNM)</title>\n\t\t<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n\t\t<meta http-equiv=\"Content-language\" content=\"fr\">\n\t\t<meta name=\"author\" content=\"Nicolas VIVIEN\">\n\t\t<meta name=\"Copyright\" content=\"SAGEM COMMUNICATIONS\">

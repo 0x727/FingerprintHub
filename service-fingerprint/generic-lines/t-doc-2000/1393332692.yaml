@@ -1,0 +1,17 @@
+id: t-doc-2000
+info:
+  name: Getinge T-DOC 2000 hospital instrument management system
+  author: nmap,cn-kali-team
+  tags: detect,tech,t-doc-2000,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: t-doc-2000
+    type: regex
+    regex:
+    - ^READY \r\nERROR 10000 \"Unknown command\. Write HELP to get help\.\" \[Unknown\]\r\nERROR 10000 \"Unknown command\. Write HELP to get help\.\" \[Unknown\]\r\n

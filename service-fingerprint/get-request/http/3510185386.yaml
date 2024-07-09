@@ -1,0 +1,19 @@
+id: http
+info:
+  name: cPanel Web Host Manager httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Unix
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Access Denied\r\n(?:[^\r\n]+\r\n)*?Set-Cookie: whostmgrrelogin='

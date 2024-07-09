@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Barracuda Spam firewall http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nServer: \r\nContent-Type: text/html; charset=iso-8859-1\r\nDate: .*\r\nLast-Modified: .*\r\nAccept-Ranges: bytes\r\nConnection: close\r\nContent-Length: \d+\r\n\r\n<HTML>\n<HEAD>\n  <META HTTP-EQUIV=Refresh CONTENT=\"0; URL=/cgi-bin/index\.cgi\">\n</HEAD>\n</HTML>\n\n'

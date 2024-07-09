@@ -1,0 +1,17 @@
+id: websocket
+info:
+  name: LibreOffice Online WebSocket server
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - '^HTTP/1\.1 [24]00(?: OK)?\r\n.* GMT\r\nUser-Agent: LOOLWSD WOPI Agent\r\n'

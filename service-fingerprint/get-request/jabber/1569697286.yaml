@@ -1,0 +1,17 @@
+id: jabber
+info:
+  name: Isode M-Link Jabber server
+  author: nmap,cn-kali-team
+  tags: detect,tech,jabber,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jabber
+    type: regex
+    regex:
+    - ^<\?xml version='1\.0'\?><stream:stream xmlns='jabber:server' xmlns:db='jabber:server:dialback' xmlns:stream='http://etherx\.jabber\.org/streams' id='error-id'><stream:error><invalid-xml xmlns='urn:ietf:params:xml:ns:xmpp-streams'/></stream:error></stream:stream>

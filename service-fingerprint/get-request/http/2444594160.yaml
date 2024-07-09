@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Citizen CLP-521 or Kyocera Mita KM-1530 printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK\r\n.*<TITLE>Print server homepage</TITLE></HEAD>\n<FRAMESET COLS=\"200,\*\" BORDER=0 FRAMEBORDER=0>\n<FRAME SRC=\"/links_en\.html\">\n

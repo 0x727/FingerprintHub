@@ -1,0 +1,17 @@
+id: http
+info:
+  name: QAM Launcher Manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 301 OK\r\nConnection: close\r\nLocation: /AgentManager/get/html/home\.html\r\nContent-Type: text/html\r\n\r\n<HTML><HEAD><TITLE>redirecting to url</TITLE></HEAD><BODY><H1>redirecting to url</H1><A HREF=\"/AgentManager/get/html/home\.html\"></A><p></BODY></HTML>\r\n\r\n$'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Neeris worm httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nServer: private\r\nCache-Control: no-cache,no-store,max-age=0\r\npragma: no-cache\r\nContent-Type: application/octet-stream\r\nContent-Length: 101376\r\nAccept-Ranges: bytes\r\nDate: .*\r\nLast-Modified: .*\r\nExpires: .*\r\nConnection: close\r\n\r\nMZP\0\x02\0\0\0\x04\0\x0f\0\xff\xff\0\0\xb8'

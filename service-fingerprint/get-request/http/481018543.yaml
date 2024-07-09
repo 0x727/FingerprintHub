@@ -1,0 +1,21 @@
+id: http
+info:
+  name: NT4.0 Multiprotocol Chat httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $3
+    info: Name $2; Users $4; Uptime $5
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: NT40\r\n.*<title>NT([\w._-]+) - Multiprotocol chat tool</title></head><body><BR><BR><center><b>NT4\.0 Network</b><br><br>Server: (\S+) - \(([\w._-]+)\)<br>Local users connected: (\d+) // Connected to \d+ servers</center><br>Service uptime: ([\d:]+)<br>'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: DD-WRT milli_httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 Ok\r\nContent-Type: text/html\r\nServer: httpd\r\nDate: .*\r\nConnection: close\r\nCache-Control: no-store, no-cache, must-revalidate\r\nCache-Control: post-check=0, pre-check=0\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nExpires: 0\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1\.0 Strict//EN\" \"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-strict\.dtd\">\n<html>\n\t<head>\n\t\t<meta http-equiv=\"Content-Type\" content=\"application/xhtml\+xml; charset=iso-8859-1\" />\n\t\t<link rel=\"icon\" href=\"images/favicon\.ico\" type=\"image/x-icon\" />\n\t\t<link rel=\"shortcut icon\" href=\"images/favicon\.ico\" type=\"image/x-icon\" />\n\t\t<script type=\"text/javascript\" src=\"common\.js\"></script>\n\t\t<script type=\"text/javascript\" src=\"lang_pack/english\.js\"></script>\n\t\t<script type=\"text/javascript\" src=\"lang_pack/language\.js\"></script>'

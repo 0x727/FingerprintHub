@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Avtech PageR Enterprise http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nServer: PageR Enterprise/([\w._-]+)\r\nContent-Type: text/html\r\nCache-Control: no-cache, no-store, must-revalidate \r\n\r\n'

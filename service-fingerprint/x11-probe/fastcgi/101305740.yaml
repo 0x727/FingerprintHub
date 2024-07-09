@@ -1,0 +1,17 @@
+id: fastcgi
+info:
+  name: HHVM FastCGI
+  author: nmap,cn-kali-team
+  tags: detect,tech,fastcgi,service
+  severity: info
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: fastcgi
+    type: regex
+    regex:
+    - (?i)^\x01\x0b\0\0\0\x08\0\0\0\0\0\0\0...

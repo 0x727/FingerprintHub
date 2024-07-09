@@ -1,0 +1,20 @@
+id: slurm
+info:
+  name: SLURM
+  author: nmap,cn-kali-team
+  tags: detect,tech,slurm,service
+  severity: info
+  metadata:
+    info: auth/munge
+    version: API 2.7
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: slurm
+    type: regex
+    regex:
+    - (?i)^\0\0\0.\x1b\0\0\0\x1fA\0\0\0\x04\0\0\0\0......\0\0\0\x0bauth/munge\0\0\0\0\n\0\0..MUNGE:[\w/+=]+:\0\0\0\x03\xf0

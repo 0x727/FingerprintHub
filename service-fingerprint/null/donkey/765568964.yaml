@@ -1,0 +1,17 @@
+id: donkey
+info:
+  name: MLDonkey multi-network P2P server
+  author: nmap,cn-kali-team
+  tags: detect,tech,donkey,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: donkey
+    type: regex
+    regex:
+    - ^[\x00-\x10]\0\0\0\0\0[^\0]\0\0\0

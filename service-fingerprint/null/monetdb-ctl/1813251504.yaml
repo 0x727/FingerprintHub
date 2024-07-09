@@ -1,0 +1,17 @@
+id: monetdb-ctl
+info:
+  name: MonetDB control
+  author: nmap,cn-kali-team
+  tags: detect,tech,monetdb-ctl,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: monetdb-ctl
+    type: regex
+    regex:
+    - ^merovingian:2:\w+:\n

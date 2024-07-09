@@ -1,0 +1,20 @@
+id: ntop-http
+info:
+  name: Ntop web interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,ntop-http,service
+  severity: info
+  metadata:
+    operating_system: Linux
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ntop-http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d .*\nServer: ntop/(\d[-.\w]+) [^\r\n]*\([\w\d-]*linux[\w\d-]*\)\r?\n'

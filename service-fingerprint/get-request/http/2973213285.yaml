@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Siemens Gigaset $1 DECT phone httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\nConnection: Keep-Alive\r\nServer: (\w+) IP PRO/([\d.]+)\r\n'

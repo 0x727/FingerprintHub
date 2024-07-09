@@ -1,0 +1,19 @@
+id: http
+info:
+  name: D-Link DVS-4088S, DVS-5088S, or DVG-7062S VoIP gateway http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nConnection: close\r\n.*<title>VoIP Gateway</title>.*<frame name=\"contents\" target=\"main\" src=\"otgw\.cgi\?PAGE=USER\" scrolling=\"auto\" noresize>'

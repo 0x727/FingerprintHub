@@ -1,0 +1,17 @@
+id: sopcast
+info:
+  name: SopCast P2P
+  author: nmap,cn-kali-team
+  tags: detect,tech,sopcast,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sopcast
+    type: regex
+    regex:
+    - ^HTTP/1\.0 200 OK\r\n\r\n0&\xb2u\x8ef\xcf\x11\xa6\xd9\0

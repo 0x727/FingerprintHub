@@ -1,0 +1,20 @@
+id: samsung-twain
+info:
+  name: Samsung TWAIN
+  author: nmap,cn-kali-team
+  tags: detect,tech,samsung-twain,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: SCX-4x28 series printer
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: samsung-twain
+    type: regex
+    regex:
+    - ^\xa8\x08C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0$

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: MochiWeb Erlang HTTP library
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: RabbitMQ management; redirect to port $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 301 Moved Permanently\r\nServer: MochiWeb/([\w._-]+) \(Any of you quaids got a smint\?\)\r\nLocation: http://[\w._-]+:(\d+)/\r\nDate: .*\r\nContent-Length: 0\r\n\r\n$'

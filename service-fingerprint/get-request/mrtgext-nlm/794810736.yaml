@@ -1,0 +1,19 @@
+id: mrtgext-nlm
+info:
+  name: Novell NetWare MRTGEXT NLM Statistics
+  author: nmap,cn-kali-team
+  tags: detect,tech,mrtgext-nlm,service
+  severity: info
+  metadata:
+    operating_system: NetWare
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mrtgext-nlm
+    type: regex
+    regex:
+    - ^-1\n-1\n-1\n$

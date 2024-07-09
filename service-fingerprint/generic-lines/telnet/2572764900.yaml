@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Pioneer VSX-2020 video receiver telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^RGC011001002\r\nAST000200000000000000001111110110000\r\nR\r\nR\r\nR\r\nR\r\n

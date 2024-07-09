@@ -1,0 +1,21 @@
+id: http
+info:
+  name: WYM httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: Aviosys IP Camera http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nDate: .*\r\nServer: WYM/([\d.]+)\r\nConnection: close\r\nContent-Type: text/html\r\nContent-Length: \d+\r\nLast-Modified: .*\r\n\r\n<HTML>\n<HEAD>\n<TITLE>IP Camera</TITLE>\n'

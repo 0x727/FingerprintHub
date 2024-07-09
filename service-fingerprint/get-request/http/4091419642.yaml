@@ -1,0 +1,19 @@
+id: http
+info:
+  name: D-Link DVG-5112S VoIP adapter
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nContent-Length: 227\r\n\r\n<html> <head> <title>D-Link VoIP Router</title>'

@@ -1,0 +1,19 @@
+id: backdoor
+info:
+  name: PsychoPhobia backdoor
+  author: nmap,cn-kali-team
+  tags: detect,tech,backdoor,service
+  severity: info
+  metadata:
+    info: '**BACKDOOR**'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: backdoor
+    type: regex
+    regex:
+    - ^Can't fork pty, bye!\n$

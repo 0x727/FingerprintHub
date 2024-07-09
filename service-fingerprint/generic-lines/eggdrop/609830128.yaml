@@ -1,0 +1,17 @@
+id: eggdrop
+info:
+  name: Eggdrop irc bot console
+  author: nmap,cn-kali-team
+  tags: detect,tech,eggdrop,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: eggdrop
+    type: regex
+    regex:
+    - ^\r\nNickname\.\r\nSorry, that nickname format is invalid\.\r\n$

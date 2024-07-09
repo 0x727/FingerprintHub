@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: ratproxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 500 Direct HTTP requests not allowed\nContent-type: text/html\n\n<font face=\"Bitstream Vera Sans Mono,Andale Mono,Lucida Console\">\nThe proxy is unable to process your request\.\n<h1><font color=red><b>Direct HTTP requests not allowed\.</b></font></h1>\n$'

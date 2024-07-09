@@ -1,0 +1,19 @@
+id: seti-proxy
+info:
+  name: SetiQueue SETI@Home proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,seti-proxy,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: seti-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nServer: SetiQueue/(\d+)\r\n'

@@ -1,0 +1,19 @@
+id: sieve
+info:
+  name: Cyrus timsieved Murder
+  author: nmap,cn-kali-team
+  tags: detect,tech,sieve,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sieve
+    type: regex
+    regex:
+    - ^\"IMPLEMENTATION\" \"Cyrus timsieved \(Murder\) v([-.\w]+)\"\r\n

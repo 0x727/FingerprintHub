@@ -1,0 +1,19 @@
+id: ingrian-xml
+info:
+  name: Ingrian NAE XML daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,ingrian-xml,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ingrian-xml
+    type: regex
+    regex:
+    - ^<GenericError><Success>false</Success><FatalError>101</FatalError><ErrorString>Could not parse client request</ErrorString></GenericError>

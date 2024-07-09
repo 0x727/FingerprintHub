@@ -1,0 +1,17 @@
+id: ident
+info:
+  name: Fake identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - ^:USERID:OTHER:\d+-ident-is-a-completely-pointless-protocol-that-offers-no-security-or-traceability-at-all-so-take-this-and-log-it!\r\n

@@ -1,0 +1,19 @@
+id: rtsp
+info:
+  name: Dahua IP camera rtspd
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^RTSP/1\.0 405 Method Not Allowed\r\nServer: Dahua Rtsp Server\r\nContent-Length: 0\r\nCSeq: 0\r\n\r\n'

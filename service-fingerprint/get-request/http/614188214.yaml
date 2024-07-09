@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Unitronics $1 ($2) PLC http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'boot version: $4; factory boot: $5'
+    version: $3 $6 $7
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0  200 OK\r\n.*<TITLE>Unitronics PLC</TITLE>.*<Script>\r\nvar V =new Array\(\"(V\w+) \((\w+)\) \",\"([\w._-]+)\",\"([\w._-]+)\",\"([\w._-]+)\",\"[01]+\",\"Running\",\"(\d\d/\d\d/\d\d)\",\"(\d\d:\d\d:\d\d)\"\);

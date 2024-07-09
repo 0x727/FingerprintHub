@@ -1,0 +1,21 @@
+id: http
+info:
+  name: YAWS httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+    info: Nortel VPN Gateway http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: Yaws/([-\w_.]+) Yet Another Web Server\r\n(?:[^\r\n]+\r\n)*?Set-Cookie: SMSESSION=logout; .*Set-Cookie: nortelxnetid=logout;'

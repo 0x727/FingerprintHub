@@ -1,0 +1,19 @@
+id: pgbouncer
+info:
+  name: PgFoundry PgBouncer PostgreSQL connection pooler
+  author: nmap,cn-kali-team
+  tags: detect,tech,pgbouncer,service
+  severity: info
+  metadata:
+    version: 1.5.2 or earlier
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pgbouncer
+    type: regex
+    regex:
+    - ^E\0\0\0&SERROR\0C08P01\0Mbad packet header\0\0

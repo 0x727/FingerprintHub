@@ -1,0 +1,19 @@
+id: http
+info:
+  name: T-Com Speedport W 723V WAP http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 \r\nContent-Type: text/html\r\nConnection: Close\r\nLOCATION: https://speedport\.ip/\r\nContent-Length: 155\r\n\r\n<head><title>302 Document moved</title></head><body><h1>302 Document moved</h1>This document has moved <a href=\"https://speedport\.ip//\">here</a>\.<p></body>$'

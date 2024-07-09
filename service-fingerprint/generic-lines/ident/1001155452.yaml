@@ -1,0 +1,19 @@
+id: ident
+info:
+  name: FTPRush FTP client identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^,  : USERID : UNIX : [^\r\n]+\r\n$'

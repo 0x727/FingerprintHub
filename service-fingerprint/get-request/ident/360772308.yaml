@@ -1,0 +1,19 @@
+id: ident
+info:
+  name: HP-UX identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+  metadata:
+    operating_system: HP-UX
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^0 , 0 : ERROR : INVALID-PORT\r\n'

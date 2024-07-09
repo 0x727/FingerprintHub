@@ -1,0 +1,21 @@
+id: http
+info:
+  name: micro_httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    hostname: $2
+    info: D-Link DSL-$1 ADSL router http config; firmware $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 Ok\r\nServer: micro_httpd\r\n.*<TITLE>DSL-(\w+)</TITLE>.*var hostname = \"([\w_.-]+)\";\r\nvar FWTmp = \"(V[\w.]+)\"\.split\(\"_\"\);'

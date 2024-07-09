@@ -1,0 +1,17 @@
+id: icy
+info:
+  name: Peercast
+  author: nmap,cn-kali-team
+  tags: detect,tech,icy,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: icy
+    type: regex
+    regex:
+    - ^OK2\r\nicy-caps:\d+\r\n\r\nOK\r\n$

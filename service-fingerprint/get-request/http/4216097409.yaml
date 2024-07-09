@@ -1,0 +1,21 @@
+id: http
+info:
+  name: ThinStation http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $2
+    operating_system: Linux
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n.*<title>:: ThinStation ::</title>.*<h2>Thinstation ([\w._-]+) on ([\w._-]+) :: Main page</h2>'

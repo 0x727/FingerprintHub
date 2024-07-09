@@ -1,0 +1,20 @@
+id: opentable-listener
+info:
+  name: OpenTable restaurant reservation listener
+  author: nmap,cn-kali-team
+  tags: detect,tech,opentable-listener,service
+  severity: info
+  metadata:
+    info: request handler version $2
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: opentable-listener
+    type: regex
+    regex:
+    - ^OpenTable Listener Version ([\w._-]+)\r\n\r\nerror=Bad request\r\n\r\nOTRequestHandler ([\w._-]+) WebRequest\r\n\r\n\0$

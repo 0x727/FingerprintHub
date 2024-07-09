@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Kyocera TASKalfa printer httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: redirect to HTTPS, TLS $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Movtmp\r\nContent-Type: text/html\r\nLocation: https://[\d.]+:443/\r\nConnection: close\r\nUpgrade: TLS/([\d.]+)\r\n\r\n'

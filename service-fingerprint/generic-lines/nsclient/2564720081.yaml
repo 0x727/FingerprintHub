@@ -1,0 +1,17 @@
+id: nsclient
+info:
+  name: NSClient++
+  author: nmap,cn-kali-team
+  tags: detect,tech,nsclient,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nsclient
+    type: regex
+    regex:
+    - '^ERROR: Invalid password\.\nERROR: Invalid password\.\n$'

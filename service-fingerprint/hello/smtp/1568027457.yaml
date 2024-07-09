@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: Novell NetWare GroupWise Internet Agent smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    operating_system: NetWare
+tcp:
+- name: hello
+  inputs:
+  - data: EHLO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 .* Ready\r\n250-.*\r\n250-AUTH LOGIN\r\n(?:250-8BITMIME\r\n)?250-SIZE\r\n250 DSN\r\n

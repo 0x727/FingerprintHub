@@ -1,0 +1,17 @@
+id: sphinx-search
+info:
+  name: Sphinx Search daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,sphinx-search,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sphinx-search
+    type: regex
+    regex:
+    - ^\x01\0\0\0\0\x01\0\0\0\0\0 \0\0\0\x1cunknown command \(code=\d+\)

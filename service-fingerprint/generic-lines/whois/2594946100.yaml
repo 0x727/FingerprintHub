@@ -1,0 +1,20 @@
+id: whois
+info:
+  name: rwhois
+  author: nmap,cn-kali-team
+  tags: detect,tech,whois,service
+  severity: info
+  metadata:
+    hostname: $1
+    version: $2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: whois
+    type: regex
+    regex:
+    - ^%rwhois V-[\w:.-]+ ([-\w_.]+) \(by Network Solutions, Inc\. V-([\d.]+)\)\n

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: FortiGate Application filtering
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Auth server $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 303 See Other\r\nLocation: https?://([\d.]+:\d+)/fgtauth\?[0-9a-fA-F]+\r\n.*<title>Firewall Authentication</title></head>'

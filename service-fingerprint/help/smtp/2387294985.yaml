@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: Exim smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    version: 4.X
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - '(?i)^220.*?\r?\n214-Commands supported:\r\n214 AUTH (?:STARTTLS )?HELO EHLO MAIL RCPT DATA NOOP QUIT RSET HELP(?: VRFY)?\r\n$'

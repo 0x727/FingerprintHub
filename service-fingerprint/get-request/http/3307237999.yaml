@@ -1,0 +1,19 @@
+id: http
+info:
+  name: LaCrosse GW-1000U weather station httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1 $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^<HTML><HEAD></HEAD>\r\n<BODY bgcolor=0x000080 text=#FFFFFF link=#00FF00 vlink=#00FF00><font face=Arial,Helvetica size=2>\r\n<font face=Arial,Helvetica><B>\r\n<CENTER>ERF-Gateway Settings & States</B><BR><TABLE BORDER=0>\r\n<TR><TD><font face=Arial,Helvetica size=2>Software</TD><TD><font face=Arial,Helvetica size=2>ERF-Gateway V([\w._-]+)</TD></TR>\r\n<TR><TD><font face=Arial,Helvetica size=2>Compilation Date</TD><TD><font face=Arial,Helvetica size=2>(\d\d/\d\d/\d\d)</TD></TR>\r\n

@@ -1,0 +1,19 @@
+id: socks4
+info:
+  name: Connection failed; ident required
+  author: nmap,cn-kali-team
+  tags: detect,tech,socks4,service
+  severity: info
+  metadata:
+    info: Connection failed; ident required
+tcp:
+- name: socks4
+  inputs:
+  - data: \x04\x01\x00\x16\x7f\x00\x00\x01root\x00
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: socks4
+    type: regex
+    regex:
+    - ^\0\x5c

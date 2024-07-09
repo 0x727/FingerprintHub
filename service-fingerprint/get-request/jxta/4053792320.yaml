@@ -1,0 +1,17 @@
+id: jxta
+info:
+  name: JXTA P2P Collaboration daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,jxta,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jxta
+    type: regex
+    regex:
+    - '^JXTAHELLO tcp://[\d.]+:\d+ tcp://[\d.]+:\d+ '

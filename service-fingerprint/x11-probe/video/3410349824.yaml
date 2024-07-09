@@ -1,0 +1,19 @@
+id: video
+info:
+  name: ECV ECV-REC16SH webcam video stream
+  author: nmap,cn-kali-team
+  tags: detect,tech,video,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: video
+    type: regex
+    regex:
+    - (?i)^\0\xdc0@p\xdc0@3\.[0-9a-f]{8}\.[0-9A-F]......\0\x000\0\0\0..(?:\*\0/sda/1/\d+/\d+\.0123\.[0-9a-f]{8}\.[0-9A-F]......\0\x000\0\0\0..)+

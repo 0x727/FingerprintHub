@@ -1,0 +1,19 @@
+id: zeo
+info:
+  name: Zope Enterprise Objects service
+  author: nmap,cn-kali-team
+  tags: detect,tech,zeo,service
+  severity: info
+  metadata:
+    info: ZODB $1.$2
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: zeo
+    type: regex
+    regex:
+    - ^\0\0\0\x04Z(\d)([1-9]\d)$

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: PhpStorm IDE
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: YourKit Java Profiler $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\ncontent-type: text/html; charset=utf-8\r\nconnection: close\r\ncache-control: no-cache, must-revalidate\r\ncontent-length: \d+\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n<title>PhpStorm([\d.]+) - YourKit Java Profiler (\d[\w.-]*)</title>'

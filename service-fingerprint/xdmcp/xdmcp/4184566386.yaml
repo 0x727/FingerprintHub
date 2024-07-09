@@ -1,0 +1,21 @@
+id: xdmcp
+info:
+  name: XDMCP
+  author: nmap,cn-kali-team
+  tags: detect,tech,xdmcp,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: 'unwilling; status: $2'
+    operating_system: Unix
+tcp:
+- name: xdmcp
+  inputs:
+  - data: \0\x01\0\x02\0\x01\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: xdmcp
+    type: regex
+    regex:
+    - (?i)^\0\x01\0\x06..\0.(.+)\0.(.+)

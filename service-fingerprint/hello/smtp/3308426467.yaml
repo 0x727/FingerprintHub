@@ -1,0 +1,21 @@
+id: smtp
+info:
+  name: Panasonic smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: Panasonic printer
+    version: $1
+tcp:
+- name: hello
+  inputs:
+  - data: EHLO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220\s+(DP-\d+)\r\n250-Hello\r\n250-DSN\r\n

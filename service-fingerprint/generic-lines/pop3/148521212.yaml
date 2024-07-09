@@ -1,0 +1,19 @@
+id: pop3
+info:
+  name: IBM OS 400 pop3d
+  author: nmap,cn-kali-team
+  tags: detect,tech,pop3,service
+  severity: info
+  metadata:
+    operating_system: OS/400
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pop3
+    type: regex
+    regex:
+    - ^\+OK POP3 server ready\r\n-ERR invalid command\r\n$

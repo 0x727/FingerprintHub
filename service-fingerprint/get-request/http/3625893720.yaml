@@ -1,0 +1,19 @@
+id: http
+info:
+  name: iOS Call Recorder httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: iOS
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 505 HTTP Version not supported\r\nDate: .*\r\nAccept-Ranges: bytes\r\nContent-Length: 0\r\n\r\n'

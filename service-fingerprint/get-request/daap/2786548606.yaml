@@ -1,0 +1,19 @@
+id: daap
+info:
+  name: mt-daapd DAAP
+  author: nmap,cn-kali-team
+  tags: detect,tech,daap,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: daap
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: mt-daapd/([-\w.]+)\r\n'

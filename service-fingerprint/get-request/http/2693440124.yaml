@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Legrand Nuvo audio player
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Found\r\nDate: .*\r\nLocation: /home\.fcgi\r\nContent-Type: text/plain\r\nContent-Length: 24\r\n\r\nRedirected to /home\.fcgi'

@@ -1,0 +1,17 @@
+id: oracle-nm
+info:
+  name: Oracle WebLogic Server Node Manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,oracle-nm,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: oracle-nm
+    type: regex
+    regex:
+    - ^-ERR Invalid command name 'GET'\r\n-ERR Invalid command name ''\r\n

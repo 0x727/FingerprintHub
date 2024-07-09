@@ -1,0 +1,17 @@
+id: java-rmi
+info:
+  name: GNU Classpath grmiregistry
+  author: nmap,cn-kali-team
+  tags: detect,tech,java-rmi,service
+  severity: info
+tcp:
+- name: java-rmi
+  inputs:
+  - data: \x4a\x52\x4d\x49\0\x02\x4b
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: java-rmi
+    type: regex
+    regex:
+    - (?i)^\x4e..[\w._-]+\0\0..$

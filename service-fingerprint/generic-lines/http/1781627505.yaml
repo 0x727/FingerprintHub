@@ -1,0 +1,17 @@
+id: http
+info:
+  name: SoftPerfect Bandwidth Manager httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 500 Internal error\r\nContent-Length: 49\r\nContent-Type: text/plain\r\n\r\nMethod not allowed \(must be POST HTTP/1\.0 or 1\.1\)$'

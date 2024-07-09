@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Dell Remote Access Controller 6 http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: remote management
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 301 Moved Permanently\r\n(?:[^\r\n]+\r\n)*?Server: httpd\r\nContent-type: text/html\r\nETag: \"232c8e4-74d-0\"\r\nContent-length: 0\r\nConnection: close\r\nLocation: https://:443/start\.html\r\n\r\n'

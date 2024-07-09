@@ -1,0 +1,17 @@
+id: ident
+info:
+  name: Trillian identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^HELP : USERID : UNIX : trilluser\r\n$'

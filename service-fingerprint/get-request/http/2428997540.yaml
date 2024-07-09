@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Gordian httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $2
+    info: Lantronix MSSVIA http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 403 Forbidden\r\nServer: Gordian Embedded([\d.]+)\r\n.*<HTML>\n<HEAD>\n<TITLE>Lantronix - Authentication for ([^<]+)</TITLE>\n'

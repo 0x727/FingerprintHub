@@ -1,0 +1,19 @@
+id: cisco-lm
+info:
+  name: Cisco CallManager license manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,cisco-lm,service
+  severity: info
+  metadata:
+    version: '6'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: cisco-lm
+    type: regex
+    regex:
+    - ^<\?xml version=\"1\.0\" encoding=\"UTF-8\"\?><LicXmlDoc><MessageType><ParamValue>RESPONSE</ParamValue></MessageType><OperationCode><ParamValue>4923</ParamValue></OperationCode></LicXmlDoc>$

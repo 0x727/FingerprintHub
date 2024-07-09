@@ -1,0 +1,17 @@
+id: s2-emerge
+info:
+  name: S2 eMerge Door Access Controller
+  author: nmap,cn-kali-team
+  tags: detect,tech,s2-emerge,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: s2-emerge
+    type: regex
+    regex:
+    - ^resolutions=\"4CIF\",\"2CIF\",\"CIF\",\"QCIF\"&mpeg_enabled=\"TRUE\"&jpeg_enabled=\"TRUE\"&alarms=\d+&relays=\d+&audio_in\[\]=0x3,0x0&audio_out=\[\]0x3,0x0\0{375,}

@@ -1,0 +1,17 @@
+id: postgresql
+info:
+  name: PostgreSQL DB
+  author: nmap,cn-kali-team
+  tags: detect,tech,postgresql,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: postgresql
+    type: regex
+    regex:
+    - '^EFATAL 1:  invalid length of startup packet\n\0'

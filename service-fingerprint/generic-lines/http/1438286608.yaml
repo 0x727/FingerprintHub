@@ -1,0 +1,20 @@
+id: http
+info:
+  name: thttpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: IDIS surveillance DVR
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^UNKNOWN 400 Bad Request\r\nServer: unknown HTTP server\r\nContent-Type: text/html; charset=iso-8859-1\r\n.*<BODY BGCOLOR=\"#cc9999\" TEXT=\"#000000\" LINK=\"#2020ff\" VLINK=\"#4040cc\">\n<H2>400 Bad Request</H2>\nYour request has bad syntax or is inherently impossible to satisfy\.\n'

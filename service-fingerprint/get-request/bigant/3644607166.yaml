@@ -1,0 +1,17 @@
+id: bigant
+info:
+  name: BigAnt Messenger server
+  author: nmap,cn-kali-team
+  tags: detect,tech,bigant,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bigant
+    type: regex
+    regex:
+    - ^HTTP/1\.1  403\naenflag:0\ncontent-length:0\nserver:AntServer\n\n

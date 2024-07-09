@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Sentinel HASP license manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Windows
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTT/1\.0 401 Not Authorized\r\nServer: HASP LM/([\w._-]+)\r\nDate: .*\r\nWWW-Authenticate: Basic realm=\"HASP License Manager\"\r\nContent-type: text/html\r\nContent-length: 151\r\n\r\n<title>401 Not Authorized</title>\n<h1>401 Not Authorized</h1>\nYou need proper authorization to use this resource\.\n<p>Please contact the administrator\.\n$'

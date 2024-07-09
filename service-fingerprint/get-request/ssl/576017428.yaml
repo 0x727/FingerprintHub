@@ -1,0 +1,19 @@
+id: ssl
+info:
+  name: Apache httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ssl,service
+  severity: info
+  metadata:
+    info: SSL-only mode
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ssl
+    type: regex
+    regex:
+    - ^<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2\.0//EN\">\n<html><head>\n<title>400 Bad Request</title>\n</head><body>\n<h1>Bad Request</h1>\n<p>Your browser sent a request that this server could not understand\.<br />

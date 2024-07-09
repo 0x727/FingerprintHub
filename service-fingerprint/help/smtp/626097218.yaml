@@ -1,0 +1,22 @@
+id: smtp
+info:
+  name: Sendmail
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: AIX $2
+    operating_system: AIX
+    version: $3
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 ([-\w_.]+) ESMTP MTA\r\n214-This is Sendmail version AIX([\d.]+)/([\w.]+)\r\n

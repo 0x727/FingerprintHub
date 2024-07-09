@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Conexant-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: Billion 740- or 7400-series ADSL router UPnP; UPnP $1
+    version: $SUBST(2,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nServer: Unknown/0\.0 UPnP/([\d.]+) Conexant-EmWeb/R([\d_]+)\r\nContent-Type: text/html\r\nExpires: Thu, 01 Jan 1970 00:00:00 GMT\r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: Basic realm=\"WebAdmin\"\r\n'

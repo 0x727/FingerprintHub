@@ -1,0 +1,19 @@
+id: kazaa-http
+info:
+  name: KaZaA P2P client
+  author: nmap,cn-kali-team
+  tags: detect,tech,kazaa-http,service
+  severity: info
+  metadata:
+    info: 'username: $1; network: $2'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: kazaa-http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r?\nX-Kazaa-Username: (\S+)\r\nX-Kazaa-Network: ([-.\w]+)\r\n'

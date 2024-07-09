@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Siemens Gigaset PBX/TARGA DIP VoIP phone http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 302 Found\r\nConnection: Keep-Alive\r\nServer: \r\n.*<!-- this page must have 520 bytes or more, ie is a wonderfull program -->.*<html>\r\n<head>\r\n<title>302-Found</title>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n</head>\r\n<body>\r\n<h1>302-Found</h1>\r\n<a href=''/login\.html\?id=\d+''>/login\.html</a>'

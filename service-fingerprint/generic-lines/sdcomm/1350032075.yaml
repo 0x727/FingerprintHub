@@ -1,0 +1,17 @@
+id: sdcomm
+info:
+  name: RSA SecureID Ace Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,sdcomm,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sdcomm
+    type: regex
+    regex:
+    - ^ERR 27$

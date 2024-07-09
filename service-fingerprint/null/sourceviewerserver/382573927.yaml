@@ -1,0 +1,17 @@
+id: sourceviewerserver
+info:
+  name: NetBeans Source Viewer Service
+  author: nmap,cn-kali-team
+  tags: detect,tech,sourceviewerserver,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sourceviewerserver
+    type: regex
+    regex:
+    - ^OK SourceViewerService v1\.0\r\n

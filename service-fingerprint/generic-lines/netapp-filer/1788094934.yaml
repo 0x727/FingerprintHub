@@ -1,0 +1,17 @@
+id: netapp-filer
+info:
+  name: NetApp filer data transfer
+  author: nmap,cn-kali-team
+  tags: detect,tech,netapp-filer,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: netapp-filer
+    type: regex
+    regex:
+    - ^\x0b\0\0\0$

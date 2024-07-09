@@ -1,0 +1,20 @@
+id: http
+info:
+  name: NSMXwui
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    info: Juniper Network and Security Manager http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: NSMXwui \(Juniper\)\r\n.*<title>Network and Security Manager - Download UI Client</title>'

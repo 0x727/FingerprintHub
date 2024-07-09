@@ -1,0 +1,20 @@
+id: pycharm
+info:
+  name: PyCharm
+  author: nmap,cn-kali-team
+  tags: detect,tech,pycharm,service
+  severity: info
+  metadata:
+    operating_system: Mac OS X
+    version: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pycharm
+    type: regex
+    regex:
+    - ^\0\.[\w._/-]+/Library/Preferences/PyCharm([\w._-]+)\0\)[\w._/-]+/Library/Caches/PyCharm[\w._-]+$

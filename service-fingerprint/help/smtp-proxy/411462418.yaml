@@ -1,0 +1,19 @@
+id: smtp-proxy
+info:
+  name: RedCondor smtp proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp-proxy,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp-proxy
+    type: regex
+    regex:
+    - ^220 ([-\w_.]+)\r\n214-HELO domain\r\n214-EHLO domain\r\n214-QUIT\r\n214-MAIL FROM:<reverse-path> \[options\]\r\n

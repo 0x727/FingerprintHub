@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: berretz.de mini-ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - '^220 ICS FTP Server ready\r\n500 ''\r'': command not understood\.\r\n500 ''\r'': command not understood\.\r\n'

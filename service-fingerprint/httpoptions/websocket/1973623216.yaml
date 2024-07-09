@@ -1,0 +1,19 @@
+id: websocket
+info:
+  name: websockify
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+  metadata:
+    info: SimpleHTTP $1; Python $2
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - '^HTTP/1\.0 501 Unsupported method \(''OPTIONS''\)\r\nServer: SimpleHTTP/([\w._-]+) Python/([\w._+-]+)\r\nDate: .* GMT\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n<head>\n<title>Error response</title>\n</head>\n<body>\n<h1>Error response</h1>\n<p>Error code 501\.\n<p>Message: Unsupported method \(''OPTIONS''\)\.\n<p>Error code explanation: 501 = Server does not support this operation\.\n</body>\n$'

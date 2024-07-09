@@ -1,0 +1,17 @@
+id: apollo-server
+info:
+  name: Apollo Server database access
+  author: nmap,cn-kali-team
+  tags: detect,tech,apollo-server,service
+  severity: info
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: apollo-server
+    type: regex
+    regex:
+    - ^0000000001(?:3C|C0)0000$

@@ -1,0 +1,20 @@
+id: nimp
+info:
+  name: Linux NetworX Network ICE Management Protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,nimp,service
+  severity: info
+  metadata:
+    operating_system: Linux
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nimp
+    type: regex
+    regex:
+    - ^V([\d.]+)\r\nERROR 0\r\n$

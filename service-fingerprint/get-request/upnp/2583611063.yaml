@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: FSL upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: DLNADOC $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 412 Failed\r\nServer: FSL DLNADOC/([\d.]+) UPnP Stack/1\.0\r\nContent-Length: 0\r\n\r\n'

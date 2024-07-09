@@ -1,0 +1,17 @@
+id: ftp
+info:
+  name: ProFTPD
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - (?i)^220[ -].*\r\n214-The following commands are recognized \(\* =>'s unimplemented\):\r\n

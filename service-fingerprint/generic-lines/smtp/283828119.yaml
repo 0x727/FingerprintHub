@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: I2P smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - '^220 ([\w._-]+) ESMTP I2PNet Mailservice\r\n500 5\.5\.2 Error: bad syntax\r\n500 5\.5\.2 Error: bad syntax\r\n'

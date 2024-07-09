@@ -1,0 +1,21 @@
+id: dps-shell
+info:
+  name: Destiny DPS Mini shell
+  author: nmap,cn-kali-team
+  tags: detect,tech,dps-shell,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: Ricoh printer
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: dps-shell
+    type: regex
+    regex:
+    - ^\+-{26}\+\r\n\x7c {6}Welcome to use {6}\x7c\r\n\x7c >Destiny DPS Mini shell< \x7c\r\n\+-{9}\+-{16}\+\r\n\x7c Author  \x7c TimesWu {8}\x7c\r\n\+-{9}\+-{16}\+\r\n\x7c Version \x7c V([\d.]+) {10}\x7c\r\n\+-{9}\+-{16}\+\r\n

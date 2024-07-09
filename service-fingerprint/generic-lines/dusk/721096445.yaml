@@ -1,0 +1,17 @@
+id: dusk
+info:
+  name: Dusk Java-based game
+  author: nmap,cn-kali-team
+  tags: detect,tech,dusk,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: dusk
+    type: regex
+    regex:
+    - ^\x03Not a valid name\. This may because you left it blank or used invalid symbols\. Please try again\.\n

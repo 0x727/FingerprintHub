@@ -1,0 +1,20 @@
+id: smtp
+info:
+  name: qmail smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: qmail-ldap support
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - '^220 ([-\w_.]+) ESMTP .*\r\n214-qmail home page: http://pobox\.com/~djb/qmail\.html\r\n214 qmail-ldap patch home page: http://www\.nrg4u\.com\r\n'

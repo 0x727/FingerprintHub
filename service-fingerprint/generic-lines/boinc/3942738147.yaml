@@ -1,0 +1,17 @@
+id: boinc
+info:
+  name: Boinc GUI RPC port
+  author: nmap,cn-kali-team
+  tags: detect,tech,boinc,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: boinc
+    type: regex
+    regex:
+    - ^<error>unrecognized op</error/>\n\x03$

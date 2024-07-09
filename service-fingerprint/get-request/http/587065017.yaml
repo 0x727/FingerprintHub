@@ -1,0 +1,19 @@
+id: http
+info:
+  name: sw-cp-server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Parallels Plesk WebAdmin
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 500 Internal Server Error\r\nConnection: close\r\nX-UA-Compatible: IE=EmulateIE7\r\n(?:[^\r\n]+\r\n)*?P3P: CP=\"NON COR CURa ADMa OUR NOR UNI COM NAV STA\"\r\n(?:[^\r\n]+\r\n)*?Server: sw-cp-server\r\n'

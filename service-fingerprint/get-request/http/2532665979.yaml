@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Boche httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: xmmsd xmms http admin $2
+    operating_system: Unix
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nContent-Type: text/html; charset=iso-8859-1\r\nContent-Length: \d+\r\nServer: Boche/([\d.]+) xmmsd/([\d.]+)\r\n\r\n'

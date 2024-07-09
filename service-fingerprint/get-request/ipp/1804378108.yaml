@@ -1,0 +1,20 @@
+id: ipp
+info:
+  name: HP $1 ipp
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipp,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: model $2; serial $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 505 HTTP Version Not Supported\r\nServer: HP HTTP Server; HP ([^;]+?) - (\w+); Serial Number: (\w+); (?:[\w_]+ )?Built:[^{]+ {\w+, ASIC id 0x[\da-f]+}\r\n\r\n$'

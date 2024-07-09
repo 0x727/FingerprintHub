@@ -1,0 +1,19 @@
+id: pop3
+info:
+  name: CommuniGate Pro
+  author: nmap,cn-kali-team
+  tags: detect,tech,pop3,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pop3
+    type: regex
+    regex:
+    - ^\+OK CommuniGate Pro POP3 Server ready <[\d.]+@([-\w_.]+)>\r\n

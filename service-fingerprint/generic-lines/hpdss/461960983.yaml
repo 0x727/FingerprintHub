@@ -1,0 +1,17 @@
+id: hpdss
+info:
+  name: HP Digital Sender client
+  author: nmap,cn-kali-team
+  tags: detect,tech,hpdss,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: hpdss
+    type: regex
+    regex:
+    - ^(?:53 client not logged in\.\r\n)+$

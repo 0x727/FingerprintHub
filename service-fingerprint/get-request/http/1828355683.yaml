@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Sensatronics $2 remote temperature monitor httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    info: name $1; Firmware version $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d .*<title>IT Temperature Monitor: ([^<]+)</title>.*<TD>Model:</TD><TD width=10 rowspan=3><BR></TD><TD>([-\w_.]+)</TD><TD width=20 rowspan=3><BR></TD><TD>Firmware Version:</TD><TD width=10 rowspan=3><BR></TD><TD>([\d.]+)</TD>'

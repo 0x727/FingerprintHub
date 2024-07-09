@@ -1,0 +1,21 @@
+id: http
+info:
+  name: iGuard access control system http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: security-misc
+    info: Serial $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Redirection\r\nDate: .*\r\nServer: iGuard Embedded Web Server/([-\w_.]+) \(\w+\) SN:([-\w]+)\r\nPragma: no-cache\r\nLocation: /Admins/index\.html\r\n\r\n'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Zimbra http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: redirect to https
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\n(?:Date: .*\r\n)?Expires: .*\r\nCache-Control: no-store, no-cache, must-revalidate, max-age=0\r\nPragma: no-cache\r\n(?:X-Frame-Options: SAMEORIGIN\r\n)?Content-Type: text/html; charset=[Uu][Tt][Ff]-8\r\nContent-Language: en-US\r\nLocation: https://[^/]+/[^?]*\?zinitmode=http\r\nContent-Length: 0\r\n\r\n$'

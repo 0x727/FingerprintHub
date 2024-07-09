@@ -1,0 +1,21 @@
+id: ssh
+info:
+  name: MRV LX sshd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ssh,service
+  severity: info
+  metadata:
+    device_type: terminal server
+    info: protocol $1
+    version: $2
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ssh
+    type: regex
+    regex:
+    - ^SSH-([\d.]+)-LXSSH_([\d.]+)\n

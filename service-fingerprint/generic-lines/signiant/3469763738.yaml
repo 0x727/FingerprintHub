@@ -1,0 +1,19 @@
+id: signiant
+info:
+  name: Signiant Media Exchange
+  author: nmap,cn-kali-team
+  tags: detect,tech,signiant,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: signiant
+    type: regex
+    regex:
+    - '^dds_pc: _ms=([\w._-]+)\xfe_si=Process controller\xfe_mid=9010\xfe_sev=0\xfe_dt=\d+/\d+/\d+\xfe_tm=\d+:\d+:\d+\xfe_pkg=\xfe\n\n'

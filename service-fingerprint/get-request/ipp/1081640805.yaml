@@ -1,0 +1,21 @@
+id: ipp
+info:
+  name: Virata-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipp,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: HP Laserjet 4200TN http config
+    version: $SUBST(1,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 301 Moved Permanently\r\nServer: Virata-EmWeb/R([\w_]+)\r\nLocation: https://[\d.]+/\r\nContent-Type: text/html\r\nContent-Length: 90\r\n\r\nMoved\r\n'

@@ -1,0 +1,19 @@
+id: nntp
+info:
+  name: Leafnode NNTPd
+  author: nmap,cn-kali-team
+  tags: detect,tech,nntp,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nntp
+    type: regex
+    regex:
+    - ^200 Leafnode NNTP Daemon, version (\d[-.\w]+) running at

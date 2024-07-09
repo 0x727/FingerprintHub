@@ -1,0 +1,19 @@
+id: upnp
+info:
+  name: Domotz Fingbox upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\nCache-Control: no-cache\nExpires: -1\nDate: \d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d\.\d+\n.*<deviceType>urn:domotz:fingbox:([\d.]+)<'

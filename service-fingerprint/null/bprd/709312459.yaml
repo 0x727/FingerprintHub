@@ -1,0 +1,19 @@
+id: bprd
+info:
+  name: Veritas Netbackup
+  author: nmap,cn-kali-team
+  tags: detect,tech,bprd,service
+  severity: info
+  metadata:
+    info: refused
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bprd
+    type: regex
+    regex:
+    - '^gethostbyaddr: [\w ]+\n$'

@@ -1,0 +1,17 @@
+id: usher
+info:
+  name: Monotone Usher plugin
+  author: nmap,cn-kali-team
+  tags: detect,tech,usher,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: usher
+    type: regex
+    regex:
+    - ^\0dFE Hello! This is the monotone usher at localhost\. What would you like\?

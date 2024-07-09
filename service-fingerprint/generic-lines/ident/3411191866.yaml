@@ -1,0 +1,19 @@
+id: ident
+info:
+  name: Snak IRC client identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+  metadata:
+    info: 'username: $1'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^,  : USERID : UNIX : ([-\w_]+)\r\n,  : USERID : UNIX : (?:[-\w_]+)\r\n$'

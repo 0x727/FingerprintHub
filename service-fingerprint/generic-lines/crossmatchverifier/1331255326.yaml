@@ -1,0 +1,17 @@
+id: crossmatchverifier
+info:
+  name: Cross Match Technologies Verifier fingerprint capture control port
+  author: nmap,cn-kali-team
+  tags: detect,tech,crossmatchverifier,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: crossmatchverifier
+    type: regex
+    regex:
+    - ^Idle\r\n$

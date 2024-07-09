@@ -1,0 +1,17 @@
+id: websocket
+info:
+  name: Neo4j Bolt protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\n\r\nnot a WebSocket handshake request: missing upgrade'

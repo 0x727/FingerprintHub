@@ -1,0 +1,17 @@
+id: sharp-remote
+info:
+  name: ''
+  author: nmap,cn-kali-team
+  tags: detect,tech,sharp-remote,service
+  severity: info
+tcp:
+- name: sharp-tv
+  inputs:
+  - data: TVNM1   \rMNRD1   \rSWVN1   \rIPPV1   \r
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sharp-remote
+    type: regex
+    regex:
+    - ^(?!x)x

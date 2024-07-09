@@ -1,0 +1,19 @@
+id: http
+info:
+  name: GAI-Tronics Commander VoIP phone http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\.\r\nWWW-Authenticate: Basic realm=\"GAI-Tronics\"\r\nContent-Type: text/html\r\n\r\n<HTML><HEAD><TITLE>401 Unauthorized\.</TITLE>\r\n</HEAD><BODY>\r\n<H1>401 Unauthorized</H1>The requested URL / requires authorization\.<P>\r\n<HR>\r\n</BODY></HTML>\r\n$'

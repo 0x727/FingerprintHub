@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Alt-N MDaemon webmail
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\n(?:X-Frame-Options: SAMEORIGIN\r\nX-XSS-Protection: 1\r\n)?Content-Type: text/html; charset=utf-8\r\nLast-Modified: .*\r\nExpires: 0\r\nPragma: no-cache\r\nConnection: close\r\n\r\n(?:\r\n)?<!DOCTYPE html>(?:\r\n)+<html>\r\n *<head>\r\n *<meta charset="UTF-8"(?: /)?>\r\n *<meta name="ROBOTS" content="NOINDEX, FOLLOW" />\r\n *(?:<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width" />\r\n *)?<title>WorldClient</title>\r\n\t *<link rel="shortcut icon" href="[^"]+\.ico\?v=([\d.]+)'

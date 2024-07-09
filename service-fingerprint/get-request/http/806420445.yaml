@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Allegro RomPager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: power-device
+    info: Emerson Network Power IntelliSlot Web/$2 card
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nDate: .*\r\nExpires: Thu, 26 Oct 1995 00:00:00 GMT\r\n(?:[^\r\n]+\r\n)*?Server: Allegro-Software-RomPager/([\d.]+)\r\n.*<title>Emerson Network Power IntelliSlot Web/(\d+) Card</title>'

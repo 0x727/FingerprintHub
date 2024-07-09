@@ -1,0 +1,19 @@
+id: tandem-print
+info:
+  name: Sharp printer tandem printing
+  author: nmap,cn-kali-team
+  tags: detect,tech,tandem-print,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x80\0\0\x28\x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: tandem-print
+    type: regex
+    regex:
+    - ^\x01$

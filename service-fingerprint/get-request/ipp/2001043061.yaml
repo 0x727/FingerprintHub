@@ -1,0 +1,17 @@
+id: ipp
+info:
+  name: CUPS
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipp,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipp
+    type: regex
+    regex:
+    - '^lpd \[@[-.\w]+\]: Host name for your address \([:.\d]+\) is not known\n$'

@@ -1,0 +1,19 @@
+id: slimp3
+info:
+  name: SliMP3 MP3 player
+  author: nmap,cn-kali-team
+  tags: detect,tech,slimp3,service
+  severity: info
+  metadata:
+    info: http://www.slimdevices.com
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: slimp3
+    type: regex
+    regex:
+    - ^GET %2[Ff] HTTP%2[Ff]1\.0\n$

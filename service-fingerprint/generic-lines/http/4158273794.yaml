@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Ajenti http control panel
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.[01] 400 Bad Request\r\nConnection: close\r\nContent-length: 0\r\n\r\n$'

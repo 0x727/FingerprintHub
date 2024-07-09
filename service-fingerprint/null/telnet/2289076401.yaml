@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: IBM Netcool/Impact telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^Netcool/Impact Command Line Interface for server ([\w._-]+)\nlogin: '

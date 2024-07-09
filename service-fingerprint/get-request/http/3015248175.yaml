@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Areca RAID Controller HTTP configuration tool
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html; charset=iso-8859-1\r\nCache-control: no-cache\r\nContent-Length: \d+\r\n\r\n<html>\r\n<head>\r\n<meta HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset==iso-8859-1\">\r\n<title>ARCHTTP Configuration</title>'

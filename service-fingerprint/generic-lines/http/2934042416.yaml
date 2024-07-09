@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Kaba application server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/\*\.\* 400 Bad Request\r\nDate: .*\r\nContent-Type:text/plain\r\nContent-Length:61\r\n\r\nThe received request is either NULL or invalid/wrong format\r\n'

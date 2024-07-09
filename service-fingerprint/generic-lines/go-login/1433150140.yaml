@@ -1,0 +1,17 @@
+id: go-login
+info:
+  name: GraphOn GO-Global
+  author: nmap,cn-kali-team
+  tags: detect,tech,go-login,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: go-login
+    type: regex
+    regex:
+    - ^\xff\xff\x80\x80\+\]\0\0

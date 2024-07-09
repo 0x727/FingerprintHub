@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: Jungo OpenRG upnp
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: UPnP $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 500 Internal server error\r\nDATE: .* GMT\r\nSERVER: OpenRG/([\w._-]+) UPnP/([\w._-]+) Actiontec/RG_VERSION\r\nCONNECTION: close\r\n\r\n$'

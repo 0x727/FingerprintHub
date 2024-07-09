@@ -1,0 +1,17 @@
+id: dnet-keyproxy
+info:
+  name: Distributed.Net HTTP Keyproxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,dnet-keyproxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: dnet-keyproxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Found\r\nLocation: http://www\.distributed\.net/\r\n\r\n$'

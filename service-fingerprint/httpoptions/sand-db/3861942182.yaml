@@ -1,0 +1,17 @@
+id: sand-db
+info:
+  name: SAND database
+  author: nmap,cn-kali-team
+  tags: detect,tech,sand-db,service
+  severity: info
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: sand-db
+    type: regex
+    regex:
+    - ^\xff\x02\x04\0\x03\0r\n\x08\0@L\x01\0\x01\x01\0\0\0\0[A-Z]{16}$

@@ -1,0 +1,19 @@
+id: nessus
+info:
+  name: Nessus Daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,nessus,service
+  severity: info
+  metadata:
+    info: NTP v1.2
+tcp:
+- name: nessus-tpv12
+  inputs:
+  - data: < NTP/1.2 >\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: nessus
+    type: regex
+    regex:
+    - ^< NTP/1.2 >\n

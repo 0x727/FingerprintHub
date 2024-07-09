@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Konica Minolta $1 printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: PageScope Web Connection
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 \d\d\d .*\r\n<TITLE>KONICA MINOLTA PageScope Web Connection for (\w+)</TITLE>\r\n

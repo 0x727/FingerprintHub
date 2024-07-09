@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Fortinet FortiGate-5001 SSL VPN remote http login
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Last-Modified: Tue, 03 Oct 2006 19:21:12 GMT\r\nETag: \"85f_52_4522b828\"\r\n(?:[^\r\n]+\r\n)*?Content-Length: 82\r\n.*location=\"/remote/index\";\n\n</script>\n</html>\n\0{605}$'

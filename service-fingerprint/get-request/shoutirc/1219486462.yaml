@@ -1,0 +1,19 @@
+id: shoutirc
+info:
+  name: ShoutIRC Bot
+  author: nmap,cn-kali-team
+  tags: detect,tech,shoutirc,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: shoutirc
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nConnection: close\r\n\r\n<h1>ShoutIRC Bot ([\w._-]+)</h1>This is not a web server port, it is for use only by clients supporting the <a href=\"http://wiki\.shoutirc\.com/index\.php/Remote_Commands\">Remote Protocol</a>!'

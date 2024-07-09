@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: Software602 602LAN Suite http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Proxy Error\r\nContent-type: text/html\r\nPragma: no-cache\r\nCache-control: no-cache\r\nContent-length: \d+\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2\.0//EN\">\r\n<html><head><title>Proxy Error</title></head>\r\n<body><h1>Proxy Error</h1>\r\nThe proxy server could not handle this request\.\r\n<p>\r\n<b>bad file or wrong URL</b>\r\n</body></html>\r\n'

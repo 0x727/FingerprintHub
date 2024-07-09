@@ -1,0 +1,20 @@
+id: http-proxy
+info:
+  name: thttpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    device_type: firewall
+    info: Blue Coat PacketShaper 3500 firewall
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - ^<HTML><HEAD><TITLE>501 Not Implemented</TITLE></HEAD>\n<BODY><H2>501 Not Implemented</H2>\nThe requested method '' is not implemented by this server\.\n<HR>\n<I>httpd/1\.00</I></BODY></HTML>\n$

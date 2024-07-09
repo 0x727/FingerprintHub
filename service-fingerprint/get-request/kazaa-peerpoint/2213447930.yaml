@@ -1,0 +1,17 @@
+id: kazaa-peerpoint
+info:
+  name: KaZaA P2P client Peer Point Manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,kazaa-peerpoint,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: kazaa-peerpoint
+    type: regex
+    regex:
+    - ^HTTP/1\.0 404 Not Found\n\r\n$

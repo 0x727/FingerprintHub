@@ -1,0 +1,19 @@
+id: realport
+info:
+  name: Digi EtherLite 16 or 32 RealPort
+  author: nmap,cn-kali-team
+  tags: detect,tech,realport,service
+  severity: info
+  metadata:
+    device_type: terminal server
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: realport
+    type: regex
+    regex:
+    - (?i)^\xff\x17Access to unopened port.$

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: NessusWWW
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Nessus vulnerability scanner http UI
+    version: 5.0.2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: NessusWWW\r\n(?:[^\r\n]+\r\n)*?Content-Type: text/html\r\n.*<title>Restart needed!</title>.*<body bgcolor=\"#2b4e67\">.*<link type=\"text/css\" href=\"jqueryui18\.css\" rel=\"stylesheet\" />'

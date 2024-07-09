@@ -1,0 +1,19 @@
+id: http
+info:
+  name: HP ProCurve 1800-24G switch http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: switch
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nConnection: close\r\nContent-Encoding: gzip\r\nContent-Type: text/html; charset=iso-8859-1\r\n\r\n\x1f\x8b\x08\0\0\0\0\0\x02\x03\xa5\x93Mo'

@@ -1,0 +1,17 @@
+id: gms
+info:
+  name: GMS gaming protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,gms,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gms
+    type: regex
+    regex:
+    - ^GM:Studio-Connect\0$

@@ -1,0 +1,17 @@
+id: jabber
+info:
+  name: Empathy Jabber client
+  author: nmap,cn-kali-team
+  tags: detect,tech,jabber,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jabber
+    type: regex
+    regex:
+    - ^<\?xml version='1\.0' encoding='UTF-8'\?>\n<stream:stream xmlns='jabber:client' xmlns:stream='http://etherx\.jabber\.org/streams' from=\"\" version=\"1\.0\">\n<stream:features/>$

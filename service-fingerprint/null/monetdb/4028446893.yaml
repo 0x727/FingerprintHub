@@ -1,0 +1,19 @@
+id: monetdb
+info:
+  name: MonetDB
+  author: nmap,cn-kali-team
+  tags: detect,tech,monetdb,service
+  severity: info
+  metadata:
+    info: protocol $1; little-endian
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: monetdb
+    type: regex
+    regex:
+    - '^.\0[^:]+:merovingian:(\d+):[^:]+:LIT:'

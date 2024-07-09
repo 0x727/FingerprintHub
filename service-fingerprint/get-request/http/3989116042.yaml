@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Bosch DINION IP Bullet 5000 webcam http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nWWW-Authenticate: Digest realm="Use ''live'' as User Name in order to log in to the respective level",nonce="[a-f0-9]{32}",opaque="",stale=FALSE,algorithm=MD5,qop="auth"\r\n\r\n'

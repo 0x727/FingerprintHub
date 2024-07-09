@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Allen-Bradley WWW httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Rockwell Automation Ethernet Processor http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK    \r\nServer: A-B WWW/([\d.]+)\r\n.*<img src=\"/images/rockcolor\.gif'

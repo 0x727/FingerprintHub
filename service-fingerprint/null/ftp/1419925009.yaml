@@ -1,0 +1,20 @@
+id: ftp
+info:
+  name: IBM OS/2 ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    operating_system: OS/2
+    version: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220  IBM TCP/IP for OS/2 - FTP Server ver ([\d:.]+) on .* ready\.\r\n

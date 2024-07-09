@@ -1,0 +1,20 @@
+id: openerp
+info:
+  name: OpenERP
+  author: nmap,cn-kali-team
+  tags: detect,tech,openerp,service
+  severity: info
+  metadata:
+    info: 'install path: $1'
+    version: '6.1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: openerp
+    type: regex
+    regex:
+    - '^[ \d]{8}1\(lp1\ncexceptions\nException\np2\n\(Vinvalid literal for int\(\) with base 10: ''GET / HT''\np3\ntp4\nRp5\naS''Traceback \(most recent call last\):\\n  File \"(.*?)/openerp/service/netrpc_server\.py\", line 63, in run\\n    msg = ts\.myreceive\(\)\\n  File \".*?/openerp/tiny_socket\.py\", line 76, in myreceive\\n    size = int\(buf\)\\nValueError: invalid literal for int\(\) with base 10: \\''GET / HT\\''\\n''\np6\na\.'

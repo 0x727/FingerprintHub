@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: HP H3C SR8808 SecBlade firewall module telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^\r\n%connection closed by remote host!\0

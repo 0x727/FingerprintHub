@@ -1,0 +1,17 @@
+id: smtp
+info:
+  name: NT-ware uniFLOW/MOM smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 uniFLOW SMTP Email Gateway\r\n500 Sorry, not implemented\r\n

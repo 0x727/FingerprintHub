@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Allworx 6x VoIP phone http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nAccept-Ranges: none\r\nConnection: close\r\nContent-Encoding: identity\r\nContent-Length: 4240\r\nContent-Type: text/html; charset=ISO-8859-1\r\n(?:[^\r\n]+\r\n)*?Server: IST OIS\r\n.*<title>Allworx Hosted Web Site</title>'

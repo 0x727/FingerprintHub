@@ -1,0 +1,19 @@
+id: adobe-crossdomain
+info:
+  name: Unity3D game engine webplayer cross-domain policy
+  author: nmap,cn-kali-team
+  tags: detect,tech,adobe-crossdomain,service
+  severity: info
+  metadata:
+    info: 'domain: $1; ports: $2'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: adobe-crossdomain
+    type: regex
+    regex:
+    - ^<\?xml version='1\.0'\?>\n<cross-domain-policy>\n        <allow-access-from domain=\"([^\"]*)\" to-ports=\"([^\"]*)\" />\n</cross-domain-policy>\n$

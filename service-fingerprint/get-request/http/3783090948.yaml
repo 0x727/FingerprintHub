@@ -1,0 +1,17 @@
+id: http
+info:
+  name: phion Entegra SSL VPN client
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\r.*\nServer: phionEntegraHTTP\r\nAllow: GET, HEAD, DELETE\r\nWWW-Authenticate: Basic realm=phion Transparent Agent authentication\r\n'

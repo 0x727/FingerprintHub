@@ -1,0 +1,19 @@
+id: http
+info:
+  name: EHS embedded httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: 1.4.5 or earlier
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\ncache-control: no-cache\r\ncontent-length: \d+\r\ncontent-type: text/html\r\ndate: (.* GMT)\r\nlast-modified: \1\r\n\r\n'

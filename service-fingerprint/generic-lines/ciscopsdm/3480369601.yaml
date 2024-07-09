@@ -1,0 +1,20 @@
+id: ciscopsdm
+info:
+  name: Cisco PIX Secure Database Manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,ciscopsdm,service
+  severity: info
+  metadata:
+    device_type: firewall
+    operating_system: IOS
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ciscopsdm
+    type: regex
+    regex:
+    - (?i)^\xc0\0\x01\0....\0\0\0\x03

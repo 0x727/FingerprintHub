@@ -1,0 +1,17 @@
+id: starbound
+info:
+  name: Starbound game server
+  author: nmap,cn-kali-team
+  tags: detect,tech,starbound,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: starbound
+    type: regex
+    regex:
+    - ^\0\x08\0\0\x02\x9c

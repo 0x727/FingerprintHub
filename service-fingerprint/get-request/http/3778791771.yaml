@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Ubiquiti Edge router httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nSet-Cookie: PHPSESSID=\w+; path=/; secure\r\nExpires: Thu, 19 Nov 1981 08:52:00 GMT\r\nCache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0\r\nPragma: no-cache\r\nContent-type: text/html\r\nContent-Length: \d+\r\nConnection: close\r\nDate: .*\r\nServer: Server\r\n\r\n'

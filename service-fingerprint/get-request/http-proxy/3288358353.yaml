@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: Middleman filtering web proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nContent-Type: text/html\r\nContent-Length: 463\r\nConnection: close\r\nProxy-Connection: close\r\n\r\n<html><head><title>File not found</title></head><!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4\.01 Transitional//EN\">\n<body text=\"#000000\" bgcolor=\"#99AABB\"'

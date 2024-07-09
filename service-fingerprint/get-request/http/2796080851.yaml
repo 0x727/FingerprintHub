@@ -1,0 +1,20 @@
+id: http
+info:
+  name: USRobotics USR997748 switch http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: 'location: $2'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^<html>\n<title>USRobotics 10/100/1000 Mbps 48-Port Smart Switch Login</title>.*<td>&nbsp; System Name\n<td>&nbsp; ([\w-]+)\n.*<td>&nbsp; Location Name\n<td>&nbsp; ([\w -]+)\n

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Advent AW10P printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: RT-Platform $1; UPnP $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nDate: Sat, 30 Dec 0000 00:29:28 GMT\r\nServer: RT-Platform/([\w._-]+) UPnP/([\w._ -]+)\r\nConnection: close\r\nPragma: no-cache\r\nCache-Control: no-cache, must revalidate\r\nContent-Length: 0\r\n\r\n$'

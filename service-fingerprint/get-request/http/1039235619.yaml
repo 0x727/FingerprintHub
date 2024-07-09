@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Indy httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: German Wikipedia DVD browser
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Tempor\xe4r verschoben\r\nConnection: close\r\nContent-Type: text/html\r\nServer: Indy/([\d.]+)\r\nLocation: /Wikipedia/\r\n\r\n'

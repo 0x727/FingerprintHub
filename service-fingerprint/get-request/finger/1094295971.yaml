@@ -1,0 +1,17 @@
+id: finger
+info:
+  name: mlfingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - ^Information for user 'GET\+20\+2F\+20HTTP\+2F1\.0':\r\nUnknown user\.\r\n$

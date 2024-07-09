@@ -1,0 +1,17 @@
+id: speech
+info:
+  name: Festival Speech Synthesis System
+  author: nmap,cn-kali-team
+  tags: detect,tech,speech,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: speech
+    type: regex
+    regex:
+    - ^ER\nLP\n#<SUBR\(6\) />\nft_StUfF_keyOK\nER\n$

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Minecraft JSONAPI
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nAccess-Control-Allow-Origin: \*\r\nContent-Length: 81\r\n\r\nThis is a Minecraft server\. HTTP on this port by JSONAPI\. JSONAPI by Alec Gorge\.\n'

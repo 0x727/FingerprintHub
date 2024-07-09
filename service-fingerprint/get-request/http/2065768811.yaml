@@ -1,0 +1,20 @@
+id: http
+info:
+  name: NEC $2 series projector http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: firmware version $3; MAC $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Date: Wed, 31 Dec 1969 15:00:00 GMT\r\n(?:[^\r\n]+\r\n)*?Last-Modified: Wed, 31 Dec 1969 15:00:00 GMT\r\n.*<title>PROJECTOR NETWORK SETTINGS</title>.*<!--\nvar mac=\"([0-9A-F]{12})\";\n.*var vMdl=\"(\w+)_Series\";\nvar vVer=\"([\d.]+)\";'

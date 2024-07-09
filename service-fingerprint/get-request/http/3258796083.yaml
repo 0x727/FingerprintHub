@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Cisco RV 120W or RV 180 WAP http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.0 200 OK\r\n\n<html>\n<head>\n<meta http-equiv=\"Content-Language\" content=\"en-us\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<link href=\"images/style\.css\" rel=\"stylesheet\" type=\"text/css\">\n</head>\n<body class=\"globalNew\" onload=\"document\.frmRedirectToTop\.submit \(\)\">\n

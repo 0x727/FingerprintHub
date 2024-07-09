@@ -1,0 +1,19 @@
+id: http
+info:
+  name: ZyXEL Keenetic http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 500 No such header: Host\r\nserver: Ag \[47\]\r\ncontent-type: text/html\r\n\r\n<html>\n<head>\n</head>\n<body>\n<h1>500: No such header: Host</h1>\n</body>\n</html>\r\n'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Zebra ZTC 105SL label printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 301 Moved Permanently\r\nLocation: printer/index\.html\r\nConnection: close\r\nContent-Type: text/html\r\nContent-Length: 149\r\n\r\n<BODY><H1>Error 301 Moved Permanently<hr><p>Please use this link instead:</p><p><a href=''printer/index\.html''>printer/index\.html</a></p></H1></BODY>\r\n$'

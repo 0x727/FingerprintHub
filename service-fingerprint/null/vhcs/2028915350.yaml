@@ -1,0 +1,19 @@
+id: vhcs
+info:
+  name: moleSoftware virtual hosting control system
+  author: nmap,cn-kali-team
+  tags: detect,tech,vhcs,service
+  severity: info
+  metadata:
+    operating_system: Linux
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vhcs
+    type: regex
+    regex:
+    - ^250 OK moleSoftware VHCS2 Server Welcomes You !\r\n

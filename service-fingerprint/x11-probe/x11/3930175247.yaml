@@ -1,0 +1,19 @@
+id: x11
+info:
+  name: access denied
+  author: nmap,cn-kali-team
+  tags: detect,tech,x11,service
+  severity: info
+  metadata:
+    info: access denied
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: x11
+    type: regex
+    regex:
+    - ^\0\x2D\x0B\0\0\0\x0C\0

@@ -1,0 +1,19 @@
+id: cvspserver
+info:
+  name: CVS pserver
+  author: nmap,cn-kali-team
+  tags: detect,tech,cvspserver,service
+  severity: info
+  metadata:
+    info: broken
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: cvspserver
+    type: regex
+    regex:
+    - ^no repository configured in /

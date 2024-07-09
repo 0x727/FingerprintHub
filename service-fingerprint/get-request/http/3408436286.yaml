@@ -1,0 +1,19 @@
+id: http
+info:
+  name: netTALK Duo http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: phone
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.1 200 OK\r\nContent-Length:165\r\nContent-Type:text/html\r\n\r\n<HTML><TITLE>NetTalk, Inc\.</TITLE><FRAMESET COLS=\"100%\" ROWS=\"140,\*\" frameborder=0><FRAME NAME=\"t\" SRC=\"t\.htm\"><FRAME NAME=\"login\" SRC=\"login\.cgi\"></FRAMESET></HTML>$

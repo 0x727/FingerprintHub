@@ -1,0 +1,17 @@
+id: clickhouse
+info:
+  name: ClickHouse DBMS
+  author: nmap,cn-kali-team
+  tags: detect,tech,clickhouse,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: clickhouse
+    type: regex
+    regex:
+    - '^\x02e\0\0\0\x10DB::NetException/DB::NetException: Unexpected packet from client..0\. clickhouse-server\(StackTrace::StackTrace\(\)\+0x16\) \[0x[0-9a-f]+\]\n'

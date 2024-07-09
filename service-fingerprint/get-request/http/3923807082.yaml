@@ -1,0 +1,21 @@
+id: http
+info:
+  name: IPWEBS
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: Huawei broadband router http admin
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nDate: .*\r\nServer: IPWEBS/([\w._-]+)\r\n.*\.noscript_text{\r\nwidth: 100%;\r\nheight: 100%;\r\nfont-size: 24px;\r\ntext-align: center;\r\npadding-top: 24px;\r\n}\r\n</style>'

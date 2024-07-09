@@ -1,0 +1,19 @@
+id: http
+info:
+  name: TechniSat Digicorder HD S2 satellite receiver http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: TSEWS\r\n.*<title>TechniSat WebTools</title>.*<meta name=''copyright''           content=''TechniSat Digital\(r\) 2006-2009\(c\)''>'

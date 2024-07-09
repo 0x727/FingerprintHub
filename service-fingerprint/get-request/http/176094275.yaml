@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Bosch Security DVR httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nDate: .*\r\nLast-Modified: .*\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n\xef\xbb\xbf<!-- Release v ([\d.]+) \d{8} -->.*<title>Bosch Security Systems</title>'

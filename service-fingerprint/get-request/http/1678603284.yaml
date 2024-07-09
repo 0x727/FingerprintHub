@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Saku
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: client for shinGETsu $1 BBS; Python $3
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 Script output follows\r\nServer: shinGETsu/([\w._-]+) \(Saku/([\w._-]+)\) Python/([\w._-]+)\r\n'

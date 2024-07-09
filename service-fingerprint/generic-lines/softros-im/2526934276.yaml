@@ -1,0 +1,17 @@
+id: softros-im
+info:
+  name: Softros LAN Messenger instant messaging
+  author: nmap,cn-kali-team
+  tags: detect,tech,softros-im,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: softros-im
+    type: regex
+    regex:
+    - ^none\r\n$

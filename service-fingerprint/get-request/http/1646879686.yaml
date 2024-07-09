@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Huawei switch admin httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: switch
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nServer: (\S+)\r\nDate: [a-z]{3}, \d\d [a-z]{3} \d\d\d\d \d\d:\d\d:\d\d GMT\r\nContent-Length: 0\r\nConnection: Close\r\n\r\n$'

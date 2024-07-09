@@ -1,0 +1,17 @@
+id: netbios-ssn
+info:
+  name: ''
+  author: nmap,cn-kali-team
+  tags: detect,tech,netbios-ssn,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: netbios-ssn
+    type: regex
+    regex:
+    - ^\x83\0\0\x01\x82\x7c\x8f$

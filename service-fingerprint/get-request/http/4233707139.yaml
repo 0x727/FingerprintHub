@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Canon i-SENSYS LBP5050 printer http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nPragma: no-cache\r\nExpires: Mon, 01 Jan 1990 01:00:00 GMT\r\nContent-Type: text/html\r\n\r\n<html>\n<head>\n</head>\n<body onload=\"top\.location=''/cab/top\.shtml''\">\n</body>\n</html>\n$'

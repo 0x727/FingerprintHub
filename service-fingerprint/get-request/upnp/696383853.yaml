@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: GlobespanVirata-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: Xavi 7768r WAP UPnP; UPnP $1
+    version: $SUBST(2,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nServer: Unknown/0\.0 UPnP/([\d.]+) GlobespanVirata-EmWeb/R([\d_]+)\r\nContent-Type: text/html\r\nExpires: .*\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nWWW-Authenticate: Basic realm=\"WebAdmin\"\r\n\r\n\n\n<html>\n<head>\n\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles/default\.css\">\n\n<title>Authentication failed</title>\n\n</head>\n<body bgcolor=\"#ffffff\" link=\"#3300cc\" alink=\"#ff0000\" vlink=\"#990066\">\n\n'

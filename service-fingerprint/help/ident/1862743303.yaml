@@ -1,0 +1,19 @@
+id: ident
+info:
+  name: WatchGuard Firebox firewall identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^0 , 0 : ERROR : UNKNOWN-ERROR\r\n$'

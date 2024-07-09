@@ -1,0 +1,20 @@
+id: smtp
+info:
+  name: CommuniGate Pro SMTP
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+    version: $2
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 ([-.\w]+) ESMTP CommuniGate Pro (\d[-.\w]+)\r\n

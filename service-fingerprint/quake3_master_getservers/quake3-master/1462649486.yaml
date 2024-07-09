@@ -1,0 +1,17 @@
+id: quake3-master
+info:
+  name: ''
+  author: nmap,cn-kali-team
+  tags: detect,tech,quake3-master,service
+  severity: info
+tcp:
+- name: quake3_master_getservers
+  inputs:
+  - data: \xff\xff\xff\xffgetservers 68 empty full
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: quake3-master
+    type: regex
+    regex:
+    - ^\xff\xff\xff\xffgetserversResponse

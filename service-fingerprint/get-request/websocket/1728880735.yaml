@@ -1,0 +1,17 @@
+id: websocket
+info:
+  name: Ogar agar.io server
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - '^HTTP/1\.1 426 Upgrade Required\r\nContent-Length: 16\r\nContent-Type: text/plain\r\nDate: .* GMT\r\nConnection: close\r\n\r\nUpgrade Required$'

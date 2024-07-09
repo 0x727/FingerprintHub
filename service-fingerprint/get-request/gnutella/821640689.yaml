@@ -1,0 +1,19 @@
+id: gnutella
+info:
+  name: LimeWire Gnutella P2P client
+  author: nmap,cn-kali-team
+  tags: detect,tech,gnutella,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gnutella
+    type: regex
+    regex:
+    - '^HTTP/1\.0 406 Not Acceptable\r\nDate: .*\r\nServer: LimeWire/([\w._-]+)\r\n'

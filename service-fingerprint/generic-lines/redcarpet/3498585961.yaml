@@ -1,0 +1,17 @@
+id: redcarpet
+info:
+  name: Ximian Red Carpet Daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,redcarpet,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: redcarpet
+    type: regex
+    regex:
+    - '^Status: 400 Bad Request\r\nContent-Length: 0\r\n\r\n'

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: VMware Horizon View
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\ncache-control: no-cache\r\nContent-Length: 1573\r\nExpires: Thu, 01 Jan 1970 00:00:00 GMT\r\nSet-Cookie: JSESSIONID=9A69859878EF80D2D98913D0A75EA0CD; Path=/; Secure; HttpOnly\r\nContent-Type: text/html;charset=UTF-8\r\npragma: no-cache\r\n.*\r\n<html>\r\n<head>\r\n<title>VMware&nbsp;Horizon View</title>\r\n'

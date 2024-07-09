@@ -1,0 +1,19 @@
+id: webdav
+info:
+  name: CrushFTP httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,webdav,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: webdav
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nSet-Cookie: mainServerInstance=; path=/(?:; secure)?\r\n(?:Set-Cookie: currentAuth=[^;]*; path=/(?:; secure)?\r\n)?Set-Cookie: CrushAuth=[^;]+; path=/(?:; secure; HttpOnly)?\r\nPragma: no-cache\r\nx-responding-server: ([\w._-]+)\r\nX-dmUser: username\r\nMS-Author-Via: DAV\r\nAllow: '

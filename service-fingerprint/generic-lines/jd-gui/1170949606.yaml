@@ -1,0 +1,19 @@
+id: jd-gui
+info:
+  name: JD-GUI Java decompiler
+  author: nmap,cn-kali-team
+  tags: detect,tech,jd-gui,service
+  severity: info
+  metadata:
+    version: 0.3.3
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jd-gui
+    type: regex
+    regex:
+    - ^\t$

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: WatchGuard Fireware XTM web UI
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: CometCatchr Flash Comet client
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: text/html\r\nAccept-Ranges: bytes\r\nETag: "-?\d+"\r\nLast-Modified: .* GMT\r\nContent-Length: \d+\r\nConnection: close\r\nDate: .* GMT\r\nServer: none\r\n\r\n<!-- saved from url=\(0014\)about:internet -->\n<html lang="en">\n\n<!-- \nSmart developers always View Source\. \n\nThis application was built using Adobe Flex, an open source framework\nfor building rich Internet applications that get delivered via the\nFlash Player or to desktops via Adobe AIR\. \n\nLearn more about Flex at http://flex\.org \n// -->\n\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n\n<!--  BEGIN Browser History required section -->\n<link rel="stylesheet" type="text/css" href="history/history\.css" />\n<!--  END Browser History required section -->\n\n<title>Fireware XTM WebUI</title>'

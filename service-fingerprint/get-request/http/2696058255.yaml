@@ -1,0 +1,20 @@
+id: http
+info:
+  name: AXIS 205 network camera web interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Content-Length: \d+\r\n.*<TITLE>Live view / - AXIS 205(?: Network Camera)? version ([\d.]+)</TITLE>\n'

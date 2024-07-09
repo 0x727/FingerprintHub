@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Blunk Microsystems TargetWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    info: Lenel LNL-2220 firewall
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 -1 Bad Request\r\nDate: \w+, \d+ \w+ 204\d \d+:\d+:\d+ PST\r\nServer: TargetWeb/([\w._-]+) \(TargetOS\)\r\nConnection: close\r\n'

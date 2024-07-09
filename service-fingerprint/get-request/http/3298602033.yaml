@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Mbedthis-Appweb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: Juniper router http config; PHP $2; name $3
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 (?:[^\r\n]*\r\n(?!\r\n))*?Server: Mbedthis-Appweb/([\w._-]+)\r\n(?:[^\r\n]+\r\n)*?X-Powered-By: PHP/([\w._-]+)\r\n.*<title>([\w._-]+) : Log In - Juniper Networks Web Management</title>'

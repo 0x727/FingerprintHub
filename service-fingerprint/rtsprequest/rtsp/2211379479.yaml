@@ -1,0 +1,20 @@
+id: rtsp
+info:
+  name: VODServer rtspd
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    info: HiIpcam $1
+    version: $2
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^RTSP/1\.0 200 OK\r\nServer: HiIpcam/([\w._-]+) VodServer/([\w._-]+)\r\nPublic: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY,SET_PARAMETER,GET_PARAMETER\r\n\r\n'

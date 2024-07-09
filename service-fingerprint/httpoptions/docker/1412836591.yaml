@@ -1,0 +1,21 @@
+id: docker
+info:
+  name: Docker remote API
+  author: nmap,cn-kali-team
+  tags: detect,tech,docker,service
+  severity: info
+  metadata:
+    info: API $1
+    operating_system: $2
+    version: $3
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: docker
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nApi-Version: ([\d.]+)\r\nDocker-Experimental: false\r\nOstype: (.+)\r\nServer: Docker/(\d[\w.-]*) \(.*\)\r\nDate: .*\r\nContent-Length: 0\r\n\r\n'

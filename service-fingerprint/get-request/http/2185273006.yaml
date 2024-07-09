@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Alvarion-Webs
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: Alvarion BreezeMAX WiMAX WAP http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nServer: Alvarion-Webs\r\nDate: THU JAN 01 01:04:22 1970\r\nWWW-Authenticate: Basic realm=\"Alvarion\"\r\n.*<html><head><title>Document Error: Unauthorized</title></head>\r\n\t\t<body><h2>Access Error: Unauthorized</h2>\r\n\t\t<p>Access to this document requires a User ID</p></body></html>\r\n\r\n$'

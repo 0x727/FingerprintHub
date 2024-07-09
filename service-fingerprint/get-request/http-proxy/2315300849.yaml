@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: Tengine http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 502 Bad Gateway\r\n(?:[^\r\n]+\r\n)*?\r\n<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2\.0//EN">\r\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor="white">\r\n<h1>502 Bad Gateway</h1>\r\n<p>The proxy server received an invalid response from an upstream server\. Sorry for the inconvenience\.<br/>\r\nPlease report this message and include the following information to us\.<br/>\r\nThank you very much!</p>\r\n<table>\r\n<tr>\r\n<td>URL:</td>\r\n<td>[^<]*</td>\r\n</tr>\r\n<tr>\r\n<td>Server:</td>\r\n<td>([^<]+)</td>\r\n</tr>\r\n<tr>\r\n<td>Date:</td>\r\n<td>[^<]+</td>\r\n</tr>\r\n</table>\r\n<hr/>Powered by Tengine</body>\r\n</html>\r\n$

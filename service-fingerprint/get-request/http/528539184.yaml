@@ -1,0 +1,20 @@
+id: http
+info:
+  name: 3Com OfficeConnect router webadmin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: 3Com` $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nPragma: no-cache\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4\.0 Transitional//EN\">\n.*<META NAME=Copyright CONTENT=\"Copyright \(c\) 2003 3Com Corporation\. All Rights Reserved\.\">\n.*<META http-equiv=\"3Cnumber\" content=\"([-.\w]+)\">\n'

@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: FortiGate Web Filtering Service
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n.*<title>Web Filter Block Override</title>\n.*div\.header { background: url\(https?://:\d{1,5}/XX/YY/ZZ/CI/MGPGHGPGPFGHCDPFGGOGFGEH\) 0 0 repeat-x; height: 82px; }\n'

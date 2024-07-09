@@ -1,0 +1,19 @@
+id: zftp-admin
+info:
+  name: zFTPServer admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,zftp-admin,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: zftp-admin
+    type: regex
+    regex:
+    - '^220 \.\r\n500 ''GET / HTTP/1\.0'': command not understood\.\r\n'

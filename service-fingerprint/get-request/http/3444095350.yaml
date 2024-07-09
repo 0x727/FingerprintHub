@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Adobe Flash Media Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Wowza Media Server $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: FlashCom/([\w._-]+)\r\n.*<html><head><title>Wowza Media Server ([^<]*)</title></head>'

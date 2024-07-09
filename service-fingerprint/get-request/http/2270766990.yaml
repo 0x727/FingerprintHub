@@ -1,0 +1,20 @@
+id: http
+info:
+  name: ITW Embedded Web Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: ITW WeatherGoose II environmental monitor http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nDate: .*\r\nServer: ITW Embedded Web Server \(v([\w._-]+)\)\r\nConnection: close\r\nWWW-Authenticate: Basic realm=\"Administrator, Control, View Only\"\r\n\r\n<h1>Not Authorized</h1>\r\n'

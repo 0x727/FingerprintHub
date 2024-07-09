@@ -1,0 +1,19 @@
+id: irc
+info:
+  name: Webmaster Conferenceroom IRC server
+  author: nmap,cn-kali-team
+  tags: detect,tech,irc,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: irc
+    type: regex
+    regex:
+    - (^:[-.\w]+) 421 \* OPTIONS :Unknown command\r\n

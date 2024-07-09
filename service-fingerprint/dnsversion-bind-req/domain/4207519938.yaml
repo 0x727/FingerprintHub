@@ -1,0 +1,17 @@
+id: domain
+info:
+  name: Zyxel ZyWALL dnsd
+  author: nmap,cn-kali-team
+  tags: detect,tech,domain,service
+  severity: info
+tcp:
+- name: dnsversion-bind-req
+  inputs:
+  - data: \0\x06\x01\0\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: domain
+    type: regex
+    regex:
+    - (?i)\x07version\x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03.{7}ZyWALL DNS

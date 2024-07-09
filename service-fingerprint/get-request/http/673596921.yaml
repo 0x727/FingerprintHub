@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Huacam Cyclops IP camera http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 302 Redirect\r\nServer: GS-Webs\r\nDate: .*\r\nLocation: http://\x07/index\.html\r\n\r\n'

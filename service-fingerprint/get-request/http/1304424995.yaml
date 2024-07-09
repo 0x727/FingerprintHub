@@ -1,0 +1,20 @@
+id: http
+info:
+  name: W&T Web-Thermograph NTC http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    info: firmware 1.53
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK\r\n.*<title>Web-Thermograph NTC, 10/100BT, 12-24V</title>\r\n

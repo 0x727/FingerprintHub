@@ -1,0 +1,21 @@
+id: gnutella
+info:
+  name: BearShare Lite Gnutella P2P client
+  author: nmap,cn-kali-team
+  tags: detect,tech,gnutella,service
+  severity: info
+  metadata:
+    info: Web disabled
+    operating_system: Windows
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gnutella
+    type: regex
+    regex:
+    - '^HTTP/1\.1 503 Web: Disabled\r\nServer: BearShare Lite ([\d.]+)\r\nContent-Length: \d+\r\n'

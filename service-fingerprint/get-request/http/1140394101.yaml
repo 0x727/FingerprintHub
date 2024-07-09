@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Silicondust HDHomeRun set top box http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: 'model: $2; firmware: $3'
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nSERVER: HDHomeRun/([\w._-]+)\r\n.*<div class=\"S\">Model: ([\w._-]+)<br/>Device ID: [\w._-]+<br/>Firmware: ([\w._-]+)</div>'

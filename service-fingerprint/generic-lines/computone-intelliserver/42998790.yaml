@@ -1,0 +1,22 @@
+id: computone-intelliserver
+info:
+  name: Computone IntelliServer serial port terminal server
+  author: nmap,cn-kali-team
+  tags: detect,tech,computone-intelliserver,service
+  severity: info
+  metadata:
+    device_type: bridge
+    hostname: $1
+    operating_system: cnx
+    version: $2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: computone-intelliserver
+    type: regex
+    regex:
+    - ^\nWelcome to the Computone IntelliServer `([\w._-]+)'\nRunning cnx kernel release ([\w._, -]+)\n\npt-ses day time  owner         command\n

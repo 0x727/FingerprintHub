@@ -1,0 +1,21 @@
+id: http
+info:
+  name: ENI-Web httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: SpeedStream $2 router http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: .*\r\nServer: ENI-Web/R([\d_.]+)\r\nContent-Type: text/html\r\nExpires: .*\r\nLast-Modified: .*\r\nCache-Control: no-cache\r\nPragma: no-cache\r\n\r\n<html>\n\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\">\n<title>SpeedStream (\d+) Management Interface</title>\n</head>\n\n'

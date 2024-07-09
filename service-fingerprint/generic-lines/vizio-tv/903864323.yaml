@@ -1,0 +1,19 @@
+id: vizio-tv
+info:
+  name: Vizio Smart TV unknown service
+  author: nmap,cn-kali-team
+  tags: detect,tech,vizio-tv,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vizio-tv
+    type: regex
+    regex:
+    - ^ERROR\x7c101\x7cUnknown Message Type\x7cEND

@@ -1,0 +1,19 @@
+id: caldav
+info:
+  name: Radicale calendar and contacts server
+  author: nmap,cn-kali-team
+  tags: detect,tech,caldav,service
+  severity: info
+  metadata:
+    info: Python BaseHTTPServer
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: caldav
+    type: regex
+    regex:
+    - '^<head>\n<title>Error response</title>\n</head>\n<body>\n<h1>Error response</h1>\n<p>Error code 400\.\n<p>Message: Bad request syntax \(''HELP''\)\.\n<p>Error code explanation: 400 = Bad request syntax or unsupported method\.\n</body>\n'

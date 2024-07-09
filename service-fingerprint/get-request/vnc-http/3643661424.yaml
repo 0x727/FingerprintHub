@@ -1,0 +1,19 @@
+id: vnc-http
+info:
+  name: Axeda Desktop Viewer
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc-http,service
+  severity: info
+  metadata:
+    info: Resolution $1x$2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc-http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\n\n<HTML>\n  <HEAD><TITLE> \[[\w._-]+\] </TITLE></HEAD>\n  <BODY>\n  <SPAN style=''position: absolute; top:0px;left:0px''>\n<OBJECT \n    ID=''AxedaDesktopViewer''\n    classid = ''clsid:8AD9C840-044E-11D1-B3E9-00805F499D93''\n    codebase = ''http://java\.sun\.com/update/1\.4\.2/jinstall-1_4-windows-i586\.cab#Version=1,4,0,0''\n    WIDTH = (\d+) HEIGHT = (\d+) >\n'

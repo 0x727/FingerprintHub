@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Avocent DSView remote management httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Moved Temporarily\r\nDate: .*\r\nServer: Avocent DSView ([\w._/-]+)\r\nLocation: https://([\w._-]+)/dsview/\r\nConnection: close\r\n\r\n'

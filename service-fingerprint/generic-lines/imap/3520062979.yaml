@@ -1,0 +1,19 @@
+id: imap
+info:
+  name: Cisco VPN Concentrator 3000-series imapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,imap,service
+  severity: info
+  metadata:
+    device_type: terminal server
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: imap
+    type: regex
+    regex:
+    - ^\* OK IMAP4 1\.0 server ready\r\n\* BAD Argument\r\n

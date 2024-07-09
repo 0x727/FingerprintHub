@@ -1,0 +1,17 @@
+id: labtech-redirector
+info:
+  name: Labtech
+  author: nmap,cn-kali-team
+  tags: detect,tech,labtech-redirector,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: labtech-redirector
+    type: regex
+    regex:
+    - ^\x02\0\0\x01B\t\0\0\x01B$

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Axway API Gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 403 Forbidden\r\nDate: .*\r\nServer: Gateway\r\nConnection: close\r\nX-CorrelationID: Id-[a-f0-9]{24} 0\r\nContent-Type: text/html\r\n\r\nAccess Denied'

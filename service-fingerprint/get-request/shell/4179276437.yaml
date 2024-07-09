@@ -1,0 +1,19 @@
+id: shell
+info:
+  name: OpenVMS shelld
+  author: nmap,cn-kali-team
+  tags: detect,tech,shell,service
+  severity: info
+  metadata:
+    operating_system: OpenVMS
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: shell
+    type: regex
+    regex:
+    - ^\x01INTERnet ACP Error  Status = %SYSTEM-F-TOOMUCHDATA\r\n\0$

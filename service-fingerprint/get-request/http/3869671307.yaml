@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Yamaha M7CL sound board http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nX-DEVICE-VALUE:Not Found\r\nServer: Encore/([\w._-]+)\r\nContent-Length: 134\r\n\r\n<html><head>\r\n<META NAME=\"DEVICE-VALUE\" CONTENT=\"Not Found\">\r\n</head><body>\r\n<DIV CLASS=\"DEVICE-VALUE\">Not Found</DIV>\r\n</body></html>$'

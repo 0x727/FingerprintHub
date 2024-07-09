@@ -1,0 +1,17 @@
+id: http
+info:
+  name: JBoss Enterprise Application Platform
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nConnection: close\r\nLast-Modified: .*\r\nContent-Type: text/html\r\nContent-Length: \d+\r\nDate: .*\r\n\r\n<!--\n  ~ JBoss, Home of Professional Open Source\.\n  ~ Copyright \(c\) \d\d\d\d, Red Hat, Inc\., and individual contributors'

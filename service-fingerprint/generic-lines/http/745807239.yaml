@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Boa httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: proxy server
+    info: SonicWALL $1 http proxy
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 501 Not Implemented\r\n(?:[^\r\n]+\r\n)*?Server: SonicWALL (SSL-VPN [\w._-]+) Web Server\.\r\n.*POST to non-script is not supported\.\n'

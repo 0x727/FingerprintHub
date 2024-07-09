@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: Palo Alto PanWeb httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: four-oh-four-request
+  inputs:
+  - data: GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 404 Not Found\r\nDate: .*\r\nServer: PanWeb Server/ - \r\n'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: DVRWeb viewer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: CmdPort $2; StreamPort $3
+    version: $SUBST(1,",",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\nContent-type: text/html\r\nDate: .*?\r\nConnection: close\r\n\r\n.*<OBJECT\s+classid=\"clsid:EE479A40-C128-40DD-93DA-000556AF9607\"\r\n\t  codebase=\"CtrWeb\.cab#version=([\d,]+)\".*?<param name=\"CmdPort\" value=\"(\d+)\">\n<param name=\"StreamPort\" value=\"(\d+)\">'

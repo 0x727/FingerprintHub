@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: YSoft SafeQ smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    device_type: print server
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 Welcome to SafeQ Mail Service\.\r\n

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Humax HG100R router http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nContent-Length: 3306\r\nConnection: close\r\n\r\n\xef\xbb\xbf<!DOCTYPE html>\r\n<!--\[if lte IE 8\]><html class="ie ie8" lang="ko"><!\[endif\]-->\r\n<!--\[if gte IE 9\]><html class="ie ie9" lang="ko"><!\[endif\]-->\r\n<html lang="ja">'

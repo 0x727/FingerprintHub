@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Mbedthis-Appweb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: storage-misc
+    info: Iomega StorCenter ix2 NAS device
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 302 Moved Temporarily\r\n(?:[^\r\n]+\r\n)*?Server: Mbedthis-Appweb/([\d.]+)\r\n(?:[^\r\n]+\r\n)*?Set-Cookie: _appwebSessionId_='

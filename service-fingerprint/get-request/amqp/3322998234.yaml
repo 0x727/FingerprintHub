@@ -1,0 +1,17 @@
+id: amqp
+info:
+  name: Advanced Message Queue Protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,amqp,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: amqp
+    type: regex
+    regex:
+    - ^AMQP\x01\x01\x00\x0a$

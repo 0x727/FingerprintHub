@@ -1,0 +1,17 @@
+id: realplayfavs
+info:
+  name: RealPlayer Shared Favorites
+  author: nmap,cn-kali-team
+  tags: detect,tech,realplayfavs,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: realplayfavs
+    type: regex
+    regex:
+    - '^_realplayfavs_::'

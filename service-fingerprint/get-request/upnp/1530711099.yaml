@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: D-Link $2 WAP upnpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: UPnP $1
+    version: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nServer: Linux, UPnP/([\d.]+), (DAP-\d+) Ver ([\d.]+)\r\n'

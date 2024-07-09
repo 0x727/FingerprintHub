@@ -1,0 +1,21 @@
+id: http
+info:
+  name: PWLib http
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: PBX
+    info: Philips Sopho $3 PBX http config; PWLib $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: PWLib-HTTP-Server/([\w._-]+) PWLib/([\w._-]+)\r\n(?:[^\r\n]+\r\n)*?Expires: Tue, 01 Jan 1980 00:00:00 GMT\r\n.*<title>SOPHO (\w+) In-System Gateway</title>'

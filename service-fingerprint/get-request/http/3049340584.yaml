@@ -1,0 +1,22 @@
+id: http
+info:
+  name: NetPort httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    hostname: $2
+    info: Polycom VSX 8000 http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: NetPort Software ([\d.]+)\r\n.*\n<title>([-\w_.]+) - VSX 8000</title>'

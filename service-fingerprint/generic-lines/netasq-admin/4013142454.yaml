@@ -1,0 +1,19 @@
+id: netasq-admin
+info:
+  name: Netasq firewall admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,netasq-admin,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: netasq-admin
+    type: regex
+    regex:
+    - ^200 code=00100200 msg=\"[^"]+\"\r\n200 code=00100200 msg=\"[^"]+\"\r\n$

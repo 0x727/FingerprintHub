@@ -1,0 +1,19 @@
+id: bitdefender-ctrl
+info:
+  name: Bitdefender Remote Admin Console
+  author: nmap,cn-kali-team
+  tags: detect,tech,bitdefender-ctrl,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bitdefender-ctrl
+    type: regex
+    regex:
+    - ^\(null\) 500 Internal Error\n\(null\) 500 Internal Error\n$

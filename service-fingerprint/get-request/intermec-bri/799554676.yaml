@@ -1,0 +1,17 @@
+id: intermec-bri
+info:
+  name: Intermec Basic Reader Interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,intermec-bri,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: intermec-bri
+    type: regex
+    regex:
+    - ^ERR UNAVAILABLE\r\nOK>\r\nOK>\r\n

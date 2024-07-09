@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Zebra $1 label printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nExpires: Sat, 01 Jan 2000 00:00:00 GMT\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3\.2 Final//EN\">\r\n<HTML>\r\n<HEAD><TITLE>ZBR\w+ - (?:PAUSED|READY)</TITLE><meta http-equiv=\"Pragma\" content=\"no-cache\"><meta http-equiv=\"Expires\" content=\"0\"></HEAD>\r\n<BODY><CENTER>\r\n<IMG SRC=\"logo\.png\" ALT=\"\[Logo\]\">\r\n<H1>Zebra Technologies<BR>\r\nZTC ([\w -]+)</H1>'

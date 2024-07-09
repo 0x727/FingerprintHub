@@ -1,0 +1,17 @@
+id: consul
+info:
+  name: HashiCorp Consul RPC
+  author: nmap,cn-kali-team
+  tags: detect,tech,consul,service
+  severity: info
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x80\0\0\x28\x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: consul
+    type: regex
+    regex:
+    - ^\x82\xa5Error\xb2Handshake required\xa3Seq\0

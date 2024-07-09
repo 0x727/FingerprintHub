@@ -1,0 +1,21 @@
+id: soap
+info:
+  name: gSOAP
+  author: nmap,cn-kali-team
+  tags: detect,tech,soap,service
+  severity: info
+  metadata:
+    hostname: $2
+    info: Good Messaging Server gdpushproc
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: soap
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 500 Internal Server Error\r\nServer: gSOAP/([\w._-]+)\r\n.* xmlns:pushws=\"https://([\w._-]+):\d+/pushws\">.*<faultstring>HTTP GET method not implemented</faultstring>'

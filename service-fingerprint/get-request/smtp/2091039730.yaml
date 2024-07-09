@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: Postfix smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - '(?i)^220[ -]([\w._-]+) ESMTP\r.*\n521 5\.7\.0 Error: I can break rules, too\. Goodbye\.\r\n'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Avaya 9670 VoIP Phone httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 403 Forbidden\r\nDate: [A-Z]+ [A-Z]+ \d\d \d\d:\d\d:\d\d \d\d\d\d\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\n\r\n<html><head><title>Document Error: Forbidden</title></head>\r\n\t\t<body><h2>Access Error: Forbidden</h2>\r\n\t\t<p>HTTP/1\.0 403 Forbidden\n</p></body></html>\r\n\r\n'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: HP Integrated Lights-Out https redirector
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: remote management
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nExpires: .*\r\nDate: .*\r\nContent-type: text/html\r\n\r\n<\?xml version="1\.0" encoding="iso-8859-1"\?>\n<!DOCTYPE html PUBLIC\n    "-//W3C//DTD XHTML 1\.0 Transitional//EN"\n    "http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd">\n\n<html style="overflow:hidden" xmlns="http://www\.w3\.org/1999/xhtml">\n\n<head>\n<!--\n\*{74}\n\* \(C\) Copyright 2\d\d\d-2\d\d\d Hewlett-Packard Development Company, L\.P\.\n'

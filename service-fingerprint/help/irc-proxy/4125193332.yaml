@@ -1,0 +1,19 @@
+id: irc-proxy
+info:
+  name: ezbounce irc proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,irc-proxy,service
+  severity: info
+  metadata:
+    operating_system: Unix
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: irc-proxy
+    type: regex
+    regex:
+    - ^:ezbounce!srv NOTICE \(unknown\) :\x02

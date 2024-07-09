@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Allegro RomPager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: D-Link DSL-300g or g+ http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nContent-Type: text/html\r\n(?:[^\r\n]+\r\n)*?Pragma: no-cache\r\nServer: Allegro-Software-RomPager/ ?([\w.]+)\r\n\r\n<HTML><head>\n<META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=iso-8859-1\">\n<TITLE></TITLE></HEAD><frameset framespacing=\"0\" BORDER=\"false\" frameborder=\"0\" rows=\"90,\*\">\n  <frame NAME=\"fLogo\" scrolling=\"no\" noresize src=\"/html/Hlogo\.html\"'

@@ -1,0 +1,19 @@
+id: imap
+info:
+  name: MailEnable imapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,imap,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: imap
+    type: regex
+    regex:
+    - ^\* OK IMAP4rev1 server ready at \d\d/\d\d/\d\d \d?\d:\d\d:\d\d\r\nGET BAD UNKNOWN Command\r\n\r\n BAD UNKNOWN Command\r\n

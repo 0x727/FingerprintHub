@@ -1,0 +1,17 @@
+id: iodine
+info:
+  name: iodine IP-over-DNS tunnel
+  author: nmap,cn-kali-team
+  tags: detect,tech,iodine,service
+  severity: info
+tcp:
+- name: dnsstatus-request
+  inputs:
+  - data: \0\0\x10\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: iodine
+    type: regex
+    regex:
+    - ^\x80\xa7\x84\0\0\x01\0\x01\0\0\0\0.*\0\0\x0a\0\x01\xc0\x0c\0\n\0\x01\0\0\0\0\0\x05BADIP$

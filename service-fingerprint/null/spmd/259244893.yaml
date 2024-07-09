@@ -1,0 +1,19 @@
+id: spmd
+info:
+  name: Softimage XSI SPMD license server
+  author: nmap,cn-kali-team
+  tags: detect,tech,spmd,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: spmd
+    type: regex
+    regex:
+    - ^SPMD_ACK\0\0\x01\0\x01$

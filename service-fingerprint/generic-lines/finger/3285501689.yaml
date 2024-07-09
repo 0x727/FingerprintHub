@@ -1,0 +1,19 @@
+id: finger
+info:
+  name: Debian fingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+  metadata:
+    operating_system: Linux
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - ^Login     Name       Tty      Idle  Login Time   Office     Office Phone\r\n

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Perforce P4Web httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'name: $1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: text/html \r\nSet-Cookie: P4W\d+=([^;\r\n]+); expires=Fri, 1-Dec-1999 23:59:59 GMT; path=/ \r\n\r\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4\.0 Transitional//EN"\n"http://www\.w3\.org/TR/REC-html40/loose\.dtd">\n<Html>\n<Head>\n<Title>P4Web - Login</Title>'

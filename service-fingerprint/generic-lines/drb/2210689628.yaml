@@ -1,0 +1,19 @@
+id: drb
+info:
+  name: Ruby DRb RMI
+  author: nmap,cn-kali-team
+  tags: detect,tech,drb,service
+  severity: info
+  metadata:
+    info: Ruby $2; path $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: drb
+    type: regex
+    regex:
+    - ^\0\0\0\x03\x04\x08F\0\0\x03.\x04\x08o:\x16DRb::DRbConnError\x07:\x07bt\[.\"/(/usr/lib/ruby/([\w._-]+)/drb)/drb\.rb:573

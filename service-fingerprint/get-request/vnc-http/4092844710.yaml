@@ -1,0 +1,21 @@
+id: vnc-http
+info:
+  name: TightVNC
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc-http,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: 'resolution: $2x$3; VNC TCP port: $4'
+    version: 1.2.2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc-http
+    type: regex
+    regex:
+    - ^HTTP/1\.0 200 OK\n\n<HTML><TITLE>TightVNC desktop \[([-.\w]+)\]</TITLE>\n<APPLET CODE=vncviewer\.class ARCHIVE=vncviewer\.jar WIDTH=(\d+) HEIGHT=(\d+)>\n<param name=PORT value=(\d+)>

@@ -1,0 +1,17 @@
+id: wsman
+info:
+  name: Openwsman
+  author: nmap,cn-kali-team
+  tags: detect,tech,wsman,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: wsman
+    type: regex
+    regex:
+    - ^HTTP/1\.1 501 Method Not Implemented\r\n\r\n501 Method Not Implemented

@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: Burp Suite Pro http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    version: '1.5'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 502 Bad gateway\r\n\r\nBurp proxy error: Invalid client request received: First line of request did not contain an absolute URL - try enabling invisible proxy support\r\n$'

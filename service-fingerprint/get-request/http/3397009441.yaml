@@ -1,0 +1,19 @@
+id: http
+info:
+  name: D-Link DIR-100 http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Found\nServer: Alpha_webserv\nDate: .*\r\nContent-Type: text/html\nAccept-Ranges: bytes\nLocation: /public/login\.htm\nX-Pad: avoid browser bug\n\n'

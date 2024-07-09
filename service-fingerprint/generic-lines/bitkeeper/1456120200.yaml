@@ -1,0 +1,17 @@
+id: bitkeeper
+info:
+  name: Bitkeeper
+  author: nmap,cn-kali-team
+  tags: detect,tech,bitkeeper,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bitkeeper
+    type: regex
+    regex:
+    - ^ERROR-Try help\nERROR-Try help\n$

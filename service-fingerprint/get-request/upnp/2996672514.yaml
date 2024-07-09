@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Universal Media Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: 'arch: $2; UPnP $3'
+    operating_system: $SUBST(1,"_"," ")
+    version: $4
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r.*\nS(?:erver|ERVER): (Windows_[^-]+)-([^-]+)-[\d.]+, UPnP/([\d.]+), UMS/([\d.]+)\r\n'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Cisco Catalyst switch http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: switch
+    operating_system: IOS
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized \nContent-type:text/html\nExpires: .*\nWWW-Authenticate: Basic realm=\"access\"\n\n<HEAD><TITLE>Authorization Required</TITLE></HEAD><BODY BGCOLOR=#FFFFFF><H1>Authorization Required</H1>Browser not authentication-capable or authentication failed\.</BODY>\n\n'

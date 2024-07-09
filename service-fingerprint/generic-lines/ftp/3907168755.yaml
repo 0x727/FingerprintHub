@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: Multitech MultiVoip 410 VoIP gateway ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - ^220 Service ready\r\n500 Unsupported command\r\n$

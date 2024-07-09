@@ -1,0 +1,17 @@
+id: isymphony-cli
+info:
+  name: iSymphony call manager CLI
+  author: nmap,cn-kali-team
+  tags: detect,tech,isymphony-cli,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: isymphony-cli
+    type: regex
+    regex:
+    - '^iSymphony/SERVER # $'

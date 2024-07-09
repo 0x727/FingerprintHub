@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Black Box 8-port Ethernet switch http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: switch
+    info: MyWeb $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 \r\nServer: MyWeb ([\w._-]+)\r\nDate: .* GMT\r\nWWW-Authenticate: Basic realm=\"index\.htm\"\r\n\r\n$'

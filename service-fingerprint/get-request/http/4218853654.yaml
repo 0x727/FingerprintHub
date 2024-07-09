@@ -1,0 +1,17 @@
+id: http
+info:
+  name: ControlByWeb X-310 controller web interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nCache-Control: no-store\r\nContent-Type: text/html\r\nContent-length: \d+\r\n\r\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4\.01//EN" "http://www\.w3\.org/TR/html4/strict\.dtd"><html id=htmlID><head><title>[^<]+</title><style type="text/css">\*\{padding:0;margin:0\}html,body\{background:url\("dark_carbon\.png"\) repeat;'

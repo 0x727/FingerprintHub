@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Huawei ADSL modem http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nCache-Control: no-cache\r\nDate: .*\r\nConnection: Keep-Alive\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n\r\n<html>\n<head>\n<META http-equiv="Content-Type" content="text/html; charset=UTF-8" />\n<link rel="icon" type="image/icon" href="/favicon\.ico"/>\n<script language="JavaScript" src="\.\./js/util\.js"></script>\n<script language="JavaScript" src="\.\./js/webtoolkit\.sha256\.js"></script>\n<script language="JavaScript" src="/lang/msgerrcode\.res"></script>\n'

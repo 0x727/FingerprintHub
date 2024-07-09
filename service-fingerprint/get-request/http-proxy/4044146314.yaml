@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: HAVP anti-virus web proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - ^HTTP/1\.0 403 Request error by HAVP\r\n

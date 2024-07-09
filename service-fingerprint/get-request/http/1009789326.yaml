@@ -1,0 +1,20 @@
+id: http
+info:
+  name: 4D RDBMS web server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: TOPIX8 CRM
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nAccept-Ranges: bytes\r\nCache-Control: no-cache\r\nConnection: close\r\nContent-Length: \d+\r\nContent-Type: text/html; charset=ISO-8859-1\r\nDate: .*\r\nExpires: 0\r\nPragma: no-cache\r\nServer: 4D/([\d.]+)\r\n\r\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4\.01 Transitional//EN">\n<html>\n<head>\n<title>TOPIX8'

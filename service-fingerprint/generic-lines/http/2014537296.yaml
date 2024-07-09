@@ -1,0 +1,19 @@
+id: http
+info:
+  name: PunkBuster http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'Game: $1'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\nAccept: text/html\nConnection: close\n\n<html>\n<body text=#FFFFFF bgcolor=#000000>\n<center><b><hr height=4 width=400 color=#FF0000>\n<font size=5>PunkBuster Server WebTool for ([-\w_.]+)</font>'

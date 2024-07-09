@@ -1,0 +1,17 @@
+id: cmae
+info:
+  name: Cloudmark cmae_server antispam
+  author: nmap,cn-kali-team
+  tags: detect,tech,cmae,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: cmae
+    type: regex
+    regex:
+    - ^_err=refused%20by%20workers\r\n$

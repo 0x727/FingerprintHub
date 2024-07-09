@@ -1,0 +1,21 @@
+id: http
+info:
+  name: ACTi E31 surveillance camera http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nServer: Httpd v([\w._-]+) (\d\d\w\w\w\d\d\d\d)\r\nContent-Type: text/html\r\n(?:[^\r\n]+\r\n)*?\r\n\xef\xbb\xbf<html>.*<title>Web Configurator</title>'

@@ -1,0 +1,17 @@
+id: ajp13
+info:
+  name: Apache Jserv
+  author: nmap,cn-kali-team
+  tags: detect,tech,ajp13,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ajp13
+    type: regex
+    regex:
+    - ^AB\0\x13\x04\x01\x90\0\x0bBad Request\0\0\0AB\0\x02\x05\x01$

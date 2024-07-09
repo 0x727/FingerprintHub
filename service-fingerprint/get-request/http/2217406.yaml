@@ -1,0 +1,17 @@
+id: http
+info:
+  name: XX-Net web proxy tool
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n\r\n<!DOCTYPE html>\n<html lang="en"><!-- See http://www\.w3schools\.com/tags/ref_language_codes\.asp -->\n<head>\n    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">\n    <title>XX-Net</title>'

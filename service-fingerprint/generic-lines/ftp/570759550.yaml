@@ -1,0 +1,20 @@
+id: ftp
+info:
+  name: Bulletproof ftp server
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    hostname: $1
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - '^220 ([-.\w]+) FTP Server ready \.\.\.\r\n530 \r  : User not logged in\. Please login with USER and PASS first\.\r\n530 \r  : User not logged in\. Please login with USER and PASS first\.\r\n$'

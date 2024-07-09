@@ -1,0 +1,19 @@
+id: kerberos-sec
+info:
+  name: Mac OS X kerberos-sec
+  author: nmap,cn-kali-team
+  tags: detect,tech,kerberos-sec,service
+  severity: info
+  metadata:
+    operating_system: Mac OS X
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: kerberos-sec
+    type: regex
+    regex:
+    - (?i)^\0\0\0.~\x81.0\x81..\x03\x02\x01\x05.\x03\x02\x01\x1e.\x11\x18\x0f

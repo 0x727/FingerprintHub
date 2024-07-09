@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Lutron HomeWorks web keypad
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nConnection: close\r\nLast-Modified: \d+/\d+/\d+ \d+:\d+:\d+ [AP]M\r\nContent-Length: \d+\r\nContent-Type: text/html\r\n\r\n<HTML>\r\n<HEAD>\r\n<TITLE>HomeWorks Illumination Web Keypad</title>'

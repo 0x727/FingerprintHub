@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Teckinfo InterDialog UCCS
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 NOT FOUND\r\nServer: InterDialog\r\nConnection: close\r\nDate: .* India Standard Time\r\nCache-Control: private\r\nContent-Length: 14\r\nContent-type: text\r\n\r\nPage Not Found'

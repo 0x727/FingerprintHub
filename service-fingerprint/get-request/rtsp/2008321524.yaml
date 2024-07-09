@@ -1,0 +1,21 @@
+id: rtsp
+info:
+  name: Microsoft Windows Media Services
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp,service
+  severity: info
+  metadata:
+    info: Spanish
+    operating_system: Windows
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp
+    type: regex
+    regex:
+    - '^RTSP/1\.0 505 Versi\xc3\xb3n del protocolo no compatible\r\nDate: .*\r\nServer: WMServer/([\w._-]+)\r\n\r\n$'

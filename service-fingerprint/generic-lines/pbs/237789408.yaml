@@ -1,0 +1,19 @@
+id: pbs
+info:
+  name: Portable Batch System
+  author: nmap,cn-kali-team
+  tags: detect,tech,pbs,service
+  severity: info
+  metadata:
+    version: 2.$1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pbs
+    type: regex
+    regex:
+    - ^\+2\+(\d)5\+15058\+0\+72\+56Bad DIS based Request Protocol MSG=cannot decode message

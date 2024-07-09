@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Agranat-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Avaya G350 Media Gateway http config
+    version: $SUBST(1,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 (?:[^\r\n]*\r\n(?!\r\n))*?Server: Agranat-EmWeb/R([\d_]+)\r\n.*<SCRIPT LANGUAGE=JavaScript>\nvar helpUrl = \"\";\n//Ip we are coming from\nvar ip=document\.domain;\n\n'

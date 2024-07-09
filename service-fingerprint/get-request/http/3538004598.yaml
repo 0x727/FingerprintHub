@@ -1,0 +1,21 @@
+id: http
+info:
+  name: File Share httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: phone
+    info: Android mobile phone
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.1 200 OK\r\n\r\n<html><head><title>File Share</title></head><body><a href=\"/folder/0\">Public</a><br/></body></html>$

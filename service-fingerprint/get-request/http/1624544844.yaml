@@ -1,0 +1,20 @@
+id: http
+info:
+  name: APE Comet Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'build: $2'
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nPragma: no-cache\r\nCache-Control: no-cache, must-revalidate\r\nExpires: Thu, 27 Dec 1986 07:30:00 GMT\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2\.0//EN"><html><head><title>APE Server</title></head><body><h1>APE Server</h1><p>No command given\.</p><hr><address>http://www\.ape-project\.org/ - Server (\d[\w._-]+) \(Build ([^\)]+)\)</address></body></html>'

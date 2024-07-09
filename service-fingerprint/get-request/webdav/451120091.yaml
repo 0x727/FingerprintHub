@@ -1,0 +1,20 @@
+id: webdav
+info:
+  name: WsgiDAV
+  author: nmap,cn-kali-team
+  tags: detect,tech,webdav,service
+  severity: info
+  metadata:
+    info: CherryPy $2; Python $3
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: webdav
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: WsgiDAV/(\d[\w._-]*) CherryPy/(\d[\w._-]+) Python/(\d[\w._-]+)\r\n'

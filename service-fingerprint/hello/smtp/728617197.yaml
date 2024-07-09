@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: Lotus Notes smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    info: 'timezone: $1'
+tcp:
+- name: hello
+  inputs:
+  - data: EHLO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 ESMTP (?:\(NO U[BC]E\))* ?server ready at \w\w\w, \d\d \w\w\w \d\d\d\d [\d:]{8} ([-+]?\d\d\d\d)\r\n501 Command "EHLO" requires an argument\r\n

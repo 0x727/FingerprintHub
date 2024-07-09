@@ -1,0 +1,17 @@
+id: irc
+info:
+  name: Hybrid ircd
+  author: nmap,cn-kali-team
+  tags: detect,tech,irc,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: irc
+    type: regex
+    regex:
+    - ^ERROR :Trying to reconnect too fast\.\r\n

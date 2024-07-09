@@ -1,0 +1,17 @@
+id: multicraft
+info:
+  name: Bitnami Multicraft
+  author: nmap,cn-kali-team
+  tags: detect,tech,multicraft,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: multicraft
+    type: regex
+    regex:
+    - ^>ERROR - client not authorized\n>ERROR - client not authorized\n

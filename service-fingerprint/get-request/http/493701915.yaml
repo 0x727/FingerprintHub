@@ -1,0 +1,17 @@
+id: http
+info:
+  name: TCS John Huxley Gaming Floor Live httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Redirection\r\nServer: TCSJH-WebServer\r\nDate: .* GMT\r\nLocation: http://[\w._-]+:\d+/index\.htm\r\n\r\n$'

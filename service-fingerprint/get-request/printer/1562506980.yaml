@@ -1,0 +1,19 @@
+id: printer
+info:
+  name: Sun Solaris lpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,printer,service
+  severity: info
+  metadata:
+    operating_system: Solaris
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: printer
+    type: regex
+    regex:
+    - '^Invalid protocol request \(71\): GGET / HTTP/1\.0\r\n\n$'

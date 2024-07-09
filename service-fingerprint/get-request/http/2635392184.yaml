@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Payara Server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Servlet $2; JSP $3; Java $4
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nServer: Payara Server +([\d. ]+)(?: #badassfish)?\r\nX-Powered-By: Servlet/([\d.]+) JSP/([\d.]+) \(Payara Server.* Java/Oracle Corporation/([\d.]+)\)\r\n'

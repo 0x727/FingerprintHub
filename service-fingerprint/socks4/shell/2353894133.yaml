@@ -1,0 +1,19 @@
+id: shell
+info:
+  name: Windows Services for Unix rsh
+  author: nmap,cn-kali-team
+  tags: detect,tech,shell,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: socks4
+  inputs:
+  - data: \x04\x01\x00\x16\x7f\x00\x00\x01root\x00
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: shell
+    type: regex
+    regex:
+    - ^\0Access is denied\n$

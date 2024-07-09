@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: Axigen smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: hello
+  inputs:
+  - data: EHLO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 ([\w._-]+) Mail ESMTP ready\r\n250-\1 Axigen ESMTP hello\r\n

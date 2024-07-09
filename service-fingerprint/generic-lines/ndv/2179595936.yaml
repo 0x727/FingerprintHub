@@ -1,0 +1,19 @@
+id: ndv
+info:
+  name: Neocoretech NDV
+  author: nmap,cn-kali-team
+  tags: detect,tech,ndv,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ndv
+    type: regex
+    regex:
+    - ^NDV_([\d.]+) (?:[0-9a-f][0-9a-f]:){5}[0-9a-f][0-9a-f]\n

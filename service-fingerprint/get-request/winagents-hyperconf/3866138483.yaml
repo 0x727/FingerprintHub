@@ -1,0 +1,19 @@
+id: winagents-hyperconf
+info:
+  name: WinAgents HyperConf configuration management
+  author: nmap,cn-kali-team
+  tags: detect,tech,winagents-hyperconf,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: winagents-hyperconf
+    type: regex
+    regex:
+    - '^ROSC: Invalid connection string$'

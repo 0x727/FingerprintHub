@@ -1,0 +1,19 @@
+id: conserver
+info:
+  name: conserver serial console daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,conserver,service
+  severity: info
+  metadata:
+    device_type: specialized
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: conserver
+    type: regex
+    regex:
+    - ^ok\r\nunknown command\r\nunknown command\r\n$

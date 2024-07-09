@@ -1,0 +1,17 @@
+id: gearman
+info:
+  name: Gearman Job Queue System
+  author: nmap,cn-kali-team
+  tags: detect,tech,gearman,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gearman
+    type: regex
+    regex:
+    - ^ERR UNKNOWN_COMMAND Unknown\+server\+command\r\nERR UNKNOWN_COMMAND Unknown\+server\+command\r\n$

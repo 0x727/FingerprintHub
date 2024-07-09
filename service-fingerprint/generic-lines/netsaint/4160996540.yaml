@@ -1,0 +1,17 @@
+id: netsaint
+info:
+  name: Nagios Statd Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,netsaint,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: netsaint
+    type: regex
+    regex:
+    - ^ERROR No function requested from client\.

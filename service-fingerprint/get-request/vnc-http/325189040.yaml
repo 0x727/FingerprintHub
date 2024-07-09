@@ -1,0 +1,19 @@
+id: vnc-http
+info:
+  name: TightVNC
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc-http,service
+  severity: info
+  metadata:
+    version: 1.2.8
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc-http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK[\r\n]*.*<!-- \n     index\.vnc - default HTML page for TightVNC Java viewer applet, to be\n     used with Xvnc\. On any file ending in \.vnc, the HTTP server embedded in\n     Xvnc will substitute the following variables when preceded by a dollar:\n     USER, DESKTOP, DISPLAY, APPLETWIDTH, APPLETHEIGHT, WIDTH, HEIGHT, PORT,\n

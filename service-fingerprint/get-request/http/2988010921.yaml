@@ -1,0 +1,19 @@
+id: http
+info:
+  name: BMC/Marimba Management http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Error Condition
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 500 Internal Server Error\r\nContent-type: text/html; charset=UTF-8\r\n\r\n<html><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=UTF-8\"><body>\r\nInternal Server Error</body>\r\n</html>\r\n'

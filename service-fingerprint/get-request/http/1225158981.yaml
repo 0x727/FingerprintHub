@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Edicom AS2 proxy server http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: proxy server
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: EDICOM-HTTP\r\n.*<meta name=\"Author\" \r\ncontent=\"Santiago Bellosta\">.*<title>EDICOM AS2 \r\nSERVER</title>'

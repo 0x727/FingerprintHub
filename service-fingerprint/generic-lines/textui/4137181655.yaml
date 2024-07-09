@@ -1,0 +1,19 @@
+id: textui
+info:
+  name: Vizio television textui
+  author: nmap,cn-kali-team
+  tags: detect,tech,textui,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: textui
+    type: regex
+    regex:
+    - ^too many clients, shut down int 15 seconds\n

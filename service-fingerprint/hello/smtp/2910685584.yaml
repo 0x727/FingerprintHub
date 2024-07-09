@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: Konica Minolta bizhub 350 printer smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: hello
+  inputs:
+  - data: EHLO\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 \r\n501 \r\n

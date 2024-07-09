@@ -1,0 +1,19 @@
+id: smux
+info:
+  name: Linux SNMP multiplexer
+  author: nmap,cn-kali-team
+  tags: detect,tech,smux,service
+  severity: info
+  metadata:
+    operating_system: Linux
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smux
+    type: regex
+    regex:
+    - ^A\x01\x02$

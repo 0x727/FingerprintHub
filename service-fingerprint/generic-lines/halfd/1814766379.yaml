@@ -1,0 +1,19 @@
+id: halfd
+info:
+  name: halfd Half-Life admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,halfd,service
+  severity: info
+  metadata:
+    info: Name $1; HL port $2
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: halfd
+    type: regex
+    regex:
+    - ^{type INIT} {up \d+} {auth \d+} {name {([^}]+)}} {ip [\d.]+} {max \d+} {port (\d+)}\r\n

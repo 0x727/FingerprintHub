@@ -1,0 +1,20 @@
+id: http
+info:
+  name: COLIB_ASYNC_HTTP_SERVER
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Cotendo content delivery network
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nServer: COLIB_ASYNC_HTTP_SERVER/([\w._-]+)\r\n'

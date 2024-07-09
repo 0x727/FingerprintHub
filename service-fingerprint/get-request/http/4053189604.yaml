@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Lenel Embedded Web Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\ncontent-type: text/html\r\nconnection: close\r\nserver: Lenel Embedded Web Server/([\d.]+)\r\ndate: .*\r\n\r\n'

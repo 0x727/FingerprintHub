@@ -1,0 +1,20 @@
+id: smtp
+info:
+  name: Network Associates WebShield
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+    version: $2
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220(\S+) WebShield SMTP V(\d\S.*?) Network Associates, Inc\. Ready at

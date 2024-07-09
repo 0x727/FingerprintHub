@@ -1,0 +1,20 @@
+id: chilliworx
+info:
+  name: ChilliWorx management console
+  author: nmap,cn-kali-team
+  tags: detect,tech,chilliworx,service
+  severity: info
+  metadata:
+    device_type: remote management
+    version: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: chilliworx
+    type: regex
+    regex:
+    - ^ChilliSVC ([\d.]+)\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0

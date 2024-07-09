@@ -1,0 +1,21 @@
+id: http
+info:
+  name: HBHTTP
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Pogoplug NAS device
+    operating_system: Linux
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nContent-Length: 0\r\nServer: HBHTTP POGOPLUG - ([\d.]+) - Linux\r\nDate: .*\r\n\r\n$'

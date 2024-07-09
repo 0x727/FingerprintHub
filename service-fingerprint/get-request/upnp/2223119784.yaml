@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: Huawei SmartAX MT882 ADSL router UPnP
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: UPnP $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: Unknown/0\.0 UPnP/([\d.]+) Web Server\r\n.*<title>MT882 ADSL Router</title>'

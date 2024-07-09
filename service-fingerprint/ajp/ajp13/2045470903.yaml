@@ -1,0 +1,19 @@
+id: ajp13
+info:
+  name: Apache Jserv
+  author: nmap,cn-kali-team
+  tags: detect,tech,ajp13,service
+  severity: info
+  metadata:
+    info: Protocol v1.3
+tcp:
+- name: ajp
+  inputs:
+  - data: \x12\x34\x00\x01\x0a
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ajp13
+    type: regex
+    regex:
+    - ^\x41\x42\x00\x01\x09$

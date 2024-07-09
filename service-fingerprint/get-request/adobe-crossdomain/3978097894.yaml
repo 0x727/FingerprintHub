@@ -1,0 +1,20 @@
+id: adobe-crossdomain
+info:
+  name: Adobe cross-domain policy
+  author: nmap,cn-kali-team
+  tags: detect,tech,adobe-crossdomain,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+    info: 'Snom 870 VoIP phone; domain: $1; ports: $2'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: adobe-crossdomain
+    type: regex
+    regex:
+    - ^<\?xml version=\"1\.0\"\?>\r\n<!DOCTYPE cross-domain-policy SYSTEM \"/xml/dtds/cross-domain-policy\.dtd\">\r\n<cross-domain-policy>\r\n    <!-- This is a master socket policy file -->\r\n    <!-- No other socket policies on the host will be permitted -->\r\n    <site-control permitted-cross-domain-policies=\"master-only\"/>\r\n    <!-- This will allow access to port 1800 -->\r\n    <allow-access-from domain=\"([^\"]*)\" to-ports=\"([^\"]*)\"/>\r\n</cross-domain-policy>\r\n

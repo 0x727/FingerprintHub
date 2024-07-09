@@ -1,0 +1,19 @@
+id: mep
+info:
+  name: Citrix NetScaler Metric Exchange Protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,mep,service
+  severity: info
+  metadata:
+    device_type: load balancer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: mep
+    type: regex
+    regex:
+    - (?i)^\x10\0\0\0\xa5\xa5\0\0.\0`\x01\0\0\0\0

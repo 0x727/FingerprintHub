@@ -1,0 +1,20 @@
+id: http
+info:
+  name: lwIP
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Stellaris $2 microcontroller
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nServer: lwIP/([\w._-]+) \(http://www\.sics\.se/~adam/lwip/\)\r\n.*<title>Stellaris&reg; ([\w._-]+) Evaluation Kit</title>'

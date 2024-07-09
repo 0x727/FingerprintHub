@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Globus Web Service httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 404 \r\n.*<ns1:stackTrace xmlns:ns1=\"http://xml\.apache\.org/axis/\">java\.io\.IOException: Cannot handle non-GET, non-POST, non-HEAD request\n\tat org\.globus\.wsrf\.container\.ServiceThread\.parseHeaders\(ServiceThread\.java:855\)'

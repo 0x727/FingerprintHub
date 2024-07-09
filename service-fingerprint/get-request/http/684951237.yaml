@@ -1,0 +1,19 @@
+id: http
+info:
+  name: DYMO LabelWriter http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: print server
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\nContent-Type: text/html;charset=windows-1252\nContent-Length: \d+\n\n<HTML>\r\n<HEAD>\r\n<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">\r\n<TITLE>DYMO LabelWriter Print Server</TITLE>'

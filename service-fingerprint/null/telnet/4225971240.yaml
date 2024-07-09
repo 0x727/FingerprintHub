@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Symantec Raptor Firewall Secure Gateway telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    info: Access Denied
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^\r\nRaptor Firewall Secure Gateway\.\r\n\r\nAccess denied\.\r\n

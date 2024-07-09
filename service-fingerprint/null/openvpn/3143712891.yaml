@@ -1,0 +1,17 @@
+id: openvpn
+info:
+  name: OpenVPN
+  author: nmap,cn-kali-team
+  tags: detect,tech,openvpn,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: openvpn
+    type: regex
+    regex:
+    - (?i)^\0\*@.*\0\0\0\0\0

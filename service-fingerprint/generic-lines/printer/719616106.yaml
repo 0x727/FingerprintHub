@@ -1,0 +1,17 @@
+id: printer
+info:
+  name: Panasonic mfpscdl.exe service
+  author: nmap,cn-kali-team
+  tags: detect,tech,printer,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: printer
+    type: regex
+    regex:
+    - ^\xff$

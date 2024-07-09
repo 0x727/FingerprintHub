@@ -1,0 +1,19 @@
+id: finger
+info:
+  name: efingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+  metadata:
+    info: who -uHw
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - ^\nHello [\w.@-]*,\nusers currently logged in are:\n\nNAME       LINE         TIME             IDLE          PID COMMENT\n\n\r\n

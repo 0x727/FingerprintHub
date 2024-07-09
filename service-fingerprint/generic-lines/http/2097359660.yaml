@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Cisco ONS MSPP httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: HttpServer $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nConnection: close\r\nServer: HttpServer/([\d.]+)\r\nDate: .*\r\nContent-Type: text/html\r\n\r\nError:<HR>\n<H1>Server Error: 400 Bad Request</H1>\r\n<P><HR><H2>URL parsing error</H2><P>'

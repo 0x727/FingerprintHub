@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: Free UPnP Entertainment Service
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    operating_system: $1 $2
+    version: $3
+tcp:
+- name: four-oh-four-request
+  inputs:
+  - data: GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: (\w+)/([\w._-]+), UPnP/1\.0, FUPPES/([\w._-]+)\r\n\r\n'

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: TL-069 remote access
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nConnection: close\r\nContent-Length: 0\r\nWWW-Authenticate: Digest realm=IgdAuthentication, domain=\"/\", qop=\"auth\", algorithm=MD5, nonce=\"\w{9}\"\r\n\r\n'

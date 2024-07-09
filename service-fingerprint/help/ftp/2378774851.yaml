@@ -1,0 +1,19 @@
+id: ftp
+info:
+  name: FileZilla ftpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ftp,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ftp
+    type: regex
+    regex:
+    - (?i)^220[ -].*\r\n214-The following commands are recognized:\r\n.*\r\n214 Have a nice day\.\r\n

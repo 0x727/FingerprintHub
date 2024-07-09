@@ -1,0 +1,17 @@
+id: olsrd-jsoninfo
+info:
+  name: olsrd jsoninfo plugin
+  author: nmap,cn-kali-team
+  tags: detect,tech,olsrd-jsoninfo,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: olsrd-jsoninfo
+    type: regex
+    regex:
+    - '^{\n\"links\": \[[^]]*\]\n,\n\t\"neighbors\": \[[^]]*\]\n,\n\t'

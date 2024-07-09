@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Conexant-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: broadband router
+    info: ISOS $1; UPnP $2
+    version: $SUBST(3,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 401 Unauthorized\r\nServer: ISOS/([-\w_.]+) UPnP/([\d.]+) Conexant-EmWeb/R([\d_]+)\r\n'

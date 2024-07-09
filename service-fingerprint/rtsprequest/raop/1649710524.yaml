@@ -1,0 +1,20 @@
+id: raop
+info:
+  name: Remote Audio Output Protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,raop,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Rogue Amoeba Airfoil speakers
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: raop
+    type: regex
+    regex:
+    - '^RTSP/1\.0 401 Unauthorized\r\nWWW-Authenticate: Digest realm=\"raop\", nonce=\"[0-9A-F]{40}\"\r\nContent-Length: 0\r\n\r\n$'

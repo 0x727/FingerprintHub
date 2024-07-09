@@ -1,0 +1,21 @@
+id: http
+info:
+  name: UCS R-Keeper hospitality system
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: 'uptime: $3'
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nConnection: close\r\nContent-Type: text/html; charset=ISO-8859-1\r\nContent-Length: \d+\r\nDate: .*\r\n\r\n<HTML>\r\n<BODY>\r\n<center><font size=6>Reports Server ''([^'']+)'' \(PID: \d+, Version: ([\d.]+)\)</font></center><br>\r\n<center><font size=4>Uptime: (\d[^(]+) \('

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Duplicati httpserver
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Redirect\r\nlocation: /login\.html\r\nDate: .*\r\nContent-Length: 0\r\nContent-Type: \r\nServer: Tiny WebServer\r\nConnection: close\r\nSet-Cookie: xsrf-token='

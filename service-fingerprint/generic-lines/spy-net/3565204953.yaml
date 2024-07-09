@@ -1,0 +1,19 @@
+id: spy-net
+info:
+  name: Spy-Net or CyberGate backdoor
+  author: nmap,cn-kali-team
+  tags: detect,tech,spy-net,service
+  severity: info
+  metadata:
+    info: '**BACKDOOR**'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: spy-net
+    type: regex
+    regex:
+    - ^tentarnovamente\|\r\ntentarnovamente\|\r\n

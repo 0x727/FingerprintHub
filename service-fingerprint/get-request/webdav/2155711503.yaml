@@ -1,0 +1,17 @@
+id: webdav
+info:
+  name: Tonido WebDAV
+  author: nmap,cn-kali-team
+  tags: detect,tech,webdav,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: webdav
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Found\r\nConnection: Close\r\nDate: .*\r\nLocation: /ui/core/index\.html\r\n\r\n$'

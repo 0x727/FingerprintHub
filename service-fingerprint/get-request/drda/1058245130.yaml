@@ -1,0 +1,17 @@
+id: drda
+info:
+  name: IBM DRDA
+  author: nmap,cn-kali-team
+  tags: detect,tech,drda,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: drda
+    type: regex
+    regex:
+    - ^\0\x79\xd0\x02\xff\xff\0\x73\x12\x4c\0\x06\x11\x49\0\x08\0\x4e\x11S\0\xd3

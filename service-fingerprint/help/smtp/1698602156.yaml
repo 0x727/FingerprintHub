@@ -1,0 +1,17 @@
+id: smtp
+info:
+  name: CommuniGate Pro smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^220 .*\r\n214-Commands Supported:\r\n214-HELO EHLO AUTH HELP QUIT MAIL NOOP RSET RCPT DATA ETRN VRFY STARTTLS\r\n214-Copyright \(c\) 1995-200\d, Stalker Software, Inc\.\r\n

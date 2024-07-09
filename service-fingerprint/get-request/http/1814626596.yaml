@@ -1,0 +1,17 @@
+id: http
+info:
+  name: JBoss Administrator
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 301 Moved Permanently\r\nLocation: /console/index\.html\r\nConnection: close\r\nDate: .* GMT\r\n\r\n$'

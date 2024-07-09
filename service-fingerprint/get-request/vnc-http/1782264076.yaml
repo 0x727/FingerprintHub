@@ -1,0 +1,19 @@
+id: vnc-http
+info:
+  name: WinVNC
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc-http,service
+  severity: info
+  metadata:
+    info: 'Siemens Sm@rtClient Desktop; resolution $1x$2; VNC TCP port: $3'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc-http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nConnection: close\r\n\r\n<HTML>\r\n  <HEAD><TITLE>Siemens Sm@rtClient Desktop \[WinVNC\]</TITLE></HEAD>\r\n  <BODY>\r\n<APPLET CODE=VncViewer\.class ARCHIVE=VncViewer\.jar WIDTH=(\d+) HEIGHT=(\d+)>\r\n           <PARAM NAME=\"PORT\" VALUE=\"(\d+)\">\r\n    </APPLET><BR>\r\n  </BODY>\r\n</HTML>\r\n'

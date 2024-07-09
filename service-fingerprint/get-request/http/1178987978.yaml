@@ -1,0 +1,17 @@
+id: http
+info:
+  name: VMware ESXi Web UI
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: .*\r\nConnection: close\r\nContent-Type: text/html\r\nX-Frame-Options: DENY\r\nContent-Length: \d+\r\n\r\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4\.01//EN" "http://www\.w3\.org/TR/html4/strict\.dtd">\n\n<html lang="en">\n<head>\n    <meta http-equiv="content-type" content="text/html; charset=utf8">\n    <meta http-equiv="refresh" content="0;URL=''/ui''"/>\n</head>\n</html>\n'

@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: TwonkyMedia UPnP
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: Linux 2.X; UPnP $2; pvConnect SDK $3; SDK $4
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorised\r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: Basic realm=\"([\w._-]+)\"\n.*Server: *Linux/2\.x\.x, UPnP/([\w._-]+), pvConnect UPnP SDK/([\w._-]+), Twonky UPnP SDK/([\w._-]+)\r\n'

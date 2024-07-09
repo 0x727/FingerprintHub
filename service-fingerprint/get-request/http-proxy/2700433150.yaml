@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: Sophos UTM http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d [^\r\n]+\r\nDate: [^\r\n]+\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nContent-Type: text/html; charset="UTF-8"\r\nContent-Length: \d+\r\nAccept-Ranges: none\r\nConnection: close\r\n\r\n.*href="http://passthrough\.fw-notify\.net/'

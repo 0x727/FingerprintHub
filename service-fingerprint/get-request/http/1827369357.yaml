@@ -1,0 +1,21 @@
+id: http
+info:
+  name: ADSM httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Tivoli Storage Manager http interface $2
+    operating_system: AIX
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d .*Server: ADSM_HTTP/([\d.]+)\nContent-type: text/html\n\n<HEAD>\n<TITLE>\nServer Administration\n</TITLE>\n\n<META NAME=\"IBMproduct\" CONTENT=\"ADSM\">\n<META NAME=\"IBMproductVersion\" CONTENT=\"([\d.]+)\">.*Storage Management Server for AIX'

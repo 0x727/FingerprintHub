@@ -1,0 +1,20 @@
+id: ibm-db2
+info:
+  name: IBM DB2 Database Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,ibm-db2,service
+  severity: info
+  metadata:
+    info: 'Hostname: $4'
+    version: $1.$2.$3
+tcp:
+- name: ibm-db2-das-udp
+  inputs:
+  - data: DB2GETADDR\0SQL08010\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ibm-db2
+    type: regex
+    regex:
+    - (?i)^DB2RETADDR\0SQL0(\d)(\d\d)(\d+)\0([^\0]+)\0

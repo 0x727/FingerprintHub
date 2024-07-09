@@ -1,0 +1,17 @@
+id: aleph
+info:
+  name: Aleph Integrated Library System
+  author: nmap,cn-kali-team
+  tags: detect,tech,aleph,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: aleph
+    type: regex
+    regex:
+    - ^96\r$

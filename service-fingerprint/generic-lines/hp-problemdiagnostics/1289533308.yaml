@@ -1,0 +1,19 @@
+id: hp-problemdiagnostics
+info:
+  name: HP Problem Diagnostics
+  author: nmap,cn-kali-team
+  tags: detect,tech,hp-problemdiagnostics,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: hp-problemdiagnostics
+    type: regex
+    regex:
+    - ^<\?xml version=\"1\.0\" encoding=\"UTF-8\"\?>\n<NETPATH_PROBE version=\"[\w._-]+\">\n\t<SOURCE device_type=\"HOST\">\n\t\t<DNS>([\w._-]+)</DNS>\n\t\t<IP_OUT>[\d.]+</IP_OUT>\n\t</SOURCE>\n\t<DESTINATION name=\"\" arguments=\"\">\n\t\t<ERROR code=\"3\">\n\t\t\t<MESSAGE>No destination specified</MESSAGE>\n\t\t</ERROR>\n\t</DESTINATION>\n</NETPATH_PROBE>\n\n$

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Loxone Miniserver home automation httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    info: 'name: $1; UPnP $3'
+    version: $2
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nHTTP/1\.1\r\nServer: Loxone Miniserver ([\w._-]+)/([\d.]+) UPnP/([\d.]+)\r\n'

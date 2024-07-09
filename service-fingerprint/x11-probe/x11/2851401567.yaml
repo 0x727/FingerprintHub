@@ -1,0 +1,17 @@
+id: x11
+info:
+  name: Xvnc X11/VNC proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,x11,service
+  severity: info
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: x11
+    type: regex
+    regex:
+    - (?i)^\x01\0\x0b\0\0.....\0\0\0\0.*The X\.Org Group\0

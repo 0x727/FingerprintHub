@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Allegro RomPager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: Xerox printer http admin; printer $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nDate: .*\r\nExpires: .*\r\nLast-Modified: .*\r\nPragma: no-cache\r\nServer: Allegro-Software-RomPager/(\d[-.\w]+)\r\n\r\n<html>\n<head>\n<title>\nHome - \nPhaser (\w+)</title>\n'

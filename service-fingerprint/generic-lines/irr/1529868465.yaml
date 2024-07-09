@@ -1,0 +1,17 @@
+id: irr
+info:
+  name: Merit Internet Routing Registry
+  author: nmap,cn-kali-team
+  tags: detect,tech,irr,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: irr
+    type: regex
+    regex:
+    - ^% No search key specified\n\n

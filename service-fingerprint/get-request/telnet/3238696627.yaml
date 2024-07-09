@@ -1,0 +1,17 @@
+id: telnet
+info:
+  name: 7 Days to Die game Telnet config
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^Please enter password:\r\nPassword incorrect, please enter password:\r\nPassword incorrect, please enter password:\r\n

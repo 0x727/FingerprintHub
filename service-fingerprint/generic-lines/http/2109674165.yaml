@@ -1,0 +1,20 @@
+id: http
+info:
+  name: SAP NetWeaver Application Server Internet Communication Manager httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: ICM $2
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\ndate: .* GMT\r\npragma: no-cache\r\nconnection: close\r\ncontent-length: \d+ *\r\ncontent-type: text/html\r\nserver: SAP NetWeaver Application Server ([\d.]+) / ICM ([\d.]+)\r\n\r\n'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: thttpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: Linksys $1 router http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\r\nWWW-Authenticate: Basic realm=\"(RV0041)\"\r\n.*<h2>401 Unauthorized<h2>\n  <p>\n  Authorization required for the URL\.\n</body>\n</html>\n$'

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Conexant-EmWeb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: Intertex IX68 WAP http config; SIPGT $2
+    version: $SUBST(1,"_",".")
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nServer: Conexant-EmWeb/R([\w._-]+) SIPGT/([\w._-]+)\r\n.*<title>Login page</title>.*<img src=\"images/ixlogga\.gif\"'

@@ -1,0 +1,20 @@
+id: http
+info:
+  name: thttpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: Mobotix M10 PRISMB web cam http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 302 Found\r\nLocation: /cgi-bin/guestimage\.html\r\nContent-type: text/html; charset=ISO-8859-1\r\nCache-Control: no-cache\r\n\r\n.*<title>\r\nRedirect to guestimage: /cgi-bin/guestimage\.html\r\n'

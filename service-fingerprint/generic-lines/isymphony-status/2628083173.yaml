@@ -1,0 +1,17 @@
+id: isymphony-status
+info:
+  name: iSymphony call manager Status API
+  author: nmap,cn-kali-team
+  tags: detect,tech,isymphony-status,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: isymphony-status
+    type: regex
+    regex:
+    - '^Error: Invalid command\.\nError: Invalid command\.\n$'

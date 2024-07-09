@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Nu-OS
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+    info: Pioneer VSX-2020 AV receiver
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: Nu-OS/([\w._-]+)\r\n.*<title>Pioneer Web Control System</title>'

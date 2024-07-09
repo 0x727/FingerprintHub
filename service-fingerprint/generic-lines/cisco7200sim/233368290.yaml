@@ -1,0 +1,17 @@
+id: cisco7200sim
+info:
+  name: Cisco 7200 Simulator
+  author: nmap,cn-kali-team
+  tags: detect,tech,cisco7200sim,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: cisco7200sim
+    type: regex
+    regex:
+    - ^200-At least a module and a command must be specified\r\n200-At least a module and a command must be specified\r\n

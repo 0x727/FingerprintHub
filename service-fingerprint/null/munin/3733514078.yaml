@@ -1,0 +1,19 @@
+id: munin
+info:
+  name: Munin
+  author: nmap,cn-kali-team
+  tags: detect,tech,munin,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: munin
+    type: regex
+    regex:
+    - ^# munin node at ([-\w_.]+)\n$

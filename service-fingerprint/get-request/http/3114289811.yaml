@@ -1,0 +1,20 @@
+id: http
+info:
+  name: WebCit
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Citadel
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\nContent-type: text/html; charset=utf-8\r\nServer: WebCit v([\d.]+) / \n'

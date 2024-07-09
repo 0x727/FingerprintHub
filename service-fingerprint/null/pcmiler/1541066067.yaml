@@ -1,0 +1,17 @@
+id: pcmiler
+info:
+  name: PC*MILER truck routing and mileage
+  author: nmap,cn-kali-team
+  tags: detect,tech,pcmiler,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pcmiler
+    type: regex
+    regex:
+    - ^ALK PCMILER SERVER READY\n

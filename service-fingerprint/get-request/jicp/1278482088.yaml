@@ -1,0 +1,17 @@
+id: jicp
+info:
+  name: Jade Inter Container Protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,jicp,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: jicp
+    type: regex
+    regex:
+    - '^d\x08\x1c\0\0\0Uncorrect JICP data type: 71$'

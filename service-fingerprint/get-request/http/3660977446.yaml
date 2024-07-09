@@ -1,0 +1,20 @@
+id: http
+info:
+  name: GoAhead WebServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: remote management
+    info: Peppercon/Paradox alarm system http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nServer: GoAhead-Webs\r\nDate: .*\r\nPragma: no-cache\r\nCache-Control: no-cache\r\nContent-Type: text/html\r\nP3P: CP=\"NON DSP CURa OUR NOR UNI\"\r\nLocation: http://[\d.]+/auth\.asp\r\n\r\n<html><head></head><body>\r\nMoved to this <a href=\"http://[\d.]+/auth\.asp\">location</a>\.\r\n<!-- response_code_begin ERIC_RESPONSE_OK'

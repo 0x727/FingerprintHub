@@ -1,0 +1,19 @@
+id: gnutella
+info:
+  name: Shareaza
+  author: nmap,cn-kali-team
+  tags: detect,tech,gnutella,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gnutella
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Server: Shareaza (\d\S+)'

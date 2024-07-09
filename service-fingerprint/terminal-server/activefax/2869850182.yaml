@@ -1,0 +1,19 @@
+id: activefax
+info:
+  name: ActFax Communication ActiveFax
+  author: nmap,cn-kali-team
+  tags: detect,tech,activefax,service
+  severity: info
+  metadata:
+    info: German
+tcp:
+- name: terminal-server
+  inputs:
+  - data: \x03\0\0\x0b\x06\xe0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: activefax
+    type: regex
+    regex:
+    - '^ActiveFax Server: Es befinden sich insgesamt'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: ZTE Auto-Configuration Servers (ACS) http login
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nWWW-Authenticate: Digest realm="cpe@zte\.com", qop="auth", nonce="[a-f0-9]{32}", opaque="T3BhcXVlIHN0cmluZyBmb3IgQUNTIEF1dGhlbnRpY2F0aW9u", Algorithm="MD5"\r\n'

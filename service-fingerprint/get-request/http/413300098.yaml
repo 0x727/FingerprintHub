@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Equitrac Office EQCASService.exe
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nDate: .*\r\nServer: WASABI/1\.1\r\nContent-Length: 73\r\n\r\n<html><title>401 Unauthorized</title><body>401 Unauthorized</body></html>'

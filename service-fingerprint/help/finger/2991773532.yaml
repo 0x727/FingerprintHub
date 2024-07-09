@@ -1,0 +1,17 @@
+id: finger
+info:
+  name: Stock and Trade Finger Server fingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - ^\n    ----------------------------------------------------------------------\n                        Sorry, that user doesn't exist\.\n

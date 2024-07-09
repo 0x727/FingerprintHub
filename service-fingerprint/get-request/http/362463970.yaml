@@ -1,0 +1,19 @@
+id: http
+info:
+  name: TiVo set-top box network adapter http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\nContent-type: text/html\r\nDate: .*\r\nConnection: close\r\nExpires: Fri, 01 Jan 1990 00:00:00 GMT\r\nPragma: no-cache\r\nCache-Control: no-cache, no-store, must-revalidate\r\nLast-Modified: Mon, 30 Aug 2010 22:16:44 GMT\r\nContent-length: 1350\r\n\r\n'

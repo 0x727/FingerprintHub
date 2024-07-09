@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Kesseltronics car wash tunnel http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1.0 401 Unauthorized\r\nDate: .*\r\nConnection: close\r\nServer: Microsoft-WinCE/5.0\r\nSet-Cookie: .*\r\nWWW-Authenticate: Basic Realm="Kesseltronics"'

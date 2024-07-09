@@ -1,0 +1,19 @@
+id: qmqp
+info:
+  name: Postfix qmqpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,qmqp,service
+  severity: info
+  metadata:
+    info: Quick Mail Queueing Protocol
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: qmqp
+    type: regex
+    regex:
+    - ^58:Dnetstring format error while receiving QMQP packet header,$

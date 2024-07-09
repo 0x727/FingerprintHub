@@ -1,0 +1,20 @@
+id: http
+info:
+  name: HP LaserJet Pro MFP config httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: 'model: $1; private IP: $2'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Length: +\d+\r\nExpires: Thu, 01 Jan 1970 00:00:00 GMT\r\nContent-Type: text/html; charset=utf-8\r\nServer: Mrvl-R2_0\r\nCache-Control: no-cache\r\nConnection: keep-alive\r\nX-Frame-Options: SAMEORIGIN\r\nX-Content-Type-Options: nosniff\r\n\r\n<\?xml version="1\.0" encoding="UTF-8"\?>\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4\.01//EN" "http://www\.w3\.org/TR/html4/strict\.dtd">\n<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8">\n<title>HP LaserJet Pro MFP ([^&]+)&nbsp;&nbsp;&nbsp;((?:192\.168|172\.(?:1[6-9]|2\d|3[01])|10\.\d{1,3})\.\d{1,3}\.\d{1,3})</title>'

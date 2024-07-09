@@ -1,0 +1,17 @@
+id: http
+info:
+  name: SAGE EAS Digital Endec remote audio monitor/level meter
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.1 404 Not Found\r\n\r\n$

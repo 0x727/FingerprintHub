@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Norman Security Endpoint Protection httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 403 Forbidden\r\nServer: Norman Security/([\d.]+)\r\nContent-Type: text/html\r\nConnection: Close\r\nContent-Length: 90\r\n\r\n<html><title>Norman Security Error</title><body><br><h2>403 - Forbidden</h2></body></html>$'

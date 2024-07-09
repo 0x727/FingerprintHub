@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Alterator remote management httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    operating_system: Linux
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 302 Found\r\ncontent-type: text/html;charset=utf8\r\ncache-control: no-cache\r\ncontent-length: 0\r\nlast-modified: .*\r\ndate: .*\r\nconnection: close\r\nlocation: /login\?continue=%2f\r\n\r\n$'

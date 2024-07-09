@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Oracle Application Server $1 httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: OracleAS-Web-Cache-$3 $4
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: Oracle-Application-Server-(\d+[a-z])/([\d.]+) Oracle-HTTP-Server OracleAS-Web-Cache-(\d+[a-z])/([\d.]+) '

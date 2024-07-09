@@ -1,0 +1,21 @@
+id: http
+info:
+  name: TreeNeWS httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: 3Com WX2200 WAP http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nDate: \w\w\w \d\d, \d\d:\d\d:\d\d\.\d\d\d\r\nServer: TreeNeWS/([\w._-]+)\r\nMime-Version: 1\.0\r\nContent-Length: 173\r\nContent-Type: text/html\r\n\r\n<HTML><HEAD><TITLE>Not Found</TITLE></HEAD>\n<BODY><H1>Not Found</H1>\n<br>&nbsp;&nbsp;The requested URL was not found on this server\.\n<br><H2>Error 404</H2></BODY></HTML>\r\r\n\n$'

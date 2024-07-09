@@ -1,0 +1,17 @@
+id: bittorrent-udp-tracker
+info:
+  name: opentracker UDP tracker
+  author: nmap,cn-kali-team
+  tags: detect,tech,bittorrent-udp-tracker,service
+  severity: info
+tcp:
+- name: rpccheck
+  inputs:
+  - data: \x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bittorrent-udp-tracker
+    type: regex
+    regex:
+    - ^\x03\0\0\0\0\x01\x86\xa0Connection ID missmatch\.\0

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Netgear ProSAFE Plus switch http admin
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: switch
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nConnection: close\r\nCache-Control: no-cache\r\nExpires: -1\r\n\r\n.*\n<link rel="stylesheet" type="text/css" href="login\.css">\n<title>Netgear Prosafe Plus Switch</title>'

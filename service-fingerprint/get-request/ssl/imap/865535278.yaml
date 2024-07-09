@@ -1,0 +1,17 @@
+id: ssl/imap
+info:
+  name: Cyrus imapd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ssl/imap,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ssl/imap
+    type: regex
+    regex:
+    - '^\* BYE Fatal error: tls_start_servertls\(\) failed\r\n$'

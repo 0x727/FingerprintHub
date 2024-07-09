@@ -1,0 +1,20 @@
+id: http
+info:
+  name: March Networks $2 DVR http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $3
+    info: 'time zone: $1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nContent-Type: text/html\r\nDate: .*? ([A-Z]+)\r\nExpires: .*\r\n\r\n<HTML>.*<H1>DVR (\w+) WatchDog \(([\w._-]+)\)</H1>'

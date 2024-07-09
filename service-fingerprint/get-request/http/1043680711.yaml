@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Yamaha AV receiver web ui
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: 'model: $2'
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 505 Client Error\r\nServer: AV_Receiver/([\d.]+) \(([^)]+)\)\r\nContent-Length: 0\r\nConnection: close\r\n\r\n$'

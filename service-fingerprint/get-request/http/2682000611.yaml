@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Hiawatha
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+    info: Aerohive HiveAP WAP http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 404 Not Found\r\n(?:[^\r\n]+\r\n)*?Server: Hiawatha v([\w._-]+)\r\n.*<html><head><title>404 - Not Found</title><style type=\"text/css\">\n<!--\nBODY { color:#ffffff ; background-color:#00000a }\nDIV { font-family:sans-serif ; font-size:30px ; letter-spacing:20px ; text-align:center ; position:relative ; top:250px }\n--></style></head>\n<body><div>404 - Not Found</div></body></html>\n$'

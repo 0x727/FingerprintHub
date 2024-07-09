@@ -1,0 +1,23 @@
+id: http
+info:
+  name: Apache
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+    hostname: $4
+    info: Barracuda firewall http config; BarracudaHTTP $1; $3
+    operating_system: Unix
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: BarracudaHTTP ([\w._-]+)/([\w._-]+) \(Unix\) ([^\r]+)\r\n(?:[^\r\n]+\r\n)*?Location: https?://([\w._-]+)'

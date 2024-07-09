@@ -1,0 +1,20 @@
+id: http
+info:
+  name: FRITZ!Box router http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: TI AR7 chip
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 \d\d\d .*\r\nContent-Length: \d+\r\nContent-Type: text/html\r\n\r\n<HTML><HEAD><TITLE>404 Not Found \(ERR_NOT_FOUND\)</TITLE></HEAD><BODY><H1>404 Not Found</H1><BR>ERR_NOT_FOUND<HR><B>AR7 Webserver</B>'

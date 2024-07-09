@@ -1,0 +1,21 @@
+id: http
+info:
+  name: WYM httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: Wowwee Rovio webcam
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\r\n(?:[^\r\n]+\r\n)*?Server: WYM/([\w._-]+)\r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: Basic realm=\"Rovio\"\r\n'

@@ -1,0 +1,21 @@
+id: http
+info:
+  name: eHTTP
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: switch
+    info: HP ProCurve Switch $2 http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nServer: eHTTP v([\w._-]+)\r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: Basic realm=\"ProCurve (J\w+)\"\r\n\r\n'

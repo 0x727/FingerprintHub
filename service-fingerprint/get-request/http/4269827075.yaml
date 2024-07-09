@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Jetty
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Gerrit code review
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nDate: .*\r\nExpires: Fri, 01 Jan 1980 00:00:00 GMT\r\n.*<title>Gerrit Code Review</title>'

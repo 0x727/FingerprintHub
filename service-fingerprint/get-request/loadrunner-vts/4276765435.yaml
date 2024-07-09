@@ -1,0 +1,17 @@
+id: loadrunner-vts
+info:
+  name: HP LoadRunner Virtual Table Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,loadrunner-vts,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: loadrunner-vts
+    type: regex
+    regex:
+    - '^\x02\0\0\0\x84\0\$\0\x03\0\x08 \0\0\x06\0\x05\0\x15Wrong version: 71\x02\0\0\0\x81\0\x07'

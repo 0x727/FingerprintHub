@@ -1,0 +1,19 @@
+id: http
+info:
+  name: AVM FRITZ!Box WAP http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nContent-Length: \d+\r\nContent-Type: text/html.*\r\nPragma: no-cache\r\nServer: Webserver\r\nWWW-Authenticate: Basic realm=\"HTTPS Access\"\r\n\r\n<HTML><HEAD><TITLE>401 Unauthorized \(ERR_ACCESS_DENIED\)</TITLE></HEAD><BODY><H1>401 Unauthorized</H1><BR>ERR_ACCESS_DENIED<HR><B>Webserver</B>'

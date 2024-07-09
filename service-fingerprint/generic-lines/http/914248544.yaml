@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Octopus Tentacle
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: \d+\r\n\r\n\r\n<!doctype html>\r\n<html>\r\n<head>\r\n    <meta charset=''utf8''>\r\n    <meta http-equiv=''x-ua-compatible'' content=''ie=edge''>\r\n    <title>Octopus Tentacle</title>'

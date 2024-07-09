@@ -1,0 +1,17 @@
+id: bentley-projectwise
+info:
+  name: Bentley Systems ProjectWise
+  author: nmap,cn-kali-team
+  tags: detect,tech,bentley-projectwise,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bentley-projectwise
+    type: regex
+    regex:
+    - ^ACKNOSEC$

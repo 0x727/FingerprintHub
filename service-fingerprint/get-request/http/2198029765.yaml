@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Sinatra web framework built-in httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nConnection: close\r\nDate: .*\r\nX-Cascade: pass\r\nContent-Type: text/html\r\nContent-Length: 409\r\n\r\n<!DOCTYPE html>\n<html>\n<head>\n  <style type=\"text/css\">\n  body { text-align:center;font-family:helvetica,arial;font-size:22px;\n    color:#888;margin:20px}\n  #c {margin:0 auto;width:500px;text-align:left}\n  </style>\n</head>\n<body>\n  <h2>Sinatra doesn''t know this ditty\.</h2>\n  <img src=''/__sinatra__/404\.png''>\n  <div id=\"c\">\n    Try this:\n    <pre>get ''/'' do\n  \"Hello World\"\nend</pre>\n  </div>\n</body>\n</html>\n$'

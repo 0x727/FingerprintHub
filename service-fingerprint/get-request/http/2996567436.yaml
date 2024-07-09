@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Sony SNC-CH120 webcam http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 307 Temporary Redirect\r\nAccess-Control-Allow-Origin: \*\r\nContent-Length: 0\r\nContent-Type: text/html\r\nLocation: en/index\.html\r\nConnection: close\r\nDate: .* 197\d \d+:\d+:\d+ GMT\r\nServer: gen5th/([\w._-]+)\r\n\r\n$'

@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Edgewater Networks Edgemarc 4562 VoIP gateway web config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Unauthorized\r\n(?:[^\r\n]+\r\n)*?Server: \r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: Basic realm=\"System\"\r\n.*<HTML><HEAD><TITLE>401 Unauthorized</TITLE></HEAD>\n<BODY><H1>401 Unauthorized</H1>\nYour client does not have permission to get URL / from this server\.\n</BODY></HTML>\n$'

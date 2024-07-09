@@ -1,0 +1,17 @@
+id: gnuserv
+info:
+  name: Gnuserv
+  author: nmap,cn-kali-team
+  tags: detect,tech,gnuserv,service
+  severity: info
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gnuserv
+    type: regex
+    regex:
+    - '^gnudoit: Connection refused\ngnudoit: unable to connect to remote$'

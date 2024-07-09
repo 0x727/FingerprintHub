@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Ubicom embedded httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: Veo Observer webcam
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nCache-control: max-age=300\r\nServer: Ubicom/([\d.]+)\r\nContent-Length: \d+\r\n\r\n<!-- saved from url=\(0022\)http://internet\.e-mail -->\n<html>\n\t<head>\n\t\t<title>Veo Observer Web Client</title>'

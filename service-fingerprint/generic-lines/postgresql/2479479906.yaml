@@ -1,0 +1,19 @@
+id: postgresql
+info:
+  name: Postgres-XC
+  author: nmap,cn-kali-team
+  tags: detect,tech,postgresql,service
+  severity: info
+  metadata:
+    version: '1.1'
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: postgresql
+    type: regex
+    regex:
+    - ^E\0\0\09SFATAL\0MExpecting a startup message, but received \r\0\0

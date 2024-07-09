@@ -1,0 +1,17 @@
+id: http
+info:
+  name: EliasDB
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: text/html; charset=utf-8\r\nLast-Modified: .*\r\nDate: .*\r\nContent-Length: 83\r\n\r\n<pre>\n<a href="db/">db/</a>\n<a href="fingerprint\.json">fingerprint\.json</a>\n</pre>\n'

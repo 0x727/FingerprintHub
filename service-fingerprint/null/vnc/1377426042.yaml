@@ -1,0 +1,19 @@
+id: vnc
+info:
+  name: ATEN KVM-over-IP VNC
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc,service
+  severity: info
+  metadata:
+    device_type: remote management
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc
+    type: regex
+    regex:
+    - ^RFB 009\.123\n

@@ -1,0 +1,17 @@
+id: netbios-ssn
+info:
+  name: Nepenthes honeypot netbios-ssn
+  author: nmap,cn-kali-team
+  tags: detect,tech,netbios-ssn,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: netbios-ssn
+    type: regex
+    regex:
+    - ^\x82\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0$

@@ -1,0 +1,19 @@
+id: soap
+info:
+  name: Fujitsu ServerView Remote Connector soap
+  author: nmap,cn-kali-team
+  tags: detect,tech,soap,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: soap
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nServer: SCS\r\nContent-Type: text/html; charset=utf-8\r\n.*<h2 style=\"color:darkcyan\">ServerView Remote Connector - Provider V([\w._-]+)</h2>'

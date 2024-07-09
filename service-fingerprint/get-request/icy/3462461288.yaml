@@ -1,0 +1,21 @@
+id: icy
+info:
+  name: SHOUTcast server
+  author: nmap,cn-kali-team
+  tags: detect,tech,icy,service
+  severity: info
+  metadata:
+    info: 'stream name: $2; genre: $3; URL: $4; bitrate: $5'
+    operating_system: Linux
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: icy
+    type: regex
+    regex:
+    - (?i)^ICY 200 OK\r\n.*SHOUTcast Distributed Network Audio Server/posix\(linux x[86][64]\) v([\w._-]+)<BR>\r\n.*icy-name:([^\r\n]*)\r\n.*icy-genre:([^\r\n]*)\r\n.*icy-url:([^\r\n]*)\r\n.*icy-br:(\d+)\r\n

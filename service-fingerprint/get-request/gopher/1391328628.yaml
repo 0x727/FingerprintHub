@@ -1,0 +1,20 @@
+id: gopher
+info:
+  name: Gophernicus
+  author: nmap,cn-kali-team
+  tags: detect,tech,gopher,service
+  severity: info
+  metadata:
+    operating_system: Linux
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gopher
+    type: regex
+    regex:
+    - '^Error: File or directory not found!\r\n______________________________________________________________________\r\n              Gophered by Gophernicus/([\w._-]+) on archlinux/rolling '

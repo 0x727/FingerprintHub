@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: Nortel Extranet Contivity Secure IP Services telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: security-misc
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\xff\xfb\x01\n\rLogin: \n\r\n\r\n\rLogin: \n\rLogin: '

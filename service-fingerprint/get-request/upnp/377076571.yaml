@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Avtech CPCAM surveillance camera http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    info: Linux 2.X; UPnP $1
+    operating_system: Linux
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nDate: .*\r\nServer: Linux/2\.x UPnP/([\w._-]+) Avtech/([\w._-]+)\r\nConnection: close\r\nLast-Modified: .*\xb2\xe8\xbe\x1c\xb2\xe8\xbe\x38\x62\x03\r\n'

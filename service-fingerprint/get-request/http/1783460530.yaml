@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Allegro RomPager
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: power-device
+    info: APC masterswitch http config
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 401 Unauthorized\r\nWWW-Authenticate: Basic realm=\"PDU\"\r\nServer: Allegro-Software-RomPager/ ?([\w.]+)\r\n\r\n<HTML>\n<HEAD>\n<TITLE>Protected Object</TITLE>\n</HEAD>\n<BODY BGCOLOR=\"WHITE\">\n<H1>Protected Object</H1>\nThis object on the MasterSwitch Web Server is protected\.'

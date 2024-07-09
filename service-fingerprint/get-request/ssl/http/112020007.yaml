@@ -1,0 +1,19 @@
+id: ssl/http
+info:
+  name: nginx
+  author: nmap,cn-kali-team
+  tags: detect,tech,ssl/http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ssl/http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1.1 400 Bad Request\r\n.*?Server: nginx/([\d.]+)[^\r\n]*?\r\n.*<title>400 The plain HTTP request was sent to HTTPS port</title>'

@@ -1,0 +1,20 @@
+id: ntrip
+info:
+  name: Ntrip Caster
+  author: nmap,cn-kali-team
+  tags: detect,tech,ntrip,service
+  severity: info
+  metadata:
+    info: protocol $2
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ntrip
+    type: regex
+    regex:
+    - '^SOURCETABLE 200 OK\r\nServer: NTRIP Caster ([\w._-]+)/([\w._-]+)\r\nContent-Type: text/plain\r\n'

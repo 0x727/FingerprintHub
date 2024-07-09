@@ -1,0 +1,21 @@
+id: upnp
+info:
+  name: Xbox 360 XML UPnP
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    device_type: game console
+    info: Serial number $1
+    operating_system: Xbox 360
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.[01] \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?CONTENT-TYPE: text/xml\r\nContent-Length: .*<modelName>Xbox 360</modelName>.*<serialNumber>(\w+)</serialNumber>'

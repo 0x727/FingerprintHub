@@ -1,0 +1,21 @@
+id: http
+info:
+  name: gSOAP
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    info: HP MFP printer
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^X-Content-Type-Options: no-sniff\r\nCache-Control: no-cache, no-store, must-revalidate\r\nHTTP/1\.1 \d\d\d .*\r\n(?:X-Content-Type-Options: no-sniff\r\nCache-Control: no-cache, no-store, must-revalidate\r\n)?Server: gSOAP/([\d.]+)\r\nContent-Length: 0\r\nConnection: close\r\n\r\n'

@@ -1,0 +1,22 @@
+id: http
+info:
+  name: Mbedthis-Appweb
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: router
+    info: J-Web http config
+    operating_system: JUNOS
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 403 Forbidden\r\nServer: Mbedthis-Appweb/([\w._-]+)\r\n.*<H2>Access Error: 403 -- Forbidden</H2>'

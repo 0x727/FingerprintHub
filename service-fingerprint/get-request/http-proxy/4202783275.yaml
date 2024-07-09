@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: Komodo HTTP Inspector proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\ncontent-type: text/html\r\n\r\n<h1>400</h1>\n<p>koHttpInspector: Could not understand the query: ''/''</p>\n<hr>\n<address>Komodo Http Inspector, Port \d+</address>\n$'

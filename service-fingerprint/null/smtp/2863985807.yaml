@@ -1,0 +1,21 @@
+id: smtp
+info:
+  name: IMail smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    info: Storage full
+    operating_system: Windows
+    version: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - ^421  Insufficient System Storage\.\(IMail ([\d.]+)\)\r\n

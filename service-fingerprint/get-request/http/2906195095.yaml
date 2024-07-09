@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Aruba RAP Console
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: WAP
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 Ok\r\nServer: \r\nDate: .*\r\nContent-Type: text/html; charset=iso-8859-1\r\nContent-Length: \d+\r\nLast-Modified: Sat, 01 Jan 2000 00:00:\d\d GMT\r\nConnection: close\r\n\r\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1\.0 Transitional//EN" "http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd">\n<html xmlns="http://www\.w3\.org/1999/xhtml">\n<head>\n\t<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/>\n    <title>RAP Console</title>'

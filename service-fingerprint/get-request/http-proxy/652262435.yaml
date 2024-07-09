@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: AVM KEN! DSL http proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 403 Forbidden\r\n.*<TITLE>\r\nFEHLER: Der Zugriff auf die angeforderte URL war nicht erfolgreich\r\n</TITLE>.*<B>KEN! DSL Proxy</B>'

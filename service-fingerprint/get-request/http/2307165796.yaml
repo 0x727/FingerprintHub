@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Helix Mobile Server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: x86_64
+    operating_system: Windows
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 403 Forbidden\r\nDate: .*\r\nServer: Helix Mobile Server/([\w._-]+) \(win-x86_64-vc10\)\r\n'

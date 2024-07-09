@@ -1,0 +1,21 @@
+id: x11
+info:
+  name: XFree86
+  author: nmap,cn-kali-team
+  tags: detect,tech,x11,service
+  severity: info
+  metadata:
+    info: Mandrake Linux
+    operating_system: Linux
+    version: $1
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: x11
+    type: regex
+    regex:
+    - (?i)^\x01\0\x0b\0\0\0.....\x02\0\0.*Mandrake Linux \(XFree86 (\d[^\)]+)\)\0\0

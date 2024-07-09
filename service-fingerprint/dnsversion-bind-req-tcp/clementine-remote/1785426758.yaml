@@ -1,0 +1,17 @@
+id: clementine-remote
+info:
+  name: Clementine Music Player remote control
+  author: nmap,cn-kali-team
+  tags: detect,tech,clementine-remote,service
+  severity: info
+tcp:
+- name: dnsversion-bind-req-tcp
+  inputs:
+  - data: \0\x1E\0\x06\x01\0\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: clementine-remote
+    type: regex
+    regex:
+    - ^\0\0\0\x04\x08\x15\x10-

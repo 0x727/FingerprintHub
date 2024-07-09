@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Minolta PagePro 20 printer http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    hostname: $4
+    info: 'serial number: $1, MAC: $2, firmware $3'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK Content-type: text/html\r\n\r\n.*<H2>57066 Minolta Network Configuration Sheet 1 of 2\n\n</H2>.*Serial Number: *(\d+)\n.*Ethernet Address: *([0-9A-F.]+).*F/W Version: *([\w.]+ \(\w+\)).*Print Server Name: *([\w_.-]+)'

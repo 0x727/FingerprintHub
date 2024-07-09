@@ -1,0 +1,20 @@
+id: icy
+info:
+  name: Icecast streaming media server
+  author: nmap,cn-kali-team
+  tags: detect,tech,icy,service
+  severity: info
+  metadata:
+    info: Bitrate $1
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: icy
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nContent-Type: audio/mpeg\r\nicy-br:([\d.]+)\r\n(?:[^\r\n]+\r\n)*?Server: Icecast ([\d.]+)\r\n'

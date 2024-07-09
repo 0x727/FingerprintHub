@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Netgear CVG834G cable modem http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: broadband router
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nContent-type: text/html\r\nWWW-Authenticate: Basic realm=\"Netgear\"\r\nConnection: close\r\nPragma: no-cache\r\n\r\n<html><head><title>401 Unauthorized</title>.*<form name=\"RgAuthentication\" action=\"/goform/RgAuthentication\" method=\"POST\">'

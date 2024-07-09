@@ -1,0 +1,17 @@
+id: bru
+info:
+  name: Tolis BRU Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,bru,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: bru
+    type: regex
+    regex:
+    - ^0\nBad hex string for A from client\n

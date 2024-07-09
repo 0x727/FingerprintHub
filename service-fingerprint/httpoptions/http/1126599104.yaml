@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Universal Devices Insteon home automation http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: specialized
+    operating_system: uCOS
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 OK\r\nContent-Length: 0\r\nConnection: Keep-Alive\r\nWWW-Authenticate: Basic realm=\"/\"\r\nContent-Type: text/html; charset=UTF-8\r\nCache-Control: max-age=3600, must-revalidate\r\nEXT: UCoS, UPnP/1\.0, UDI/1\.0\r\nLast-Modified: .*\r\n\r\n'

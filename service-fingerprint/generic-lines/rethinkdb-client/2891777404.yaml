@@ -1,0 +1,19 @@
+id: rethinkdb-client
+info:
+  name: RethinkDB client driver
+  author: nmap,cn-kali-team
+  tags: detect,tech,rethinkdb-client,service
+  severity: info
+  metadata:
+    version: 1.13.0
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rethinkdb-client
+    type: regex
+    regex:
+    - '^ERROR: This is the rdb protocol port \(bad magic number\).\n$'

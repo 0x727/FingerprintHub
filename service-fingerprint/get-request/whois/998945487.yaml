@@ -1,0 +1,17 @@
+id: whois
+info:
+  name: gwhois
+  author: nmap,cn-kali-team
+  tags: detect,tech,whois,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: whois
+    type: regex
+    regex:
+    - '^Process query: ''GET  HTTP1\.0''\n\n\nNo lookup service available for your query ''GET  HTTP1\.0''\.\ngwhois remarks: If this is a valid domainname or handle, please file a bug report\.\n\n\n\n\n-- \n  To resolve one of the above handles:   OTOH offical handles should be recognised directly\.\n  Please report errors or misfits via the debian bug tracking system\.\n$'

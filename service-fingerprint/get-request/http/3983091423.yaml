@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Polycom RealPresence CloudAXIS
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nX-Cache: MISS\r\nVary: Accept-Encoding\r\nContent-Type: text/html\r\nCache-Control: no-cache, must-revalidate\r\nExpires: .*\r\nDate: .*\r\nConnection: close\r\n\r\n<!doctype html>\r\n<html>\r\n<head>\r\n    <title>Polycom&reg; RealPresence&reg; CloudAXIS&trade;</title>'

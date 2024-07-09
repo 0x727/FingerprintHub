@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Crystalmedia VoIP adapter
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP adapter
+    info: 'language: $1'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nCache-Control: no-cache\r\nContent-Type:text/html\r\nContent-Length:\d+ +\r\n\r\n\n<html>\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4\.01 Transitional//EN"> \n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=UTF8" >\n<title>VoIP</title>\n<script language="JavaScript" type="text/javascript" src=''language/info_(\w+)\.js'''

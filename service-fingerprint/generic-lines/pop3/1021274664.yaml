@@ -1,0 +1,17 @@
+id: pop3
+info:
+  name: Solid POP3d
+  author: nmap,cn-kali-team
+  tags: detect,tech,pop3,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pop3
+    type: regex
+    regex:
+    - ^\+OK Solid POP3 server ready\r\n-ERR unknown command\r\n-ERR unknown command\r\n$

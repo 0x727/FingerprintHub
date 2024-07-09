@@ -1,0 +1,19 @@
+id: ipp
+info:
+  name: Xerox or Samsung ipp
+  author: nmap,cn-kali-team
+  tags: detect,tech,ipp,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ipp
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nConnection: close\r\nContent-Type: text/html\r\n(?:; charset=utf-8)?\r\nContent-Length: \d+\r\nCache-Control: (?:max-age=0, no-store, )?no-cache\r\n\r\n<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3\.2//EN">\n<HTML>\n<HEAD>\n<TITLE>Invalid Request</TITLE>\n</HEAD>\n\n<BODY BGCOLOR="#FFFFFF" TEXT="#000000">\n<CENTER>\n<FONT SIZE="\+2" COLOR="#FFFFFF" ALIGN="Center">\n</FONT>\n<B>Invalid Request\. Some Error</B>\n</BODY>\n\n</HTML>\n\n'

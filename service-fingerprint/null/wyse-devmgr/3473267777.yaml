@@ -1,0 +1,17 @@
+id: wyse-devmgr
+info:
+  name: Wyse Device Manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,wyse-devmgr,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: wyse-devmgr
+    type: regex
+    regex:
+    - ^Invalid Command Sent:GET / HTTP/1\.0\r\n\r\n$

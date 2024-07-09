@@ -1,0 +1,17 @@
+id: minecraft-socketapi
+info:
+  name: Bukkit JSONAPI Socket API for Minecraft game server
+  author: nmap,cn-kali-team
+  tags: detect,tech,minecraft-socketapi,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: minecraft-socketapi
+    type: regex
+    regex:
+    - ^{\"result\":\"error\",\"error\":\"Incorrect\. Socket requests are in the format PAGE\?ARGUMENTS\. For example, \\/api\\/subscribe\?source=\.\.\.\.\",\"source\":\"\"}\r\n{\"result\":\"error\",\"error\":\"Incorrect\. Socket requests are in the format PAGE\?ARGUMENTS\. For example, \\/api\\/subscribe\?source=\.\.\.\.\",\"source\":\"\"}\r\n$

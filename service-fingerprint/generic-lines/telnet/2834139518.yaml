@@ -1,0 +1,19 @@
+id: telnet
+info:
+  name: NEC SL-series debug terminal
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - '^\r\nUser ID:Password:\r\nUser ID:'

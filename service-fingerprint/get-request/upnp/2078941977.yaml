@@ -1,0 +1,20 @@
+id: upnp
+info:
+  name: CyberLink upnp
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    operating_system: Linux $1
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nContent-Type: text/html; charset=\"utf-8\"\r\nServer: Linux/([\w._-]+) CyberHTTP/([\d.]+)\r\nContent-Length: 0\r\nDate: .*\r\n\r\n'

@@ -1,0 +1,19 @@
+id: finger
+info:
+  name: Lexmark Optra LaserPrinter fingerd
+  author: nmap,cn-kali-team
+  tags: detect,tech,finger,service
+  severity: info
+  metadata:
+    device_type: printer
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: finger
+    type: regex
+    regex:
+    - '^\r\nPrinter Type: Lexmark Optra LaserPrinter\r\n'

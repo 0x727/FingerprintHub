@@ -1,0 +1,17 @@
+id: rtmp
+info:
+  name: Real-Time Messaging Protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtmp,service
+  severity: info
+tcp:
+- name: terminal-server
+  inputs:
+  - data: \x03\0\0\x0b\x06\xe0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtmp
+    type: regex
+    regex:
+    - (?i)^\x03.{899,1536}$

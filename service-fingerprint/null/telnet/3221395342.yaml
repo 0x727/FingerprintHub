@@ -1,0 +1,20 @@
+id: telnet
+info:
+  name: Cisco CSS telnetd
+  author: nmap,cn-kali-team
+  tags: detect,tech,telnet,service
+  severity: info
+  metadata:
+    device_type: load balancer
+    operating_system: IOS
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: telnet
+    type: regex
+    regex:
+    - ^\r\nSystem unavailable\.  Please try later\.\r\n$

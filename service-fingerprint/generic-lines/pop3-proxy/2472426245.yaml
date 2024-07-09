@@ -1,0 +1,19 @@
+id: pop3-proxy
+info:
+  name: Astaro firewall pop3 proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,pop3-proxy,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: pop3-proxy
+    type: regex
+    regex:
+    - ^\+OK POP3Proxy ready on node \d+\r\n-ERR Unknown command\r\n-ERR Unknown command\r\n

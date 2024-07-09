@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Triax telecom equipment setup httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nDate: [^\r\n]*\r\nLast-Modified: [^\r\n]*\r\nEtag: "[a-f0-9]+\.[a-f0-9]+"\r\nContent-Type: text/html\r\nCache-Control: private, no-cache, no-store, must-revalidate, max-age=0, proxy-revalidate, s-maxage=0\r\nExpires: 0\r\nPragma: no-cache\r\nVary: \*\r\nContent-Length: \d+\r\nConnection: close\r\nAccept-Ranges: bytes\r\n\r\n.*<title>Triax - Setup Service Tool</title>'

@@ -1,0 +1,19 @@
+id: ups
+info:
+  name: Cyber Power PowerPanelPlus UPS Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,ups,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ups
+    type: regex
+    regex:
+    - ^32\r $

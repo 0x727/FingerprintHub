@@ -1,0 +1,17 @@
+id: motorola-devmgr
+info:
+  name: Motorola Device Manager
+  author: nmap,cn-kali-team
+  tags: detect,tech,motorola-devmgr,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: motorola-devmgr
+    type: regex
+    regex:
+    - ^GET / HT\xff\xff\xff\xff$

@@ -1,0 +1,17 @@
+id: teamspeak-tcpquery
+info:
+  name: TeamSpeak 2 TCPQuery
+  author: nmap,cn-kali-team
+  tags: detect,tech,teamspeak-tcpquery,service
+  severity: info
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: teamspeak-tcpquery
+    type: regex
+    regex:
+    - ^\[TS\]\r\n

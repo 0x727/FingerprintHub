@@ -1,0 +1,19 @@
+id: smtp
+info:
+  name: Kerio smtpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,smtp,service
+  severity: info
+  metadata:
+    hostname: $1
+tcp:
+- name: help
+  inputs:
+  - data: HELP\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: smtp
+    type: regex
+    regex:
+    - '^220 ([-\w_.]+) ESMTP ready\r\n214 [\d.]+ Commands: HELO EHLO MAIL RCPT DATA RSET NOOP VRFY QUIT STARTTLS\r\n'

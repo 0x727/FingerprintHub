@@ -1,0 +1,17 @@
+id: gopher-proxy
+info:
+  name: Symantec gopher proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,gopher-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gopher-proxy
+    type: regex
+    regex:
+    - ^3That item is not currently available\.\r\n$

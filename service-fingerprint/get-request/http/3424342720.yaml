@@ -1,0 +1,21 @@
+id: http
+info:
+  name: ISS System Scanner Vista
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $6
+    info: OpenSA/$1 Apache/$2 mod_ssl/$4 OpenSSL/$5
+    operating_system: $3
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\nDate: .*\r\nServer: OpenSA/([\d.]+) / Apache/([\d.]+) \((\w*)\) mod_ssl/([\d.]+) OpenSSL/([\d.]+)\r\n.*<LINK REL=\"SHORTCUT ICON\" HREF=\"http://([\w.-_]+)/iss\.ico\">\r\n<TITLE> System Scanner Vista Welcome Page </TITLE>\r\n'

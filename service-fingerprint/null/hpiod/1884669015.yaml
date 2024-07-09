@@ -1,0 +1,19 @@
+id: hpiod
+info:
+  name: HP Linux Imaging and Printing System
+  author: nmap,cn-kali-team
+  tags: detect,tech,hpiod,service
+  severity: info
+  metadata:
+    operating_system: Linux
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: hpiod
+    type: regex
+    regex:
+    - ^msg=MessageError\nresult-code=5\n$

@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Olympus camera httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 301 Moved Permanently\r\nContent-Type: text/html\r\nContent-Length: 165\r\nLocation: http://oishare/DCIM\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2\.0//EN\">\r\n<HTML><HEAD><TITLE>301 Moved Permanently</TITLE></HEAD>\r\n<BODY><H1>301 Moved Permanently</H1>\r\n\r\n</BODY></HTML>\r\n'

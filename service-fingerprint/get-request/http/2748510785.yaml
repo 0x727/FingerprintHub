@@ -1,0 +1,21 @@
+id: http
+info:
+  name: SimpleCam httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: 'Webcam resolution: $2x$3'
+    operating_system: Windows
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.0 200 OK\r\n\r\n<HTML>\r\r\n<BODY>\r\r\n\r\r\n<APPLET CODE=\"SimpleCamApplet2\.class\" CODEBASE=\"http://([-\w_.]+)/.*\" WIDTH=\"(\d+)\" HEIGHT=\"(\d+)\">

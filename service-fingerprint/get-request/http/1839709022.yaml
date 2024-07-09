@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Milestone XProtect video surveillance http interface
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?ETag: \"\d+\"\r\nContent-Type: text/html\r\nContent-Length: 79\r\nAccept-Ranges: bytes\r\nCache-Control: private\r\n\r\n<html><head><META http-equiv=\"refresh\" content=\"0;URL=(\w\w-\w\w)\.htm\"></head></html>'

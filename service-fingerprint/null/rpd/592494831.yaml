@@ -1,0 +1,20 @@
+id: rpd
+info:
+  name: Remote Play Daemon
+  author: nmap,cn-kali-team
+  tags: detect,tech,rpd,service
+  severity: info
+  metadata:
+    operating_system: Linux
+    version: $1
+tcp:
+- name: 'null'
+  inputs:
+  - data: ''
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rpd
+    type: regex
+    regex:
+    - ^\+host=cashew version=([\d.]+) uptime=[\d+:]+ audio-bits=\d+ audio-byte-order=\w+-endian

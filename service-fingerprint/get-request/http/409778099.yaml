@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Optenet Mailsecure CCOTTA http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 Okay\r\nServer: Optenet CCOTTA ([\w._-]+)\r\nContent-Type: text/html\r\n\r\n<html><head><title>Optenet CCOTTA Status</title>'

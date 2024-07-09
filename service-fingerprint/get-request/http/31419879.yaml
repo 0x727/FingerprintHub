@@ -1,0 +1,21 @@
+id: http
+info:
+  name: Trapeze-Srv
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    hostname: $1
+    info: Trapeze NOVUS http config
+    version: $2
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 401 Default login not authorized to perform this action\r\n(?:[^\r\n]+\r\n)*?WWW-Authenticate: Basic realm=\"/INOVAS/NovusDFM-trunk-[\w-]+/Config/([\w_.-]+)\"\r\n(?:[^\r\n]+\r\n)*?Server: Trapeze-Srv/([\d.]+)\r\n'

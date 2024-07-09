@@ -1,0 +1,19 @@
+id: upnp
+info:
+  name: AllShare UPnP
+  author: nmap,cn-kali-team
+  tags: detect,tech,upnp,service
+  severity: info
+  metadata:
+    operating_system: Bada
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: upnp
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nContent-Type: \r\nContent-Length: 0\r\nConnection: close\r\n\r\n'

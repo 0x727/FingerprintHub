@@ -1,0 +1,19 @@
+id: olsrd-txtinfo
+info:
+  name: olsrd txtinfo plugin
+  author: nmap,cn-kali-team
+  tags: detect,tech,olsrd-txtinfo,service
+  severity: info
+  metadata:
+    version: 0.6.3
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: olsrd-txtinfo
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\nContent-type: text/plain\n\nTable: Links\nLocal IP\tRemote IP\tHyst\.\tLQ\tNLQ\tCost\n[\w._-]+\t[\w._-]+\t[\d.]+\t[\d.]+\t[\d.]+\t[\d.]+\t\n'

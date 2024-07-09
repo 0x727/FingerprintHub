@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Avaya IP Office VoIP PBX httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: PBX
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 301 Moved Permanently\r\nDate: .*\r\n(?:Expires: .*\r\n)?Cache-Control: private(?:,max-age=\d+)?\r\nLocation: /index\.html\r\nServer: IPOffice/([\w._()-]+)\r\nContent-Type: text/plain\r\nContent-Length: 22\r\n\r\nRedirect to index\.html$'

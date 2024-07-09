@@ -1,0 +1,17 @@
+id: http-proxy
+info:
+  name: Freenet FProxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Content-Security-Policy: default-src ''self''; script-src ''none''; frame-src ''none''; object-src ''none''; style-src ''self'' ''unsafe-inline''\r\n(?:[^\r\n]+\r\n)*?Cache-Control: private, max-age=0, must-revalidate, no-cache, no-store, post-check=0, pre-check=0\r\n'

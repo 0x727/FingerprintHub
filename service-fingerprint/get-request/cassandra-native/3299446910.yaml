@@ -1,0 +1,19 @@
+id: cassandra-native
+info:
+  name: Apache Cassandra
+  author: nmap,cn-kali-team
+  tags: detect,tech,cassandra-native,service
+  severity: info
+  metadata:
+    info: native protocol version 1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: cassandra-native
+    type: regex
+    regex:
+    - '^\x81\0\0\0\0\0\0\0\x8c\0\0\0\0\0\x86io\.netty\.handler\.codec\.DecoderException: org\.apache\.cassandra\.transport\.ProtocolException: Invalid or unsupported protocol version: 71'

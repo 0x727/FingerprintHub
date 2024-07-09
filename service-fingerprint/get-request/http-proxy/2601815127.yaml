@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: Phion HTTPS VPN gateway
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    device_type: proxy server
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 302 Moved Temporarily\r\nContent-length: 22\r\nConnection: close\r\nSet-Cookie: sslvpn-authck-orig-url=/; path=/\r\nSet-Cookie: sslvpn-authck-realm-name=Our Users; path=/\r\nLocation: /_formauth/login\.html\r\nContent-Type: text/plain\r\n\r\n302 Moved Temporarily\n$'

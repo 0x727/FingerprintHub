@@ -1,0 +1,19 @@
+id: vnc-http
+info:
+  name: NetWare VNC Desktop
+  author: nmap,cn-kali-team
+  tags: detect,tech,vnc-http,service
+  severity: info
+  metadata:
+    info: 'user: $1; resolution: $2x$3; VNC TCP port: $4'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: vnc-http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.0 200 OK\n.*<!-- \r\n     index\.vnc - default HTML page for TightVNC Java viewer applet, to be.*<TITLE>\r\n([\d\w]+) - NetWare VNCServer desktop.*<APPLET CODE=VncViewer\.class ARCHIVE=VncViewer\.jar\r\n *WIDTH=(\d+) HEIGHT=(\d+)>\r\n<param name=PORT value=(\d+)>

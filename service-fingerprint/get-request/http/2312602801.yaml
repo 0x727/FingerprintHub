@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Rockpile httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: VoIP phone
+    info: Cisco 7937 VoIP phone http config
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 300 Multiple Choices\r\nServer: Rockpile Web Server\r\nDate: Sun, 00 Jan 1900 00:00:00 GMT\r\nConnection: close\r\nLocation: http://[\w._-]+/localmenus\.cgi\?func=604\r\nContent-type: text/html\r\n\r\n.*HTTP/1\.0 404 Not Found\r\nServer: Rockpile Web Server\r\nDate: Sun, 00 Jan 1900 00:00:00 GMT\r\n'

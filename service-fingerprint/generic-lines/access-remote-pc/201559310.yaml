@@ -1,0 +1,19 @@
+id: access-remote-pc
+info:
+  name: Access Remote PC
+  author: nmap,cn-kali-team
+  tags: detect,tech,access-remote-pc,service
+  severity: info
+  metadata:
+    operating_system: Windows
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: access-remote-pc
+    type: regex
+    regex:
+    - ^\x99\xf3\0\0\0\0\0\0\xff\xff\xff\xff$

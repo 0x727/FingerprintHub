@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Apache Tomcat
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    version: 6.0.29
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 200 OK\r\n(?:[^\r\n]+\r\n)*?Last-Modified: Wed, 09 Mar 2011 18:57:19 GMT\r\n(?:[^\r\n]+\r\n)*?Server: Apache\r\n\r\n<!--\n  Licensed to the Apache Software Foundation \(ASF\) under one or more\n  contributor license agreements\.'

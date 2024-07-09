@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Sanyo PLC-XU300 projector http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - (?i)^HTTP/1\.1 200 OK\r\n.*<meta http-equiv=\"Content-Type\" content=\"text/html; charset=Shift_JIS\">\r\n\r\n<html>\r\n<head>\r\n<title>Network</title>\r\n</head>\r\n<noscript>Make sure JavaScript is ON\.</noscript>.*<frame src=\"dmy\.htm\" name=\"m\">

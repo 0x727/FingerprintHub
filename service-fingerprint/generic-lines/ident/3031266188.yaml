@@ -1,0 +1,19 @@
+id: ident
+info:
+  name: Borderware Firewall identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^\r\n: ERROR : HIDDEN-USER\r\n$'

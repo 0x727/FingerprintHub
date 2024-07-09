@@ -1,0 +1,20 @@
+id: http
+info:
+  name: VCS-VideoJet-Webserver httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: webcam
+    info: Bosch VIP X1 video encoder http config
+tcp:
+- name: httpoptions
+  inputs:
+  - data: OPTIONS / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.1 302 Found\r\nDate: \w\w\w \w\w\w \d\d \d\d:\d\d:\d\d \d\d\d\d\n GMT\r\nServer: VCS-VideoJet-Webserver\r\nLocation: http://[\w._-]+/xampp/\r\nKeep-Alive: timeout=5, max=100\r\nConnection: Keep-Alive\r\n\r\n'

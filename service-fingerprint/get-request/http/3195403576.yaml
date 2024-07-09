@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Stonesoft StoneGate SSL VPN
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 Ok\r\nDate: .* GMT\r\nContent-Type: text/html\r\nSet-Cookie: WASID=[\da-f]{16}; path=/\r\nSet-Cookie: WAAK=[\da-f]{32}; path=/; secure\r\nConnection: close\r\n\r\n'

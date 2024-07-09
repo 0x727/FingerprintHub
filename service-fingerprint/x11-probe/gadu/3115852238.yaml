@@ -1,0 +1,17 @@
+id: gadu
+info:
+  name: Kadu polish IM client
+  author: nmap,cn-kali-team
+  tags: detect,tech,gadu,service
+  severity: info
+tcp:
+- name: x11-probe
+  inputs:
+  - data: \x6C\0\x0B\0\0\0\0\0\0\0\0\0
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: gadu
+    type: regex
+    regex:
+    - ^UDAG$

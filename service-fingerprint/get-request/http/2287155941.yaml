@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Check Point $1 SVN foundation login
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^HTTP/1\.0 200 OK\r\n\r\n\r\n<html>\r\n<head>\r\n\t<meta http-equiv="Content-Language" content="en-us" />\r\n\t<meta http-equiv="X-UA-Compatible" content="IE=edge" />\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />\r\n\t<title>Check Point ([\w]+) Appliance - Login</title>

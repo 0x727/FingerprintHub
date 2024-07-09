@@ -1,0 +1,19 @@
+id: http-proxy
+info:
+  name: Squid
+  author: nmap,cn-kali-team
+  tags: detect,tech,http-proxy,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: nessus-tpv10
+  inputs:
+  - data: < NTP/1.0 >\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http-proxy
+    type: regex
+    regex:
+    - '^HTTP/1\.0 400 Bad Request\r\nServer: squid/([\w._+-]+)\r\n'

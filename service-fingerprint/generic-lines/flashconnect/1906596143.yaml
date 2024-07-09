@@ -1,0 +1,19 @@
+id: flashconnect
+info:
+  name: Raining Data FlashCONNECT
+  author: nmap,cn-kali-team
+  tags: detect,tech,flashconnect,service
+  severity: info
+  metadata:
+    version: $1
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: flashconnect
+    type: regex
+    regex:
+    - ^FlashCONNECT ([\d.]+) invalid message\.\n$

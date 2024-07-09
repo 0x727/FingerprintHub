@@ -1,0 +1,17 @@
+id: zabbix
+info:
+  name: Zabbix Monitoring System
+  author: nmap,cn-kali-team
+  tags: detect,tech,zabbix,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: zabbix
+    type: regex
+    regex:
+    - (?i)^ZBXD\x01.\0\0\0\0\0\0\0ZBX_NOTSUPPORTED

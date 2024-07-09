@@ -1,0 +1,19 @@
+id: http
+info:
+  name: USRobotics USR8200 firewall http config
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '(?i)^HTTP/1\.0 200 OK\r\nContent-type: text/html\r\nCache-Control: no-cache\r\nPragma: no-cache\r\n.*<!--- Page\(\d+\)=\[\] --->.*<TITLE>Management Console</TITLE>'

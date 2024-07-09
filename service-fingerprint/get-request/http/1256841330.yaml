@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Fortinet Fortiguard 900D SSL VPN
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: firewall
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nDate: .*\r\nServer: xxxxxxxx-xxxxx\r\nLast-Modified: .*\r\nETag: "[a-f0-9-]{16}"\r\nAccept-Ranges: bytes\r\nContent-Length: \d+\r\nConnection: close\r\nContent-Type: text/html\r\nX-Frame-Options: SAMEORIGIN\r\n\r\n<html><script type="text/javascript">\nif \(window!=top\) top\.location=window\.location;top\.location="/remote/login";\n</script></html>\n'

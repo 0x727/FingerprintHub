@@ -1,0 +1,19 @@
+id: websocket
+info:
+  name: DeskCenter WorkerService
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+  metadata:
+    info: 'WebSocket versions: 8, 13'
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 8, 13\r\n\r\n$'

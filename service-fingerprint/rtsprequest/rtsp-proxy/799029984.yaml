@@ -1,0 +1,19 @@
+id: rtsp-proxy
+info:
+  name: Blue Coat rtsp proxy
+  author: nmap,cn-kali-team
+  tags: detect,tech,rtsp-proxy,service
+  severity: info
+  metadata:
+    info: Unlicensed
+tcp:
+- name: rtsprequest
+  inputs:
+  - data: OPTIONS / RTSP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rtsp-proxy
+    type: regex
+    regex:
+    - '^RTSP/1\.0 403 Forbidden: Proxy not licensed\r\nSession: \w+\r\n\r\n'

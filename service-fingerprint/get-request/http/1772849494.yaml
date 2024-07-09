@@ -1,0 +1,17 @@
+id: http
+info:
+  name: Node.js
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 200 OK\r\nContent-Type: text/html\r\nDate: .* GMT\r\nConnection: close\r\n\r\n<!DOCTYPE html><html>    <head>        <meta charset="utf-8" />        <title>Node\.js</title>    </head>    <body>       <h1>Welcome to Node\.js</h1>    </body></html>'

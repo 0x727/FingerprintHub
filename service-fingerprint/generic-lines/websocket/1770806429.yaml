@@ -1,0 +1,17 @@
+id: websocket
+info:
+  name: Java-WebSocket
+  author: nmap,cn-kali-team
+  tags: detect,tech,websocket,service
+  severity: info
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: websocket
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 WebSocket Upgrade Failure\r\nContent-Type: text/html\nServer: TooTallNate Java-WebSocket\r\n'

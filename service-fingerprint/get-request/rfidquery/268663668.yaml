@@ -1,0 +1,17 @@
+id: rfidquery
+info:
+  name: Mercury3 RFID Query protocol
+  author: nmap,cn-kali-team
+  tags: detect,tech,rfidquery,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: rfidquery
+    type: regex
+    regex:
+    - ^Error 0 parse error\n\nError 0 parse error\n\nError 0 parse error\n\nError 0 parse error\n\nError 0 parse error\n\nError 0 parse error\n\nError 0 parse error\n\n$

@@ -1,0 +1,19 @@
+id: control-gc-ports
+info:
+  name: Global Cache GC-100 config
+  author: nmap,cn-kali-team
+  tags: detect,tech,control-gc-ports,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: control-gc-ports
+    type: regex
+    regex:
+    - ^unknowncommand 14\r$

@@ -1,0 +1,19 @@
+id: crestron-control
+info:
+  name: TiVo DVR Crestron control server
+  author: nmap,cn-kali-team
+  tags: detect,tech,crestron-control,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: crestron-control
+    type: regex
+    regex:
+    - ^INVALID_COMMAND\r

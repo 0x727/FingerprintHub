@@ -1,0 +1,21 @@
+id: http
+info:
+  name: IBM HTTP Server
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    info: Derived from Apache $2; PHP $3
+    operating_system: Unix
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 \d\d\d .*\r\nDate: .*\r\nServer: IBM_HTTP_SERVER/(\d[-.\w]+) +Apache/(\d[-.\w]+) \(Unix\) PHP/([\d.]+)\r\n'

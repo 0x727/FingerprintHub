@@ -1,0 +1,20 @@
+id: http
+info:
+  name: Spyglass MicroServer
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: printer
+    version: $1
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 404 Not Found\r\nDate: .*\r\nAllow: GET, HEAD\r\nServer: Spyglass_MicroServer/(\d[-.\w]+)\r\nContent-Type: text/html\r\nContent-Length: \d+\r\n\r\n<HTML><HEAD><TITLE>Not Found</TITLE></HEAD>\r\n<BODY>The requested URL was not found\.</BODY></HTML>\r\n'

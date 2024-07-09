@@ -1,0 +1,17 @@
+id: http
+info:
+  name: LXD container manager REST API
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.0 200 OK\r\nContent-Type: application/json\r\nDate: .*\r\nContent-Length: 114\r\n\r\n\{"type":"sync","status":"Success","status_code":200,"operation":"","error_code":0,"error":"","metadata":\["/1\.0"\]\}\n'

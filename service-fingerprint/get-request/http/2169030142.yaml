@@ -1,0 +1,19 @@
+id: http
+info:
+  name: Syabas Popcorn Hour media player XML command server httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+  metadata:
+    device_type: media device
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - '^HTTP/1\.1 400 Bad Request\nContent-Type: text/xml\n\n<\?xml version=\"1\.0\" encoding=\"UTF-8\" \?>\n<syabasCommandServerXml>\n\t<returnValue>1</returnValue>\n\t<response>\n\t</response>\n</syabasCommandServerXml>\n$'

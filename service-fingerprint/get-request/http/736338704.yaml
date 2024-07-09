@@ -1,0 +1,17 @@
+id: http
+info:
+  name: HP SAN Manager ServiceRegistry httpd
+  author: nmap,cn-kali-team
+  tags: detect,tech,http,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: http
+    type: regex
+    regex:
+    - ^<html><head><title>ServiceRegistry</title><META HTTP-EQUIV=\"Pragma\" CONTENT=\"no-cache\"></head><basefont size=\"2\" face=\"Arial\" color=\"Black\">.*<br><h1><i>ServiceRegistry</i></h1>\r\nAvailable commands:\r\n<ul>

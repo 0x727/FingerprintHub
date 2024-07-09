@@ -1,0 +1,19 @@
+id: ident
+info:
+  name: Plan 9 identd
+  author: nmap,cn-kali-team
+  tags: detect,tech,ident,service
+  severity: info
+  metadata:
+    operating_system: Plan 9
+tcp:
+- name: generic-lines
+  inputs:
+  - data: \r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ident
+    type: regex
+    regex:
+    - '^rc \(tcp113\): null list in concatenation\n'

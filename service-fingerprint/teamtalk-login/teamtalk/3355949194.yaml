@@ -1,0 +1,20 @@
+id: teamtalk
+info:
+  name: BearWare TeamTalk
+  author: nmap,cn-kali-team
+  tags: detect,tech,teamtalk,service
+  severity: info
+  metadata:
+    info: 'protocol: $1; no authentication required'
+    version: $2
+tcp:
+- name: teamtalk-login
+  inputs:
+  - data: login\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: teamtalk
+    type: regex
+    regex:
+    - ^(?:teamtalk|welcome) userid=\d+ servername="" .* protocol="([\d.]+)"\r\naccepted .*\r\nserverupdate .* version="([\d.]+)"\r\n

@@ -1,0 +1,17 @@
+id: ripbot
+info:
+  name: RipBot video encoding server
+  author: nmap,cn-kali-team
+  tags: detect,tech,ripbot,service
+  severity: info
+tcp:
+- name: get-request
+  inputs:
+  - data: GET / HTTP/1.0\r\n\r\n
+  host:
+  - '{{Hostname}}'
+  extractors:
+  - name: ripbot
+    type: regex
+    regex:
+    - ^200 Welcome\r\n400-Unknown Command\r\n400 GET / HTTP/1\.0\r\n$
