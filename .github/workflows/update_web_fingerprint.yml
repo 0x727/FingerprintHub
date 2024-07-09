@@ -16,17 +16,24 @@ jobs:
     runs-on: ubuntu-latest
     if: github.repository == '0x727/FingerprintHub'
     steps:
-
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
       - name: Check out code
         uses: actions/checkout@master
         with:
           persist-credentials: false
           fetch-depth: 0
-
+      - uses: Swatinem/rust-cache@v1
+      - name: Build
+        run: cargo build --release
       - name: Update FingerPrint
         id: update-fingerprint
         run: |
-          git clone --depth 100 --branch main https://github.com/projectdiscovery/nuclei-templates
+          ./target/release/helper --convert
           echo "::set-output name=changes::$(git status -s | wc -l)"
 
       - name: Commit files
