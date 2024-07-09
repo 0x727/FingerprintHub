@@ -299,7 +299,7 @@ fn format() {
                 template.info.metadata = BTreeMap::from_iter([
                     (
                         "verified".to_string(),
-                        engine::serde_format::Value::Bool(vendor.as_str() != "00_unverified"),
+                        engine::serde_format::Value::Bool(vendor.as_str() != "00_unknown"),
                     ),
                     (
                         "vendor".to_string(),
@@ -326,8 +326,8 @@ fn format() {
     }
 }
 
-fn to_json() {
-    let current_fingerprint_dir = env::current_dir().unwrap().join("web-fingerprint");
+fn convert_json(dir: &str, filename: &str) {
+    let current_fingerprint_dir = env::current_dir().unwrap().join(dir);
     let yaml_paths = find_yaml_file(&current_fingerprint_dir, true);
     let mut templates = Vec::new();
     for yaml_path in yaml_paths {
@@ -347,7 +347,7 @@ fn to_json() {
         .create(true)
         .append(false)
         .truncate(true)
-        .open("web_fingerprint_v4.json")
+        .open(filename)
         .unwrap();
     serde_json::to_writer(f, &templates).unwrap();
 }
@@ -355,7 +355,8 @@ fn to_json() {
 fn main() {
     let config = HelperConfig::default();
     if config.convert {
-        to_json();
+        convert_json("web-fingerprint", "web_fingerprint_v4.json");
+        convert_json("service-fingerprint", "service_fingerprint_v4.json");
     }
     if config.sync {
         sync_nuclei();
