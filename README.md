@@ -163,7 +163,7 @@ http:
 | headers | Option\<HashMap\<String,String\>\> | (可选)请求头，一个键值对                                                 |
 | body    | Option\<String\>                   | (可选)请求体                                                       |
 
-- 支持raw请求，但是不建议再识别指纹规则填写
+- 支持raw请求，但是不建议在识别指纹规则填写
 
 #### tcp探针
 
