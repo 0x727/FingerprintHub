@@ -7,7 +7,7 @@ info:
   metadata:
     product: nps
     vendor: nps_project
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

@@ -328,7 +328,7 @@ fn update_info(template: &mut Template, fingerprint_yaml_path: &PathBuf) {
     template.info.metadata = BTreeMap::from_iter([
         (
             "verified".to_string(),
-            engine::serde_format::Value::Bool(vpf.verified),
+            engine::serde_format::Value::Bool(vpf.vendor.as_str() != UNKNOWN_VENDOR),
         ),
         (
             "vendor".to_string(),

@@ -7,7 +7,7 @@ info:
   metadata:
     product: geoserver
     vendor: osgeo
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

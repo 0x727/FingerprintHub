@@ -7,7 +7,7 @@ info:
   metadata:
     product: yapi
     vendor: ymfe
-    verified: false
+    verified: true
 http:
 - method: GET
   path:
