@@ -34,6 +34,7 @@ jobs:
         id: update-fingerprint
         run: |
           ./target/release/helper --convert
+          ./target/release/helper --format
           echo "::set-output name=changes::$(git status -s | wc -l)"
 
       - name: Commit files

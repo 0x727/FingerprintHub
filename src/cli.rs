@@ -8,6 +8,9 @@ pub struct HelperConfig {
     /// sync nuclei template
     #[argh(switch)]
     pub sync: bool,
+    /// format fingerprin yaml
+    #[argh(switch)]
+    pub format: bool,
 }
 impl Default for HelperConfig {
     fn default() -> Self {

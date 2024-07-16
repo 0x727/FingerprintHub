@@ -6,8 +6,8 @@ info:
   severity: info
   metadata:
     product: geoserver
-    vendor: 00_unknown
-    verified: true
+    vendor: osgeo
+    verified: false
 http:
 - method: GET
   path:

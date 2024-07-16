@@ -1,4 +1,5 @@
 use engine::find_yaml_file;
+use engine::info::VPF;
 use engine::matchers::{Favicon, MatcherType, Part};
 use engine::request::HttpRaw;
 use engine::template::Template;
@@ -6,9 +7,9 @@ use helper::cli::HelperConfig;
 use std::collections::BTreeMap;
 use std::env;
 use std::fs::{File, OpenOptions};
-use std::path::Path;
+use std::path::{Path, PathBuf};
 use std::str::FromStr;
-
+const UNKNOWN_VENDOR: &str = "00_unknown";
 const BUILT_TAGS: [&str; 59] = [
     "misconfig",
     "fileupload",
@@ -84,7 +85,7 @@ fn remove_built_tags(tags: &[String]) -> Vec<String> {
 }
 
 fn sync_nuclei() {
-    //
+    //同步nuclei
     let mut yaml_paths = Vec::new();
     for path in ["cnvd", "cves", "default-logins", "vulnerabilities"] {
         let y = format!("nuclei-templates/http/{}", path);
@@ -182,41 +183,51 @@ fn sync_nuclei() {
     }
     println!("{}", count);
 }
-
+// 将有厂商和产品的指纹移动到已经分类好的文件夹
 fn rename_fingerprint_yaml() {
     let current_plugin_dir = env::current_dir().unwrap().join("plugins");
     let current_fingerprint_dir = env::current_dir().unwrap().join("web-fingerprint");
-    let yaml_paths = find_yaml_file(&current_fingerprint_dir.join("00_unknown"), false);
-    let all_vs: Vec<String> = std::fs::read_dir(&current_plugin_dir)
+    let unknown_yaml_paths = find_yaml_file(&current_fingerprint_dir.join(UNKNOWN_VENDOR), false);
+    let all_plugins_vendor_name: Vec<String> = std::fs::read_dir(&current_plugin_dir)
         .unwrap()
         .map(|p| p.unwrap().file_name().to_string_lossy().to_string())
         .collect();
-    for yaml_path in yaml_paths {
-        if let Ok(f) = File::open(&yaml_path) {
+    for unknown_yaml_path in unknown_yaml_paths {
+        if let Ok(f) = File::open(&unknown_yaml_path) {
             match serde_yaml::from_reader::<std::fs::File, Template>(f) {
                 Ok(template) => {
                     let vpf = template.info.get_vpf();
-                    if all_vs.contains(&template.id) {
+                    if all_plugins_vendor_name.contains(&template.id) {
                         let same = current_plugin_dir.join(&template.id);
                         if same.is_dir() {
                             let finger = same.join(format!("{}.yaml", &template.id));
-                            std::fs::rename(&yaml_path, finger).unwrap();
+                            println!(
+                                "rename: {} to {}",
+                                unknown_yaml_path.to_string_lossy(),
+                                finger.to_string_lossy()
+                            );
+                            std::fs::rename(&unknown_yaml_path, finger).unwrap();
                             continue;
                         }
                     }
                     if let Some((v, p)) = template.id.split_once('-') {
-                        if all_vs.contains(&v.to_string()) {
+                        if all_plugins_vendor_name.contains(&v.to_string()) {
                             let same = current_plugin_dir.join(v);
                             let path = same.join(p);
                             if path.is_dir() {
                                 let finger = same.join(format!("{}.yaml", p));
-                                std::fs::rename(&yaml_path, finger).unwrap();
+                                println!(
+                                    "rename: {} to {}",
+                                    unknown_yaml_path.to_string_lossy(),
+                                    finger.to_string_lossy()
+                                );
+                                std::fs::rename(&unknown_yaml_path, finger).unwrap();
                                 continue;
                             }
                         }
                     };
                     if let Some(vpf) = vpf {
-                        if vpf.vendor == "00_unknown" {
+                        if vpf.vendor == UNKNOWN_VENDOR {
                             continue;
                         }
                         let p = current_plugin_dir.join(&vpf.vendor).join(&vpf.product);
@@ -226,7 +237,12 @@ fn rename_fingerprint_yaml() {
                             let finger = current_fingerprint_dir
                                 .join(&vpf.vendor)
                                 .join(format!("{}.yaml", vpf.product));
-                            std::fs::rename(&yaml_path, finger).unwrap();
+                            println!(
+                                "rename: {} to {}",
+                                unknown_yaml_path.to_string_lossy(),
+                                finger.to_string_lossy()
+                            );
+                            std::fs::rename(&unknown_yaml_path, finger).unwrap();
                             continue;
                         }
                     }
@@ -237,7 +253,7 @@ fn rename_fingerprint_yaml() {
             }
         }
     }
-    for name in all_vs.iter() {
+    for name in all_plugins_vendor_name.iter() {
         for yaml_path in find_yaml_file(&current_plugin_dir.join(name), false) {
             let finger_path = current_fingerprint_dir.join(name);
             std::fs::create_dir_all(&finger_path).unwrap();
@@ -245,72 +261,94 @@ fn rename_fingerprint_yaml() {
         }
     }
 }
-
+fn update_template(template: &mut Template) {
+    for http in template.requests.http.iter_mut() {
+        for matchers in http.operators.matchers.iter_mut() {
+            // 如果是关键词匹配，添加转小写和忽略大小写
+            if let MatcherType::Word(mut w) = matchers.matcher_type.clone() {
+                let new: Vec<String> = w.words.iter().map(|x| x.to_ascii_lowercase()).collect();
+                w.words.clone_from(&new);
+                matchers.matcher_type = MatcherType::Word(w);
+                if let Part::Name(name) = &matchers.part {
+                    if name == "favicon" {
+                        matchers.part = Part::Body;
+                        matchers.matcher_type = MatcherType::Favicon(Favicon { hash: new });
+                    }
+                }
+                matchers.case_insensitive = true;
+            }
+            if let MatcherType::Favicon(mut h) = matchers.matcher_type.clone() {
+                let new: Vec<String> = h.hash.iter().map(|x| x.to_ascii_lowercase()).collect();
+                h.hash = new;
+                matchers.matcher_type = MatcherType::Favicon(h);
+                matchers.case_insensitive = false;
+            }
+        }
+        // 路径请求方式转大写
+        if let HttpRaw::Path(mut h) = http.http_raw.clone() {
+            h.method =
+                engine::slinger::http::Method::from_str(&h.method.as_str().to_uppercase()).unwrap();
+            http.http_raw = HttpRaw::Path(h);
+        }
+    }
+}
+fn update_info(template: &mut Template, fingerprint_yaml_path: &PathBuf) {
+    let vpf = if let Some(pvf) = template.info.get_vpf() {
+        pvf
+    } else {
+        if let Some(parent) = fingerprint_yaml_path.parent() {
+            let product = fingerprint_yaml_path
+                .file_name()
+                .unwrap_or_default()
+                .to_string_lossy()
+                .to_string()
+                .trim_end_matches(".yaml")
+                .to_string();
+            let vendor = parent
+                .file_name()
+                .unwrap_or_default()
+                .to_string_lossy()
+                .to_string();
+            let verified = vendor == UNKNOWN_VENDOR;
+            VPF {
+                vendor,
+                product,
+                framework: None,
+                verified,
+            }
+        } else {
+            VPF {
+                vendor: UNKNOWN_VENDOR.to_string(),
+                product: UNKNOWN_VENDOR.to_string(),
+                framework: None,
+                verified: false,
+            }
+        }
+    };
+    template.info.metadata = BTreeMap::from_iter([
+        (
+            "verified".to_string(),
+            engine::serde_format::Value::Bool(vpf.verified),
+        ),
+        (
+            "vendor".to_string(),
+            engine::serde_format::Value::String(vpf.vendor),
+        ),
+        (
+            "product".to_string(),
+            engine::serde_format::Value::String(vpf.product),
+        ),
+    ]);
+}
 fn format() {
     let current_fingerprint_dir = env::current_dir().unwrap().join("web-fingerprint");
-    let all_finger = find_yaml_file(&current_fingerprint_dir, true);
-    for yaml_path in all_finger {
-        let f = File::open(&yaml_path).unwrap();
+    let all_fingerprint_path = find_yaml_file(&current_fingerprint_dir, true);
+    for fingerprint_yaml_path in all_fingerprint_path {
+        let f = File::open(&fingerprint_yaml_path).unwrap();
         let mut new_template = None;
         if let Ok(mut template) = serde_yaml::from_reader::<std::fs::File, Template>(f) {
-            for http in template.requests.http.iter_mut() {
-                for matchers in http.operators.matchers.iter_mut() {
-                    if let MatcherType::Word(mut w) = matchers.matcher_type.clone() {
-                        let new: Vec<String> =
-                            w.words.iter().map(|x| x.to_ascii_lowercase()).collect();
-                        w.words.clone_from(&new);
-                        matchers.matcher_type = MatcherType::Word(w);
-                        if let Part::Name(name) = &matchers.part {
-                            if name == "favicon" {
-                                matchers.part = Part::Body;
-                                matchers.matcher_type = MatcherType::Favicon(Favicon { hash: new });
-                            }
-                        }
-                        matchers.case_insensitive = true;
-                    }
-                    if let MatcherType::Favicon(mut h) = matchers.matcher_type.clone() {
-                        let new: Vec<String> =
-                            h.hash.iter().map(|x| x.to_ascii_lowercase()).collect();
-                        h.hash = new;
-                        matchers.matcher_type = MatcherType::Favicon(h);
-                        matchers.case_insensitive = false;
-                    }
-                }
-                if let HttpRaw::Path(mut h) = http.http_raw.clone() {
-                    h.method =
-                        engine::slinger::http::Method::from_str(&h.method.as_str().to_uppercase())
-                            .unwrap();
-                    http.http_raw = HttpRaw::Path(h);
-                }
-            }
-            if let Some(parent) = yaml_path.parent() {
-                let product = yaml_path
-                    .file_name()
-                    .unwrap_or_default()
-                    .to_string_lossy()
-                    .to_string()
-                    .trim_end_matches(".yaml")
-                    .to_string();
-                let vendor = parent
-                    .file_name()
-                    .unwrap_or_default()
-                    .to_string_lossy()
-                    .to_string();
-                template.info.metadata = BTreeMap::from_iter([
-                    (
-                        "verified".to_string(),
-                        engine::serde_format::Value::Bool(vendor.as_str() != "00_unknown"),
-                    ),
-                    (
-                        "vendor".to_string(),
-                        engine::serde_format::Value::String(vendor),
-                    ),
-                    (
-                        "product".to_string(),
-                        engine::serde_format::Value::String(product),
-                    ),
-                ])
-            }
+            update_template(&mut template);
+            update_info(&mut template, &fingerprint_yaml_path);
             new_template = Some(template);
         }
         if let Some(t) = new_template {
@@ -319,7 +357,7 @@ fn format() {
                 .create(true)
                 .append(false)
                 .truncate(true)
-                .open(&yaml_path)
+                .open(&fingerprint_yaml_path)
                 .unwrap();
             serde_yaml::to_writer(f, &t).unwrap();
         }
@@ -361,7 +399,10 @@ fn main() {
     if config.sync {
         sync_nuclei();
     }
-    // rename_fingerprint_yaml();
+    if config.format {
+        format();
+        rename_fingerprint_yaml();
+    }
     // format();
     // nmap();
 }
