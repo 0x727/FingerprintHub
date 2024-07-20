@@ -8,6 +8,7 @@ info:
     device_type: router
     info: 'build date: $3'
     operating_system: TiMOS $1
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

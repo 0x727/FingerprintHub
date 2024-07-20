@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Unlicensed; protocol 3.$1; Spanish
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

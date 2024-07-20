@@ -5,6 +5,7 @@ info:
   tags: detect,tech,smtp,service
   severity: info
   metadata:
+    rarity: 0
     version: $1 Beta $2
 tcp:
 - name: 'null'

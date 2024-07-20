@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'UUID: $2, Total songs: $3'
+    rarity: 8
     version: $1
 tcp:
 - name: squeeze-center_cli
@@ -13,6 +14,7 @@ tcp:
   - data: serverstatus\r\n
   host:
   - '{{Hostname}}'
+  port: '9090'
   extractors:
   - name: squeezecli
     type: regex

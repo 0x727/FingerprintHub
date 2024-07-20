@@ -8,12 +8,14 @@ info:
     hostname: $1
     info: 'IP: $2'
     operating_system: $3
+    rarity: 9
 tcp:
 - name: xmlsysd
   inputs:
   - data: init\noff all\non identity version\nsend\nquit\n
   host:
   - '{{Hostname}}'
+  port: '7887'
   extractors:
   - name: xmlsysd
     type: regex

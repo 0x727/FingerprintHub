@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: unofficial protocol 3.130
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

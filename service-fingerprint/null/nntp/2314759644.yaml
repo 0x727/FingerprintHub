@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: posting ok
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

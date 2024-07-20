@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: NTP v1.1
+    rarity: 9
 tcp:
 - name: nessus-tpv11
   inputs:
   - data: < NTP/1.1 >\n
   host:
   - '{{Hostname}}'
+  port: '1241'
   extractors:
   - name: nessus
     type: regex

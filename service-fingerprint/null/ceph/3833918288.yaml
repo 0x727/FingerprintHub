@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: ipv4
+    rarity: 0
     version: protocol $1
 tcp:
 - name: 'null'

@@ -7,6 +7,7 @@ info:
   metadata:
     hostname: $2
     info: 'site: $1'
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

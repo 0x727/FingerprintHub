@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'domain: $1; ports: $2'
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: PowerPC; build date $3
     operating_system: pSOS
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

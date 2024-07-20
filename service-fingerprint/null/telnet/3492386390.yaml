@@ -5,6 +5,7 @@ info:
   tags: detect,tech,telnet,service
   severity: info
   metadata:
+    rarity: 0
     version: $1 $2
 tcp:
 - name: 'null'

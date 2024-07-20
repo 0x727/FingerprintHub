@@ -4,12 +4,15 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,icabrowser,service
   severity: info
+  metadata:
+    rarity: 5
 tcp:
 - name: citrix
   inputs:
   - data: \x1e\0\x01\x30\x02\xfd\xa8\xe3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
   host:
   - '{{Hostname}}'
+  port: '1604'
   extractors:
   - name: icabrowser
     type: regex

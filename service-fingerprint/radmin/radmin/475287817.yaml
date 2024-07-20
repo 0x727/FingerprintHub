@@ -7,6 +7,7 @@ info:
   metadata:
     info: Source IP blocked
     operating_system: Windows
+    rarity: 8
     version: 3.X
 tcp:
 - name: radmin
@@ -14,6 +15,7 @@ tcp:
   - data: \x01\x00\x00\x00\x01\x00\x00\x00\x08\x08
   host:
   - '{{Hostname}}'
+  port: 4899,9001
   extractors:
   - name: radmin
     type: regex

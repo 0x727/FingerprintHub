@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'path: $P(1)'
+    rarity: 0
     version: '15'
 tcp:
 - name: 'null'

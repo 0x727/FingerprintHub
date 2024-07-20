@@ -8,6 +8,7 @@ info:
     hostname: $2
     info: 'domain: $1; description: "$4"'
     operating_system: $3
+    rarity: 8
 tcp:
 - name: dominoconsole
   inputs:

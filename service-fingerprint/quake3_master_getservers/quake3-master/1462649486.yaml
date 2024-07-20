@@ -4,12 +4,15 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,quake3-master,service
   severity: info
+  metadata:
+    rarity: 9
 tcp:
 - name: quake3_master_getservers
   inputs:
   - data: \xff\xff\xff\xffgetservers 68 empty full
   host:
   - '{{Hostname}}'
+  port: 27950,30710
   extractors:
   - name: quake3-master
     type: regex

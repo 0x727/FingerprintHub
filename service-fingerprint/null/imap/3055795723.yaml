@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: SASL enabled
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

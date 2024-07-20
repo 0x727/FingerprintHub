@@ -7,6 +7,7 @@ info:
   metadata:
     info: Virus scan $3; $2 mode
     operating_system: Windows
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

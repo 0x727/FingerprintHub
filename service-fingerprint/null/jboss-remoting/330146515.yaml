@@ -7,6 +7,7 @@ info:
   metadata:
     hostname: $1
     info: JBoss management interface
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

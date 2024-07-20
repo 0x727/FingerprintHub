@@ -7,6 +7,7 @@ info:
   metadata:
     info: $2
     operating_system: Linux
+    rarity: 9
     version: $1
 tcp:
 - name: teamspeak-tcpquery-ver
@@ -14,6 +15,7 @@ tcp:
   - data: ver\r\n
   host:
   - '{{Hostname}}'
+  port: 51234,9998
   extractors:
   - name: teamspeak-tcpquery
     type: regex

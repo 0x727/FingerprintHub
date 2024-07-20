@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: router
     operating_system: OneOS
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

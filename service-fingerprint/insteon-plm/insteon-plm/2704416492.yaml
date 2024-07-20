@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: 'device type: $I(1,">")'
+    rarity: 9
 tcp:
 - name: insteon-plm
   inputs:
   - data: \x02\x60
   host:
   - '{{Hostname}}'
+  port: '9761'
   extractors:
   - name: insteon-plm
     type: regex

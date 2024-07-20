@@ -5,6 +5,7 @@ info:
   tags: detect,tech,ppp,service
   severity: info
   metadata:
+    rarity: 1
     version: 2.4.5
 tcp:
 - name: rpccheck
@@ -12,6 +13,7 @@ tcp:
   - data: \x72\xFE\x1D\x13\0\0\0\0\0\0\0\x02\0\x01\x86\xA0\0\x01\x97\x7C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
   host:
   - '{{Hostname}}'
+  port: 17,88,111,407,500,517,518,1419,2427,4045,10000,10080,12203,27960,38978,32750-32810
   extractors:
   - name: ppp
     type: regex

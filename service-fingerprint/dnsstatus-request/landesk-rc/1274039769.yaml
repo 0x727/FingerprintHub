@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    rarity: 5
     version: $1
 tcp:
 - name: dnsstatus-request
@@ -13,6 +14,7 @@ tcp:
   - data: \0\0\x10\0\0\0\0\0\0\0\0\0
   host:
   - '{{Hostname}}'
+  port: 53,69,135,1761,26198
   extractors:
   - name: landesk-rc
     type: regex

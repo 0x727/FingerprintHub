@@ -9,6 +9,7 @@ info:
     hostname: $3
     info: DD-WRT std kongmod $1 r$2
     operating_system: Linux
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

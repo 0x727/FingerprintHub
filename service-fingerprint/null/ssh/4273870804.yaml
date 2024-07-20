@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Atlassian Stash; protocol $1
+    rarity: 0
     version: $2-ATLASSIAN$3
 tcp:
 - name: 'null'

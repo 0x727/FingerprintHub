@@ -7,6 +7,7 @@ info:
   metadata:
     hostname: $1
     info: from firewall toolkit
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

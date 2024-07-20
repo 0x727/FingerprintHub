@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: ConnectionCount $2; AllConnectionCount $3; $SUBST(1,"\n\tMember",",")
+    rarity: 9
 tcp:
 - name: hazelcast-http
   inputs:
   - data: GET /hazelcast/rest/cluster HTTP/1.0\r\n\r\n\r\n
   host:
   - '{{Hostname}}'
+  port: 5701-5709
   extractors:
   - name: hazelcast
     type: regex

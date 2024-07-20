@@ -5,6 +5,7 @@ info:
   tags: detect,tech,argus,service
   severity: info
   metadata:
+    rarity: 0
     version: '3.0'
 tcp:
 - name: 'null'

@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'library name: $1'
+    rarity: 0
     version: $2.$3.$4
 tcp:
 - name: 'null'

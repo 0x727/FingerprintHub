@@ -7,6 +7,7 @@ info:
   metadata:
     info: API $1; KernelVersion $2
     operating_system: $3
+    rarity: 8
     version: $4
 tcp:
 - name: docker
@@ -14,6 +15,7 @@ tcp:
   - data: GET /version HTTP/1.1\r\n\r\n
   host:
   - '{{Hostname}}'
+  port: 2375,2379,2380
   extractors:
   - name: docker
     type: regex

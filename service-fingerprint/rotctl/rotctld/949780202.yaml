@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: 'model: $1'
+    rarity: 9
 tcp:
 - name: rotctl
   inputs:
   - data: get_info\n
   host:
   - '{{Hostname}}'
+  port: '4533'
   extractors:
   - name: rotctld
     type: regex

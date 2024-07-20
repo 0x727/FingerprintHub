@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: WAP
     info: Motorola SB5100 WAP
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

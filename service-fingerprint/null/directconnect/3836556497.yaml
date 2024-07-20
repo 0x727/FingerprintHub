@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Banned for $1 minutes
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

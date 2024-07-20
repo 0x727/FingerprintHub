@@ -5,6 +5,7 @@ info:
   tags: detect,tech,hptsvr,service
   severity: info
   metadata:
+    rarity: 0
     version: '3.13'
 tcp:
 - name: 'null'

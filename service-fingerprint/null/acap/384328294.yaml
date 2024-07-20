@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: for mail client preference sharing
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

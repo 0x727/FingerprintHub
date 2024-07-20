@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'node: $1; instance: $2'
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

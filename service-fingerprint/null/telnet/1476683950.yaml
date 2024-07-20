@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: switch
     info: 'copyright date: $1'
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

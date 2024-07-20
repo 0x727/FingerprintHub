@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: OpenVMS $2; Alpha
     operating_system: OpenVMS
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

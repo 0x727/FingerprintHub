@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: 'build: $3'
     operating_system: Ultrix $2
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

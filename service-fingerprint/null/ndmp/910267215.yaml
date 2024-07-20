@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: NDMPv4; Connection refused
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

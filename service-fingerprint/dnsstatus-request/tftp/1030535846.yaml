@@ -7,12 +7,14 @@ info:
   metadata:
     device_type: router
     operating_system: IOS
+    rarity: 5
 tcp:
 - name: dnsstatus-request
   inputs:
   - data: \0\0\x10\0\0\0\0\0\0\0\0\0
   host:
   - '{{Hostname}}'
+  port: 53,69,135,1761,26198
   extractors:
   - name: tftp
     type: regex

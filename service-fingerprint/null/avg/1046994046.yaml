@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Virus DB $3
+    rarity: 0
     version: $1 engine $2
 tcp:
 - name: 'null'

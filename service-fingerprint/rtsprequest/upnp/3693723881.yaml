@@ -5,7 +5,10 @@ info:
   tags: detect,tech,upnp,service
   severity: info
   metadata:
+    fallback:
+    - get-request
     info: ReplayTV UPnP; UPnP $1
+    rarity: 5
     version: $SUBST(2,"_",".")
 tcp:
 - name: rtsprequest
@@ -13,6 +16,7 @@ tcp:
   - data: OPTIONS / RTSP/1.0\r\n\r\n
   host:
   - '{{Hostname}}'
+  port: 80,554,3052,3372,5000,7070,8080,10000
   extractors:
   - name: upnp
     type: regex

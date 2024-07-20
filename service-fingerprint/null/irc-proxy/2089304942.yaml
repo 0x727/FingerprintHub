@@ -5,6 +5,7 @@ info:
   tags: detect,tech,irc-proxy,service
   severity: info
   metadata:
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

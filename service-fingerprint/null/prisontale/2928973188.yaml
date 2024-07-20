@@ -4,6 +4,8 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,prisontale,service
   severity: info
+  metadata:
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

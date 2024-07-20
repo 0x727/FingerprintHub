@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'supported protocol versions: 4'
+    rarity: 8
 tcp:
 - name: tor-versions
   inputs:

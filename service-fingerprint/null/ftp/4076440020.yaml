@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: MacOS X $2
     operating_system: Mac OS X
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

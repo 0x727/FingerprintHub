@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     hostname: $1
+    rarity: 0
     version: $2 Beta $3
 tcp:
 - name: 'null'

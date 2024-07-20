@@ -5,6 +5,7 @@ info:
   tags: detect,tech,h.323-gatekeeper-discovery,service
   severity: info
   metadata:
+    rarity: 5
     version: 2.3.2
 tcp:
 - name: afsversion-request
@@ -12,6 +13,7 @@ tcp:
   - data: \0\0\x03\xe7\0\0\0\0\0\0\0\x65\0\0\0\0\0\0\0\0\x0d\x05\0\0\0\0\0\0\0\0\0\0
   host:
   - '{{Hostname}}'
+  port: 7001,1719
   extractors:
   - name: h.323-gatekeeper-discovery
     type: regex

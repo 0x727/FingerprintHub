@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: MAC $2; serial number $3; uptime $5
+    rarity: 0
     version: $4
 tcp:
 - name: 'null'

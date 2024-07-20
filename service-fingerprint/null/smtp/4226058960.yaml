@@ -8,6 +8,7 @@ info:
     device_type: PBX
     hostname: $1
     info: 'time zone: $3'
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

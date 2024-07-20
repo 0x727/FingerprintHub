@@ -8,6 +8,7 @@ info:
     device_type: media device
     info: OpenDreambox $2
     operating_system: Linux
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

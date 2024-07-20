@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: 'servername: $1; protocol: $2'
+    rarity: 9
 tcp:
 - name: teamtalk-login
   inputs:
   - data: login\n
   host:
   - '{{Hostname}}'
+  port: '10333'
   extractors:
   - name: teamtalk
     type: regex

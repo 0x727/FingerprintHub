@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: http://sf.net/projects/apmud
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

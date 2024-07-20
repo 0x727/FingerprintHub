@@ -7,6 +7,7 @@ info:
   metadata:
     info: Tandem Himalaya K2000
     operating_system: GuardianOS
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

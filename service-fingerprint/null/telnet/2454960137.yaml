@@ -8,6 +8,7 @@ info:
     device_type: print server
     hostname: $1
     info: MAC $3; Uptime $4
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

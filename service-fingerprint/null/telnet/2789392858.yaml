@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'MAC address: $2; local time $1'
+    rarity: 0
     version: $3
 tcp:
 - name: 'null'

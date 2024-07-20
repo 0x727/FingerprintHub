@@ -8,6 +8,7 @@ info:
     device_type: print server
     hostname: $1
     info: 'MAC: $4; Uptime $5'
+    rarity: 0
     version: $3
 tcp:
 - name: 'null'

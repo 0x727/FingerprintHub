@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Trial expired; protocol 3.$1
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

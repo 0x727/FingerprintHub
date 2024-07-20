@@ -7,6 +7,7 @@ info:
   metadata:
     info: Polish
     operating_system: Nut/OS
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

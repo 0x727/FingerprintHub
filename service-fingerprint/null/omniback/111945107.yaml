@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: internal build $2; built on $3
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

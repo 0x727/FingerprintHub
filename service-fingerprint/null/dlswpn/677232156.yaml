@@ -8,6 +8,7 @@ info:
     device_type: router
     info: IOS $2
     operating_system: IOS
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

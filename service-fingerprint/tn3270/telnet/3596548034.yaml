@@ -7,12 +7,14 @@ info:
   metadata:
     hostname: $1
     operating_system: SunOS
+    rarity: 8
 tcp:
 - name: tn3270
   inputs:
   - data: \xff\xfb\x18\xff\xfa\x18\x00IBM-3279-4-E\xff\xf0\xff\xfb\x19\xff\xfd\x19\xff\xfb\0\xff\xfd\0
   host:
   - '{{Hostname}}'
+  port: 23,2323,2023,623
   extractors:
   - name: telnet
     type: regex

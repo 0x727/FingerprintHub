@@ -5,6 +5,7 @@ info:
   tags: detect,tech,exacqvision,service
   severity: info
   metadata:
+    rarity: 0
     version: 2.1.13
 tcp:
 - name: 'null'

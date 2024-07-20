@@ -7,6 +7,7 @@ info:
   metadata:
     info: 'ServerName: $1; TCPPort: $3'
     operating_system: Windows
+    rarity: 6
     version: $2
 tcp:
 - name: sqlping
@@ -14,6 +15,7 @@ tcp:
   - data: \x02
   host:
   - '{{Hostname}}'
+  port: 1434,19131-19133
   extractors:
   - name: ms-sql-m
     type: regex

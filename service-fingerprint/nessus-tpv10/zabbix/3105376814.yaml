@@ -4,12 +4,15 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,zabbix,service
   severity: info
+  metadata:
+    rarity: 8
 tcp:
 - name: nessus-tpv10
   inputs:
   - data: < NTP/1.0 >\n
   host:
   - '{{Hostname}}'
+  port: '1241'
   extractors:
   - name: zabbix
     type: regex

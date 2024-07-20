@@ -7,6 +7,7 @@ info:
   metadata:
     info: Home Edition
     operating_system: Windows
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

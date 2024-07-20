@@ -7,6 +7,7 @@ info:
   metadata:
     info: Unregistered
     operating_system: Windows
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

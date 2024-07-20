@@ -1,9 +1,9 @@
 use crate::error::{new_io_error, Result};
 use crate::service::match_line::MatchLine;
-use crate::service::port::PortRange;
+use crate::to_kebab_case;
+use engine::request::PortRange;
 use std::str::FromStr;
 use std::time::Duration;
-use crate::to_kebab_case;
 
 /// # 探针模块
 ///
@@ -52,7 +52,9 @@ impl FromStr for ZeroDuration {
   type Err = std::io::Error;
 
   fn from_str(s: &str) -> Result<Self> {
-    Ok(Self(Duration::from_millis(s.parse::<u64>().map_err(|x|new_io_error(&x.to_string()))?)))
+    Ok(Self(Duration::from_millis(
+      s.parse::<u64>().map_err(|x| new_io_error(&x.to_string()))?,
+    )))
   }
 }
 
@@ -73,7 +75,7 @@ pub struct Probe {
   pub matches: Vec<MatchLine>,
   /// 软匹配列表
   pub soft_matches: Vec<MatchLine>,
-  /// 优先程度，数字越大越优先选择这个探针
+  /// 数字越高，探测就越罕见，针对服务进行尝试的可能性就越小
   pub rarity: u8,
   /// 端口列表，判断常见端口是否在当前探针的端口列表，和优先级一样，优先发送端口存在的探针
   pub ports: PortRange,
@@ -99,7 +101,7 @@ impl FromStr for Probe {
       let protocol = Protocol::from_str(&slice[0])?;
       let name = slice[1].clone();
       return Ok(Self {
-        name:to_kebab_case(&name),
+        name: to_kebab_case(&name),
         protocol,
         payload,
         wait_total_ms: Default::default(),

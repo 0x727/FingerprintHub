@@ -5,6 +5,7 @@ info:
   tags: detect,tech,nomachine-nx,service
   severity: info
   metadata:
+    rarity: 9
     version: $1
 tcp:
 - name: no-machine
@@ -12,6 +13,7 @@ tcp:
   - data: NXSH-5.6.7\n
   host:
   - '{{Hostname}}'
+  port: '4000'
   extractors:
   - name: nomachine-nx
     type: regex

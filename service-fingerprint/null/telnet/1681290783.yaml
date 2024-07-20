@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: VoIP adapter
     info: Firmware $1
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

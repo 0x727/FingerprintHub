@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Network Compatibility Version $1
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

@@ -8,6 +8,7 @@ info:
     device_type: remote management
     hostname: $2
     operating_system: Solaris
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

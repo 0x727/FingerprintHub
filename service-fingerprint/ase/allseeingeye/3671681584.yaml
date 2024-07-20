@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: 'game: $1; port: $P(2)'
+    rarity: 9
 tcp:
 - name: ase
   inputs:
   - data: s
   host:
   - '{{Hostname}}'
+  port: 1258,2126,3123,12444,13200,23196,26000,27138,27244,27777,28138
   extractors:
   - name: allseeingeye
     type: regex

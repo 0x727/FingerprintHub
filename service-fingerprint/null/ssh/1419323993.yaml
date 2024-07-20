@@ -7,6 +7,7 @@ info:
   metadata:
     info: Ubuntu Linux; protocol $1
     operating_system: Linux
+    rarity: 0
     version: $2 Debian $3
 tcp:
 - name: 'null'

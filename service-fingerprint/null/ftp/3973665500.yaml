@@ -7,6 +7,7 @@ info:
   metadata:
     hostname: $1
     info: French
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

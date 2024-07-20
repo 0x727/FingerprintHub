@@ -5,6 +5,7 @@ info:
   tags: detect,tech,metasploit-msgrpc,service
   severity: info
   metadata:
+    rarity: 9
     version: 4.4.0-dev
 tcp:
 - name: metasploit-msgrpc
@@ -12,6 +13,7 @@ tcp:
   - data: GET /api HTTP/1.0\r\n\r\n
   host:
   - '{{Hostname}}'
+  port: 50505,55552
   extractors:
   - name: metasploit-msgrpc
     type: regex

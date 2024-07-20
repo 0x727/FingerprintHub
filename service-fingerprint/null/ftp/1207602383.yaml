@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: German
     operating_system: Unix
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

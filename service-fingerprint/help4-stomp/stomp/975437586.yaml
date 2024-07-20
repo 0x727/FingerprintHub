@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: 'versions: $1'
+    rarity: 8
 tcp:
 - name: help4-stomp
   inputs:
   - data: HELP\n\n\0
   host:
   - '{{Hostname}}'
+  port: 6163,61613
   extractors:
   - name: stomp
     type: regex

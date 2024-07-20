@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: router
     info: $1
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

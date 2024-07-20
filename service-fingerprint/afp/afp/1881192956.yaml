@@ -7,12 +7,14 @@ info:
   metadata:
     info: 'name: $1; protocol 2.2; MS3.0'
     operating_system: Windows
+    rarity: 6
 tcp:
 - name: afp
   inputs:
   - data: \x00\x03\0\x01\0\0\0\0\0\0\0\x02\0\0\0\0\x0f\0
   host:
   - '{{Hostname}}'
+  port: '548'
   extractors:
   - name: afp
     type: regex

@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'Node name: $1'
+    rarity: 9
 tcp:
 - name: erlang-node
   inputs:

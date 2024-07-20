@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     operating_system: NetWare
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     operating_system: Windows 10
+    rarity: 6
 tcp:
 - name: xdmcp
   inputs:
   - data: \0\x01\0\x02\0\x01\0
   host:
   - '{{Hostname}}'
+  port: '177'
   extractors:
   - name: tftp
     type: regex

@@ -8,6 +8,7 @@ info:
     device_type: WAP
     info: DD-WRT $1
     operating_system: Linux
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

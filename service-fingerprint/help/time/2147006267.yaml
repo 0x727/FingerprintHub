@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: 64 bits
+    rarity: 3
 tcp:
 - name: help
   inputs:
   - data: help\r\n\r\n
   host:
   - '{{Hostname}}'
+  port: 7,13,37,42
   extractors:
   - name: time
     type: regex

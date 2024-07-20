@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: SSL-only; imaps on port $1
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

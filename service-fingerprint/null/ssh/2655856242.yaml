@@ -7,6 +7,7 @@ info:
   metadata:
     info: protocol $1
     operating_system: ArrayOS
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

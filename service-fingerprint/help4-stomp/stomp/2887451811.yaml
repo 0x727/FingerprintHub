@@ -5,6 +5,7 @@ info:
   tags: detect,tech,stomp,service
   severity: info
   metadata:
+    rarity: 8
     version: 5.10.0
 tcp:
 - name: help4-stomp
@@ -12,6 +13,7 @@ tcp:
   - data: HELP\n\n\0
   host:
   - '{{Hostname}}'
+  port: 6163,61613
   extractors:
   - name: stomp
     type: regex

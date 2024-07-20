@@ -7,6 +7,7 @@ info:
   metadata:
     info: uptime $1 seconds; Ubuntu
     operating_system: Linux
+    rarity: 8
     version: $2
 tcp:
 - name: memcache
@@ -14,6 +15,7 @@ tcp:
   - data: stats\r\n
   host:
   - '{{Hostname}}'
+  port: 2181,11211
   extractors:
   - name: memcached
     type: regex

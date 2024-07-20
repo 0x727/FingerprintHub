@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: protocol $1; kerberos support
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

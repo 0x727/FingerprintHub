@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: hardware $1; firmware $3
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

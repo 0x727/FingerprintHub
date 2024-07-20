@@ -1,13 +1,14 @@
-use std::env;
-use std::fs::File;
+use crate::{to_kebab_case, FingerPrintParse, MatchLine, Probe};
 use engine::common::http::murmur3_32;
 use engine::extractors::{Extractor, ExtractorType};
 use engine::info::{Info, Severity};
 use engine::matchers::{Matcher, Part};
 use engine::operators::Operators;
 use engine::request::{Input, Requests, TCPRequest};
+use engine::serde_format::Value;
 use engine::template::Template;
-use crate::{FingerPrintParse, MatchLine, Probe, to_kebab_case};
+use std::env;
+use std::fs::File;
 
 fn matchline_to_ext(m: &MatchLine) -> Extractor {
   Extractor {
@@ -22,7 +23,6 @@ fn matchline_to_ext(m: &MatchLine) -> Extractor {
     regex: Vec::new(),
   }
 }
-
 
 fn matchline_to_op(m: Vec<Matcher>, e: Vec<Extractor>) -> Operators {
   Operators {
@@ -45,7 +45,11 @@ fn probe_to_request(fp: &Probe, op: Operators) -> Requests {
       data: Some(fp.payload.clone()),
       read: None,
     }],
-    port: None,
+    port: if fp.ports.is_empty() {
+      None
+    } else {
+      Some(fp.ports.clone())
+    },
     exclude_ports: None,
     read_size: None,
     read_all: false,
@@ -56,7 +60,7 @@ fn probe_to_request(fp: &Probe, op: Operators) -> Requests {
   }
 }
 
-fn matchline_to_info(m: &MatchLine) -> Info {
+fn match_line_to_info(m: &MatchLine, fp: &Probe) -> Info {
   let mut info = Info {
     severity: Severity::Info,
     author: vec!["nmap".to_string(), "cn-kali-team".to_string()],
@@ -77,6 +81,20 @@ fn matchline_to_info(m: &MatchLine) -> Info {
       info.name = i.to_string()
     }
   }
+  if !fp.fallback.is_empty() {
+    info.metadata.insert(
+      "fallback".to_string(),
+      Value::List(
+        fp.fallback
+          .iter()
+          .map(|x| Value::String(to_kebab_case(x)))
+          .collect(),
+      ),
+    );
+  }
+  info
+    .metadata
+    .insert("rarity".to_string(), Value::Num(fp.rarity as u32));
   if let Some(os) = &m.version_info.info {
     info.metadata.insert(
       "info".to_string(),
@@ -111,7 +129,7 @@ fn matchline_to_info(m: &MatchLine) -> Info {
 }
 
 fn to_template(fp: &Probe, m: &MatchLine) -> Template {
-  let info = matchline_to_info(m);
+  let info = match_line_to_info(m, fp);
   Template {
     id: to_kebab_case(&m.service),
     info,

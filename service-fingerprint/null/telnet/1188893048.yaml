@@ -7,6 +7,7 @@ info:
   metadata:
     hostname: $5
     info: 'location: $6'
+    rarity: 0
     version: $2 rev $3 patch $4
 tcp:
 - name: 'null'

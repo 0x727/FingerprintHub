@@ -8,6 +8,7 @@ info:
     device_type: webcam
     hostname: $3
     info: 'component: $1'
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

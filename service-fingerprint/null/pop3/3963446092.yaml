@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: CN=$2;Org=$3
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

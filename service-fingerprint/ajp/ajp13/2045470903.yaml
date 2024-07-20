@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: Protocol v1.3
+    rarity: 8
 tcp:
 - name: ajp
   inputs:
   - data: \x12\x34\x00\x01\x0a
   host:
   - '{{Hostname}}'
+  port: 8008,8009
   extractors:
   - name: ajp13
     type: regex

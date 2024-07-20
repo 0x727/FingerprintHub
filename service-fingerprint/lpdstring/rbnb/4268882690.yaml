@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: http://outlet.creare.com/rbnb/
+    rarity: 6
 tcp:
 - name: lpdstring
   inputs:
   - data: \x01default\n
   host:
   - '{{Hostname}}'
+  port: 515,2947,3333,32211,19350
   extractors:
   - name: rbnb
     type: regex

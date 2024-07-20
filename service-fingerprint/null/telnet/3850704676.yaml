@@ -8,6 +8,7 @@ info:
     device_type: switch
     info: Usually a Cisco/3com switch
     operating_system: IOS
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

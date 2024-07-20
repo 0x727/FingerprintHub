@@ -4,12 +4,15 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,minecraft-classic,service
   severity: info
+  metadata:
+    rarity: 8
 tcp:
 - name: minecraft-ping
   inputs:
   - data: \xFE\x01
   host:
   - '{{Hostname}}'
+  port: '25565'
   extractors:
   - name: minecraft-classic
     type: regex

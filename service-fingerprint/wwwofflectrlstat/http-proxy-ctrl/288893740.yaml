@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: Unauthorized
+    rarity: 9
 tcp:
 - name: wwwofflectrlstat
   inputs:
   - data: WWWOFFLE STATUS\r\n
   host:
   - '{{Hostname}}'
+  port: 706,8081
   extractors:
   - name: http-proxy-ctrl
     type: regex

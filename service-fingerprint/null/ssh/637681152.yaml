@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Derived from OpenSSH $3; protocol $1
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

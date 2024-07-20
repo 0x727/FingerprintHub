@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: port $2
     operating_system: Windows
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

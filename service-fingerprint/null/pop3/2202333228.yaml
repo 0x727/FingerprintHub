@@ -5,6 +5,7 @@ info:
   tags: detect,tech,pop3,service
   severity: info
   metadata:
+    rarity: 0
     version: $1 patch $2
 tcp:
 - name: 'null'

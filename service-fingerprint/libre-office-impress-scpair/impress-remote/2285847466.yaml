@@ -4,12 +4,15 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,impress-remote,service
   severity: info
+  metadata:
+    rarity: 9
 tcp:
 - name: libre-office-impress-scpair
   inputs:
   - data: LO_SERVER_CLIENT_PAIR\nNmap\n0000\n\n
   host:
   - '{{Hostname}}'
+  port: '1599'
   extractors:
   - name: impress-remote
     type: regex

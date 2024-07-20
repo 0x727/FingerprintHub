@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Wanadoo blocks smtp - NOT A REAL smtpd!
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: switch
     info: protocol $1
+    rarity: 0
     version: $2 Allied Telesis
 tcp:
 - name: 'null'

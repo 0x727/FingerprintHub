@@ -8,6 +8,7 @@ info:
     device_type: media device
     hostname: $2
     operating_system: Linux $1
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: System time:$3
+    rarity: 0
     version: $1 (Build $2)
 tcp:
 - name: 'null'

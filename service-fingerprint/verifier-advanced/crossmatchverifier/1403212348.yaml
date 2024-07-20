@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: 'Gain: $1; Contrast: $2; Time: $3; Illumination: $4'
+    rarity: 8
 tcp:
 - name: verifier-advanced
   inputs:
   - data: Query\n
   host:
   - '{{Hostname}}'
+  port: '1501'
   extractors:
   - name: crossmatchverifier
     type: regex

@@ -8,6 +8,7 @@ info:
     device_type: router
     info: Runs ENI-ftpd/$1 on VxWorks
     operating_system: VxWorks
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

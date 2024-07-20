@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: WAP
     info: ZyXEL $1 WAP
+    rarity: 0
     version: 1.14.0 or later
 tcp:
 - name: 'null'

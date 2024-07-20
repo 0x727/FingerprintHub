@@ -9,6 +9,7 @@ info:
     hostname: $2
     info: Kernel $1
     operating_system: Linux
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

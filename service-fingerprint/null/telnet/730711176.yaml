@@ -9,6 +9,7 @@ info:
     hostname: $4
     info: DD-WRT $1 $2 r$3
     operating_system: Linux
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

@@ -7,6 +7,7 @@ info:
   metadata:
     info: 'firmware for Dreambox; arch: $2'
     operating_system: Linux $1
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

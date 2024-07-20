@@ -5,6 +5,7 @@ info:
   tags: detect,tech,crossfire,service
   severity: info
   metadata:
+    rarity: 0
     version: 1.9.0 or earlier
 tcp:
 - name: 'null'

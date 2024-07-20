@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'protocol 14; flags: $1'
+    rarity: 0
     version: 0.9.9
 tcp:
 - name: 'null'

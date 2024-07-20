@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: protocol $1; little-endian
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

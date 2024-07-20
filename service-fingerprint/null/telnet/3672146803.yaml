@@ -9,6 +9,7 @@ info:
     hostname: $5
     info: DD-WRT $1 $3 $4 r$2
     operating_system: Linux
+    rarity: 0
     version: 1.14.0 or later
 tcp:
 - name: 'null'

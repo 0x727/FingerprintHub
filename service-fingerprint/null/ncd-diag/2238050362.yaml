@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'Serial# $1; MAC: $2; CPU: $3; $4'
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

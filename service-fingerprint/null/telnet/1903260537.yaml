@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: print server
     info: name $1; MAC $3
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

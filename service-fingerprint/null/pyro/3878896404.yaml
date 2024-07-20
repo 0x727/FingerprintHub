@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: protocol version 4
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

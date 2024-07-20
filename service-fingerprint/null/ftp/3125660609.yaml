@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: patchlevel $3
     operating_system: HP-UX
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

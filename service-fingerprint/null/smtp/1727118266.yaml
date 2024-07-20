@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: AIX $2
     operating_system: AIX
+    rarity: 0
     version: $3
 tcp:
 - name: 'null'

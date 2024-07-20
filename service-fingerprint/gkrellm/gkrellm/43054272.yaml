@@ -5,6 +5,7 @@ info:
   tags: detect,tech,gkrellm,service
   severity: info
   metadata:
+    rarity: 9
     version: $1
 tcp:
 - name: gkrellm
@@ -12,6 +13,7 @@ tcp:
   - data: gkrellm 0.0.0
   host:
   - '{{Hostname}}'
+  port: '19150'
   extractors:
   - name: gkrellm
     type: regex

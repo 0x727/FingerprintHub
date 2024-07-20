@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Not from Microsoft - http://srv.nease.net/
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

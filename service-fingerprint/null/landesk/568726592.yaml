@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Targeted Multicast Service
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

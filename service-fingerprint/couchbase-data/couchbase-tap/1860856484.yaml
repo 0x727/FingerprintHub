@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'DB name: $2'
+    rarity: 8
     version: $1
 tcp:
 - name: couchbase-data
@@ -13,6 +14,7 @@ tcp:
   - data: \x80\x10\0\0\0\0\0\0\0\0\0\0\x15\xf0\xd1\x62\0\0\0\0\0\0\0\0
   host:
   - '{{Hostname}}'
+  port: '11210'
   extractors:
   - name: couchbase-tap
     type: regex

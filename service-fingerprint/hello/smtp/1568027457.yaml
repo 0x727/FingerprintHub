@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     operating_system: NetWare
+    rarity: 8
 tcp:
 - name: hello
   inputs:
   - data: EHLO\r\n
   host:
   - '{{Hostname}}'
+  port: 25,587,3025
   extractors:
   - name: smtp
     type: regex

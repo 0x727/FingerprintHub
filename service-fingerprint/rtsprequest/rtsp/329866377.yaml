@@ -5,8 +5,11 @@ info:
   tags: detect,tech,rtsp,service
   severity: info
   metadata:
+    fallback:
+    - get-request
     info: SunOS $2 sparc
     operating_system: SunOS
+    rarity: 5
     version: $1
 tcp:
 - name: rtsprequest
@@ -14,6 +17,7 @@ tcp:
   - data: OPTIONS / RTSP/1.0\r\n\r\n
   host:
   - '{{Hostname}}'
+  port: 80,554,3052,3372,5000,7070,8080,10000
   extractors:
   - name: rtsp
     type: regex

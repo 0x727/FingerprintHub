@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: telecom-misc
     hostname: $1
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

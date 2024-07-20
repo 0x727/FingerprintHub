@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: v2 protocol, $1
+    rarity: 9
 tcp:
 - name: ubiquiti-discoveryv2
   inputs:
   - data: \x02\x08\0\0
   host:
   - '{{Hostname}}'
+  port: '10001'
   extractors:
   - name: ubiquiti-discovery
     type: regex

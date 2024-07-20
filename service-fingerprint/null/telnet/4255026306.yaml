@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: switch
     info: CGX $1.$2
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

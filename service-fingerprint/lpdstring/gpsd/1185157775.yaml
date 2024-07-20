@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Serial port $1
+    rarity: 6
     version: $2
 tcp:
 - name: lpdstring
@@ -13,6 +14,7 @@ tcp:
   - data: \x01default\n
   host:
   - '{{Hostname}}'
+  port: 515,2947,3333,32211,19350
   extractors:
   - name: gpsd
     type: regex

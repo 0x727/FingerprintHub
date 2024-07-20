@@ -5,6 +5,7 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    rarity: 0
     version: 3.6.0 or older
 tcp:
 - name: 'null'

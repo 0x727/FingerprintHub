@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: Ubuntu
     operating_system: Linux
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

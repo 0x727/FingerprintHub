@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: router
     info: MikroTik
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

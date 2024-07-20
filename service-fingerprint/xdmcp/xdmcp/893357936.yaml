@@ -8,12 +8,14 @@ info:
     hostname: $1
     info: 'willing; status: $2'
     operating_system: Unix
+    rarity: 6
 tcp:
 - name: xdmcp
   inputs:
   - data: \0\x01\0\x02\0\x01\0
   host:
   - '{{Hostname}}'
+  port: '177'
   extractors:
   - name: xdmcp
     type: regex

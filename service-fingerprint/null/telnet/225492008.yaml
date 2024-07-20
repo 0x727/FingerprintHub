@@ -8,6 +8,7 @@ info:
     device_type: specialized
     hostname: $2
     info: SafeScan QTerm $1
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

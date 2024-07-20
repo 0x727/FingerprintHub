@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: Spanish
     operating_system: Windows
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

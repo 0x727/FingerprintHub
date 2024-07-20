@@ -7,6 +7,7 @@ info:
   metadata:
     info: Debian Linux 8.0 (Jessie)
     operating_system: Linux
+    rarity: 1
     version: $1
 tcp:
 - name: dnsversion-bind-req
@@ -14,6 +15,7 @@ tcp:
   - data: \0\x06\x01\0\0\x01\0\0\0\0\0\0\x07version\x04bind\0\0\x10\0\x03
   host:
   - '{{Hostname}}'
+  port: 53,1967,2967,26198
   extractors:
   - name: domain
     type: regex

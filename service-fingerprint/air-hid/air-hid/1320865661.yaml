@@ -4,12 +4,15 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,air-hid,service
   severity: info
+  metadata:
+    rarity: 9
 tcp:
 - name: air-hid
   inputs:
   - data: from:airhid
   host:
   - '{{Hostname}}'
+  port: '13246'
   extractors:
   - name: air-hid
     type: regex

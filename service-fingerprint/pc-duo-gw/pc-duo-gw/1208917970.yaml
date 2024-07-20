@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: 'Servername: $1'
+    rarity: 8
 tcp:
 - name: pc-duo-gw
   inputs:
   - data: \x20\x90\x80\x08\xff\0
   host:
   - '{{Hostname}}'
+  port: '2303'
   extractors:
   - name: pc-duo-gw
     type: regex

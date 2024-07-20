@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     device_type: storage-misc
+    rarity: 7
 tcp:
 - name: oracle-tns
   inputs:
   - data: \0Z\0\0\x01\0\0\0\x016\x01,\0\0\x08\0\x7F\xFF\x7F\x08\0\0\0\x01\0 \0:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\04\xE6\0\0\0\x01\0\0\0\0\0\0\0\0(CONNECT_DATA=(COMMAND=version))
   host:
   - '{{Hostname}}'
+  port: 1035,1521,1522,1525,1526,1574,1748,1754,14238,20000
   extractors:
   - name: iscsi
     type: regex

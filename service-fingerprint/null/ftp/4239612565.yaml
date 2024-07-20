@@ -8,6 +8,7 @@ info:
     device_type: specialized
     info: VxWorks $1 rev $2  **A ROBOT**
     operating_system: VxWorks
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

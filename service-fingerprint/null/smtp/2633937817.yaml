@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Serviced refused (IP block)
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

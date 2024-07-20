@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     device_type: print server
+    rarity: 6
 tcp:
 - name: lpdstring
   inputs:
   - data: \x01default\n
   host:
   - '{{Hostname}}'
+  port: 515,2947,3333,32211,19350
   extractors:
   - name: printer
     type: regex

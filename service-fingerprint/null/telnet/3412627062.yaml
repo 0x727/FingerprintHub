@@ -9,6 +9,7 @@ info:
     hostname: $3
     info: Linux $2
     operating_system: Linux
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

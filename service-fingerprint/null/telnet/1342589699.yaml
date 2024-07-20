@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     device_type: terminal server
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

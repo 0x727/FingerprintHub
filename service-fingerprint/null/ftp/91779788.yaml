@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: user $1; local time $2
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

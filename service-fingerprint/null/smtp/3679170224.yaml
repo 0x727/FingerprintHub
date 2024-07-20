@@ -8,6 +8,7 @@ info:
     device_type: terminal server
     hostname: $1
     operating_system: IOS
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

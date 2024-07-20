@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: disabled
     operating_system: Mac OS X
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

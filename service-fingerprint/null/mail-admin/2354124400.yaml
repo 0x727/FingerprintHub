@@ -5,6 +5,7 @@ info:
   tags: detect,tech,mail-admin,service
   severity: info
   metadata:
+    rarity: 0
     version: $1 release $2
 tcp:
 - name: 'null'

@@ -7,6 +7,7 @@ info:
   metadata:
     info: on A/UX $2
     operating_system: A/UX
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

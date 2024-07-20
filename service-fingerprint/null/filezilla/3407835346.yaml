@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: protocol version 1.13
+    rarity: 0
     version: 0.9.X
 tcp:
 - name: 'null'

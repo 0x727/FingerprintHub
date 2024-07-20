@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: $2/$3 players
+    rarity: 6
     version: $1
 tcp:
 - name: sqlping
@@ -13,6 +14,7 @@ tcp:
   - data: \x02
   host:
   - '{{Hostname}}'
+  port: 1434,19131-19133
   extractors:
   - name: minecraft-pe
     type: regex

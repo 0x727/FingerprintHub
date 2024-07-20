@@ -7,12 +7,14 @@ info:
   metadata:
     device_type: proxy server
     hostname: $1
+    rarity: 8
 tcp:
 - name: hello
   inputs:
   - data: EHLO\r\n
   host:
   - '{{Hostname}}'
+  port: 25,587,3025
   extractors:
   - name: smtp-proxy
     type: regex

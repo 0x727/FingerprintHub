@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: AV definitions updated on:$3
+    rarity: 8
     version: $1 ($2)
 tcp:
 - name: version-request
@@ -13,6 +14,7 @@ tcp:
   - data: VERSION
   host:
   - '{{Hostname}}'
+  port: '3310'
   extractors:
   - name: clam
     type: regex

@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'Protocol $1; INI file: $2'
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

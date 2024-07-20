@@ -8,6 +8,7 @@ info:
     device_type: media device
     info: PLi image jade
     operating_system: Linux
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

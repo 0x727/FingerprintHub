@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     device_type: router
+    rarity: 0
     version: '3'
 tcp:
 - name: 'null'

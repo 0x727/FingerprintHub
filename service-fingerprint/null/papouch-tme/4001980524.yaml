@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'temperature: $1 C'
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

@@ -8,6 +8,7 @@ info:
     device_type: remote management
     hostname: $2
     info: FW $1
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

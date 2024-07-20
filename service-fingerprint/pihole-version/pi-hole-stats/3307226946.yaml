@@ -4,12 +4,15 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,pi-hole-stats,service
   severity: info
+  metadata:
+    rarity: 9
 tcp:
 - name: pihole-version
   inputs:
   - data: '>version\n'
   host:
   - '{{Hostname}}'
+  port: '4711'
   extractors:
   - name: pi-hole-stats
     type: regex

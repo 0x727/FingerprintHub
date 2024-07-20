@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: unauthorized; Italian
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

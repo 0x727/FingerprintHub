@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: included w/cyrus imap
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

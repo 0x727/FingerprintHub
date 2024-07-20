@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     operating_system: FreeBSD
+    rarity: 8
     version: $1
 tcp:
 - name: quake3_getstatus
@@ -13,6 +14,7 @@ tcp:
   - data: \xff\xff\xff\xffgetstatus
   host:
   - '{{Hostname}}'
+  port: 44400,26000-26004,27960-27964,30720-30724
   extractors:
   - name: quake3
     type: regex

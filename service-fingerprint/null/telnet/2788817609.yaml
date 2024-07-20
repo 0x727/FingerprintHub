@@ -8,6 +8,7 @@ info:
     device_type: media device
     hostname: $3
     info: 'model: $2'
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

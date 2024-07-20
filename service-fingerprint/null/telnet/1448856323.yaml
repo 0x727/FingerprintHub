@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     device_type: switch
+    rarity: 0
     version: HW:$2 FW:$3 SW:$4
 tcp:
 - name: 'null'

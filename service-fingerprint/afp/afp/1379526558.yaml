@@ -7,6 +7,7 @@ info:
   metadata:
     info: 'name: $1; protocol 3.1'
     operating_system: NetWare
+    rarity: 6
     version: $2
 tcp:
 - name: afp
@@ -14,6 +15,7 @@ tcp:
   - data: \x00\x03\0\x01\0\0\0\0\0\0\0\x02\0\0\0\0\x0f\0
   host:
   - '{{Hostname}}'
+  port: '548'
   extractors:
   - name: afp
     type: regex

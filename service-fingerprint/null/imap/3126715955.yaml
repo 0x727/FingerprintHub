@@ -5,6 +5,7 @@ info:
   tags: detect,tech,imap,service
   severity: info
   metadata:
+    rarity: 0
     version: 2.0.11
 tcp:
 - name: 'null'

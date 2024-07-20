@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: router
     info: protocol 2.0
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

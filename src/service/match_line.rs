@@ -1,7 +1,7 @@
 use crate::error::new_io_error;
 use crate::service::version_info::{DataField, VersionInfo};
-use std::{fmt::Display, str::FromStr};
 use crate::to_kebab_case;
+use std::{fmt::Display, str::FromStr};
 
 #[derive(Clone, Debug)]
 pub struct Regex {

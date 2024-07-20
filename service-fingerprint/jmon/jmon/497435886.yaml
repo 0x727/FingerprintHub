@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     operating_system: z/OS
+    rarity: 9
 tcp:
 - name: jmon
   inputs:
   - data: CONNECT01 v09\n
   host:
   - '{{Hostname}}'
+  port: '6715'
   extractors:
   - name: jmon
     type: regex

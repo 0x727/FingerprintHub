@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: storage-misc
     info: firmware $2; bootcode $3; serial $4; memory $5
+    rarity: 0
     version: $6
 tcp:
 - name: 'null'

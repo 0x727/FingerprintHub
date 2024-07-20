@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: media device
     info: Syabas Popcorn Hour media player telnetd
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

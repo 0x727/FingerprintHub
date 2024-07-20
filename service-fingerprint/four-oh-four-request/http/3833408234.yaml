@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: security-misc
+    fallback:
+    - get-request
     info: Vormetric Data Security Manager
+    rarity: 6
     version: $1
 tcp:
 - name: four-oh-four-request
@@ -14,6 +17,7 @@ tcp:
   - data: GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0\r\n\r\n
   host:
   - '{{Hostname}}'
+  port: 88,2100,9999,49152,80-85,8000-8010,8080-8085,8880-8888
   extractors:
   - name: http
     type: regex

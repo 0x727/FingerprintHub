@@ -5,6 +5,7 @@ info:
   tags: detect,tech,lsx,service
   severity: info
   metadata:
+    rarity: 0
     version: $SUBST(1,",",".")
 tcp:
 - name: 'null'

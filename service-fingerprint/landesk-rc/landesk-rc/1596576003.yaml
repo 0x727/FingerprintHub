@@ -6,12 +6,14 @@ info:
   severity: info
   metadata:
     info: Busy, From $1 on port 176$2
+    rarity: 6
 tcp:
 - name: landesk-rc
   inputs:
   - data: \x54\x4e\x4d\x50\x04\0\0\0\x54\x4e\x4d\x45\0\0\x04\0
   host:
   - '{{Hostname}}'
+  port: 2701,5709,1761-1763
   extractors:
   - name: landesk-rc
     type: regex

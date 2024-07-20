@@ -8,12 +8,14 @@ info:
     hostname: $1
     info: 'numbers: $2 $3 $4 $5'
     operating_system: Mac OS X
+    rarity: 8
 tcp:
 - name: serialnumberd
   inputs:
   - data: 'SNQUERY: 127.0.0.1:AAAAAA:xsvr'
   host:
   - '{{Hostname}}'
+  port: '626'
   extractors:
   - name: serialnumber
     type: regex

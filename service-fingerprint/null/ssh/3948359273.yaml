@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: '**BACKDOOR** protocol 1.5'
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

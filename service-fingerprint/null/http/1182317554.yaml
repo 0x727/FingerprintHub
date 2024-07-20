@@ -8,6 +8,7 @@ info:
     device_type: WAP
     info: Gargoyle WAP firmware
     operating_system: Linux
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

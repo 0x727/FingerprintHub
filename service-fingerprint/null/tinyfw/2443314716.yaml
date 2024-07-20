@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: or Tiny Personal Firewall
+    rarity: 0
     version: 2.1.X
 tcp:
 - name: 'null'

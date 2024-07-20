@@ -4,12 +4,15 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,redis,service
   severity: info
+  metadata:
+    rarity: 8
 tcp:
 - name: redis-server
   inputs:
   - data: '*1\r\n$4\r\ninfo\r\n'
   host:
   - '{{Hostname}}'
+  port: '6379'
   extractors:
   - name: redis
     type: regex

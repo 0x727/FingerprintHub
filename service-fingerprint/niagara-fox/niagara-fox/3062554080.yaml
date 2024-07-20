@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: fox version $1
+    rarity: 9
     version: $2
 tcp:
 - name: niagara-fox
@@ -13,6 +14,7 @@ tcp:
   - data: fox a 1 -1 fox hello\n{\nfox.version=s:1.0\nid=i:1\n};;\n
   host:
   - '{{Hostname}}'
+  port: '1911'
   extractors:
   - name: niagara-fox
     type: regex

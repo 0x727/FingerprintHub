@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: WAP
     info: Observa Telecom BHS-RTA WAP telnetd
+    rarity: 0
     version: 1.00-pre7 - 1.14.0
 tcp:
 - name: 'null'

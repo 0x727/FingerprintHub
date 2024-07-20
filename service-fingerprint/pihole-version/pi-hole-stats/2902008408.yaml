@@ -5,6 +5,7 @@ info:
   tags: detect,tech,pi-hole-stats,service
   severity: info
   metadata:
+    rarity: 9
     version: $1
 tcp:
 - name: pihole-version
@@ -12,6 +13,7 @@ tcp:
   - data: '>version\n'
   host:
   - '{{Hostname}}'
+  port: '4711'
   extractors:
   - name: pi-hole-stats
     type: regex

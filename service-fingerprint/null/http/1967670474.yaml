@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     device_type: VoIP adapter
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

@@ -7,12 +7,14 @@ info:
   metadata:
     info: IEN 116
     operating_system: Solaris
+    rarity: 3
 tcp:
 - name: help
   inputs:
   - data: help\r\n\r\n
   host:
   - '{{Hostname}}'
+  port: 7,13,37,42
   extractors:
   - name: nameserver
     type: regex

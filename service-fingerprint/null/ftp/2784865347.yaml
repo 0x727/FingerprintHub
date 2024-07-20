@@ -8,6 +8,7 @@ info:
     device_type: webcam
     hostname: $1
     info: ARM_BE $2
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

@@ -8,6 +8,7 @@ info:
     device_type: security-misc
     info: Linux $1; MIPS
     operating_system: Linux
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

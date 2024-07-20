@@ -8,6 +8,7 @@ info:
     device_type: remote management
     info: Liebert OpenComms remote management
     operating_system: MQX RTOS
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

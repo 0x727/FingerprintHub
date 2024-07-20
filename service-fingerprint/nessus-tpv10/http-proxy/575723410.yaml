@@ -5,6 +5,7 @@ info:
   tags: detect,tech,http-proxy,service
   severity: info
   metadata:
+    rarity: 8
     version: $1
 tcp:
 - name: nessus-tpv10
@@ -12,6 +13,7 @@ tcp:
   - data: < NTP/1.0 >\n
   host:
   - '{{Hostname}}'
+  port: '1241'
   extractors:
   - name: http-proxy
     type: regex

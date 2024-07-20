@@ -5,6 +5,7 @@ info:
   tags: detect,tech,openflow,service
   severity: info
   metadata:
+    rarity: 0
     version: 1.4.x
 tcp:
 - name: 'null'

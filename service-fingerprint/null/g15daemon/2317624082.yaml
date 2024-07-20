@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Logitech G15 keyboard control
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

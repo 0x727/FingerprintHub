@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: based on $3
     operating_system: Unix
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

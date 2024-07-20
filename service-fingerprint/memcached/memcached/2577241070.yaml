@@ -5,6 +5,7 @@ info:
   tags: detect,tech,memcached,service
   severity: info
   metadata:
+    rarity: 8
     version: $1
 tcp:
 - name: memcached
@@ -12,6 +13,7 @@ tcp:
   - data: \0\x01\0\0\0\x01\0\0stats\r\n
   host:
   - '{{Hostname}}'
+  port: '11211'
   extractors:
   - name: memcached
     type: regex

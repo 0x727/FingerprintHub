@@ -8,6 +8,7 @@ info:
     device_type: specialized
     hostname: $1
     operating_system: AsyncOS
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

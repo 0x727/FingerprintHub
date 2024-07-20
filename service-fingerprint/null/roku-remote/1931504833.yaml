@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: media device
     info: SN $1
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

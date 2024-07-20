@@ -8,6 +8,7 @@ info:
     device_type: WAP
     info: SOC OS $2
     operating_system: SOC OS
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

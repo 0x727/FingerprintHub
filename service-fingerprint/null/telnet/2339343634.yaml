@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     device_type: remote management
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

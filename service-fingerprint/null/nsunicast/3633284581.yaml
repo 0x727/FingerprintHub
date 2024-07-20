@@ -7,6 +7,7 @@ info:
   metadata:
     info: nsum.exe
     operating_system: Windows
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

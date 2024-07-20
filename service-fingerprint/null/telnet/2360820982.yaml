@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: specialized
     info: MAC $2
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

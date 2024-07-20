@@ -6,12 +6,16 @@ info:
   severity: info
   metadata:
     device_type: printer
+    fallback:
+    - dnsstatus-request
+    rarity: 7
 tcp:
 - name: dnsstatus-request-tcp
   inputs:
   - data: \0\x0C\0\0\x10\0\0\0\0\0\0\0\0\0
   host:
   - '{{Hostname}}'
+  port: 53,513,514,6050,41523
   extractors:
   - name: shell
     type: regex

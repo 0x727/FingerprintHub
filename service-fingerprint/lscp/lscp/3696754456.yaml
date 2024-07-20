@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: LSCP $2
+    rarity: 9
     version: $1
 tcp:
 - name: lscp
@@ -13,6 +14,7 @@ tcp:
   - data: GET SERVER INFO\r\n
   host:
   - '{{Hostname}}'
+  port: '8888'
   extractors:
   - name: lscp
     type: regex

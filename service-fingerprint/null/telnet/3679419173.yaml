@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: switch
     info: 'Baystack $1; Versions: $2'
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

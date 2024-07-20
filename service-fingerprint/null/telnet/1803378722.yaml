@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     device_type: bridge
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

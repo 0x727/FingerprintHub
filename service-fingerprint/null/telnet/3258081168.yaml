@@ -8,6 +8,7 @@ info:
     device_type: firewall
     info: IOS 6.X
     operating_system: IOS
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

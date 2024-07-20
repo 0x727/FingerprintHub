@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: 'Sierra Wireless ALEOS; model: $1'
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

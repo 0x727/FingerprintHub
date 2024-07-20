@@ -7,6 +7,7 @@ info:
   metadata:
     info: FlowSsh $2; protocol $1
     operating_system: Windows
+    rarity: 0
     version: $3
 tcp:
 - name: 'null'

@@ -7,12 +7,14 @@ info:
   metadata:
     hostname: $1
     info: 'timezone: $2'
+    rarity: 8
 tcp:
 - name: hello
   inputs:
   - data: EHLO\r\n
   host:
   - '{{Hostname}}'
+  port: 25,587,3025
   extractors:
   - name: smtp
     type: regex

@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: German
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

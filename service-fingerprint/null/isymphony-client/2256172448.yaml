@@ -5,6 +5,7 @@ info:
   tags: detect,tech,isymphony-client,service
   severity: info
   metadata:
+    rarity: 0
     version: '2.2'
 tcp:
 - name: 'null'

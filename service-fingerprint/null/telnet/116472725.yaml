@@ -7,6 +7,7 @@ info:
   metadata:
     info: unauthenticated root shell! $1 version $2
     operating_system: Linux
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

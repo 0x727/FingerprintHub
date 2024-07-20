@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: telecom-misc
     info: name $1; serial $3
+    rarity: 0
     version: $4
 tcp:
 - name: 'null'

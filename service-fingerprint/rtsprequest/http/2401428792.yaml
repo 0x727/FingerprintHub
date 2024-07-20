@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: printer
+    fallback:
+    - get-request
     info: HP printer http config
+    rarity: 5
     version: $SUBST(1,"_",".")
 tcp:
 - name: rtsprequest
@@ -14,6 +17,7 @@ tcp:
   - data: OPTIONS / RTSP/1.0\r\n\r\n
   host:
   - '{{Hostname}}'
+  port: 80,554,3052,3372,5000,7070,8080,10000
   extractors:
   - name: http
     type: regex

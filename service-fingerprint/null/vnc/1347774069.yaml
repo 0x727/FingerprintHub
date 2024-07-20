@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: protocol 3.$1; Locked out
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

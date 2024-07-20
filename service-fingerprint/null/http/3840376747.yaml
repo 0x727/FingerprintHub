@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: broadband router
     info: simply redirects to real web admin port 88
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

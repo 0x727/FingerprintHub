@@ -5,6 +5,7 @@ info:
   tags: detect,tech,pfservice,service
   severity: info
   metadata:
+    rarity: 0
     version: 6.4.0
 tcp:
 - name: 'null'

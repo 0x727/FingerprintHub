@@ -7,6 +7,7 @@ info:
   metadata:
     info: NeXT $2
     operating_system: NeXTStep
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

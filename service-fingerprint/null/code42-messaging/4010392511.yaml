@@ -4,6 +4,8 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,code42-messaging,service
   severity: info
+  metadata:
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

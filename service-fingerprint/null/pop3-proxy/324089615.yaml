@@ -5,6 +5,7 @@ info:
   tags: detect,tech,pop3-proxy,service
   severity: info
   metadata:
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

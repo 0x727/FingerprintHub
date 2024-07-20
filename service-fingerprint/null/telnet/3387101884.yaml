@@ -7,6 +7,7 @@ info:
   metadata:
     info: Harris FlexStar HDx-FM broadcast exciter
     operating_system: MQX RTOS
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

@@ -7,6 +7,7 @@ info:
   metadata:
     device_type: hub
     info: ROM $2; EEPROM $3; HW $4
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

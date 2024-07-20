@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Uses VNC, $2
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

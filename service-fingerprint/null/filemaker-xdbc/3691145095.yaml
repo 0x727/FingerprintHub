@@ -7,6 +7,7 @@ info:
   metadata:
     info: $3
     operating_system: Mac OS X $2
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

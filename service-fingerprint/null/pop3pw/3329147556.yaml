@@ -7,6 +7,7 @@ info:
   metadata:
     info: Digital Unix with C2 security
     operating_system: Digital UNIX
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

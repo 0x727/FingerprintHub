@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     info: Terraria game server
+    rarity: 0
 tcp:
 - name: 'null'
   inputs:

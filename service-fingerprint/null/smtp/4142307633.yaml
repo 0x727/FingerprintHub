@@ -8,6 +8,7 @@ info:
     hostname: $2
     info: on Postfix
     operating_system: Unix
+    rarity: 0
     version: $1
 tcp:
 - name: 'null'

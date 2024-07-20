@@ -8,6 +8,7 @@ info:
     hostname: $1
     info: m68k
     operating_system: pSOS
+    rarity: 0
     version: $2
 tcp:
 - name: 'null'

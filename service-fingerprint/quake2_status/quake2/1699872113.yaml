@@ -6,6 +6,7 @@ info:
   severity: info
   metadata:
     operating_system: Linux
+    rarity: 8
     version: $1
 tcp:
 - name: quake2_status
@@ -13,6 +14,7 @@ tcp:
   - data: \xff\xff\xff\xffstatus
   host:
   - '{{Hostname}}'
+  port: 27910-27914
   extractors:
   - name: quake2
     type: regex

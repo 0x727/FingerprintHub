@@ -4,12 +4,15 @@ info:
   author: nmap,cn-kali-team
   tags: detect,tech,exalead,service
   severity: info
+  metadata:
+    rarity: 8
 tcp:
 - name: hello
   inputs:
   - data: EHLO\r\n
   host:
   - '{{Hostname}}'
+  port: 25,587,3025
   extractors:
   - name: exalead
     type: regex

@@ -7,12 +7,14 @@ info:
   metadata:
     hostname: $1
     operating_system: Windows
+    rarity: 8
 tcp:
 - name: hello
   inputs:
   - data: EHLO\r\n
   host:
   - '{{Hostname}}'
+  port: 25,587,3025
   extractors:
   - name: smtp-proxy
     type: regex
