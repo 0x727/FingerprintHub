@@ -15,8 +15,8 @@ http:
   matchers:
   - type: word
     words:
-    - 'x-jenkins-session: *'
-    - 'x-jenkins: *'
+    - 'x-jenkins-session:'
+    - 'x-jenkins:'
     part: header
     condition: and
     case-insensitive: true

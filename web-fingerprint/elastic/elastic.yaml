@@ -22,6 +22,6 @@ http:
     case-insensitive: true
   - type: word
     words:
-    - 'kbn-license-sig: *'
+    - 'kbn-license-sig:'
     part: header
     case-insensitive: true
