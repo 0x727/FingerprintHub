@@ -1,5 +1,5 @@
 use engine::find_yaml_file;
-use engine::info::VPF;
+use engine::info::{CSE, VPF};
 use engine::matchers::{Favicon, MatcherType, Part};
 use engine::request::HttpRaw;
 use engine::template::Template;
@@ -8,7 +8,7 @@ use helper::nmap::nmap;
 use std::collections::BTreeMap;
 use std::env;
 use std::fs::{File, OpenOptions};
-use std::path::{Path};
+use std::path::Path;
 use std::str::FromStr;
 
 const UNKNOWN_VENDOR: &str = "00_unknown";
@@ -323,7 +323,7 @@ fn update_info(template: &mut Template, fingerprint_yaml_path: &Path) {
   let new_vpf = BTreeMap::from_iter([
     (
       "verified".to_string(),
-      engine::serde_format::Value::Bool(vpf.vendor.as_str() != UNKNOWN_VENDOR),
+      engine::serde_format::Value::Bool(vpf.product.as_str() != UNKNOWN_VENDOR),
     ),
     (
       "vendor".to_string(),
@@ -389,8 +389,40 @@ fn convert_json(dir: &str, filename: &str) {
   serde_json::to_writer(f, &templates).unwrap();
 }
 
+// 空间搜索引擎自动转指纹规则
+fn cse_to_finger() {
+  let current_plugin_dir = env::current_dir().unwrap().join("plugins");
+  let all_vendor_name: Vec<String> = std::fs::read_dir(&current_plugin_dir)
+    .unwrap()
+    .filter_map(|x| x.ok())
+    .filter_map(|d| if d.path().is_dir() { Some(d) } else { None })
+    .map(|p| p.file_name().to_string_lossy().to_string())
+    .collect();
+  for vendor in all_vendor_name {
+    let vendor_path = current_plugin_dir.join(&vendor);
+    let all_product: Vec<String> = std::fs::read_dir(&vendor_path)
+      .unwrap()
+      .filter_map(|x| x.ok())
+      .filter_map(|d| if d.path().is_dir() { Some(d) } else { None })
+      .map(|p| p.file_name().to_string_lossy().to_string())
+      .collect();
+    for product in all_product {
+      let product_path = current_plugin_dir.join(&vendor_path).join(&product);
+      let templates: Vec<Template> = find_yaml_file(&product_path, false)
+        .iter()
+        .map(|x| File::open(x))
+        .filter_map(|f| f.ok())
+        .filter_map(|f| serde_yaml::from_reader::<std::fs::File, Template>(f).ok())
+        .collect();
+      let cse: Vec<CSE> = templates.iter().filter_map(|t| t.info.get_cse()).collect();
+      println!("{:?}", cse);
+    }
+  }
+}
+
 fn main() {
   let config = HelperConfig::default();
+  cse_to_finger();
   if config.convert {
     convert_json("web-fingerprint", "web_fingerprint_v4.json");
     convert_json("service-fingerprint", "service_fingerprint_v4.json");
