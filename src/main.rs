@@ -137,7 +137,7 @@ fn sync_nuclei() {
                       .join(sub_tag)
                       .join(yaml_path.file_name().unwrap().to_string_lossy().to_string()),
                   )
-                  .unwrap();
+                    .unwrap();
                   break;
                 }
               }
@@ -152,7 +152,7 @@ fn sync_nuclei() {
                     .join(product)
                     .join(yaml_path.file_name().unwrap().to_string_lossy().to_string()),
                 )
-                .unwrap();
+                  .unwrap();
               }
               continue;
             }
@@ -399,6 +399,9 @@ fn cse_to_finger() {
     .map(|p| p.file_name().to_string_lossy().to_string())
     .collect();
   for vendor in all_vendor_name {
+    if vendor == "wordpress" {
+      continue;
+    }
     let vendor_path = current_plugin_dir.join(&vendor);
     let all_product: Vec<String> = std::fs::read_dir(&vendor_path)
       .unwrap()
@@ -415,6 +418,9 @@ fn cse_to_finger() {
         .filter_map(|f| serde_yaml::from_reader::<std::fs::File, Template>(f).ok())
         .collect();
       let cse: Vec<CSE> = templates.iter().filter_map(|t| t.info.get_cse()).collect();
+      if cse.is_empty() {
+        continue;
+      }
       println!("{:?}", cse);
     }
   }
