@@ -7,7 +7,7 @@ info:
   metadata:
     product: 飞鱼星-安全设备
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

@@ -7,7 +7,7 @@ info:
   metadata:
     product: facemeeting-meeting
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

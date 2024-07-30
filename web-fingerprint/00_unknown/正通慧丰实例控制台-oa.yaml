@@ -7,7 +7,7 @@ info:
   metadata:
     product: 正通慧丰实例控制台-oa
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

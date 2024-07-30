@@ -7,7 +7,7 @@ info:
   metadata:
     product: 点晴mis管理信息系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

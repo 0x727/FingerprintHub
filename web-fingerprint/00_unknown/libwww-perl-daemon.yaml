@@ -7,7 +7,7 @@ info:
   metadata:
     product: libwww-perl-daemon
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

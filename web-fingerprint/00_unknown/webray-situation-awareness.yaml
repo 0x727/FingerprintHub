@@ -7,7 +7,7 @@ info:
   metadata:
     product: webray-situation-awareness
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

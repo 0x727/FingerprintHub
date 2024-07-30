@@ -7,7 +7,7 @@ info:
   metadata:
     product: articlepublisherpro
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

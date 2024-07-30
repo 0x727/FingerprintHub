@@ -7,7 +7,7 @@ info:
   metadata:
     product: hikvision-视频编码设备接入网关
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

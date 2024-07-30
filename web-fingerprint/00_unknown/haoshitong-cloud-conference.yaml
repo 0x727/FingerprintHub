@@ -7,7 +7,7 @@ info:
   metadata:
     product: haoshitong-cloud-conference
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

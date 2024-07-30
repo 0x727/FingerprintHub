@@ -7,7 +7,7 @@ info:
   metadata:
     product: ibm-web-traffic-express-caching-proxy
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

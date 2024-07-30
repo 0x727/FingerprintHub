@@ -7,7 +7,7 @@ info:
   metadata:
     product: 任子行-surfnx安全网关
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

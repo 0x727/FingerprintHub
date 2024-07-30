@@ -7,7 +7,7 @@ info:
   metadata:
     product: 海峡信息-黑盾运维安全网关
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

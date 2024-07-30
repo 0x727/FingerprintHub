@@ -7,7 +7,7 @@ info:
   metadata:
     product: 猎鹰安全-金山终端安全系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

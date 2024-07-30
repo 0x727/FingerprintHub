@@ -7,7 +7,7 @@ info:
   metadata:
     product: 联软准入
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

@@ -7,7 +7,7 @@ info:
   metadata:
     product: lg-supersign
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

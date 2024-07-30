@@ -7,7 +7,7 @@ info:
   metadata:
     product: owtware-iconn-end-user-calculation
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

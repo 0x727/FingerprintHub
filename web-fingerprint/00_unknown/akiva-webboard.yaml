@@ -7,7 +7,7 @@ info:
   metadata:
     product: akiva-webboard
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

@@ -7,7 +7,7 @@ info:
   metadata:
     product: pygopherd
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

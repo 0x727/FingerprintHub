@@ -7,7 +7,7 @@ info:
   metadata:
     product: 蜂网企业流控云路由器
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

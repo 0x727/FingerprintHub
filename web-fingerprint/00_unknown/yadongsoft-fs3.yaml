@@ -7,7 +7,7 @@ info:
   metadata:
     product: yadongsoft-fs3
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

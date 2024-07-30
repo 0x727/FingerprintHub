@@ -7,7 +7,7 @@ info:
   metadata:
     product: neusoft-senginx
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

@@ -7,7 +7,7 @@ info:
   metadata:
     product: huawei-fusioncloud-desktop
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

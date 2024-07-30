@@ -7,7 +7,7 @@ info:
   metadata:
     product: huawei-auth-server
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

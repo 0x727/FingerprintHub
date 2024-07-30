@@ -7,7 +7,7 @@ info:
   metadata:
     product: softbiz-online-auctions-script
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

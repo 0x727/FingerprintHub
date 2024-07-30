@@ -7,7 +7,7 @@ info:
   metadata:
     product: firerp-soft
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

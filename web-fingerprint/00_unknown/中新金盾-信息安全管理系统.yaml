@@ -7,7 +7,7 @@ info:
   metadata:
     product: 中新金盾-信息安全管理系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

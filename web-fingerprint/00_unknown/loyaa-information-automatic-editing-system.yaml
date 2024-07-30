@@ -7,7 +7,7 @@ info:
   metadata:
     product: loyaa-information-automatic-editing-system
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

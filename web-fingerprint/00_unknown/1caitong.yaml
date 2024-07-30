@@ -7,7 +7,7 @@ info:
   metadata:
     product: 1caitong
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

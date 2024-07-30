@@ -7,7 +7,7 @@ info:
   metadata:
     product: fit2cloud-jumpserver-堡垒机
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

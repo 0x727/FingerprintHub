@@ -7,7 +7,7 @@ info:
   metadata:
     product: lotwan-web-accelerator
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

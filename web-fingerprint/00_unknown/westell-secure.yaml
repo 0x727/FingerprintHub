@@ -7,7 +7,7 @@ info:
   metadata:
     product: westell-secure
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

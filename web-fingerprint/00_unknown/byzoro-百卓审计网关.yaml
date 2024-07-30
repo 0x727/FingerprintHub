@@ -7,7 +7,7 @@ info:
   metadata:
     product: byzoro-百卓审计网关
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

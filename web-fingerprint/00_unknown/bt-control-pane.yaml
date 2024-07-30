@@ -7,7 +7,7 @@ info:
   metadata:
     product: bt-control-pane
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

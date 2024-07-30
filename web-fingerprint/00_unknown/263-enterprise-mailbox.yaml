@@ -7,7 +7,7 @@ info:
   metadata:
     product: 263-enterprise-mailbox
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

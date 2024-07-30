@@ -7,7 +7,7 @@ info:
   metadata:
     product: wise-education-cloud-masters
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

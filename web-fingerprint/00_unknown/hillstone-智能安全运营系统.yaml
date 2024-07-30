@@ -7,7 +7,7 @@ info:
   metadata:
     product: hillstone-智能安全运营系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

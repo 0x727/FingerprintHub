@@ -7,7 +7,7 @@ info:
   metadata:
     product: dell-n1108p-on
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

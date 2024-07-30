@@ -7,7 +7,7 @@ info:
   metadata:
     product: dell-networker-management-console
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

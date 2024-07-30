@@ -7,7 +7,7 @@ info:
   metadata:
     product: e-plugger-srm
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

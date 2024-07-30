@@ -7,7 +7,7 @@ info:
   metadata:
     product: qizhi-fortress-aircraft
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

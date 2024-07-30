@@ -7,7 +7,7 @@ info:
   metadata:
     product: kentico-cms
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

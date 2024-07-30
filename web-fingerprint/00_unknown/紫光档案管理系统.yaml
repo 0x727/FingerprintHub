@@ -7,7 +7,7 @@ info:
   metadata:
     product: 紫光档案管理系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

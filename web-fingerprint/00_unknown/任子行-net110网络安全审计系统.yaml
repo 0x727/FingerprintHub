@@ -7,7 +7,7 @@ info:
   metadata:
     product: 任子行-net110网络安全审计系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

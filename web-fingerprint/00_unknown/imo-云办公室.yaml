@@ -7,7 +7,7 @@ info:
   metadata:
     product: imo-云办公室
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

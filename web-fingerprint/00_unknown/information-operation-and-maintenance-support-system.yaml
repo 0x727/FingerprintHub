@@ -7,7 +7,7 @@ info:
   metadata:
     product: information-operation-and-maintenance-support-system
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

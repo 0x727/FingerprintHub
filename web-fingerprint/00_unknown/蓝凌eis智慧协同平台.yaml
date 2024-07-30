@@ -7,7 +7,7 @@ info:
   metadata:
     product: 蓝凌eis智慧协同平台
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

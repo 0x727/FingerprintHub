@@ -7,7 +7,7 @@ info:
   metadata:
     product: 协众oa
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

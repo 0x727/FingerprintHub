@@ -7,7 +7,7 @@ info:
   metadata:
     product: pcitc-logistics-management-mystem
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

@@ -7,7 +7,7 @@ info:
   metadata:
     product: logsign-siem
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

@@ -7,7 +7,7 @@ info:
   metadata:
     product: nagios-xi
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

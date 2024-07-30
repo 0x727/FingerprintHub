@@ -7,7 +7,7 @@ info:
   metadata:
     product: tmailer_suite-tmailer邮件系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

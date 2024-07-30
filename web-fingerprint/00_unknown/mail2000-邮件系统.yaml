@@ -7,7 +7,7 @@ info:
   metadata:
     product: mail2000-邮件系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

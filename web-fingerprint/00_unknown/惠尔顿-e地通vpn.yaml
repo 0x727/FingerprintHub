@@ -7,7 +7,7 @@ info:
   metadata:
     product: 惠尔顿-e地通vpn
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

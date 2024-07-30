@@ -7,7 +7,7 @@ info:
   metadata:
     product: leadsec-防病毒网关系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

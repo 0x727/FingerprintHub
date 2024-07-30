@@ -7,7 +7,7 @@ info:
   metadata:
     product: m2soft-rdserver
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

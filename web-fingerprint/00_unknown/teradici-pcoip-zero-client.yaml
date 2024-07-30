@@ -7,7 +7,7 @@ info:
   metadata:
     product: teradici-pcoip-zero-client
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

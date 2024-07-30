@@ -7,7 +7,7 @@ info:
   metadata:
     product: 明源云erp
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

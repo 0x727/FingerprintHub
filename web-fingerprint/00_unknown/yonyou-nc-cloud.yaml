@@ -7,7 +7,7 @@ info:
   metadata:
     product: yonyou-nc-cloud
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

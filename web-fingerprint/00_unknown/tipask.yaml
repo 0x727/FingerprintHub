@@ -7,7 +7,7 @@ info:
   metadata:
     product: tipask
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

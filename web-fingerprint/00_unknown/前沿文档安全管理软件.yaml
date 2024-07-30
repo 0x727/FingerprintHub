@@ -7,7 +7,7 @@ info:
   metadata:
     product: 前沿文档安全管理软件
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

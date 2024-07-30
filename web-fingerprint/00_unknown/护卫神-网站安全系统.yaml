@@ -7,7 +7,7 @@ info:
   metadata:
     product: 护卫神-网站安全系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

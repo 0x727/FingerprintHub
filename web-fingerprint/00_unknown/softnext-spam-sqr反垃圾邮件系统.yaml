@@ -7,7 +7,7 @@ info:
   metadata:
     product: softnext-spam-sqr反垃圾邮件系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

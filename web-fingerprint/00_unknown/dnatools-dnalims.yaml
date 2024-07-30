@@ -7,7 +7,7 @@ info:
   metadata:
     product: dnatools-dnalims
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

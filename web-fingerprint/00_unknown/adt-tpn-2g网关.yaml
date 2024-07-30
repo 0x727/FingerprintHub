@@ -7,7 +7,7 @@ info:
   metadata:
     product: adt-tpn-2g网关
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

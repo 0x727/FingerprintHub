@@ -7,7 +7,7 @@ info:
   metadata:
     product: hintsoft-pubwin2015
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

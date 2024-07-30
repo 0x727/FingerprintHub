@@ -7,7 +7,7 @@ info:
   metadata:
     product: nvidia-mellanox-mlnx-os
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

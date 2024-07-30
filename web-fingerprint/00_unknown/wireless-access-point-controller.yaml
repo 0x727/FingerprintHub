@@ -7,7 +7,7 @@ info:
   metadata:
     product: wireless-access-point-controller
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

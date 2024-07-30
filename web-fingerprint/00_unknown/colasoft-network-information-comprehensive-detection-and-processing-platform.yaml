@@ -7,7 +7,7 @@ info:
   metadata:
     product: colasoft-network-information-comprehensive-detection-and-processing-platform
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

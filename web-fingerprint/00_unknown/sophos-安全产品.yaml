@@ -7,7 +7,7 @@ info:
   metadata:
     product: sophos-安全产品
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

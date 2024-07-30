@@ -7,7 +7,7 @@ info:
   metadata:
     product: 华磊科技物流信息系统
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

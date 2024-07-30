@@ -7,7 +7,7 @@ info:
   metadata:
     product: eisoo-anybackup
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

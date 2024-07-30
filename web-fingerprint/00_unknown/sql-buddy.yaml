@@ -7,7 +7,7 @@ info:
   metadata:
     product: sql-buddy
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

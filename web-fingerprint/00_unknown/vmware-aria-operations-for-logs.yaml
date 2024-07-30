@@ -7,7 +7,7 @@ info:
   metadata:
     product: vmware-aria-operations-for-logs
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

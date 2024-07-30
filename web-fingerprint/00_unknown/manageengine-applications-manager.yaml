@@ -7,7 +7,7 @@ info:
   metadata:
     product: manageengine-applications-manager
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

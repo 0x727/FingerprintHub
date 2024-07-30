@@ -7,7 +7,7 @@ info:
   metadata:
     product: mibew-messenger
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

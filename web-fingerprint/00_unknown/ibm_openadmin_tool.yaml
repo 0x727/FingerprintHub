@@ -7,7 +7,7 @@ info:
   metadata:
     product: ibm_openadmin_tool
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

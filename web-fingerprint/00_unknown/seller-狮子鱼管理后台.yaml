@@ -7,7 +7,7 @@ info:
   metadata:
     product: seller-狮子鱼管理后台
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

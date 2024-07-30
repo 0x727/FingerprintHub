@@ -7,7 +7,7 @@ info:
   metadata:
     product: golden-dragon-card-ecard-website-query-subsystem
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

@@ -7,7 +7,7 @@ info:
   metadata:
     product: iguard-security-system
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

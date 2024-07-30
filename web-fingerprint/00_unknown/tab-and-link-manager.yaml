@@ -7,7 +7,7 @@ info:
   metadata:
     product: tab-and-link-manager
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:

@@ -7,7 +7,7 @@ info:
   metadata:
     product: authine-h3-bpm
     vendor: 00_unknown
-    verified: false
+    verified: true
 http:
 - method: GET
   path:
