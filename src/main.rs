@@ -1,7 +1,7 @@
 use engine::find_yaml_file;
-use engine::info::{CSE, VPF};
-use engine::matchers::{Favicon, MatcherType, Part};
-use engine::request::HttpRaw;
+use engine::info::{CSE, Info, Severity, VPF};
+use engine::matchers::{Favicon, Matcher, MatcherType, Part};
+use engine::request::{HttpRaw, Requests};
 use engine::template::Template;
 use helper::cli::HelperConfig;
 use helper::nmap::nmap;
@@ -10,6 +10,7 @@ use std::env;
 use std::fs::{File, OpenOptions};
 use std::path::Path;
 use std::str::FromStr;
+use helper::to_kebab_case;
 
 const UNKNOWN_VENDOR: &str = "00_unknown";
 const BUILT_TAGS: [&str; 59] = [
@@ -392,6 +393,7 @@ fn convert_json(dir: &str, filename: &str) {
 // 空间搜索引擎自动转指纹规则
 fn cse_to_finger() {
   let current_plugin_dir = env::current_dir().unwrap().join("plugins");
+  let current_fingerprint_dir = env::current_dir().unwrap().join("web-fingerprint");
   let all_vendor_name: Vec<String> = std::fs::read_dir(&current_plugin_dir)
     .unwrap()
     .filter_map(|x| x.ok())
@@ -421,20 +423,100 @@ fn cse_to_finger() {
       if cse.is_empty() {
         continue;
       }
-      println!("{:?}", cse);
+      let product_path = current_fingerprint_dir.join(&vendor).join(&format!("{}.yaml", product));
+      if !product_path.exists() {
+        let one_cse = to_one_cse(cse);
+        let matchers: Vec<Matcher> = one_cse.clone().into();
+        if matchers.is_empty() {
+          continue;
+        }
+        let t = cse_to_template(one_cse, VPF { vendor: vendor.clone(), product, framework: None, verified: false });
+        if let Ok(file) = File::create(&product_path) {
+          serde_yaml::to_writer(file, &t).unwrap();
+        }
+      } else {
+        println!("{}", product_path.to_string_lossy());
+      }
     }
   }
 }
 
+fn to_one_cse(cse: Vec<CSE>) -> CSE {
+  let mut one_cse = CSE {
+    zoomeye_query: vec![],
+    hunter_query: vec![],
+    shodan_query: vec![],
+    fofa_query: vec![],
+    google_query: vec![],
+  };
+  for c in cse {
+    for q in c.google_query {
+      if !one_cse.google_query.contains(&q.to_lowercase()) {
+        one_cse.google_query.push(q.to_lowercase());
+      }
+    }
+    for q in c.fofa_query {
+      if !one_cse.fofa_query.contains(&q.to_lowercase()) {
+        one_cse.fofa_query.push(q.to_lowercase());
+      }
+    }
+    for q in c.hunter_query {
+      if !one_cse.hunter_query.contains(&q.to_lowercase()) {
+        one_cse.hunter_query.push(q.to_lowercase());
+      }
+    }
+    for q in c.shodan_query {
+      if !one_cse.shodan_query.contains(&q.to_lowercase()) {
+        one_cse.shodan_query.push(q.to_lowercase());
+      }
+    }
+    for q in c.zoomeye_query {
+      if !one_cse.zoomeye_query.contains(&q.to_lowercase()) {
+        one_cse.zoomeye_query.push(q.to_lowercase());
+      }
+    }
+  }
+  one_cse
+}
+
+fn cse_to_template(one_cse: CSE, vpf: VPF) -> Template {
+  let mut info = Info {
+    name: vpf.product.clone(),
+    severity: Severity::Info,
+    author: vec!["cn-kali-team".to_string()],
+    tags: vec![
+      "detect".to_string(),
+      "tech".to_string(),
+      vpf.product.clone(),
+    ],
+    ..Info::default()
+  };
+  info.set_cse(one_cse.clone());
+  info.set_vpf(vpf.clone());
+  let mut index = Requests::default_web_index();
+  index.http[0].operators.matchers = one_cse.into();
+  let t = Template {
+    id: to_kebab_case(vpf.product.as_str()),
+    info,
+    flow: None,
+    requests: index,
+    self_contained: Default::default(),
+    stop_at_first_match: false,
+    variables: Default::default(),
+  };
+  return t;
+}
+
 fn main() {
   let config = HelperConfig::default();
-  cse_to_finger();
   if config.convert {
     convert_json("web-fingerprint", "web_fingerprint_v4.json");
     convert_json("service-fingerprint", "service_fingerprint_v4.json");
   }
   if config.sync {
     sync_nuclei();
+    // 同步完自动根据空间搜索引擎语法生成指纹规则
+    cse_to_finger();
   }
   if config.format {
     format();
