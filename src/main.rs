@@ -305,7 +305,7 @@ fn update_info(template: &mut Template, fingerprint_yaml_path: &Path) {
       .unwrap_or_default()
       .to_string_lossy()
       .to_string();
-    let verified = vendor == UNKNOWN_VENDOR;
+    let verified = vendor != UNKNOWN_VENDOR;
     VPF {
       vendor,
       product,
@@ -323,7 +323,7 @@ fn update_info(template: &mut Template, fingerprint_yaml_path: &Path) {
   let new_vpf = BTreeMap::from_iter([
     (
       "verified".to_string(),
-      engine::serde_format::Value::Bool(vpf.product.as_str() != UNKNOWN_VENDOR),
+      engine::serde_format::Value::Bool(vpf.vendor.as_str() != UNKNOWN_VENDOR),
     ),
     (
       "vendor".to_string(),
