@@ -25,6 +25,7 @@ http:
   - type: word
     words:
     - /apps/imt/html/
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*>spark master at.*?</title>

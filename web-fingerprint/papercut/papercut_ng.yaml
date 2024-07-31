@@ -27,3 +27,4 @@ http:
     words:
     - content="papercut
     - content=papercut
+    case-insensitive: true

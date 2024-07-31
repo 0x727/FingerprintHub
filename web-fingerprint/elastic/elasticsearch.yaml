@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - index_not_found_exception
+    case-insensitive: true

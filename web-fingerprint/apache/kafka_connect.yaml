@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - apache druid
+    case-insensitive: true

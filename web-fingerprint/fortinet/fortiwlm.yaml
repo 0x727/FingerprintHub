@@ -24,3 +24,4 @@ http:
   - type: word
     words:
     - fortiwlm
+    case-insensitive: true

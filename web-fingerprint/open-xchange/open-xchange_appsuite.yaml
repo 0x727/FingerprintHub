@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - appsuite
+    case-insensitive: true

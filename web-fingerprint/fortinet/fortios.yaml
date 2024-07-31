@@ -24,6 +24,7 @@ http:
   - type: word
     words:
     - /remote/login" "xxxxxxxx
+    case-insensitive: true
   - type: favicon
     hash:
     - '945408572'
