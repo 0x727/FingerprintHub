@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - tlr-2005ksh
+    case-insensitive: true

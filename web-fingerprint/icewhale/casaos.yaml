@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - /casaos-ui/public/index.html
+    case-insensitive: true

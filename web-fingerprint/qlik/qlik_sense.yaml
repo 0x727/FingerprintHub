@@ -28,6 +28,7 @@ http:
   - type: word
     words:
     - qlik
+    case-insensitive: true
   - type: favicon
     hash:
     - '-74348711'

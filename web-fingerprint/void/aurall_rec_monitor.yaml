@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - aurall
+    case-insensitive: true

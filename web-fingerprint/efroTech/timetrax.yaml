@@ -8,7 +8,7 @@ info:
     fofa-query:
     - icon_hash="-661694518"
     product: timetrax
-    vendor: efroTech
+    vendor: efrotech
     verified: true
 http:
 - method: GET

@@ -24,6 +24,7 @@ http:
   - type: word
     words:
     - wavlink
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*>wi-fi app login.*?</title>

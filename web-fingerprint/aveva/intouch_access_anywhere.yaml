@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - intouch access anywhere
+    case-insensitive: true

@@ -22,3 +22,4 @@ http:
   - type: word
     words:
     - spip.php?page=backend
+    case-insensitive: true

@@ -28,6 +28,7 @@ http:
   - type: word
     words:
     - keycloak
+    case-insensitive: true
   - type: favicon
     hash:
     - '-1105083093'

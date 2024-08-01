@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - dir-816l
+    case-insensitive: true

@@ -25,3 +25,4 @@ http:
   - type: word
     words:
     - gitblit
+    case-insensitive: true

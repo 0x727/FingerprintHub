@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - smart管理平台
+    case-insensitive: true

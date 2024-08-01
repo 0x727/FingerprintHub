@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - franklin fueling systems
+    case-insensitive: true

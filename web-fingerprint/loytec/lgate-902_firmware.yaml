@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - lgate-902
+    case-insensitive: true

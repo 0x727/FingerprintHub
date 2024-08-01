@@ -22,6 +22,7 @@ http:
   - type: word
     words:
     - genieacs
+    case-insensitive: true
   - type: favicon
     hash:
     - '-2098066288'

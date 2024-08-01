@@ -22,3 +22,4 @@ http:
   - type: word
     words:
     - kubepi
+    case-insensitive: true

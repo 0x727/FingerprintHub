@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - spacelogic c-bus
+    case-insensitive: true

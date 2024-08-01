@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - php jabbers.com
+    case-insensitive: true

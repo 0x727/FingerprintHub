@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - pypiserver
+    case-insensitive: true

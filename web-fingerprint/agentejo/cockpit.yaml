@@ -23,6 +23,7 @@ http:
   - type: word
     words:
     - cockpit
+    case-insensitive: true
   - type: favicon
     hash:
     - '688609340'

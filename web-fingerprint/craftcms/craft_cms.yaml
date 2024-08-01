@@ -26,6 +26,7 @@ http:
   - type: word
     words:
     - craftcms
+    case-insensitive: true
   - type: favicon
     hash:
     - '-47932290'

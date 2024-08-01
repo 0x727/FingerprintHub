@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - tiki wiki
+    case-insensitive: true

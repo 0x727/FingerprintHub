@@ -21,6 +21,7 @@ http:
   - type: word
     words:
     - micro focus dsd
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*>github enterprise.*?</title>

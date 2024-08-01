@@ -19,3 +19,4 @@ http:
   - type: word
     words:
     - microsoft-iis" "2015
+    case-insensitive: true

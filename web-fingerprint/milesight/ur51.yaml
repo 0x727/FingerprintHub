@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - rt_title
+    case-insensitive: true

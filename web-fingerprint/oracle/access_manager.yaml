@@ -24,6 +24,7 @@ http:
   - type: word
     words:
     - /oam/pages/css/login_page.css
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*>oracle access management.*?</title>

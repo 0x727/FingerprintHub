@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - tew-827dru
+    case-insensitive: true

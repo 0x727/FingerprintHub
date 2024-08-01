@@ -19,6 +19,7 @@ http:
   - type: word
     words:
     - text:in order to access the sharecenter
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*> body="d-link路由器管理页.*?</title>

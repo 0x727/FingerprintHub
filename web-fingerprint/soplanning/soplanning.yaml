@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - soplanning
+    case-insensitive: true

@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - skype for business
+    case-insensitive: true

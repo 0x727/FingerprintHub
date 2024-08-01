@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - ind780
+    case-insensitive: true

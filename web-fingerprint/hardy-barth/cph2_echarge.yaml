@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - salia plcc
+    case-insensitive: true

@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - phpmyfaq
+    case-insensitive: true

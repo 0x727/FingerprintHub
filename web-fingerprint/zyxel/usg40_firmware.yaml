@@ -19,3 +19,4 @@ http:
     words:
     - ' body="zyxel zyxel_style1'
     - '/2fa-access.cgi" '
+    case-insensitive: true

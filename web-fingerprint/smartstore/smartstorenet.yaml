@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - content="smartstore
+    case-insensitive: true

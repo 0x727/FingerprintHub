@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - teampass
+    case-insensitive: true

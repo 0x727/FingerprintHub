@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - /_common/lvl5/dologin.jsp
+    case-insensitive: true

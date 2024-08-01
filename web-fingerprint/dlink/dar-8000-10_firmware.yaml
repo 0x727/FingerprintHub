@@ -19,3 +19,4 @@ http:
     words:
     - ' title="d-link'
     - 'dar-8000-10" '
+    case-insensitive: true

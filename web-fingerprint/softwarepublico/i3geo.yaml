@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - i3geo
+    case-insensitive: true

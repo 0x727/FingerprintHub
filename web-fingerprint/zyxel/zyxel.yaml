@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - vmg1312-b10d
+    case-insensitive: true

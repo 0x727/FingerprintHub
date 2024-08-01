@@ -25,3 +25,4 @@ http:
   - type: word
     words:
     - plesk obsidian
+    case-insensitive: true

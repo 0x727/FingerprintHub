@@ -21,6 +21,7 @@ http:
   - type: word
     words:
     - moosocial
+    case-insensitive: true
   - type: favicon
     hash:
     - '702863115'

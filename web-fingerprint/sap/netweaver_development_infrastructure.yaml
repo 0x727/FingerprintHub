@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - sap netweaver
+    case-insensitive: true

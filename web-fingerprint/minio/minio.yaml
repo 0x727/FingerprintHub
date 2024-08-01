@@ -29,6 +29,7 @@ http:
   - type: word
     words:
     - symfony profiler
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*>minio browser.*?</title>

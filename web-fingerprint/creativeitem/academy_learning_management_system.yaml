@@ -22,3 +22,4 @@ http:
   - type: word
     words:
     - study any topic, anytime
+    case-insensitive: true

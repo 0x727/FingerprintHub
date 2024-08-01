@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - eshop - multipurpose ecommerce
+    case-insensitive: true

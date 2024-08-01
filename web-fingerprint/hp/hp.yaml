@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - hp 1820-8g switch j9979a
+    case-insensitive: true

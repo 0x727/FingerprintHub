@@ -19,3 +19,4 @@ http:
   - type: word
     words:
     - aspera faspex
+    case-insensitive: true

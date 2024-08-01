@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - powered by bloofoxcms
+    case-insensitive: true

@@ -23,6 +23,7 @@ http:
   - type: word
     words:
     - modoboa
+    case-insensitive: true
   - type: favicon
     hash:
     - '1949005079'

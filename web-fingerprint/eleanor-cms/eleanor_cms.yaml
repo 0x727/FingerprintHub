@@ -22,3 +22,4 @@ http:
   - type: word
     words:
     - eleanor
+    case-insensitive: true

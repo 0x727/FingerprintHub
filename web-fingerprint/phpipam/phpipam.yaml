@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - phpipam ip address management
+    case-insensitive: true

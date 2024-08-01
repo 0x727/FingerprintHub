@@ -22,3 +22,4 @@ http:
   - type: word
     words:
     - /_next/static
+    case-insensitive: true

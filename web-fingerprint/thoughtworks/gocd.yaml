@@ -24,6 +24,7 @@ http:
   - type: word
     words:
     - gocd version
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*>create a pipeline - go" html:"gocd version.*?</title>

@@ -28,6 +28,7 @@ http:
   - type: word
     words:
     - openemr
+    case-insensitive: true
   - type: favicon
     hash:
     - '1971268439'

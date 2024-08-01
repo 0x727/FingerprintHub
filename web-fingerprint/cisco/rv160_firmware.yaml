@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - cisco rv340
+    case-insensitive: true

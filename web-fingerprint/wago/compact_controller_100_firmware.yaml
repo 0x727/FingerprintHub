@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - /wbm/" html:"wago
+    case-insensitive: true

@@ -22,6 +22,7 @@ http:
   - type: word
     words:
     - microweber
+    case-insensitive: true
   - type: favicon
     hash:
     - '780351152'

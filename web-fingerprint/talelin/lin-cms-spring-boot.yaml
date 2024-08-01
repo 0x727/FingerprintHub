@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - 心上无垢，林间有风
+    case-insensitive: true

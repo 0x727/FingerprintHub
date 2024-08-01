@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - cassia bluetooth gateway management platform
+    case-insensitive: true

@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - ibm websphere portal
+    case-insensitive: true

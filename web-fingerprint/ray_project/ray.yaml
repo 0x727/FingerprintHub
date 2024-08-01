@@ -23,6 +23,7 @@ http:
   - type: word
     words:
     - ray dashboard
+    case-insensitive: true
   - type: favicon
     hash:
     - '463802404'

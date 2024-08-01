@@ -26,6 +26,7 @@ http:
   - type: word
     words:
     - contao open source cms
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*>contao.*?</title>

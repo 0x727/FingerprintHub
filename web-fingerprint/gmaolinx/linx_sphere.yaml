@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - scs.web.server.spi/1.0
+    case-insensitive: true

@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - laravel-framework
+    case-insensitive: true

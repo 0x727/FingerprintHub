@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - __gradio_mode__
+    case-insensitive: true

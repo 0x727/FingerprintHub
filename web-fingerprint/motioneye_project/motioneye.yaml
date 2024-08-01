@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - motioneye
+    case-insensitive: true

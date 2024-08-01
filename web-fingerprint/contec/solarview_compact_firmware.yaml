@@ -26,6 +26,7 @@ http:
     - ' title="top'
     - solarview compact
     - 'solarview compact" '
+    case-insensitive: true
   - type: favicon
     hash:
     - '-244067125'

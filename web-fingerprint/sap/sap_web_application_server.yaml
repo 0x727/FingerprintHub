@@ -21,3 +21,4 @@ http:
   - type: word
     words:
     - sap business server pages team
+    case-insensitive: true

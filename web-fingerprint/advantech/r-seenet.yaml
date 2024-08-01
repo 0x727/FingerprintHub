@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - r-seenet
+    case-insensitive: true
