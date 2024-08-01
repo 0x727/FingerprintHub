@@ -1,0 +1,20 @@
+id: dse855
+info:
+  name: DSE855
+  author: cn-kali-team
+  tags: detect,tech,DSE855
+  severity: info
+  metadata:
+    fofa-query:
+    - deep sea electronics
+    product: DSE855
+    vendor: Deep Sea Electronics
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - deep sea electronics

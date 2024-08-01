@@ -431,8 +431,11 @@ fn cse_to_finger() {
           continue;
         }
         let t = cse_to_template(one_cse, VPF { vendor: vendor.clone(), product, framework: None, verified: false });
+        std::fs::create_dir_all(current_fingerprint_dir.join(&vendor)).unwrap();
         if let Ok(file) = File::create(&product_path) {
           serde_yaml::to_writer(file, &t).unwrap();
+        } else {
+          println!("创建失败：{}", product_path.to_string_lossy());
         }
       } else {
         println!("{}", product_path.to_string_lossy());

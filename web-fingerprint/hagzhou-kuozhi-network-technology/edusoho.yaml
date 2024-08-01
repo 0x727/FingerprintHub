@@ -1,0 +1,23 @@
+id: edusoho
+info:
+  name: edusoho
+  author: cn-kali-team
+  tags: detect,tech,edusoho
+  severity: info
+  metadata:
+    fofa-query:
+    - title="powered by edusoho" || body="powered by <a href=\"http://www.edusoho.com/\" target=\"_blank\">edusoho" || (body="powered by edusoho" && body="var app")
+    product: edusoho
+    vendor: hagzhou-kuozhi-network-technology
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*> (body="powered by edusoho" .*?</title>
+    - (?mi)<title[^>]*> body="powered by <a href=http://www.edusoho.com/ target=_blank>edusoho" .*?</title>
+    - (?mi)<title[^>]*> body="var app").*?</title>
+    - (?mi)<title[^>]*>powered by edusoho" .*?</title>
