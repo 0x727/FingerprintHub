@@ -1,0 +1,20 @@
+id: internet_information_server
+info:
+  name: iis
+  author: cn-kali-team
+  tags: detect,tech,iis
+  severity: info
+  metadata:
+    product: internet_information_server
+    vendor: microsoft
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - "Server: Microsoft-IIS"
+    part: header
+    case-insensitive: true
