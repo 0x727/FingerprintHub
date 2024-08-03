@@ -1,16 +1,16 @@
 use engine::find_yaml_file;
-use engine::info::{CSE, Info, Severity, VPF};
+use engine::info::{Info, Severity, CSE, VPF};
 use engine::matchers::{Favicon, Matcher, MatcherType, Part};
 use engine::request::{HttpRaw, Requests};
 use engine::template::Template;
 use helper::cli::HelperConfig;
 use helper::nmap::nmap;
+use helper::to_kebab_case;
 use std::collections::BTreeMap;
 use std::env;
 use std::fs::{File, OpenOptions};
 use std::path::Path;
 use std::str::FromStr;
-use helper::to_kebab_case;
 
 const UNKNOWN_VENDOR: &str = "00_unknown";
 const BUILT_TAGS: [&str; 59] = [
@@ -138,7 +138,7 @@ fn sync_nuclei() {
                       .join(sub_tag)
                       .join(yaml_path.file_name().unwrap().to_string_lossy().to_string()),
                   )
-                    .unwrap();
+                  .unwrap();
                   break;
                 }
               }
@@ -153,7 +153,7 @@ fn sync_nuclei() {
                     .join(product)
                     .join(yaml_path.file_name().unwrap().to_string_lossy().to_string()),
                 )
-                  .unwrap();
+                .unwrap();
               }
               continue;
             }
@@ -423,14 +423,24 @@ fn cse_to_finger() {
       if cse.is_empty() {
         continue;
       }
-      let product_path = current_fingerprint_dir.join(&vendor).join(&format!("{}.yaml", product));
+      let product_path = current_fingerprint_dir
+        .join(&vendor)
+        .join(&format!("{}.yaml", product));
       if !product_path.exists() {
         let one_cse = to_one_cse(cse);
         let matchers: Vec<Matcher> = one_cse.clone().into();
         if matchers.is_empty() {
           continue;
         }
-        let t = cse_to_template(one_cse, VPF { vendor: vendor.clone(), product, framework: None, verified: false });
+        let t = cse_to_template(
+          one_cse,
+          VPF {
+            vendor: vendor.clone(),
+            product,
+            framework: None,
+            verified: false,
+          },
+        );
         std::fs::create_dir_all(current_fingerprint_dir.join(&vendor)).unwrap();
         if let Ok(file) = File::create(&product_path) {
           serde_yaml::to_writer(file, &t).unwrap();
