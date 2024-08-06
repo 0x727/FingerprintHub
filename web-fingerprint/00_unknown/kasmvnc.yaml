@@ -15,4 +15,4 @@ http:
   matchers:
   - type: favicon
     hash:
-    - "-360184491"
+    - '-360184491'
