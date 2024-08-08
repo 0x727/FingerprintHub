@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: IP-guard
+    product: ip-guard
     vendor: 00_unknown
     verified: false
 http:
@@ -19,4 +19,5 @@ http:
     - 210a3c89d4ab5effa18d6dd7a9627376
   - type: word
     words:
-    - <title>IP-guard</title>
+    - <title>ip-guard</title>
+    case-insensitive: true

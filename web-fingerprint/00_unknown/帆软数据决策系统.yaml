@@ -16,3 +16,4 @@ http:
   - type: word
     words:
     - webroot/decision/file?path=
+    case-insensitive: true

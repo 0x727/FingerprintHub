@@ -16,9 +16,11 @@ http:
   - type: word
     words:
     - =fs
-    - ReportServer
+    - reportserver
     condition: and
+    case-insensitive: true
   - type: word
     words:
     - content="finereport--web reporting tool"
-    - FineReport/decision
+    - finereport/decision
+    case-insensitive: true

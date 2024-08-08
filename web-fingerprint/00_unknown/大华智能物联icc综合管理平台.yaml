@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 大华智能物联ICC综合管理平台
+    product: 大华智能物联icc综合管理平台
     vendor: 00_unknown
     verified: false
 http:
@@ -16,5 +16,6 @@ http:
   - type: word
     words:
     - '*客户端会小于800*'
-    - /authLogin
+    - /authlogin
     condition: and
+    case-insensitive: true

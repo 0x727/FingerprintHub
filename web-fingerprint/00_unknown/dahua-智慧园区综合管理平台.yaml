@@ -15,24 +15,29 @@ http:
   matchers:
   - type: word
     words:
-    - <li id="DSS-help">
-    - <span>DSS助手</span>
+    - <li id="dss-help">
+    - <span>dss助手</span>
     condition: and
+    case-insensitive: true
   - type: word
     words:
-    - Created by IntelliJ IDEA.
-    - /WPMS
+    - created by intellij idea.
+    - /wpms
     condition: and
+    case-insensitive: true
   - type: word
     words:
-    - Created by IntelliJ IDEA.
-    - Selene
+    - created by intellij idea.
+    - selene
     condition: and
+    case-insensitive: true
   - type: word
     words:
     - '"include/styles/common/favicon.ico'
     - portal/login_init.action
     condition: and
+    case-insensitive: true
   - type: word
     words:
-    - /WPMS/asset/common/css/base.css
+    - /wpms/asset/common/css/base.css
+    case-insensitive: true

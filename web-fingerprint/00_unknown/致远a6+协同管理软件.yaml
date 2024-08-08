@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 致远A6+协同管理软件
+    product: 致远a6+协同管理软件
     vendor: 00_unknown
     verified: false
 http:
@@ -15,4 +15,5 @@ http:
   matchers:
   - type: word
     words:
-    - /seeyon/common/images/A6/favicon.ico
+    - /seeyon/common/images/a6/favicon.ico
+    case-insensitive: true

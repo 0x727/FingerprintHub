@@ -16,3 +16,4 @@ http:
   - type: word
     words:
     - www/mobile-version.txt
+    case-insensitive: true

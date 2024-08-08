@@ -17,3 +17,4 @@ http:
     words:
     - entercrm
     - <title>欢迎使用浙大恩特客户资源管理系统</title>
+    case-insensitive: true

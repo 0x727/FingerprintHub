@@ -18,3 +18,4 @@ http:
     - netflow analyzer
     - zoho
     - href="/netflow/css/netflow.css
+    case-insensitive: true

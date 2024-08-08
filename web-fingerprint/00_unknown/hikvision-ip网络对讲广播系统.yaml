@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: Hikvision-IP网络对讲广播系统
+    product: hikvision-ip网络对讲广播系统
     vendor: 00_unknown
     verified: false
 http:
@@ -15,9 +15,10 @@ http:
   matchers:
   - type: word
     words:
-    - /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)
+    - /android|webos|iphone|ipod|blackberry/i.test(navigator.useragent)
     - vendors/toastr-master/build/toastr.min.js
     condition: and
+    case-insensitive: true
   - type: favicon
     hash:
     - e854b2eaa9e4685a95d8052d5e3165bc

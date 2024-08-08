@@ -15,9 +15,10 @@ http:
   matchers:
   - type: word
     words:
-    - OneKeyAdmin
+    - onekeyadmin
     - /admin/css/onekey.min.cs
     condition: and
+    case-insensitive: true
   - type: favicon
     hash:
     - 507fcbebf363f4327fcb49294a864c24

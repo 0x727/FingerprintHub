@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 致远UFIDA NC协同-OA V5.71
+    product: 致远ufida nc协同-oa v5.71
     vendor: 00_unknown
     verified: false
 http:
@@ -15,6 +15,7 @@ http:
   matchers:
   - type: word
     words:
-    - V3_20SP1_2011-12-31
-    - /seeyon/common/js/V3X.js
+    - v3_20sp1_2011-12-31
+    - /seeyon/common/js/v3x.js
     condition: and
+    case-insensitive: true

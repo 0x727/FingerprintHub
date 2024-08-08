@@ -19,3 +19,4 @@ http:
   - type: word
     words:
     - <title>emessage 管理界面</title>
+    case-insensitive: true

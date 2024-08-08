@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 东方通TongWeb应用服务器
+    product: 东方通tongweb应用服务器
     vendor: 00_unknown
     verified: false
 http:
@@ -17,3 +17,4 @@ http:
     words:
     - 'server: tongweb server'
     part: header
+    case-insensitive: true

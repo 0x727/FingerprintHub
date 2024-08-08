@@ -16,3 +16,4 @@ http:
   - type: word
     words:
     - cdgserver3
+    case-insensitive: true

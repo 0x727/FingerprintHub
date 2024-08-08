@@ -17,6 +17,8 @@ http:
     words:
     - 'content-length: 19'
     part: header
+    case-insensitive: true
   - type: word
     words:
     - apollo-adminservice
+    case-insensitive: true

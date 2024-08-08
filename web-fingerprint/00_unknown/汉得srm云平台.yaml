@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 汉得SRM云平台
+    product: 汉得srm云平台
     vendor: 00_unknown
     verified: false
 http:
@@ -15,9 +15,11 @@ http:
   matchers:
   - type: word
     words:
-    - /component/Font-Awesome-3.2.1/css/font-awesome-ie7.min.css
+    - /component/font-awesome-3.2.1/css/font-awesome-ie7.min.css
     - first_login_alter_pwd.screen
     condition: and
+    case-insensitive: true
   - type: word
     words:
-    - <title>汉得SRM云平台</title>
+    - <title>汉得srm云平台</title>
+    case-insensitive: true

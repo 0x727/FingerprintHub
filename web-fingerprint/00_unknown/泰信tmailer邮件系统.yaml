@@ -18,6 +18,7 @@ http:
     - 'set-cookie: tm_test=true'
     - 'server: theproxy'
     part: header
+    case-insensitive: true
   - type: favicon
     hash:
     - 9f99176691d4caf44367865e2602f555

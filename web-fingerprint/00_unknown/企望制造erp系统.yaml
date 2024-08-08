@@ -16,3 +16,4 @@ http:
   - type: word
     words:
     - /javascript/js/witfunctions.js
+    case-insensitive: true

@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 用友-FE协作办公平台
+    product: 用友-fe协作办公平台
     vendor: 00_unknown
     verified: false
 http:
@@ -18,3 +18,4 @@ http:
     - v_hedden
     - v_show
     condition: and
+    case-insensitive: true

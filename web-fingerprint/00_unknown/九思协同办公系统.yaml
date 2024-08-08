@@ -17,9 +17,11 @@ http:
     words:
     - 'location: /jsoa/login.jsp'
     part: header
+    case-insensitive: true
   - type: favicon
     hash:
     - fc171c32d6d99f006b1ade860753a9db
   - type: word
     words:
     - location.href="/jsoa/login.jsp";
+    case-insensitive: true

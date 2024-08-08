@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 拓尔思-MAS
+    product: 拓尔思-mas
     vendor: 00_unknown
     verified: false
 http:
@@ -18,6 +18,7 @@ http:
     - 'x-mas-server: '
     - 'location: /mas/'
     part: header
+    case-insensitive: true
   - type: favicon
     hash:
     - ea5d31497e6f1304cdf4f4660a9b86df

@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 宇视VS-ISC5000-E
+    product: 宇视vs-isc5000-e
     vendor: 00_unknown
     verified: false
 http:
@@ -17,3 +17,4 @@ http:
     words:
     - 'location: page/login/'
     part: header
+    case-insensitive: true

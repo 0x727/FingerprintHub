@@ -18,6 +18,7 @@ http:
     - <title>欢迎登录</title>
     - /report/report.php
     condition: and
+    case-insensitive: true
   - type: favicon
     hash:
     - 98128e625a3b98546a206c2170fb5eb3

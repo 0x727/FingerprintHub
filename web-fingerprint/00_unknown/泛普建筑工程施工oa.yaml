@@ -16,4 +16,5 @@ http:
   - type: word
     words:
     - dwr/interface/loginservice.js
-    - dwr/interface/LoginService.js
+    - dwr/interface/loginservice.js
+    case-insensitive: true

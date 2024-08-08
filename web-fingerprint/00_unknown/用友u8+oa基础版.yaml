@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 用友U8+OA基础版
+    product: 用友u8+oa基础版
     vendor: 00_unknown
     verified: false
 http:
@@ -18,4 +18,5 @@ http:
     - b730edbe9bc850ae9f35dce11edd2c2d
   - type: word
     words:
-    - 用友U8-OA
+    - 用友u8-oa
+    case-insensitive: true

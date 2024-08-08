@@ -16,3 +16,4 @@ http:
   - type: word
     words:
     - trs_web_style.css
+    case-insensitive: true

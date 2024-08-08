@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 用友致远A6协同办公软件
+    product: 用友致远a6协同办公软件
     vendor: 00_unknown
     verified: false
 http:
@@ -18,8 +18,10 @@ http:
     - images/login/a6flash.swf
     - 辅助程序安装
     condition: and
+    case-insensitive: true
   - type: word
     words:
-    - 用友致远A6协同办公软件
+    - 用友致远a6协同办公软件
     - 辅助程序安装
     condition: and
+    case-insensitive: true

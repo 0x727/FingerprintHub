@@ -18,6 +18,7 @@ http:
     - 您的账号已在另一台设备登录，继续登录将挤掉原登录设备，是否继续登录
     - 时空智友
     condition: and
+    case-insensitive: true
   - type: favicon
     hash:
     - 2464cbce5dd2681dd4fb62d055520d78

@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: CISCO-IOS-XE
+    product: cisco-ios-xe
     vendor: 00_unknown
     verified: false
 http:
@@ -20,3 +20,4 @@ http:
     words:
     - <script>window.onload=function(){ url ='/webui';window.location.href=url;}</script>
     - <script>window.onload=function(){ url ='/webui/';window.location.href=url;}</script>
+    case-insensitive: true

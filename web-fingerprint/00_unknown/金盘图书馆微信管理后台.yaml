@@ -18,6 +18,7 @@ http:
     - vendor/modules/angular-file-upload/angular-file-upload.js
     - js/config.js
     condition: and
+    case-insensitive: true
   - type: favicon
     hash:
     - 0488faca4c19046b94d07c3ee83cf9d6

@@ -16,23 +16,27 @@ http:
   - type: word
     words:
     - /portal/conf/icon/logo.png
-    - nginxService/v1/download/InstallRootCert.exe
+    - nginxservice/v1/download/installrootcert.exe
     condition: and
+    case-insensitive: true
   - type: word
     words:
     - /portal/ui/static/favicon.ico
     - /portal/ui/static/js/chunk-
     condition: and
+    case-insensitive: true
   - type: word
     words:
     - /isecure/ui/static/favicon.ico
     - /isecure/ui/static/js/chunk-
     condition: and
+    case-insensitive: true
   - type: word
     words:
     - /isecure/ui/favicon.ico
     - /isecure/ui/static/js/
     condition: and
+    case-insensitive: true
   - type: favicon
     hash:
     - 4209fe52e5c15345d0a1250f68a14d1e
@@ -42,3 +46,4 @@ http:
     - 综合安防管理平台
     - '0x26e11001'
     - /portal/lida-icon/lidaicon.css
+    case-insensitive: true

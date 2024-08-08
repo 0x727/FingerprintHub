@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: SysAid-Help-Desk
+    product: sysaid-help-desk
     vendor: 00_unknown
     verified: false
 http:
@@ -17,4 +17,5 @@ http:
     words:
     - sysaid-logo-dark-green.png
     - www.sysaid.com
-    - <title>SysAid Help Desk Software</title>
+    - <title>sysaid help desk software</title>
+    case-insensitive: true

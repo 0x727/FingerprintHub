@@ -18,4 +18,5 @@ http:
     - dfe2fd3d8458e166616692b39c32baf9
   - type: word
     words:
-    - <title>kodbox - Powered by kodbox</title>
+    - <title>kodbox - powered by kodbox</title>
+    case-insensitive: true

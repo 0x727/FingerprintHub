@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 达观RPA
+    product: 达观rpa
     vendor: 00_unknown
     verified: false
 http:
@@ -18,4 +18,5 @@ http:
     - e2e2ba13339c2fea220f8b4fa6c32c0d
   - type: word
     words:
-    - <title>RPA</title>
+    - <title>rpa</title>
+    case-insensitive: true

@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: Inspur-政务系统
+    product: inspur-政务系统
     vendor: 00_unknown
     verified: false
 http:
@@ -17,3 +17,4 @@ http:
     words:
     - langchao.ecgap.outportal
     - onlinequery/querylist.aspx
+    case-insensitive: true

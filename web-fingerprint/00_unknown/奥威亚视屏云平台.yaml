@@ -15,9 +15,11 @@ http:
   matchers:
   - type: word
     words:
-    - lickAndShowSignupModal
-    - clickAndShowLoginModal
+    - lickandshowsignupmodal
+    - clickandshowloginmodal
     condition: and
+    case-insensitive: true
   - type: word
     words:
-    - /CSS/NewtonTheme/assets/app.css
+    - /css/newtontheme/assets/app.css
+    case-insensitive: true

@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 捷顺 JieLink智能终端操作平台
+    product: 捷顺 jielink智能终端操作平台
     vendor: 00_unknown
     verified: false
 http:
@@ -18,4 +18,5 @@ http:
     - 2f809c4759399cae458a29f24490a114
   - type: word
     words:
-    - /resources/images/JieLink_Logo.png
+    - /resources/images/jielink_logo.png
+    case-insensitive: true

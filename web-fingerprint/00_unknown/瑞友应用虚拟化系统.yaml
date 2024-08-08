@@ -15,10 +15,12 @@ http:
   matchers:
   - type: word
     words:
-    - /client/CASWebClient.exe
-    - CASMain.XGI
+    - /client/caswebclient.exe
+    - casmain.xgi
     condition: and
+    case-insensitive: true
   - type: word
     words:
     - 瑞友天翼－应用虚拟化系统
     - 瑞友应用虚拟化系统
+    case-insensitive: true

@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: panabit-Panalog
+    product: panabit-panalog
     vendor: 00_unknown
     verified: false
 http:
@@ -18,13 +18,16 @@ http:
     - forum.panabit.com
     - pa_iptcode
     condition: and
+    case-insensitive: true
   - type: word
     words:
-    - Maintain
-    - Panalog
+    - maintain
+    - panalog
     condition: and
+    case-insensitive: true
   - type: word
     words:
     - id="codeno"
     - 日志系统
     condition: and
+    case-insensitive: true

@@ -15,4 +15,5 @@ http:
   matchers:
   - type: word
     words:
-    - <title>vSphere Web Client</title>
+    - <title>vsphere web client</title>
+    case-insensitive: true

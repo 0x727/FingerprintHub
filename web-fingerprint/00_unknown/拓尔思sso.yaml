@@ -17,6 +17,8 @@ http:
     words:
     - 'location: /ids/'
     part: header
+    case-insensitive: true
   - type: word
     words:
     - /ids/admin/js/oslib
+    case-insensitive: true

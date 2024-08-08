@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 致远A8-V5协同管理软件
+    product: 致远a8-v5协同管理软件
     vendor: 00_unknown
     verified: false
 http:
@@ -16,9 +16,11 @@ http:
   - type: word
     words:
     - https://weixin.seeyon.com/mobilehelp.jsp?random=
-    - A8+集团版
+    - a8+集团版
     condition: and
+    case-insensitive: true
   - type: word
     words:
-    - common/js/passwdcheck.js?V=V5_6
-    - /seeyon/common/images/A8/favicon.ico
+    - common/js/passwdcheck.js?v=v5_6
+    - /seeyon/common/images/a8/favicon.ico
+    case-insensitive: true

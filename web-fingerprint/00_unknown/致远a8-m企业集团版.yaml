@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 致远A8-m企业集团版
+    product: 致远a8-m企业集团版
     vendor: 00_unknown
     verified: false
 http:
@@ -15,5 +15,6 @@ http:
   matchers:
   - type: word
     words:
-    - /seeyon/USER-DATA/IMAGES/LOGIN/login.gif
+    - /seeyon/user-data/images/login/login.gif
     - /seeyon/common/skin/default/images/login.gif
+    case-insensitive: true

@@ -17,6 +17,8 @@ http:
     words:
     - 'server: zzy_web'
     part: header
+    case-insensitive: true
   - type: word
     words:
     - build/framework/js/download.js
+    case-insensitive: true

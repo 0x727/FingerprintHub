@@ -15,15 +15,18 @@ http:
   matchers:
   - type: word
     words:
-    - ASHXRequest/SystemIndex/SystemLogin.ashx
-    - View/UserReserved/UserReservedTest.aspx
+    - ashxrequest/systemindex/systemlogin.ashx
+    - view/userreserved/userreservedtest.aspx
     condition: and
+    case-insensitive: true
   - type: word
     words:
     - 当前密码安全性不好，请修改密码！
-    - View/SystemMng/PwdChanges.aspx
+    - view/systemmng/pwdchanges.aspx
     condition: and
+    case-insensitive: true
   - type: word
     words:
     - 'location: /login.aspx?returnurl=%2f'
     part: header
+    case-insensitive: true

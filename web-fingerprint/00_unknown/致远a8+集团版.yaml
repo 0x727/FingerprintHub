@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 致远A8+集团版
+    product: 致远a8+集团版
     vendor: 00_unknown
     verified: false
 http:
@@ -15,4 +15,5 @@ http:
   matchers:
   - type: word
     words:
-    - V8_0SP2_211020_2025240
+    - v8_0sp2_211020_2025240
+    case-insensitive: true

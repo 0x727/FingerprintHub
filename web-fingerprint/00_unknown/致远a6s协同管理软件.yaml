@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 致远A6S协同管理软件
+    product: 致远a6s协同管理软件
     vendor: 00_unknown
     verified: false
 http:
@@ -15,4 +15,5 @@ http:
   matchers:
   - type: word
     words:
-    - 致远A6S协同管理软件
+    - 致远a6s协同管理软件
+    case-insensitive: true

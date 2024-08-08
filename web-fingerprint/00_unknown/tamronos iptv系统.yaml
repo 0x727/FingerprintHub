@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: TamronOS iptv系统
+    product: tamronos iptv系统
     vendor: 00_unknown
     verified: false
 http:
@@ -15,5 +15,6 @@ http:
   matchers:
   - type: word
     words:
-    - // 您安装TamronOS的硬件系统无法满足系统的基本需求条件，继续运行可能会 造成系统无法正常运行
-    - <title>TamronOS IPTV系统</title>
+    - // 您安装tamronos的硬件系统无法满足系统的基本需求条件，继续运行可能会 造成系统无法正常运行
+    - <title>tamronos iptv系统</title>
+    case-insensitive: true

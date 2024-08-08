@@ -15,5 +15,6 @@ http:
   matchers:
   - type: word
     words:
-    - <title>登录-H3C SecPath 运维审计系统</title>
-    - <span>H3C SecPath 运维审计系统</span>
+    - <title>登录-h3c secpath 运维审计系统</title>
+    - <span>h3c secpath 运维审计系统</span>
+    case-insensitive: true

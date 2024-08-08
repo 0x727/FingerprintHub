@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 铭飞MCMS
+    product: 铭飞mcms
     vendor: 00_unknown
     verified: false
 http:
@@ -17,5 +17,6 @@ http:
     words:
     - /mcms/search.do" method=
     - static/plugins/ms/1.0.0/ms.js
-    - 铭飞MCMS
-    - /mdiy/formData/save.do
+    - 铭飞mcms
+    - /mdiy/formdata/save.do
+    case-insensitive: true

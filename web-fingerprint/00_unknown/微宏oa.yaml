@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 微宏OA
+    product: 微宏oa
     vendor: 00_unknown
     verified: false
 http:
@@ -17,6 +17,8 @@ http:
     words:
     - 'location: /wh/serverlogin.jsp'
     part: header
+    case-insensitive: true
   - type: word
     words:
-    - /wh/servlet/MainServer
+    - /wh/servlet/mainserver
+    case-insensitive: true

@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 致远M3 Server V2.0
+    product: 致远m3 server v2.0
     vendor: 00_unknown
     verified: false
 http:
@@ -16,4 +16,5 @@ http:
   - type: word
     words:
     - /mobile_portal/api/m3/core/server/service
-    - <title>M3 Server V2.0</title>
+    - <title>m3 server v2.0</title>
+    case-insensitive: true

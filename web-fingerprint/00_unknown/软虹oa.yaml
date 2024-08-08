@@ -5,7 +5,7 @@ info:
   tags: detect,tech
   severity: info
   metadata:
-    product: 软虹OA
+    product: 软虹oa
     vendor: 00_unknown
     verified: false
 http:
@@ -16,8 +16,9 @@ http:
   - type: word
     words:
     - 2012 ruaho 版权所有:北京软虹科技.
-    - USER_PASSWORDS
+    - user_passwords
     condition: and
+    case-insensitive: true
   - type: favicon
     hash:
     - 5d01f90a8f3fed7c83152bfce0403c2f

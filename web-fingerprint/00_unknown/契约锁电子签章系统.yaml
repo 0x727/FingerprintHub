@@ -18,10 +18,12 @@ http:
     - qyswebapp
     - <title>电子签署平台</title>
     condition: and
+    case-insensitive: true
   - type: word
     words:
     - 'p3p: cp=cao psa our'
     part: header
+    case-insensitive: true
   - type: favicon
     hash:
     - ad17b1fc5025ca47f743f7e69c956b26
