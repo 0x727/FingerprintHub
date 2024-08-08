@@ -138,7 +138,7 @@ fn sync_nuclei() {
                       .join(sub_tag)
                       .join(yaml_path.file_name().unwrap().to_string_lossy().to_string()),
                   )
-                    .unwrap();
+                  .unwrap();
                   break;
                 }
               }
@@ -153,7 +153,7 @@ fn sync_nuclei() {
                     .join(product)
                     .join(yaml_path.file_name().unwrap().to_string_lossy().to_string()),
                 )
-                  .unwrap();
+                .unwrap();
               }
               continue;
             }
@@ -523,8 +523,15 @@ fn cse_to_template(one_cse: CSE, vpf: VPF) -> Template {
 fn v3_to_v4(v3_path: PathBuf) {
   let v3_yaml_list = find_yaml_file(&v3_path, false);
   let current_fingerprint_dir = env::current_dir().unwrap().join("web-fingerprint");
-  let all_product: Vec<String> = find_yaml_file(&current_fingerprint_dir, true).into_iter()
-    .map(|p| p.file_name().unwrap().to_string_lossy().trim_end_matches(".yaml").to_string())
+  let all_product: Vec<String> = find_yaml_file(&current_fingerprint_dir, true)
+    .into_iter()
+    .map(|p| {
+      p.file_name()
+        .unwrap()
+        .to_string_lossy()
+        .trim_end_matches(".yaml")
+        .to_string()
+    })
     .collect();
   for v3_path in v3_yaml_list {
     let v3_file = File::open(&v3_path).unwrap();
@@ -536,7 +543,9 @@ fn v3_to_v4(v3_path: PathBuf) {
           continue;
         }
       }
-      let v4_path = current_fingerprint_dir.join("00_unknown").join(format!("{}.yaml", template.info.name));
+      let v4_path = current_fingerprint_dir
+        .join("00_unknown")
+        .join(format!("{}.yaml", template.info.name));
       let v4_file = File::create(&v4_path).unwrap();
       serde_yaml::to_writer(v4_file, &template).unwrap();
     }

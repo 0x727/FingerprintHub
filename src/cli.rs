@@ -1,5 +1,5 @@
-use std::path::PathBuf;
 use argh::FromArgs;
+use std::path::PathBuf;
 
 #[derive(Debug, Clone, FromArgs)]
 #[argh(description = "observer_ward version")]

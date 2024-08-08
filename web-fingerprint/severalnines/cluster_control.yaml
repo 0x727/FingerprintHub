@@ -17,5 +17,5 @@ http:
   matchers:
   - type: favicon
     hash:
-    - ' icon_hash="-1815707560'
-    - '160707013" '
+    - '-1815707560'
+    - '160707013'

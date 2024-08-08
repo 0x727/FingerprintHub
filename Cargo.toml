@@ -11,5 +11,5 @@ serde = { version = "1.0.196", features = ["derive"] }
 serde_yaml = "0.9"
 serde_json = "1"
 pinyin = "0.10.0"
-engine = { git = "https://github.com/emo-crab/observer_ward.git" }
-#engine = { path = "../observer_ward/engine" }
+#engine = { git = "https://github.com/emo-crab/observer_ward.git" }
+engine = { path = "../observer_ward/engine" }

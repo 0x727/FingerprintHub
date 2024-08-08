@@ -4,13 +4,13 @@ pub mod nmap;
 mod service;
 mod v3;
 
-pub use v3::{WebFingerPrint, V3WebFingerPrint};
 use crate::error::{new_io_error, Result};
 pub use crate::service::match_line::MatchLine;
 pub use crate::service::probe::{Probe, ZeroDuration};
 use engine::request::PortRange;
-use std::str::{FromStr, Lines};
 use pinyin::ToPinyin;
+use std::str::{FromStr, Lines};
+pub use v3::{V3WebFingerPrint, WebFingerPrint};
 
 // 转下划线风格
 pub fn to_kebab_case(input: &str) -> String {
