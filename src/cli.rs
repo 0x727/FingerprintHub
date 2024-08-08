@@ -1,3 +1,4 @@
+use std::path::PathBuf;
 use argh::FromArgs;
 
 #[derive(Debug, Clone, FromArgs)]
@@ -15,6 +16,9 @@ pub struct HelperConfig {
   /// convert service fingerprint yaml
   #[argh(switch)]
   pub service: bool,
+  /// convert v3 yaml to v4 yaml
+  #[argh(option)]
+  pub v3_to_v4: Option<PathBuf>,
 }
 
 impl Default for HelperConfig {

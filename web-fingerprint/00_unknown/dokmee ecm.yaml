@@ -1,0 +1,18 @@
+id: dokmee-ecm
+info:
+  name: dokmee ecm
+  author: cn-kali-team
+  tags: detect,tech
+  severity: info
+  metadata:
+    product: Dokmee ECM
+    vendor: 00_unknown
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - <title>Dokmee ECM</title>

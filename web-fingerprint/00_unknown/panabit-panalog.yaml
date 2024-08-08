@@ -1,0 +1,30 @@
+id: panabit-panalog
+info:
+  name: panabit-panalog
+  author: cn-kali-team
+  tags: detect,tech
+  severity: info
+  metadata:
+    product: panabit-Panalog
+    vendor: 00_unknown
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - forum.panabit.com
+    - pa_iptcode
+    condition: and
+  - type: word
+    words:
+    - Maintain
+    - Panalog
+    condition: and
+  - type: word
+    words:
+    - id="codeno"
+    - 日志系统
+    condition: and

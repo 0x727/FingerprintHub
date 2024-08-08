@@ -1,0 +1,22 @@
+id: tuo-er-si-sso
+info:
+  name: 拓尔思sso
+  author: cn-kali-team
+  tags: detect,tech
+  severity: info
+  metadata:
+    product: 拓尔思sso
+    vendor: 00_unknown
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - 'location: /ids/'
+    part: header
+  - type: word
+    words:
+    - /ids/admin/js/oslib

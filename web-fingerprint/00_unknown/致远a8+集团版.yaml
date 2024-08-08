@@ -1,0 +1,18 @@
+id: zhi-yuan-a8+-ji-tuan-ban
+info:
+  name: 致远a8+集团版
+  author: cn-kali-team
+  tags: detect,tech
+  severity: info
+  metadata:
+    product: 致远A8+集团版
+    vendor: 00_unknown
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - V8_0SP2_211020_2025240

@@ -1,0 +1,18 @@
+id: zhi-yuan-a8n
+info:
+  name: 致远a8n
+  author: cn-kali-team
+  tags: detect,tech
+  severity: info
+  metadata:
+    product: 致远A8N
+    vendor: 00_unknown
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /seeyon/common/images/A8N/favicon.ico

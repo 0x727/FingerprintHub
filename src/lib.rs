@@ -2,12 +2,15 @@ pub mod cli;
 mod error;
 pub mod nmap;
 mod service;
+mod v3;
 
+pub use v3::{WebFingerPrint, V3WebFingerPrint};
 use crate::error::{new_io_error, Result};
 pub use crate::service::match_line::MatchLine;
 pub use crate::service::probe::{Probe, ZeroDuration};
 use engine::request::PortRange;
 use std::str::{FromStr, Lines};
+use pinyin::ToPinyin;
 
 // 转下划线风格
 pub fn to_kebab_case(input: &str) -> String {
@@ -161,6 +164,32 @@ impl<'buffer> FingerPrintParse<'buffer> {
     }
     Err(new_io_error("exclude"))
   }
+}
+
+pub fn hans_to_pinyin(hans: &str) -> String {
+  let mut pinyin_str = String::new();
+  let mut is_han = false;
+  let mut is_letter = false;
+  for c in hans.chars() {
+    if let Some(py) = c.to_pinyin() {
+      if is_han || is_letter {
+        pinyin_str.push('-');
+      }
+      pinyin_str.push_str(py.plain());
+      is_han = true;
+      is_letter = false;
+    } else {
+      if is_han {
+        pinyin_str.push('-');
+        is_han = false;
+      }
+      is_letter = true;
+      pinyin_str.push(c);
+    }
+  }
+  pinyin_str = pinyin_str.replace(" ", "-");
+  pinyin_str = pinyin_str.replacen("--", "-", 10);
+  pinyin_str
 }
 
 #[cfg(test)]

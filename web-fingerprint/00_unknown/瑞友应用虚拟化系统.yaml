@@ -1,0 +1,24 @@
+id: rui-you-ying-yong-xu-ni-hua-xi-tong
+info:
+  name: 瑞友应用虚拟化系统
+  author: cn-kali-team
+  tags: detect,tech
+  severity: info
+  metadata:
+    product: 瑞友应用虚拟化系统
+    vendor: 00_unknown
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /client/CASWebClient.exe
+    - CASMain.XGI
+    condition: and
+  - type: word
+    words:
+    - 瑞友天翼－应用虚拟化系统
+    - 瑞友应用虚拟化系统

@@ -1,0 +1,19 @@
+id: h3c-secpath-yun-wei-shen-ji-xi-tong
+info:
+  name: h3c secpath 运维审计系统
+  author: cn-kali-team
+  tags: detect,tech
+  severity: info
+  metadata:
+    product: h3c secpath 运维审计系统
+    vendor: 00_unknown
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - <title>登录-H3C SecPath 运维审计系统</title>
+    - <span>H3C SecPath 运维审计系统</span>

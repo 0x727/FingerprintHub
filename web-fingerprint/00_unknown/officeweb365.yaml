@@ -1,0 +1,22 @@
+id: officeweb365
+info:
+  name: officeweb365
+  author: cn-kali-team
+  tags: detect,tech
+  severity: info
+  metadata:
+    product: OfficeWeb365
+    vendor: 00_unknown
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - 'x-powered-by: officeweb365'
+    part: header
+  - type: word
+    words:
+    - 请输入furl参数

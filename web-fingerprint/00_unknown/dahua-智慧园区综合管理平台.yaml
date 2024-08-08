@@ -1,0 +1,38 @@
+id: dahua-zhi-hui-yuan-qu-zong-he-guan-li-ping-tai
+info:
+  name: dahua-智慧园区综合管理平台
+  author: cn-kali-team
+  tags: detect,tech
+  severity: info
+  metadata:
+    product: dahua-智慧园区综合管理平台
+    vendor: 00_unknown
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - <li id="DSS-help">
+    - <span>DSS助手</span>
+    condition: and
+  - type: word
+    words:
+    - Created by IntelliJ IDEA.
+    - /WPMS
+    condition: and
+  - type: word
+    words:
+    - Created by IntelliJ IDEA.
+    - Selene
+    condition: and
+  - type: word
+    words:
+    - '"include/styles/common/favicon.ico'
+    - portal/login_init.action
+    condition: and
+  - type: word
+    words:
+    - /WPMS/asset/common/css/base.css
