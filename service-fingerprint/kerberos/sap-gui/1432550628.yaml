@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sap-gui,service
   severity: info
   metadata:
+    product: gui
     rarity: 5
+    vendor: sap
+    verified: true
 tcp:
 - name: kerberos
   inputs:

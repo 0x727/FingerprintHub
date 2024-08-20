@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'command line: $1'
+    product: openssl
     rarity: 1
+    vendor: openssl
+    verified: true
 tcp:
 - name: get-request
   inputs:

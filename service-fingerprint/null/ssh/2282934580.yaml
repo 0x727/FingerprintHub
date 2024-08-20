@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1; X.509 v3 certificate support
+    product: openssh
     rarity: 0
+    vendor: openbsd
+    verified: true
     version: $2
 tcp:
 - name: 'null'

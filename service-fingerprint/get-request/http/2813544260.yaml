@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: firewall-1
     rarity: 1
+    vendor: checkpoint
+    verified: true
 tcp:
 - name: get-request
   inputs:

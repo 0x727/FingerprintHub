@@ -5,7 +5,10 @@ info:
   tags: detect,tech,eggdrop,service
   severity: info
   metadata:
+    product: eggdrop
     rarity: 0
+    vendor: eggheads
+    verified: true
     version: $1
 tcp:
 - name: 'null'

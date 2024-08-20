@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: installed $2
+    product: core_ftp
     rarity: 0
+    vendor: coreftp
+    verified: true
     version: $1
 tcp:
 - name: 'null'

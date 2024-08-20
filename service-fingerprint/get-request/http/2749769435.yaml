@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: broken
+    product: samba
     rarity: 1
+    vendor: samba
+    verified: true
 tcp:
 - name: get-request
   inputs:

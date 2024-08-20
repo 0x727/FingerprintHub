@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $2
     info: 'domain: $3'
+    product: notes
     rarity: 1
+    vendor: ibm
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

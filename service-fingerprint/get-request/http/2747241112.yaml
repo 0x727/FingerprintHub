@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: fossil
     rarity: 1
+    vendor: d_richard_hipp
+    verified: true
 tcp:
 - name: get-request
   inputs:

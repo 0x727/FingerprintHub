@@ -5,7 +5,10 @@ info:
   tags: detect,tech,openvpn-management,service
   severity: info
   metadata:
+    product: openvpn
     rarity: 0
+    vendor: openvpn
+    verified: true
     version: $1
 tcp:
 - name: 'null'

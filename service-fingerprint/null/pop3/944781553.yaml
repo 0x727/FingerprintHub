@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pop3,service
   severity: info
   metadata:
+    product: xeams
     rarity: 0
+    vendor: synametrics
+    verified: true
 tcp:
 - name: 'null'
   inputs:

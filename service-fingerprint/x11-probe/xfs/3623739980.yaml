@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: x.org_x11
     rarity: 4
+    vendor: x
+    verified: true
 tcp:
 - name: x11-probe
   inputs:

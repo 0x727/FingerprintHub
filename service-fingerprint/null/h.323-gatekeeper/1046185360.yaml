@@ -5,7 +5,10 @@ info:
   tags: detect,tech,h.323-gatekeeper,service
   severity: info
   metadata:
+    product: gnu_gatekeeper
     rarity: 0
+    vendor: gnugk
+    verified: true
 tcp:
 - name: 'null'
   inputs:

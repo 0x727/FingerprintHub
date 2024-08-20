@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: unauthorized
+    product: realvnc
     rarity: 3
+    vendor: realvnc
+    verified: true
     version: $1
 tcp:
 - name: help

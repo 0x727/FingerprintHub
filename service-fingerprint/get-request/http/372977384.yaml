@@ -8,7 +8,10 @@ info:
     device_type: firewall
     hostname: $1
     operating_system: Windows
+    product: access_gateway
     rarity: 1
+    vendor: citrix
+    verified: true
 tcp:
 - name: get-request
   inputs:

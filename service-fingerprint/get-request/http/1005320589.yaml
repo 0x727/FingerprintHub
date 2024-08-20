@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: secure_access_control_server
     rarity: 1
+    vendor: cisco
+    verified: true
 tcp:
 - name: get-request
   inputs:

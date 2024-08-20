@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http-proxy,service
   severity: info
   metadata:
+    product: squid
     rarity: 1
+    vendor: squid-cache
+    verified: true
 tcp:
 - name: get-request
   inputs:

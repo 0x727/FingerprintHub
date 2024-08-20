@@ -5,7 +5,10 @@ info:
   tags: detect,tech,gnupg,service
   severity: info
   metadata:
+    product: gnupg
     rarity: 0
+    vendor: gnupg
+    verified: true
     version: $1
 tcp:
 - name: 'null'

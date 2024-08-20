@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: new handshake
+    product: nbd
     rarity: 0
+    vendor: wouter_verhelst
+    verified: true
     version: 2.9.17
 tcp:
 - name: 'null'

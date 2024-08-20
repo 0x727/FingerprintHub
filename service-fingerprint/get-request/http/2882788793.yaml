@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: portainer
     rarity: 1
+    vendor: portainer
+    verified: true
     version: 1.19.2
 tcp:
 - name: get-request

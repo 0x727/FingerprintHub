@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: proxy server
+    product: mobile_access_gateway
     rarity: 1
+    vendor: airwatch
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Paessler PRTG bandwidth monitor
+    product: httpd
     rarity: 1
+    vendor: indy
+    verified: true
     version: $1
 tcp:
 - name: get-request

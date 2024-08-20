@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $1
     info: SchoolTool calendar
+    product: zope
     rarity: 1
+    vendor: zope
+    verified: true
 tcp:
 - name: get-request
   inputs:

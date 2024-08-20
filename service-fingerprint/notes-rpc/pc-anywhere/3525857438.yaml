@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pc-anywhere,service
   severity: info
   metadata:
+    product: pcanywhere
     rarity: 6
+    vendor: symantec
+    verified: true
 tcp:
 - name: notes-rpc
   inputs:

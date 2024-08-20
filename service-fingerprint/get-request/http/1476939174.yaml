@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: codename $2
+    product: thin
     rarity: 1
+    vendor: macournoyer
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,websocket,service
   severity: info
   metadata:
+    product: neo4j
     rarity: 1
+    vendor: neo4j
+    verified: true
 tcp:
 - name: get-request
   inputs:

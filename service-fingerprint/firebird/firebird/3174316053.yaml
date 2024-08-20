@@ -5,7 +5,10 @@ info:
   tags: detect,tech,firebird,service
   severity: info
   metadata:
+    product: firebird
     rarity: 8
+    vendor: firebirdsql
+    verified: true
     version: Protocol version 10
 tcp:
 - name: firebird

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: serv-u
     rarity: 0
+    vendor: serv-u
+    verified: true
     version: $2
 tcp:
 - name: 'null'

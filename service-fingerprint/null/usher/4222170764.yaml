@@ -5,7 +5,10 @@ info:
   tags: detect,tech,usher,service
   severity: info
   metadata:
+    product: monotone
     rarity: 0
+    vendor: monotone
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: Ubuntu
     operating_system: Linux
+    product: dovecot
     rarity: 0
+    vendor: dovecot
+    verified: true
 tcp:
 - name: 'null'
   inputs:

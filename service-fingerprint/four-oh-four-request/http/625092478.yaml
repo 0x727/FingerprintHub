@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: MediaPortal TV-Server http config
+    product: httpd
     rarity: 6
+    vendor: indy
+    verified: true
     version: $1
 tcp:
 - name: four-oh-four-request

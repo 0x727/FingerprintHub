@@ -5,7 +5,10 @@ info:
   tags: detect,tech,vuze-dht,service
   severity: info
   metadata:
+    product: vuze
     rarity: 8
+    vendor: azureus
+    verified: true
 tcp:
 - name: vuze-dht
   inputs:

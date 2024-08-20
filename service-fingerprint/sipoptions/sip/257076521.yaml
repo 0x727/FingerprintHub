@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sip,service
   severity: info
   metadata:
+    product: kamailio
     rarity: 5
+    vendor: kamailio
+    verified: true
 tcp:
 - name: sipoptions
   inputs:

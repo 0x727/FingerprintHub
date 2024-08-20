@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: German; Unicode support
+    product: postgresql
     rarity: 4
+    vendor: postgresql
+    verified: true
 tcp:
 - name: smbprog-neg
   inputs:

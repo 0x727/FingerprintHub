@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: mobileiron_sentry
     rarity: 3
+    vendor: mobileiron
+    verified: true
 tcp:
 - name: help
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: easy_file_sharing_ftp_server
     rarity: 0
+    vendor: efssoft
+    verified: true
 tcp:
 - name: 'null'
   inputs:

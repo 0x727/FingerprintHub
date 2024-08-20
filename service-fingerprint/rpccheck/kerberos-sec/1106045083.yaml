@@ -5,7 +5,10 @@ info:
   tags: detect,tech,kerberos-sec,service
   severity: info
   metadata:
+    product: openafs
     rarity: 1
+    vendor: openafs
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

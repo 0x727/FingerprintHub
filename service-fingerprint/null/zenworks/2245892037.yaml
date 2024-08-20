@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: zenworks_patch_management_server
     rarity: 0
+    vendor: novell
+    verified: true
     version: $1
 tcp:
 - name: 'null'

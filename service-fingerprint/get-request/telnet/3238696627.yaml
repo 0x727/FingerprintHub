@@ -5,7 +5,10 @@ info:
   tags: detect,tech,telnet,service
   severity: info
   metadata:
+    product: 7_days_to_die
     rarity: 1
+    vendor: the_fun_pimps
+    verified: true
 tcp:
 - name: get-request
   inputs:

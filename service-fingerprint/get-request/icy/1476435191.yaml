@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: BSD
+    product: dnas
     rarity: 1
+    vendor: shoutcast
+    verified: true
     version: $1
 tcp:
 - name: get-request

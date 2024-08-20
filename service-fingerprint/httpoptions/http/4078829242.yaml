@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: 'timezone: $1'
+    product: tomcat
     rarity: 4
+    vendor: apache
+    verified: true
     version: $2
 tcp:
 - name: httpoptions

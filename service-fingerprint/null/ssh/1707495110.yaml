@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: openssh
     rarity: 0
+    vendor: openbsd
+    verified: true
     version: 3.4p1 with CMU Andrew patches
 tcp:
 - name: 'null'

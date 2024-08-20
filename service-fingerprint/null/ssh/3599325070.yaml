@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol 2.0
+    product: twisted
     rarity: 0
+    vendor: twistedmatrix
+    verified: true
 tcp:
 - name: 'null'
   inputs:

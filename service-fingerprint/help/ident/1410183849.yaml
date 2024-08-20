@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Name $1
+    product: trillian
     rarity: 3
+    vendor: trillian
+    verified: true
 tcp:
 - name: help
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: based on Apache $2
+    product: stronghold
     rarity: 1
+    vendor: redhat
+    verified: true
     version: $1
 tcp:
 - name: get-request

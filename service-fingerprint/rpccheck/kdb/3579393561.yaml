@@ -5,7 +5,10 @@ info:
   tags: detect,tech,kdb,service
   severity: info
   metadata:
+    product: kdb%2b
     rarity: 4
+    vendor: kx_systems
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

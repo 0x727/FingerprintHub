@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Gitblit $2; protocol $1
+    product: gitblit
     rarity: 0
+    vendor: jamesmoger
+    verified: true
     version: $3
 tcp:
 - name: 'null'

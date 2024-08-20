@@ -5,7 +5,10 @@ info:
   tags: detect,tech,asterisk-proxy,service
   severity: info
   metadata:
+    product: asterisk
     rarity: 0
+    vendor: digium
+    verified: true
 tcp:
 - name: 'null'
   inputs:

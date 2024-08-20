@@ -9,7 +9,10 @@ info:
     - get-request
     info: XBMC; DLNADOC $2; UPnP $1
     operating_system: Linux
+    product: platinum
     rarity: 5
+    vendor: plutinosoft
+    verified: true
     version: $3
 tcp:
 - name: sipoptions

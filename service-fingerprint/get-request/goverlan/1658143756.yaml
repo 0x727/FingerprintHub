@@ -5,7 +5,10 @@ info:
   tags: detect,tech,goverlan,service
   severity: info
   metadata:
+    product: goverlan
     rarity: 1
+    vendor: pjtech
+    verified: true
 tcp:
 - name: get-request
   inputs:

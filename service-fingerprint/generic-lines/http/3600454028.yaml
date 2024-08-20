@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: print server
+    product: web_jetadmin
     rarity: 1
+    vendor: hp
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

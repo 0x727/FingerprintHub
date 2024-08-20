@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: xming
     rarity: 4
+    vendor: straightrunning
+    verified: true
 tcp:
 - name: x11-probe
   inputs:

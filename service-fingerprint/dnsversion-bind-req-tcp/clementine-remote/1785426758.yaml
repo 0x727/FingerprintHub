@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - dnsversion-bind-req
+    product: clementine
     rarity: 3
+    vendor: clementine
+    verified: true
 tcp:
 - name: dnsversion-bind-req-tcp
   inputs:

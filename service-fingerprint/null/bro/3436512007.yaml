@@ -5,7 +5,10 @@ info:
   tags: detect,tech,bro,service
   severity: info
   metadata:
+    product: bro
     rarity: 0
+    vendor: bro
+    verified: true
 tcp:
 - name: 'null'
   inputs:

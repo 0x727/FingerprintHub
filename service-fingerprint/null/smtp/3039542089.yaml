@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: Denied access
     operating_system: Windows
+    product: mailenable
     rarity: 0
+    vendor: mailenable
+    verified: true
     version: $2
 tcp:
 - name: 'null'

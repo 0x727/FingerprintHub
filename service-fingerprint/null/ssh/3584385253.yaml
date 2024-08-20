@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Gerrit Code Review $2; protocol $1
+    product: sshd
     rarity: 0
+    vendor: apache
+    verified: true
     version: $3
 tcp:
 - name: 'null'

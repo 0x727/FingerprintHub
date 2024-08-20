@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Polish
+    product: i2p
     rarity: 3
+    vendor: i2p_project
+    verified: true
 tcp:
 - name: help
   inputs:

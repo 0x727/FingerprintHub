@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: motsognir
     rarity: 1
+    vendor: mateusz_viste
+    verified: true
 tcp:
 - name: get-request
   inputs:

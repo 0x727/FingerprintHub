@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - get-request
+    product: mla
     rarity: 4
+    vendor: microchip_technology_inc
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

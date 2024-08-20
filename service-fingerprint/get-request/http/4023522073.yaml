@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: connect
     rarity: 1
+    vendor: kerio
+    verified: true
 tcp:
 - name: get-request
   inputs:

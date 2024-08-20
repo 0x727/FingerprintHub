@@ -8,7 +8,10 @@ info:
     device_type: router
     fallback:
     - get-request
+    product: ip_sharer_web
     rarity: 6
+    vendor: trendnet
+    verified: true
     version: $1
 tcp:
 - name: four-oh-four-request

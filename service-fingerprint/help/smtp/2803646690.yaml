@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp,service
   severity: info
   metadata:
+    product: lotus_domino
     rarity: 3
+    vendor: ibm
+    verified: true
 tcp:
 - name: help
   inputs:

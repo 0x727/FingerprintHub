@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: smartermail
     rarity: 0
+    vendor: smartertools
+    verified: true
 tcp:
 - name: 'null'
   inputs:

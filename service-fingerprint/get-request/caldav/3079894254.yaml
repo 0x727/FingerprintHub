@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: WSGIServer $1; Python $2
+    product: wsgiref
     rarity: 1
+    vendor: python
+    verified: true
 tcp:
 - name: get-request
   inputs:

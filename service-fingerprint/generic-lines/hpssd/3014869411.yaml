@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Linux
+    product: linux_imaging_and_printing_project
     rarity: 1
+    vendor: hp
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

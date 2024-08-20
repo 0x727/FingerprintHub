@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: media device
+    product: whisperplay
     rarity: 1
+    vendor: amazon
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: specialized
     info: APC Environmental Monitoring Unit http config
+    product: rompager
     rarity: 1
+    vendor: allegro
+    verified: true
     version: $1
 tcp:
 - name: get-request

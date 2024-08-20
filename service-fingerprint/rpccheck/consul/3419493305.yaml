@@ -5,7 +5,10 @@ info:
   tags: detect,tech,consul,service
   severity: info
   metadata:
+    product: consul
     rarity: 4
+    vendor: hashicorp
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

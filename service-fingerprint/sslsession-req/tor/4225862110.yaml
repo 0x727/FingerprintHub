@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: 'Node name: $1'
+    product: tor
     rarity: 1
+    vendor: torproject
+    verified: true
 tcp:
 - name: sslsession-req
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: mailenable
     rarity: 1
+    vendor: mailenable
+    verified: true
 tcp:
 - name: get-request
   inputs:

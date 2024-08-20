@@ -5,7 +5,10 @@ info:
   tags: detect,tech,antivir,service
   severity: info
   metadata:
+    product: nod32_antivirus
     rarity: 0
+    vendor: eset
+    verified: true
     version: $1 ($2)
 tcp:
 - name: 'null'

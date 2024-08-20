@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: zenworks_configuration_management
     rarity: 1
+    vendor: novell
+    verified: true
 tcp:
 - name: get-request
   inputs:

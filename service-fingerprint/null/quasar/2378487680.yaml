@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: quasarrat
     rarity: 0
+    vendor: quasar
+    verified: true
 tcp:
 - name: 'null'
   inputs:

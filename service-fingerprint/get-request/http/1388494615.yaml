@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: scada_expert_clearscada
     rarity: 1
+    vendor: schneider_electric
+    verified: true
     version: '2017'
 tcp:
 - name: get-request

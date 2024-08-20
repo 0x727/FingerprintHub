@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: router
+    product: httpd
     rarity: 1
+    vendor: rapidlogic
+    verified: true
     version: $1
 tcp:
 - name: get-request

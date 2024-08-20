@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: unauthorized
+    product: containers_for_j2ee
     rarity: 4
+    vendor: oracle
+    verified: true
 tcp:
 - name: smbprog-neg
   inputs:

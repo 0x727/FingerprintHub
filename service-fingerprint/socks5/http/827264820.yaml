@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: utorrent
     rarity: 8
+    vendor: utorrent
+    verified: true
     version: '3.0'
 tcp:
 - name: socks5

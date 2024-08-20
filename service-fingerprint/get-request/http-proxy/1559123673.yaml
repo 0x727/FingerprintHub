@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: traffic_inspector
     rarity: 1
+    vendor: smart-soft
+    verified: true
     version: $1
 tcp:
 - name: get-request

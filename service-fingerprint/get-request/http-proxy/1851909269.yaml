@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http-proxy,service
   severity: info
   metadata:
+    product: security_gateway_software
     rarity: 1
+    vendor: astaro
+    verified: true
 tcp:
 - name: get-request
   inputs:

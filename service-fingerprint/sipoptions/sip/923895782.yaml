@@ -9,7 +9,10 @@ info:
     - get-request
     info: 'arch: $3-bit; OS Version $4'
     operating_system: $2
+    product: softphone
     rarity: 5
+    vendor: ringcentral
+    verified: true
     version: $1
 tcp:
 - name: sipoptions

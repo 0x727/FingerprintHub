@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'timezone: $1'
+    product: lotus_notes
     rarity: 8
+    vendor: ibm
+    verified: true
 tcp:
 - name: hello
   inputs:

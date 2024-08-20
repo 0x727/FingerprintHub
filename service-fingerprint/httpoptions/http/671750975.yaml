@@ -9,7 +9,10 @@ info:
     - get-request
     hostname: $1
     info: User $2
+    product: crushftp
     rarity: 4
+    vendor: crushftp
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

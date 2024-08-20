@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: home_ftp_server
     rarity: 0
+    vendor: ari_pikivirta
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: StarField KVM over IP
+    product: thttpd
     rarity: 1
+    vendor: acme
+    verified: true
 tcp:
 - name: get-request
   inputs:

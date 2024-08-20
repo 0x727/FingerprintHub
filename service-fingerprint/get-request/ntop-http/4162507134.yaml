@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: platform $2
+    product: ntop
     rarity: 1
+    vendor: ntop
+    verified: true
     version: $1 SourceForge .tgz
 tcp:
 - name: get-request

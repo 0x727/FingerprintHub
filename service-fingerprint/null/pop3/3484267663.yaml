@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $2
+    product: connect
     rarity: 0
+    vendor: kerio
+    verified: true
     version: $1
 tcp:
 - name: 'null'

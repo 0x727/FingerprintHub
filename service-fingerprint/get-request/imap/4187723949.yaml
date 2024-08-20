@@ -5,7 +5,10 @@ info:
   tags: detect,tech,imap,service
   severity: info
   metadata:
+    product: mailutils
     rarity: 1
+    vendor: gnu
+    verified: true
 tcp:
 - name: get-request
   inputs:

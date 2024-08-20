@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Linux
+    product: configserver_security_and_firewall
     rarity: 1
+    vendor: way_to_the_web
+    verified: true
 tcp:
 - name: get-request
   inputs:

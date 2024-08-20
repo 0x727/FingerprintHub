@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: phone
+    product: blackberry_universal_device_service
     rarity: 1
+    vendor: blackberry
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,asus-transfer,service
   severity: info
   metadata:
+    product: wi-fi_go
     rarity: 0
+    vendor: asus
+    verified: true
 tcp:
 - name: 'null'
   inputs:

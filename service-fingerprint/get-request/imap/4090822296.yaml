@@ -5,7 +5,10 @@ info:
   tags: detect,tech,imap,service
   severity: info
   metadata:
+    product: dovecot
     rarity: 1
+    vendor: dovecot
+    verified: true
 tcp:
 - name: get-request
   inputs:

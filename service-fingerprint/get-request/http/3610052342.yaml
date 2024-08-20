@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: spiceworks_help_desk
     rarity: 1
+    vendor: spiceworks
+    verified: true
 tcp:
 - name: get-request
   inputs:

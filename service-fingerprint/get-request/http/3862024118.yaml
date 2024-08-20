@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: OS X
+    product: printopia
     rarity: 1
+    vendor: decisive_tactics
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'build: $2'
+    product: ape_server
     rarity: 1
+    vendor: ape_project
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -9,7 +9,10 @@ info:
     - get-request
     info: 'name: $1; protocol 3.2; Mac OS X 10.3 - 10.5'
     operating_system: Mac OS X
+    product: afp_server
     rarity: 1
+    vendor: apple
+    verified: true
 tcp:
 - name: sslsession-req
   inputs:

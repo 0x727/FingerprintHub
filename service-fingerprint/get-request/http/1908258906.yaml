@@ -9,7 +9,10 @@ info:
     hostname: $4
     info: Barracuda firewall http config; BarracudaHTTP $1; $3
     operating_system: Unix
+    product: http_server
     rarity: 1
+    vendor: apache
+    verified: true
     version: $2
 tcp:
 - name: get-request

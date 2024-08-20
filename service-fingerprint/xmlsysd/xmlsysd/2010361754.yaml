@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: 'IP: $2'
     operating_system: $3
+    product: xmlsysd
     rarity: 9
+    vendor: wulfware
+    verified: true
 tcp:
 - name: xmlsysd
   inputs:

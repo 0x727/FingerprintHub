@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: OracleAS-Web-Cache-$3 $4
+    product: http_server
     rarity: 1
+    vendor: oracle
+    verified: true
     version: $2
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Ruby $2; path $1
+    product: ruby
     rarity: 1
+    vendor: ruby-lang
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

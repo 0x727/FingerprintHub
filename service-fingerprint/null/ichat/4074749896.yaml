@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ichat,service
   severity: info
   metadata:
+    product: ichat_rooms_server
     rarity: 0
+    vendor: koz.com
+    verified: true
     version: $1
 tcp:
 - name: 'null'

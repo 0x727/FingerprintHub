@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: $1
+    product: firewall-1
     rarity: 0
+    vendor: checkpoint
+    verified: true
 tcp:
 - name: 'null'
   inputs:

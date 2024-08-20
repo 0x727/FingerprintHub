@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'protocol: $1'
+    product: teamtalk
     rarity: 9
+    vendor: bearware
+    verified: true
 tcp:
 - name: teamtalk-login
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,vnc-http,service
   severity: info
   metadata:
+    product: tightvnc
     rarity: 1
+    vendor: tightvnc
+    verified: true
 tcp:
 - name: get-request
   inputs:

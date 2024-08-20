@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: remote management
+    product: small_business_technology_platform
     rarity: 1
+    vendor: intel
+    verified: true
     version: $1
 tcp:
 - name: get-request

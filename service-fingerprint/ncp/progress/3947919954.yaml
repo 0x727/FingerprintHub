@@ -5,7 +5,10 @@ info:
   tags: detect,tech,progress,service
   severity: info
   metadata:
+    product: database
     rarity: 6
+    vendor: progress
+    verified: true
 tcp:
 - name: ncp
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: client for shinGETsu $1 BBS; Python $3
+    product: python
     rarity: 1
+    vendor: python
+    verified: true
     version: $2
 tcp:
 - name: get-request

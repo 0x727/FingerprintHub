@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'time zone: $1'
+    product: zenworks
     rarity: 1
+    vendor: novell
+    verified: true
     version: $2
 tcp:
 - name: get-request

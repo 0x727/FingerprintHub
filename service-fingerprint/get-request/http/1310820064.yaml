@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: universal_server
     rarity: 1
+    vendor: pgp
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: ASP.NET $2
+    product: titan_ftp_server
     rarity: 1
+    vendor: southrivertech
+    verified: true
     version: $1
 tcp:
 - name: get-request

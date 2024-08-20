@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Too many connections
+    product: mysql
     rarity: 0
+    vendor: mysql
+    verified: true
 tcp:
 - name: 'null'
   inputs:

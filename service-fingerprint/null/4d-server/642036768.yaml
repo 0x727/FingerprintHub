@@ -5,7 +5,10 @@ info:
   tags: detect,tech,4d-server,service
   severity: info
   metadata:
+    product: 4d
     rarity: 0
+    vendor: 4d_sas
+    verified: true
 tcp:
 - name: 'null'
   inputs:

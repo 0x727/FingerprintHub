@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ca-unicenter,service
   severity: info
   metadata:
+    product: unicenter_remote_control
     rarity: 0
+    vendor: ca
+    verified: true
 tcp:
 - name: 'null'
   inputs:

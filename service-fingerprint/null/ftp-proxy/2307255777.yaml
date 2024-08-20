@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp-proxy,service
   severity: info
   metadata:
+    product: interscan_web_security_suite
     rarity: 0
+    vendor: trendmicro
+    verified: true
 tcp:
 - name: 'null'
   inputs:

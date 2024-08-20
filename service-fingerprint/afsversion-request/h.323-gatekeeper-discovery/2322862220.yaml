@@ -5,7 +5,10 @@ info:
   tags: detect,tech,h.323-gatekeeper-discovery,service
   severity: info
   metadata:
+    product: gnu_gatekeeper
     rarity: 5
+    vendor: gnugk
+    verified: true
 tcp:
 - name: afsversion-request
   inputs:

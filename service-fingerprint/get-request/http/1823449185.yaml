@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: proxygen
     rarity: 1
+    vendor: facebook
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: anubis
     rarity: 3
+    vendor: gnu
+    verified: true
 tcp:
 - name: help
   inputs:

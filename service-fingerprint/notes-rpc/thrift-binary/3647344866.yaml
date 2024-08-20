@@ -5,7 +5,10 @@ info:
   tags: detect,tech,thrift-binary,service
   severity: info
   metadata:
+    product: hive
     rarity: 6
+    vendor: apache
+    verified: true
 tcp:
 - name: notes-rpc
   inputs:

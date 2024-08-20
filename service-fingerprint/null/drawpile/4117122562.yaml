@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'protocol 7; flags: $1'
+    product: drawpile
     rarity: 0
+    vendor: calle_laakkonen
+    verified: true
     version: 0.8.2 - 0.8.3
 tcp:
 - name: 'null'

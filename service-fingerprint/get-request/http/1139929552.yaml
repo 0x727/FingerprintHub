@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: server
     rarity: 1
+    vendor: vmware
+    verified: true
 tcp:
 - name: get-request
   inputs:

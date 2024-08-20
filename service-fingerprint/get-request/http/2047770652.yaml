@@ -7,7 +7,10 @@ info:
   metadata:
     info: Derived from Apache $2; DAV $3
     operating_system: Unix
+    product: http_server
     rarity: 1
+    vendor: ibm
+    verified: true
     version: $1
 tcp:
 - name: get-request

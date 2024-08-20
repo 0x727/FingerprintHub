@@ -5,7 +5,10 @@ info:
   tags: detect,tech,domain,service
   severity: info
   metadata:
+    product: dnsmasq
     rarity: 1
+    vendor: thekelleys
+    verified: true
 tcp:
 - name: dnsversion-bind-req
   inputs:

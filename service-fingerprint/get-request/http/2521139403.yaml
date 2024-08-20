@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Plesk Onyx $1
+    product: plesk_onyx
     rarity: 1
+    vendor: parallels
+    verified: true
 tcp:
 - name: get-request
   inputs:

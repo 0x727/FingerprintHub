@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp-proxy,service
   severity: info
   metadata:
+    product: frox
     rarity: 0
+    vendor: james_hollingshead
+    verified: true
 tcp:
 - name: 'null'
   inputs:

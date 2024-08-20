@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: unauthorized
+    product: transmission
     rarity: 1
+    vendor: transmissionbt
+    verified: true
 tcp:
 - name: get-request
   inputs:

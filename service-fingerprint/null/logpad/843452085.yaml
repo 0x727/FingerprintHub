@@ -5,7 +5,10 @@ info:
   tags: detect,tech,logpad,service
   severity: info
   metadata:
+    product: logpad
     rarity: 0
+    vendor: pht
+    verified: true
 tcp:
 - name: 'null'
   inputs:

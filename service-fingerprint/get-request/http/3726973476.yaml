@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Edit with Emacs extension
+    product: emacs
     rarity: 1
+    vendor: gnu
+    verified: true
     version: $1
 tcp:
 - name: get-request

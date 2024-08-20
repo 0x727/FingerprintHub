@@ -5,7 +5,10 @@ info:
   tags: detect,tech,vnc-http,service
   severity: info
   metadata:
+    product: realvnc
     rarity: 1
+    vendor: realvnc
+    verified: true
     version: $1
 tcp:
 - name: get-request

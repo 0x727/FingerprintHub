@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Python $1
+    product: python
     rarity: 1
+    vendor: python
+    verified: true
     version: $2
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: UPnP $2; DLNADOC $3
+    product: media_renderer
     rarity: 1
+    vendor: ip_infusion
+    verified: true
     version: $1
 tcp:
 - name: get-request

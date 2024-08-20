@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'supported protocol versions: 3, 4, 5'
+    product: tor
     rarity: 8
+    vendor: torproject
+    verified: true
     version: 0.3.1.1 or later
 tcp:
 - name: tor-versions

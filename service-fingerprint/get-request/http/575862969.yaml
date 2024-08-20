@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: terminal server
     info: Cisco VPN $2 Concentrator http config
+    product: emweb
     rarity: 1
+    vendor: virata
+    verified: true
     version: $SUBST(1,"_",".")
 tcp:
 - name: get-request

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sun-alom,service
   severity: info
   metadata:
+    product: advanced_lights_out_manager
     rarity: 0
+    vendor: sun
+    verified: true
 tcp:
 - name: 'null'
   inputs:

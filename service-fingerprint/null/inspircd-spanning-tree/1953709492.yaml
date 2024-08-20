@@ -5,7 +5,10 @@ info:
   tags: detect,tech,inspircd-spanning-tree,service
   severity: info
   metadata:
+    product: inspircd
     rarity: 0
+    vendor: inspire_ircd
+    verified: true
 tcp:
 - name: 'null'
   inputs:

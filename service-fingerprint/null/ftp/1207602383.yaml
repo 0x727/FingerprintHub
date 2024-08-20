@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: German
     operating_system: Unix
+    product: proftpd
     rarity: 0
+    vendor: proftpd
+    verified: true
 tcp:
 - name: 'null'
   inputs:

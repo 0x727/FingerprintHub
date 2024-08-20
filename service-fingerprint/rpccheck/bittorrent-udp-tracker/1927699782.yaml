@@ -5,7 +5,10 @@ info:
   tags: detect,tech,bittorrent-udp-tracker,service
   severity: info
   metadata:
+    product: opentracker
     rarity: 1
+    vendor: dirk_engling
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

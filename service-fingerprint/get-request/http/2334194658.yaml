@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: hasp_license_manager
     rarity: 1
+    vendor: safenet-inc
+    verified: true
     version: $1
 tcp:
 - name: get-request

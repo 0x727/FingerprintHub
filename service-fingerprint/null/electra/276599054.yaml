@@ -5,7 +5,10 @@ info:
   tags: detect,tech,electra,service
   severity: info
   metadata:
+    product: electra
     rarity: 0
+    vendor: cardinal_kft
+    verified: true
 tcp:
 - name: 'null'
   inputs:

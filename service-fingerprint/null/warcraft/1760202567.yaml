@@ -5,7 +5,10 @@ info:
   tags: detect,tech,warcraft,service
   severity: info
   metadata:
+    product: mangos
     rarity: 0
+    vendor: getmangos
+    verified: true
 tcp:
 - name: 'null'
   inputs:

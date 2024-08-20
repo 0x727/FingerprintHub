@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'date: $1'
+    product: appweb
     rarity: 0
+    vendor: mbedthis
+    verified: true
     version: $2
 tcp:
 - name: 'null'

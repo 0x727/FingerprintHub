@@ -5,7 +5,10 @@ info:
   tags: detect,tech,h.323-gatekeeper-discovery,service
   severity: info
   metadata:
+    product: unified_communications_manager
     rarity: 5
+    vendor: cisco
+    verified: true
 tcp:
 - name: afsversion-request
   inputs:

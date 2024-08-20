@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: winproxy
     rarity: 0
+    vendor: bluecoat
+    verified: true
 tcp:
 - name: 'null'
   inputs:

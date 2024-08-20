@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: with PayEx support
+    product: cirrato
     rarity: 6
+    vendor: cirrato
+    verified: true
 tcp:
 - name: lpdstring
   inputs:

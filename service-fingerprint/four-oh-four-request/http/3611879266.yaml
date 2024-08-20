@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: HP switch http config
+    product: ehttp
     rarity: 6
+    vendor: ehttp
+    verified: true
     version: $1
 tcp:
 - name: four-oh-four-request

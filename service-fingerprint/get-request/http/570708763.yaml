@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Linux
+    product: apt-cacher
     rarity: 1
+    vendor: debian
+    verified: true
     version: $1
 tcp:
 - name: get-request

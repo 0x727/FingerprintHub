@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: perdition
     rarity: 1
+    vendor: horms
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,irc,service
   severity: info
   metadata:
+    product: unrealircd
     rarity: 0
+    vendor: unrealircd
+    verified: true
 tcp:
 - name: 'null'
   inputs:

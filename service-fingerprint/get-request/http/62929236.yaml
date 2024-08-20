@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: D-Link $2 Switch http config
+    product: rompager
     rarity: 1
+    vendor: allegro
+    verified: true
     version: $1
 tcp:
 - name: get-request

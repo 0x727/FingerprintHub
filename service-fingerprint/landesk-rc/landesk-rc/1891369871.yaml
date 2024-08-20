@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $3
     info: 'Controller: $2'
+    product: landesk_management_suite
     rarity: 6
+    vendor: landesk
+    verified: true
     version: $1
 tcp:
 - name: landesk-rc

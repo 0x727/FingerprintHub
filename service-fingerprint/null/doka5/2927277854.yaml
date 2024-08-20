@@ -5,7 +5,10 @@ info:
   tags: detect,tech,doka5,service
   severity: info
   metadata:
+    product: doka_5
     rarity: 0
+    vendor: surecomp
+    verified: true
 tcp:
 - name: 'null'
   inputs:

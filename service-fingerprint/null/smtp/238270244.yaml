@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: broken
+    product: sendmail
     rarity: 0
+    vendor: sendmail
+    verified: true
     version: $1
 tcp:
 - name: 'null'

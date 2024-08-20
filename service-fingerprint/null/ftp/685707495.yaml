@@ -7,7 +7,10 @@ info:
   metadata:
     info: banned
     operating_system: Windows
+    product: ftp_server
     rarity: 0
+    vendor: cerberusftp
+    verified: true
 tcp:
 - name: 'null'
   inputs:

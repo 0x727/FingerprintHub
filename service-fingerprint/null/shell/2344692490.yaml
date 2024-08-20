@@ -5,7 +5,10 @@ info:
   tags: detect,tech,shell,service
   severity: info
   metadata:
+    product: netkit_rsh
     rarity: 0
+    vendor: netkit
+    verified: true
 tcp:
 - name: 'null'
   inputs:

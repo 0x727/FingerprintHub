@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: sunssh
     rarity: 0
+    vendor: sun
+    verified: true
     version: $2
 tcp:
 - name: 'null'

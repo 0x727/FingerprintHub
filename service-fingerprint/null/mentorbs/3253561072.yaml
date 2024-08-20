@@ -5,7 +5,10 @@ info:
   tags: detect,tech,mentorbs,service
   severity: info
   metadata:
+    product: on-call
     rarity: 0
+    vendor: mentorbs
+    verified: true
 tcp:
 - name: 'null'
   inputs:

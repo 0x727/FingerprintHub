@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: firewall
+    product: firewall-1
     rarity: 6
+    vendor: checkpoint
+    verified: true
 tcp:
 - name: ldapbind-req
   inputs:

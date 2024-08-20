@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'friendlyName: $1'
+    product: plex_media_server
     rarity: 1
+    vendor: plex
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: RabbitMQ management; redirect to port $2
+    product: mochiweb
     rarity: 1
+    vendor: mochiweb_project
+    verified: true
     version: $1
 tcp:
 - name: get-request

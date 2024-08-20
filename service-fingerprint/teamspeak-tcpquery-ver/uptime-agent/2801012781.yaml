@@ -7,7 +7,10 @@ info:
   metadata:
     info: build $2
     operating_system: $3
+    product: uptime_infrastructure_monitor
     rarity: 9
+    vendor: idera
+    verified: true
     version: $1
 tcp:
 - name: teamspeak-tcpquery-ver

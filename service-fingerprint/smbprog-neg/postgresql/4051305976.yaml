@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: postgresql
     rarity: 4
+    vendor: postgresql
+    verified: true
     version: 10.0 - 10.1 or 10.8 - 10.14
 tcp:
 - name: smbprog-neg

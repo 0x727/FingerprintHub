@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: arangodb
     rarity: 1
+    vendor: arangodb
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

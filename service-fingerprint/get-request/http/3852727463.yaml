@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: vlc_media_player
     rarity: 1
+    vendor: videolan
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: build $P(2)
+    product: data_protector
     rarity: 1
+    vendor: hp
+    verified: true
     version: $P(1)
 tcp:
 - name: generic-lines

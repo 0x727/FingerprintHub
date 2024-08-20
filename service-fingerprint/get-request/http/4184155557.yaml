@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: ehs
     rarity: 1
+    vendor: fritz_elfert
+    verified: true
     version: 1.4.5 or earlier
 tcp:
 - name: get-request

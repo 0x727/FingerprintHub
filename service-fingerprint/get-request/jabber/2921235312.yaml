@@ -5,7 +5,10 @@ info:
   tags: detect,tech,jabber,service
   severity: info
   metadata:
+    product: prosody
     rarity: 1
+    vendor: prosody
+    verified: true
 tcp:
 - name: get-request
   inputs:

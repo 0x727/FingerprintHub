@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: access_gateway
     rarity: 1
+    vendor: citrix
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     info: Linux 2.X.X; UPnP $1; pvConnect SDK $2; SDK $3
     operating_system: Linux
+    product: twonky
     rarity: 1
+    vendor: packetvideo
+    verified: true
 tcp:
 - name: get-request
   inputs:

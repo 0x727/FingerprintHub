@@ -5,7 +5,10 @@ info:
   tags: detect,tech,websocket,service
   severity: info
   metadata:
+    product: websocketpp
     rarity: 1
+    vendor: zaphoyd
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

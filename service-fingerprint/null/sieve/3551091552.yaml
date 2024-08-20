@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: included w/cyrus imap
+    product: cyrus_imap_server
     rarity: 0
+    vendor: cmu
+    verified: true
     version: $1
 tcp:
 - name: 'null'

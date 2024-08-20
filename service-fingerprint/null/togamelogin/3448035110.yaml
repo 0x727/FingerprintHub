@@ -5,7 +5,10 @@ info:
   tags: detect,tech,togamelogin,service
   severity: info
   metadata:
+    product: talisman_online
     rarity: 0
+    vendor: mira_game
+    verified: true
 tcp:
 - name: 'null'
   inputs:

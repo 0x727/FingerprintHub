@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: specialized
     info: Polish
+    product: 963_supervisor
     rarity: 1
+    vendor: trend_control_systems
+    verified: true
 tcp:
 - name: get-request
   inputs:

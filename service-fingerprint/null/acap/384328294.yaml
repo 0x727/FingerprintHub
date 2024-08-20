@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: for mail client preference sharing
+    product: communigate_pro
     rarity: 0
+    vendor: stalker
+    verified: true
     version: $1
 tcp:
 - name: 'null'

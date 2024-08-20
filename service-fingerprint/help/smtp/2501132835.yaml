@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp,service
   severity: info
   metadata:
+    product: qmail
     rarity: 3
+    vendor: djb
+    verified: true
 tcp:
 - name: help
   inputs:

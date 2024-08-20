@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: PBX
+    product: asterisk
     rarity: 5
+    vendor: digium
+    verified: true
     version: $1
 tcp:
 - name: sipoptions

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Ninan usenet downloader http interface
+    product: jetty
     rarity: 1
+    vendor: mortbay
+    verified: true
     version: $1
 tcp:
 - name: get-request

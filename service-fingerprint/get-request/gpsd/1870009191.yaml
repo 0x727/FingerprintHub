@@ -5,7 +5,10 @@ info:
   tags: detect,tech,gpsd,service
   severity: info
   metadata:
+    product: gpsd
     rarity: 1
+    vendor: gpsd_project
+    verified: true
 tcp:
 - name: get-request
   inputs:

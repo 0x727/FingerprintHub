@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: axigen_mail_server
     rarity: 0
+    vendor: ecad
+    verified: true
 tcp:
 - name: 'null'
   inputs:

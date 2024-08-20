@@ -9,7 +9,10 @@ info:
     - get-request
     info: Ateas Security webcam management httpd; ASP.NET $2
     operating_system: Windows
+    product: cassini
     rarity: 4
+    vendor: microsoft
+    verified: true
     version: $1
 tcp:
 - name: httpoptions

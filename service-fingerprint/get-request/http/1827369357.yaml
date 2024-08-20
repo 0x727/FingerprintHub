@@ -7,7 +7,10 @@ info:
   metadata:
     info: Tivoli Storage Manager http interface $2
     operating_system: AIX
+    product: tivoli_storage_manager
     rarity: 1
+    vendor: ibm
+    verified: true
     version: $1
 tcp:
 - name: get-request

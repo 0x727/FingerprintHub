@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: JBoss $2; Servlet $1
+    product: tomcat
     rarity: 1
+    vendor: apache
+    verified: true
     version: $3
 tcp:
 - name: get-request

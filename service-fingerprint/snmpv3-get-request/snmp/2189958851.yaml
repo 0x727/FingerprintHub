@@ -5,7 +5,10 @@ info:
   tags: detect,tech,snmp,service
   severity: info
   metadata:
+    product: net-snmp
     rarity: 4
+    vendor: net-snmp
+    verified: true
 tcp:
 - name: snmpv3-get-request
   inputs:

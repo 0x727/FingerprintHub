@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: barracuda_embedded_web_server
     rarity: 1
+    vendor: real_time_logic
+    verified: true
 tcp:
 - name: get-request
   inputs:

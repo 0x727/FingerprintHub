@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: Apache Tomcat $2; $1
+    product: endpoint_protection_manager
     rarity: 4
+    vendor: symantec
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: SAGE Digital ENDEC EAS/CAP receiver unit
+    product: http_server
     rarity: 1
+    vendor: apache
+    verified: true
 tcp:
 - name: get-request
   inputs:

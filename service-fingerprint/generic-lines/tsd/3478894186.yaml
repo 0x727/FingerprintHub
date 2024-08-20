@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: also http
+    product: opentsdb
     rarity: 1
+    vendor: opentsdb
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

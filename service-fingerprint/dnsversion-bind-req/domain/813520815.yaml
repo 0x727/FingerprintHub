@@ -5,7 +5,10 @@ info:
   tags: detect,tech,domain,service
   severity: info
   metadata:
+    product: dnscrypt-proxy
     rarity: 1
+    vendor: dnscrypt
+    verified: true
 tcp:
 - name: dnsversion-bind-req
   inputs:

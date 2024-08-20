@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: resin
     rarity: 1
+    vendor: caucho
+    verified: true
     version: $1
 tcp:
 - name: get-request

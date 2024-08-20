@@ -5,7 +5,10 @@ info:
   tags: detect,tech,postgresql,service
   severity: info
   metadata:
+    product: postgresql
     rarity: 4
+    vendor: postgresql
+    verified: true
     version: 8.3.20 - 8.3.23
 tcp:
 - name: smbprog-neg

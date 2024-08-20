@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Unix
+    product: xfree86
     rarity: 4
+    vendor: xfree86
+    verified: true
 tcp:
 - name: x11-probe
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: NDMPv3
+    product: veritas_backup_exec
     rarity: 0
+    vendor: symantec
+    verified: true
 tcp:
 - name: 'null'
   inputs:

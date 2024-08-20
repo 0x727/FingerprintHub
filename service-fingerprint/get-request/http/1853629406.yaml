@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: PHP $1
+    product: php
     rarity: 1
+    vendor: php
+    verified: true
 tcp:
 - name: get-request
   inputs:

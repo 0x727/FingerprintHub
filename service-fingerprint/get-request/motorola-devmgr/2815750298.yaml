@@ -5,7 +5,10 @@ info:
   tags: detect,tech,motorola-devmgr,service
   severity: info
   metadata:
+    product: device_manager
     rarity: 1
+    vendor: motorola
+    verified: true
 tcp:
 - name: get-request
   inputs:

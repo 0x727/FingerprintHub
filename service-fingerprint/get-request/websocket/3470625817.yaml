@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'WebSocket versions: 8, 13'
+    product: deskcenter_management_suite
     rarity: 1
+    vendor: deskcenter
+    verified: true
 tcp:
 - name: get-request
   inputs:

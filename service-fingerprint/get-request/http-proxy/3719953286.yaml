@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http-proxy,service
   severity: info
   metadata:
+    product: bordermanager
     rarity: 1
+    vendor: novell
+    verified: true
 tcp:
 - name: get-request
   inputs:

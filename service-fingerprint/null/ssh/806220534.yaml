@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: version info hidden; protocol 2.0
+    product: vshell
     rarity: 0
+    vendor: vandyke
+    verified: true
 tcp:
 - name: 'null'
   inputs:

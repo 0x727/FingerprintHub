@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: mercur
     rarity: 1
+    vendor: atrium
+    verified: true
 tcp:
 - name: get-request
   inputs:

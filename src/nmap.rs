@@ -1,7 +1,7 @@
 use crate::{to_kebab_case, FingerPrintParse, MatchLine, Probe};
 use engine::common::http::murmur3_32;
 use engine::extractors::{Extractor, ExtractorType};
-use engine::info::{Info, Severity};
+use engine::info::{Info, Severity, VPF};
 use engine::matchers::{Matcher, Part};
 use engine::operators::Operators;
 use engine::request::{Input, Requests, TCPRequest};
@@ -124,6 +124,23 @@ fn match_line_to_info(m: &MatchLine, fp: &Probe) -> Info {
       "device_type".to_string(),
       engine::serde_format::Value::String(d.to_string()),
     );
+  }
+  if !m.version_info.cpe.is_empty() {
+    for cpe in m.version_info.cpe.iter() {
+      let uri = format!("cpe:2.3:{}{}", cpe.to_string(), ":".repeat(10 - cpe.to_string().matches(':').count()));
+      let cpe_uri = nvd_cpe::CPEName::from_uri(&uri).unwrap();
+      match cpe_uri.part.to_string().as_str() {
+        "a" => {
+          info.set_vpf(VPF {
+            vendor: cpe_uri.vendor.to_string(),
+            product: cpe_uri.product.to_string(),
+            framework: None,
+            verified: false,
+          })
+        }
+        _ => {}
+      }
+    }
   }
   info
 }

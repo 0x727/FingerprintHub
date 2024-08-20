@@ -5,7 +5,10 @@ info:
   tags: detect,tech,websocket,service
   severity: info
   metadata:
+    product: libreoffice
     rarity: 1
+    vendor: libreoffice
+    verified: true
 tcp:
 - name: get-request
   inputs:

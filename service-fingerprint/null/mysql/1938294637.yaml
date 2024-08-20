@@ -5,7 +5,10 @@ info:
   tags: detect,tech,mysql,service
   severity: info
   metadata:
+    product: sphinx_search
     rarity: 0
+    vendor: sphinx
+    verified: true
     version: $1
 tcp:
 - name: 'null'

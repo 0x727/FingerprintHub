@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     hostname: $1
+    product: netcache
     rarity: 5
+    vendor: netapp
+    verified: true
     version: $2
 tcp:
 - name: rtsprequest

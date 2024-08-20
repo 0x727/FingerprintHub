@@ -8,7 +8,10 @@ info:
     device_type: remote management
     hostname: $2
     info: model $1; Apache httpd
+    product: kace_$1_systems_management_appliance_software
     rarity: 1
+    vendor: dell
+    verified: true
     version: $3
 tcp:
 - name: get-request

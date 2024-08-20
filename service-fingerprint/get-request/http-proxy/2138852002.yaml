@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: misconfigured
+    product: proxy
     rarity: 1
+    vendor: analogx
+    verified: true
 tcp:
 - name: get-request
   inputs:

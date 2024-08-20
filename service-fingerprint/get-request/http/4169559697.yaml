@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: SimpleHTTP $1; Python $2
+    product: simplehttpserver
     rarity: 1
+    vendor: python
+    verified: true
 tcp:
 - name: get-request
   inputs:

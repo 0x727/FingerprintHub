@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ipp,service
   severity: info
   metadata:
+    product: print_delivery_gateway
     rarity: 1
+    vendor: printeron
+    verified: true
 tcp:
 - name: get-request
   inputs:

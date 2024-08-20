@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: exchange_server
     rarity: 0
+    vendor: microsoft
+    verified: true
 tcp:
 - name: 'null'
   inputs:

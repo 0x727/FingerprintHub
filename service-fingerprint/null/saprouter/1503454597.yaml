@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $4
     info: 'local time: $1'
+    product: network_interface_router
     rarity: 0
+    vendor: sap
+    verified: true
     version: $2 SP$3
 tcp:
 - name: 'null'

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: big-ip_application_visibility_and_reporting
     rarity: 1
+    vendor: f5
+    verified: true
     version: 11.3.0 or later
 tcp:
 - name: get-request

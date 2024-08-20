@@ -8,7 +8,10 @@ info:
     device_type: specialized
     hostname: $2
     info: Python $1
+    product: python
     rarity: 1
+    vendor: python
+    verified: true
 tcp:
 - name: get-request
   inputs:

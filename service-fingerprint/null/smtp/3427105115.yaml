@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: postfix
     rarity: 0
+    vendor: postfix
+    verified: true
 tcp:
 - name: 'null'
   inputs:

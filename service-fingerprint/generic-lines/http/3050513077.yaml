@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: web_dispatcher
     rarity: 1
+    vendor: sap
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

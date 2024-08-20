@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: disabled
+    product: bftpd
     rarity: 0
+    vendor: jesse_smith
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: tdput
     rarity: 1
+    vendor: teradata
+    verified: true
     version: $1
 tcp:
 - name: get-request

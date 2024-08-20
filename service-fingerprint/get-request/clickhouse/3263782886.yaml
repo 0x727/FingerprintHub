@@ -5,7 +5,10 @@ info:
   tags: detect,tech,clickhouse,service
   severity: info
   metadata:
+    product: clickhouse
     rarity: 1
+    vendor: yandex
+    verified: true
 tcp:
 - name: get-request
   inputs:

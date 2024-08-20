@@ -5,7 +5,10 @@ info:
   tags: detect,tech,memcached,service
   severity: info
   metadata:
+    product: memcached
     rarity: 8
+    vendor: memcached
+    verified: true
     version: $1
 tcp:
 - name: memcached

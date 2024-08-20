@@ -5,7 +5,10 @@ info:
   tags: detect,tech,telnet,service
   severity: info
   metadata:
+    product: busybox
     rarity: 0
+    vendor: busybox
+    verified: true
     version: '1.0'
 tcp:
 - name: 'null'

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,mongodb,service
   severity: info
   metadata:
+    product: mongodb
     rarity: 8
+    vendor: mongodb
+    verified: true
     version: $1
 tcp:
 - name: mongodb

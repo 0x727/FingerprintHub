@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: OpenSimulator http config
+    product: mono
     rarity: 1
+    vendor: mono
+    verified: true
     version: $1
 tcp:
 - name: get-request

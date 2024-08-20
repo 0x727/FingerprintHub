@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: qlik_sense
     rarity: 1
+    vendor: qlik
+    verified: true
 tcp:
 - name: get-request
   inputs:

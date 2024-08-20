@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp,service
   severity: info
   metadata:
+    product: owftpd
     rarity: 0
+    vendor: owfs
+    verified: true
     version: $1
 tcp:
 - name: 'null'

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Node.js Express middleware
+    product: xen_orchestra
     rarity: 1
+    vendor: vates
+    verified: true
 tcp:
 - name: get-request
   inputs:

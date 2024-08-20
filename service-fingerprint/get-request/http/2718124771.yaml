@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: goahead_webserver
     rarity: 1
+    vendor: goahead
+    verified: true
     version: $1
 tcp:
 - name: get-request

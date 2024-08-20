@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: Via $1
+    product: web_gateway
     rarity: 1
+    vendor: mcafee
+    verified: true
     version: $2
 tcp:
 - name: sslsession-req

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ms-sql-s,service
   severity: info
   metadata:
+    product: sql_server
     rarity: 7
+    vendor: microsoft
+    verified: true
     version: 14.00.3257; CU18
 tcp:
 - name: ms-sql-s

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: interscan_messaging_security_suite
     rarity: 0
+    vendor: trendmicro
+    verified: true
     version: $2
 tcp:
 - name: 'null'

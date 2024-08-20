@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     operating_system: Windows
+    product: isa_server
     rarity: 5
+    vendor: microsoft
+    verified: true
 tcp:
 - name: rtsprequest
   inputs:

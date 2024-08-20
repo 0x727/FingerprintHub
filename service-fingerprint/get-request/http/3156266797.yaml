@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Android
+    product: dejaoffice_for_android
     rarity: 1
+    vendor: companionlink
+    verified: true
 tcp:
 - name: get-request
   inputs:

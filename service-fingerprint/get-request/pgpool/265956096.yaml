@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pgpool,service
   severity: info
   metadata:
+    product: pgpool-ii
     rarity: 1
+    vendor: pgpool
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Calendar and Contacts Server $1; Twisted $2
+    product: twistedweb
     rarity: 1
+    vendor: twistedmatrix
+    verified: true
     version: $3
 tcp:
 - name: get-request

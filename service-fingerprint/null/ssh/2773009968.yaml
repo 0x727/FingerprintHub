@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1; NCSA GSSAPI authentication patch $3
+    product: openssh
     rarity: 0
+    vendor: openbsd
+    verified: true
     version: $2
 tcp:
 - name: 'null'

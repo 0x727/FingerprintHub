@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: freesshd
     rarity: 1
+    vendor: freesshd
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

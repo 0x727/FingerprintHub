@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: communigate_pro
     rarity: 8
+    vendor: stalker
+    verified: true
 tcp:
 - name: hello
   inputs:

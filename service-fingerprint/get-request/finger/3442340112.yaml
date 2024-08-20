@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: print server
+    product: infoprint_$SUBST(1," ","_")
     rarity: 1
+    vendor: ibm
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,telnet,service
   severity: info
   metadata:
+    product: openmanage_baseboard_management_controller_utilities
     rarity: 1
+    vendor: dell
+    verified: true
 tcp:
 - name: get-request
   inputs:

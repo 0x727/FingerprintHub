@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Prestige model $1; $3
+    product: rompager
     rarity: 1
+    vendor: zyxel
+    verified: true
     version: $2
 tcp:
 - name: get-request

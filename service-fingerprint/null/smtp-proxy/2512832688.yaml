@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'IBM Lotus Protector; time zone: $1'
+    product: lotus_protector_for_mail_security
     rarity: 0
+    vendor: ibm
+    verified: true
 tcp:
 - name: 'null'
   inputs:

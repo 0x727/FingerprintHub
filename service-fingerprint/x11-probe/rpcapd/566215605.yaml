@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: winpcap
     rarity: 4
+    vendor: winpcap
+    verified: true
 tcp:
 - name: x11-probe
   inputs:

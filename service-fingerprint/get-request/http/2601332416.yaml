@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: ACURITE weather station
+    product: mla
     rarity: 1
+    vendor: microchip_technology_inc
+    verified: true
 tcp:
 - name: get-request
   inputs:

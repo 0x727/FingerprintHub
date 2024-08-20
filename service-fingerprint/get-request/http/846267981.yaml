@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: OpenSimulator http config
+    product: c%23_webserver
     rarity: 1
+    vendor: gauffin_telecom
+    verified: true
 tcp:
 - name: get-request
   inputs:

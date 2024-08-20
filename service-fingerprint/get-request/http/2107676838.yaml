@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: PBX
+    product: omnipcx
     rarity: 1
+    vendor: alcatel-lucent
+    verified: true
 tcp:
 - name: get-request
   inputs:

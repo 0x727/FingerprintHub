@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pcmeasure,service
   severity: info
   metadata:
+    product: pcmeasure
     rarity: 0
+    vendor: messpc
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: router
     info: Netgear $1 router http config
+    product: rompager
     rarity: 1
+    vendor: zyxel
+    verified: true
     version: $2
 tcp:
 - name: get-request

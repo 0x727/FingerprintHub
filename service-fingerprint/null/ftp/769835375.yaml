@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: $1
+    product: bqtftp
     rarity: 0
+    vendor: bqt
+    verified: true
 tcp:
 - name: 'null'
   inputs:

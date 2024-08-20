@@ -5,7 +5,10 @@ info:
   tags: detect,tech,groupwise,service
   severity: info
   metadata:
+    product: groupwise
     rarity: 1
+    vendor: novell
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,paloalto-agent,service
   severity: info
   metadata:
+    product: terminal_services_agent
     rarity: 0
+    vendor: paloaltonetworks
+    verified: true
 tcp:
 - name: 'null'
   inputs:

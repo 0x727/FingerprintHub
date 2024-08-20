@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: dbmail
     rarity: 3
+    vendor: paul_j_stevens
+    verified: true
 tcp:
 - name: help
   inputs:

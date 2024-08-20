@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: shellinabox
     rarity: 1
+    vendor: shellinabox_project
+    verified: true
 tcp:
 - name: get-request
   inputs:

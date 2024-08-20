@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: GAppProxy Google App Engine proxy; Python $2
+    product: python
     rarity: 1
+    vendor: python
+    verified: true
     version: $1
 tcp:
 - name: get-request

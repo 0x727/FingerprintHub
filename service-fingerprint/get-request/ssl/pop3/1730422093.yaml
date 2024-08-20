@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ssl/pop3,service
   severity: info
   metadata:
+    product: cyrus_imap_server
     rarity: 1
+    vendor: cmu
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'channel: $1; $2'
+    product: websphere_mq
     rarity: 8
+    vendor: ibm
+    verified: true
     version: '7.0'
 tcp:
 - name: ibm-mqseries

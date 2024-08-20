@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: teleport
     rarity: 0
+    vendor: gravitational
+    verified: true
     version: 2.7.0 or later
 tcp:
 - name: 'null'

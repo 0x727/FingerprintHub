@@ -5,7 +5,10 @@ info:
   tags: detect,tech,appguard-db,service
   severity: info
   metadata:
+    product: appguard_userdatabase
     rarity: 0
+    vendor: app_bv
+    verified: true
     version: $1
 tcp:
 - name: 'null'

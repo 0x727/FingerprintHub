@@ -8,7 +8,10 @@ info:
     hostname: $2
     info: Iomega StorCenter sohoclient
     operating_system: Windows
+    product: appweb
     rarity: 1
+    vendor: mbedthis
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Standard Manageability
+    product: active_management_technology
     rarity: 1
+    vendor: intel
+    verified: true
     version: $1
 tcp:
 - name: get-request

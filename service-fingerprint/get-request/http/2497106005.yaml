@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: serv-u
     rarity: 1
+    vendor: serv-u
+    verified: true
     version: $1
 tcp:
 - name: get-request

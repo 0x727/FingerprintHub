@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: InkHTTP $1; Python $2
+    product: python
     rarity: 1
+    vendor: python
+    verified: true
 tcp:
 - name: get-request
   inputs:

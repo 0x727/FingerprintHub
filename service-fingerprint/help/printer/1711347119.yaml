@@ -5,7 +5,10 @@ info:
   tags: detect,tech,printer,service
   severity: info
   metadata:
+    product: busybox
     rarity: 3
+    vendor: busybox
+    verified: true
 tcp:
 - name: help
   inputs:

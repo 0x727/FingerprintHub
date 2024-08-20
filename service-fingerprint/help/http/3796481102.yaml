@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: WAP
     info: TRENDnet TEW-637AP WAP http config
+    product: goahead_webserver
     rarity: 3
+    vendor: goahead
+    verified: true
 tcp:
 - name: help
   inputs:

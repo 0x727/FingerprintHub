@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: compat version $1
+    product: epoptes
     rarity: 0
+    vendor: epoptes
+    verified: true
 tcp:
 - name: 'null'
   inputs:

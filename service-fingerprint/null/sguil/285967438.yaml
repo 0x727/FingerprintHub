@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sguil,service
   severity: info
   metadata:
+    product: sguil
     rarity: 0
+    vendor: sguil
+    verified: true
     version: $1
 tcp:
 - name: 'null'

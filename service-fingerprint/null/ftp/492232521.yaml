@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: serv-u
     rarity: 0
+    vendor: serv-u
+    verified: true
     version: $1
 tcp:
 - name: 'null'

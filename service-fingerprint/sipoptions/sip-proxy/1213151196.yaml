@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - get-request
+    product: unified_communications_manager
     rarity: 5
+    vendor: cisco
+    verified: true
 tcp:
 - name: sipoptions
   inputs:

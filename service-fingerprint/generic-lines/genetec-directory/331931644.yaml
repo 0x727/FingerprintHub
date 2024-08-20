@@ -5,7 +5,10 @@ info:
   tags: detect,tech,genetec-directory,service
   severity: info
   metadata:
+    product: security_center
     rarity: 1
+    vendor: genetec
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

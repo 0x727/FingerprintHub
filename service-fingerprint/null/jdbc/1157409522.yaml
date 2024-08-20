@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Network Compatibility Version $1
+    product: hsqldb
     rarity: 0
+    vendor: hsql
+    verified: true
 tcp:
 - name: 'null'
   inputs:

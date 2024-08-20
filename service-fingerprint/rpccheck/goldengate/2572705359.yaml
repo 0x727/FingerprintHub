@@ -5,7 +5,10 @@ info:
   tags: detect,tech,goldengate,service
   severity: info
   metadata:
+    product: goldengate
     rarity: 4
+    vendor: oracle
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

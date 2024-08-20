@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: java_system_messenger_express
     rarity: 1
+    vendor: sun
+    verified: true
 tcp:
 - name: get-request
   inputs:

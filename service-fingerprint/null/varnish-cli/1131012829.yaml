@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: $1 $2
+    product: varnish
     rarity: 0
+    vendor: varnish-cache
+    verified: true
     version: 2.1.4
 tcp:
 - name: 'null'

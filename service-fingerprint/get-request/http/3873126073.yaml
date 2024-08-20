@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: SAP NetWeaver Application Server; ABAP $1
+    product: netweaver
     rarity: 1
+    vendor: sap
+    verified: true
 tcp:
 - name: get-request
   inputs:

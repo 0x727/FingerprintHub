@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: mercury_mail_transport_system
     rarity: 0
+    vendor: pmail
+    verified: true
 tcp:
 - name: 'null'
   inputs:

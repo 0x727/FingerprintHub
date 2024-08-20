@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: UPnP $1
+    product: emweb
     rarity: 1
+    vendor: conexant
+    verified: true
     version: $SUBST(2,"_",".")
 tcp:
 - name: get-request

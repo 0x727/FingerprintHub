@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $2
+    product: server
     rarity: 6
+    vendor: vmware
+    verified: true
     version: PSCv $1
 tcp:
 - name: ldapsearch-req

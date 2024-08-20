@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: bas2
     rarity: 1
+    vendor: bastec
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: lwIP $1
+    product: lwip
     rarity: 1
+    vendor: lwip_project
+    verified: true
 tcp:
 - name: get-request
   inputs:

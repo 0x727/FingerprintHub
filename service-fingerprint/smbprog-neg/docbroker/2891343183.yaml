@@ -5,7 +5,10 @@ info:
   tags: detect,tech,docbroker,service
   severity: info
   metadata:
+    product: documentum_content_server
     rarity: 4
+    vendor: emc
+    verified: true
 tcp:
 - name: smbprog-neg
   inputs:

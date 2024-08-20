@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Android
+    product: software_data_cable
     rarity: 0
+    vendor: damiapp
+    verified: true
     version: $1
 tcp:
 - name: 'null'

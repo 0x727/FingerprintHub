@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: media device
     info: Syabas Popcorn Hour media player telnetd
+    product: busybox
     rarity: 0
+    vendor: busybox
+    verified: true
     version: $1
 tcp:
 - name: 'null'

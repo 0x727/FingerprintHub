@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - get-request
+    product: nweb
     rarity: 4
+    vendor: ibm
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

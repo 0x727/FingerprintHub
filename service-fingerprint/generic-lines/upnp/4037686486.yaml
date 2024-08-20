@@ -8,7 +8,10 @@ info:
     device_type: WAP
     info: OpenWrt Barrier Breaker $1; UPnP $2
     operating_system: Linux
+    product: miniupnpd
     rarity: 1
+    vendor: miniupnp_project
+    verified: true
     version: $3
 tcp:
 - name: generic-lines

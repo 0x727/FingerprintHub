@@ -5,7 +5,10 @@ info:
   tags: detect,tech,jute,service
   severity: info
   metadata:
+    product: zookeeper
     rarity: 6
+    vendor: apache
+    verified: true
 tcp:
 - name: ncp
   inputs:

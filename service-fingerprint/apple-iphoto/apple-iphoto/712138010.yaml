@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'Library name: $2'
+    product: iphoto
     rarity: 8
+    vendor: apple
+    verified: true
     version: $1
 tcp:
 - name: apple-iphoto

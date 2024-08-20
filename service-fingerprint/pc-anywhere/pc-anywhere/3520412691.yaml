@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'Servername: $1'
+    product: pcanywhere
     rarity: 8
+    vendor: symantec
+    verified: true
 tcp:
 - name: pc-anywhere
   inputs:

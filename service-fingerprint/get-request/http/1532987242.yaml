@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: tinylr
     rarity: 1
+    vendor: mickael_daniel
+    verified: true
     version: $1
 tcp:
 - name: get-request

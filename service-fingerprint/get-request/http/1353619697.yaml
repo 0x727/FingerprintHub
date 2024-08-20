@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: access_gateway
     rarity: 1
+    vendor: citrix
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Summit Management Interface
+    product: rompager
     rarity: 1
+    vendor: allegro
+    verified: true
     version: $1
 tcp:
 - name: get-request

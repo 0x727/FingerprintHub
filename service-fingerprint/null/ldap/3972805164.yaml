@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: broken
+    product: openldap
     rarity: 0
+    vendor: openldap
+    verified: true
 tcp:
 - name: 'null'
   inputs:

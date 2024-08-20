@@ -5,7 +5,10 @@ info:
   tags: detect,tech,bitcoin,service
   severity: info
   metadata:
+    product: bitcoind
     rarity: 0
+    vendor: bitcoin
+    verified: true
     version: 0.3.22$1
 tcp:
 - name: 'null'

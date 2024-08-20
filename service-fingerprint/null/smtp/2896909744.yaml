@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: hurricane_mta
     rarity: 0
+    vendor: socketlabs
+    verified: true
 tcp:
 - name: 'null'
   inputs:

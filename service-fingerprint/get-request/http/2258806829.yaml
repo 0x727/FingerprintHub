@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: .NET $2; Acer Registration Service; greghsrw.exe
+    product: httpd
     rarity: 1
+    vendor: indy
+    verified: true
     version: $1
 tcp:
 - name: get-request

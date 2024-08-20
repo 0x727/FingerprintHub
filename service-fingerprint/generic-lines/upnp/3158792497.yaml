@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: DLNADOC $1; UPnP $2
+    product: minidlna
     rarity: 1
+    vendor: minidlna
+    verified: true
     version: $3
 tcp:
 - name: generic-lines

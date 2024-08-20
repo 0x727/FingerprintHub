@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: misconfigured
+    product: git
     rarity: 0
+    vendor: git
+    verified: true
 tcp:
 - name: 'null'
   inputs:

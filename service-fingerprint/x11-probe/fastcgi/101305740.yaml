@@ -5,7 +5,10 @@ info:
   tags: detect,tech,fastcgi,service
   severity: info
   metadata:
+    product: hiphop_virtual_machine_for_php
     rarity: 4
+    vendor: hiphop_virtual_machine_for_php_project
+    verified: true
 tcp:
 - name: x11-probe
   inputs:

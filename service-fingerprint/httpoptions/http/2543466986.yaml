@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - get-request
+    product: tornado
     rarity: 4
+    vendor: tornadoweb
+    verified: true
     version: $1
 tcp:
 - name: httpoptions

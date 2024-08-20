@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: 'device: $SUBST(1,"_"," ")'
+    product: csipsimple
     rarity: 5
+    vendor: csipsimple
+    verified: true
     version: $2
 tcp:
 - name: sipoptions

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: lotus_domino
     rarity: 3
+    vendor: ibm
+    verified: true
 tcp:
 - name: help
   inputs:

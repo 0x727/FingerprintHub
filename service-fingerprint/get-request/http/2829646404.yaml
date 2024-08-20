@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Servlet $1
+    product: java_system_application_server
     rarity: 1
+    vendor: sun
+    verified: true
 tcp:
 - name: get-request
   inputs:

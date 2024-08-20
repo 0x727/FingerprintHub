@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: axigen_mail_server
     rarity: 1
+    vendor: gecad
+    verified: true
 tcp:
 - name: get-request
   inputs:

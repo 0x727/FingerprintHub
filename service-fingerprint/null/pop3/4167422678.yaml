@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: zimbra_collaboration_suite
     rarity: 0
+    vendor: zimbra
+    verified: true
 tcp:
 - name: 'null'
   inputs:

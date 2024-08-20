@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'site: $1'
+    product: webctrl
     rarity: 1
+    vendor: automatedlogic
+    verified: true
 tcp:
 - name: get-request
   inputs:

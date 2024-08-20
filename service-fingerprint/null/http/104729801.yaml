@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Registered to $2
+    product: directadmin
     rarity: 0
+    vendor: directadmin
+    verified: true
     version: $1
 tcp:
 - name: 'null'

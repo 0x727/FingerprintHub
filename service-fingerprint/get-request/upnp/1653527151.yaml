@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: UPnP $1
+    product: allshare_server
     rarity: 1
+    vendor: samsung
+    verified: true
     version: $2
 tcp:
 - name: get-request

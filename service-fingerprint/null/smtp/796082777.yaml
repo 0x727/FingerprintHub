@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: build $2
+    product: xeams
     rarity: 0
+    vendor: synametrics
+    verified: true
     version: $1
 tcp:
 - name: 'null'

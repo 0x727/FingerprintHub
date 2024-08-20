@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: native protocol version $1-$2
+    product: cassandra
     rarity: 1
+    vendor: apache
+    verified: true
     version: 3.0.0 - 3.9
 tcp:
 - name: generic-lines

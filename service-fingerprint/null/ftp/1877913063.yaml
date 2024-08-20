@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Unix
+    product: proftpd
     rarity: 0
+    vendor: proftpd
+    verified: true
 tcp:
 - name: 'null'
   inputs:

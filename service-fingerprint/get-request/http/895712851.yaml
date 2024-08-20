@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: plack
     rarity: 1
+    vendor: tatsuhiko_miyagawa
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'realm: $1'
+    product: drweb
     rarity: 3
+    vendor: drweb
+    verified: true
     version: $2.$3
 tcp:
 - name: help

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: ajenti
     rarity: 1
+    vendor: ajenti
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

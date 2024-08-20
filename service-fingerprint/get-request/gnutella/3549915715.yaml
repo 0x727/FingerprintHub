@@ -5,7 +5,10 @@ info:
   tags: detect,tech,gnutella,service
   severity: info
   metadata:
+    product: limewire
     rarity: 1
+    vendor: limewire
+    verified: true
 tcp:
 - name: get-request
   inputs:

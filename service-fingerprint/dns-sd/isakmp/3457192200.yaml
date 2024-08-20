@@ -5,7 +5,10 @@ info:
   tags: detect,tech,isakmp,service
   severity: info
   metadata:
+    product: strongswan
     rarity: 4
+    vendor: strongswan
+    verified: true
 tcp:
 - name: dns-sd
   inputs:

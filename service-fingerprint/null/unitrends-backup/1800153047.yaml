@@ -5,7 +5,10 @@ info:
   tags: detect,tech,unitrends-backup,service
   severity: info
   metadata:
+    product: enterprise_backup
     rarity: 0
+    vendor: unitrends
+    verified: true
 tcp:
 - name: 'null'
   inputs:

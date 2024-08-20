@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: VoIP adapter
+    product: rompager
     rarity: 1
+    vendor: allegro
+    verified: true
 tcp:
 - name: get-request
   inputs:

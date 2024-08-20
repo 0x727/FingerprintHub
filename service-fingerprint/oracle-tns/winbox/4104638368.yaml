@@ -5,7 +5,10 @@ info:
   tags: detect,tech,winbox,service
   severity: info
   metadata:
+    product: winbox
     rarity: 7
+    vendor: mikrotik
+    verified: true
 tcp:
 - name: oracle-tns
   inputs:

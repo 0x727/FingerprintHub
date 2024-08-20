@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Ogg
+    product: vlc_media_player
     rarity: 1
+    vendor: videolan
+    verified: true
 tcp:
 - name: get-request
   inputs:

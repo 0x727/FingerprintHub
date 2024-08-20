@@ -5,7 +5,10 @@ info:
   tags: detect,tech,stomp,service
   severity: info
   metadata:
+    product: activemq
     rarity: 8
+    vendor: apache
+    verified: true
     version: 5.12.0 - 5.15.4
 tcp:
 - name: help4-stomp

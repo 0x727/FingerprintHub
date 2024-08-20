@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sip,service
   severity: info
   metadata:
+    product: zoiper
     rarity: 5
+    vendor: securax
+    verified: true
     version: $1
 tcp:
 - name: sipoptions

@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - get-request
+    product: zoiper
     rarity: 5
+    vendor: securax
+    verified: true
     version: $1
 tcp:
 - name: sipoptions

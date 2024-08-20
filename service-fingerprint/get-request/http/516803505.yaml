@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: ability_mail_server
     rarity: 1
+    vendor: code-crafters
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Simplified Chinese
+    product: .net_framework
     rarity: 0
+    vendor: microsoft
+    verified: true
 tcp:
 - name: 'null'
   inputs:

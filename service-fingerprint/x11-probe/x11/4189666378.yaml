@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: exceed
     rarity: 4
+    vendor: hummingbird
+    verified: true
     version: 6.X
 tcp:
 - name: x11-probe

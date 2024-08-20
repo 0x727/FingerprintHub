@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: requires SSL
+    product: proftpd
     rarity: 3
+    vendor: proftpd
+    verified: true
 tcp:
 - name: help
   inputs:

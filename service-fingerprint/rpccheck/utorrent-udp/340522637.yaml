@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: utorrent
     rarity: 1
+    vendor: utorrent
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: ircd-hybrid
     rarity: 0
+    vendor: ircd-hybrid
+    verified: true
 tcp:
 - name: 'null'
   inputs:

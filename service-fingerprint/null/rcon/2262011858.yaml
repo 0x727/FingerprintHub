@@ -5,7 +5,10 @@ info:
   tags: detect,tech,rcon,service
   severity: info
   metadata:
+    product: rocketmod
     rarity: 0
+    vendor: rocketmod
+    verified: true
     version: $1
 tcp:
 - name: 'null'

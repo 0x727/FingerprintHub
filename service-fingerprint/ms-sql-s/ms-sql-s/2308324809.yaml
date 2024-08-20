@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: sql_server
     rarity: 7
+    vendor: microsoft
+    verified: true
     version: 11.00.6020; SP3
 tcp:
 - name: ms-sql-s

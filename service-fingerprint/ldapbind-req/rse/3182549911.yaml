@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: z/OS
+    product: zos_explorer
     rarity: 6
+    vendor: ibm
+    verified: true
 tcp:
 - name: ldapbind-req
   inputs:

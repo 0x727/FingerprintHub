@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp,service
   severity: info
   metadata:
+    product: exim
     rarity: 8
+    vendor: exim
+    verified: true
 tcp:
 - name: hello
   inputs:

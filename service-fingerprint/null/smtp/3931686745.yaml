@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: haraka
     rarity: 0
+    vendor: matt_sergeant
+    verified: true
     version: $2
 tcp:
 - name: 'null'

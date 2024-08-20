@@ -9,7 +9,10 @@ info:
     - get-request
     info: API $1
     operating_system: $2
+    product: docker
     rarity: 4
+    vendor: docker
+    verified: true
     version: $3
 tcp:
 - name: httpoptions

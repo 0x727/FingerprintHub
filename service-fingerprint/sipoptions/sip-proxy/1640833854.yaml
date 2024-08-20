@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: FreePBX $1
+    product: asterisk
     rarity: 5
+    vendor: digium
+    verified: true
     version: $2
 tcp:
 - name: sipoptions

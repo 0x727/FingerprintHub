@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Unix
+    product: wu_ftpd
     rarity: 0
+    vendor: redhat
+    verified: true
     version: $1
 tcp:
 - name: 'null'

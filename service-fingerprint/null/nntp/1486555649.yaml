@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: on Debian; posting ok
     operating_system: Linux
+    product: inn
     rarity: 0
+    vendor: isc
+    verified: true
     version: $2
 tcp:
 - name: 'null'

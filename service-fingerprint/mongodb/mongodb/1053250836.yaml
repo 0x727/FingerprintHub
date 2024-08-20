@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: need to login
+    product: mongodb
     rarity: 8
+    vendor: mongodb
+    verified: true
 tcp:
 - name: mongodb
   inputs:

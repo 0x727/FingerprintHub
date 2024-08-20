@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: qpsmtpd
     rarity: 0
+    vendor: ask_bjorn_hansen
+    verified: true
     version: $2
 tcp:
 - name: 'null'

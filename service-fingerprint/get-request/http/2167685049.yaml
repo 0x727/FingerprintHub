@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: nessus
     rarity: 1
+    vendor: tenable
+    verified: true
     version: 6.7 - 6.9
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: sametime
     rarity: 6
+    vendor: ibm
+    verified: true
 tcp:
 - name: terminal-server
   inputs:

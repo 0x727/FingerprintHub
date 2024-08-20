@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Busy, From $1 on port 176$2
+    product: landesk_management_suite
     rarity: 6
+    vendor: landesk
+    verified: true
 tcp:
 - name: landesk-rc
   inputs:

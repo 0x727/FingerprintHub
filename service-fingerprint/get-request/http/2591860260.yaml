@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Java Console
+    product: sentinel_keys_server
     rarity: 1
+    vendor: safenet-inc
+    verified: true
     version: $1
 tcp:
 - name: get-request

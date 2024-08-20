@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: micro_httpd
     rarity: 1
+    vendor: acme
+    verified: true
 tcp:
 - name: get-request
   inputs:

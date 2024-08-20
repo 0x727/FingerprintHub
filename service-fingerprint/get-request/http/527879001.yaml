@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: flash_media_server
     rarity: 1
+    vendor: adobe
+    verified: true
     version: $1
 tcp:
 - name: get-request

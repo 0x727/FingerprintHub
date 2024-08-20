@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: expressway_software
     rarity: 1
+    vendor: cisco
+    verified: true
 tcp:
 - name: get-request
   inputs:

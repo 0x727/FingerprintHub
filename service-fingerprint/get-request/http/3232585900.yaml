@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: redirect to https
+    product: zimbra_collaboration_suite
     rarity: 1
+    vendor: zimbra
+    verified: true
 tcp:
 - name: get-request
   inputs:

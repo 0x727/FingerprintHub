@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: Patton $1
+    product: m5t_sip_client_engine
     rarity: 5
+    vendor: media5corp
+    verified: true
     version: $2
 tcp:
 - name: sipoptions

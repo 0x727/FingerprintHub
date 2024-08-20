@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'uptime: $2'
+    product: haproxy
     rarity: 8
+    vendor: haproxy
+    verified: true
     version: $1
 tcp:
 - name: tarantool

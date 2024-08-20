@@ -5,7 +5,10 @@ info:
   tags: detect,tech,lsf-mbd,service
   severity: info
   metadata:
+    product: load_sharing_facility
     rarity: 6
+    vendor: platform
+    verified: true
 tcp:
 - name: afp
   inputs:

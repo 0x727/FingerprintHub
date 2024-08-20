@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: mongodb
     rarity: 1
+    vendor: mongodb
+    verified: true
     version: 3.1.1 or later
 tcp:
 - name: generic-lines

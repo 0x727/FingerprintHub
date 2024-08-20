@@ -5,7 +5,10 @@ info:
   tags: detect,tech,finger,service
   severity: info
   metadata:
+    product: fingerd
     rarity: 1
+    vendor: bsd
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

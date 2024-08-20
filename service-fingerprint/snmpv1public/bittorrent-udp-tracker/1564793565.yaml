@@ -5,7 +5,10 @@ info:
   tags: detect,tech,bittorrent-udp-tracker,service
   severity: info
   metadata:
+    product: opentracker
     rarity: 4
+    vendor: dirk_engling
+    verified: true
 tcp:
 - name: snmpv1public
   inputs:

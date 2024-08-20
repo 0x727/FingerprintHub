@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: mailenable
     rarity: 0
+    vendor: mailenable
+    verified: true
     version: $2
 tcp:
 - name: 'null'

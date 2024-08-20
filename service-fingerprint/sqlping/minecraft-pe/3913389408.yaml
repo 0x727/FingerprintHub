@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: $2/$3 players
+    product: minecraft_pocket_edition
     rarity: 6
+    vendor: mojang
+    verified: true
     version: $1
 tcp:
 - name: sqlping

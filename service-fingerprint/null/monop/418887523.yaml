@@ -5,7 +5,10 @@ info:
   tags: detect,tech,monop,service
   severity: info
   metadata:
+    product: monopd
     rarity: 0
+    vendor: gtkatlantic
+    verified: true
     version: $1
 tcp:
 - name: 'null'

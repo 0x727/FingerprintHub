@@ -5,7 +5,10 @@ info:
   tags: detect,tech,oem-agent,service
   severity: info
   metadata:
+    product: enterprise_manager
     rarity: 1
+    vendor: oracle
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pvx,service
   severity: info
   metadata:
+    product: providex
     rarity: 0
+    vendor: pvx
+    verified: true
 tcp:
 - name: 'null'
   inputs:

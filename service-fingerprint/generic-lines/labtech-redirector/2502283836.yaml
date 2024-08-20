@@ -5,7 +5,10 @@ info:
   tags: detect,tech,labtech-redirector,service
   severity: info
   metadata:
+    product: labtech
     rarity: 1
+    vendor: labtech_software
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

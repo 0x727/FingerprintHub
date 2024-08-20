@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp,service
   severity: info
   metadata:
+    product: mail-secure
     rarity: 3
+    vendor: pineapp
+    verified: true
 tcp:
 - name: help
   inputs:

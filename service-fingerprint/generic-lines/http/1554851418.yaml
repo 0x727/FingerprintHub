@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: unauthorized
+    product: veritas_backup_exec
     rarity: 1
+    vendor: symantec
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

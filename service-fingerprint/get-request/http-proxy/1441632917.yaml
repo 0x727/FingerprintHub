@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Via $1
+    product: web_gateway
     rarity: 1
+    vendor: mcafee
+    verified: true
     version: $2
 tcp:
 - name: get-request

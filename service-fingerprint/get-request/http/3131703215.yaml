@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Servlet $1; JSP $2
+    product: weblogic_server
     rarity: 1
+    vendor: oracle
+    verified: true
 tcp:
 - name: get-request
   inputs:

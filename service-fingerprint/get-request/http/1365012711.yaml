@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: IOS
+    product: application_and_content_networking_system_software
     rarity: 1
+    vendor: cisco
+    verified: true
     version: $1
 tcp:
 - name: get-request

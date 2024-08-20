@@ -5,7 +5,10 @@ info:
   tags: detect,tech,wyse-devmgr,service
   severity: info
   metadata:
+    product: wyse_device_manager
     rarity: 0
+    vendor: dell
+    verified: true
 tcp:
 - name: 'null'
   inputs:

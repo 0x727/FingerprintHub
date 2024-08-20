@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: exchange_server
     rarity: 0
+    vendor: microsoft
+    verified: true
     version: $2
 tcp:
 - name: 'null'

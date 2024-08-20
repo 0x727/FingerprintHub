@@ -5,7 +5,10 @@ info:
   tags: detect,tech,omniback,service
   severity: info
   metadata:
+    product: omniback_ii
     rarity: 1
+    vendor: hp
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

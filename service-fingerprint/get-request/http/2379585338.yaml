@@ -7,7 +7,10 @@ info:
   metadata:
     info: OpenERP XML-RPC; Python $2
     operating_system: Unix
+    product: python
     rarity: 1
+    vendor: python
+    verified: true
     version: $1
 tcp:
 - name: get-request

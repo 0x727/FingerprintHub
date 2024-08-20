@@ -5,7 +5,10 @@ info:
   tags: detect,tech,telnet,service
   severity: info
   metadata:
+    product: qemu
     rarity: 0
+    vendor: qemu
+    verified: true
     version: $1
 tcp:
 - name: 'null'

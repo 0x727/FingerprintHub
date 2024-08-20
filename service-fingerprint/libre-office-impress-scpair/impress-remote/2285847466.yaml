@@ -5,7 +5,10 @@ info:
   tags: detect,tech,impress-remote,service
   severity: info
   metadata:
+    product: libreoffice
     rarity: 9
+    vendor: libreoffice
+    verified: true
 tcp:
 - name: libre-office-impress-scpair
   inputs:

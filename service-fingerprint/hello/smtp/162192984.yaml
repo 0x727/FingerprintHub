@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp,service
   severity: info
   metadata:
+    product: qpsmtpd
     rarity: 8
+    vendor: ask_bjorn_hansen
+    verified: true
 tcp:
 - name: hello
   inputs:

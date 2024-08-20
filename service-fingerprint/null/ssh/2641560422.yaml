@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: network_automation
     rarity: 0
+    vendor: hp
+    verified: true
     version: $2
 tcp:
 - name: 'null'

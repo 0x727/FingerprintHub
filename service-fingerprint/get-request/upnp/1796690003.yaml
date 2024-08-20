@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: Linux $2; UPnP $3; pvConnect SDK $4
     operating_system: Linux
+    product: twonky
     rarity: 1
+    vendor: packetvideo
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: access denied
+    product: openldap
     rarity: 6
+    vendor: openldap
+    verified: true
 tcp:
 - name: ldapbind-req
   inputs:

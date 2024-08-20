@@ -5,7 +5,10 @@ info:
   tags: detect,tech,maya,service
   severity: info
   metadata:
+    product: maya
     rarity: 0
+    vendor: autodesk
+    verified: true
 tcp:
 - name: 'null'
   inputs:

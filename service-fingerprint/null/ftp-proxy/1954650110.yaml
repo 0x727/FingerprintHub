@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp-proxy,service
   severity: info
   metadata:
+    product: web_gateway
     rarity: 0
+    vendor: mcafee
+    verified: true
     version: $1
 tcp:
 - name: 'null'

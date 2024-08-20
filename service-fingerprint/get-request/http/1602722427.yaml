@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: winroute
     rarity: 1
+    vendor: kerio
+    verified: true
 tcp:
 - name: get-request
   inputs:

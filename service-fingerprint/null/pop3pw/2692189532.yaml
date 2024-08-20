@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pop3pw,service
   severity: info
   metadata:
+    product: communigate_pro
     rarity: 0
+    vendor: stalker
+    verified: true
     version: $1
 tcp:
 - name: 'null'

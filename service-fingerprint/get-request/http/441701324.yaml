@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Built-in PHP
+    product: thttpd
     rarity: 1
+    vendor: acme
+    verified: true
     version: $1 $2
 tcp:
 - name: get-request

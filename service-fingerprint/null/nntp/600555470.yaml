@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: inn
     rarity: 0
+    vendor: isc
+    verified: true
     version: $2
 tcp:
 - name: 'null'

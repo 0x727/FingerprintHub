@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: ASUS RT-AC-series router
+    product: milli_httpd
     rarity: 4
+    vendor: acme
+    verified: true
     version: '2.0'
 tcp:
 - name: httpoptions

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: m0n0wall http admin
+    product: mini_httpd
     rarity: 1
+    vendor: acme
+    verified: true
 tcp:
 - name: get-request
   inputs:

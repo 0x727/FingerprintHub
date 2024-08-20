@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Google cAdvisor
+    product: cadvisor
     rarity: 1
+    vendor: google
+    verified: true
 tcp:
 - name: get-request
   inputs:

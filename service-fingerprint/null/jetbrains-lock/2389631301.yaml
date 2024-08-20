@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'user: $1; install path: $3'
+    product: phpstorm
     rarity: 0
+    vendor: jetbrains
+    verified: true
     version: $2.0
 tcp:
 - name: 'null'

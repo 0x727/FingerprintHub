@@ -5,7 +5,10 @@ info:
   tags: detect,tech,rsa-authmgr,service
   severity: info
   metadata:
+    product: authentication_manager
     rarity: 1
+    vendor: rsa
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

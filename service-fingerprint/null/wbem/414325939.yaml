@@ -5,7 +5,10 @@ info:
   tags: detect,tech,wbem,service
   severity: info
   metadata:
+    product: sfcb
     rarity: 0
+    vendor: standards_based_linux_instrumentation_project
+    verified: true
 tcp:
 - name: 'null'
   inputs:

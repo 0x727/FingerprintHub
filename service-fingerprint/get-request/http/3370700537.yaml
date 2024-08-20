@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'installation path: $1'
+    product: node.js
     rarity: 1
+    vendor: nodejs
+    verified: true
 tcp:
 - name: get-request
   inputs:

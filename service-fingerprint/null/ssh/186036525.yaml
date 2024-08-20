@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Atlassian Bitbucket; protocol $1
+    product: sshd
     rarity: 0
+    vendor: apache
+    verified: true
 tcp:
 - name: 'null'
   inputs:

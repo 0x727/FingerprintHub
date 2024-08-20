@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'name: $1; Lucene $3'
+    product: elasticsearch
     rarity: 1
+    vendor: elasticsearch
+    verified: true
     version: $2
 tcp:
 - name: get-request

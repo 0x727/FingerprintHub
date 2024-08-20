@@ -5,7 +5,10 @@ info:
   tags: detect,tech,wrproxy,service
   severity: info
   metadata:
+    product: workbench
     rarity: 1
+    vendor: windriver
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1; ILOM patched CVE-2015-5600
+    product: openssh
     rarity: 0
+    vendor: openbsd
+    verified: true
     version: $2
 tcp:
 - name: 'null'

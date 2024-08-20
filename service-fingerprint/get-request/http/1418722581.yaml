@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: HP ProCurve Switch $2 http config
+    product: ehttp
     rarity: 1
+    vendor: ehttp
+    verified: true
     version: $1
 tcp:
 - name: get-request

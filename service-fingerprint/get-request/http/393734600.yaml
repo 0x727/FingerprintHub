@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: CouchPotato downloader
+    product: tornado
     rarity: 1
+    vendor: tornadoweb
+    verified: true
     version: $1
 tcp:
 - name: get-request

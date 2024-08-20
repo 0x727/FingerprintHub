@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: ircu
     rarity: 3
+    vendor: undernet
+    verified: true
 tcp:
 - name: help
   inputs:

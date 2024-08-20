@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: Auerswald COMpact 5020 VoIP PBX
+    product: goahead_webserver
     rarity: 4
+    vendor: goahead
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

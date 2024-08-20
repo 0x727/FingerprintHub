@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: HP System Management $2
+    product: system_management_homepage
     rarity: 1
+    vendor: hp
+    verified: true
     version: $1
 tcp:
 - name: get-request

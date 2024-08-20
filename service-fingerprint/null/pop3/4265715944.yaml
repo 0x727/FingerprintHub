@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: mail_server
     rarity: 0
+    vendor: icewarp
+    verified: true
     version: $2
 tcp:
 - name: 'null'

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: backup_server
     rarity: 4
+    vendor: sybase
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

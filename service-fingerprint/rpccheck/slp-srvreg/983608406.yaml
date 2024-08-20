@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: slp_srvreg.exe
+    product: director
     rarity: 1
+    vendor: ibm
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

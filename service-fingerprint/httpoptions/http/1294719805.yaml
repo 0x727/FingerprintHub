@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: HP LaserJet 2430 printer http config
+    product: emweb
     rarity: 4
+    vendor: virata
+    verified: true
     version: $SUBST(1,"_",".")
 tcp:
 - name: httpoptions

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: realpresence_cloudaxis
     rarity: 1
+    vendor: polycom
+    verified: true
 tcp:
 - name: get-request
   inputs:

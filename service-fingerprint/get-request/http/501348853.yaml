@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: emweb
     rarity: 1
+    vendor: agranat
+    verified: true
     version: $SUBST(1,"_",".")
 tcp:
 - name: get-request

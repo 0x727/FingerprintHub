@@ -5,7 +5,10 @@ info:
   tags: detect,tech,postgresql,service
   severity: info
   metadata:
+    product: redshift
     rarity: 4
+    vendor: amazon
+    verified: true
     version: 1.0.1691
 tcp:
 - name: smbprog-neg

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: proxy server
+    product: web_gateway
     rarity: 3
+    vendor: mcafee
+    verified: true
 tcp:
 - name: help
   inputs:

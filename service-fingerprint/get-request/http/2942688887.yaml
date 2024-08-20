@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: security-misc
+    product: connectra
     rarity: 1
+    vendor: checkpoint
+    verified: true
 tcp:
 - name: get-request
   inputs:

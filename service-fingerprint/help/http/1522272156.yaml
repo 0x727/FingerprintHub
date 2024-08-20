@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: common_services_platform_collector
     rarity: 3
+    vendor: cisco
+    verified: true
 tcp:
 - name: help
   inputs:

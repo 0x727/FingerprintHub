@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: 'zone: $1'
+    product: unified_communications_manager
     rarity: 5
+    vendor: cisco
+    verified: true
     version: $2
 tcp:
 - name: sipoptions

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: misconfigured
+    product: apt-cacher
     rarity: 1
+    vendor: debian
+    verified: true
 tcp:
 - name: get-request
   inputs:

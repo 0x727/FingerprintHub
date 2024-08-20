@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: proftpd
     rarity: 0
+    vendor: proftpd
+    verified: true
     version: $2
 tcp:
 - name: 'null'

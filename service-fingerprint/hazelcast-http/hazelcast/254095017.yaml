@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: ConnectionCount $2; AllConnectionCount $3; $SUBST(1,"\n\tMember",",")
+    product: hazelcast
     rarity: 9
+    vendor: hazelcast
+    verified: true
 tcp:
 - name: hazelcast-http
   inputs:

@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     operating_system: Windows
+    product: internet_information_services
     rarity: 4
+    vendor: microsoft
+    verified: true
     version: $1
 tcp:
 - name: httpoptions

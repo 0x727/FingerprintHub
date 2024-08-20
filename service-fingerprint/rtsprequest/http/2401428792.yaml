@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: HP printer http config
+    product: emweb
     rarity: 5
+    vendor: virata
+    verified: true
     version: $SUBST(1,"_",".")
 tcp:
 - name: rtsprequest

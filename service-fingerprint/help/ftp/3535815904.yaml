@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp,service
   severity: info
   metadata:
+    product: vsftpd
     rarity: 3
+    vendor: vsftpd
+    verified: true
     version: 2.0.8 or later
 tcp:
 - name: help

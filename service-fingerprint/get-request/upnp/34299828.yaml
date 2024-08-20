@@ -9,7 +9,10 @@ info:
     hostname: $4
     info: UPnP $2; SQLite $5
     operating_system: Linux $1
+    product: sqlite
     rarity: 1
+    vendor: sqlite
+    verified: true
     version: $3
 tcp:
 - name: get-request

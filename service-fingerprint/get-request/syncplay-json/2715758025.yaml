@@ -5,7 +5,10 @@ info:
   tags: detect,tech,syncplay-json,service
   severity: info
   metadata:
+    product: syncplay
     rarity: 1
+    vendor: syncplay
+    verified: true
 tcp:
 - name: get-request
   inputs:

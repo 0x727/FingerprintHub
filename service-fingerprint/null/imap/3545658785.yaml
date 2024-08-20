@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: mail
     rarity: 0
+    vendor: zohocorp
+    verified: true
     version: $2
 tcp:
 - name: 'null'

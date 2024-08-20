@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: remote connections disabled
+    product: h2database
     rarity: 1
+    vendor: h2group
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: phone
+    product: es_file_explorer
     rarity: 1
+    vendor: estrongs
+    verified: true
 tcp:
 - name: get-request
   inputs:

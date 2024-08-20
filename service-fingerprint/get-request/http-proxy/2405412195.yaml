@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: Chinese (Traditional)
     operating_system: Windows
+    product: isa_server
     rarity: 1
+    vendor: microsoft
+    verified: true
 tcp:
 - name: get-request
   inputs:

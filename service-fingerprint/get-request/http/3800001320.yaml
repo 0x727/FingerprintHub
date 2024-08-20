@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Venturi wireless accelerator http config
+    product: goahead_webserver
     rarity: 1
+    vendor: goahead
+    verified: true
 tcp:
 - name: get-request
   inputs:

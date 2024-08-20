@@ -9,7 +9,10 @@ info:
     - get-request
     info: German
     operating_system: Windows
+    product: isa_server
     rarity: 4
+    vendor: microsoft
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: mailutils
     rarity: 0
+    vendor: gnu
+    verified: true
 tcp:
 - name: 'null'
   inputs:

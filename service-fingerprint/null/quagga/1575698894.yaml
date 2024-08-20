@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Derivative of GNU Zebra
+    product: quagga
     rarity: 0
+    vendor: quagga
+    verified: true
     version: $1
 tcp:
 - name: 'null'

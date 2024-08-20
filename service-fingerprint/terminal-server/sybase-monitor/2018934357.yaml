@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: monitor_server
     rarity: 6
+    vendor: sybase
+    verified: true
 tcp:
 - name: terminal-server
   inputs:

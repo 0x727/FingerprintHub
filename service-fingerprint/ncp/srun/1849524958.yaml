@@ -5,7 +5,10 @@ info:
   tags: detect,tech,srun,service
   severity: info
   metadata:
+    product: resin
     rarity: 6
+    vendor: caucho
+    verified: true
 tcp:
 - name: ncp
   inputs:

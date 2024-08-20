@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Node.js Express framework
+    product: hotel
     rarity: 1
+    vendor: typicode
+    verified: true
 tcp:
 - name: get-request
   inputs:

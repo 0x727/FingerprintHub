@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: whatsup
     rarity: 1
+    vendor: ipswitch
+    verified: true
 tcp:
 - name: get-request
   inputs:

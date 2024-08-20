@@ -8,7 +8,10 @@ info:
     device_type: remote management
     hostname: $1
     info: Dell iDRAC http config
+    product: goahead_webserver
     rarity: 1
+    vendor: goahead
+    verified: true
 tcp:
 - name: get-request
   inputs:

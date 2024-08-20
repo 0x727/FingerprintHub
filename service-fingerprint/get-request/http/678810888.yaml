@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: influxdb
     rarity: 1
+    vendor: influxdata
+    verified: true
     version: $1
 tcp:
 - name: get-request

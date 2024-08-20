@@ -8,7 +8,10 @@ info:
     fallback:
     - dnsstatus-request
     hostname: $1
+    product: arcserve_client_agent
     rarity: 7
+    vendor: ca
+    verified: true
 tcp:
 - name: dnsstatus-request-tcp
   inputs:

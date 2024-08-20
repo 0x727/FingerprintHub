@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'user: $1; resolution: $2x$3; VNC TCP port: $4'
+    product: tightvnc
     rarity: 1
+    vendor: tightvnc
+    verified: true
     version: 1.2.3
 tcp:
 - name: get-request

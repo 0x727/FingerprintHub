@@ -5,7 +5,10 @@ info:
   tags: detect,tech,openttd,service
   severity: info
   metadata:
+    product: openttd
     rarity: 0
+    vendor: openttd
+    verified: true
 tcp:
 - name: 'null'
   inputs:

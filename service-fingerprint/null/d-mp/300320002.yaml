@@ -5,7 +5,10 @@ info:
   tags: detect,tech,d-mp,service
   severity: info
   metadata:
+    product: darkmultiplayer
     rarity: 0
+    vendor: christopher_andrews
+    verified: true
 tcp:
 - name: 'null'
   inputs:

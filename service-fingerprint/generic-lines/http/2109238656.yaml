@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: antivirus_scan_engine
     rarity: 1
+    vendor: symantec
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: load balancer
+    product: application_control_engine_software
     rarity: 1
+    vendor: cisco
+    verified: true
 tcp:
 - name: get-request
   inputs:

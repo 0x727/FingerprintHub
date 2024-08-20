@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ndmp,service
   severity: info
   metadata:
+    product: veritas_backup_exec
     rarity: 1
+    vendor: symantec
+    verified: true
 tcp:
 - name: get-request
   inputs:

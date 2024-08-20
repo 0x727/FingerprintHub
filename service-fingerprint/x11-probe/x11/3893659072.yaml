@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: xmanager
     rarity: 4
+    vendor: netsarang
+    verified: true
 tcp:
 - name: x11-probe
   inputs:

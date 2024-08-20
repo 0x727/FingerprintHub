@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Linux
+    product: netkit
     rarity: 0
+    vendor: netkit
+    verified: true
 tcp:
 - name: 'null'
   inputs:

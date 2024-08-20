@@ -5,7 +5,10 @@ info:
   tags: detect,tech,imap,service
   severity: info
   metadata:
+    product: dovecot
     rarity: 0
+    vendor: dovecot
+    verified: true
     version: 2.0.11
 tcp:
 - name: 'null'

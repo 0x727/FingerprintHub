@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: media device
     info: InFocus IN2116 projector
+    product: httpd
     rarity: 1
+    vendor: ubicom
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: media device
+    product: apple_tv
     rarity: 1
+    vendor: apple
+    verified: true
 tcp:
 - name: get-request
   inputs:

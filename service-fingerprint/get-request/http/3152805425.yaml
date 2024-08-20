@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: setup wizard
+    product: jira
     rarity: 1
+    vendor: atlassian
+    verified: true
 tcp:
 - name: get-request
   inputs:

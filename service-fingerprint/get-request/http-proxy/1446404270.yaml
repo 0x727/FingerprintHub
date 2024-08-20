@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: littleproxy
     rarity: 1
+    vendor: adamfisk
+    verified: true
 tcp:
 - name: get-request
   inputs:

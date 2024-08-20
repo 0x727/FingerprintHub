@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: $2
+    product: enterprise_server
     rarity: 1
+    vendor: netscape
+    verified: true
     version: $1
 tcp:
 - name: get-request

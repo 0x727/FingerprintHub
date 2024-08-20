@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Mac OS X
+    product: bbvs
     rarity: 1
+    vendor: ben_software
+    verified: true
 tcp:
 - name: get-request
   inputs:

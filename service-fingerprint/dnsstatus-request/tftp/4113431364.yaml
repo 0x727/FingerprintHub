@@ -5,7 +5,10 @@ info:
   tags: detect,tech,tftp,service
   severity: info
   metadata:
+    product: intelligent_management_center
     rarity: 5
+    vendor: hp
+    verified: true
 tcp:
 - name: dnsstatus-request
   inputs:

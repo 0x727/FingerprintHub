@@ -5,7 +5,10 @@ info:
   tags: detect,tech,drda,service
   severity: info
   metadata:
+    product: derby
     rarity: 1
+    vendor: apache
+    verified: true
 tcp:
 - name: get-request
   inputs:

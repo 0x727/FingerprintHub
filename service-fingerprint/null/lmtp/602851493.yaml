@@ -5,7 +5,10 @@ info:
   tags: detect,tech,lmtp,service
   severity: info
   metadata:
+    product: dspam
     rarity: 0
+    vendor: dspam
+    verified: true
     version: $1
 tcp:
 - name: 'null'

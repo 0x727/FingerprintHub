@@ -5,7 +5,10 @@ info:
   tags: detect,tech,zabbix,service
   severity: info
   metadata:
+    product: zabbix
     rarity: 8
+    vendor: zabbix
+    verified: true
 tcp:
 - name: nessus-tpv10
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Android
+    product: webdavserver
     rarity: 1
+    vendor: theolivetree
+    verified: true
 tcp:
 - name: get-request
   inputs:

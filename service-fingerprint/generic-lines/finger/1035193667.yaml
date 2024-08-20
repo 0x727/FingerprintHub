@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: who -uHw
+    product: efingerd
     rarity: 1
+    vendor: radovan_garabik
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

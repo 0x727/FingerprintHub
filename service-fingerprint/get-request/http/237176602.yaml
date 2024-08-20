@@ -7,7 +7,10 @@ info:
   metadata:
     info: Java $2; Tomcat $1; SunOS $3 $4
     operating_system: SunOS
+    product: jre
     rarity: 1
+    vendor: sun
+    verified: true
 tcp:
 - name: get-request
   inputs:

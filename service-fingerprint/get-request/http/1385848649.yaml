@@ -8,7 +8,10 @@ info:
     device_type: storage-misc
     info: model $2, version $3
     operating_system: Linux
+    product: shareport_web_access
     rarity: 1
+    vendor: d-link
+    verified: true
     version: $1
 tcp:
 - name: get-request

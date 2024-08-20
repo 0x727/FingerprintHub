@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Unix
+    product: xsp
     rarity: 1
+    vendor: mono
+    verified: true
     version: $1
 tcp:
 - name: get-request

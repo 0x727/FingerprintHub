@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: build $2
+    product: charger
     rarity: 0
+    vendor: nomad_digital
+    verified: true
     version: $1
 tcp:
 - name: 'null'

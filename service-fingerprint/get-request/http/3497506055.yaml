@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Italian
+    product: websphere_application_server
     rarity: 1
+    vendor: ibm
+    verified: true
 tcp:
 - name: get-request
   inputs:

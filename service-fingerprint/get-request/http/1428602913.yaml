@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: free license; remote login disabled
+    product: splunk
     rarity: 1
+    vendor: splunk
+    verified: true
 tcp:
 - name: get-request
   inputs:

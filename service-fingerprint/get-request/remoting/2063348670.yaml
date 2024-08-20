@@ -5,7 +5,10 @@ info:
   tags: detect,tech,remoting,service
   severity: info
   metadata:
+    product: .net_framework
     rarity: 1
+    vendor: microsoft
+    verified: true
 tcp:
 - name: get-request
   inputs:

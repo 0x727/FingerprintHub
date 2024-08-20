@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: imap_toolkit
     rarity: 1
+    vendor: uw
+    verified: true
     version: 1$2
 tcp:
 - name: get-request

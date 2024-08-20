@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: load balancer
+    product: haproxy
     rarity: 1
+    vendor: haproxy
+    verified: true
     version: before 1.5.0
 tcp:
 - name: get-request

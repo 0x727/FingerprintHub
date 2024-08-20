@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: anti-virus
     rarity: 0
+    vendor: avg
+    verified: true
     version: $1 Beta
 tcp:
 - name: 'null'

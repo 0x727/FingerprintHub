@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $1
     operating_system: Windows
+    product: warftpd
     rarity: 0
+    vendor: jgaa
+    verified: true
 tcp:
 - name: 'null'
   inputs:

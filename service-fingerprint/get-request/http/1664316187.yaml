@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: ivideon_server
     rarity: 1
+    vendor: ivideon
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: $2 stable
+    product: openafs
     rarity: 5
+    vendor: openafs
+    verified: true
     version: $1
 tcp:
 - name: afsversion-request

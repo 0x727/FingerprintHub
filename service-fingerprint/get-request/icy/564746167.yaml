@@ -7,7 +7,10 @@ info:
   metadata:
     info: 'Name: $2'
     operating_system: Solaris
+    product: dnas
     rarity: 1
+    vendor: shoutcast
+    verified: true
     version: $1
 tcp:
 - name: get-request

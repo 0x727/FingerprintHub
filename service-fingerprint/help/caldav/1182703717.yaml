@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Python BaseHTTPServer
+    product: python
     rarity: 3
+    vendor: python
+    verified: true
 tcp:
 - name: help
   inputs:

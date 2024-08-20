@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: bitlbee
     rarity: 0
+    vendor: bitlbee
+    verified: true
 tcp:
 - name: 'null'
   inputs:

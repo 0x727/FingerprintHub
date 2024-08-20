@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: German
+    product: qotd
     rarity: 1
+    vendor: microsoft
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

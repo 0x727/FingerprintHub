@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: remote management
+    product: openmanage
     rarity: 1
+    vendor: dell
+    verified: true
 tcp:
 - name: get-request
   inputs:

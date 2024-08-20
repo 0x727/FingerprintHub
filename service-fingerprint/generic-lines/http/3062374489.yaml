@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: QTSS $1
+    product: quicktime_streaming_server
     rarity: 1
+    vendor: apple
+    verified: true
     version: $2
 tcp:
 - name: generic-lines

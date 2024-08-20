@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Meteor $1
+    product: meteor
     rarity: 1
+    vendor: meteor
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'resolution: $3x$4; VNC port $5'
+    product: realvnc
     rarity: 1
+    vendor: realvnc
+    verified: true
     version: $1 r$2
 tcp:
 - name: get-request

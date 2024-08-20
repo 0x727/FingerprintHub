@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: $1
+    product: database_server
     rarity: 1
+    vendor: oracle
+    verified: true
     version: $2
 tcp:
 - name: get-request

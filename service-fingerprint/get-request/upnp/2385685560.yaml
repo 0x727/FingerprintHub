@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: UPnP $1; pvConnect SDK $2; SDK $3
+    product: twonky
     rarity: 1
+    vendor: packetvideo
+    verified: true
 tcp:
 - name: get-request
   inputs:

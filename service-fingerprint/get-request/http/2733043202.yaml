@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: broadband router
     info: Netgear $2 http config
+    product: ip_sharer_web
     rarity: 1
+    vendor: netgear
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: boks
     rarity: 0
+    vendor: fox_technologies
+    verified: true
     version: $2
 tcp:
 - name: 'null'

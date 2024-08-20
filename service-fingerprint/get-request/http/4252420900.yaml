@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: build $3; Apache Tomcat
+    product: tomcat
     rarity: 1
+    vendor: apache
+    verified: true
     version: $2
 tcp:
 - name: get-request

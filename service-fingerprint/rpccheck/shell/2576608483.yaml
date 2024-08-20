@@ -5,7 +5,10 @@ info:
   tags: detect,tech,shell,service
   severity: info
   metadata:
+    product: data_ontap
     rarity: 4
+    vendor: netapp
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

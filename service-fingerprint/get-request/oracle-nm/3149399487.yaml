@@ -5,7 +5,10 @@ info:
   tags: detect,tech,oracle-nm,service
   severity: info
   metadata:
+    product: weblogic_server
     rarity: 1
+    vendor: oracle
+    verified: true
 tcp:
 - name: get-request
   inputs:

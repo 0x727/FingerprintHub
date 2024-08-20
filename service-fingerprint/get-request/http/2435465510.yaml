@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: CometCatchr Flash Comet client
+    product: fireware_xtm
     rarity: 1
+    vendor: watchguard
+    verified: true
 tcp:
 - name: get-request
   inputs:

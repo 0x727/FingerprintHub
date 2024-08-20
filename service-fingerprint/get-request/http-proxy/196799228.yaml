@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http-proxy,service
   severity: info
   metadata:
+    product: etrust_secure_content_manager
     rarity: 1
+    vendor: ca
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: PBX
+    product: asterisk
     rarity: 1
+    vendor: digium
+    verified: true
 tcp:
 - name: get-request
   inputs:

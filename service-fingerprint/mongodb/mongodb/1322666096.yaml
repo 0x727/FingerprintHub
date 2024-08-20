@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'not authorized; database: $1'
+    product: mongodb
     rarity: 8
+    vendor: mongodb
+    verified: true
 tcp:
 - name: mongodb
   inputs:

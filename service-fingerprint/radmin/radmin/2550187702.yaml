@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: radmin
     rarity: 8
+    vendor: famatech
+    verified: true
     version: '3.0'
 tcp:
 - name: radmin

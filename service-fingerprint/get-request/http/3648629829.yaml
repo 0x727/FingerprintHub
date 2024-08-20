@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: firewall-1
     rarity: 1
+    vendor: checkpoint
+    verified: true
 tcp:
 - name: get-request
   inputs:

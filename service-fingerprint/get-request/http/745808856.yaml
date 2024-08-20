@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: SAP NetWeaver
+    product: netweaver
     rarity: 1
+    vendor: sap
+    verified: true
     version: $1
 tcp:
 - name: get-request

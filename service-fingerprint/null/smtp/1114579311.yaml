@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: Debian
     operating_system: Linux
+    product: postfix
     rarity: 0
+    vendor: postfix
+    verified: true
 tcp:
 - name: 'null'
   inputs:

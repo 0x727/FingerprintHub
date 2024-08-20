@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: surgemail
     rarity: 0
+    vendor: netwin
+    verified: true
     version: $2
 tcp:
 - name: 'null'

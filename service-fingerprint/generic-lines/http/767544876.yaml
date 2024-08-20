@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: WAP
+    product: thttpd
     rarity: 1
+    vendor: acme
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

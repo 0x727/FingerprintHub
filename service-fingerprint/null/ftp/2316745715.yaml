@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: pcman%27s_ftp_server
     rarity: 0
+    vendor: pcman%27s_ftp_server_project
+    verified: true
     version: $1
 tcp:
 - name: 'null'

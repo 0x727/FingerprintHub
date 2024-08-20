@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: 'Sick Beard PVR; path: $1'
+    product: cherrypy
     rarity: 5
+    vendor: cherrypy
+    verified: true
 tcp:
 - name: sipoptions
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: switch
     info: ZyXEL GS1600 or GS1900 switch
+    product: hydra
     rarity: 1
+    vendor: nikos_mavroyanopoulos
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     info: 'friendlyName: $1; OS version $3'
     operating_system: $2
+    product: plex_media_server
     rarity: 1
+    vendor: plex
+    verified: true
     version: $4
 tcp:
 - name: get-request

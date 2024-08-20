@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: firewall
+    product: connectra_ngx
     rarity: 1
+    vendor: checkpoint
+    verified: true
     version: R70
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'time zone: $1'
+    product: urbancode_deploy
     rarity: 1
+    vendor: ibm
+    verified: true
 tcp:
 - name: get-request
   inputs:

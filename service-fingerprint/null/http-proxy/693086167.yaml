@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http-proxy,service
   severity: info
   metadata:
+    product: tinyproxy
     rarity: 0
+    vendor: banu
+    verified: true
     version: $1
 tcp:
 - name: 'null'

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: NOS REST API
+    product: wave_world_wide_web_server
     rarity: 1
+    vendor: brocade
+    verified: true
     version: $1
 tcp:
 - name: get-request

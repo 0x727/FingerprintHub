@@ -9,7 +9,10 @@ info:
     fallback:
     - dnsversion-bind-req
     operating_system: Android
+    product: airdroid
     rarity: 3
+    vendor: airdroid
+    verified: true
 tcp:
 - name: dnsversion-bind-req-tcp
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp-proxy,service
   severity: info
   metadata:
+    product: smtp-proxy
     rarity: 8
+    vendor: drweb
+    verified: true
 tcp:
 - name: hello
   inputs:

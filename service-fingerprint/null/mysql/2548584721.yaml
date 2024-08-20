@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: unauthorized
+    product: mariadb
     rarity: 0
+    vendor: mariadb
+    verified: true
 tcp:
 - name: 'null'
   inputs:

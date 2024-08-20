@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: mongoose
     rarity: 1
+    vendor: cesanta
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

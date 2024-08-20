@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Vodafone Station WAP http config
+    product: micro_httpd
     rarity: 1
+    vendor: acme
+    verified: true
 tcp:
 - name: get-request
   inputs:

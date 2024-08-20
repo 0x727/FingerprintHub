@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $2
+    product: blackberry_enterprise_service
     rarity: 0
+    vendor: blackberry
+    verified: true
 tcp:
 - name: 'null'
   inputs:

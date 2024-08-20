@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Android
+    product: ip_webcam
     rarity: 1
+    vendor: pavel_khlebovich
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,redis,service
   severity: info
   metadata:
+    product: redis
     rarity: 8
+    vendor: redislabs
+    verified: true
 tcp:
 - name: redis-server
   inputs:

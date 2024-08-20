@@ -8,7 +8,10 @@ info:
     device_type: PBX
     fallback:
     - get-request
+    product: freeswitch
     rarity: 5
+    vendor: freeswitch
+    verified: true
 tcp:
 - name: sipoptions
   inputs:

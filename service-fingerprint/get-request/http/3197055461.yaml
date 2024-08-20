@@ -8,7 +8,10 @@ info:
     device_type: router
     info: J-Web http config
     operating_system: JUNOS
+    product: appweb
     rarity: 1
+    vendor: mbedthis
+    verified: true
     version: $1
 tcp:
 - name: get-request

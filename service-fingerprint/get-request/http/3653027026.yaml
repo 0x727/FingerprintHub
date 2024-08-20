@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Android
+    product: sshelper
     rarity: 1
+    vendor: paul_lutus
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: smarts
     rarity: 1
+    vendor: emc
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: API $2
+    product: acarsd
     rarity: 0
+    vendor: acarsd
+    verified: true
     version: $1
 tcp:
 - name: 'null'

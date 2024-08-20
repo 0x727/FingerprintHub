@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: http_server
     rarity: 0
+    vendor: apache
+    verified: true
     version: $2
 tcp:
 - name: 'null'

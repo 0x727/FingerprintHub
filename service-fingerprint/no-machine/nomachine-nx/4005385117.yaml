@@ -5,7 +5,10 @@ info:
   tags: detect,tech,nomachine-nx,service
   severity: info
   metadata:
+    product: nx_server
     rarity: 9
+    vendor: nomachine
+    verified: true
     version: $1
 tcp:
 - name: no-machine

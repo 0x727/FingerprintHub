@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: websense_content_content_gateway
     rarity: 1
+    vendor: websense
+    verified: true
     version: $2
 tcp:
 - name: get-request

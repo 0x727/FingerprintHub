@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: xmail
     rarity: 1
+    vendor: davide_libenzi
+    verified: true
 tcp:
 - name: get-request
   inputs:

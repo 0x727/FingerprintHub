@@ -5,7 +5,10 @@ info:
   tags: detect,tech,omp,service
   severity: info
   metadata:
+    product: openvas_manager
     rarity: 9
+    vendor: openvas
+    verified: true
 tcp:
 - name: metasploit-xmlrpc
   inputs:

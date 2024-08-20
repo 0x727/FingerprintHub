@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: $2; $3
+    product: zope
     rarity: 1
+    vendor: zope
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'arch: x64'
+    product: access_server
     rarity: 1
+    vendor: ericom
+    verified: true
 tcp:
 - name: get-request
   inputs:

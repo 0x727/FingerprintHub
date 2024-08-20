@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: uc-httpd
     rarity: 1
+    vendor: xiongmai_technologies
+    verified: true
     version: $1
 tcp:
 - name: get-request

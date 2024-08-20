@@ -5,7 +5,10 @@ info:
   tags: detect,tech,zebra,service
   severity: info
   metadata:
+    product: quagga
     rarity: 0
+    vendor: quagga
+    verified: true
 tcp:
 - name: 'null'
   inputs:

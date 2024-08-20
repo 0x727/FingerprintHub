@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp-proxy,service
   severity: info
   metadata:
+    product: squid
     rarity: 0
+    vendor: squid-cache
+    verified: true
 tcp:
 - name: 'null'
   inputs:

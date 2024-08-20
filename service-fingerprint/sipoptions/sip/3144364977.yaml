@@ -9,7 +9,10 @@ info:
     - get-request
     info: $2
     operating_system: Windows
+    product: zoiper_for_windows
     rarity: 5
+    vendor: securax
+    verified: true
     version: $1
 tcp:
 - name: sipoptions

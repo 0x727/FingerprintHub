@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: spybot_search_and_destroy
     rarity: 1
+    vendor: safer-networking
+    verified: true
 tcp:
 - name: get-request
   inputs:

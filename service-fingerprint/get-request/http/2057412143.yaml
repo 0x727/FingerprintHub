@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: nginx
     rarity: 1
+    vendor: igor_sysoev
+    verified: true
 tcp:
 - name: get-request
   inputs:

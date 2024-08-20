@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: mailenable
     rarity: 3
+    vendor: mailenable
+    verified: true
     version: 2.0.x
 tcp:
 - name: help

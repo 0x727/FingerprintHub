@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Parted Magic pkg-shadow login
+    product: busybox
     rarity: 0
+    vendor: busybox
+    verified: true
     version: 1.19.4
 tcp:
 - name: 'null'

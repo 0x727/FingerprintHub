@@ -5,7 +5,10 @@ info:
   tags: detect,tech,imap,service
   severity: info
   metadata:
+    product: connect
     rarity: 0
+    vendor: kerio
+    verified: true
     version: $1
 tcp:
 - name: 'null'

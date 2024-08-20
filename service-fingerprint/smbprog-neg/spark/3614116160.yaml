@@ -5,7 +5,10 @@ info:
   tags: detect,tech,spark,service
   severity: info
   metadata:
+    product: spark
     rarity: 4
+    vendor: apache
+    verified: true
 tcp:
 - name: smbprog-neg
   inputs:

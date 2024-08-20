@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: LIVE VDR http config
+    product: tntnet
     rarity: 1
+    vendor: tntnet
+    verified: true
     version: $1
 tcp:
 - name: get-request

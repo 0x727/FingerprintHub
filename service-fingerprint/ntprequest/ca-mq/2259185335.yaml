@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ca-mq,service
   severity: info
   metadata:
+    product: messaging
     rarity: 5
+    vendor: ca
+    verified: true
 tcp:
 - name: ntprequest
   inputs:

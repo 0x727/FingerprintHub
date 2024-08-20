@@ -7,7 +7,10 @@ info:
   metadata:
     info: 'arch: $3'
     operating_system: $2
+    product: wakanda_server
     rarity: 1
+    vendor: wakanda
+    verified: true
     version: $1
 tcp:
 - name: get-request

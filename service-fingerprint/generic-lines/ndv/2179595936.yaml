@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ndv,service
   severity: info
   metadata:
+    product: ndv
     rarity: 1
+    vendor: neocoretech
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

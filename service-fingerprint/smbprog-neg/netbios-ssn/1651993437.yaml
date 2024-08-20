@@ -5,7 +5,10 @@ info:
   tags: detect,tech,netbios-ssn,service
   severity: info
   metadata:
+    product: samba
     rarity: 4
+    vendor: samba
+    verified: true
 tcp:
 - name: smbprog-neg
   inputs:

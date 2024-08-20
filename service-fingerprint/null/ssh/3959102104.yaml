@@ -7,7 +7,10 @@ info:
   metadata:
     info: protocol $1
     operating_system: Windows
+    product: fortress_ssh_server
     rarity: 0
+    vendor: pragmasys
+    verified: true
     version: $2
 tcp:
 - name: 'null'

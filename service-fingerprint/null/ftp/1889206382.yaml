@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp,service
   severity: info
   metadata:
+    product: sambar_server
     rarity: 0
+    vendor: sambar
+    verified: true
     version: $1
 tcp:
 - name: 'null'

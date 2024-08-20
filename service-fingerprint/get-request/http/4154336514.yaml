@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Proxied by Oracle9iAS $1 Web Cache $2
+    product: application_server_web_cache
     rarity: 1
+    vendor: oracle
+    verified: true
 tcp:
 - name: get-request
   inputs:

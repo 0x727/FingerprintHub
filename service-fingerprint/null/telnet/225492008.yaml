@@ -8,7 +8,10 @@ info:
     device_type: specialized
     hostname: $2
     info: SafeScan QTerm $1
+    product: busybox
     rarity: 0
+    vendor: busybox
+    verified: true
 tcp:
 - name: 'null'
   inputs:

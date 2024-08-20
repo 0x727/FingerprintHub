@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: dialback
+    product: prosody
     rarity: 1
+    vendor: prosody
+    verified: true
 tcp:
 - name: get-request
   inputs:

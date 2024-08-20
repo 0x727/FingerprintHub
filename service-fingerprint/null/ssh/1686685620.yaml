@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: goanywhere_mft
     rarity: 0
+    vendor: linoma
+    verified: true
     version: $2
 tcp:
 - name: 'null'

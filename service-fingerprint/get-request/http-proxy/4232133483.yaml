@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Microdasys SCIP ssl proxy
+    product: websense_content_content_gateway
     rarity: 1
+    vendor: websense
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'time zone: $1'
+    product: webbit
     rarity: 1
+    vendor: joewalnes
+    verified: true
 tcp:
 - name: get-request
   inputs:

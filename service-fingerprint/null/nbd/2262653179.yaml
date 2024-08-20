@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: old handshake
+    product: nbd
     rarity: 0
+    vendor: wouter_verhelst
+    verified: true
 tcp:
 - name: 'null'
   inputs:

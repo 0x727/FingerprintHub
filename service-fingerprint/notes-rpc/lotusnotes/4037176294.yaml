@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: CN=$1;Org=$2
+    product: lotus_domino_server
     rarity: 6
+    vendor: ibm
+    verified: true
 tcp:
 - name: notes-rpc
   inputs:

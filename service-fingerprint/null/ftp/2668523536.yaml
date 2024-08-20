@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: specialized
+    product: labview
     rarity: 0
+    vendor: ni
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: webshield_smtp
     rarity: 0
+    vendor: mcafee
+    verified: true
     version: $2
 tcp:
 - name: 'null'

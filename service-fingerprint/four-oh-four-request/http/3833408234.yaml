@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: Vormetric Data Security Manager
+    product: jboss_enterprise_web_platform
     rarity: 6
+    vendor: redhat
+    verified: true
     version: $1
 tcp:
 - name: four-oh-four-request

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: system_intrusion_analysis_and_reporting_environment
     rarity: 0
+    vendor: intersectalliance
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -8,7 +8,10 @@ info:
     device_type: proxy server
     fallback:
     - get-request
+    product: panweb
     rarity: 5
+    vendor: paloaltonetworks
+    verified: true
     version: $1
 tcp:
 - name: rtsprequest

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,winlog,service
   severity: info
   metadata:
+    product: winlog_pro
     rarity: 6
+    vendor: sielcosistemi
+    verified: true
 tcp:
 - name: lpdstring
   inputs:

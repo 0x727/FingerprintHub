@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp-proxy,service
   severity: info
   metadata:
+    product: ironmail
     rarity: 3
+    vendor: ciphertrust
+    verified: true
 tcp:
 - name: help
   inputs:

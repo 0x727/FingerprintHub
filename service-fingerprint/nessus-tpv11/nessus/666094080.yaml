@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: NTP v1.1
+    product: nessus
     rarity: 9
+    vendor: tenable
+    verified: true
 tcp:
 - name: nessus-tpv11
   inputs:

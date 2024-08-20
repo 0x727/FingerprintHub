@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: YourKit Java Profiler $2
+    product: java_profiler
     rarity: 1
+    vendor: yourkit
+    verified: true
     version: $1
 tcp:
 - name: get-request

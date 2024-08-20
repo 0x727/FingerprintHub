@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'workgroup: $P(1)'
+    product: samba
     rarity: 4
+    vendor: samba
+    verified: true
     version: 3.X - 4.X
 tcp:
 - name: smbprog-neg

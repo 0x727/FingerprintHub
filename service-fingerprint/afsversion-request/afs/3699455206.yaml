@@ -5,7 +5,10 @@ info:
   tags: detect,tech,afs,service
   severity: info
   metadata:
+    product: openafs
     rarity: 5
+    vendor: openafs
+    verified: true
     version: $1
 tcp:
 - name: afsversion-request

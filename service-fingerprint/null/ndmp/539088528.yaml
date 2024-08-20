@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: NDMPv4
+    product: data_ontap
     rarity: 0
+    vendor: netapp
+    verified: true
 tcp:
 - name: 'null'
   inputs:

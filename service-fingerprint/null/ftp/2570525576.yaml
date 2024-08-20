@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: German
+    product: ftp_server
     rarity: 0
+    vendor: indy
+    verified: true
 tcp:
 - name: 'null'
   inputs:

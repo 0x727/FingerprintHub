@@ -5,7 +5,10 @@ info:
   tags: detect,tech,oracle-db-rmi,service
   severity: info
   metadata:
+    product: database_lite
     rarity: 1
+    vendor: oracle
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Roundup issue tracker; Python $2
+    product: python
     rarity: 1
+    vendor: python
+    verified: true
     version: $1
 tcp:
 - name: get-request

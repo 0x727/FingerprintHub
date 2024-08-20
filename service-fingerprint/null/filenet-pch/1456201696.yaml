@@ -8,7 +8,10 @@ info:
     hostname: $3
     info: 'protocol: $1; app: Datacap Taskmaster Capture $2'
     operating_system: $4 $5
+    product: filenet_system_manager_dashboard
     rarity: 0
+    vendor: ibm
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,jabber,service
   severity: info
   metadata:
+    product: mongooseim
     rarity: 1
+    vendor: erlang-solutions
+    verified: true
 tcp:
 - name: get-request
   inputs:

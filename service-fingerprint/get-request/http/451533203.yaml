@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: JSP $2; Servlet $1; Java $4
+    product: jre
     rarity: 1
+    vendor: sun
+    verified: true
     version: $3
 tcp:
 - name: get-request

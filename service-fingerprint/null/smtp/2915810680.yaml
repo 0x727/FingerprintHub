@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp,service
   severity: info
   metadata:
+    product: perl
     rarity: 0
+    vendor: perl
+    verified: true
     version: '1.0'
 tcp:
 - name: 'null'

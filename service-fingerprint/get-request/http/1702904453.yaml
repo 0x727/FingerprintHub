@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Access denied
+    product: azureus
     rarity: 1
+    vendor: azureus
+    verified: true
 tcp:
 - name: get-request
   inputs:

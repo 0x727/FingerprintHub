@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: kf_web_server
     rarity: 1
+    vendor: keyfocus
+    verified: true
 tcp:
 - name: get-request
   inputs:

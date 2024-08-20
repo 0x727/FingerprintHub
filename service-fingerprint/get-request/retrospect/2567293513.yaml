@@ -5,7 +5,10 @@ info:
   tags: detect,tech,retrospect,service
   severity: info
   metadata:
+    product: retrospect
     rarity: 1
+    vendor: dantz
+    verified: true
     version: '6.0'
 tcp:
 - name: get-request

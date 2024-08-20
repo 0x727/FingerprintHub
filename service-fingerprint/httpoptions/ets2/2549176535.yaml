@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: 'level: $P(1)'
+    product: euro_truck_simulator_2
     rarity: 4
+    vendor: scs_software
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

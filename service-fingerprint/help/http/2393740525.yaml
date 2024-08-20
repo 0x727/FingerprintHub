@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: ganeti
     rarity: 3
+    vendor: ganeti_project
+    verified: true
 tcp:
 - name: help
   inputs:

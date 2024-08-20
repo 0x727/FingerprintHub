@@ -5,7 +5,10 @@ info:
   tags: detect,tech,svnserve,service
   severity: info
   metadata:
+    product: subversion
     rarity: 0
+    vendor: apache
+    verified: true
 tcp:
 - name: 'null'
   inputs:

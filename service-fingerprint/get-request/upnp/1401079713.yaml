@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: media device
+    product: bh_dlna_media_server
     rarity: 1
+    vendor: osmosys
+    verified: true
 tcp:
 - name: get-request
   inputs:

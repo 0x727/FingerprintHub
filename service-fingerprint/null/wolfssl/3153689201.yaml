@@ -5,7 +5,10 @@ info:
   tags: detect,tech,wolfssl,service
   severity: info
   metadata:
+    product: wolfssl
     rarity: 0
+    vendor: wolfssl
+    verified: true
 tcp:
 - name: 'null'
   inputs:

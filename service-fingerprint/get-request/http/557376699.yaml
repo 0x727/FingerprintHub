@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Service Pack $2
+    product: weblogic_server
     rarity: 1
+    vendor: oracle
+    verified: true
     version: $1
 tcp:
 - name: get-request

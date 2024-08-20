@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol version 1.11
+    product: filezilla_server
     rarity: 0
+    vendor: filezilla-project
+    verified: true
     version: 0.9.X
 tcp:
 - name: 'null'

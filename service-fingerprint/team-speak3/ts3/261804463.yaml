@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ts3,service
   severity: info
   metadata:
+    product: teamspeak3
     rarity: 8
+    vendor: teamspeak
+    verified: true
 tcp:
 - name: team-speak3
   inputs:

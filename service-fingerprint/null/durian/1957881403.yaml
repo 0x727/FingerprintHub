@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: durian_web_application_server
     rarity: 0
+    vendor: mozilla
+    verified: true
     version: $1
 tcp:
 - name: 'null'

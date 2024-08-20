@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Java Jigsaw $1
+    product: jigsaw
     rarity: 1
+    vendor: w3
+    verified: true
 tcp:
 - name: get-request
   inputs:

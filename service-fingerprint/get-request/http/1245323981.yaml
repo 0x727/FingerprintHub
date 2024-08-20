@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: niagara
     rarity: 1
+    vendor: tridium
+    verified: true
     version: '4'
 tcp:
 - name: get-request

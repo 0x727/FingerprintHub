@@ -7,7 +7,10 @@ info:
   metadata:
     info: '$2; arch: $4'
     operating_system: $3
+    product: udpxy
     rarity: 1
+    vendor: pavel_cherenkov
+    verified: true
     version: $1
 tcp:
 - name: get-request

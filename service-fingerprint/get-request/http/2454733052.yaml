@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: teamviewer
     rarity: 1
+    vendor: teamviewer
+    verified: true
 tcp:
 - name: get-request
   inputs:

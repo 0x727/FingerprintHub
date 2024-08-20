@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'patch: $2'
+    product: eggdrop
     rarity: 0
+    vendor: eggheads
+    verified: true
     version: $1
 tcp:
 - name: 'null'

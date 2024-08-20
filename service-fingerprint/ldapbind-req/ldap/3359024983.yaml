@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: access denied
+    product: ldap-sdk
     rarity: 6
+    vendor: unboundid
+    verified: true
 tcp:
 - name: ldapbind-req
   inputs:

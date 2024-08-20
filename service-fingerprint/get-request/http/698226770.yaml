@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: maintenance mode
+    product: nexpose
     rarity: 1
+    vendor: rapid7
+    verified: true
     version: $1
 tcp:
 - name: get-request

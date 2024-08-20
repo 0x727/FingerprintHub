@@ -8,7 +8,10 @@ info:
     hostname: $3
     info: protocol $1.$2
     operating_system: $6
+    product: powerpath
     rarity: 1
+    vendor: emc
+    verified: true
     version: $4
 tcp:
 - name: generic-lines

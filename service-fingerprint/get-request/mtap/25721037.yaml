@@ -5,7 +5,10 @@ info:
   tags: detect,tech,mtap,service
   severity: info
   metadata:
+    product: virtual_network
     rarity: 1
+    vendor: adobe
+    verified: true
     version: $1
 tcp:
 - name: get-request

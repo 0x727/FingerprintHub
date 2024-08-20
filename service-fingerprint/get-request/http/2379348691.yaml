@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: storage-misc
+    product: owncloud
     rarity: 1
+    vendor: owncloud
+    verified: true
 tcp:
 - name: get-request
   inputs:

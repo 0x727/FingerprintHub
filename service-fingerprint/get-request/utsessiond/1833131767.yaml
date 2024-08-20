@@ -5,7 +5,10 @@ info:
   tags: detect,tech,utsessiond,service
   severity: info
   metadata:
+    product: ray_server_software
     rarity: 1
+    vendor: sun
+    verified: true
 tcp:
 - name: get-request
   inputs:

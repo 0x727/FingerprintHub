@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: envision
     rarity: 1
+    vendor: rsa
+    verified: true
 tcp:
 - name: get-request
   inputs:

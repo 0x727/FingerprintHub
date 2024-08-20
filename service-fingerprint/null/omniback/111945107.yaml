@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: internal build $2; built on $3
+    product: data_protector
     rarity: 0
+    vendor: hp
+    verified: true
     version: $1
 tcp:
 - name: 'null'

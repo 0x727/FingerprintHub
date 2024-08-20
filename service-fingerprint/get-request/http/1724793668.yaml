@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: easy_file_sharing_web_server
     rarity: 1
+    vendor: efssoft
+    verified: true
     version: $1
 tcp:
 - name: get-request

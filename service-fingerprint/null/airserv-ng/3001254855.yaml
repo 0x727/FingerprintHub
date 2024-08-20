@@ -5,7 +5,10 @@ info:
   tags: detect,tech,airserv-ng,service
   severity: info
   metadata:
+    product: airserv-ng
     rarity: 0
+    vendor: aircrack-ng
+    verified: true
 tcp:
 - name: 'null'
   inputs:

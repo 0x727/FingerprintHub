@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Linux
+    product: quicktime_streaming_server
     rarity: 1
+    vendor: apple
+    verified: true
     version: $1
 tcp:
 - name: get-request

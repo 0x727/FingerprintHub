@@ -8,7 +8,10 @@ info:
     device_type: firewall
     info: PHP $2
     operating_system: JUNOS
+    product: php
     rarity: 1
+    vendor: php
+    verified: true
     version: $1
 tcp:
 - name: get-request

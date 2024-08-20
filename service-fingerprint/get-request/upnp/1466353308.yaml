@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: ReplayTV UPnP; UPnP $1
+    product: emweb
     rarity: 1
+    vendor: virata
+    verified: true
     version: $SUBST(2,"_",".")
 tcp:
 - name: get-request

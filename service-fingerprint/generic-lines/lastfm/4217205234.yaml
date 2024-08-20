@@ -5,7 +5,10 @@ info:
   tags: detect,tech,lastfm,service
   severity: info
   metadata:
+    product: last.fm
     rarity: 1
+    vendor: last
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

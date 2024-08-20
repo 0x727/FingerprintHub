@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     hostname: $1
+    product: ux
     rarity: 4
+    vendor: citadel
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

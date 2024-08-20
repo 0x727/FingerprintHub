@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Go-IPFS json-rpc or InfluxDB API
+    product: go-ipfs
     rarity: 1
+    vendor: protocol_labs
+    verified: true
 tcp:
 - name: get-request
   inputs:

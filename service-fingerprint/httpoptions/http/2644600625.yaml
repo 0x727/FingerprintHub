@@ -10,7 +10,10 @@ info:
     - get-request
     info: Fastora NAS T2 NAS device; OpenSSL $1
     operating_system: FreeBSD
+    product: openssl
     rarity: 4
+    vendor: openssl
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

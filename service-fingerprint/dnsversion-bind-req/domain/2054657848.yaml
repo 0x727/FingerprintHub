@@ -5,7 +5,10 @@ info:
   tags: detect,tech,domain,service
   severity: info
   metadata:
+    product: nsd
     rarity: 1
+    vendor: nlnetlabs
+    verified: true
     version: $1
 tcp:
 - name: dnsversion-bind-req

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $2
+    product: bftpd
     rarity: 0
+    vendor: jesse_smith
+    verified: true
     version: $1
 tcp:
 - name: 'null'

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'extension: $1'
+    product: appweb
     rarity: 1
+    vendor: mbedthis
+    verified: true
 tcp:
 - name: get-request
   inputs:

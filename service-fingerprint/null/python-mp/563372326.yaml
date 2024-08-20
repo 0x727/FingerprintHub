@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: authkey set
+    product: python
     rarity: 0
+    vendor: python
+    verified: true
 tcp:
 - name: 'null'
   inputs:

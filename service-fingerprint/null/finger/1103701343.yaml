@@ -5,7 +5,10 @@ info:
   tags: detect,tech,finger,service
   severity: info
   metadata:
+    product: openldap
     rarity: 0
+    vendor: openldap
+    verified: true
 tcp:
 - name: 'null'
   inputs:

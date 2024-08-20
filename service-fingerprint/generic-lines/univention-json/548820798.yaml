@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Linux
+    product: univention_corporate_server
     rarity: 1
+    vendor: univention
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: APC http config
+    product: rompager
     rarity: 5
+    vendor: allegro
+    verified: true
     version: $1
 tcp:
 - name: rtsprequest

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,mysql,service
   severity: info
   metadata:
+    product: mysql
     rarity: 0
+    vendor: mysql
+    verified: true
     version: $1
 tcp:
 - name: 'null'

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: zeus_web_server
     rarity: 1
+    vendor: zeus
+    verified: true
     version: $SUBST(1,"_",".")
 tcp:
 - name: get-request

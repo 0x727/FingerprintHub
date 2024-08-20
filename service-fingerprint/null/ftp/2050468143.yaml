@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: misconfigured; ftp user $1
+    product: vsftpd
     rarity: 0
+    vendor: vsftpd
+    verified: true
 tcp:
 - name: 'null'
   inputs:

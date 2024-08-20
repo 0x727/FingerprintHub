@@ -8,7 +8,10 @@ info:
     device_type: webcam
     hostname: $3
     info: 'component: $1'
+    product: in-sight
     rarity: 0
+    vendor: cognex
+    verified: true
     version: $2
 tcp:
 - name: 'null'

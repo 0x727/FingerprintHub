@@ -5,7 +5,10 @@ info:
   tags: detect,tech,listserv,service
   severity: info
   metadata:
+    product: listserv
     rarity: 1
+    vendor: lsoft
+    verified: true
 tcp:
 - name: get-request
   inputs:

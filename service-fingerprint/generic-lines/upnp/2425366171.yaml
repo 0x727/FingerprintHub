@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Linksys/Belkin WiFi range extender; SDK $1; UPnP $2; MTK $SUBST(4,"_",".")
+    product: miniupnpd
     rarity: 1
+    vendor: miniupnp_project
+    verified: true
     version: $3
 tcp:
 - name: generic-lines

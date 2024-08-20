@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: imapd version may differ from overal dbmail version number
+    product: dbmail
     rarity: 0
+    vendor: paul_j_stevens
+    verified: true
     version: $1
 tcp:
 - name: 'null'

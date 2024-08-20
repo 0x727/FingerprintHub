@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: exchange_cs
     rarity: 1
+    vendor: liaison
+    verified: true
 tcp:
 - name: get-request
   inputs:

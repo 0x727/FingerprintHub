@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: windows_media_services
     rarity: 6
+    vendor: microsoft
+    verified: true
     version: $1.$2.$3.$4$5$6$7
 tcp:
 - name: wmsrequest

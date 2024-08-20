@@ -5,7 +5,10 @@ info:
   tags: detect,tech,dnastar,service
   severity: info
   metadata:
+    product: lasergene
     rarity: 1
+    vendor: dnastar
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Hughes $2 satellite modem http config
+    product: windweb
     rarity: 1
+    vendor: windriver
+    verified: true
     version: $1
 tcp:
 - name: get-request

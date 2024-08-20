@@ -5,7 +5,10 @@ info:
   tags: detect,tech,palace,service
   severity: info
   metadata:
+    product: the_palace
     rarity: 0
+    vendor: time_warner_interactive
+    verified: true
 tcp:
 - name: 'null'
   inputs:

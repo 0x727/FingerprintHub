@@ -5,7 +5,10 @@ info:
   tags: detect,tech,imap,service
   severity: info
   metadata:
+    product: axigen_mail_server
     rarity: 0
+    vendor: gecad
+    verified: true
 tcp:
 - name: 'null'
   inputs:

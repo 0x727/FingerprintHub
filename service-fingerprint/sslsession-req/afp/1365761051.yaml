@@ -10,7 +10,10 @@ info:
     hostname: $2
     info: 'name: $1; afpserver: $3; protocol 3.1; Mac OS X 10.2.*'
     operating_system: Mac OS X
+    product: afp_server
     rarity: 1
+    vendor: apple
+    verified: true
 tcp:
 - name: sslsession-req
   inputs:

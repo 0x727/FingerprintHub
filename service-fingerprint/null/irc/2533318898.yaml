@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: ircd-ratbox
     rarity: 0
+    vendor: ratbox
+    verified: true
 tcp:
 - name: 'null'
   inputs:

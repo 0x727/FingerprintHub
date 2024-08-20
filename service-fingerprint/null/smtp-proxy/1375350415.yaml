@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: secure_email_gateway
     rarity: 0
+    vendor: trustwave
+    verified: true
     version: $2
 tcp:
 - name: 'null'

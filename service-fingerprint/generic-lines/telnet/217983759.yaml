@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: security-misc
     operating_system: IOS
+    product: telnet
     rarity: 1
+    vendor: cisco
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

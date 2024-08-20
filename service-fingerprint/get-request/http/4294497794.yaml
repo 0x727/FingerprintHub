@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: compaqhttpserver
     rarity: 1
+    vendor: hp
+    verified: true
     version: $1
 tcp:
 - name: get-request

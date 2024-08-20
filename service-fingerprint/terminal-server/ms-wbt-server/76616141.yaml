@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: vm_virtualbox
     rarity: 6
+    vendor: oracle
+    verified: true
 tcp:
 - name: terminal-server
   inputs:

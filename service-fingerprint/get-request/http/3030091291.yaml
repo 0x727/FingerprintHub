@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: ympd
     rarity: 1
+    vendor: ndyk.de
+    verified: true
 tcp:
 - name: get-request
   inputs:

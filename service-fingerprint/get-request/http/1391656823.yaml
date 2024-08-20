@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: security-misc
+    product: line
     rarity: 1
+    vendor: devline
+    verified: true
 tcp:
 - name: get-request
   inputs:

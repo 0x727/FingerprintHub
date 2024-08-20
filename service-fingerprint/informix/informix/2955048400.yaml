@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $1
     info: 'Path: $2'
+    product: informix_dynamic_server
     rarity: 8
+    vendor: ibm
+    verified: true
 tcp:
 - name: informix
   inputs:

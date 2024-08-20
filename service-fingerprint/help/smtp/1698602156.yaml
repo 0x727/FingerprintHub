@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp,service
   severity: info
   metadata:
+    product: communigate_pro
     rarity: 3
+    vendor: stalker
+    verified: true
 tcp:
 - name: help
   inputs:

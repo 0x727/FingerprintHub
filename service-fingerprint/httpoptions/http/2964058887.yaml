@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - get-request
+    product: ocaml-cohttp
     rarity: 4
+    vendor: mirageos
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

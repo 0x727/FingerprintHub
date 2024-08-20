@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: NetWare
+    product: nsure_audit
     rarity: 0
+    vendor: novell
+    verified: true
 tcp:
 - name: 'null'
   inputs:

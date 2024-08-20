@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pop3,service
   severity: info
   metadata:
+    product: ux
     rarity: 0
+    vendor: citadel
+    verified: true
 tcp:
 - name: 'null'
   inputs:

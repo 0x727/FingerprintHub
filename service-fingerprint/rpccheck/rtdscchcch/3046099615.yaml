@@ -5,7 +5,10 @@ info:
   tags: detect,tech,rtdscchcch,service
   severity: info
   metadata:
+    product: market_data_feed
     rarity: 4
+    vendor: six_group
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

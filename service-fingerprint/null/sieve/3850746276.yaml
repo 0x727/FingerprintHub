@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sieve,service
   severity: info
   metadata:
+    product: ux
     rarity: 0
+    vendor: citadel
+    verified: true
     version: $1
 tcp:
 - name: 'null'

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ipremote,service
   severity: info
   metadata:
+    product: ipremote
     rarity: 0
+    vendor: ipsoft
+    verified: true
     version: $1
 tcp:
 - name: 'null'

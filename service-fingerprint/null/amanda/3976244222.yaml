@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'broken: $1 not found'
+    product: amanda
     rarity: 0
+    vendor: amanda
+    verified: true
 tcp:
 - name: 'null'
   inputs:

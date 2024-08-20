@@ -8,7 +8,10 @@ info:
     device_type: switch
     hostname: $2
     info: HP ProCurve Switch $3 http config
+    product: ehttp
     rarity: 1
+    vendor: ehttp
+    verified: true
     version: $1
 tcp:
 - name: get-request

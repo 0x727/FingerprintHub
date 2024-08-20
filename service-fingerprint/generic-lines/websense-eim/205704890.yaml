@@ -5,7 +5,10 @@ info:
   tags: detect,tech,websense-eim,service
   severity: info
   metadata:
+    product: websense
     rarity: 1
+    vendor: websense
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

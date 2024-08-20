@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Lucent VPN Firewall
+    product: security_management_server
     rarity: 1
+    vendor: lucent
+    verified: true
 tcp:
 - name: get-request
   inputs:

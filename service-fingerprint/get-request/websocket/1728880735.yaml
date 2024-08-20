@@ -5,7 +5,10 @@ info:
   tags: detect,tech,websocket,service
   severity: info
   metadata:
+    product: ogar
     rarity: 1
+    vendor: devin_ryan
+    verified: true
 tcp:
 - name: get-request
   inputs:

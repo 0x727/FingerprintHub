@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: switch
     info: HP $2 switch http admin
+    product: ehttp
     rarity: 1
+    vendor: ehttp
+    verified: true
     version: $1
 tcp:
 - name: get-request

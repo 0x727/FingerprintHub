@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Derived from Apache
+    product: http_server
     rarity: 1
+    vendor: ibm
+    verified: true
 tcp:
 - name: get-request
   inputs:

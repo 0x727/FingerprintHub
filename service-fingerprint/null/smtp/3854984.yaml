@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: firstclass
     rarity: 0
+    vendor: opentext
+    verified: true
     version: $2
 tcp:
 - name: 'null'

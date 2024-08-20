@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: netmail
     rarity: 0
+    vendor: novell
+    verified: true
     version: $2
 tcp:
 - name: 'null'

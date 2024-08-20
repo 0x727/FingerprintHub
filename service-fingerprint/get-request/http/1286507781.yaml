@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Linksys $3 WAP http config; $2
+    product: boa
     rarity: 1
+    vendor: boa
+    verified: true
     version: $1
 tcp:
 - name: get-request

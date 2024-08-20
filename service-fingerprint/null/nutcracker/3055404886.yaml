@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'source: $1'
+    product: twemproxy
     rarity: 0
+    vendor: twitter
+    verified: true
     version: $2
 tcp:
 - name: 'null'

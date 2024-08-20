@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: security-misc
     info: 'site: $SUBST(1,"%20"," "); address: $SUBST(2,"%20"," "); build: $3'
+    product: apod
     rarity: 1
+    vendor: online_security_technologies
+    verified: true
     version: $SUBST(4,"%2E",".")
 tcp:
 - name: get-request

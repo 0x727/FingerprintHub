@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http-proxy,service
   severity: info
   metadata:
+    product: control
     rarity: 0
+    vendor: kerio
+    verified: true
 tcp:
 - name: 'null'
   inputs:

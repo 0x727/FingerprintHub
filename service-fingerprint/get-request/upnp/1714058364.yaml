@@ -8,7 +8,10 @@ info:
     device_type: broadband router
     info: OpenWrt Kamikaze; UPnP $1
     operating_system: Linux
+    product: miniupnpd
     rarity: 1
+    vendor: miniupnp_project
+    verified: true
     version: $2
 tcp:
 - name: get-request

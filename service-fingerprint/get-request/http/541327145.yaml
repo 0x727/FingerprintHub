@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Nessus vulnerability scanner http UI
+    product: nessus
     rarity: 1
+    vendor: tenable
+    verified: true
     version: 5.2.6
 tcp:
 - name: get-request

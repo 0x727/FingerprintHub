@@ -5,7 +5,10 @@ info:
   tags: detect,tech,teamspeak2,service
   severity: info
   metadata:
+    product: teamspeak2
     rarity: 9
+    vendor: teamspeak
+    verified: true
 tcp:
 - name: team-speak2
   inputs:

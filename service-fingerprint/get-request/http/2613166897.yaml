@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: security-misc
+    product: envisalink
     rarity: 1
+    vendor: eyezon
+    verified: true
 tcp:
 - name: get-request
   inputs:

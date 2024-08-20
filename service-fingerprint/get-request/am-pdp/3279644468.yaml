@@ -5,7 +5,10 @@ info:
   tags: detect,tech,am-pdp,service
   severity: info
   metadata:
+    product: amavisd_new
     rarity: 1
+    vendor: ijs
+    verified: true
     version: 2.8.0
 tcp:
 - name: get-request

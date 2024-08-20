@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Orinoco AP-200 webadmin
+    product: emweb
     rarity: 1
+    vendor: agranat
+    verified: true
     version: $SUBST(1,"_",".")
 tcp:
 - name: get-request

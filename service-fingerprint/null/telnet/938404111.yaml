@@ -5,7 +5,10 @@ info:
   tags: detect,tech,telnet,service
   severity: info
   metadata:
+    product: deltav
     rarity: 0
+    vendor: emerson
+    verified: true
 tcp:
 - name: 'null'
   inputs:

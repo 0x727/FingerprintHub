@@ -5,7 +5,10 @@ info:
   tags: detect,tech,maas-rpc,service
   severity: info
   metadata:
+    product: maas
     rarity: 0
+    vendor: canonical
+    verified: true
 tcp:
 - name: 'null'
   inputs:

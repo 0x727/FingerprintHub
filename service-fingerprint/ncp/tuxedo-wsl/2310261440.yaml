@@ -5,7 +5,10 @@ info:
   tags: detect,tech,tuxedo-wsl,service
   severity: info
   metadata:
+    product: tuxedo
     rarity: 6
+    vendor: bea
+    verified: true
 tcp:
 - name: ncp
   inputs:

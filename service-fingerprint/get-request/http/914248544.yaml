@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: tentacle
     rarity: 1
+    vendor: octopus
+    verified: true
 tcp:
 - name: get-request
   inputs:

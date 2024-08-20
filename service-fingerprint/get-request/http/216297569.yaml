@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: printer
     info: Minolta 9100 printer http config
+    product: rompager
     rarity: 1
+    vendor: allegro
+    verified: true
     version: $1
 tcp:
 - name: get-request

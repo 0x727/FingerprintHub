@@ -5,7 +5,10 @@ info:
   tags: detect,tech,xmpp,service
   severity: info
   metadata:
+    product: hud
     rarity: 1
+    vendor: fonality
+    verified: true
 tcp:
 - name: get-request
   inputs:

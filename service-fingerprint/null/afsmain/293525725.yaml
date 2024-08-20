@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: ability_ftp_server
     rarity: 0
+    vendor: code-crafters
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: fox version $1
+    product: niagara
     rarity: 9
+    vendor: tridium
+    verified: true
     version: $2
 tcp:
 - name: niagara-fox

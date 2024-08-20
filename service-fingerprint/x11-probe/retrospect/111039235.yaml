@@ -5,7 +5,10 @@ info:
   tags: detect,tech,retrospect,service
   severity: info
   metadata:
+    product: retrospect
     rarity: 4
+    vendor: dantz
+    verified: true
 tcp:
 - name: x11-probe
   inputs:

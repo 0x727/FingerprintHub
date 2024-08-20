@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: switch
     info: 'Microsens G6 switch; MAC: $1'
+    product: busybox
     rarity: 0
+    vendor: busybox
+    verified: true
     version: 1.00-pre7 - 1.14.0
 tcp:
 - name: 'null'

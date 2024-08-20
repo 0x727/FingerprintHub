@@ -5,7 +5,10 @@ info:
   tags: detect,tech,loadrunner-vts,service
   severity: info
   metadata:
+    product: loadrunner
     rarity: 1
+    vendor: hp
+    verified: true
 tcp:
 - name: get-request
   inputs:

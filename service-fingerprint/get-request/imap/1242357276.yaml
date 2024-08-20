@@ -5,7 +5,10 @@ info:
   tags: detect,tech,imap,service
   severity: info
   metadata:
+    product: imap_toolkit
     rarity: 1
+    vendor: uw
+    verified: true
 tcp:
 - name: get-request
   inputs:

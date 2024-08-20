@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: database_server
     rarity: 0
+    vendor: oracle
+    verified: true
 tcp:
 - name: 'null'
   inputs:

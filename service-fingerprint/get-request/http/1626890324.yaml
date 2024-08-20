@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: MVC $1
+    product: asp.net
     rarity: 1
+    vendor: microsoft
+    verified: true
     version: $2
 tcp:
 - name: get-request

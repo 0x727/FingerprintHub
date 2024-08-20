@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp-proxy,service
   severity: info
   metadata:
+    product: i2p
     rarity: 0
+    vendor: i2p_project
+    verified: true
 tcp:
 - name: 'null'
   inputs:

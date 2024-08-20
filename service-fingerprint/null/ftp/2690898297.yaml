@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp,service
   severity: info
   metadata:
+    product: pure-ftpd
     rarity: 0
+    vendor: pureftpd
+    verified: true
 tcp:
 - name: 'null'
   inputs:

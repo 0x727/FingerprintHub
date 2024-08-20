@@ -7,7 +7,10 @@ info:
   metadata:
     info: 'arch: $3; Lua $4; OpenSSL $5; zlib $6'
     operating_system: $SUBST(2,"_"," ")
+    product: lua
     rarity: 1
+    vendor: puc-rio
+    verified: true
     version: $1
 tcp:
 - name: get-request

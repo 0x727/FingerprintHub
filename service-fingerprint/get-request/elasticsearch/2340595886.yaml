@@ -5,7 +5,10 @@ info:
   tags: detect,tech,elasticsearch,service
   severity: info
   metadata:
+    product: elasticsearch
     rarity: 1
+    vendor: elasticsearch
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,bmc-tmart,service
   severity: info
   metadata:
+    product: transaction_management_application_response_time
     rarity: 4
+    vendor: bmc
+    verified: true
     version: $1
 tcp:
 - name: smbprog-neg

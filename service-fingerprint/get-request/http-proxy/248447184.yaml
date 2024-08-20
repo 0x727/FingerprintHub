@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http-proxy,service
   severity: info
   metadata:
+    product: hola
     rarity: 1
+    vendor: hola
+    verified: true
 tcp:
 - name: get-request
   inputs:

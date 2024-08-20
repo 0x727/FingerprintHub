@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: sql_monitor
     rarity: 1
+    vendor: red-gate
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     info: nsum.exe
     operating_system: Windows
+    product: windows_media_services
     rarity: 0
+    vendor: microsoft
+    verified: true
 tcp:
 - name: 'null'
   inputs:

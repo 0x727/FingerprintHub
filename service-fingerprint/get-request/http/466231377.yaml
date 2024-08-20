@@ -7,7 +7,10 @@ info:
   metadata:
     info: ASP.NET $2
     operating_system: Windows
+    product: smartertools_web
     rarity: 1
+    vendor: smartertools
+    verified: true
     version: $1
 tcp:
 - name: get-request

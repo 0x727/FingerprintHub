@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: AIX $2
     operating_system: AIX
+    product: sendmail
     rarity: 3
+    vendor: sendmail
+    verified: true
     version: $3
 tcp:
 - name: help

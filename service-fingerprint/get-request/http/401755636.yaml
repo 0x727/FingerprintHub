@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: SmarterStats $2 http interface
+    product: smartertools_web
     rarity: 1
+    vendor: smartertools
+    verified: true
     version: $1
 tcp:
 - name: get-request

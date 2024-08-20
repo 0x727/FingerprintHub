@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: '**BACKDOOR**; unauthenticated root shell'
+    product: busybox
     rarity: 0
+    vendor: busybox
+    verified: true
     version: $1
 tcp:
 - name: 'null'

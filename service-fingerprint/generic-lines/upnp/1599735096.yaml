@@ -7,7 +7,10 @@ info:
   metadata:
     info: Linux $1; DLNADOC $3; UPnP $4
     operating_system: Linux
+    product: minidlna
     rarity: 1
+    vendor: minidlna
+    verified: true
     version: $5
 tcp:
 - name: generic-lines

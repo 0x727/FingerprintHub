@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'name: $1'
+    product: p4web
     rarity: 1
+    vendor: perforce
+    verified: true
 tcp:
 - name: get-request
   inputs:

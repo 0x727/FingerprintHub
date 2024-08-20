@@ -7,7 +7,10 @@ info:
   metadata:
     info: Kronos 4500 Clock http config
     operating_system: VxWorks
+    product: rompager
     rarity: 1
+    vendor: allegro
+    verified: true
     version: $1
 tcp:
 - name: get-request

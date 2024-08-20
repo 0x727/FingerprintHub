@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: grafana
     rarity: 1
+    vendor: grafana
+    verified: true
 tcp:
 - name: get-request
   inputs:

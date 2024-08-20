@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: print server
+    product: safeq
     rarity: 0
+    vendor: ysoft
+    verified: true
 tcp:
 - name: 'null'
   inputs:

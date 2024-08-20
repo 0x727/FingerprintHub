@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Docker alpine image
+    product: alpine_linux
     rarity: 4
+    vendor: alpinelinux
+    verified: true
     version: 9.4.25 - 9.4.26
 tcp:
 - name: smbprog-neg

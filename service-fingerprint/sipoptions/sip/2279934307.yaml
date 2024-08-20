@@ -8,7 +8,10 @@ info:
     device_type: PBX
     fallback:
     - get-request
+    product: asterisk
     rarity: 5
+    vendor: digium
+    verified: true
     version: $1
 tcp:
 - name: sipoptions

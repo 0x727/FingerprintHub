@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: for $2
+    product: mystic_bbs
     rarity: 0
+    vendor: james_coyle
+    verified: true
     version: $1
 tcp:
 - name: 'null'

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: access denied
+    product: lotus_domino
     rarity: 6
+    vendor: ibm
+    verified: true
 tcp:
 - name: ldapbind-req
   inputs:

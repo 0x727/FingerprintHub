@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Built on $2
+    product: zookeeper
     rarity: 8
+    vendor: zookeeper
+    verified: true
     version: $1
 tcp:
 - name: memcache

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,domain,service
   severity: info
   metadata:
+    product: bind
     rarity: 1
+    vendor: isc
+    verified: true
 tcp:
 - name: dnsversion-bind-req
   inputs:

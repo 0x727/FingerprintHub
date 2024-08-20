@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: mailtraq
     rarity: 1
+    vendor: mailtraq
+    verified: true
 tcp:
 - name: get-request
   inputs:

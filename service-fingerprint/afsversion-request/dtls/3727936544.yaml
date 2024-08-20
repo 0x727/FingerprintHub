@@ -5,7 +5,10 @@ info:
   tags: detect,tech,dtls,service
   severity: info
   metadata:
+    product: openssl
     rarity: 5
+    vendor: openssl
+    verified: true
 tcp:
 - name: afsversion-request
   inputs:

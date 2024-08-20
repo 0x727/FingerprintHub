@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: windows_services_for_unix
     rarity: 8
+    vendor: microsoft
+    verified: true
 tcp:
 - name: socks4
   inputs:

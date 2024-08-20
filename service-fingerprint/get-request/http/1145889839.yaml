@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'Arduino; uptime: $2'
+    product: bitlash
     rarity: 1
+    vendor: bitlash
+    verified: true
     version: $1
 tcp:
 - name: get-request

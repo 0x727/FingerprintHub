@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: TOPIX8 CRM
+    product: topix8
     rarity: 1
+    vendor: topix
+    verified: true
     version: $1
 tcp:
 - name: get-request

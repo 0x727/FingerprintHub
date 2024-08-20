@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: prtg
     rarity: 1
+    vendor: paessler
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

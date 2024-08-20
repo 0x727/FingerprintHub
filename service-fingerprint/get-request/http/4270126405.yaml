@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'Shield plugin; realm: $1'
+    product: elasticsearch
     rarity: 1
+    vendor: elasticsearch
+    verified: true
 tcp:
 - name: get-request
   inputs:

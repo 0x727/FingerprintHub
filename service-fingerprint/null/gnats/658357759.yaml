@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: gnats
     rarity: 0
+    vendor: gnu
+    verified: true
     version: $2
 tcp:
 - name: 'null'

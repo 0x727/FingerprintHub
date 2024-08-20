@@ -9,7 +9,10 @@ info:
     - get-request
     info: Linux $1
     operating_system: Linux
+    product: fuppes
     rarity: 6
+    vendor: ulrich_voelkel
+    verified: true
     version: $2
 tcp:
 - name: four-oh-four-request

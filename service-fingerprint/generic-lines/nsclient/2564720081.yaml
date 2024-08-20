@@ -5,7 +5,10 @@ info:
   tags: detect,tech,nsclient,service
   severity: info
   metadata:
+    product: nsclient%2b%2b
     rarity: 1
+    vendor: nsclient
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

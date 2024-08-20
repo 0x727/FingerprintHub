@@ -5,7 +5,10 @@ info:
   tags: detect,tech,jabber,service
   severity: info
   metadata:
+    product: m-link
     rarity: 1
+    vendor: isode
+    verified: true
 tcp:
 - name: get-request
   inputs:

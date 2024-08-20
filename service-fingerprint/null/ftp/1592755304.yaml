@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: filezilla_server
     rarity: 0
+    vendor: filezilla-project
+    verified: true
 tcp:
 - name: 'null'
   inputs:

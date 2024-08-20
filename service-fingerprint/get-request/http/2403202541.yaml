@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Wowza Streaming Engine $2
+    product: wowza_media_server
     rarity: 1
+    vendor: wowza
+    verified: true
     version: $1
 tcp:
 - name: get-request

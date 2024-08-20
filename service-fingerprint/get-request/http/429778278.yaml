@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'Servlet $1; language: $2'
+    product: websphere_application_server
     rarity: 1
+    vendor: ibm
+    verified: true
 tcp:
 - name: get-request
   inputs:

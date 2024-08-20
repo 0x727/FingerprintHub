@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: digifort
     rarity: 1
+    vendor: digifort
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,jabber,service
   severity: info
   metadata:
+    product: openfire
     rarity: 4
+    vendor: igniterealtime
+    verified: true
     version: 3.10.0 or later
 tcp:
 - name: rpccheck

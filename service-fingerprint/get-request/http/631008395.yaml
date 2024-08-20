@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $1
     info: Request Tracker
+    product: request_tracker
     rarity: 1
+    vendor: best_practical
+    verified: true
 tcp:
 - name: get-request
   inputs:

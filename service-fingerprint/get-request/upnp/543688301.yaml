@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: broadband router
     info: Billion 800VGT ADSL router UPnP; UPnP $1
+    product: emweb
     rarity: 1
+    vendor: conexant
+    verified: true
     version: $SUBST(2,"_",".")
 tcp:
 - name: get-request

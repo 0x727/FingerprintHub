@@ -7,7 +7,10 @@ info:
   metadata:
     info: FlowSsh $2; protocol $1; non-commercial use
     operating_system: Windows
+    product: winsshd
     rarity: 0
+    vendor: bitvise
+    verified: true
 tcp:
 - name: 'null'
   inputs:

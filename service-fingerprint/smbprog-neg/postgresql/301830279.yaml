@@ -5,7 +5,10 @@ info:
   tags: detect,tech,postgresql,service
   severity: info
   metadata:
+    product: postgresql
     rarity: 4
+    vendor: postgresql
+    verified: true
     version: 9.4.16 - 9.4.21, 9.5.20 (Docker apline image)
 tcp:
 - name: smbprog-neg

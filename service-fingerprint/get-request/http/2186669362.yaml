@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: RouterOS
+    product: hotspot
     rarity: 1
+    vendor: mikrotik
+    verified: true
 tcp:
 - name: get-request
   inputs:

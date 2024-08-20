@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: udpxy
     rarity: 0
+    vendor: pavel_cherenkov
+    verified: true
 tcp:
 - name: 'null'
   inputs:

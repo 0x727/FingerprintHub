@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: stonegate
     rarity: 1
+    vendor: stonesoft
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     info: PHP $2
     operating_system: Windows
+    product: php
     rarity: 1
+    vendor: php
+    verified: true
     version: $1
 tcp:
 - name: get-request

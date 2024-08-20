@@ -9,7 +9,10 @@ info:
     - get-request
     info: FreeBSD $1
     operating_system: FreeBSD
+    product: fuppes
     rarity: 6
+    vendor: ulrich_voelkel
+    verified: true
     version: $2
 tcp:
 - name: four-oh-four-request

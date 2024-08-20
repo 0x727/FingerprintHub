@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp,service
   severity: info
   metadata:
+    product: vsftpd
     rarity: 1
+    vendor: vsftpd
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

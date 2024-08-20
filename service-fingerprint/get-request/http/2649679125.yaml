@@ -8,7 +8,10 @@ info:
     device_type: router
     info: OneAccess ONE100A router http config
     operating_system: OneOS
+    product: httpd
     rarity: 1
+    vendor: rapidlogic
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Access denied
+    product: openssh
     rarity: 0
+    vendor: openbsd
+    verified: true
 tcp:
 - name: 'null'
   inputs:

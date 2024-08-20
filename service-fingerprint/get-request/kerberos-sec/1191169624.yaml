@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Mac OS X
+    product: kerberos
     rarity: 1
+    vendor: apple
+    verified: true
 tcp:
 - name: get-request
   inputs:

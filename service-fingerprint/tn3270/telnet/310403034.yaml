@@ -5,7 +5,10 @@ info:
   tags: detect,tech,telnet,service
   severity: info
   metadata:
+    product: handpunch
     rarity: 8
+    vendor: chiyu
+    verified: true
 tcp:
 - name: tn3270
   inputs:

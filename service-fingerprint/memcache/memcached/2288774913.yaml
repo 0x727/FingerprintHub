@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: uptime $1 seconds
+    product: memcached
     rarity: 8
+    vendor: memcached
+    verified: true
     version: $2
 tcp:
 - name: memcache

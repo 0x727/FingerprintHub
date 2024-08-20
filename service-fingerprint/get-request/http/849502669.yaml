@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: pebble_time
     rarity: 1
+    vendor: pebble
+    verified: true
 tcp:
 - name: get-request
   inputs:

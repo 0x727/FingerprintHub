@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $1
     operating_system: Windows
+    product: streamwhatyouhear
     rarity: 1
+    vendor: sebastian_warin
+    verified: true
 tcp:
 - name: get-request
   inputs:

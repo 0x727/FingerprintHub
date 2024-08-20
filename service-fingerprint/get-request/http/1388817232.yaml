@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: tengine
     rarity: 1
+    vendor: alibaba
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: OS/2
+    product: os2_ftp_server
     rarity: 0
+    vendor: ibm
+    verified: true
     version: $1
 tcp:
 - name: 'null'

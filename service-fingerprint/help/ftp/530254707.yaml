@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: pure-ftpd
     rarity: 3
+    vendor: pureftpd
+    verified: true
 tcp:
 - name: help
   inputs:

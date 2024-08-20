@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ms-wbt-server,service
   severity: info
   metadata:
+    product: xrdp
     rarity: 6
+    vendor: jay_sorg
+    verified: true
 tcp:
 - name: terminal-server
   inputs:

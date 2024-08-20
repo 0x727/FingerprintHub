@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pi-hole-stats,service
   severity: info
   metadata:
+    product: pi-hole
     rarity: 9
+    vendor: pi-hole
+    verified: true
     version: $1
 tcp:
 - name: pihole-version

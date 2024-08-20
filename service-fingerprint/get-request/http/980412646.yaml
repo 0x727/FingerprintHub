@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: httrack
     rarity: 1
+    vendor: httrack
+    verified: true
 tcp:
 - name: get-request
   inputs:

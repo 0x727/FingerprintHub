@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: with SSL/TLS
+    product: pure-ftpd
     rarity: 0
+    vendor: pureftpd
+    verified: true
 tcp:
 - name: 'null'
   inputs:

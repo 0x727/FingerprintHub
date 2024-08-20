@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp-proxy,service
   severity: info
   metadata:
+    product: ichain
     rarity: 3
+    vendor: novell
+    verified: true
 tcp:
 - name: help
   inputs:

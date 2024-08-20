@@ -5,7 +5,10 @@ info:
   tags: detect,tech,monetdb-ctl,service
   severity: info
   metadata:
+    product: monetdb
     rarity: 0
+    vendor: monetdb
+    verified: true
 tcp:
 - name: 'null'
   inputs:

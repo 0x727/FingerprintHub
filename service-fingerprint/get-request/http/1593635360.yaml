@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Minix
+    product: httpd
     rarity: 1
+    vendor: minix
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp,service
   severity: info
   metadata:
+    product: open-ftpd
     rarity: 0
+    vendor: gabmuf
+    verified: true
     version: $1
 tcp:
 - name: 'null'

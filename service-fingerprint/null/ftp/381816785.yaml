@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: femitter_server
     rarity: 0
+    vendor: acritum
+    verified: true
 tcp:
 - name: 'null'
   inputs:

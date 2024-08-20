@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: adaptive_server_anywhere
     rarity: 1
+    vendor: sybase
+    verified: true
     version: $1
 tcp:
 - name: get-request

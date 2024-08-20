@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'Server Name: $P(1)'
+    product: minecraft_pocket_edition
     rarity: 6
+    vendor: mojang
+    verified: true
     version: pre-0.11
 tcp:
 - name: sqlping

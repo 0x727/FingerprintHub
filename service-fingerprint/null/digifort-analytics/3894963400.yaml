@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: digifort
     rarity: 0
+    vendor: digifort
+    verified: true
     version: $1
 tcp:
 - name: 'null'

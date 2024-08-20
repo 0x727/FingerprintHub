@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: French
+    product: tableau_server
     rarity: 1
+    vendor: tableausoftware
+    verified: true
 tcp:
 - name: get-request
   inputs:

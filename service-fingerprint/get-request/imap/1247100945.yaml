@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: dovecot
     rarity: 1
+    vendor: dovecot
+    verified: true
 tcp:
 - name: get-request
   inputs:

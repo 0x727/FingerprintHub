@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: media device
     info: 'MAC: $1:$2:$3:$4:$5:$6'
+    product: ip_speaker
     rarity: 1
+    vendor: advanced_network_devices
+    verified: true
 tcp:
 - name: get-request
   inputs:

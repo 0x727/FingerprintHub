@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: confd
     rarity: 0
+    vendor: tail-f
+    verified: true
     version: $2
 tcp:
 - name: 'null'

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,icabrowser,service
   severity: info
   metadata:
+    product: metaframe
     rarity: 5
+    vendor: citrix
+    verified: true
 tcp:
 - name: citrix
   inputs:

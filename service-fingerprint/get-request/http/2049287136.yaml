@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Python $2
+    product: webiopi
     rarity: 1
+    vendor: trouch
+    verified: true
     version: $1
 tcp:
 - name: get-request

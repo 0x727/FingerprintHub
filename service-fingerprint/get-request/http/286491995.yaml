@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: 1password
     rarity: 1
+    vendor: agilebits
+    verified: true
 tcp:
 - name: get-request
   inputs:

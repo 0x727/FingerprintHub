@@ -7,7 +7,10 @@ info:
   metadata:
     info: Iomega Home Media NAS device; Linux $1; UPnP $2; pvConnect SDK $3
     operating_system: Linux
+    product: twonky
     rarity: 1
+    vendor: packetvideo
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,memcached,service
   severity: info
   metadata:
+    product: memcached
     rarity: 1
+    vendor: memcached
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

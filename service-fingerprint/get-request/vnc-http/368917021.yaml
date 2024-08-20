@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'Name $1; resolution: $2x$3; VNC TCP port: $4'
+    product: ultravnc
     rarity: 1
+    vendor: ultravnc
+    verified: true
 tcp:
 - name: get-request
   inputs:

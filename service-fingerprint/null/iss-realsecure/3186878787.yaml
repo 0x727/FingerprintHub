@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: realsecure_server_sensor
     rarity: 0
+    vendor: iss
+    verified: true
 tcp:
 - name: 'null'
   inputs:

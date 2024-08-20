@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: WAP
+    product: telnet
     rarity: 0
+    vendor: cisco
+    verified: true
     version: $1
 tcp:
 - name: 'null'

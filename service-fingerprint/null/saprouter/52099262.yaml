@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'local time: $1'
+    product: network_interface_router
     rarity: 0
+    vendor: sap
+    verified: true
 tcp:
 - name: 'null'
   inputs:

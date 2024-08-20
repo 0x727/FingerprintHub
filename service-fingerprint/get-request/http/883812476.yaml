@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: websense_content_content_gateway
     rarity: 1
+    vendor: websense
+    verified: true
     version: $1
 tcp:
 - name: get-request

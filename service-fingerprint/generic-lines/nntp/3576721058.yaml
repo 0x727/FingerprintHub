@@ -5,7 +5,10 @@ info:
   tags: detect,tech,nntp,service
   severity: info
   metadata:
+    product: synchronet
     rarity: 1
+    vendor: rob_swindell
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

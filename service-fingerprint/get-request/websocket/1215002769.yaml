@@ -5,7 +5,10 @@ info:
   tags: detect,tech,websocket,service
   severity: info
   metadata:
+    product: libwebsockets
     rarity: 1
+    vendor: lws-team
+    verified: true
 tcp:
 - name: get-request
   inputs:

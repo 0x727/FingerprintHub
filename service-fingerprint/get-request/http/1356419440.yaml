@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: icecast
     rarity: 1
+    vendor: xiph
+    verified: true
     version: $1
 tcp:
 - name: get-request

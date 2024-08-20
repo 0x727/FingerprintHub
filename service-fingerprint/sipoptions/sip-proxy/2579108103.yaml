@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sip-proxy,service
   severity: info
   metadata:
+    product: asterisk
     rarity: 5
+    vendor: digium
+    verified: true
 tcp:
 - name: sipoptions
   inputs:

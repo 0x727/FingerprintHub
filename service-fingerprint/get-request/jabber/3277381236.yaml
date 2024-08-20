@@ -5,7 +5,10 @@ info:
   tags: detect,tech,jabber,service
   severity: info
   metadata:
+    product: jabberd
     rarity: 1
+    vendor: jabberd
+    verified: true
 tcp:
 - name: get-request
   inputs:

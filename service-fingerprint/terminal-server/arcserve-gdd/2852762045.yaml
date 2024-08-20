@@ -5,7 +5,10 @@ info:
   tags: detect,tech,arcserve-gdd,service
   severity: info
   metadata:
+    product: udp
     rarity: 6
+    vendor: arcserve
+    verified: true
 tcp:
 - name: terminal-server
   inputs:

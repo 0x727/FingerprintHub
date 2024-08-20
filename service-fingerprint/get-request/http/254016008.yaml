@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: cloud9_ide
     rarity: 1
+    vendor: cloud9
+    verified: true
 tcp:
 - name: get-request
   inputs:

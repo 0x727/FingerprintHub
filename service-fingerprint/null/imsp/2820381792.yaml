@@ -5,7 +5,10 @@ info:
   tags: detect,tech,imsp,service
   severity: info
   metadata:
+    product: cyrus_imsp_server
     rarity: 0
+    vendor: cmu
+    verified: true
     version: $1
 tcp:
 - name: 'null'

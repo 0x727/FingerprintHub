@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: phpstorm
     rarity: 3
+    vendor: jetbrains
+    verified: true
     version: $1
 tcp:
 - name: help

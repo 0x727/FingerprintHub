@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'server time: $1-$2-$3 $4:$5:$6Z'
+    product: kerberos
     rarity: 1
+    vendor: mit
+    verified: true
 tcp:
 - name: dnsversion-bind-req
   inputs:

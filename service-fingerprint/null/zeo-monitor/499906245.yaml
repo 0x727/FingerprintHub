@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'server started: $2'
+    product: zope_enterprise_objects
     rarity: 0
+    vendor: zope
+    verified: true
     version: $1
 tcp:
 - name: 'null'

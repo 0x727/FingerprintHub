@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ossec-agent,service
   severity: info
   metadata:
+    product: ossec
     rarity: 4
+    vendor: ossec
+    verified: true
 tcp:
 - name: rpccheck
   inputs:

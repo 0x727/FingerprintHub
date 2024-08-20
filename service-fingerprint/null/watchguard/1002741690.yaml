@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: System time:$3
+    product: authentication_gateway
     rarity: 0
+    vendor: watchguard
+    verified: true
     version: $1 (Build $2)
 tcp:
 - name: 'null'

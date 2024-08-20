@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Protocol $1
+    product: jabberd
     rarity: 1
+    vendor: jabberd
+    verified: true
 tcp:
 - name: get-request
   inputs:

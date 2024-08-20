@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: mongodb
     rarity: 0
+    vendor: mongodb
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: with Anti-Spam
     operating_system: Linux
+    product: qmail
     rarity: 3
+    vendor: djb
+    verified: true
 tcp:
 - name: help
   inputs:

@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: APC PowerChute
+    product: acme.serve
     rarity: 6
+    vendor: acme
+    verified: true
     version: $1
 tcp:
 - name: four-oh-four-request

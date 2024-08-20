@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: CompaqHTTPServer $1
+    product: compaqhttpserver
     rarity: 4
+    vendor: hp
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

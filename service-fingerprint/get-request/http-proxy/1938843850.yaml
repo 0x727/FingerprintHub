@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http-proxy,service
   severity: info
   metadata:
+    product: pound
     rarity: 1
+    vendor: apsis
+    verified: true
 tcp:
 - name: get-request
   inputs:

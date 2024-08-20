@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: http response on TSD port
+    product: opentsdb
     rarity: 1
+    vendor: opentsdb
+    verified: true
 tcp:
 - name: get-request
   inputs:

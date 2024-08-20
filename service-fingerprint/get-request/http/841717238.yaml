@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: graylog2
     rarity: 1
+    vendor: graylog
+    verified: true
 tcp:
 - name: get-request
   inputs:

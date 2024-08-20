@@ -5,7 +5,10 @@ info:
   tags: detect,tech,zenimaging,service
   severity: info
   metadata:
+    product: zenworks_desktops
     rarity: 1
+    vendor: novell
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

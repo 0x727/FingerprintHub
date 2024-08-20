@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: terminal server
     info: protocol $1
+    product: lx_system_software
     rarity: 0
+    vendor: mrv
+    verified: true
     version: $2
 tcp:
 - name: 'null'

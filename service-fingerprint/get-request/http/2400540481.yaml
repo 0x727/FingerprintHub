@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: specialized
+    product: z-way
     rarity: 1
+    vendor: z-wave.me
+    verified: true
 tcp:
 - name: get-request
   inputs:

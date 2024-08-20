@@ -5,7 +5,10 @@ info:
   tags: detect,tech,softplc,service
   severity: info
   metadata:
+    product: codesys_runtime_system
     rarity: 6
+    vendor: 3s-software
+    verified: true
 tcp:
 - name: ncp
   inputs:

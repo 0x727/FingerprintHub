@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: sql_server
     rarity: 4
+    vendor: microsoft
+    verified: true
     version: '6.5'
 tcp:
 - name: rpccheck

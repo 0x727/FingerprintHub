@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sip-proxy,service
   severity: info
   metadata:
+    product: communigate_pro
     rarity: 5
+    vendor: stalker
+    verified: true
     version: $1
 tcp:
 - name: sipoptions

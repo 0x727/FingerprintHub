@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'lang: $1-$2'
+    product: gogs
     rarity: 1
+    vendor: gogs
+    verified: true
 tcp:
 - name: get-request
   inputs:

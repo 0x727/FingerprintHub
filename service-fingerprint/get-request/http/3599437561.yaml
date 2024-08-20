@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: FileMakerPro $1
+    product: filemaker_pro
     rarity: 1
+    vendor: filemaker
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: ts3sb
     rarity: 1
+    vendor: michael_friese
+    verified: true
 tcp:
 - name: get-request
   inputs:

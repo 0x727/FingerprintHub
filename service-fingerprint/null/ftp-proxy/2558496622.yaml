@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: proxy
     rarity: 0
+    vendor: analogx
+    verified: true
     version: $2
 tcp:
 - name: 'null'

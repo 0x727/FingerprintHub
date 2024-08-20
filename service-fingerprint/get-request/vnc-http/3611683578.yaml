@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'Comodo GeekBuddy; user: $1; VNC TCP port: $2'
+    product: tightvnc
     rarity: 1
+    vendor: tightvnc
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: intelligent_platforms_proficy_license_server
     rarity: 1
+    vendor: ge
+    verified: true
 tcp:
 - name: get-request
   inputs:

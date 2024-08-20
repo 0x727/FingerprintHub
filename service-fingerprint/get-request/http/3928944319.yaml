@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: printer
+    product: syncthru_web_service
     rarity: 1
+    vendor: samsung
+    verified: true
 tcp:
 - name: get-request
   inputs:

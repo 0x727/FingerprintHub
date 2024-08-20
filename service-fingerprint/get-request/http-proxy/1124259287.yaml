@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $2
+    product: cloud_gateway
     rarity: 1
+    vendor: protegrity
+    verified: true
     version: $1
 tcp:
 - name: get-request

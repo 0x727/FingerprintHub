@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pigpio,service
   severity: info
   metadata:
+    product: pigpiod
     rarity: 6
+    vendor: pigpio
+    verified: true
 tcp:
 - name: afp
   inputs:

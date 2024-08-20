@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: security-misc
+    product: unified_threat_management
     rarity: 1
+    vendor: sophos
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     info: Alt-N MDaemon webmail
     operating_system: Windows
+    product: mdaemon
     rarity: 1
+    vendor: altn
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Unlicensed
+    product: ssh
     rarity: 0
+    vendor: cisco
+    verified: true
 tcp:
 - name: 'null'
   inputs:

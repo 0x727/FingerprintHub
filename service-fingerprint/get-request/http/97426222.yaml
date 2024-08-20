@@ -7,7 +7,10 @@ info:
   metadata:
     info: Ubuntu
     operating_system: Linux
+    product: nginx
     rarity: 1
+    vendor: igor_sysoev
+    verified: true
     version: $1
 tcp:
 - name: get-request

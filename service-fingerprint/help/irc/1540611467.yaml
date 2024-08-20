@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: matterircd
     rarity: 3
+    vendor: 42wim
+    verified: true
 tcp:
 - name: help
   inputs:

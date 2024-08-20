@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: ISS SiteProtector 2.0
+    product: http_server
     rarity: 1
+    vendor: apache
+    verified: true
     version: 2.0.63
 tcp:
 - name: get-request

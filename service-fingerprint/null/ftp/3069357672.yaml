@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: print server
+    product: freeflow_print_server
     rarity: 0
+    vendor: xerox
+    verified: true
 tcp:
 - name: 'null'
   inputs:

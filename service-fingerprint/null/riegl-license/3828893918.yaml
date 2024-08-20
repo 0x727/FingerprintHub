@@ -5,7 +5,10 @@ info:
   tags: detect,tech,riegl-license,service
   severity: info
   metadata:
+    product: license_server
     rarity: 0
+    vendor: riegl
+    verified: true
     version: $1
 tcp:
 - name: 'null'

@@ -7,7 +7,10 @@ info:
   metadata:
     info: open
     operating_system: Unix
+    product: xfree86
     rarity: 4
+    vendor: xfree86
+    verified: true
 tcp:
 - name: x11-probe
   inputs:

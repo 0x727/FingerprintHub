@@ -5,7 +5,10 @@ info:
   tags: detect,tech,tor-socks,service
   severity: info
   metadata:
+    product: tor
     rarity: 1
+    vendor: torproject
+    verified: true
 tcp:
 - name: get-request
   inputs:

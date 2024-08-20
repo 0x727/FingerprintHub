@@ -5,7 +5,10 @@ info:
   tags: detect,tech,telnet,service
   severity: info
   metadata:
+    product: firewall-1
     rarity: 0
+    vendor: checkpoint
+    verified: true
 tcp:
 - name: 'null'
   inputs:

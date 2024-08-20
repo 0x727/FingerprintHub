@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: XML statistics version $1
+    product: bind
     rarity: 1
+    vendor: isc
+    verified: true
 tcp:
 - name: get-request
   inputs:

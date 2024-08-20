@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: mailgate
     rarity: 1
+    vendor: mailgate
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

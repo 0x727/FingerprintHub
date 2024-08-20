@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: Mega System Technologies NetProbe Lite environmental sensor
+    product: boa
     rarity: 4
+    vendor: boa
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

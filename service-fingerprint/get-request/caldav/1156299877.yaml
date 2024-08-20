@@ -5,7 +5,10 @@ info:
   tags: detect,tech,caldav,service
   severity: info
   metadata:
+    product: zarafa
     rarity: 1
+    vendor: zarafa
+    verified: true
 tcp:
 - name: get-request
   inputs:

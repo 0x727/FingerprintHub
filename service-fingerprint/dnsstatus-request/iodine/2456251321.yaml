@@ -5,7 +5,10 @@ info:
   tags: detect,tech,iodine,service
   severity: info
   metadata:
+    product: iodine
     rarity: 5
+    vendor: kryo
+    verified: true
 tcp:
 - name: dnsstatus-request
   inputs:

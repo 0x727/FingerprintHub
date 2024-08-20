@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol 4.0
+    product: realvnc
     rarity: 0
+    vendor: realvnc
+    verified: true
 tcp:
 - name: 'null'
   inputs:

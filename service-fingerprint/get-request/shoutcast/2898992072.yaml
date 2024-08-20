@@ -5,7 +5,10 @@ info:
   tags: detect,tech,shoutcast,service
   severity: info
   metadata:
+    product: dnas
     rarity: 1
+    vendor: shoutcast
+    verified: true
 tcp:
 - name: get-request
   inputs:

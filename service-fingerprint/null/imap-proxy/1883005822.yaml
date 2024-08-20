@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Unix
+    product: zarafa
     rarity: 0
+    vendor: zarafa
+    verified: true
 tcp:
 - name: 'null'
   inputs:

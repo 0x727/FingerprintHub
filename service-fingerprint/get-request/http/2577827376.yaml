@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: broadcam
     rarity: 1
+    vendor: nchsoftware
+    verified: true
 tcp:
 - name: get-request
   inputs:

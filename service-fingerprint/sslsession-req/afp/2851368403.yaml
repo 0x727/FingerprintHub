@@ -9,7 +9,10 @@ info:
     - get-request
     info: 'name: $1; protocol 3.4; Mac OS X 10.6; VMware $2.$3'
     operating_system: Mac OS X
+    product: afp_server
     rarity: 1
+    vendor: apple
+    verified: true
 tcp:
 - name: sslsession-req
   inputs:

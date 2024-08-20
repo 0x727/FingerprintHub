@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $1
     operating_system: Unix
+    product: wu_ftpd
     rarity: 0
+    vendor: redhat
+    verified: true
     version: $2
 tcp:
 - name: 'null'

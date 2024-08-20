@@ -7,7 +7,10 @@ info:
   metadata:
     info: Connectiva Linux
     operating_system: Linux
+    product: xfree86
     rarity: 4
+    vendor: xfree86
+    verified: true
     version: $1 patch level $2
 tcp:
 - name: x11-probe

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,irc-proxy,service
   severity: info
   metadata:
+    product: shroudbnc
     rarity: 0
+    vendor: gunnar_beutner
+    verified: true
     version: $1
 tcp:
 - name: 'null'

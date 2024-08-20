@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Panasonic Network Camera http config
+    product: thttpd
     rarity: 1
+    vendor: acme
+    verified: true
 tcp:
 - name: get-request
   inputs:

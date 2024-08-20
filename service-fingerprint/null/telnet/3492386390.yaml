@@ -5,7 +5,10 @@ info:
   tags: detect,tech,telnet,service
   severity: info
   metadata:
+    product: vlc_media_player
     rarity: 0
+    vendor: videolan
+    verified: true
     version: $1 $2
 tcp:
 - name: 'null'

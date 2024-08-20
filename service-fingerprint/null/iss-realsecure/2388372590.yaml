@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: realsecure_workgroup_manager
     rarity: 0
+    vendor: iss
+    verified: true
 tcp:
 - name: 'null'
   inputs:

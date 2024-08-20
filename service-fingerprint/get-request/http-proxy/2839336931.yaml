@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http-proxy,service
   severity: info
   metadata:
+    product: netcache
     rarity: 1
+    vendor: netapp
+    verified: true
     version: $1
 tcp:
 - name: get-request

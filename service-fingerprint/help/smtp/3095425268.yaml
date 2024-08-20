@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: exim
     rarity: 3
+    vendor: exim
+    verified: true
 tcp:
 - name: help
   inputs:

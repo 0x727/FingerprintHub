@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: specialized
+    product: search_appliance_software
     rarity: 1
+    vendor: google
+    verified: true
 tcp:
 - name: get-request
   inputs:

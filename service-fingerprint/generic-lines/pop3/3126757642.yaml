@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: surgemail
     rarity: 1
+    vendor: netwin
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

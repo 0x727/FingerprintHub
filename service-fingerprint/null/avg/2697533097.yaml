@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Virus DB $2
+    product: anti-virus
     rarity: 0
+    vendor: avg
+    verified: true
     version: $1
 tcp:
 - name: 'null'

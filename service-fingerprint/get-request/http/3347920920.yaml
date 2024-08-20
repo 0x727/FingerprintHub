@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: simple_dns_plus
     rarity: 1
+    vendor: jh_software
+    verified: true
     version: $1
 tcp:
 - name: get-request

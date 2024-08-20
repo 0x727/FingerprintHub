@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ipp,service
   severity: info
   metadata:
+    product: cups
     rarity: 1
+    vendor: apple
+    verified: true
     version: $1
 tcp:
 - name: get-request

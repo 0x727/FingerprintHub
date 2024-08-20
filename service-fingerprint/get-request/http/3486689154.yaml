@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'site name: $2'
+    product: synchronet
     rarity: 1
+    vendor: rob_swindell
+    verified: true
     version: $1
 tcp:
 - name: get-request

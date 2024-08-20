@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: $1
+    product: synchronet
     rarity: 0
+    vendor: rob_swindell
+    verified: true
     version: $2
 tcp:
 - name: 'null'

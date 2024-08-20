@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: 'Path: $2'
     operating_system: Windows
+    product: informix_dynamic_server
     rarity: 8
+    vendor: ibm
+    verified: true
 tcp:
 - name: informix
   inputs:

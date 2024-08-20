@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: $2
+    product: lotus_domino
     rarity: 0
+    vendor: ibm
+    verified: true
     version: $1
 tcp:
 - name: 'null'

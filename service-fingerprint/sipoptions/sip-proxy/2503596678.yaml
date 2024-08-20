@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     operating_system: Windows
+    product: 3cx_phonesystem
     rarity: 5
+    vendor: 3cx
+    verified: true
     version: $1
 tcp:
 - name: sipoptions

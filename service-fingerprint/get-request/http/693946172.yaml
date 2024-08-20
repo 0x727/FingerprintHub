@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Sybase EAServer $1
+    product: easerver
     rarity: 1
+    vendor: sybase
+    verified: true
 tcp:
 - name: get-request
   inputs:

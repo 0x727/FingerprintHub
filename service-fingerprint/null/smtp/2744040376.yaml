@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: messaging_server
     rarity: 0
+    vendor: netscape
+    verified: true
     version: $2
 tcp:
 - name: 'null'

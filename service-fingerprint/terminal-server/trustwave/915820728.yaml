@@ -5,7 +5,10 @@ info:
   tags: detect,tech,trustwave,service
   severity: info
   metadata:
+    product: siem_oe
     rarity: 6
+    vendor: trustwave
+    verified: true
 tcp:
 - name: terminal-server
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: time zone $2
+    product: mail_server
     rarity: 0
+    vendor: icewarp
+    verified: true
     version: $1
 tcp:
 - name: 'null'

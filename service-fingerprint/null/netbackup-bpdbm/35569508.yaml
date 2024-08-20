@@ -5,7 +5,10 @@ info:
   tags: detect,tech,netbackup-bpdbm,service
   severity: info
   metadata:
+    product: veritas_netbackup
     rarity: 0
+    vendor: symantec
+    verified: true
 tcp:
 - name: 'null'
   inputs:

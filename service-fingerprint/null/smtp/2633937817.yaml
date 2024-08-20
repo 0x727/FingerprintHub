@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Serviced refused (IP block)
+    product: exim
     rarity: 0
+    vendor: exim
+    verified: true
 tcp:
 - name: 'null'
   inputs:

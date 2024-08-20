@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: asyncssh
     rarity: 0
+    vendor: ron_frederick
+    verified: true
     version: $2
 tcp:
 - name: 'null'

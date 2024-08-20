@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     operating_system: HP-UX
+    product: system_management_homepage
     rarity: 6
+    vendor: hp
+    verified: true
 tcp:
 - name: four-oh-four-request
   inputs:

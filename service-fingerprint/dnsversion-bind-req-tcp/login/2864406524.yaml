@@ -8,7 +8,10 @@ info:
     fallback:
     - dnsversion-bind-req
     operating_system: Windows
+    product: windows_services_for_unix
     rarity: 3
+    vendor: microsoft
+    verified: true
 tcp:
 - name: dnsversion-bind-req-tcp
   inputs:

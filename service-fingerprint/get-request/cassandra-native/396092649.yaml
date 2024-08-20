@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: native protocol version $1
+    product: cassandra
     rarity: 1
+    vendor: apache
+    verified: true
     version: 2.2.0 - 2.2.9
 tcp:
 - name: get-request

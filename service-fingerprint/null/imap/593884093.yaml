@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Linux
+    product: axigen_mail_server
     rarity: 0
+    vendor: gecad
+    verified: true
     version: $1
 tcp:
 - name: 'null'

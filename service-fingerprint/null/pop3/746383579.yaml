@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pop3,service
   severity: info
   metadata:
+    product: thunderbird
     rarity: 0
+    vendor: mozilla
+    verified: true
 tcp:
 - name: 'null'
   inputs:

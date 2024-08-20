@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: Restlet framework $1
+    product: restlet
     rarity: 5
+    vendor: restlet
+    verified: true
 tcp:
 - name: sipoptions
   inputs:

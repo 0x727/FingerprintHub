@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'botname: $1; patch: $3'
+    product: eggdrop
     rarity: 0
+    vendor: eggheads
+    verified: true
     version: $2
 tcp:
 - name: 'null'

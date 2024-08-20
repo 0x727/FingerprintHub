@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Chinese
+    product: squid
     rarity: 3
+    vendor: squid-cache
+    verified: true
 tcp:
 - name: help
   inputs:

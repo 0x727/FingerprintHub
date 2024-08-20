@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: $2
+    product: play_framework
     rarity: 1
+    vendor: zenexity
+    verified: true
     version: $1
 tcp:
 - name: get-request

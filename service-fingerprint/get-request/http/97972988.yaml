@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: firewall
     info: PA-4050 firewall http config
+    product: appweb
     rarity: 1
+    vendor: mbedthis
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: WAP
     info: Billion 740- or 7400-series ADSL router UPnP; UPnP $1
+    product: emweb
     rarity: 1
+    vendor: conexant
+    verified: true
     version: $SUBST(2,"_",".")
 tcp:
 - name: get-request

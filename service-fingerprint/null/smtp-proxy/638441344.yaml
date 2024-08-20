@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: emailrelay
     rarity: 0
+    vendor: graeme_walker
+    verified: true
     version: $2
 tcp:
 - name: 'null'

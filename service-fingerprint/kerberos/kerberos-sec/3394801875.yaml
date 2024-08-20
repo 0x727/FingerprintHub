@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'OpenWRT; server time: $1-$2-$3 $4:$5:$6Z; realm: $7'
+    product: kerberos
     rarity: 5
+    vendor: mit
+    verified: true
 tcp:
 - name: kerberos
   inputs:

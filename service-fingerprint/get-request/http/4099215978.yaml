@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Liberty Profile
+    product: websphere_application_server
     rarity: 1
+    vendor: ibm
+    verified: true
     version: $1
 tcp:
 - name: get-request

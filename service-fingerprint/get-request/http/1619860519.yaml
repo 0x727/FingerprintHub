@@ -8,7 +8,10 @@ info:
     device_type: switch
     info: Extreme Networks switch http config
     operating_system: ExtremeWare
+    product: rompager
     rarity: 1
+    vendor: allegro
+    verified: true
     version: $1
 tcp:
 - name: get-request

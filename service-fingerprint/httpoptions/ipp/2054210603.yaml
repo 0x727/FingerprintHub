@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - get-request
+    product: cups
     rarity: 4
+    vendor: apple
+    verified: true
     version: $1
 tcp:
 - name: httpoptions

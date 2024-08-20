@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Interroperable Object Reference Service
+    product: enterprise_console
     rarity: 0
+    vendor: sophos
+    verified: true
 tcp:
 - name: 'null'
   inputs:

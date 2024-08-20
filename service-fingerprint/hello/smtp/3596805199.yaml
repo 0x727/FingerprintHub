@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp,service
   severity: info
   metadata:
+    product: sendmail
     rarity: 8
+    vendor: sendmail
+    verified: true
 tcp:
 - name: hello
   inputs:

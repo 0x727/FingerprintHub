@@ -5,7 +5,10 @@ info:
   tags: detect,tech,libvirt-rpc,service
   severity: info
   metadata:
+    product: libvirt
     rarity: 4
+    vendor: redhat
+    verified: true
 tcp:
 - name: smbprog-neg
   inputs:

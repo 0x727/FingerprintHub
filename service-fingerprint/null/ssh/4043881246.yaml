@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: web_gateway
     rarity: 0
+    vendor: mcafee
+    verified: true
 tcp:
 - name: 'null'
   inputs:

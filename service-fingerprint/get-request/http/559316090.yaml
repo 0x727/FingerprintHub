@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: specialized
+    product: labview
     rarity: 1
+    vendor: ni
+    verified: true
     version: $1
 tcp:
 - name: get-request

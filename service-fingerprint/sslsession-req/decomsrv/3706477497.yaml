@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: decomsrv.exe
+    product: lotus_domino
     rarity: 1
+    vendor: ibm
+    verified: true
 tcp:
 - name: sslsession-req
   inputs:

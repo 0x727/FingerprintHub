@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Heroku
+    product: cowboy
     rarity: 1
+    vendor: ninenines
+    verified: true
 tcp:
 - name: get-request
   inputs:

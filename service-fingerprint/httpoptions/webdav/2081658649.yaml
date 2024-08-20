@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     hostname: $1
+    product: crushftp
     rarity: 4
+    vendor: crushftp
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

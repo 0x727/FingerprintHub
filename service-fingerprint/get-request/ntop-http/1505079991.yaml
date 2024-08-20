@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ntop-http,service
   severity: info
   metadata:
+    product: ntop
     rarity: 1
+    vendor: ntop
+    verified: true
 tcp:
 - name: get-request
   inputs:

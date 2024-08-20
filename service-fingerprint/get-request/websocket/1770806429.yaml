@@ -5,7 +5,10 @@ info:
   tags: detect,tech,websocket,service
   severity: info
   metadata:
+    product: java-websocket
     rarity: 1
+    vendor: tootallnate
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: aria2
     rarity: 1
+    vendor: tatsuhiro_tsujikawa
+    verified: true
 tcp:
 - name: get-request
   inputs:

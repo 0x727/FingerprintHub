@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: teamdrive
     rarity: 1
+    vendor: teamdrive
+    verified: true
 tcp:
 - name: get-request
   inputs:

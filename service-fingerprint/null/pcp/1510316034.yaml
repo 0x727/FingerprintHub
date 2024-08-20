@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pcp,service
   severity: info
   metadata:
+    product: performance_co-pilot
     rarity: 0
+    vendor: sgi
+    verified: true
 tcp:
 - name: 'null'
   inputs:

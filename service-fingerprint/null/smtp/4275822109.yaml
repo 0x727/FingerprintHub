@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: spanel
     rarity: 0
+    vendor: master_web_network
+    verified: true
     version: $2
 tcp:
 - name: 'null'

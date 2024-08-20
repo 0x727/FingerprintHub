@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: Apache Tomcat $1
+    product: tomcat
     rarity: 4
+    vendor: apache
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

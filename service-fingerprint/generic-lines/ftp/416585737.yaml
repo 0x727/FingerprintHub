@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $2
+    product: proftpd
     rarity: 1
+    vendor: proftpd
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

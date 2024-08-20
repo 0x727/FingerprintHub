@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: API $1
+    product: docker
     rarity: 8
+    vendor: docker
+    verified: true
     version: $2
 tcp:
 - name: docker

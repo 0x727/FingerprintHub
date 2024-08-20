@@ -8,7 +8,10 @@ info:
     device_type: PBX
     info: Pointca PBX http config; astlinux $2
     operating_system: Linux
+    product: mini_httpd
     rarity: 1
+    vendor: acme
+    verified: true
     version: $1
 tcp:
 - name: get-request

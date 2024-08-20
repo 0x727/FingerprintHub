@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: storage-misc
     operating_system: Data ONTAP
+    product: data_ontap
     rarity: 0
+    vendor: netapp
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $1
     operating_system: Linux
+    product: xmail
     rarity: 0
+    vendor: davide_libenzi
+    verified: true
     version: $2
 tcp:
 - name: 'null'

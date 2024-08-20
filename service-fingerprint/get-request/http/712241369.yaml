@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: sentinel_protection_installer
     rarity: 1
+    vendor: safenet-inc
+    verified: true
     version: $1
 tcp:
 - name: get-request

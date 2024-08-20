@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'language: $1'
+    product: coremanager
     rarity: 1
+    vendor: ispsystem
+    verified: true
 tcp:
 - name: get-request
   inputs:

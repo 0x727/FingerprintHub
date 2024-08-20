@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pop3-proxy,service
   severity: info
   metadata:
+    product: proxy
     rarity: 0
+    vendor: analogx
+    verified: true
     version: $1
 tcp:
 - name: 'null'

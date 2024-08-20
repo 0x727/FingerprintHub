@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pop3,service
   severity: info
   metadata:
+    product: dovecot
     rarity: 1
+    vendor: dovecot
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

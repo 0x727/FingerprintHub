@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: F-Secure Policy Manager Server
+    product: jetty
     rarity: 1
+    vendor: mortbay
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: router
     info: Siemens SpeedStream SS2601
+    product: ip_sharer_web
     rarity: 1
+    vendor: siemens
+    verified: true
     version: $1
 tcp:
 - name: get-request

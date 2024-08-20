@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - get-request
+    product: pound
     rarity: 1
+    vendor: apsis
+    verified: true
 tcp:
 - name: sslsession-req
   inputs:

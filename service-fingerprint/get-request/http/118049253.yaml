@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Roku developer interface, firmware 5.2 or later
+    product: mongoose
     rarity: 1
+    vendor: cesanta
+    verified: true
     version: '3.7'
 tcp:
 - name: get-request

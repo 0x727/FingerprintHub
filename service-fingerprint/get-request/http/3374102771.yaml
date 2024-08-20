@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Wowza $2
+    product: flash_media_server
     rarity: 1
+    vendor: adobe
+    verified: true
     version: $1
 tcp:
 - name: get-request

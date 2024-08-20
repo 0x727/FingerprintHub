@@ -5,7 +5,10 @@ info:
   tags: detect,tech,fms-core,service
   severity: info
   metadata:
+    product: flash_media_server
     rarity: 6
+    vendor: adobe
+    verified: true
 tcp:
 - name: lpdstring
   inputs:

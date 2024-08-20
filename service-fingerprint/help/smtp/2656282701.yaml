@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: HP-UX
+    product: sendmail
     rarity: 3
+    vendor: sendmail
+    verified: true
     version: $1 patch $2
 tcp:
 - name: help

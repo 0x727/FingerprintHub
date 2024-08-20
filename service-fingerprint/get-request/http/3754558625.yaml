@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: webmi2ads
     rarity: 1
+    vendor: atvise
+    verified: true
 tcp:
 - name: get-request
   inputs:

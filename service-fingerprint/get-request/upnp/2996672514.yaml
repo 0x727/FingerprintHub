@@ -7,7 +7,10 @@ info:
   metadata:
     info: 'arch: $2; UPnP $3'
     operating_system: $SUBST(1,"_"," ")
+    product: universal_media_server
     rarity: 1
+    vendor: universal_media_server
+    verified: true
     version: $4
 tcp:
 - name: get-request

@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: $1 $4 Java/$3
+    product: glassfish_server
     rarity: 6
+    vendor: oracle
+    verified: true
     version: $2
 tcp:
 - name: four-oh-four-request

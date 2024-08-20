@@ -8,7 +8,10 @@ info:
     device_type: switch
     info: misconfigured
     operating_system: IOS
+    product: ssh
     rarity: 0
+    vendor: cisco
+    verified: true
 tcp:
 - name: 'null'
   inputs:

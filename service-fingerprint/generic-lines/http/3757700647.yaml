@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: git version $4; pdfile $3; Boost $SUBST(6,"_","."); uptime $7
     operating_system: Linux $5
+    product: mongodb
     rarity: 1
+    vendor: mongodb
+    verified: true
     version: $2
 tcp:
 - name: generic-lines

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: cassini
     rarity: 1
+    vendor: microsoft
+    verified: true
     version: $1
 tcp:
 - name: get-request

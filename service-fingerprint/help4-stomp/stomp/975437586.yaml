@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'versions: $1'
+    product: rabbitmq
     rarity: 8
+    vendor: pivotal_software
+    verified: true
 tcp:
 - name: help4-stomp
   inputs:

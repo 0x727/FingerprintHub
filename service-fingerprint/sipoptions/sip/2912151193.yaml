@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sip,service
   severity: info
   metadata:
+    product: ekiga
     rarity: 5
+    vendor: ekiga
+    verified: true
     version: 3.2.7
 tcp:
 - name: sipoptions

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,websocket,service
   severity: info
   metadata:
+    product: autobahn
     rarity: 1
+    vendor: crossbario
+    verified: true
 tcp:
 - name: get-request
   inputs:

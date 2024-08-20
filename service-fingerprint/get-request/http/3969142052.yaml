@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Citadel $2
+    product: webcit
     rarity: 1
+    vendor: citadel
+    verified: true
     version: $1
 tcp:
 - name: get-request

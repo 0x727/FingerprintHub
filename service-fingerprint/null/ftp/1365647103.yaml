@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Based on FileZilla $2
+    product: xbfilezilla
     rarity: 0
+    vendor: xbmc
+    verified: true
     version: $1
 tcp:
 - name: 'null'

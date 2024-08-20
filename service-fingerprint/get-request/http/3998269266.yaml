@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Twisted $1
+    product: twistedweb
     rarity: 1
+    vendor: twistedmatrix
+    verified: true
     version: SVN-Trunk
 tcp:
 - name: get-request

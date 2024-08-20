@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: firewall
     operating_system: IOS
+    product: telnet
     rarity: 0
+    vendor: cisco
+    verified: true
 tcp:
 - name: 'null'
   inputs:

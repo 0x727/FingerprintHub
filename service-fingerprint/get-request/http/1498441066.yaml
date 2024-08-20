@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Sick Beard PVR
+    product: cherrypy
     rarity: 1
+    vendor: cherrypy
+    verified: true
     version: $1
 tcp:
 - name: get-request

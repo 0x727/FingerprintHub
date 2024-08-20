@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: rabbit.js messaging example page
+    product: node.js
     rarity: 1
+    vendor: nodejs
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: firewall
     operating_system: Windows
+    product: access_gateway
     rarity: 1
+    vendor: citrix
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'Instance name: $1'
+    product: sql_anywhere
     rarity: 7
+    vendor: sybase
+    verified: true
 tcp:
 - name: sybaseanywhere
   inputs:

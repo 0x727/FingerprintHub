@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: goliath
     rarity: 1
+    vendor: postrank
+    verified: true
 tcp:
 - name: get-request
   inputs:

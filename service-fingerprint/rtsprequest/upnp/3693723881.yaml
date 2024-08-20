@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: ReplayTV UPnP; UPnP $1
+    product: emweb
     rarity: 5
+    vendor: virata
+    verified: true
     version: $SUBST(2,"_",".")
 tcp:
 - name: rtsprequest

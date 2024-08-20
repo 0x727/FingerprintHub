@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: LSCP $2
+    product: linuxsampler
     rarity: 9
+    vendor: linuxsampler
+    verified: true
     version: $1
 tcp:
 - name: lscp

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: specialized
+    product: 963_supervisor
     rarity: 1
+    vendor: trend_control_systems
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sourceviewerserver,service
   severity: info
   metadata:
+    product: netbeans_ide
     rarity: 0
+    vendor: netbeans
+    verified: true
 tcp:
 - name: 'null'
   inputs:

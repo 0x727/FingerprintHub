@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: protocol $1
+    product: vshell
     rarity: 0
+    vendor: vandyke
+    verified: true
     version: $SUBST(2,"_",".")
 tcp:
 - name: 'null'

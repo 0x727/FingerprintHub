@@ -5,7 +5,10 @@ info:
   tags: detect,tech,econtagt,service
   severity: info
   metadata:
+    product: servervantage_agent
     rarity: 1
+    vendor: compuware
+    verified: true
 tcp:
 - name: get-request
   inputs:

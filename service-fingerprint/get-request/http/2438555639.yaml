@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: java_profiler
     rarity: 1
+    vendor: yourkit
+    verified: true
     version: $1 build $2
 tcp:
 - name: get-request

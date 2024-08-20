@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: unregistered
+    product: kpym_telnet_ssh_server
     rarity: 0
+    vendor: kpym
+    verified: true
 tcp:
 - name: 'null'
   inputs:

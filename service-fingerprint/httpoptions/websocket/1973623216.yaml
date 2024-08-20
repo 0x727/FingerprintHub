@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: SimpleHTTP $1; Python $2
+    product: simplehttpserver
     rarity: 4
+    vendor: python
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

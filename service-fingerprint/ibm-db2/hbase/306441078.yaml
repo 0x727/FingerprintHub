@@ -5,7 +5,10 @@ info:
   tags: detect,tech,hbase,service
   severity: info
   metadata:
+    product: hbase
     rarity: 8
+    vendor: apache
+    verified: true
 tcp:
 - name: ibm-db2
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: $2
+    product: kf_web_server
     rarity: 1
+    vendor: keyfocus
+    verified: true
     version: $1
 tcp:
 - name: get-request

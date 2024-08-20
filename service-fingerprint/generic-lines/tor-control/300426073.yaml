@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Authentication required
+    product: tor
     rarity: 1
+    vendor: torproject
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

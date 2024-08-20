@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Build $3; protocol $1
+    product: reflection_for_secure_it
     rarity: 0
+    vendor: attachmate
+    verified: true
     version: $2
 tcp:
 - name: 'null'

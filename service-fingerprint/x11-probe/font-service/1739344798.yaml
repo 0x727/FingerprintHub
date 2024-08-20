@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Unix
+    product: x.org_x11
     rarity: 4
+    vendor: x
+    verified: true
 tcp:
 - name: x11-probe
   inputs:

@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: MSA support
     operating_system: Windows
+    product: mdaemon
     rarity: 0
+    vendor: altn
+    verified: true
     version: $2
 tcp:
 - name: 'null'

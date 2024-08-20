@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Serial port $1
+    product: gpsd
     rarity: 6
+    vendor: gpsd_project
+    verified: true
     version: $2
 tcp:
 - name: lpdstring

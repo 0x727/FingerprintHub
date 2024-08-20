@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: firewall
     info: Lenel LNL-2220 firewall
+    product: targetweb
     rarity: 1
+    vendor: blunk
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: LogiLink WC0002B webcam http config
+    product: goahead_webserver
     rarity: 1
+    vendor: goahead
+    verified: true
 tcp:
 - name: get-request
   inputs:

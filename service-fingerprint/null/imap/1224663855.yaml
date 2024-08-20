@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: imail
     rarity: 0
+    vendor: ipswitch
+    verified: true
 tcp:
 - name: 'null'
   inputs:

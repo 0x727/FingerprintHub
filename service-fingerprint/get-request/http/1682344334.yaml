@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: installation in progress
+    product: glassfish_server
     rarity: 1
+    vendor: sun
+    verified: true
 tcp:
 - name: get-request
   inputs:

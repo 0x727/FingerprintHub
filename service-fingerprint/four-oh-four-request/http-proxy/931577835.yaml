@@ -8,7 +8,10 @@ info:
     device_type: firewall
     fallback:
     - get-request
+    product: panweb
     rarity: 6
+    vendor: paloaltonetworks
+    verified: true
 tcp:
 - name: four-oh-four-request
   inputs:

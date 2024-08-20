@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - get-request
+    product: tor
     rarity: 1
+    vendor: torproject
+    verified: true
 tcp:
 - name: sslsession-req
   inputs:

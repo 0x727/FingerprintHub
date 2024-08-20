@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'Hostname: $4'
+    product: db2
     rarity: 8
+    vendor: ibm
+    verified: true
     version: $1.$2.$3
 tcp:
 - name: ibm-db2-das-udp

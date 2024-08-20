@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     operating_system: Linux
+    product: busybox
     rarity: 4
+    vendor: busybox
+    verified: true
 tcp:
 - name: httpoptions
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: not enabled
+    product: znc
     rarity: 1
+    vendor: znc
+    verified: true
 tcp:
 - name: get-request
   inputs:

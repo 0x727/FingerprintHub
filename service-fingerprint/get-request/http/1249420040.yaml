@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Linux
+    product: http_server
     rarity: 1
+    vendor: apache
+    verified: true
 tcp:
 - name: get-request
   inputs:

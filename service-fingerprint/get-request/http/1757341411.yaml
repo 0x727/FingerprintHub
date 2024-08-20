@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: urbackup
     rarity: 1
+    vendor: martin_raiber
+    verified: true
     version: 2.0.2 or later
 tcp:
 - name: get-request

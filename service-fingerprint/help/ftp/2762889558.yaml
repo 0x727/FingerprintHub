@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Windows
+    product: internet_information_services
     rarity: 3
+    vendor: microsoft
+    verified: true
     version: '7'
 tcp:
 - name: help

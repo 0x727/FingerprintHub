@@ -5,7 +5,10 @@ info:
   tags: detect,tech,symantec-esm,service
   severity: info
   metadata:
+    product: enterprise_security_manager
     rarity: 4
+    vendor: symantec
+    verified: true
 tcp:
 - name: smbprog-neg
   inputs:

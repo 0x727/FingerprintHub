@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'sn: $2'
+    product: poweralert
     rarity: 1
+    vendor: tripp_lite
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

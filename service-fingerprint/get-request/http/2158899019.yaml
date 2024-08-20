@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: phone
+    product: webcam
     rarity: 1
+    vendor: com.pas
+    verified: true
     version: $1
 tcp:
 - name: get-request

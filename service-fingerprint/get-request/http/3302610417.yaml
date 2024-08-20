@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: directory listing
+    product: mongoose
     rarity: 1
+    vendor: cesanta
+    verified: true
     version: '3.7'
 tcp:
 - name: get-request

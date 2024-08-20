@@ -5,7 +5,10 @@ info:
   tags: detect,tech,resin-watchdog,service
   severity: info
   metadata:
+    product: resin
     rarity: 6
+    vendor: caucho
+    verified: true
 tcp:
 - name: ncp
   inputs:

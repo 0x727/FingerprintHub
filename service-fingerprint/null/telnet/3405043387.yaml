@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'device: $1'
+    product: arago
     rarity: 0
+    vendor: arago-project
+    verified: true
     version: $2
 tcp:
 - name: 'null'

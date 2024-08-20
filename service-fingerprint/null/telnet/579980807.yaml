@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: PartedMagic
+    product: busybox
     rarity: 0
+    vendor: busybox
+    verified: true
 tcp:
 - name: 'null'
   inputs:

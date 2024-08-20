@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ident,service
   severity: info
   metadata:
+    product: trillian
     rarity: 3
+    vendor: trillian
+    verified: true
 tcp:
 - name: help
   inputs:

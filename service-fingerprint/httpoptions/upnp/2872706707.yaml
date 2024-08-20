@@ -9,7 +9,10 @@ info:
     - get-request
     info: DVArchive UPnP; UPnP $2
     operating_system: Linux
+    product: emweb
     rarity: 4
+    vendor: virata
+    verified: true
     version: $SUBST(1,"_",".")
 tcp:
 - name: httpoptions

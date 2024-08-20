@@ -8,7 +8,10 @@ info:
     fallback:
     - dnsversion-bind-req
     operating_system: Windows
+    product: adaptive_server
     rarity: 3
+    vendor: sybase
+    verified: true
 tcp:
 - name: dnsversion-bind-req-tcp
   inputs:

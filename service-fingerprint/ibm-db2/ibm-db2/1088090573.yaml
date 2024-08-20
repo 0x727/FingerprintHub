@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ibm-db2,service
   severity: info
   metadata:
+    product: db2
     rarity: 8
+    vendor: ibm
+    verified: true
 tcp:
 - name: ibm-db2
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: inspircd
     rarity: 0
+    vendor: inspire_ircd
+    verified: true
 tcp:
 - name: 'null'
   inputs:

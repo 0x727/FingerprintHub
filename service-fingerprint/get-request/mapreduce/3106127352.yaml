@@ -5,7 +5,10 @@ info:
   tags: detect,tech,mapreduce,service
   severity: info
   metadata:
+    product: mapreduce
     rarity: 1
+    vendor: hadoop
+    verified: true
     version: $1
 tcp:
 - name: get-request

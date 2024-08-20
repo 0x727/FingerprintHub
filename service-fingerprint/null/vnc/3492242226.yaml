@@ -5,7 +5,10 @@ info:
   tags: detect,tech,vnc,service
   severity: info
   metadata:
+    product: ultravnc
     rarity: 0
+    vendor: ultravnc
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: iOS
+    product: ioscallrecorder
     rarity: 1
+    vendor: yaniv_danan
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: $2
+    product: solaris_answerbook2
     rarity: 1
+    vendor: sun
+    verified: true
     version: $1
 tcp:
 - name: get-request

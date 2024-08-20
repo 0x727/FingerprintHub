@@ -5,7 +5,10 @@ info:
   tags: detect,tech,silkroad-online,service
   severity: info
   metadata:
+    product: silkroad_online
     rarity: 0
+    vendor: joymax
+    verified: true
 tcp:
 - name: 'null'
   inputs:

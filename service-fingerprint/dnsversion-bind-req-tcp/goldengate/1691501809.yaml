@@ -7,7 +7,10 @@ info:
   metadata:
     fallback:
     - dnsversion-bind-req
+    product: goldengate
     rarity: 3
+    vendor: oracle
+    verified: true
 tcp:
 - name: dnsversion-bind-req-tcp
   inputs:

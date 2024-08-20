@@ -7,7 +7,10 @@ info:
   metadata:
     hostname: $3
     operating_system: Mac OS X $2
+    product: growl
     rarity: 1
+    vendor: growl
+    verified: true
     version: $1
 tcp:
 - name: generic-lines

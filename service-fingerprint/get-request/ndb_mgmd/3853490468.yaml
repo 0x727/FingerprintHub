@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ndb_mgmd,service
   severity: info
   metadata:
+    product: mysql
     rarity: 1
+    vendor: mysql
+    verified: true
     version: '5.1'
 tcp:
 - name: get-request

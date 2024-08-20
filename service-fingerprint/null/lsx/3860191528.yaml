@@ -5,7 +5,10 @@ info:
   tags: detect,tech,lsx,service
   severity: info
   metadata:
+    product: origin
     rarity: 0
+    vendor: ea
+    verified: true
     version: $SUBST(1,",",".")
 tcp:
 - name: 'null'

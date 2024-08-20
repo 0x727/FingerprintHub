@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: subethasmtp
     rarity: 3
+    vendor: voodoodyne
+    verified: true
     version: $2
 tcp:
 - name: help

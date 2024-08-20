@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Italian
+    product: squid
     rarity: 1
+    vendor: squid-cache
+    verified: true
 tcp:
 - name: get-request
   inputs:

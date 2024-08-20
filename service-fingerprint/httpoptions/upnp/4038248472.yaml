@@ -9,7 +9,10 @@ info:
     - get-request
     info: Debian $1; DLNADOC $2; UPnP $3
     operating_system: Linux
+    product: minidlna
     rarity: 4
+    vendor: minidlna
+    verified: true
     version: $4
 tcp:
 - name: httpoptions

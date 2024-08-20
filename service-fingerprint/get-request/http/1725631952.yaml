@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Chorus Web UI for XBMC/Kodi
+    product: chorus
     rarity: 1
+    vendor: jeremy_graham
+    verified: true
 tcp:
 - name: get-request
   inputs:

@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: printer
     info: Lexmark $1 printer http config
+    product: thttpd
     rarity: 1
+    vendor: acme
+    verified: true
 tcp:
 - name: get-request
   inputs:

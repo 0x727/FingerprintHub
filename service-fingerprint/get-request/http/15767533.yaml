@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: epolicy_orchestrator_agent
     rarity: 1
+    vendor: mcafee
+    verified: true
 tcp:
 - name: get-request
   inputs:

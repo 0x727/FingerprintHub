@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: security-misc
+    product: nexpose
     rarity: 1
+    vendor: rapid7
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

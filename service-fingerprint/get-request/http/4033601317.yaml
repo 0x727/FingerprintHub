@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: remote management
+    product: fhem
     rarity: 1
+    vendor: rudolf_koenig
+    verified: true
 tcp:
 - name: get-request
   inputs:

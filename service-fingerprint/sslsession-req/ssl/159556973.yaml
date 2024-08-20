@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: SSLv3
+    product: openssl
     rarity: 1
+    vendor: openssl
+    verified: true
 tcp:
 - name: sslsession-req
   inputs:

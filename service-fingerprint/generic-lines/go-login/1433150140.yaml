@@ -5,7 +5,10 @@ info:
   tags: detect,tech,go-login,service
   severity: info
   metadata:
+    product: go-global
     rarity: 1
+    vendor: graphon
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

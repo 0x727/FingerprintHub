@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Linux
+    product: cfingerd
     rarity: 1
+    vendor: debian
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

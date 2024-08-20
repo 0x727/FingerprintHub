@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: cyrus_imap_server
     rarity: 1
+    vendor: cmu
+    verified: true
 tcp:
 - name: get-request
   inputs:

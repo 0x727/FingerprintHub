@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: application_server_web_cache
     rarity: 1
+    vendor: oracle
+    verified: true
     version: $2
 tcp:
 - name: get-request

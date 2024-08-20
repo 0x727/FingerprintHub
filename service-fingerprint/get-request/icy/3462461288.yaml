@@ -7,7 +7,10 @@ info:
   metadata:
     info: 'stream name: $2; genre: $3; URL: $4; bitrate: $5'
     operating_system: Linux
+    product: dnas
     rarity: 1
+    vendor: shoutcast
+    verified: true
     version: $1
 tcp:
 - name: get-request

@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: Debian
     operating_system: Linux
+    product: cyrus_imap_server
     rarity: 0
+    vendor: cmu
+    verified: true
     version: $2
 tcp:
 - name: 'null'

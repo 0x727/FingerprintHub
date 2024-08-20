@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: SASL enabled
+    product: dovecot
     rarity: 0
+    vendor: dovecot
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: CherryPy httpd
+    product: cherrypy
     rarity: 1
+    vendor: cherrypy
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

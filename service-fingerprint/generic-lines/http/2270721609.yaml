@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: no password
+    product: system_intrusion_analysis_and_reporting_environment
     rarity: 1
+    vendor: intersectalliance
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

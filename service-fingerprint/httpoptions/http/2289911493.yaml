@@ -8,7 +8,10 @@ info:
     fallback:
     - get-request
     info: PeerSec MatrixSSL $2
+    product: matrixssl
     rarity: 4
+    vendor: peersec
+    verified: true
     version: $1
 tcp:
 - name: httpoptions

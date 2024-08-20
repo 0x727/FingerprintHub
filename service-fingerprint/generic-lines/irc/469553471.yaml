@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: flip
     rarity: 1
+    vendor: freenet
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

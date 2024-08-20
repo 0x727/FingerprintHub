@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: JBoss WildFly Application Server $1
+    product: jboss_wildfly_application_server
     rarity: 1
+    vendor: redhat
+    verified: true
     version: $3 $4
 tcp:
 - name: get-request

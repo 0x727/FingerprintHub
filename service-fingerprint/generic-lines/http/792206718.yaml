@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: devicewise_m2m
     rarity: 1
+    vendor: telit
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

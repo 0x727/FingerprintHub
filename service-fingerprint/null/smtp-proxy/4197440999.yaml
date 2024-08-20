@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: proxy server
     hostname: $1
+    product: interscan_messaging_security_suite
     rarity: 0
+    vendor: trendmicro
+    verified: true
 tcp:
 - name: 'null'
   inputs:

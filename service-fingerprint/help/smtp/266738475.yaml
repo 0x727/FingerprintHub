@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: enterprise_firewall
     rarity: 3
+    vendor: symantec
+    verified: true
 tcp:
 - name: help
   inputs:

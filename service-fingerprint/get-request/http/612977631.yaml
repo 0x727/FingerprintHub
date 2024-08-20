@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: broadband router
     info: USRobotics USR9107A ADSL http config
+    product: micro_httpd
     rarity: 1
+    vendor: acme
+    verified: true
 tcp:
 - name: get-request
   inputs:

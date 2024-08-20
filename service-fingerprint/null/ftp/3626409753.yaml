@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ftp,service
   severity: info
   metadata:
+    product: communigate_pro
     rarity: 0
+    vendor: stalker
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: Apple iCal Server; Twisted $1
+    product: twistedweb
     rarity: 1
+    vendor: twistedmatrix
+    verified: true
     version: $2
 tcp:
 - name: get-request

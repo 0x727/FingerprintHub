@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     hostname: $1
+    product: burp_suite
     rarity: 0
+    vendor: portswigger
+    verified: true
 tcp:
 - name: 'null'
   inputs:

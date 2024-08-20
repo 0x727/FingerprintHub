@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pop3,service
   severity: info
   metadata:
+    product: iplanet_messaging_server
     rarity: 0
+    vendor: sun
+    verified: true
     version: $1
 tcp:
 - name: 'null'

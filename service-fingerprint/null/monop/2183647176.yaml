@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: 'id: $1'
+    product: monopd
     rarity: 0
+    vendor: gtkatlantic
+    verified: true
     version: $2
 tcp:
 - name: 'null'

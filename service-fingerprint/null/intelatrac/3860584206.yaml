@@ -5,7 +5,10 @@ info:
   tags: detect,tech,intelatrac,service
   severity: info
   metadata:
+    product: wonderware_intelatrac
     rarity: 0
+    vendor: invensys
+    verified: true
 tcp:
 - name: 'null'
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,ldap,service
   severity: info
   metadata:
+    product: keyserver
     rarity: 6
+    vendor: pgp
+    verified: true
 tcp:
 - name: ldapbind-req
   inputs:

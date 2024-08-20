@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: revision $2
     operating_system: Unix
+    product: wu_ftpd
     rarity: 0
+    vendor: redhat
+    verified: true
     version: $3
 tcp:
 - name: 'null'

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,http,service
   severity: info
   metadata:
+    product: 4d
     rarity: 1
+    vendor: 4d_sas
+    verified: true
     version: $2
 tcp:
 - name: get-request

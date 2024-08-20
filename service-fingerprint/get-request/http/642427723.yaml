@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Data ONTAP $1
+    product: data_ontap
     rarity: 1
+    vendor: netapp
+    verified: true
 tcp:
 - name: get-request
   inputs:

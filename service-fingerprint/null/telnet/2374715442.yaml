@@ -8,7 +8,10 @@ info:
     device_type: remote management
     hostname: $2
     operating_system: Solaris
+    product: advanced_lights_out_manager
     rarity: 0
+    vendor: sun
+    verified: true
     version: $1
 tcp:
 - name: 'null'

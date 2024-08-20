@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: specialized
+    product: niagara
     rarity: 1
+    vendor: tridium
+    verified: true
     version: $1
 tcp:
 - name: get-request

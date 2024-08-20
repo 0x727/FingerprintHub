@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: TeamSpeak 2.X http admin
+    product: teamspeak2
     rarity: 1
+    vendor: teamspeak
+    verified: true
     version: $1
 tcp:
 - name: get-request

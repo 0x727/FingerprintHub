@@ -8,7 +8,10 @@ info:
     device_type: firewall
     fallback:
     - get-request
+    product: security_gateway_software
     rarity: 6
+    vendor: astaro
+    verified: true
 tcp:
 - name: four-oh-four-request
   inputs:

@@ -5,7 +5,10 @@ info:
   tags: detect,tech,sap-logviewer,service
   severity: info
   metadata:
+    product: netweaver_logviewer
     rarity: 0
+    vendor: sap
+    verified: true
     version: $1
 tcp:
 - name: 'null'

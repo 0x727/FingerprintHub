@@ -9,7 +9,10 @@ info:
     - get-request
     info: 'arch: $1; UPnP $2; DLNADOC $3'
     operating_system: Linux
+    product: platinum
     rarity: 5
+    vendor: plutinosoft
+    verified: true
     version: $4
 tcp:
 - name: sipoptions

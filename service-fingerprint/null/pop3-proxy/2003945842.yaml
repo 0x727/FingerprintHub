@@ -5,7 +5,10 @@ info:
   tags: detect,tech,pop3-proxy,service
   severity: info
   metadata:
+    product: pgp_universal_server
     rarity: 0
+    vendor: symantec
+    verified: true
 tcp:
 - name: 'null'
   inputs:

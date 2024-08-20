@@ -9,7 +9,10 @@ info:
     fallback:
     - get-request
     info: Eltex TAU-1M.IP VoIP gateway, version $1
+    product: sofia-sip
     rarity: 5
+    vendor: sofia-sip
+    verified: true
     version: $2
 tcp:
 - name: sipoptions

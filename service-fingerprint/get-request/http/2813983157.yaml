@@ -7,7 +7,10 @@ info:
   metadata:
     device_type: media device
     info: Cedar Audio DNS 8 noise supressor
+    product: rl-arm
     rarity: 1
+    vendor: keil
+    verified: true
     version: $1
 tcp:
 - name: get-request

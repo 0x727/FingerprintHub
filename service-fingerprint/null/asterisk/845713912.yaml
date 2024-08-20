@@ -5,7 +5,10 @@ info:
   tags: detect,tech,asterisk,service
   severity: info
   metadata:
+    product: asterisk
     rarity: 0
+    vendor: digium
+    verified: true
     version: $1
 tcp:
 - name: 'null'

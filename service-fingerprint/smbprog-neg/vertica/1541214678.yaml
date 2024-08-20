@@ -5,7 +5,10 @@ info:
   tags: detect,tech,vertica,service
   severity: info
   metadata:
+    product: vertica
     rarity: 4
+    vendor: hp
+    verified: true
     version: 7.0.1
 tcp:
 - name: smbprog-neg

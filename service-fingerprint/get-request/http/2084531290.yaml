@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: WAP
+    product: micro_httpd
     rarity: 1
+    vendor: acme
+    verified: true
 tcp:
 - name: get-request
   inputs:

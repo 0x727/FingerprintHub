@@ -5,7 +5,10 @@ info:
   tags: detect,tech,qemu-vlan,service
   severity: info
   metadata:
+    product: qemu
     rarity: 5
+    vendor: qemu
+    verified: true
 tcp:
 - name: kerberos
   inputs:

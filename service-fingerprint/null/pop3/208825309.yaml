@@ -8,7 +8,10 @@ info:
     hostname: $1
     info: Mac OS X $3
     operating_system: Mac OS X
+    product: cyrus_imap_server
     rarity: 0
+    vendor: cmu
+    verified: true
     version: $2
 tcp:
 - name: 'null'

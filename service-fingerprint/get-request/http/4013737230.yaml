@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: DirPortFrontPage configured
+    product: tor
     rarity: 1
+    vendor: torproject
+    verified: true
 tcp:
 - name: get-request
   inputs:

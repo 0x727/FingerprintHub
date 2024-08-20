@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     info: JSP $2
+    product: jsp
     rarity: 1
+    vendor: oracle
+    verified: true
     version: $1
 tcp:
 - name: get-request

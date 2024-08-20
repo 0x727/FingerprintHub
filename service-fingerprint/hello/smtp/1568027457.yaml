@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: NetWare
+    product: groupwise
     rarity: 8
+    vendor: novell
+    verified: true
 tcp:
 - name: hello
   inputs:

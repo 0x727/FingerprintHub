@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     operating_system: Unix
+    product: sendmail
     rarity: 3
+    vendor: sendmail
+    verified: true
     version: $1
 tcp:
 - name: help

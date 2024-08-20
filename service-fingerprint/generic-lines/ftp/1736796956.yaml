@@ -6,7 +6,10 @@ info:
   severity: info
   metadata:
     device_type: media device
+    product: ftpd
     rarity: 1
+    vendor: mtheall
+    verified: true
 tcp:
 - name: generic-lines
   inputs:

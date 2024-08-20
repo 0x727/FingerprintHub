@@ -5,7 +5,10 @@ info:
   tags: detect,tech,smtp,service
   severity: info
   metadata:
+    product: postfix
     rarity: 8
+    vendor: postfix
+    verified: true
 tcp:
 - name: hello
   inputs:
