@@ -1,0 +1,23 @@
+id: processplus
+info:
+  name: processplus
+  author: cn-kali-team
+  tags: detect,tech,processplus
+  severity: info
+  metadata:
+    fofa-query:
+    - '"process plus" && icon_hash="1772087922"'
+    product: processplus
+    vendor: perkinelmer
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - process plus
+  - type: favicon
+    hash:
+    - '1772087922'
