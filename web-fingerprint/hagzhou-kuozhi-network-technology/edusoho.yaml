@@ -15,9 +15,6 @@ http:
   path:
   - '{{BaseURL}}/'
   matchers:
-  - type: regex
-    regex:
-    - (?mi)<title[^>]*> (body="powered by edusoho" .*?</title>
-    - (?mi)<title[^>]*> body="powered by <a href=http://www.edusoho.com/ target=_blank>edusoho" .*?</title>
-    - (?mi)<title[^>]*> body="var app").*?</title>
-    - (?mi)<title[^>]*>powered by edusoho" .*?</title>
+  - type: word
+    words:
+    - Powered by <a href="http://www.edusoho.com/" target="_blank">EduSoho
