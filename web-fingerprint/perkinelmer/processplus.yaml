@@ -18,6 +18,7 @@ http:
   - type: word
     words:
     - process plus
+    case-insensitive: true
   - type: favicon
     hash:
     - '1772087922'

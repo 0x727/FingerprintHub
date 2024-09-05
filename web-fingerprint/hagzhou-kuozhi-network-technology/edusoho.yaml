@@ -17,4 +17,5 @@ http:
   matchers:
   - type: word
     words:
-    - Powered by <a href="http://www.edusoho.com/" target="_blank">EduSoho
+    - powered by <a href="http://www.edusoho.com/" target="_blank">edusoho
+    case-insensitive: true

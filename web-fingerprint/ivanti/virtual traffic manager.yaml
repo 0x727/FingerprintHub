@@ -19,6 +19,7 @@ http:
   - type: word
     words:
     - apps/zxtm/login.cgi
+    case-insensitive: true
   - type: favicon
     hash:
     - '1862800928'
