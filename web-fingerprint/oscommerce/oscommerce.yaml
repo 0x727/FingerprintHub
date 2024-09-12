@@ -1,0 +1,20 @@
+id: oscommerce
+info:
+  name: oscommerce
+  author: cn-kali-team
+  tags: detect,tech,oscommerce
+  severity: info
+  metadata:
+    product: oscommerce
+    shodan-query:
+    - html:"oscommerce"
+    vendor: oscommerce
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - oscommerce

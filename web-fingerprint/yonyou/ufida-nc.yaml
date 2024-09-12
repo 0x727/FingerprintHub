@@ -1,0 +1,23 @@
+id: ufida-nc
+info:
+  name: ufida-nc
+  author: cn-kali-team
+  tags: detect,tech,ufida-nc
+  severity: info
+  metadata:
+    fofa-query:
+    - app="用友-移动系统管理"
+    - app="yonyou-ufida-nc"
+    - icon_hash="1085941792"
+    - app="用友-ufida-nc
+    product: ufida-nc
+    vendor: yonyou
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '1085941792'
