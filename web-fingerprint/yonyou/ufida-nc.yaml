@@ -21,3 +21,21 @@ http:
   - type: favicon
     hash:
     - '1085941792'
+  - type: word
+    words:
+    - ufida_iufo_over.png
+    - ufida_nc.png
+    condition: and
+    case-insensitive: true
+  - type: word
+    words:
+    - logo/images/
+    - ufida
+    condition: and
+    case-insensitive: true
+  - type: word
+    words:
+    - <div id="nc_img" onmouseover="overimage('nc');
+    - <div id="nc_text">
+    - logo/images/ufida_nc.png
+    case-insensitive: true

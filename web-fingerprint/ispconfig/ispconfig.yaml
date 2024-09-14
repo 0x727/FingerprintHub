@@ -20,3 +20,7 @@ http:
     regex:
     - (?mi)<title[^>]*>ispconfig" http.favicon.hash:483383992.*?</title>
     - (?mi)<title[^>]*>ispconfig.*?</title>
+  - type: word
+    words:
+    - powered by <a href="http://www.ispconfig.org
+    case-insensitive: true

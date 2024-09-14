@@ -4,13 +4,31 @@ pub mod nmap;
 mod service;
 mod v3;
 
+use std::fs::{File, OpenOptions};
+use std::path::PathBuf;
 use crate::error::{new_io_error, Result};
 pub use crate::service::match_line::MatchLine;
 pub use crate::service::probe::{Probe, ZeroDuration};
 use engine::request::PortRange;
 use pinyin::ToPinyin;
 use std::str::{FromStr, Lines};
+use engine::template::Template;
 pub use v3::{V3WebFingerPrint, WebFingerPrint};
+
+pub fn load_yaml(path: &PathBuf) -> serde_yaml::Result<Template> {
+  serde_yaml::from_reader::<std::fs::File, Template>(File::open(&path).unwrap())
+}
+
+pub fn save_yaml(path: PathBuf, template: Template) -> serde_yaml::Result<()> {
+  let f = OpenOptions::new()
+    .write(true)
+    .create(true)
+    .append(false)
+    .truncate(true)
+    .open(&path)
+    .unwrap();
+  serde_yaml::to_writer(f, &template)
+}
 
 // 转下划线风格
 pub fn to_kebab_case(input: &str) -> String {

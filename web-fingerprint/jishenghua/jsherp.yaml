@@ -20,6 +20,7 @@ http:
   - type: word
     words:
     - jsherp-boot
+    case-insensitive: true
   - type: favicon
     hash:
     - '-1298131932'

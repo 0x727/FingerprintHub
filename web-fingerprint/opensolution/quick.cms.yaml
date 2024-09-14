@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - quick.cms v6.7
+    case-insensitive: true

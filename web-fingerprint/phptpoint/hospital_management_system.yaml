@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - hospital management system
+    case-insensitive: true

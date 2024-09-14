@@ -20,3 +20,14 @@ http:
   - type: word
     words:
     - wuzhicms
+    case-insensitive: true
+  - type: word
+    words:
+    - content="wuzhicms
+    - powered by wuzhicms
+    condition: and
+    case-insensitive: true
+  - type: word
+    words:
+    - <meta name="generator" content="wuzhicms
+    case-insensitive: true

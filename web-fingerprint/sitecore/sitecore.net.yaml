@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - sitecore
+    case-insensitive: true

@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - ueditor
+    case-insensitive: true

@@ -18,3 +18,13 @@ http:
   - type: word
     words:
     - oscommerce
+    case-insensitive: true
+  - type: word
+    words:
+    - src="images/oscommerce.png
+    case-insensitive: true
+  - type: word
+    words:
+    - 'set-cookie: oscsid='
+    part: header
+    case-insensitive: true

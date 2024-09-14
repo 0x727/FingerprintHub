@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - /citrix/xenapp
+    case-insensitive: true

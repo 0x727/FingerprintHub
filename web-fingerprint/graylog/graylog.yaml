@@ -18,3 +18,7 @@ http:
   - type: regex
     regex:
     - (?mi)<title[^>]*>graylog web interface.*?</title>
+  - type: word
+    words:
+    - org.graylog.plugins.pipelineprocessor.processorplugin
+    case-insensitive: true

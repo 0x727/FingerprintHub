@@ -5,7 +5,7 @@ use engine::request::{HttpRaw, Requests};
 use engine::template::Template;
 use helper::cli::HelperConfig;
 use helper::nmap::nmap;
-use helper::{to_kebab_case, V3WebFingerPrint};
+use helper::{load_yaml, save_yaml, to_kebab_case, V3WebFingerPrint};
 use std::collections::BTreeMap;
 use std::env;
 use std::fs::{File, OpenOptions};
@@ -138,7 +138,7 @@ fn sync_nuclei() {
                       .join(sub_tag)
                       .join(yaml_path.file_name().unwrap().to_string_lossy().to_string()),
                   )
-                  .unwrap();
+                    .unwrap();
                   break;
                 }
               }
@@ -153,7 +153,7 @@ fn sync_nuclei() {
                     .join(product)
                     .join(yaml_path.file_name().unwrap().to_string_lossy().to_string()),
                 )
-                .unwrap();
+                  .unwrap();
               }
               continue;
             }
@@ -180,6 +180,19 @@ fn sync_nuclei() {
   println!("{}", count);
 }
 
+fn merge_matcher(save_path: PathBuf, del_path: PathBuf) {
+  if let Ok(del) = load_yaml(&del_path) {
+    let del_matcher: Vec<Matcher> = del.requests.http.iter().map(|h| h.operators.matchers.clone()).flatten().collect();
+    if let Ok(mut save) = load_yaml(&save_path) {
+      if let Some(http) = save.requests.http.first_mut() {
+        http.operators.matchers.extend(del_matcher);
+        save_yaml(save_path, save).unwrap();
+        std::fs::remove_file(&del_path).unwrap();
+      }
+    }
+  }
+}
+
 // 将有厂商和产品的指纹移动到已经分类好的文件夹
 fn rename_fingerprint_yaml() {
   let current_plugin_dir = env::current_dir().unwrap().join("plugins");
@@ -194,6 +207,7 @@ fn rename_fingerprint_yaml() {
       match serde_yaml::from_reader::<std::fs::File, Template>(f) {
         Ok(template) => {
           let vpf = template.info.get_vpf();
+          // 未知指纹名称和插件名称相同，如果没有这个指纹就复制到已知指纹文件夹
           if all_plugins_vendor_name.contains(&template.id) {
             let same = current_plugin_dir.join(&template.id);
             if same.is_dir() {
@@ -203,7 +217,12 @@ fn rename_fingerprint_yaml() {
                 unknown_yaml_path.to_string_lossy(),
                 finger.to_string_lossy()
               );
-              std::fs::rename(&unknown_yaml_path, finger).unwrap();
+              if !finger.exists() {
+                std::fs::rename(&unknown_yaml_path, finger).unwrap();
+              } else {
+                // 已知指纹文件夹已经有了指纹了，把未知的删除掉
+                merge_matcher(finger, unknown_yaml_path);
+              }
               continue;
             }
           }
@@ -218,7 +237,12 @@ fn rename_fingerprint_yaml() {
                   unknown_yaml_path.to_string_lossy(),
                   finger.to_string_lossy()
                 );
-                std::fs::rename(&unknown_yaml_path, finger).unwrap();
+                if !finger.exists() {
+                  std::fs::rename(&unknown_yaml_path, finger).unwrap();
+                } else {
+                  // 已知指纹文件夹已经有了指纹了，把未知的删除掉
+                  merge_matcher(finger, unknown_yaml_path);
+                }
                 continue;
               }
             }
@@ -238,7 +262,12 @@ fn rename_fingerprint_yaml() {
                 unknown_yaml_path.to_string_lossy(),
                 finger.to_string_lossy()
               );
-              std::fs::rename(&unknown_yaml_path, finger).unwrap();
+              if !finger.exists() {
+                std::fs::rename(&unknown_yaml_path, finger).unwrap();
+              } else {
+                // 已知指纹文件夹已经有了指纹了，把未知的删除掉
+                merge_matcher(finger, unknown_yaml_path);
+              }
               continue;
             }
           }
@@ -253,7 +282,13 @@ fn rename_fingerprint_yaml() {
     for yaml_path in find_yaml_file(&current_plugin_dir.join(name), false) {
       let finger_path = current_fingerprint_dir.join(name);
       std::fs::create_dir_all(&finger_path).unwrap();
-      std::fs::rename(&yaml_path, finger_path.join(yaml_path.file_name().unwrap())).unwrap();
+      let finger = finger_path.join(yaml_path.file_name().unwrap());
+      if !finger.exists() {
+        std::fs::rename(&yaml_path, finger).unwrap();
+      } else {
+        // 已知指纹文件夹已经有了指纹了，把未知的删除掉
+        merge_matcher(finger, yaml_path);
+      }
     }
   }
 }
