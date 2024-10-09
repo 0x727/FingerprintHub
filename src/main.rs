@@ -138,7 +138,7 @@ fn sync_nuclei() {
                       .join(sub_tag)
                       .join(yaml_path.file_name().unwrap().to_string_lossy().to_string()),
                   )
-                    .unwrap();
+                  .unwrap();
                   break;
                 }
               }
@@ -153,7 +153,7 @@ fn sync_nuclei() {
                     .join(product)
                     .join(yaml_path.file_name().unwrap().to_string_lossy().to_string()),
                 )
-                  .unwrap();
+                .unwrap();
               }
               continue;
             }
@@ -182,7 +182,12 @@ fn sync_nuclei() {
 
 fn merge_matcher(save_path: PathBuf, del_path: PathBuf) {
   if let Ok(del) = load_yaml(&del_path) {
-    let del_matcher: Vec<Matcher> = del.requests.http.iter().map(|h| h.operators.matchers.clone()).flatten().collect();
+    let del_matcher: Vec<Matcher> = del
+      .requests
+      .http
+      .iter()
+      .flat_map(|h| h.operators.matchers.clone())
+      .collect();
     if let Ok(mut save) = load_yaml(&save_path) {
       if let Some(http) = save.requests.http.first_mut() {
         http.operators.matchers.extend(del_matcher);
@@ -450,7 +455,7 @@ fn cse_to_finger() {
       let product_path = current_plugin_dir.join(&vendor_path).join(&product);
       let templates: Vec<Template> = find_yaml_file(&product_path, false)
         .iter()
-        .map(|x| File::open(x))
+        .map(File::open)
         .filter_map(|f| f.ok())
         .filter_map(|f| serde_yaml::from_reader::<std::fs::File, Template>(f).ok())
         .collect();
@@ -552,7 +557,7 @@ fn cse_to_template(one_cse: CSE, vpf: VPF) -> Template {
     stop_at_first_match: false,
     variables: Default::default(),
   };
-  return t;
+  t
 }
 
 fn v3_to_v4(v3_path: PathBuf) {
@@ -573,7 +578,7 @@ fn v3_to_v4(v3_path: PathBuf) {
     let v3_finger: V3WebFingerPrint = serde_yaml::from_reader(v3_file).unwrap();
     let template: Template = v3_finger.into();
     if !all_product.contains(&template.info.name) {
-      if let Some((_x, y)) = template.info.name.split_once("-") {
+      if let Some((_x, y)) = template.info.name.split_once('-') {
         if all_product.contains(&y.to_string()) {
           continue;
         }

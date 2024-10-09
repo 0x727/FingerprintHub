@@ -127,7 +127,7 @@ fn match_line_to_info(m: &MatchLine, fp: &Probe) -> Info {
   }
   if !m.version_info.cpe.is_empty() {
     for cpe in m.version_info.cpe.iter() {
-      let uri = format!("cpe:2.3:{}{}", cpe.to_string(), ":".repeat(10 - cpe.to_string().matches(':').count()));
+      let uri = format!("cpe:2.3:{}{}", cpe, ":".repeat(10 - cpe.to_string().matches(':').count()));
       let cpe_uri = nvd_cpe::CPEName::from_uri(&uri).unwrap();
       match cpe_uri.part.to_string().as_str() {
         "a" => {

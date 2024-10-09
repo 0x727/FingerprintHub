@@ -16,7 +16,7 @@ use engine::template::Template;
 pub use v3::{V3WebFingerPrint, WebFingerPrint};
 
 pub fn load_yaml(path: &PathBuf) -> serde_yaml::Result<Template> {
-  serde_yaml::from_reader::<std::fs::File, Template>(File::open(&path).unwrap())
+  serde_yaml::from_reader::<std::fs::File, Template>(File::open(path).unwrap())
 }
 
 pub fn save_yaml(path: PathBuf, template: Template) -> serde_yaml::Result<()> {
@@ -25,7 +25,7 @@ pub fn save_yaml(path: PathBuf, template: Template) -> serde_yaml::Result<()> {
     .create(true)
     .append(false)
     .truncate(true)
-    .open(&path)
+    .open(path)
     .unwrap();
   serde_yaml::to_writer(f, &template)
 }
@@ -205,7 +205,7 @@ pub fn hans_to_pinyin(hans: &str) -> String {
       pinyin_str.push(c);
     }
   }
-  pinyin_str = pinyin_str.replace(" ", "-");
+  pinyin_str = pinyin_str.replace(' ', "-");
   pinyin_str = pinyin_str.replacen("--", "-", 10);
   pinyin_str
 }

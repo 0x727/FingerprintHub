@@ -54,10 +54,10 @@ pub struct WebFingerPrint {
   pub match_rules: WebFingerPrintMatch,
 }
 
-impl Into<Template> for V3WebFingerPrint {
-  fn into(self) -> Template {
+impl From<V3WebFingerPrint> for Template {
+  fn from(val: V3WebFingerPrint) -> Self {
     let mut info = Info {
-      name: self.name.to_lowercase().clone(),
+      name: val.name.to_lowercase().clone(),
       severity: Severity::Info,
       author: vec!["cn-kali-team".to_string()],
       tags: vec!["detect".to_string(), "tech".to_string()],
@@ -65,14 +65,14 @@ impl Into<Template> for V3WebFingerPrint {
     };
     info.set_vpf(VPF {
       vendor: "00_unknown".to_string(),
-      product: self.name.clone(),
+      product: val.name.clone(),
       framework: None,
       verified: false,
     });
     let mut index = Requests::default_web_index();
-    index.http[0].operators.matchers = v3_finger_to_matcher(&self.fingerprint);
+    index.http[0].operators.matchers = v3_finger_to_matcher(&val.fingerprint);
     Template {
-      id: hans_to_pinyin(&self.name).to_lowercase(),
+      id: hans_to_pinyin(&val.name).to_lowercase(),
       info,
       flow: None,
       requests: index,
@@ -98,7 +98,7 @@ fn v3_finger_to_matcher(finger: &Vec<WebFingerPrint>) -> Vec<Matcher> {
           format!(
             "{}: {}",
             k.to_lowercase(),
-            v.trim_end_matches("*").to_lowercase()
+            v.trim_end_matches('*').to_lowercase()
           )
         })
         .collect::<Vec<String>>(),
@@ -125,7 +125,7 @@ fn v3_finger_to_matcher(finger: &Vec<WebFingerPrint>) -> Vec<Matcher> {
     ms.push(Matcher {
       part: Part::Header,
       matcher_type: MatcherType::Word(Word {
-        words: header.into_iter().map(|x| x).collect(),
+        words: header.into_iter().collect(),
       }),
       ..Matcher::default()
     })
@@ -133,7 +133,7 @@ fn v3_finger_to_matcher(finger: &Vec<WebFingerPrint>) -> Vec<Matcher> {
   if !favicon.is_empty() {
     ms.push(Matcher {
       matcher_type: MatcherType::Favicon(Favicon {
-        hash: favicon.into_iter().map(|x| x).collect(),
+        hash: favicon.into_iter().collect(),
       }),
       ..Matcher::default()
     })
@@ -141,11 +141,11 @@ fn v3_finger_to_matcher(finger: &Vec<WebFingerPrint>) -> Vec<Matcher> {
   if !or_word.is_empty() {
     ms.push(Matcher {
       matcher_type: MatcherType::Word(Word {
-        words: or_word.into_iter().map(|x| x).collect(),
+        words: or_word.into_iter().collect(),
       }),
       condition: Condition::Or,
       ..Matcher::default()
     })
   }
-  return ms;
+  ms
 }
