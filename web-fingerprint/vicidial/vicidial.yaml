@@ -18,3 +18,7 @@ http:
   - type: favicon
     hash:
     - '1375401192'
+  - type: word
+    words:
+    - url=/vicidial/welcome.php
+    case-insensitive: true
