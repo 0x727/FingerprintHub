@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - ruijie.com.cn
+    case-insensitive: true

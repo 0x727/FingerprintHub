@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - onedev.io
+    case-insensitive: true

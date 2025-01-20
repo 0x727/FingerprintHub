@@ -19,8 +19,8 @@ http:
     part: header
     case-insensitive: true
   extractors:
-    - name: version
-      type: regex
-      part: header
-      regex:
-        - (?x)nginx\/(\d+\.\d+\.\d+)
+  - name: version
+    part: header
+    type: regex
+    regex:
+    - (?x)nginx\/(\d+\.\d+\.\d+)
