@@ -83,7 +83,7 @@ info:
 | reference   | Option\<Vec\<String\>\> | (可选)引用参考链接                                 |
 
 - 其中的`metadata`内置有意义的字段
-    - 存储了CPE解析后的厂商`product`，产品信息`vendor`和是否已经经过验证`verified`，作用：关联nuclei漏洞验证插件
+    - 存储了CPE解析后的厂商`vendor`，产品信息`product`和是否已经经过验证`verified`，作用：关联nuclei漏洞验证插件
     - 在服务指纹中储存了版本信息，后面编写服务指纹规则会详细描述
 
 - info中的`metadata`十分重要，它是指纹和漏洞关联的依据。要明白如何进行漏洞关联首先要了解什么是CPE：
