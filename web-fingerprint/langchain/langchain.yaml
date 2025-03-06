@@ -15,5 +15,5 @@ http:
   matchers:
   - type: word
     words:
-    - <title>LangChain Chat</title>
+    - <title>langchain chat</title>
     case-insensitive: true

@@ -28,6 +28,7 @@ http:
     - fatal error
     - php.ini
     - the requested resource <code class="url">
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*>"fatal error.*?</title>

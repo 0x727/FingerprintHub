@@ -15,10 +15,9 @@ http:
   matchers:
   - type: word
     words:
-    - content="Kubeflow Central Dashboard"
+    - content="kubeflow central dashboard"
     case-insensitive: true
   - type: favicon
     hash:
-    - "-1203021870"
+    - '-1203021870'
     - 09282f0ea1a467a103d97ddfb8c1217c
-

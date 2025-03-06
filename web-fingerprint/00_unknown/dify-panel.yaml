@@ -15,8 +15,8 @@ http:
   matchers:
   - type: word
     words:
-    - <title>Dify</title>
+    - <title>dify</title>
     case-insensitive: true
   - type: favicon
     hash:
-    - "97378986"
+    - '97378986'
