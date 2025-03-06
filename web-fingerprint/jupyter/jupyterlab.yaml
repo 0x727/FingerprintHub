@@ -1,13 +1,13 @@
-id: jupyterhub
+id: jupyterlab
 info:
-  name: jupyterhub
+  name: jupyterlab
   author: cn-kali-team
-  tags: detect,tech,jupyterhub
+  tags: detect,tech,jupyterlab
   severity: info
   metadata:
-    product: jupyterhub
+    product: jupyterlab
     shodan-query:
-    - http.title:"jupyterhub"
+    - http.title:"jupyterlab"
     vendor: jupyter
     verified: true
 http:
@@ -17,8 +17,8 @@ http:
   matchers:
   - type: regex
     regex:
-    - (?mi)<title[^>]*>jupyterhub.*?</title>
+    - (?mi)<title[^>]*>jupyterlab.*?</title>
   - type: word
     words:
-    - <title>jupyterhub</title>
+    - <title>jupyterlab</title>
     case-insensitive: true

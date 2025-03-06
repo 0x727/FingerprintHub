@@ -1,13 +1,13 @@
-id: jupyterhub
+id: langchain
 info:
-  name: jupyterhub
+  name: langchain
   author: cn-kali-team
-  tags: detect,tech,jupyterhub
+  tags: detect,tech,langchain
   severity: info
   metadata:
-    product: jupyterhub
-    vendor: 00_unknown
-    verified: false
+    product: langchain
+    vendor: langchain
+    verified: true
 http:
 - method: GET
   path:
@@ -15,5 +15,5 @@ http:
   matchers:
   - type: word
     words:
-    - <title>jupyterhub</title>
+    - <title>LangChain Chat</title>
     case-insensitive: true
