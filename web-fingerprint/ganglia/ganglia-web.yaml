@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - ganglia_form.submit()
+    case-insensitive: true
