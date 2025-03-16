@@ -21,3 +21,7 @@ http:
   - type: favicon
     hash:
     - '1691956220'
+  - type: word
+    words:
+    - 分布式任务调度平台xxl-job
+    case-insensitive: true
