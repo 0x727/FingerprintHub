@@ -18,6 +18,7 @@ http:
   - type: word
     words:
     - shoretel
+    case-insensitive: true
   - type: favicon
     hash:
     - '268280373'

@@ -28,3 +28,4 @@ http:
     - projectsend
     - projectsend setup
     - provided by projectsend
+    case-insensitive: true
