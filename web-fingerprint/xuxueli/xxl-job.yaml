@@ -7,7 +7,7 @@ info:
   metadata:
     fofa-query:
     - icon_hash=1691956220
-    product: xxl-job
+    product: xxljob
     shodan-query:
     - http.favicon.hash:1691956220
     vendor: xuxueli
