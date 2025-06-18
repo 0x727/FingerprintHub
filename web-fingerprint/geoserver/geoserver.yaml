@@ -1,0 +1,22 @@
+id: geoserver
+info:
+  name: geoserver
+  author: cn-kali-team
+  tags: detect,tech,geoserver
+  severity: info
+  metadata:
+    fofa-query:
+    - app="geoserver"
+    product: geoserver
+    shodan-query:
+    - html:"/geoserver/"
+    vendor: geoserver
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /geoserver/
