@@ -17,10 +17,10 @@ fn matchline_to_ext(m: &MatchLine) -> Extractor {
     extractor_type: ExtractorType::Regex(engine::extractors::ERegex {
       regex: vec![m.pattern.to_string()],
       group: None,
+      compiled_regex: vec![],
     }),
     internal: false,
     case_insensitive: false,
-    regex: Vec::new(),
   }
 }
 
@@ -127,17 +127,19 @@ fn match_line_to_info(m: &MatchLine, fp: &Probe) -> Info {
   }
   if !m.version_info.cpe.is_empty() {
     for cpe in m.version_info.cpe.iter() {
-      let uri = format!("cpe:2.3:{}{}", cpe, ":".repeat(10 - cpe.to_string().matches(':').count()));
+      let uri = format!(
+        "cpe:2.3:{}{}",
+        cpe,
+        ":".repeat(10 - cpe.to_string().matches(':').count())
+      );
       let cpe_uri = nvd_cpe::CPEName::from_uri(&uri).unwrap();
       match cpe_uri.part.to_string().as_str() {
-        "a" => {
-          info.set_vpf(VPF {
-            vendor: cpe_uri.vendor.to_string(),
-            product: cpe_uri.product.to_string(),
-            framework: None,
-            verified: false,
-          })
-        }
+        "a" => info.set_vpf(VPF {
+          vendor: cpe_uri.vendor.to_string(),
+          product: cpe_uri.product.to_string(),
+          framework: None,
+          verified: false,
+        }),
         _ => {}
       }
     }
