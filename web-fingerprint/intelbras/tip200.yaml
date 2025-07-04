@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - /cgi-bin/cgiserver.exx
+    case-insensitive: true

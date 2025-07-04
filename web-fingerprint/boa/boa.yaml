@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - 'server: boa/0.94.13'
+    case-insensitive: true

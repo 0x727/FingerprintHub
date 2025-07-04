@@ -27,6 +27,7 @@ http:
   - type: word
     words:
     - 'server: wing ftp server'
+    case-insensitive: true
   - type: favicon
     hash:
     - '963565804'

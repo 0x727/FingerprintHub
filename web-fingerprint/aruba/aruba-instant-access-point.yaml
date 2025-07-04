@@ -21,6 +21,7 @@ http:
     words:
     - jscripts/third_party/highcharts.src.js
     - jscripts/third_party/raphael-treemap.min.js
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*>aruba.*?</title>

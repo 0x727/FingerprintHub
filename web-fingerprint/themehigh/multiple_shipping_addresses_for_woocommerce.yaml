@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - wp-content/plugins/multiple-shipping-address-woocommerce
+    case-insensitive: true

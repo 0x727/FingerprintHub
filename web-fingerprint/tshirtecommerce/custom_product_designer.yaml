@@ -21,3 +21,4 @@ http:
     words:
     - prestashop
     - tshirtecommerce
+    case-insensitive: true

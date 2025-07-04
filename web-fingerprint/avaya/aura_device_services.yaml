@@ -21,3 +21,4 @@ http:
     words:
     - avaya aura
     - nbsp;utility services
+    case-insensitive: true

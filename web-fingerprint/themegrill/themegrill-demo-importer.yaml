@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - /plugins/themegrill-demo-importer
+    case-insensitive: true

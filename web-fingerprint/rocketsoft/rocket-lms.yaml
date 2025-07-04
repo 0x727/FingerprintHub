@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - rocket lms
+    case-insensitive: true

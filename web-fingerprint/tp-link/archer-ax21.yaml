@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - tp-link
+    case-insensitive: true

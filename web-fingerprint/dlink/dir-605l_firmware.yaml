@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - l_tb>dir-605
+    case-insensitive: true
