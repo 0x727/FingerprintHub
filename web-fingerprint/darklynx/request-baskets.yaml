@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - request-baskets
+    case-insensitive: true
