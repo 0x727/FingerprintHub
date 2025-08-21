@@ -15,7 +15,7 @@ http:
   matchers:
   - type: word
     words:
-    - '极致CMS建站系统'
+    - 极致cms建站系统
     part: header
     case-insensitive: true
 - method: GET
@@ -24,4 +24,4 @@ http:
   matchers:
   - type: favicon
     hash:
-      - c7bfdd8a6b762a5220f7217552592115
+    - c7bfdd8a6b762a5220f7217552592115

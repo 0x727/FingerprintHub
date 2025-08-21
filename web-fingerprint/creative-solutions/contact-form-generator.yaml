@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - /wp-content/plugins/contact-form-generator
+    case-insensitive: true

@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - powered by phpcms
+    case-insensitive: true

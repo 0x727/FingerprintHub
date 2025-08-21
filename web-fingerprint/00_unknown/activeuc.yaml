@@ -15,6 +15,6 @@ http:
   matchers:
   - type: word
     words:
-    - 'Path=/acenter'
+    - path=/acenter
     part: header
     case-insensitive: true

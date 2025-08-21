@@ -15,8 +15,6 @@ http:
   matchers:
   - type: word
     words:
-    - '/Content/css/shop_style.css'
-    - '餐厅数字化综合管理平台'
-    part: body
-    condition: or
-    case-insensitive: false
+    - /content/css/shop_style.css
+    - 餐厅数字化综合管理平台
+    case-insensitive: true

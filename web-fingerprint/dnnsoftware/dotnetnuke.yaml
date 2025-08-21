@@ -23,6 +23,7 @@ http:
   - type: word
     words:
     - 'set-cookie: dnn_ismobile'
+    case-insensitive: true
   - type: favicon
     hash:
     - '-1465479343'

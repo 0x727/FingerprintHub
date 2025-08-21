@@ -15,6 +15,5 @@ http:
   matchers:
   - type: word
     words:
-    - 'Sovell Shop API'
-    part: body
+    - sovell shop api
     case-insensitive: true
