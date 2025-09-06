@@ -5,6 +5,7 @@ use engine::request::Requests;
 use engine::template::Template;
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, HashSet};
+use std::sync::Arc;
 // 旧版指纹，数据结构
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -73,7 +74,7 @@ impl From<V3WebFingerPrint> for Template {
     index.http[0].operators.matchers = v3_finger_to_matcher(&val.fingerprint);
     Template {
       id: hans_to_pinyin(&val.name).to_lowercase(),
-      info,
+      info: Arc::new(info),
       flow: None,
       requests: index,
       self_contained: false,
@@ -83,7 +84,7 @@ impl From<V3WebFingerPrint> for Template {
   }
 }
 
-fn v3_finger_to_matcher(finger: &Vec<WebFingerPrint>) -> Vec<Matcher> {
+fn v3_finger_to_matcher(finger: &[WebFingerPrint]) -> Vec<Matcher> {
   let mut ms = Vec::new();
   let mut or_word = HashSet::new();
   let mut header = HashSet::new();

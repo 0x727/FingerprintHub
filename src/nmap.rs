@@ -9,6 +9,7 @@ use engine::serde_format::Value;
 use engine::template::Template;
 use std::env;
 use std::fs::File;
+use std::sync::Arc;
 
 fn matchline_to_ext(m: &MatchLine) -> Extractor {
   Extractor {
@@ -133,15 +134,12 @@ fn match_line_to_info(m: &MatchLine, fp: &Probe) -> Info {
         ":".repeat(10 - cpe.to_string().matches(':').count())
       );
       let cpe_uri = nvd_cpe::CPEName::from_uri(&uri).unwrap();
-      match cpe_uri.part.to_string().as_str() {
-        "a" => info.set_vpf(VPF {
-          vendor: cpe_uri.vendor.to_string(),
-          product: cpe_uri.product.to_string(),
-          framework: None,
-          verified: false,
-        }),
-        _ => {}
-      }
+      if cpe_uri.part.to_string().as_str() == "a" { info.set_vpf(VPF {
+        vendor: cpe_uri.vendor.to_string(),
+        product: cpe_uri.product.to_string(),
+        framework: None,
+        verified: false,
+      }) }
     }
   }
   info
@@ -151,7 +149,7 @@ fn to_template(fp: &Probe, m: &MatchLine) -> Template {
   let info = match_line_to_info(m, fp);
   Template {
     id: to_kebab_case(&m.service),
-    info,
+    info: Arc::new(info),
     flow: None,
     requests: probe_to_request(fp, matchline_to_op(vec![], vec![matchline_to_ext(m)])),
     self_contained: Default::default(),
@@ -174,7 +172,7 @@ pub fn nmap() {
       std::fs::create_dir_all(&service_dir).unwrap_or_default();
       let template = to_template(&fp, m);
       let hash = murmur3_32(m.pattern.to_string().as_bytes(), 0) as u32;
-      let template_path = service_dir.join(&format!("{}.yaml", hash));
+      let template_path = service_dir.join(format!("{}.yaml", hash));
       if let Ok(f) = File::create(&template_path) {
         serde_yaml::to_writer(f, &template).unwrap();
       }

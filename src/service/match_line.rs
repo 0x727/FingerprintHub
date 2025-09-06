@@ -85,7 +85,7 @@ impl MatchLine {
     let mut cursor = pattern_version_info.chars();
     let m = cursor.next().ok_or_else(|| new_io_error("m"))?;
     offset += 1;
-    return if m == 'm' {
+    if m == 'm' {
       // |
       let delimiter = cursor.next().ok_or_else(|| new_io_error("|"))?;
       offset += 1;
@@ -118,7 +118,7 @@ impl MatchLine {
       ))
     } else {
       Err(new_io_error("m"))
-    };
+    }
   }
   fn parse_version_info(version_info_str: &str, version_info: &mut VersionInfo) {
     let mut head_buf = String::new();

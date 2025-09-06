@@ -6,8 +6,6 @@ use std::str::FromStr;
 use std::time::Duration;
 
 /// # 探针模块
-///
-
 /// 协议枚举
 #[derive(Debug, Copy, Clone)]
 pub enum Protocol {

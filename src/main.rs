@@ -11,6 +11,7 @@ use std::env;
 use std::fs::{File, OpenOptions};
 use std::path::{Path, PathBuf};
 use std::str::FromStr;
+use std::sync::Arc;
 
 const UNKNOWN_VENDOR: &str = "00_unknown";
 const BUILT_TAGS: [&str; 59] = [
@@ -109,13 +110,13 @@ fn sync_nuclei() {
                 let wp_path = current_dir.join("wordpress").join("wordpress");
                 let _ = std::fs::remove_dir_all(default_path);
                 // 如果剩下的文件夹为空，删除
-                let _ = std::fs::remove_dir(&current_dir.join(&vpf.vendor));
+                let _ = std::fs::remove_dir(current_dir.join(&vpf.vendor));
                 default_path = wp_path;
               }
             }
             std::fs::create_dir_all(&default_path).unwrap();
             let f_path =
-              default_path.join(&yaml_path.file_name().unwrap().to_string_lossy().to_string());
+              default_path.join(yaml_path.file_name().unwrap().to_string_lossy().to_string());
             std::fs::copy(&yaml_path, &f_path).unwrap();
             count += 1;
             continue;
@@ -375,8 +376,9 @@ fn update_info(template: &mut Template, fingerprint_yaml_path: &Path) {
       engine::serde_format::Value::String(vpf.product),
     ),
   ]);
+  let info = Arc::make_mut(&mut template.info);
   for (k, v) in new_vpf {
-    template.info.metadata.insert(k, v);
+    info.metadata.insert(k, v);
   }
 }
 
@@ -465,7 +467,7 @@ fn cse_to_finger() {
       }
       let product_path = current_fingerprint_dir
         .join(&vendor)
-        .join(&format!("{}.yaml", product));
+        .join(format!("{}.yaml", product));
       if !product_path.exists() {
         let one_cse = to_one_cse(cse);
         let matchers: Vec<Matcher> = one_cse.clone().into();
@@ -550,7 +552,7 @@ fn cse_to_template(one_cse: CSE, vpf: VPF) -> Template {
   index.http[0].operators.matchers = one_cse.into();
   let t = Template {
     id: to_kebab_case(vpf.product.as_str()),
-    info,
+    info: Arc::new(info),
     flow: None,
     requests: index,
     self_contained: Default::default(),
