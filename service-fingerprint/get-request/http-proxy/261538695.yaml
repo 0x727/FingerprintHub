@@ -1,6 +1,6 @@
 id: http-proxy
 info:
-  name: Mikrotik HotSpot http proxy
+  name: MikroTik HotSpot http proxy
   author: nmap,cn-kali-team
   tags: detect,tech,http-proxy,service
   severity: info

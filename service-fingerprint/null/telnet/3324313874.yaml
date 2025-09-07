@@ -1,6 +1,6 @@
 id: telnet
 info:
-  name: Kyocera Mita KM-1530 printer telnetd
+  name: SEH Computertechnik printer telnetd
   author: nmap,cn-kali-team
   tags: detect,tech,telnet,service
   severity: info

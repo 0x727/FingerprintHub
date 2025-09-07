@@ -12,11 +12,48 @@ pub struct Regex {
   // 正则标识
   pub flag: Vec<Flags>,
 }
-
+impl Regex {
+  fn convert_pattern(&self) -> String {
+    let mut result = String::new();
+    let mut chars = self.schematic.chars().peekable();
+    while let Some(c) = chars.next() {
+      match c {
+        '\\' => {
+          if let Some(next) = chars.next() {
+            match next {
+              '0' => result.push_str(r"\x00"),
+              'x' => {
+                // 处理十六进制转义 \xHH
+                let mut hex = String::new();
+                if let Some(h1) = chars.next() {
+                  hex.push(h1);
+                  if let Some(h2) = chars.next() {
+                    hex.push(h2);
+                    result.push_str(&format!(r"\x{}", hex));
+                  } else {
+                    result.push_str(&format!(r"\x{}", h1));
+                  }
+                }
+              }
+              _ => {
+                result.push('\\');
+                result.push(next);
+              }
+            }
+          } else {
+            result.push('\\');
+          }
+        }
+        _ => result.push(c),
+      }
+    }
+    result
+  }
+}
 impl Display for Regex {
   fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
     if self.flag.is_empty() {
-      f.write_str(&self.schematic)
+      f.write_str(&self.convert_pattern())
     } else {
       let flag = format!(
         "(?{}){}",
@@ -26,7 +63,7 @@ impl Display for Regex {
           .map(|f| f.to_string())
           .collect::<Vec<_>>()
           .join(""),
-        self.schematic
+        self.convert_pattern()
       );
       f.write_str(&flag)
     }

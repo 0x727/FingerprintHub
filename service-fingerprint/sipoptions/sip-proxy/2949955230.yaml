@@ -7,6 +7,7 @@ info:
   metadata:
     fallback:
     - get-request
+    - httpoptions
     product: session_border_controller
     rarity: 5
     vendor: avaya

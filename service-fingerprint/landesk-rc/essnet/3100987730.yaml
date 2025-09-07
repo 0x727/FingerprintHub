@@ -1,0 +1,20 @@
+id: essnet
+info:
+  name: Hyperion Essbase
+  author: nmap,cn-kali-team
+  tags: detect,tech,essnet,service
+  severity: info
+  metadata:
+    rarity: 6
+tcp:
+- name: landesk-rc
+  inputs:
+  - data: \x54\x4e\x4d\x50\x04\0\0\0\x54\x4e\x4d\x45\0\0\x04\0
+  host:
+  - '{{Hostname}}'
+  port: 2701,5709,1761-1763
+  extractors:
+  - name: essnet
+    type: regex
+    regex:
+    - ^\xff\x00\x13\x00/v\x0f\x00\x00\x00\x00\x00\x00\x00\x01\x00\xc8\x00\t\x00/v\x0f\x00\x04\x001040025\x00\x00

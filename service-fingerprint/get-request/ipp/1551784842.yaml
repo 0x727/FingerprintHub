@@ -1,6 +1,6 @@
 id: ipp
 info:
-  name: Kyocera Mita KM-1530 IPP
+  name: SEH Computertechnik IPP
   author: nmap,cn-kali-team
   tags: detect,tech,ipp,service
   severity: info

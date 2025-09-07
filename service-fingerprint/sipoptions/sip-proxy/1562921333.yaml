@@ -7,6 +7,7 @@ info:
   metadata:
     fallback:
     - get-request
+    - httpoptions
     info: 'zone: $1'
     product: unified_communications_manager
     rarity: 5

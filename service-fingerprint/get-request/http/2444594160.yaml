@@ -1,6 +1,6 @@
 id: http
 info:
-  name: Citizen CLP-521 or Kyocera Mita KM-1530 printer http config
+  name: SEH Computertechnik printer http config
   author: nmap,cn-kali-team
   tags: detect,tech,http,service
   severity: info
