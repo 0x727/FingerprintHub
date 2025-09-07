@@ -1,6 +1,6 @@
 use crate::hans_to_pinyin;
 use engine::info::{Info, Severity, VPF};
-use engine::matchers::{Condition, Favicon, Matcher, MatcherType, Part, Word};
+use engine::operators::matchers::{Condition, Favicon, Matcher, MatcherType, Part, Word};
 use engine::request::Requests;
 use engine::template::Template;
 use serde::{Deserialize, Serialize};
@@ -71,12 +71,14 @@ impl From<V3WebFingerPrint> for Template {
       verified: false,
     });
     let mut index = Requests::default_web_index();
-    index.http[0].operators.matchers = v3_finger_to_matcher(&val.fingerprint);
+    let mut_http = Arc::make_mut(&mut index.http[0]);
+    let mut_operators = Arc::make_mut(&mut mut_http.operators);
+    mut_operators.matchers = v3_finger_to_matcher(&val.fingerprint);
     Template {
       id: hans_to_pinyin(&val.name).to_lowercase(),
       info: Arc::new(info),
       flow: None,
-      requests: index,
+      requests: Arc::new(index),
       self_contained: false,
       stop_at_first_match: false,
       variables: Default::default(),
@@ -84,7 +86,7 @@ impl From<V3WebFingerPrint> for Template {
   }
 }
 
-fn v3_finger_to_matcher(finger: &[WebFingerPrint]) -> Vec<Matcher> {
+fn v3_finger_to_matcher(finger: &[WebFingerPrint]) -> Vec<Arc<Matcher>> {
   let mut ms = Vec::new();
   let mut or_word = HashSet::new();
   let mut header = HashSet::new();
@@ -148,5 +150,5 @@ fn v3_finger_to_matcher(finger: &[WebFingerPrint]) -> Vec<Matcher> {
       ..Matcher::default()
     })
   }
-  ms
+  ms.into_iter().map(Arc::new).collect()
 }

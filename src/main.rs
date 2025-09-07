@@ -1,6 +1,6 @@
 use engine::find_yaml_file;
 use engine::info::{Info, Severity, CSE, VPF};
-use engine::matchers::{Favicon, Matcher, MatcherType, Part};
+use engine::operators::matchers::{Favicon, Matcher, MatcherType, Part};
 use engine::request::{HttpRaw, Requests};
 use engine::template::Template;
 use helper::cli::HelperConfig;
@@ -183,15 +183,18 @@ fn sync_nuclei() {
 
 fn merge_matcher(save_path: PathBuf, del_path: PathBuf) {
   if let Ok(del) = load_yaml(&del_path) {
-    let del_matcher: Vec<Matcher> = del
+    let del_matcher: Vec<Arc<Matcher>> = del
       .requests
       .http
       .iter()
       .flat_map(|h| h.operators.matchers.clone())
       .collect();
     if let Ok(mut save) = load_yaml(&save_path) {
-      if let Some(http) = save.requests.http.first_mut() {
-        http.operators.matchers.extend(del_matcher);
+      let mut_requests = Arc::make_mut(&mut save.requests);
+      if let Some(http) = mut_requests.http.first_mut() {
+        let mut_http = Arc::make_mut(http);
+        let mut_operators = Arc::make_mut(&mut mut_http.operators);
+        mut_operators.matchers.extend(del_matcher);
         save_yaml(save_path, save).unwrap();
         std::fs::remove_file(&del_path).unwrap();
       }
@@ -300,33 +303,37 @@ fn rename_fingerprint_yaml() {
 }
 
 fn update_template(template: &mut Template) {
-  for http in template.requests.http.iter_mut() {
-    for matchers in http.operators.matchers.iter_mut() {
+  let mut_requests = Arc::make_mut(&mut template.requests);
+  for http in mut_requests.http.iter_mut() {
+    let mut_http = Arc::make_mut(http);
+    let mut_operators = Arc::make_mut(&mut mut_http.operators);
+    for matchers in mut_operators.matchers.iter_mut() {
+      let mut_matchers = Arc::make_mut(matchers);
       // 如果是关键词匹配，添加转小写和忽略大小写
-      if let MatcherType::Word(mut w) = matchers.matcher_type.clone() {
+      if let MatcherType::Word(mut w) = mut_matchers.matcher_type.clone() {
         let new: Vec<String> = w.words.iter().map(|x| x.to_ascii_lowercase()).collect();
         w.words.clone_from(&new);
-        matchers.matcher_type = MatcherType::Word(w);
-        if let Part::Name(name) = &matchers.part {
+        mut_matchers.matcher_type = MatcherType::Word(w);
+        if let Part::Name(name) = &mut_matchers.part {
           if name == "favicon" {
-            matchers.part = Part::Body;
-            matchers.matcher_type = MatcherType::Favicon(Favicon { hash: new });
+            mut_matchers.part = Part::Body;
+            mut_matchers.matcher_type = MatcherType::Favicon(Favicon { hash: new });
           }
         }
-        matchers.case_insensitive = true;
+        mut_matchers.case_insensitive = true;
       }
-      if let MatcherType::Favicon(mut h) = matchers.matcher_type.clone() {
+      if let MatcherType::Favicon(mut h) = mut_matchers.matcher_type.clone() {
         let new: Vec<String> = h.hash.iter().map(|x| x.to_ascii_lowercase()).collect();
         h.hash = new;
-        matchers.matcher_type = MatcherType::Favicon(h);
-        matchers.case_insensitive = false;
+        mut_matchers.matcher_type = MatcherType::Favicon(h);
+        mut_matchers.case_insensitive = false;
       }
     }
     // 路径请求方式转大写
-    if let HttpRaw::Path(mut h) = http.http_raw.clone() {
+    if let HttpRaw::Path(mut h) = mut_http.http_raw.clone() {
       h.method =
         engine::slinger::http::Method::from_str(&h.method.as_str().to_uppercase()).unwrap();
-      http.http_raw = HttpRaw::Path(h);
+      mut_http.http_raw = HttpRaw::Path(h);
     }
   }
 }
@@ -470,7 +477,7 @@ fn cse_to_finger() {
         .join(format!("{}.yaml", product));
       if !product_path.exists() {
         let one_cse = to_one_cse(cse);
-        let matchers: Vec<Matcher> = one_cse.clone().into();
+        let matchers: Vec<Arc<Matcher>> = one_cse.clone().into();
         if matchers.is_empty() {
           continue;
         }
@@ -549,12 +556,14 @@ fn cse_to_template(one_cse: CSE, vpf: VPF) -> Template {
   info.set_cse(one_cse.clone());
   info.set_vpf(vpf.clone());
   let mut index = Requests::default_web_index();
-  index.http[0].operators.matchers = one_cse.into();
+  let mut_http = Arc::make_mut(&mut index.http[0]);
+  let mut_operators = Arc::make_mut(&mut mut_http.operators);
+  mut_operators.matchers = one_cse.into();
   let t = Template {
     id: to_kebab_case(vpf.product.as_str()),
     info: Arc::new(info),
     flow: None,
-    requests: index,
+    requests: Arc::new(index),
     self_contained: Default::default(),
     stop_at_first_match: false,
     variables: Default::default(),

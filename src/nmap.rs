@@ -1,8 +1,9 @@
 use crate::{to_kebab_case, FingerPrintParse, MatchLine, Probe};
 use engine::common::http::murmur3_32;
-use engine::extractors::{Extractor, ExtractorType};
 use engine::info::{Info, Severity, VPF};
-use engine::matchers::{Matcher, Part};
+use engine::operators::extractors::{Extractor, ExtractorType};
+use engine::operators::matchers::{Matcher, Part};
+use engine::operators::regex::RegexPattern;
 use engine::operators::Operators;
 use engine::request::{Input, Requests, TCPRequest};
 use engine::serde_format::Value;
@@ -11,31 +12,31 @@ use std::env;
 use std::fs::File;
 use std::sync::Arc;
 
-fn matchline_to_ext(m: &MatchLine) -> Extractor {
-  Extractor {
+fn matchline_to_ext(m: &MatchLine) -> Arc<Extractor> {
+  Arc::new(Extractor {
     name: Some(m.service.clone()),
     part: Part::default(),
-    extractor_type: ExtractorType::Regex(engine::extractors::ERegex {
+    extractor_type: ExtractorType::Regex(RegexPattern {
       regex: vec![m.pattern.to_string()],
       group: None,
       compiled_regex: vec![],
     }),
     internal: false,
     case_insensitive: false,
-  }
+  })
 }
 
-fn matchline_to_op(m: Vec<Matcher>, e: Vec<Extractor>) -> Operators {
-  Operators {
+fn matchline_to_op(m: Vec<Arc<Matcher>>, e: Vec<Arc<Extractor>>) -> Arc<Operators> {
+  Arc::new(Operators {
     stop_at_first_match: false,
     matchers_condition: Default::default(),
     matchers: m,
     extractors: e,
-  }
+  })
 }
 
-fn probe_to_request(fp: &Probe, op: Operators) -> Requests {
-  let tcp = TCPRequest {
+fn probe_to_request(fp: &Probe, op: Arc<Operators>) -> Arc<Requests> {
+  let tcp = Arc::new(TCPRequest {
     operators: op,
     id: None,
     name: Some(fp.name.clone()),
@@ -54,11 +55,11 @@ fn probe_to_request(fp: &Probe, op: Operators) -> Requests {
     exclude_ports: None,
     read_size: None,
     read_all: false,
-  };
-  Requests {
+  });
+  Arc::new(Requests {
     tcp: vec![tcp],
     ..Requests::default()
-  }
+  })
 }
 
 fn match_line_to_info(m: &MatchLine, fp: &Probe) -> Info {
@@ -134,12 +135,14 @@ fn match_line_to_info(m: &MatchLine, fp: &Probe) -> Info {
         ":".repeat(10 - cpe.to_string().matches(':').count())
       );
       let cpe_uri = nvd_cpe::CPEName::from_uri(&uri).unwrap();
-      if cpe_uri.part.to_string().as_str() == "a" { info.set_vpf(VPF {
-        vendor: cpe_uri.vendor.to_string(),
-        product: cpe_uri.product.to_string(),
-        framework: None,
-        verified: false,
-      }) }
+      if cpe_uri.part.to_string().as_str() == "a" {
+        info.set_vpf(VPF {
+          vendor: cpe_uri.vendor.to_string(),
+          product: cpe_uri.product.to_string(),
+          framework: None,
+          verified: false,
+        })
+      }
     }
   }
   info
