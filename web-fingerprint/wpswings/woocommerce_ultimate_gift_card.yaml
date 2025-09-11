@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - /wp-content/plugins/woocommerce-ultimate-gift-card
+    case-insensitive: true
