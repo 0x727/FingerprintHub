@@ -1,0 +1,20 @@
+id: controller
+info:
+  name: controller
+  author: cn-kali-team
+  tags: detect,tech,controller
+  severity: info
+  metadata:
+    product: controller
+    shodan-query:
+    - html:"aquatronica"
+    vendor: aquatronica
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - aquatronica
