@@ -14,7 +14,7 @@ info:
     vendor: slims
     product: senayan_library_management_system
     shodan-query: html:'content="SLIMS'
-  tags: senayan,xss,slims
+  tags: senayan,xss,slims,vuln
 
 http:
   - method: GET
@@ -47,4 +47,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 490a0046304402203f753710f5c4d3c6e76d2e30dfcea066fd5db98460a803f780e6408ab909359302205187d4b71506cc49bbb333ad6e5b8777df450010315ee2d90da6ed07f4f8c007:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450220545bb8e1b67c74412371b628b5a8a98b0320d32b5dd2b690ab811aa19e54f8380221008e47df86d24624195977b493ae51cdcd29fdb0f13f3fbd5a0223b81b83ebe308:922c64590222798bb761d5b6d8e72950
