@@ -1,11 +1,11 @@
-id: yonbip
+id: springboot-manager
 info:
-  name: 用友BIP
+  name: springboot-manager
   author: jlkl
-  tags: detect,tech,yonbip
+  tags: detect,tech,springboot,manager
   severity: info
   metadata:
-    product: yonbip
+    product: springboot-manager
     vendor: 00_unknown
     verified: false
 http:
@@ -15,10 +15,8 @@ http:
   matchers:
   - type: word
     words:
-    - 'YonBIP'
-    - '数字化工作台'
-    - '用友BIP'
-    - 'iuap-apcom-workbench/'
-    condition: or
+    - 'sys/getVerify'
+    - 'sys/user/login'
+    condition: and
     part: body
     case-insensitive: true
