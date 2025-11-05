@@ -74,7 +74,7 @@ pub struct FingerPrintParse<'buffer> {
 }
 
 impl<'buffer> FingerPrintParse<'buffer> {
-  pub fn new(buffer: &str) -> FingerPrintParse {
+  pub fn new(buffer: &str) -> FingerPrintParse<'_> {
     let lines = buffer.lines();
     FingerPrintParse {
       current_line: 0,

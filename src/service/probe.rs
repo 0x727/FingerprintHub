@@ -8,8 +8,10 @@ use std::time::Duration;
 /// # 探针模块
 /// 协议枚举
 #[derive(Debug, Copy, Clone)]
+#[derive(Default)]
 pub enum Protocol {
   /// TCP
+  #[default]
   Tcp,
   /// UDP
   Udp,
@@ -30,11 +32,6 @@ impl FromStr for Protocol {
   }
 }
 
-impl Default for Protocol {
-  fn default() -> Self {
-    Self::Tcp
-  }
-}
 
 /// 连接超时时间
 #[derive(Debug, Clone)]

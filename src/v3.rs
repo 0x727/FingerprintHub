@@ -1,11 +1,11 @@
 use crate::hans_to_pinyin;
 use engine::info::{Info, Severity, VPF};
-use engine::operators::matchers::{Condition, Favicon, Matcher, MatcherType, Part, Word};
 use engine::request::Requests;
 use engine::template::Template;
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, HashSet};
 use std::sync::Arc;
+use engine::operators::matchers::{Condition, Favicon, Matcher, MatcherType, Part, Word};
 // 旧版指纹，数据结构
 
 #[derive(Debug, Serialize, Deserialize, Clone)]

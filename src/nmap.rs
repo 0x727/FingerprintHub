@@ -1,9 +1,6 @@
 use crate::{to_kebab_case, FingerPrintParse, MatchLine, Probe};
 use engine::common::http::murmur3_32;
 use engine::info::{Info, Severity, VPF};
-use engine::operators::extractors::{Extractor, ExtractorType};
-use engine::operators::matchers::{Matcher, Part};
-use engine::operators::regex::RegexPattern;
 use engine::operators::Operators;
 use engine::request::{Input, Requests, TCPRequest};
 use engine::serde_format::Value;
@@ -11,6 +8,9 @@ use engine::template::Template;
 use std::env;
 use std::fs::File;
 use std::sync::Arc;
+use engine::operators::extractors::{Extractor, ExtractorType};
+use engine::operators::matchers::{Matcher, Part};
+use engine::operators::regex::RegexPattern;
 
 fn matchline_to_ext(m: &MatchLine) -> Arc<Extractor> {
   Arc::new(Extractor {
