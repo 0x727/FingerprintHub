@@ -19,3 +19,4 @@ http:
     words:
     - '3.5'
     - ipeak
+    case-insensitive: true

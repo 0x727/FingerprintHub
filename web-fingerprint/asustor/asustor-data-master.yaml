@@ -20,6 +20,7 @@ http:
   - type: word
     words:
     - asustor
+    case-insensitive: true
   - type: favicon
     hash:
     - '1678170702'

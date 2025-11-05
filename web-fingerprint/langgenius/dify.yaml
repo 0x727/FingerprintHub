@@ -20,3 +20,10 @@ http:
   - type: favicon
     hash:
     - '97378986'
+  - type: word
+    words:
+    - <title>dify</title>
+    case-insensitive: true
+  - type: favicon
+    hash:
+    - '97378986'
