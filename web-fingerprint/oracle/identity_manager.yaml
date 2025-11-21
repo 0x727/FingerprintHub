@@ -1,0 +1,22 @@
+id: identity_manager
+info:
+  name: identity_manager
+  author: cn-kali-team
+  tags: detect,tech,identity_manager
+  severity: info
+  metadata:
+    fofa-query:
+    - title="oracle access management"
+    product: identity_manager
+    shodan-query:
+    - title:"oracle access management"
+    vendor: oracle
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>oracle access management.*?</title>
