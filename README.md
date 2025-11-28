@@ -434,6 +434,7 @@ git push origin thinkphp
 | [nemo_go](https://github.com/hanc00l/nemo_go)              |
 | [afrog](https://github.com/zan8in/afrog)                   |
 | [ShuiZe](https://github.com/0x727/ShuiZe_0x727)            |
+| [z0scan](https://github.com/JiuZero/z0scan)                |
 
 ### 指纹反馈
 
