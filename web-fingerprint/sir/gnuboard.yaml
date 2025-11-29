@@ -21,3 +21,4 @@ http:
     words:
     - body:"gnuboard5
     - gnuboard5
+    case-insensitive: true

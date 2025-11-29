@@ -22,3 +22,4 @@ http:
   - type: word
     words:
     - wp-content/plugins/wp-automatic/
+    case-insensitive: true

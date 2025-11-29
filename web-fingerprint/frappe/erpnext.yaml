@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - login to frappe
+    case-insensitive: true
