@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - klik_loginsystem
+    case-insensitive: true
