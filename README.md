@@ -3,6 +3,7 @@
 郑重声明：文中所涉及的技术、思路和工具仅供以安全为目的的学习交流使用，任何人不得将其用于非法用途以及盈利等目的，否则后果自行承担。
 
 - 该仓库为侦查守卫(observer_ward)指纹库，[observer_ward](https://github.com/emo-crab/observer_ward)是一个基于社区的指纹识别工具。
+- 如果你在寻找go语言的sdk可以看chainreactors的[neutron](https://github.com/chainreactors/neutron)
 - 旧版指纹已经归档在：https://github.com/0x727/FingerprintHub/tree/v3
 
 | 类别 | 说明                                              |
@@ -435,6 +436,7 @@ git push origin thinkphp
 | [afrog](https://github.com/zan8in/afrog)                   |
 | [ShuiZe](https://github.com/0x727/ShuiZe_0x727)            |
 | [z0scan](https://github.com/JiuZero/z0scan)                |
+| [fingers](https://github.com/chainreactors/fingers)        |
 
 ### 指纹反馈
 
