@@ -1,0 +1,47 @@
+id: bladex
+info:
+  name: BladeX
+  author: jlkl
+  tags: detect,tech,bladex
+  severity: info
+  metadata:
+    product: bladex
+    vendor: 00_unknown
+    verified: false
+http:
+  - method: GET
+    path:
+      - '{{BaseURL}}/'
+    matchers:
+      - type: word
+        words:
+          - "-auth/oauth/token"
+          - "Failed to handle request"
+          - "No handler found for GET /"
+        condition: or
+        part: body
+        case-insensitive: true
+  - method: GET
+    path:
+      - '{{BaseURL}}/api'
+    matchers:
+      - type: word
+        words:
+          - "No handler found for GET /"
+          - "No endpoint GET /."
+          - "Failed to handle request"
+        condition: or
+        part: body
+        case-insensitive: true
+  - method: GET
+    path:
+      - '{{BaseURL}}/gateway'
+    matchers:
+      - type: word
+        words:
+          - "No handler found for GET /"
+          - "No endpoint GET /."
+          - "Failed to handle request"
+        condition: or
+        part: body
+        case-insensitive: true
