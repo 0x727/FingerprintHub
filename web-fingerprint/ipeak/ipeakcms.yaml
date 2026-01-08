@@ -16,8 +16,8 @@ http:
   - '{{BaseURL}}/'
   matchers:
   - type: word
-    condition: and
     words:
     - '3.5'
     - ipeak
+    condition: and
     case-insensitive: true
