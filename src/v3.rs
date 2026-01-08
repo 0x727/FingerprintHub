@@ -112,6 +112,7 @@ fn v3_finger_to_matcher(finger: &[WebFingerPrint]) -> Vec<Arc<Matcher>> {
       ms.push(Matcher {
         matcher_type: MatcherType::Word(Word {
           words: wfp.match_rules.keyword.clone(),
+          automaton: None,
         }),
         condition: Condition::And,
         ..Matcher::default()
@@ -129,6 +130,7 @@ fn v3_finger_to_matcher(finger: &[WebFingerPrint]) -> Vec<Arc<Matcher>> {
       part: Part::Header,
       matcher_type: MatcherType::Word(Word {
         words: header.into_iter().collect(),
+        automaton: None,
       }),
       ..Matcher::default()
     })
@@ -145,6 +147,7 @@ fn v3_finger_to_matcher(finger: &[WebFingerPrint]) -> Vec<Arc<Matcher>> {
     ms.push(Matcher {
       matcher_type: MatcherType::Word(Word {
         words: or_word.into_iter().collect(),
+        automaton: None,
       }),
       condition: Condition::Or,
       ..Matcher::default()

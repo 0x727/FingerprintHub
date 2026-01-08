@@ -8,6 +8,8 @@ on:
     workflows: [ "add labels" ]
     types:
       - completed
+  workflow_call:
+  workflow_dispatch:
 env:
   IS_GITHUB: true
 
