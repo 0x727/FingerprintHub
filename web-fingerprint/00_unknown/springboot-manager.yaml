@@ -15,8 +15,7 @@ http:
   matchers:
   - type: word
     words:
-    - 'sys/getVerify'
-    - 'sys/user/login'
+    - sys/getverify
+    - sys/user/login
     condition: and
-    part: body
     case-insensitive: true

@@ -21,6 +21,7 @@ http:
   - type: word
     words:
     - /ucmuser/
+    case-insensitive: true
   - type: regex
     regex:
     - (?mi)<title[^>]*>unified communications self care portal.*?</title>

@@ -9,19 +9,16 @@ info:
     vendor: 00_unknown
     verified: false
 http:
-  - method: GET
-    path:
-      - '{{BaseURL}}/'
-    matchers:
-      - type: word
-        words:
-          - "https://bladex.vip"
-          - "saber/iconfont.css"
-        condition: or
-        part: body
-        case-insensitive: true
-      - type: favicon
-        hash:
-          - "1047841028"
-          - "-1820270953"
-        condition: or
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - https://bladex.vip
+    - saber/iconfont.css
+    case-insensitive: true
+  - type: favicon
+    hash:
+    - '1047841028'
+    - '-1820270953'

@@ -15,10 +15,8 @@ http:
   matchers:
   - type: word
     words:
-    - 'YonBIP'
-    - '数字化工作台'
-    - '用友BIP'
-    - 'iuap-apcom-workbench/'
-    condition: or
-    part: body
+    - yonbip
+    - 数字化工作台
+    - 用友bip
+    - iuap-apcom-workbench/
     case-insensitive: true

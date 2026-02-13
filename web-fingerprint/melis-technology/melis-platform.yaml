@@ -21,3 +21,4 @@ http:
     words:
     - /melis/meliscms
     - melisdemocms
+    case-insensitive: true

@@ -15,6 +15,5 @@ http:
   matchers:
   - type: word
     words:
-    - 'yisha.min.js'
-    part: body
+    - yisha.min.js
     case-insensitive: true

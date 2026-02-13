@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - /wp-content/plugins/learning-management-system/
+    case-insensitive: true

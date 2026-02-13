@@ -9,39 +9,33 @@ info:
     vendor: 00_unknown
     verified: false
 http:
-  - method: GET
-    path:
-      - '{{BaseURL}}/'
-    matchers:
-      - type: word
-        words:
-          - "-auth/oauth/token"
-          - "Failed to handle request"
-          - "No handler found for GET /"
-        condition: or
-        part: body
-        case-insensitive: true
-  - method: GET
-    path:
-      - '{{BaseURL}}/api'
-    matchers:
-      - type: word
-        words:
-          - "No handler found for GET /"
-          - "No endpoint GET /."
-          - "Failed to handle request"
-        condition: or
-        part: body
-        case-insensitive: true
-  - method: GET
-    path:
-      - '{{BaseURL}}/gateway'
-    matchers:
-      - type: word
-        words:
-          - "No handler found for GET /"
-          - "No endpoint GET /."
-          - "Failed to handle request"
-        condition: or
-        part: body
-        case-insensitive: true
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - -auth/oauth/token
+    - failed to handle request
+    - no handler found for get /
+    case-insensitive: true
+- method: GET
+  path:
+  - '{{BaseURL}}/api'
+  matchers:
+  - type: word
+    words:
+    - no handler found for get /
+    - no endpoint get /.
+    - failed to handle request
+    case-insensitive: true
+- method: GET
+  path:
+  - '{{BaseURL}}/gateway'
+  matchers:
+  - type: word
+    words:
+    - no handler found for get /
+    - no endpoint get /.
+    - failed to handle request
+    case-insensitive: true

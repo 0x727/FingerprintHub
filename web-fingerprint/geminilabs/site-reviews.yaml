@@ -21,3 +21,4 @@ http:
     words:
     - glsr-form
     - site-reviews
+    case-insensitive: true
