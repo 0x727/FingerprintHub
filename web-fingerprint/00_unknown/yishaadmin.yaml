@@ -1,11 +1,11 @@
-id: yonbip
+id: yishaadmin
 info:
-  name: 用友BIP
+  name: yishaadmin
   author: jlkl
-  tags: detect,tech,yonbip
+  tags: detect,tech,yishaadmin
   severity: info
   metadata:
-    product: yonbip
+    product: yishaadmin
     vendor: 00_unknown
     verified: false
 http:
@@ -15,10 +15,6 @@ http:
   matchers:
   - type: word
     words:
-    - 'YonBIP'
-    - '数字化工作台'
-    - '用友BIP'
-    - 'iuap-apcom-workbench/'
-    condition: or
+    - 'yisha.min.js'
     part: body
     case-insensitive: true
