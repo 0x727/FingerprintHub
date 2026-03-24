@@ -1,0 +1,22 @@
+id: harbor
+info:
+  name: harbor
+  author: cn-kali-team
+  tags: detect,tech,harbor
+  severity: info
+  metadata:
+    fofa-query:
+    - title="harbor"
+    product: harbor
+    shodan-query:
+    - http.title:"harbor"
+    vendor: goharbor
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>harbor.*?</title>
