@@ -1,0 +1,22 @@
+id: pfsense
+info:
+  name: pfsense
+  author: cn-kali-team
+  tags: detect,tech,pfsense
+  severity: info
+  metadata:
+    fofa-query:
+    - title="pfsense"
+    product: pfsense
+    shodan-query:
+    - http.title:"pfsense"
+    vendor: netgate
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>pfsense.*?</title>
