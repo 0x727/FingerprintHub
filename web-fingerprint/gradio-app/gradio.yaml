@@ -1,0 +1,25 @@
+id: gradio
+info:
+  name: gradio
+  author: cn-kali-team
+  tags: detect,tech,gradio
+  severity: info
+  metadata:
+    fofa-query:
+    - title="gradio" || body="gradio-app"
+    product: gradio
+    shodan-query:
+    - http.title:"gradio"
+    vendor: gradio-app
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - gradio-app
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>gradio.*?</title>
