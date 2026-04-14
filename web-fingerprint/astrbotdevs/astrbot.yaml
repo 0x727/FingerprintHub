@@ -1,0 +1,20 @@
+id: astrbot
+info:
+  name: astrbot
+  author: cn-kali-team
+  tags: detect,tech,astrbot
+  severity: info
+  metadata:
+    product: astrbot
+    shodan-query:
+    - title:"astrbot"
+    vendor: astrbotdevs
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>astrbot.*?</title>
