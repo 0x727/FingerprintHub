@@ -1,0 +1,21 @@
+id: blinko
+info:
+  name: blinko
+  author: cn-kali-team
+  tags: detect,tech,blinko
+  severity: info
+  metadata:
+    fofa-query:
+    - icon_hash="-1446811182" || icon_hash="-717082057"
+    product: blinko
+    vendor: blinko-space
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '-1446811182'
+    - '-717082057'

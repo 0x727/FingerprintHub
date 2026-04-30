@@ -1,0 +1,20 @@
+id: langflow
+info:
+  name: langflow
+  author: cn-kali-team
+  tags: detect,tech,langflow
+  severity: info
+  metadata:
+    product: langflow
+    shodan-query:
+    - http.favicon.hash:1727196746
+    vendor: langflow
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '1727196746'
