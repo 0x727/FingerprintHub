@@ -1,0 +1,27 @@
+id: prestashop
+info:
+  name: prestashop
+  author: cn-kali-team
+  tags: detect,tech,prestashop
+  severity: info
+  metadata:
+    fofa-query:
+    - app="prestashop"
+    - title="prestashop"
+    google-query:
+    - intitle:"prestashop"
+    product: prestashop
+    shodan-query:
+    - http.component:"prestashop"
+    - cpe:"cpe:2.3:a:prestashop:prestashop"
+    - http.title:"prestashop"
+    vendor: prestashop
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>prestashop.*?</title>
