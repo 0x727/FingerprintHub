@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - wp-content/plugins/wpvivid-backuprestore
+    case-insensitive: true

@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - /v1/models" http.html:"vllm
+    case-insensitive: true

@@ -17,5 +17,5 @@ http:
   matchers:
   - type: word
     words:
-    - FlareSolverr is ready
+    - flaresolverr is ready
     case-insensitive: true

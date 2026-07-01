@@ -18,6 +18,7 @@ http:
   - type: word
     words:
     - '*客户端会小于800*'
+    case-insensitive: true
   - type: favicon
     hash:
     - '-1935899595'
