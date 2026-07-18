@@ -1,0 +1,20 @@
+id: forms
+info:
+  name: forms
+  author: cn-kali-team
+  tags: detect,tech,forms
+  severity: info
+  metadata:
+    fofa-query:
+    - body="com_baforms"
+    product: forms
+    vendor: balbooa
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - com_baforms
