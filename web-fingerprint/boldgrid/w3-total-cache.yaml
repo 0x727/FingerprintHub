@@ -1,0 +1,23 @@
+id: w3-total-cache
+info:
+  name: w3-total-cache
+  author: cn-kali-team
+  tags: detect,tech,w3-total-cache
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/w3-total-cache/"
+    product: w3-total-cache
+    shodan-query:
+    - http.html:"w3-total-cache"
+    vendor: boldgrid
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/w3-total-cache/
+    - w3-total-cache
