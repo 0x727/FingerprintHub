@@ -1,0 +1,20 @@
+id: langflow
+info:
+  name: langflow
+  author: cn-kali-team
+  tags: detect,tech,langflow
+  severity: info
+  metadata:
+    fofa-query:
+    - title="langflow" || body="langflow"
+    product: langflow
+    vendor: ibm
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - langflow
