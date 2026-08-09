@@ -1,0 +1,20 @@
+id: react_native_community_cli
+info:
+  name: react_native_community_cli
+  author: cn-kali-team
+  tags: detect,tech,react_native_community_cli
+  severity: info
+  metadata:
+    fofa-query:
+    - title="react native" && port="8081"
+    product: react_native_community_cli
+    vendor: react-native-community
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>react native.*?</title>

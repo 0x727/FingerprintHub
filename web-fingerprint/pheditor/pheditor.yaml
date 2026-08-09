@@ -1,0 +1,23 @@
+id: pheditor
+info:
+  name: pheditor
+  author: cn-kali-team
+  tags: detect,tech,pheditor
+  severity: info
+  metadata:
+    fofa-query:
+    - body="pheditor_password"
+    product: pheditor
+    shodan-query:
+    - http.html:pheditor
+    vendor: pheditor
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - pheditor
+    - pheditor_password

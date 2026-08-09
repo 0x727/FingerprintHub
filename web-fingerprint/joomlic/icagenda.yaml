@@ -1,0 +1,22 @@
+id: icagenda
+info:
+  name: icagenda
+  author: cn-kali-team
+  tags: detect,tech,icagenda
+  severity: info
+  metadata:
+    fofa-query:
+    - body="com_icagenda"
+    product: icagenda
+    shodan-query:
+    - http.html:"com_icagenda"
+    vendor: joomlic
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - com_icagenda

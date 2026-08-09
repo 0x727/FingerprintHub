@@ -1,0 +1,22 @@
+id: kestra
+info:
+  name: kestra
+  author: cn-kali-team
+  tags: detect,tech,kestra
+  severity: info
+  metadata:
+    fofa-query:
+    - title="kestra"
+    product: kestra
+    shodan-query:
+    - title:"kestra"
+    vendor: kestra
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>kestra.*?</title>
