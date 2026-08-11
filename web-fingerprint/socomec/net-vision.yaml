@@ -1,0 +1,20 @@
+id: net-vision
+info:
+  name: net-vision
+  author: cn-kali-team
+  tags: detect,tech,net-vision
+  severity: info
+  metadata:
+    product: net-vision
+    shodan-query:
+    - title:"net vision ups"
+    vendor: socomec
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>net vision ups.*?</title>
