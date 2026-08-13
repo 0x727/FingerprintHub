@@ -1,0 +1,22 @@
+id: 3x-ui
+info:
+  name: 3x-ui
+  author: cn-kali-team
+  tags: detect,tech,3x-ui
+  severity: info
+  metadata:
+    fofa-query:
+    - title="3x-ui"
+    product: 3x-ui
+    shodan-query:
+    - 3x-ui http.title:"sign in"
+    vendor: mhsanaei
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>3x-ui.*?</title>
