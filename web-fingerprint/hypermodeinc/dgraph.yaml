@@ -1,0 +1,22 @@
+id: dgraph
+info:
+  name: dgraph
+  author: cn-kali-team
+  tags: detect,tech,dgraph
+  severity: info
+  metadata:
+    fofa-query:
+    - body="dgraph"
+    product: dgraph
+    shodan-query:
+    - title:"dgraph"
+    vendor: hypermodeinc
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - dgraph

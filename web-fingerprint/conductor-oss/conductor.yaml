@@ -1,0 +1,20 @@
+id: conductor
+info:
+  name: conductor
+  author: cn-kali-team
+  tags: detect,tech,conductor
+  severity: info
+  metadata:
+    product: conductor
+    shodan-query:
+    - http.title:"conductor ui"
+    vendor: conductor-oss
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>conductor ui.*?</title>

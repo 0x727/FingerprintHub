@@ -1,0 +1,22 @@
+id: maxsite_cms
+info:
+  name: maxsite_cms
+  author: cn-kali-team
+  tags: detect,tech,maxsite_cms
+  severity: info
+  metadata:
+    fofa-query:
+    - maxsite cms
+    product: maxsite_cms
+    shodan-query:
+    - maxsite cms
+    vendor: max-3000
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - maxsite cms

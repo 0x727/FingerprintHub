@@ -1,0 +1,22 @@
+id: parse-server
+info:
+  name: parse-server
+  author: cn-kali-team
+  tags: detect,tech,parse-server
+  severity: info
+  metadata:
+    fofa-query:
+    - body="parseserverversion" || header="x-parse-application-id"
+    product: parse-server
+    shodan-query:
+    - '"x-parse-application-id" or http.html:"parseserverversion"'
+    vendor: parse-community
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - parseserverversion
