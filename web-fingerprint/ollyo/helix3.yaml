@@ -1,0 +1,22 @@
+id: helix3
+info:
+  name: helix3
+  author: cn-kali-team
+  tags: detect,tech,helix3
+  severity: info
+  metadata:
+    fofa-query:
+    - body="shaper_helix3"
+    product: helix3
+    shodan-query:
+    - html:"shaper_helix3"
+    vendor: ollyo
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - shaper_helix3

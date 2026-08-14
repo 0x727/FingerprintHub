@@ -1,0 +1,22 @@
+id: real-estate-listing-realtyna-wpl
+info:
+  name: real-estate-listing-realtyna-wpl
+  author: cn-kali-team
+  tags: detect,tech,real-estate-listing-realtyna-wpl
+  severity: info
+  metadata:
+    fofa-query:
+    - body="real-estate-listing-realtyna-wpl"
+    product: real-estate-listing-realtyna-wpl
+    shodan-query:
+    - http.html:"real-estate-listing-realtyna-wpl"
+    vendor: realtyna
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - real-estate-listing-realtyna-wpl
