@@ -1,0 +1,22 @@
+id: homarr
+info:
+  name: homarr
+  author: cn-kali-team
+  tags: detect,tech,homarr
+  severity: info
+  metadata:
+    fofa-query:
+    - title="homarr"
+    product: homarr
+    shodan-query:
+    - http.title:"homarr"
+    vendor: homarr-labs
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>homarr.*?</title>

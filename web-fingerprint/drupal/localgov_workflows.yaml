@@ -1,0 +1,20 @@
+id: localgov_workflows
+info:
+  name: localgov_workflows
+  author: cn-kali-team
+  tags: detect,tech,localgov_workflows
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/modules/contrib/localgov"
+    product: localgov_workflows
+    vendor: drupal
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /modules/contrib/localgov

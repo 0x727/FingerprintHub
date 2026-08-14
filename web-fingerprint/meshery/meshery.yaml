@@ -1,0 +1,22 @@
+id: meshery
+info:
+  name: meshery
+  author: cn-kali-team
+  tags: detect,tech,meshery
+  severity: info
+  metadata:
+    fofa-query:
+    - title="meshery"
+    product: meshery
+    shodan-query:
+    - http.title:"meshery"
+    vendor: meshery
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>meshery.*?</title>
