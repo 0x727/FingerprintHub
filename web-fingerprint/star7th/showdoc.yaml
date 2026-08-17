@@ -1,0 +1,26 @@
+id: showdoc
+info:
+  name: showdoc
+  author: cn-kali-team
+  tags: detect,tech,showdoc
+  severity: info
+  metadata:
+    fofa-query:
+    - app="showdoc"
+    hunter-query:
+    - web.title="showdoc"
+    product: showdoc
+    shodan-query:
+    - http.title:"showdoc"
+    vendor: star7th
+    verified: true
+    zoomeye-query:
+    - app:"showdoc"
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>showdoc.*?</title>
