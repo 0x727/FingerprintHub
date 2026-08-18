@@ -1,0 +1,24 @@
+id: bl-wr9000_firmware
+info:
+  name: bl-wr9000_firmware
+  author: cn-kali-team
+  tags: detect,tech,bl-wr9000_firmware
+  severity: info
+  metadata:
+    fofa-query:
+    - body="goform" && body="lb-link"
+    product: bl-wr9000_firmware
+    shodan-query:
+    - http.html:"lb-link" "goahead-webs"
+    vendor: lb-link
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - goform
+    - lb-link
+    - lb-link" "goahead-webs

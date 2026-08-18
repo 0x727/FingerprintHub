@@ -1,0 +1,22 @@
+id: geo_mashup
+info:
+  name: geo_mashup
+  author: cn-kali-team
+  tags: detect,tech,geo_mashup
+  severity: info
+  metadata:
+    fofa-query:
+    - body="geo-mashup"
+    product: geo_mashup
+    shodan-query:
+    - http.html:"geo-mashup"
+    vendor: cyberhobo
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - geo-mashup

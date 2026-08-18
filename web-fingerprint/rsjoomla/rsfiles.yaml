@@ -1,0 +1,22 @@
+id: rsfiles
+info:
+  name: rsfiles
+  author: cn-kali-team
+  tags: detect,tech,rsfiles
+  severity: info
+  metadata:
+    fofa-query:
+    - body="com_rsfiles"
+    product: rsfiles
+    shodan-query:
+    - http.html:"com_rsfiles"
+    vendor: rsjoomla
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - com_rsfiles

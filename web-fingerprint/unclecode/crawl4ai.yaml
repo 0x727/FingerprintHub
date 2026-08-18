@@ -1,0 +1,22 @@
+id: crawl4ai
+info:
+  name: crawl4ai
+  author: cn-kali-team
+  tags: detect,tech,crawl4ai
+  severity: info
+  metadata:
+    fofa-query:
+    - title="crawl4ai playground"
+    product: crawl4ai
+    shodan-query:
+    - http.title:"crawl4ai playground"
+    vendor: unclecode
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>crawl4ai playground.*?</title>
