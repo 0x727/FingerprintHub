@@ -1,0 +1,22 @@
+id: nexus_repository
+info:
+  name: nexus_repository
+  author: cn-kali-team
+  tags: detect,tech,nexus_repository
+  severity: info
+  metadata:
+    fofa-query:
+    - title="sonatype nexus repository"
+    product: nexus_repository
+    shodan-query:
+    - http.title:"sonatype nexus repository"
+    vendor: sonatype
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>sonatype nexus repository.*?</title>
