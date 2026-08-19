@@ -1,0 +1,22 @@
+id: mineadmin
+info:
+  name: mineadmin
+  author: cn-kali-team
+  tags: detect,tech,mineadmin
+  severity: info
+  metadata:
+    fofa-query:
+    - body="mineadmin"
+    product: mineadmin
+    shodan-query:
+    - http.html:"mineadmin"
+    vendor: mineadmin
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - mineadmin

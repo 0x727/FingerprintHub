@@ -1,0 +1,22 @@
+id: gravitino
+info:
+  name: gravitino
+  author: cn-kali-team
+  tags: detect,tech,gravitino
+  severity: info
+  metadata:
+    fofa-query:
+    - title="gravitino"
+    product: gravitino
+    shodan-query:
+    - title:"gravitino"
+    vendor: apache
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>gravitino.*?</title>
