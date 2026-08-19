@@ -1,0 +1,25 @@
+id: kan
+info:
+  name: kan
+  author: cn-kali-team
+  tags: detect,tech,kan
+  severity: info
+  metadata:
+    fofa-query:
+    - title="kan" && body="_next"
+    product: kan
+    shodan-query:
+    - http.title:"kan"
+    vendor: kanbn
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - _next
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>kan.*?</title>
