@@ -1,0 +1,22 @@
+id: rabbitmq_server
+info:
+  name: rabbitmq_server
+  author: cn-kali-team
+  tags: detect,tech,rabbitmq_server
+  severity: info
+  metadata:
+    fofa-query:
+    - title="rabbitmq management"
+    product: rabbitmq_server
+    shodan-query:
+    - http.title:"rabbitmq management"
+    vendor: broadcom
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>rabbitmq management.*?</title>

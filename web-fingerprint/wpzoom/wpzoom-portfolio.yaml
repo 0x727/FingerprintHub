@@ -1,0 +1,22 @@
+id: wpzoom-portfolio
+info:
+  name: wpzoom-portfolio
+  author: cn-kali-team
+  tags: detect,tech,wpzoom-portfolio
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/wpzoom-portfolio"
+    product: wpzoom-portfolio
+    shodan-query:
+    - http.html:"/wp-content/plugins/wpzoom-portfolio"
+    vendor: wpzoom
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/wpzoom-portfolio

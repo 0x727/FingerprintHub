@@ -1,0 +1,25 @@
+id: ech0
+info:
+  name: ech0
+  author: cn-kali-team
+  tags: detect,tech,ech0
+  severity: info
+  metadata:
+    fofa-query:
+    - title:"ech0"
+    product: ech0
+    shodan-query:
+    - title:"ech0"
+    vendor: lin-snow
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - title:"ech0
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>ech0.*?</title>
