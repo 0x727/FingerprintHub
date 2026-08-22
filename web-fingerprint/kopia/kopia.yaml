@@ -1,0 +1,23 @@
+id: kopia
+info:
+  name: kopia
+  author: cn-kali-team
+  tags: detect,tech,kopia
+  severity: info
+  metadata:
+    fofa-query:
+    - icon_hash=="952466528"
+    product: kopia
+    shodan-query:
+    - http.favicon.hash:952466528
+    vendor: kopia
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '952466528'
+    - ="952466528
