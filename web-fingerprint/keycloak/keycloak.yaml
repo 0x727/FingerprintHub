@@ -1,0 +1,25 @@
+id: keycloak
+info:
+  name: keycloak
+  author: cn-kali-team
+  tags: detect,tech,keycloak
+  severity: info
+  metadata:
+    fofa-query:
+    - title="sign in to keycloak" || title="log in to keycloak"
+    product: keycloak
+    shodan-query:
+    - http.title:"sign in to keycloak" || http.title:"log in to keycloak"
+    vendor: keycloak
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>http.title:"log in to keycloak.*?</title>
+    - (?mi)<title[^>]*>log in to keycloak.*?</title>
+    - (?mi)<title[^>]*>sign in to keycloak".*?</title>
+    - (?mi)<title[^>]*>sign in to keycloak.*?</title>
