@@ -1,0 +1,22 @@
+id: jboss_application_server
+info:
+  name: jboss_application_server
+  author: cn-kali-team
+  tags: detect,tech,jboss_application_server
+  severity: info
+  metadata:
+    fofa-query:
+    - app="jboss"
+    product: jboss_application_server
+    shodan-query:
+    - http.title:"jboss"
+    vendor: redhat
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>jboss.*?</title>

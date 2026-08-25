@@ -1,0 +1,22 @@
+id: invoiceplane
+info:
+  name: invoiceplane
+  author: cn-kali-team
+  tags: detect,tech,invoiceplane
+  severity: info
+  metadata:
+    fofa-query:
+    - body="invoiceplane"
+    product: invoiceplane
+    shodan-query:
+    - http.html:"invoiceplane"
+    vendor: invoiceplane
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - invoiceplane

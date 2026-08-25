@@ -1,0 +1,22 @@
+id: feast
+info:
+  name: feast
+  author: cn-kali-team
+  tags: detect,tech,feast
+  severity: info
+  metadata:
+    fofa-query:
+    - icon_hash="493797515"
+    product: feast
+    shodan-query:
+    - http.favicon.hash:493797515
+    vendor: feast-dev
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '493797515'
