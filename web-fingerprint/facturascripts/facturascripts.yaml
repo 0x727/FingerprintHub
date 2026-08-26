@@ -1,0 +1,22 @@
+id: facturascripts
+info:
+  name: facturascripts
+  author: cn-kali-team
+  tags: detect,tech,facturascripts
+  severity: info
+  metadata:
+    fofa-query:
+    - body="facturascripts installer"
+    product: facturascripts
+    shodan-query:
+    - html:"facturascripts installer"
+    vendor: facturascripts
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - facturascripts installer
