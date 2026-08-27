@@ -1,0 +1,22 @@
+id: frick-quantum-hd
+info:
+  name: frick-quantum-hd
+  author: cn-kali-team
+  tags: detect,tech,frick-quantum-hd
+  severity: info
+  metadata:
+    fofa-query:
+    - header="primeunity" || body="quantum hd"
+    product: frick-quantum-hd
+    shodan-query:
+    - http.headers:"primeunity"
+    vendor: johnson-controls
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - quantum hd
