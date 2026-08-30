@@ -1,0 +1,22 @@
+id: kirby
+info:
+  name: kirby
+  author: cn-kali-team
+  tags: detect,tech,kirby
+  severity: info
+  metadata:
+    fofa-query:
+    - icon_hash="987600836"
+    product: kirby
+    shodan-query:
+    - http.favicon.hash:987600836
+    vendor: getkirby
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '987600836'
