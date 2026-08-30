@@ -1,0 +1,22 @@
+id: gotenberg
+info:
+  name: gotenberg
+  author: cn-kali-team
+  tags: detect,tech,gotenberg
+  severity: info
+  metadata:
+    fofa-query:
+    - gotenberg
+    product: gotenberg
+    shodan-query:
+    - gotenberg
+    vendor: gotenberg
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - gotenberg
