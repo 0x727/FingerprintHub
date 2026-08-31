@@ -1,0 +1,22 @@
+id: db-gpt
+info:
+  name: db-gpt
+  author: cn-kali-team
+  tags: detect,tech,db-gpt
+  severity: info
+  metadata:
+    fofa-query:
+    - icon_hash="100632689"
+    product: db-gpt
+    shodan-query:
+    - http.favicon.hash:100632689
+    vendor: eosphoros
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '100632689'
