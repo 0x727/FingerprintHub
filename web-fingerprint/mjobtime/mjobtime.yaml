@@ -1,0 +1,22 @@
+id: mjobtime
+info:
+  name: mjobtime
+  author: cn-kali-team
+  tags: detect,tech,mjobtime
+  severity: info
+  metadata:
+    fofa-query:
+    - body="mjobtime"
+    product: mjobtime
+    shodan-query:
+    - http.html:"mjobtime"
+    vendor: mjobtime
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - mjobtime
