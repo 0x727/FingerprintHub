@@ -1,0 +1,22 @@
+id: switchvox
+info:
+  name: switchvox
+  author: cn-kali-team
+  tags: detect,tech,switchvox
+  severity: info
+  metadata:
+    fofa-query:
+    - body="switchvox"
+    product: switchvox
+    shodan-query:
+    - http.html:"switchvox"
+    vendor: sangoma
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - switchvox
