@@ -1,0 +1,22 @@
+id: flagr
+info:
+  name: flagr
+  author: cn-kali-team
+  tags: detect,tech,flagr
+  severity: info
+  metadata:
+    fofa-query:
+    - body="flagr"
+    product: flagr
+    shodan-query:
+    - http.html:"flagr"
+    vendor: openflagr
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - flagr
