@@ -1,0 +1,20 @@
+id: wgdashboard
+info:
+  name: wgdashboard
+  author: cn-kali-team
+  tags: detect,tech,wgdashboard
+  severity: info
+  metadata:
+    fofa-query:
+    - title="wgdashboard"
+    product: wgdashboard
+    vendor: wgdashboard
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>wgdashboard.*?</title>

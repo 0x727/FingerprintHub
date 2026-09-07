@@ -1,0 +1,22 @@
+id: clipbucket
+info:
+  name: clipbucket
+  author: cn-kali-team
+  tags: detect,tech,clipbucket
+  severity: info
+  metadata:
+    fofa-query:
+    - body="clipbucket" || body="clipbucket"
+    product: clipbucket
+    shodan-query:
+    - http.html:"clipbucket"
+    vendor: macwarrior
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - clipbucket
