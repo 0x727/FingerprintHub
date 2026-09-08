@@ -1,0 +1,23 @@
+id: acymailing
+info:
+  name: acymailing
+  author: cn-kali-team
+  tags: detect,tech,acymailing
+  severity: info
+  metadata:
+    fofa-query:
+    - body="com_acym" || body="acymailing"
+    product: acymailing
+    shodan-query:
+    - http.html:"com_acym"
+    vendor: acyba
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - acymailing
+    - com_acym
