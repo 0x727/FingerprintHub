@@ -1,0 +1,22 @@
+id: monsta-ftp
+info:
+  name: monsta-ftp
+  author: cn-kali-team
+  tags: detect,tech,monsta-ftp
+  severity: info
+  metadata:
+    fofa-query:
+    - body="monsta ftp"
+    product: monsta-ftp
+    shodan-query:
+    - http.html:"monsta ftp"
+    vendor: monsta
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - monsta ftp

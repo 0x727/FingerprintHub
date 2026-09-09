@@ -1,0 +1,23 @@
+id: fluig
+info:
+  name: fluig
+  author: cn-kali-team
+  tags: detect,tech,fluig
+  severity: info
+  metadata:
+    fofa-query:
+    - app="totvs-fluig"
+    - title="fluig"
+    product: fluig
+    shodan-query:
+    - http.title:"fluig"
+    vendor: totvs
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>fluig.*?</title>
