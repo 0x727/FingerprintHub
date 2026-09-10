@@ -1,0 +1,22 @@
+id: freescout
+info:
+  name: freescout
+  author: cn-kali-team
+  tags: detect,tech,freescout
+  severity: info
+  metadata:
+    fofa-query:
+    - title="freescout" || body="freescout"
+    product: freescout
+    shodan-query:
+    - http.title:"freescout"
+    vendor: freescout-help-desk
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - freescout

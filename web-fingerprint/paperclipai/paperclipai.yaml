@@ -1,0 +1,23 @@
+id: paperclipai
+info:
+  name: paperclipai
+  author: cn-kali-team
+  tags: detect,tech,paperclipai
+  severity: info
+  metadata:
+    fofa-query:
+    - title="paperclip" && port="3100"
+    product: paperclipai
+    shodan-query:
+    - http.title:"paperclip" port:3100
+    vendor: paperclipai
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>paperclip" port:3100.*?</title>
+    - (?mi)<title[^>]*>paperclip.*?</title>

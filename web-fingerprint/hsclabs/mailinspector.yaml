@@ -1,0 +1,22 @@
+id: mailinspector
+info:
+  name: mailinspector
+  author: cn-kali-team
+  tags: detect,tech,mailinspector
+  severity: info
+  metadata:
+    fofa-query:
+    - body="mailinspector"
+    product: mailinspector
+    shodan-query:
+    - http.html:"mailinspector"
+    vendor: hsclabs
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - mailinspector
