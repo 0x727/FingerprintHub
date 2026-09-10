@@ -1,0 +1,23 @@
+id: masterstudy-lms
+info:
+  name: masterstudy-lms
+  author: cn-kali-team
+  tags: detect,tech,masterstudy-lms
+  severity: info
+  metadata:
+    fofa-query:
+    - body="masterstudy-lms-learning-management-system"
+    product: masterstudy-lms
+    shodan-query:
+    - http.html:"/wp-content/plugins/masterstudy-lms-learning-management-system/"
+    vendor: stylemix
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/masterstudy-lms-learning-management-system/
+    - masterstudy-lms-learning-management-system
