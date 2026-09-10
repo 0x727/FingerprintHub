@@ -1,0 +1,22 @@
+id: tpadmin
+info:
+  name: tpadmin
+  author: cn-kali-team
+  tags: detect,tech,tpadmin
+  severity: info
+  metadata:
+    fofa-query:
+    - body="tpadmin"
+    product: tpadmin
+    shodan-query:
+    - http.html:"tpadmin"
+    vendor: yuan1994
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - tpadmin
