@@ -1,0 +1,22 @@
+id: appium
+info:
+  name: appium
+  author: cn-kali-team
+  tags: detect,tech,appium
+  severity: info
+  metadata:
+    fofa-query:
+    - icon_hash="-144749386"
+    product: appium
+    shodan-query:
+    - http.favicon.hash:-144749386
+    vendor: appium
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '-144749386'
