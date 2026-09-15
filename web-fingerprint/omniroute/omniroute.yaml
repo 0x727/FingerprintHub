@@ -1,0 +1,22 @@
+id: omniroute
+info:
+  name: omniroute
+  author: cn-kali-team
+  tags: detect,tech,omniroute
+  severity: info
+  metadata:
+    fofa-query:
+    - title="omniroute"
+    product: omniroute
+    shodan-query:
+    - http.title:"omniroute"
+    vendor: omniroute
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>omniroute.*?</title>

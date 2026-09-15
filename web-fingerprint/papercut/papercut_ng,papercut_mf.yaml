@@ -1,0 +1,22 @@
+id: papercut_ng,papercut_mf
+info:
+  name: papercut_ng,papercut_mf
+  author: cn-kali-team
+  tags: detect,tech,papercut_ng,papercut_mf
+  severity: info
+  metadata:
+    fofa-query:
+    - title="papercut"
+    product: papercut_ng,papercut_mf
+    shodan-query:
+    - http.title:"papercut"
+    vendor: papercut
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>papercut.*?</title>

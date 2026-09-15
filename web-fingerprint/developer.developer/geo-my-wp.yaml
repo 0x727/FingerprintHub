@@ -1,0 +1,22 @@
+id: geo-my-wp
+info:
+  name: geo-my-wp
+  author: cn-kali-team
+  tags: detect,tech,geo-my-wp
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/geo-my-wp/"
+    product: geo-my-wp
+    shodan-query:
+    - http.html:"/wp-content/plugins/geo-my-wp/"
+    vendor: developer.developer
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/geo-my-wp/
