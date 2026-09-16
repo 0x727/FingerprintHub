@@ -1,0 +1,21 @@
+id: knife4j
+info:
+  name: knife4j
+  author: P0m32Kun
+  tags: detect,tech,knife4j
+  severity: info
+  metadata:
+    product: knife4j
+    vendor: 00_unknown
+    verified: false
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/doc.html'
+  matchers:
+  - type: word
+    words:
+    - knife4j
+    - SwaggerBootstrapUi
+    condition: or
+    case-insensitive: true
