@@ -1,0 +1,20 @@
+id: arangodb
+info:
+  name: arangodb
+  author: cn-kali-team
+  tags: detect,tech,arangodb
+  severity: info
+  metadata:
+    product: arangodb
+    shodan-query:
+    - http.title:"arangodb web interface"
+    vendor: arangodb
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>arangodb web interface.*?</title>
