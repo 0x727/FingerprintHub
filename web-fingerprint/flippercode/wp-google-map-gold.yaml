@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - /wp-content/plugins/wp-maps-pro/
+    case-insensitive: true

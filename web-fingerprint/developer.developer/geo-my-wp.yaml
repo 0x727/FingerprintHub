@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - /wp-content/plugins/geo-my-wp/
+    case-insensitive: true

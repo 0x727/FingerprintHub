@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - parseserverversion
+    case-insensitive: true

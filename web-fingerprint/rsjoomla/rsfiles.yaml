@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - com_rsfiles
+    case-insensitive: true

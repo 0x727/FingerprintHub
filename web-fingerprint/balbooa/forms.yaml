@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - com_baforms
+    case-insensitive: true

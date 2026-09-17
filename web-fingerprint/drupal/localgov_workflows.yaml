@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - /modules/contrib/localgov
+    case-insensitive: true

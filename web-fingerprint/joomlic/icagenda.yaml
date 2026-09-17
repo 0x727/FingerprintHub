@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - com_icagenda
+    case-insensitive: true

@@ -16,6 +16,5 @@ http:
   - type: word
     words:
     - knife4j
-    - SwaggerBootstrapUi
-    condition: or
+    - swaggerbootstrapui
     case-insensitive: true

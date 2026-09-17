@@ -22,3 +22,4 @@ http:
     - goform
     - lb-link
     - lb-link" "goahead-webs
+    case-insensitive: true

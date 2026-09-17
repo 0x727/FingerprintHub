@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - real-estate-listing-realtyna-wpl
+    case-insensitive: true

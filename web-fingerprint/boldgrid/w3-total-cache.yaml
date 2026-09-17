@@ -21,3 +21,4 @@ http:
     words:
     - /wp-content/plugins/w3-total-cache/
     - w3-total-cache
+    case-insensitive: true

@@ -21,3 +21,4 @@ http:
     words:
     - acymailing
     - com_acym
+    case-insensitive: true

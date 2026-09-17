@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - monsta ftp
+    case-insensitive: true

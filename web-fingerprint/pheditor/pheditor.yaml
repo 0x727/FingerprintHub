@@ -21,3 +21,4 @@ http:
     words:
     - pheditor
     - pheditor_password
+    case-insensitive: true

@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - discuz! x5.0
+    case-insensitive: true

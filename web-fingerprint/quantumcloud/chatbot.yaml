@@ -20,3 +20,4 @@ http:
   - type: word
     words:
     - wp_chatbot_obj
+    case-insensitive: true
