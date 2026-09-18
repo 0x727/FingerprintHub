@@ -1,0 +1,20 @@
+id: yamcs
+info:
+  name: yamcs
+  author: cn-kali-team
+  tags: detect,tech,yamcs
+  severity: info
+  metadata:
+    product: yamcs
+    shodan-query:
+    - title:"yamcs"
+    vendor: yamcs
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>yamcs.*?</title>

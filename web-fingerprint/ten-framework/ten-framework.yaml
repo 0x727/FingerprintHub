@@ -1,0 +1,22 @@
+id: ten-framework
+info:
+  name: ten-framework
+  author: cn-kali-team
+  tags: detect,tech,ten-framework
+  severity: info
+  metadata:
+    fofa-query:
+    - title="ten manager"
+    product: ten-framework
+    shodan-query:
+    - http.title:"ten manager"
+    vendor: ten-framework
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>ten manager.*?</title>

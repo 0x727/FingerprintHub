@@ -1,0 +1,23 @@
+id: artifactory
+info:
+  name: artifactory
+  author: cn-kali-team
+  tags: detect,tech,artifactory
+  severity: info
+  metadata:
+    fofa-query:
+    - title="jfrog"
+    product: artifactory
+    shodan-query:
+    - cpe:"cpe:2.3:a:jfrog:artifactory"
+    - http.title:"jfrog"
+    vendor: jfrog
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>jfrog.*?</title>
