@@ -1,0 +1,24 @@
+id: gravityforms
+info:
+  name: gravityforms
+  author: cn-kali-team
+  tags: detect,tech,gravityforms
+  severity: info
+  metadata:
+    fofa-query:
+    - body="gravityforms" && body="gform_wrapper"
+    product: gravityforms
+    shodan-query:
+    - http.html:"gravityforms" http.html:"gform_wrapper"
+    vendor: rocketgenius
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - gform_wrapper
+    - gravityforms
+    - gravityforms" http.html:"gform_wrapper
