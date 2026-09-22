@@ -1,0 +1,20 @@
+id: ai-copilot-content-generator
+info:
+  name: ai-copilot-content-generator
+  author: cn-kali-team
+  tags: detect,tech,ai-copilot-content-generator
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/ai-copilot-content-generator/"
+    product: ai-copilot-content-generator
+    vendor: aiwu
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/ai-copilot-content-generator/

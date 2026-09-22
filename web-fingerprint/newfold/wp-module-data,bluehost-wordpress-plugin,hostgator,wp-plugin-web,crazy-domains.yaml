@@ -1,0 +1,22 @@
+id: wp-module-data,bluehost-wordpress-plugin,hostgator,wp-plugin-web,crazy-domains
+info:
+  name: wp-module-data,bluehost-wordpress-plugin,hostgator,wp-plugin-web,crazy-domains
+  author: cn-kali-team
+  tags: detect,tech,wp-module-data,bluehost-wordpress-plugin,hostgator,wp-plugin-web,crazy-domains
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/wp-plugin-crazy-domains"
+    product: wp-module-data,bluehost-wordpress-plugin,hostgator,wp-plugin-web,crazy-domains
+    shodan-query:
+    - html:"/wp-content/plugins/wp-plugin-crazy-domains"
+    vendor: newfold
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/wp-plugin-crazy-domains
