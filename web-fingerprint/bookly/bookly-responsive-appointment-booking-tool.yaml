@@ -1,0 +1,22 @@
+id: bookly-responsive-appointment-booking-tool
+info:
+  name: bookly-responsive-appointment-booking-tool
+  author: cn-kali-team
+  tags: detect,tech,bookly-responsive-appointment-booking-tool
+  severity: info
+  metadata:
+    fofa-query:
+    - body="booklyl10nglobal"
+    product: bookly-responsive-appointment-booking-tool
+    shodan-query:
+    - http.html:"booklyl10nglobal"
+    vendor: bookly
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - booklyl10nglobal
