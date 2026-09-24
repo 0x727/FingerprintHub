@@ -1,0 +1,23 @@
+id: blue_angel_software_suite
+info:
+  name: blue_angel_software_suite
+  author: cn-kali-team
+  tags: detect,tech,blue_angel_software_suite
+  severity: info
+  metadata:
+    fofa-query:
+    - title="analog telephone adapter" && server="mini_httpd"
+    product: blue_angel_software_suite
+    shodan-query:
+    - http.title:"analog telephone adapter" http.headers:"mini_httpd"
+    vendor: 5vtechnologies
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>analog telephone adapter" http.headers:"mini_httpd.*?</title>
+    - (?mi)<title[^>]*>analog telephone adapter.*?</title>
