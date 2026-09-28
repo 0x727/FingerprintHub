@@ -1,0 +1,22 @@
+id: signalk-server
+info:
+  name: signalk-server
+  author: cn-kali-team
+  tags: detect,tech,signalk-server
+  severity: info
+  metadata:
+    fofa-query:
+    - title="signal k server"
+    product: signalk-server
+    shodan-query:
+    - title:"signal k server"
+    vendor: signalk
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>signal k server.*?</title>

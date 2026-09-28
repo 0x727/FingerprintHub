@@ -1,0 +1,20 @@
+id: gitlab-mcp
+info:
+  name: gitlab-mcp
+  author: cn-kali-team
+  tags: detect,tech,gitlab-mcp
+  severity: info
+  metadata:
+    product: gitlab-mcp
+    shodan-query:
+    - http.html:"\"transport\":\"sse\""
+    vendor: zereight
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - transport:sse

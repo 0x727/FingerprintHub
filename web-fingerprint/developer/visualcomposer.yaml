@@ -1,0 +1,22 @@
+id: visualcomposer
+info:
+  name: visualcomposer
+  author: cn-kali-team
+  tags: detect,tech,visualcomposer
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/visualcomposer/"
+    product: visualcomposer
+    shodan-query:
+    - http.html:"/wp-content/plugins/visualcomposer/"
+    vendor: developer
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/visualcomposer/
