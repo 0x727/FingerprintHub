@@ -1,0 +1,22 @@
+id: wpforms
+info:
+  name: wpforms
+  author: cn-kali-team
+  tags: detect,tech,wpforms
+  severity: info
+  metadata:
+    fofa-query:
+    - body="wpforms-uploader"
+    product: wpforms
+    shodan-query:
+    - http.html:"wpforms-uploader"
+    vendor: awesome-motive
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - wpforms-uploader
