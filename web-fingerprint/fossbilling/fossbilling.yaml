@@ -1,0 +1,22 @@
+id: fossbilling
+info:
+  name: fossbilling
+  author: cn-kali-team
+  tags: detect,tech,fossbilling
+  severity: info
+  metadata:
+    fofa-query:
+    - body="fossbilling"
+    product: fossbilling
+    shodan-query:
+    - http.html:"fossbilling"
+    vendor: fossbilling
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - fossbilling

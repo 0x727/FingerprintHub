@@ -1,0 +1,27 @@
+id: discourse
+info:
+  name: discourse
+  author: cn-kali-team
+  tags: detect,tech,discourse
+  severity: info
+  metadata:
+    fofa-query:
+    - body="discourse"
+    - app="discourse"
+    hunter-query:
+    - web.title="discourse"
+    product: discourse
+    shodan-query:
+    - http.component:"discourse"
+    vendor: discourse
+    verified: true
+    zoomeye-query:
+    - app:"discourse"
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - discourse

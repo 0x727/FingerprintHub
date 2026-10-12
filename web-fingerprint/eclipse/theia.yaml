@@ -1,0 +1,22 @@
+id: theia
+info:
+  name: theia
+  author: cn-kali-team
+  tags: detect,tech,theia
+  severity: info
+  metadata:
+    fofa-query:
+    - body="eclipse-theia"
+    product: theia
+    shodan-query:
+    - html:"eclipse-theia"
+    vendor: eclipse
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - eclipse-theia
