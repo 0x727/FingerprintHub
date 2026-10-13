@@ -1,0 +1,22 @@
+id: bifrost
+info:
+  name: bifrost
+  author: cn-kali-team
+  tags: detect,tech,bifrost
+  severity: info
+  metadata:
+    fofa-query:
+    - body="bifrost-shell"
+    product: bifrost
+    shodan-query:
+    - http.html:"bifrost-shell"
+    vendor: maximhq
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - bifrost-shell

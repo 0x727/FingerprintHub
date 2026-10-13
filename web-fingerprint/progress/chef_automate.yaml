@@ -1,0 +1,22 @@
+id: chef_automate
+info:
+  name: chef_automate
+  author: cn-kali-team
+  tags: detect,tech,chef_automate
+  severity: info
+  metadata:
+    fofa-query:
+    - title="chef automate"
+    product: chef_automate
+    shodan-query:
+    - http.title:"chef automate"
+    vendor: progress
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>chef automate.*?</title>

@@ -1,0 +1,22 @@
+id: selenium_grid
+info:
+  name: selenium_grid
+  author: cn-kali-team
+  tags: detect,tech,selenium_grid
+  severity: info
+  metadata:
+    fofa-query:
+    - title="selenium grid"
+    product: selenium_grid
+    shodan-query:
+    - http.title:"selenium grid"
+    vendor: selenium
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>selenium grid.*?</title>
