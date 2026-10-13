@@ -1,0 +1,22 @@
+id: caldera
+info:
+  name: caldera
+  author: cn-kali-team
+  tags: detect,tech,caldera
+  severity: info
+  metadata:
+    fofa-query:
+    - title="caldera"
+    product: caldera
+    shodan-query:
+    - http.title:"caldera"
+    vendor: mitre
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>caldera.*?</title>

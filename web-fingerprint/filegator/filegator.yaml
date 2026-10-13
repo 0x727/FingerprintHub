@@ -1,0 +1,22 @@
+id: filegator
+info:
+  name: filegator
+  author: cn-kali-team
+  tags: detect,tech,filegator
+  severity: info
+  metadata:
+    fofa-query:
+    - title="filegator"
+    product: filegator
+    shodan-query:
+    - http.title:"filegator"
+    vendor: filegator
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>filegator.*?</title>
