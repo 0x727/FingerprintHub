@@ -1,0 +1,22 @@
+id: wp_fast_total_search
+info:
+  name: wp_fast_total_search
+  author: cn-kali-team
+  tags: detect,tech,wp_fast_total_search
+  severity: info
+  metadata:
+    fofa-query:
+    - body="wp-content/plugins/fulltext-search"
+    product: wp_fast_total_search
+    shodan-query:
+    - http.html:"wp-content/plugins/fulltext-search"
+    vendor: wp-fast-total-search
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - wp-content/plugins/fulltext-search
