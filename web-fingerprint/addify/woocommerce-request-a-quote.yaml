@@ -1,0 +1,23 @@
+id: woocommerce-request-a-quote
+info:
+  name: woocommerce-request-a-quote
+  author: cn-kali-team
+  tags: detect,tech,woocommerce-request-a-quote
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/woocommerce-request-a-quote/"
+    product: woocommerce-request-a-quote
+    shodan-query:
+    - http.html:"woocommerce-request-a-quote"
+    vendor: addify
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/woocommerce-request-a-quote/
+    - woocommerce-request-a-quote
