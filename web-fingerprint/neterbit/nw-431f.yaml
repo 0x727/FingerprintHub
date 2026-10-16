@@ -1,0 +1,22 @@
+id: nw-431f
+info:
+  name: nw-431f
+  author: cn-kali-team
+  tags: detect,tech,nw-431f
+  severity: info
+  metadata:
+    fofa-query:
+    - title="neterbit nw-431f"
+    product: nw-431f
+    shodan-query:
+    - http.title:"neterbit nw-431f"
+    vendor: neterbit
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>neterbit nw-431f.*?</title>
