@@ -1,0 +1,22 @@
+id: splunk_enterprise
+info:
+  name: splunk_enterprise
+  author: cn-kali-team
+  tags: detect,tech,splunk_enterprise
+  severity: info
+  metadata:
+    fofa-query:
+    - body="patroni"
+    product: splunk_enterprise
+    shodan-query:
+    - html:"patroni"
+    vendor: splunk
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - patroni
