@@ -79,7 +79,7 @@ info:
 | author      | String                  | 作者列表，一个以逗号隔开的字符串列表                         |
 | tags        | String                  | 标签列表，一个以逗号隔开的字符串列表                         |
 | severity    | Enum                    | 严重程度：unknown,info,low,medium,high,critical |
-| metadata    | HashMap<String,String>  | 元数据，一个字典，可以存放任意类型数据                        |
+| metadata    | BTreeMap<String,Value>  | 元数据，一个字典；值支持字符串、布尔、数字、列表等，可存放任意类型数据 |
 | description | Option\<String\>        | (可选)描述                                     |
 | reference   | Option\<Vec\<String\>\> | (可选)引用参考链接                                 |
 
