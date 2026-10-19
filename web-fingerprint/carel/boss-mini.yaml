@@ -17,4 +17,4 @@ http:
   matchers:
   - type: favicon
     hash:
-    - ="1092427843
+    - '1092427843'
