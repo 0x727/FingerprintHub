@@ -74,7 +74,7 @@ jobs:
             ## 验证失败:
             - 请在本地测试识别成功后重新修改当前Issue的Yaml内容。
             ```bash
-            ➜  ~ ./observer_ward_amd64 --verify 0x727/FingerprintHub/fingerprint/swagger.yaml -t http://httpbin.org
+            ➜  ~ ./observer_ward_amd64 -t http://httpbin.org -p web-fingerprint/00_unknown/swagger.yaml --debug
             ```
       - name: Create Pending Review Comment
         if: contains(steps.verify_log.outputs.content,'MatcherResult') == 'true'

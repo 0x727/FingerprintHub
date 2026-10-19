@@ -14,7 +14,7 @@ body:
       value: |
         提交前请先在本地验证指纹规则，本地验证示例：
         ```bash
-        ➜  ~ ./observer_ward_amd64 --verify 0x727/FingerprintHub/fingerprint/swagger.yaml -t http://httpbin.org
+        ➜  ~ ./observer_ward_amd64 -t http://httpbin.org -p web-fingerprint/00_unknown/swagger.yaml --debug
         [ http://httpbin.org |["swagger"] | 9593 | 200 | httpbin.org ]
         Important technology:
 
