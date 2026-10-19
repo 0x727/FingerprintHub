@@ -18,3 +18,4 @@ http:
   - type: word
     words:
     - transport:sse
+    case-insensitive: true

@@ -21,3 +21,4 @@ http:
     words:
     - /wp-content/plugins/woocommerce-request-a-quote/
     - woocommerce-request-a-quote
+    case-insensitive: true

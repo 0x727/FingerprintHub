@@ -25,3 +25,4 @@ http:
   - type: word
     words:
     - discourse
+    case-insensitive: true

@@ -18,3 +18,17 @@ http:
   - type: regex
     regex:
     - (?mi)<title[^>]*>suitecrm.*?</title>
+  - type: word
+    words:
+    - alt="suitecrm"
+    - src="custom/themes/default/images/company_logo.png
+    - src="img/suitecrm.png" alt="bitnami suitecrm stack"
+    - sugar.themes.theme_name      = 'suiter'
+    - sugar.themes.theme_name = 'suitep'
+    - supercharged by suitecrm
+    case-insensitive: true
+  - type: word
+    words:
+    - 'set-cookie: sugar_user_theme=suitep'
+    part: header
+    case-insensitive: true

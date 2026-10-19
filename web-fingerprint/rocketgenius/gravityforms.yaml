@@ -22,3 +22,4 @@ http:
     - gform_wrapper
     - gravityforms
     - gravityforms" http.html:"gform_wrapper
+    case-insensitive: true
