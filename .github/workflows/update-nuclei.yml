@@ -39,6 +39,7 @@ jobs:
         run: |
           git clone --depth 100 --branch main https://github.com/projectdiscovery/nuclei-templates
           ./target/release/helper --sync
+          ./target/release/helper --convert
 
       - name: Update Nuclei
         id: update-nuclei
