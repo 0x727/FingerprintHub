@@ -1,0 +1,20 @@
+id: the-grid
+info:
+  name: the-grid
+  author: cn-kali-team
+  tags: detect,tech,the-grid
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/the-grid/"
+    product: the-grid
+    vendor: theme-one
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/the-grid/
