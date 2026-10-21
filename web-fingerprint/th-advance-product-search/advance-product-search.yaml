@@ -1,0 +1,22 @@
+id: advance-product-search
+info:
+  name: advance-product-search
+  author: cn-kali-team
+  tags: detect,tech,advance-product-search
+  severity: info
+  metadata:
+    fofa-query:
+    - wp-content/plugins/th-advance-product-search/
+    product: advance-product-search
+    shodan-query:
+    - http.html:"wp-content/plugins/th-advance-product-search/"
+    vendor: th-advance-product-search
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - wp-content/plugins/th-advance-product-search/

@@ -1,0 +1,20 @@
+id: truebooker-appointment-booking
+info:
+  name: truebooker-appointment-booking
+  author: cn-kali-team
+  tags: detect,tech,truebooker-appointment-booking
+  severity: info
+  metadata:
+    fofa-query:
+    - body="truebooker-appointment-booking"
+    product: truebooker-appointment-booking
+    vendor: truebooker
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - truebooker-appointment-booking

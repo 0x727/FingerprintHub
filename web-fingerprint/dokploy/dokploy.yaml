@@ -1,0 +1,20 @@
+id: dokploy
+info:
+  name: dokploy
+  author: cn-kali-team
+  tags: detect,tech,dokploy
+  severity: info
+  metadata:
+    product: dokploy
+    shodan-query:
+    - html:"dokploy"
+    vendor: dokploy
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - dokploy
