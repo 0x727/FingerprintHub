@@ -1,0 +1,22 @@
+id: piotnetforms-pro
+info:
+  name: piotnetforms-pro
+  author: cn-kali-team
+  tags: detect,tech,piotnetforms-pro
+  severity: info
+  metadata:
+    fofa-query:
+    - body="piotnetforms"
+    product: piotnetforms-pro
+    shodan-query:
+    - http.html:"piotnetforms"
+    vendor: piotnetforms
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - piotnetforms
