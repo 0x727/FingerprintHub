@@ -1,0 +1,20 @@
+id: link-library
+info:
+  name: link-library
+  author: cn-kali-team
+  tags: detect,tech,link-library
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/link-library/"
+    product: link-library
+    vendor: yannick-lefebvre
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/link-library/

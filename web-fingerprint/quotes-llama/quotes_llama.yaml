@@ -1,0 +1,22 @@
+id: quotes_llama
+info:
+  name: quotes_llama
+  author: cn-kali-team
+  tags: detect,tech,quotes_llama
+  severity: info
+  metadata:
+    fofa-query:
+    - wp-content/plugins/quotes-llama/
+    product: quotes_llama
+    shodan-query:
+    - http.html:"wp-content/plugins/quotes-llama/"
+    vendor: quotes-llama
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - wp-content/plugins/quotes-llama/
