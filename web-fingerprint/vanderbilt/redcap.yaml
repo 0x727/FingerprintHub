@@ -1,0 +1,26 @@
+id: redcap
+info:
+  name: redcap
+  author: cn-kali-team
+  tags: detect,tech,redcap
+  severity: info
+  metadata:
+    fofa-query:
+    - title="redcap" || body="redcap_version" || body="/surveys/?s="
+    product: redcap
+    shodan-query:
+    - http.title:"redcap"
+    vendor: vanderbilt
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /surveys/?s=
+    - redcap_version
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>redcap.*?</title>
