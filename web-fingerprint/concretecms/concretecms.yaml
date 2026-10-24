@@ -1,0 +1,22 @@
+id: concretecms
+info:
+  name: concretecms
+  author: cn-kali-team
+  tags: detect,tech,concretecms
+  severity: info
+  metadata:
+    fofa-query:
+    - body="concrete cms"
+    product: concretecms
+    shodan-query:
+    - http.html:"concrete cms"
+    vendor: concretecms
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - concrete cms
