@@ -1,0 +1,25 @@
+id: paisa
+info:
+  name: paisa
+  author: cn-kali-team
+  tags: detect,tech,paisa
+  severity: info
+  metadata:
+    fofa-query:
+    - body="paisa is an open source personal finance manager"
+    product: paisa
+    shodan-query:
+    - http.title:"paisa"
+    vendor: ananthakumaran
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - paisa is an open source personal finance manager
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>paisa.*?</title>

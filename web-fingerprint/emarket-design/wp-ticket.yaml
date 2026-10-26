@@ -1,0 +1,22 @@
+id: wp-ticket
+info:
+  name: wp-ticket
+  author: cn-kali-team
+  tags: detect,tech,wp-ticket
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/wp-ticket"
+    product: wp-ticket
+    shodan-query:
+    - html:"/wp-content/plugins/wp-ticket"
+    vendor: emarket-design
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/wp-ticket

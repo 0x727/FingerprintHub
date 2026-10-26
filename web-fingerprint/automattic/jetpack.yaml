@@ -1,0 +1,22 @@
+id: jetpack
+info:
+  name: jetpack
+  author: cn-kali-team
+  tags: detect,tech,jetpack
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/jetpack/"
+    product: jetpack
+    shodan-query:
+    - http.html:"/wp-content/plugins/jetpack/"
+    vendor: automattic
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/jetpack/

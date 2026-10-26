@@ -1,0 +1,22 @@
+id: simple_membership
+info:
+  name: simple_membership
+  author: cn-kali-team
+  tags: detect,tech,simple_membership
+  severity: info
+  metadata:
+    fofa-query:
+    - body="com_simplemembership"
+    product: simple_membership
+    shodan-query:
+    - http.html:"com_simplemembership"
+    vendor: ordasoft
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - com_simplemembership

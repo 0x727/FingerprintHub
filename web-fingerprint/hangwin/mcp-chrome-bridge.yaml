@@ -1,0 +1,22 @@
+id: mcp-chrome-bridge
+info:
+  name: mcp-chrome-bridge
+  author: cn-kali-team
+  tags: detect,tech,mcp-chrome-bridge
+  severity: info
+  metadata:
+    fofa-query:
+    - body="chrome mcp"
+    product: mcp-chrome-bridge
+    shodan-query:
+    - html:"chrome mcp"
+    vendor: hangwin
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - chrome mcp
