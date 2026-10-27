@@ -1,0 +1,23 @@
+id: ahsaycbs
+info:
+  name: ahsaycbs
+  author: cn-kali-team
+  tags: detect,tech,ahsaycbs
+  severity: info
+  metadata:
+    fofa-query:
+    - body="ahsaycbs" || body="/cbs/logon.do"
+    product: ahsaycbs
+    shodan-query:
+    - http.title:"/cbs/logon.do"
+    vendor: ahsay
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /cbs/logon.do
+    - ahsaycbs
