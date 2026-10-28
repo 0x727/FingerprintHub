@@ -1,0 +1,22 @@
+id: richdocumentscode
+info:
+  name: richdocumentscode
+  author: cn-kali-team
+  tags: detect,tech,richdocumentscode
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/apps/richdocumentscode/"
+    product: richdocumentscode
+    shodan-query:
+    - http.html:"/apps/richdocumentscode/"
+    vendor: collabora
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /apps/richdocumentscode/

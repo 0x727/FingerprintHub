@@ -1,0 +1,22 @@
+id: docker-proxy
+info:
+  name: docker-proxy
+  author: cn-kali-team
+  tags: detect,tech,docker-proxy
+  severity: info
+  metadata:
+    fofa-query:
+    - body="hubcmdui"
+    product: docker-proxy
+    shodan-query:
+    - http.html:"hubcmdui"
+    vendor: dqzboy
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - hubcmdui
