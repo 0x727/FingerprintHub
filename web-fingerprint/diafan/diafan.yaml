@@ -1,0 +1,22 @@
+id: diafan
+info:
+  name: diafan
+  author: cn-kali-team
+  tags: detect,tech,diafan
+  severity: info
+  metadata:
+    fofa-query:
+    - body="diafan.cms"
+    product: diafan
+    shodan-query:
+    - http.html:"diafan.cms"
+    vendor: diafan
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - diafan.cms
