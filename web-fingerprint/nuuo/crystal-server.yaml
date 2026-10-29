@@ -1,0 +1,22 @@
+id: crystal-server
+info:
+  name: crystal-server
+  author: cn-kali-team
+  tags: detect,tech,crystal-server
+  severity: info
+  metadata:
+    fofa-query:
+    - body="nuuo"
+    product: crystal-server
+    shodan-query:
+    - http.html:"nuuo"
+    vendor: nuuo
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - nuuo
