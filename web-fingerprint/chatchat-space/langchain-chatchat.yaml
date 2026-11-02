@@ -1,0 +1,22 @@
+id: langchain-chatchat
+info:
+  name: langchain-chatchat
+  author: cn-kali-team
+  tags: detect,tech,langchain-chatchat
+  severity: info
+  metadata:
+    fofa-query:
+    - title="langchain-chatchat api server"
+    product: langchain-chatchat
+    shodan-query:
+    - http.title:"langchain-chatchat api server"
+    vendor: chatchat-space
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>langchain-chatchat api server.*?</title>
