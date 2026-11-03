@@ -1,0 +1,22 @@
+id: rancher
+info:
+  name: rancher
+  author: cn-kali-team
+  tags: detect,tech,rancher
+  severity: info
+  metadata:
+    fofa-query:
+    - title="rancher"
+    product: rancher
+    shodan-query:
+    - http.title:"rancher"
+    vendor: suse
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>rancher.*?</title>
