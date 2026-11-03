@@ -1,0 +1,22 @@
+id: typemill
+info:
+  name: typemill
+  author: cn-kali-team
+  tags: detect,tech,typemill
+  severity: info
+  metadata:
+    fofa-query:
+    - body="typemill"
+    product: typemill
+    shodan-query:
+    - http.html:"typemill"
+    vendor: typemill
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - typemill
