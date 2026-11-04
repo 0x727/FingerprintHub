@@ -1,0 +1,22 @@
+id: madong-admin-saas
+info:
+  name: madong-admin-saas
+  author: cn-kali-team
+  tags: detect,tech,madong-admin-saas
+  severity: info
+  metadata:
+    fofa-query:
+    - icon_hash="1349700189"
+    product: madong-admin-saas
+    shodan-query:
+    - http.favicon.hash:1349700189
+    vendor: madong-code
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '1349700189'
