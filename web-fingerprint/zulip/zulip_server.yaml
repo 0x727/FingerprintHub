@@ -1,0 +1,22 @@
+id: zulip_server
+info:
+  name: zulip_server
+  author: cn-kali-team
+  tags: detect,tech,zulip_server
+  severity: info
+  metadata:
+    fofa-query:
+    - app="zulip"
+    product: zulip_server
+    shodan-query:
+    - http.html:"zulip"
+    vendor: zulip
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - zulip

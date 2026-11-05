@@ -1,0 +1,22 @@
+id: comfyui-manager
+info:
+  name: comfyui-manager
+  author: cn-kali-team
+  tags: detect,tech,comfyui-manager
+  severity: info
+  metadata:
+    fofa-query:
+    - title="comfyui"
+    product: comfyui-manager
+    shodan-query:
+    - http.title:"comfyui"
+    vendor: comfy
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>comfyui.*?</title>

@@ -1,0 +1,20 @@
+id: welcart_e-commerce
+info:
+  name: welcart_e-commerce
+  author: cn-kali-team
+  tags: detect,tech,welcart_e-commerce
+  severity: info
+  metadata:
+    fofa-query:
+    - body="wp-content/plugins/usc-e-shop"
+    product: welcart_e-commerce
+    vendor: welcart
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - wp-content/plugins/usc-e-shop

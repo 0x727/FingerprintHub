@@ -1,0 +1,24 @@
+id: ape-volo-admin
+info:
+  name: ape-volo-admin
+  author: cn-kali-team
+  tags: detect,tech,ape-volo-admin
+  severity: info
+  metadata:
+    fofa-query:
+    - body="ape-volo-admin" && body="中后台管理权限框架"
+    product: ape-volo-admin
+    shodan-query:
+    - http.html:"ape-volo-admin" http.html:"中后台管理权限框架"
+    vendor: xianhc
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - ape-volo-admin
+    - ape-volo-admin" http.html:"中后台管理权限框架
+    - 中后台管理权限框架

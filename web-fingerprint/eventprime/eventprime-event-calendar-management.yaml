@@ -1,0 +1,20 @@
+id: eventprime-event-calendar-management
+info:
+  name: eventprime-event-calendar-management
+  author: cn-kali-team
+  tags: detect,tech,eventprime-event-calendar-management
+  severity: info
+  metadata:
+    fofa-query:
+    - body="eventprime-event-calendar-management"
+    product: eventprime-event-calendar-management
+    vendor: eventprime
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - eventprime-event-calendar-management
