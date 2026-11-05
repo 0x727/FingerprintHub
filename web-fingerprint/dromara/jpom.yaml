@@ -1,0 +1,22 @@
+id: jpom
+info:
+  name: jpom
+  author: cn-kali-team
+  tags: detect,tech,jpom
+  severity: info
+  metadata:
+    fofa-query:
+    - title="jpom"
+    product: jpom
+    shodan-query:
+    - http.title:"jpom"
+    vendor: dromara
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>jpom.*?</title>
