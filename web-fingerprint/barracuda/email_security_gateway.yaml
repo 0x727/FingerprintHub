@@ -1,0 +1,20 @@
+id: email_security_gateway
+info:
+  name: email_security_gateway
+  author: cn-kali-team
+  tags: detect,tech,email_security_gateway
+  severity: info
+  metadata:
+    product: email_security_gateway
+    shodan-query:
+    - http.html:"barracuda"
+    vendor: barracuda
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - barracuda
