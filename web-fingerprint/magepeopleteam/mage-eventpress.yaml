@@ -1,0 +1,22 @@
+id: mage-eventpress
+info:
+  name: mage-eventpress
+  author: cn-kali-team
+  tags: detect,tech,mage-eventpress
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/mage-eventpress/"
+    product: mage-eventpress
+    shodan-query:
+    - http.html:"/wp-content/plugins/mage-eventpress/"
+    vendor: magepeopleteam
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/mage-eventpress/
