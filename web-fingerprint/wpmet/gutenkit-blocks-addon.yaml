@@ -1,0 +1,23 @@
+id: gutenkit-blocks-addon
+info:
+  name: gutenkit-blocks-addon
+  author: cn-kali-team
+  tags: detect,tech,gutenkit-blocks-addon
+  severity: info
+  metadata:
+    fofa-query:
+    - body="wp-content/plugins/gutenkit-blocks-addon"
+    product: gutenkit-blocks-addon
+    shodan-query:
+    - http.html:"/wp-content/plugins/gutenkit-blocks-addon"
+    vendor: wpmet
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/gutenkit-blocks-addon
+    - wp-content/plugins/gutenkit-blocks-addon
