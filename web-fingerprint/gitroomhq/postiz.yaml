@@ -1,0 +1,22 @@
+id: postiz
+info:
+  name: postiz
+  author: cn-kali-team
+  tags: detect,tech,postiz
+  severity: info
+  metadata:
+    fofa-query:
+    - title="postiz register"
+    product: postiz
+    shodan-query:
+    - html:"postiz register"
+    vendor: gitroomhq
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - postiz register

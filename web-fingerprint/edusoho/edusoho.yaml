@@ -1,0 +1,22 @@
+id: edusoho
+info:
+  name: edusoho
+  author: cn-kali-team
+  tags: detect,tech,edusoho
+  severity: info
+  metadata:
+    fofa-query:
+    - body="powered by edusoho"
+    product: edusoho
+    shodan-query:
+    - title:"powered by edusoho"
+    vendor: edusoho
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - powered by edusoho
