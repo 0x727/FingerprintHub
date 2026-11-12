@@ -1,0 +1,22 @@
+id: munin-httpd
+info:
+  name: munin-httpd
+  author: cn-kali-team
+  tags: detect,tech,munin-httpd
+  severity: info
+  metadata:
+    fofa-query:
+    - title="munin"
+    product: munin-httpd
+    shodan-query:
+    - http.title:"munin"
+    vendor: munin
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>munin.*?</title>
