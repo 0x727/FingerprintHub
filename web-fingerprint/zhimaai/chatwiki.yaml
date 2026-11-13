@@ -1,0 +1,22 @@
+id: chatwiki
+info:
+  name: chatwiki
+  author: cn-kali-team
+  tags: detect,tech,chatwiki
+  severity: info
+  metadata:
+    fofa-query:
+    - title="chatwiki"
+    product: chatwiki
+    shodan-query:
+    - http.title:"chatwiki"
+    vendor: zhimaai
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>chatwiki.*?</title>
