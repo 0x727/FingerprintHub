@@ -1,0 +1,22 @@
+id: opendcim
+info:
+  name: opendcim
+  author: cn-kali-team
+  tags: detect,tech,opendcim
+  severity: info
+  metadata:
+    fofa-query:
+    - body="opendcim"
+    product: opendcim
+    shodan-query:
+    - http.html:"opendcim"
+    vendor: opendcim
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - opendcim

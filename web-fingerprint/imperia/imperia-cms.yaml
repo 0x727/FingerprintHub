@@ -1,0 +1,22 @@
+id: imperia-cms
+info:
+  name: imperia-cms
+  author: cn-kali-team
+  tags: detect,tech,imperia-cms
+  severity: info
+  metadata:
+    fofa-query:
+    - body="imperia"
+    product: imperia-cms
+    shodan-query:
+    - http.html:"imperia"
+    vendor: imperia
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - imperia
