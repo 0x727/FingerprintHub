@@ -1,0 +1,22 @@
+id: stock_management_system
+info:
+  name: stock_management_system
+  author: cn-kali-team
+  tags: detect,tech,stock_management_system
+  severity: info
+  metadata:
+    fofa-query:
+    - title="stock management system"
+    product: stock_management_system
+    shodan-query:
+    - title:"stock management system"
+    vendor: oretnom23
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>stock management system.*?</title>
