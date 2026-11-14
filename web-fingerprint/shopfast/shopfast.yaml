@@ -1,0 +1,23 @@
+id: shopfast
+info:
+  name: shopfast
+  author: anurag12340
+  tags: detect,tech,shopfast
+  severity: info
+  metadata:
+    product: shopfast
+    vendor: shopfast
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - <script type="module" src="/_sf/runtime\.[0-9a-f]{12}\.js"></script>
+  - type: word
+    words:
+    - <meta name="sf:page-type"
+    - id="sf-skeletons"
+    condition: and
