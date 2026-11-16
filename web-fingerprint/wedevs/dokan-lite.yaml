@@ -1,0 +1,20 @@
+id: dokan-lite
+info:
+  name: dokan-lite
+  author: cn-kali-team
+  tags: detect,tech,dokan-lite
+  severity: info
+  metadata:
+    fofa-query:
+    - body="wp-content/plugins/dokan-lite/"
+    product: dokan-lite
+    vendor: wedevs
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - wp-content/plugins/dokan-lite/

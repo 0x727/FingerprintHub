@@ -1,0 +1,25 @@
+id: e-office
+info:
+  name: e-office
+  author: cn-kali-team
+  tags: detect,tech,e-office
+  severity: info
+  metadata:
+    fofa-query:
+    - app="泛微-eoffice"
+    - app="泛微-协同办公oa"
+    product: e-office
+    shodan-query:
+    - http.html:"eoffice"
+    - http.html:"weaver"
+    vendor: weaver
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - eoffice
+    - weaver

@@ -1,0 +1,20 @@
+id: full_page_cache_warmer
+info:
+  name: full_page_cache_warmer
+  author: cn-kali-team
+  tags: detect,tech,full_page_cache_warmer
+  severity: info
+  metadata:
+    fofa-query:
+    - body="mirasvit_cachewarmer"
+    product: full_page_cache_warmer
+    vendor: mirasvit
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - mirasvit_cachewarmer

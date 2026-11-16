@@ -1,0 +1,22 @@
+id: maxkb
+info:
+  name: maxkb
+  author: cn-kali-team
+  tags: detect,tech,maxkb
+  severity: info
+  metadata:
+    fofa-query:
+    - title="maxkb"
+    product: maxkb
+    shodan-query:
+    - http.title:"maxkb"
+    vendor: 1panel
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>maxkb.*?</title>

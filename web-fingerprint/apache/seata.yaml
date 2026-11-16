@@ -1,0 +1,22 @@
+id: seata
+info:
+  name: seata
+  author: cn-kali-team
+  tags: detect,tech,seata
+  severity: info
+  metadata:
+    fofa-query:
+    - title="seata"
+    product: seata
+    shodan-query:
+    - http.title:"seata"
+    vendor: apache
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>seata.*?</title>

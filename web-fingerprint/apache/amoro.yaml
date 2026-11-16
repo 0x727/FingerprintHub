@@ -1,0 +1,22 @@
+id: amoro
+info:
+  name: amoro
+  author: cn-kali-team
+  tags: detect,tech,amoro
+  severity: info
+  metadata:
+    fofa-query:
+    - title="apache amoro"
+    product: amoro
+    shodan-query:
+    - http.title:"apache amoro"
+    vendor: apache
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>apache amoro.*?</title>
