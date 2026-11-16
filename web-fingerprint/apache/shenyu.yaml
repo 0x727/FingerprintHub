@@ -1,0 +1,22 @@
+id: shenyu
+info:
+  name: shenyu
+  author: cn-kali-team
+  tags: detect,tech,shenyu
+  severity: info
+  metadata:
+    fofa-query:
+    - title="apache shenyu gateway"
+    product: shenyu
+    shodan-query:
+    - http.title:"apache shenyu gateway"
+    vendor: apache
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>apache shenyu gateway.*?</title>

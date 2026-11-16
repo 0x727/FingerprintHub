@@ -1,0 +1,20 @@
+id: openobserve
+info:
+  name: openobserve
+  author: cn-kali-team
+  tags: detect,tech,openobserve
+  severity: info
+  metadata:
+    product: openobserve
+    shodan-query:
+    - http.title:"openobserve"
+    vendor: openobserve
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>openobserve.*?</title>

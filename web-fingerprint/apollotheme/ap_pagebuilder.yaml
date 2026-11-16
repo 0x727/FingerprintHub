@@ -1,0 +1,24 @@
+id: ap_pagebuilder
+info:
+  name: ap_pagebuilder
+  author: cn-kali-team
+  tags: detect,tech,ap_pagebuilder
+  severity: info
+  metadata:
+    fofa-query:
+    - body="modules/appagebuilder"
+    product: ap_pagebuilder
+    shodan-query:
+    - http.html:"appagebuilder"
+    - http.component:"prestashop"
+    vendor: apollotheme
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - appagebuilder
+    - modules/appagebuilder
