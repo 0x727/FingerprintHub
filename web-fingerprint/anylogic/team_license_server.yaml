@@ -1,0 +1,22 @@
+id: team_license_server
+info:
+  name: team_license_server
+  author: cn-kali-team
+  tags: detect,tech,team_license_server
+  severity: info
+  metadata:
+    fofa-query:
+    - body="anylogic team license server"
+    product: team_license_server
+    shodan-query:
+    - http.html:"anylogic team license server"
+    vendor: anylogic
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - anylogic team license server

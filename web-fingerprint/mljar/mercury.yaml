@@ -1,0 +1,22 @@
+id: mercury
+info:
+  name: mercury
+  author: cn-kali-team
+  tags: detect,tech,mercury
+  severity: info
+  metadata:
+    fofa-query:
+    - body="--mercury-text-color"
+    product: mercury
+    shodan-query:
+    - http.html:"--mercury-text-color"
+    vendor: mljar
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - --mercury-text-color

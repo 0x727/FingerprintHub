@@ -1,0 +1,22 @@
+id: funnelkit-stripe-woo-payment-gateway
+info:
+  name: funnelkit-stripe-woo-payment-gateway
+  author: cn-kali-team
+  tags: detect,tech,funnelkit-stripe-woo-payment-gateway
+  severity: info
+  metadata:
+    fofa-query:
+    - body="funnelkit-stripe-woo-payment-gateway"
+    product: funnelkit-stripe-woo-payment-gateway
+    shodan-query:
+    - http.html:"funnelkit-stripe-woo-payment-gateway"
+    vendor: funnelkit
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - funnelkit-stripe-woo-payment-gateway

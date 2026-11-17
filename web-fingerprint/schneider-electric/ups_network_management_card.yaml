@@ -1,0 +1,22 @@
+id: ups_network_management_card
+info:
+  name: ups_network_management_card
+  author: cn-kali-team
+  tags: detect,tech,ups_network_management_card
+  severity: info
+  metadata:
+    fofa-query:
+    - title="apc | log on"
+    product: ups_network_management_card
+    shodan-query:
+    - title:"apc | log on"
+    vendor: schneider-electric
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>apc.*?</title>

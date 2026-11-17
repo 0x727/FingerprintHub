@@ -1,0 +1,22 @@
+id: miniorange-oauth-20-server
+info:
+  name: miniorange-oauth-20-server
+  author: cn-kali-team
+  tags: detect,tech,miniorange-oauth-20-server
+  severity: info
+  metadata:
+    fofa-query:
+    - body="miniorange-oauth-20-server"
+    product: miniorange-oauth-20-server
+    shodan-query:
+    - http.html:"miniorange-oauth-20-server"
+    vendor: miniorange
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - miniorange-oauth-20-server

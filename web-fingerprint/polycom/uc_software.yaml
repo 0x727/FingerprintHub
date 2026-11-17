@@ -1,0 +1,22 @@
+id: uc_software
+info:
+  name: uc_software
+  author: cn-kali-team
+  tags: detect,tech,uc_software
+  severity: info
+  metadata:
+    fofa-query:
+    - body="polycom web configuration utility"
+    product: uc_software
+    shodan-query:
+    - http.html:"polycom web configuration utility"
+    vendor: polycom
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - polycom web configuration utility

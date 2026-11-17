@@ -1,0 +1,22 @@
+id: budibase
+info:
+  name: budibase
+  author: cn-kali-team
+  tags: detect,tech,budibase
+  severity: info
+  metadata:
+    fofa-query:
+    - app="budibase"
+    product: budibase
+    shodan-query:
+    - http.title:"budibase"
+    vendor: budibase
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>budibase.*?</title>

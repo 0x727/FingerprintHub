@@ -1,0 +1,22 @@
+id: print_server
+info:
+  name: print_server
+  author: cn-kali-team
+  tags: detect,tech,print_server
+  severity: info
+  metadata:
+    fofa-query:
+    - body="zebra technologies"
+    product: print_server
+    shodan-query:
+    - http.html:"zebra technologies"
+    vendor: zebra
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - zebra technologies

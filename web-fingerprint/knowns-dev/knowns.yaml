@@ -1,0 +1,22 @@
+id: knowns
+info:
+  name: knowns
+  author: cn-kali-team
+  tags: detect,tech,knowns
+  severity: info
+  metadata:
+    fofa-query:
+    - title="knowns"
+    product: knowns
+    shodan-query:
+    - http.title:"knowns"
+    vendor: knowns-dev
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>knowns.*?</title>

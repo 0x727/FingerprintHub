@@ -1,0 +1,23 @@
+id: wpbot
+info:
+  name: wpbot
+  author: cn-kali-team
+  tags: detect,tech,wpbot
+  severity: info
+  metadata:
+    fofa-query:
+    - body="wp-content/plugins/chatbot"
+    product: wpbot
+    shodan-query:
+    - http.html:"/wp-content/plugins/chatbot/"
+    vendor: quantumcloud
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/chatbot/
+    - wp-content/plugins/chatbot

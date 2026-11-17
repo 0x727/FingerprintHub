@@ -1,0 +1,22 @@
+id: backdrop_cms
+info:
+  name: backdrop_cms
+  author: cn-kali-team
+  tags: detect,tech,backdrop_cms
+  severity: info
+  metadata:
+    fofa-query:
+    - body="backdrop cms"
+    product: backdrop_cms
+    shodan-query:
+    - html:"backdrop cms"
+    vendor: backdropcms
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - backdrop cms

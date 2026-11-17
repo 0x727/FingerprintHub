@@ -1,0 +1,24 @@
+id: gpustack
+info:
+  name: gpustack
+  author: cn-kali-team
+  tags: detect,tech,gpustack
+  severity: info
+  metadata:
+    fofa-query:
+    - body="umi." && body="/static/favicon.png"
+    product: gpustack
+    shodan-query:
+    - http.html:"umi." http.html:"/static/favicon.png"
+    vendor: gpustack
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /static/favicon.png
+    - umi.
+    - umi." http.html:"/static/favicon.png

@@ -1,0 +1,22 @@
+id: altalink
+info:
+  name: altalink
+  author: cn-kali-team
+  tags: detect,tech,altalink
+  severity: info
+  metadata:
+    fofa-query:
+    - body="altalink"
+    product: altalink
+    shodan-query:
+    - http.html:"altalink"
+    vendor: xerox
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - altalink

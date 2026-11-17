@@ -1,0 +1,22 @@
+id: grav
+info:
+  name: grav
+  author: cn-kali-team
+  tags: detect,tech,grav
+  severity: info
+  metadata:
+    fofa-query:
+    - body="gravcms"
+    product: grav
+    shodan-query:
+    - http.html:"gravcms"
+    vendor: getgrav
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - gravcms

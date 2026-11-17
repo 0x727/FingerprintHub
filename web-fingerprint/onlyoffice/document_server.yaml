@@ -1,0 +1,23 @@
+id: document_server
+info:
+  name: document_server
+  author: cn-kali-team
+  tags: detect,tech,document_server
+  severity: info
+  metadata:
+    fofa-query:
+    - body="onlyoffice"
+    product: document_server
+    shodan-query:
+    - http.html:"onlyoffice docs"
+    vendor: onlyoffice
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - onlyoffice
+    - onlyoffice docs

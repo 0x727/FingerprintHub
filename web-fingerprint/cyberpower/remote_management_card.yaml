@@ -1,0 +1,24 @@
+id: remote_management_card
+info:
+  name: remote_management_card
+  author: cn-kali-team
+  tags: detect,tech,remote_management_card
+  severity: info
+  metadata:
+    fofa-query:
+    - body="login_pass.cgi" && body="cyberpower"
+    product: remote_management_card
+    shodan-query:
+    - http.html:"login_pass.cgi" http.html:"cyberpower"
+    vendor: cyberpower
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - cyberpower
+    - login_pass.cgi
+    - login_pass.cgi" http.html:"cyberpower

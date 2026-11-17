@@ -1,0 +1,22 @@
+id: wireless_access_point
+info:
+  name: wireless_access_point
+  author: cn-kali-team
+  tags: detect,tech,wireless_access_point
+  severity: info
+  metadata:
+    fofa-query:
+    - body="engenius"
+    product: wireless_access_point
+    shodan-query:
+    - http.html:"engenius"
+    vendor: engenius
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - engenius

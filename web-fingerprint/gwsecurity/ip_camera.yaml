@@ -1,0 +1,22 @@
+id: ip_camera
+info:
+  name: ip_camera
+  author: cn-kali-team
+  tags: detect,tech,ip_camera
+  severity: info
+  metadata:
+    fofa-query:
+    - body="gw security"
+    product: ip_camera
+    shodan-query:
+    - http.html:"gw security"
+    vendor: gwsecurity
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - gw security
