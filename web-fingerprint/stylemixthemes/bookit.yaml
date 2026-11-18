@@ -1,0 +1,23 @@
+id: bookit
+info:
+  name: bookit
+  author: cn-kali-team
+  tags: detect,tech,bookit
+  severity: info
+  metadata:
+    fofa-query:
+    - body="wp-content/plugins/bookit"
+    product: bookit
+    shodan-query:
+    - http.html:"/wp-content/plugins/bookit/"
+    vendor: stylemixthemes
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/bookit/
+    - wp-content/plugins/bookit

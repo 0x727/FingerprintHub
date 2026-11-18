@@ -1,0 +1,20 @@
+id: glances
+info:
+  name: glances
+  author: cn-kali-team
+  tags: detect,tech,glances
+  severity: info
+  metadata:
+    product: glances
+    shodan-query:
+    - http.title:"glances"
+    vendor: nicolargo
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>glances.*?</title>

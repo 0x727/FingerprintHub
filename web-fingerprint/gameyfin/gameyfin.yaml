@@ -1,0 +1,22 @@
+id: gameyfin
+info:
+  name: gameyfin
+  author: cn-kali-team
+  tags: detect,tech,gameyfin
+  severity: info
+  metadata:
+    fofa-query:
+    - body="gameyfin"
+    product: gameyfin
+    shodan-query:
+    - http.html:"gameyfin"
+    vendor: gameyfin
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - gameyfin

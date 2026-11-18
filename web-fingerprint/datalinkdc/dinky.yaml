@@ -1,0 +1,22 @@
+id: dinky
+info:
+  name: dinky
+  author: cn-kali-team
+  tags: detect,tech,dinky
+  severity: info
+  metadata:
+    fofa-query:
+    - title="dinky"
+    product: dinky
+    shodan-query:
+    - http.title:"dinky"
+    vendor: datalinkdc
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>dinky.*?</title>

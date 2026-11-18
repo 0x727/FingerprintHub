@@ -1,0 +1,20 @@
+id: duomicms
+info:
+  name: duomicms
+  author: cn-kali-team
+  tags: detect,tech,duomicms
+  severity: info
+  metadata:
+    fofa-query:
+    - body="power by duomicms"
+    product: duomicms
+    vendor: duomicms
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - power by duomicms

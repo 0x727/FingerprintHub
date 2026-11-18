@@ -1,0 +1,22 @@
+id: perses
+info:
+  name: perses
+  author: cn-kali-team
+  tags: detect,tech,perses
+  severity: info
+  metadata:
+    fofa-query:
+    - body="perses-dark-theme-enabled"
+    product: perses
+    shodan-query:
+    - http.html:"perses-dark-theme-enabled"
+    vendor: perses
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - perses-dark-theme-enabled

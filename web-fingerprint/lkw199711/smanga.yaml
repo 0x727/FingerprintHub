@@ -1,0 +1,22 @@
+id: smanga
+info:
+  name: smanga
+  author: cn-kali-team
+  tags: detect,tech,smanga
+  severity: info
+  metadata:
+    fofa-query:
+    - body="we're sorry but smanga"
+    product: smanga
+    shodan-query:
+    - http.html:"we're sorry but smanga"
+    vendor: lkw199711
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - we're sorry but smanga
