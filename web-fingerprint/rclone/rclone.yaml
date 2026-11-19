@@ -1,0 +1,22 @@
+id: rclone
+info:
+  name: rclone
+  author: cn-kali-team
+  tags: detect,tech,rclone
+  severity: info
+  metadata:
+    fofa-query:
+    - title="list of all rclone remotes."
+    product: rclone
+    shodan-query:
+    - http.title:"list of all rclone remotes."
+    vendor: rclone
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>list of all rclone remotes..*?</title>

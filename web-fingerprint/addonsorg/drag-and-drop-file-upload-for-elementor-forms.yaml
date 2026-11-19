@@ -1,0 +1,22 @@
+id: drag-and-drop-file-upload-for-elementor-forms
+info:
+  name: drag-and-drop-file-upload-for-elementor-forms
+  author: cn-kali-team
+  tags: detect,tech,drag-and-drop-file-upload-for-elementor-forms
+  severity: info
+  metadata:
+    fofa-query:
+    - body="drag-and-drop-file-upload-for-elementor-forms"
+    product: drag-and-drop-file-upload-for-elementor-forms
+    shodan-query:
+    - http.html:"drag-and-drop-file-upload-for-elementor-forms"
+    vendor: addonsorg
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - drag-and-drop-file-upload-for-elementor-forms
