@@ -1,0 +1,26 @@
+id: xweb-evo
+info:
+  name: xweb evo
+  author: cn-kali-team
+  tags: detect,tech,xweb evo
+  severity: info
+  metadata:
+    fofa-query:
+    - title="xweb" && body="xweb evo client"
+    product: xweb evo
+    shodan-query:
+    - title:"xweb" "xweb evo client"
+    vendor: copeland-dixell
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - xweb evo client
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>xweb" "xweb evo client.*?</title>
+    - (?mi)<title[^>]*>xweb.*?</title>

@@ -1,0 +1,22 @@
+id: admidio
+info:
+  name: admidio
+  author: cn-kali-team
+  tags: detect,tech,admidio
+  severity: info
+  metadata:
+    fofa-query:
+    - body="the admidio team"
+    product: admidio
+    shodan-query:
+    - http.html:"the admidio team"
+    vendor: admidio
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - the admidio team

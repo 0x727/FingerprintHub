@@ -1,0 +1,22 @@
+id: ansibleforms
+info:
+  name: ansibleforms
+  author: cn-kali-team
+  tags: detect,tech,ansibleforms
+  severity: info
+  metadata:
+    fofa-query:
+    - title="ansibleforms" || header="af_session"
+    product: ansibleforms
+    shodan-query:
+    - http.html:"ansibleforms"
+    vendor: ansibleforms
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - ansibleforms
