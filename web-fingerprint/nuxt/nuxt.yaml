@@ -1,0 +1,22 @@
+id: nuxt
+info:
+  name: nuxt
+  author: cn-kali-team
+  tags: detect,tech,nuxt
+  severity: info
+  metadata:
+    fofa-query:
+    - body="__nuxt"
+    product: nuxt
+    shodan-query:
+    - html:"__nuxt"
+    vendor: nuxt
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - __nuxt
