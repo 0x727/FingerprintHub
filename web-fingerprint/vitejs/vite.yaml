@@ -1,0 +1,22 @@
+id: vite
+info:
+  name: vite
+  author: cn-kali-team
+  tags: detect,tech,vite
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/@vite/client"
+    product: vite
+    shodan-query:
+    - http.html:"/@vite/client"
+    vendor: vitejs
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /@vite/client

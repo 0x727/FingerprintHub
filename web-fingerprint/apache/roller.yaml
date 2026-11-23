@@ -1,0 +1,20 @@
+id: roller
+info:
+  name: roller
+  author: cn-kali-team
+  tags: detect,tech,roller
+  severity: info
+  metadata:
+    product: roller
+    shodan-query:
+    - http.html:"apache roller weblogger"
+    vendor: apache
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - apache roller weblogger

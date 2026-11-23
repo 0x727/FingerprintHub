@@ -1,0 +1,22 @@
+id: pulse_connect_secure
+info:
+  name: pulse_connect_secure
+  author: cn-kali-team
+  tags: detect,tech,pulse_connect_secure
+  severity: info
+  metadata:
+    fofa-query:
+    - title="pulse connect secure"
+    product: pulse_connect_secure
+    shodan-query:
+    - title:"pulse connect secure"
+    vendor: pulsesecure
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>pulse connect secure.*?</title>

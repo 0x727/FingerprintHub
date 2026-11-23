@@ -1,0 +1,22 @@
+id: homer
+info:
+  name: homer
+  author: cn-kali-team
+  tags: detect,tech,homer
+  severity: info
+  metadata:
+    fofa-query:
+    - title="homer v11"
+    product: homer
+    shodan-query:
+    - http.title:"homer v11"
+    vendor: sipcapture
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>homer v11.*?</title>

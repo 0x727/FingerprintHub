@@ -1,0 +1,22 @@
+id: semantic_mediawiki
+info:
+  name: semantic_mediawiki
+  author: cn-kali-team
+  tags: detect,tech,semantic_mediawiki
+  severity: info
+  metadata:
+    fofa-query:
+    - body="powered by semantic mediawiki"
+    product: semantic_mediawiki
+    shodan-query:
+    - http.html:"powered by semantic mediawiki"
+    vendor: semantic-mediawiki
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - powered by semantic mediawiki

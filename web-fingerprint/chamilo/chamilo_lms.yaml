@@ -1,0 +1,23 @@
+id: chamilo_lms
+info:
+  name: chamilo_lms
+  author: cn-kali-team
+  tags: detect,tech,chamilo_lms
+  severity: info
+  metadata:
+    fofa-query:
+    - title="chamilo"
+    product: chamilo_lms
+    shodan-query:
+    - 'x-powered-by: chamilo'
+    - http.title:"chamilo"
+    vendor: chamilo
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>chamilo.*?</title>

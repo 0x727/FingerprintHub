@@ -1,0 +1,22 @@
+id: lakefs
+info:
+  name: lakefs
+  author: cn-kali-team
+  tags: detect,tech,lakefs
+  severity: info
+  metadata:
+    fofa-query:
+    - title="lakefs"
+    product: lakefs
+    shodan-query:
+    - http.title:"lakefs"
+    vendor: lakefs
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>lakefs.*?</title>

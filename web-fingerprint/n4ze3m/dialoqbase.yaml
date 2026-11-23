@@ -1,0 +1,22 @@
+id: dialoqbase
+info:
+  name: dialoqbase
+  author: cn-kali-team
+  tags: detect,tech,dialoqbase
+  severity: info
+  metadata:
+    fofa-query:
+    - body="dialoqbase"
+    product: dialoqbase
+    shodan-query:
+    - html:"dialoqbase"
+    vendor: n4ze3m
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - dialoqbase

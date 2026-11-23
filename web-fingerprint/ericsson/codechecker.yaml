@@ -1,0 +1,22 @@
+id: codechecker
+info:
+  name: codechecker
+  author: cn-kali-team
+  tags: detect,tech,codechecker
+  severity: info
+  metadata:
+    fofa-query:
+    - icon_hash="-1496590341"
+    product: codechecker
+    shodan-query:
+    - http.favicon.hash:-1496590341
+    vendor: ericsson
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '-1496590341'

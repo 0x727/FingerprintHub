@@ -1,0 +1,20 @@
+id: praisonai-platform
+info:
+  name: praisonai-platform
+  author: cn-kali-team
+  tags: detect,tech,praisonai-platform
+  severity: info
+  metadata:
+    product: praisonai-platform
+    shodan-query:
+    - http.title:"praisonai platform"
+    vendor: praison
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>praisonai platform.*?</title>

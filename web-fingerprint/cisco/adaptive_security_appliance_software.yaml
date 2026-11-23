@@ -1,0 +1,22 @@
+id: adaptive_security_appliance_software
+info:
+  name: adaptive_security_appliance_software
+  author: cn-kali-team
+  tags: detect,tech,adaptive_security_appliance_software
+  severity: info
+  metadata:
+    fofa-query:
+    - title="cisco asdm"
+    product: adaptive_security_appliance_software
+    shodan-query:
+    - http.title:"cisco asdm"
+    vendor: cisco
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>cisco asdm.*?</title>

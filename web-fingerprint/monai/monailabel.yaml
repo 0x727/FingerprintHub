@@ -1,0 +1,22 @@
+id: monailabel
+info:
+  name: monailabel
+  author: cn-kali-team
+  tags: detect,tech,monailabel
+  severity: info
+  metadata:
+    fofa-query:
+    - body="monailabel"
+    product: monailabel
+    shodan-query:
+    - http.html:"monailabel"
+    vendor: monai
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - monailabel

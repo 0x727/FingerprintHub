@@ -1,0 +1,22 @@
+id: obot
+info:
+  name: obot
+  author: cn-kali-team
+  tags: detect,tech,obot
+  severity: info
+  metadata:
+    fofa-query:
+    - body="nanobotdark"
+    product: obot
+    shodan-query:
+    - http.html:"nanobotdark"
+    vendor: obot-platform
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - nanobotdark

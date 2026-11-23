@@ -1,0 +1,22 @@
+id: changedetection
+info:
+  name: changedetection
+  author: cn-kali-team
+  tags: detect,tech,changedetection
+  severity: info
+  metadata:
+    fofa-query:
+    - title="change detection"
+    product: changedetection
+    shodan-query:
+    - http.title:"change detection"
+    vendor: webtechnologies
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>change detection.*?</title>

@@ -1,0 +1,20 @@
+id: lemmy
+info:
+  name: lemmy
+  author: cn-kali-team
+  tags: detect,tech,lemmy
+  severity: info
+  metadata:
+    product: lemmy
+    shodan-query:
+    - http.html:"window.isodata" http.html:"site_res"
+    vendor: lemmy
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - window.isodata" http.html:"site_res

@@ -1,0 +1,20 @@
+id: jupyter-mcp-server
+info:
+  name: jupyter-mcp-server
+  author: cn-kali-team
+  tags: detect,tech,jupyter-mcp-server
+  severity: info
+  metadata:
+    product: jupyter-mcp-server
+    shodan-query:
+    - html:"jupyter-mcp-server"
+    vendor: datalayer
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - jupyter-mcp-server
