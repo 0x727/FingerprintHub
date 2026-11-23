@@ -1,0 +1,22 @@
+id: openfga
+info:
+  name: openfga
+  author: cn-kali-team
+  tags: detect,tech,openfga
+  severity: info
+  metadata:
+    fofa-query:
+    - header="openfga"
+    product: openfga
+    shodan-query:
+    - http.html:"openfga"
+    vendor: openfga
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - openfga

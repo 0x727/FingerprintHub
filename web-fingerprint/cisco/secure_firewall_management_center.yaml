@@ -1,0 +1,27 @@
+id: secure_firewall_management_center
+info:
+  name: secure_firewall_management_center
+  author: cn-kali-team
+  tags: detect,tech,secure_firewall_management_center
+  severity: info
+  metadata:
+    fofa-query:
+    - body="ua-110054821-1"
+    - title="firepower management center"
+    product: secure_firewall_management_center
+    shodan-query:
+    - http.html:"ua-110054821-1"
+    - http.title:"firepower management center"
+    vendor: cisco
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - ua-110054821-1
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>firepower management center.*?</title>

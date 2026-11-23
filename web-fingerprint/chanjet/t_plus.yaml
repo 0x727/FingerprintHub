@@ -1,0 +1,23 @@
+id: t_plus
+info:
+  name: t_plus
+  author: cn-kali-team
+  tags: detect,tech,t_plus
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/tplus/"
+    product: t_plus
+    shodan-query:
+    - http.html:"tplus"
+    vendor: chanjet
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /tplus/
+    - tplus

@@ -1,0 +1,26 @@
+id: alerta
+info:
+  name: alerta
+  author: cn-kali-team
+  tags: detect,tech,alerta
+  severity: info
+  metadata:
+    fofa-query:
+    - body="alerta api" || title="alerta" && body="alerta-webui"
+    product: alerta
+    shodan-query:
+    - http.html:"alerta api"
+    vendor: alerta_project
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - alerta api
+    - alerta-webui
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>alerta.*?</title>
