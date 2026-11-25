@@ -1,0 +1,22 @@
+id: prefect
+info:
+  name: prefect
+  author: cn-kali-team
+  tags: detect,tech,prefect
+  severity: info
+  metadata:
+    fofa-query:
+    - title="prefect server"
+    product: prefect
+    shodan-query:
+    - http.title:"prefect server"
+    vendor: prefect
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>prefect server.*?</title>

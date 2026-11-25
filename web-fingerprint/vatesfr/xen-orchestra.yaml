@@ -1,0 +1,22 @@
+id: xen-orchestra
+info:
+  name: xen-orchestra
+  author: cn-kali-team
+  tags: detect,tech,xen-orchestra
+  severity: info
+  metadata:
+    fofa-query:
+    - title="xen orchestra"
+    product: xen-orchestra
+    shodan-query:
+    - http.title:"xen orchestra"
+    vendor: vatesfr
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>xen orchestra.*?</title>

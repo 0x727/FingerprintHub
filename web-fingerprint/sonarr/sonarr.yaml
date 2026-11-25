@@ -1,0 +1,22 @@
+id: sonarr
+info:
+  name: sonarr
+  author: cn-kali-team
+  tags: detect,tech,sonarr
+  severity: info
+  metadata:
+    fofa-query:
+    - title="sonarr"
+    product: sonarr
+    shodan-query:
+    - http.title:"sonarr"
+    vendor: sonarr
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>sonarr.*?</title>

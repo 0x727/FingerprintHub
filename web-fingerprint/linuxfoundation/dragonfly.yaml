@@ -1,0 +1,22 @@
+id: dragonfly
+info:
+  name: dragonfly
+  author: cn-kali-team
+  tags: detect,tech,dragonfly
+  severity: info
+  metadata:
+    fofa-query:
+    - body="dragonfly console is the front-end console of dragonfly"
+    product: dragonfly
+    shodan-query:
+    - http.html:"dragonfly console is the front-end console of dragonfly"
+    vendor: linuxfoundation
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - dragonfly console is the front-end console of dragonfly

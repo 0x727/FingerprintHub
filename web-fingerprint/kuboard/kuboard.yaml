@@ -1,0 +1,22 @@
+id: kuboard
+info:
+  name: kuboard
+  author: cn-kali-team
+  tags: detect,tech,kuboard
+  severity: info
+  metadata:
+    fofa-query:
+    - title="kuboard"
+    product: kuboard
+    shodan-query:
+    - http.title:"kuboard"
+    vendor: kuboard
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>kuboard.*?</title>

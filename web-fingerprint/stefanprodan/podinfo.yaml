@@ -1,0 +1,22 @@
+id: podinfo
+info:
+  name: podinfo
+  author: cn-kali-team
+  tags: detect,tech,podinfo
+  severity: info
+  metadata:
+    fofa-query:
+    - body="stefanprodan/podinfo"
+    product: podinfo
+    shodan-query:
+    - http.html:"stefanprodan/podinfo"
+    vendor: stefanprodan
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - stefanprodan/podinfo

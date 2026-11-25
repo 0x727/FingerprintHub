@@ -1,0 +1,22 @@
+id: bird-lgproxy
+info:
+  name: bird-lgproxy
+  author: cn-kali-team
+  tags: detect,tech,bird-lgproxy
+  severity: info
+  metadata:
+    fofa-query:
+    - 'body="forbidden: only"'
+    product: bird-lgproxy
+    shodan-query:
+    - 'http.html:"forbidden: only"'
+    vendor: xddxdd
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - 'forbidden: only'

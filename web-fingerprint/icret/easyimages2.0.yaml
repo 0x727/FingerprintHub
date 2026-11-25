@@ -1,0 +1,22 @@
+id: easyimages2.0
+info:
+  name: easyimages2.0
+  author: cn-kali-team
+  tags: detect,tech,easyimages2.0
+  severity: info
+  metadata:
+    fofa-query:
+    - app="easyimage-简单图床"
+    product: easyimages2.0
+    shodan-query:
+    - http.html:"easyimage2.0"
+    vendor: icret
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - easyimage2.0

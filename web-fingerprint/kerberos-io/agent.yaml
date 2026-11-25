@@ -1,0 +1,22 @@
+id: agent
+info:
+  name: agent
+  author: cn-kali-team
+  tags: detect,tech,agent
+  severity: info
+  metadata:
+    fofa-query:
+    - title="kerberos agent"
+    product: agent
+    shodan-query:
+    - http.title:"kerberos agent"
+    vendor: kerberos-io
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>kerberos agent.*?</title>
