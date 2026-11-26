@@ -1,0 +1,22 @@
+id: mealie
+info:
+  name: mealie
+  author: cn-kali-team
+  tags: detect,tech,mealie
+  severity: info
+  metadata:
+    fofa-query:
+    - title="mealie"
+    product: mealie
+    shodan-query:
+    - http.title:"mealie"
+    vendor: mealie
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>mealie.*?</title>

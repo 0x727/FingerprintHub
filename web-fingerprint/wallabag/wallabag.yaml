@@ -1,0 +1,22 @@
+id: wallabag
+info:
+  name: wallabag
+  author: cn-kali-team
+  tags: detect,tech,wallabag
+  severity: info
+  metadata:
+    fofa-query:
+    - title="wallabag"
+    product: wallabag
+    shodan-query:
+    - http.title:"wallabag"
+    vendor: wallabag
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>wallabag.*?</title>

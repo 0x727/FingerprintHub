@@ -1,0 +1,22 @@
+id: dnsserver
+info:
+  name: dnsserver
+  author: cn-kali-team
+  tags: detect,tech,dnsserver
+  severity: info
+  metadata:
+    fofa-query:
+    - title="technitium dns server"
+    product: dnsserver
+    shodan-query:
+    - http.title:"technitium dns server"
+    vendor: technitium
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>technitium dns server.*?</title>

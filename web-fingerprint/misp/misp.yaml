@@ -1,0 +1,22 @@
+id: misp
+info:
+  name: misp
+  author: cn-kali-team
+  tags: detect,tech,misp
+  severity: info
+  metadata:
+    fofa-query:
+    - title="users - misp"
+    product: misp
+    shodan-query:
+    - http.title:"users - misp"
+    vendor: misp
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>users - misp.*?</title>
