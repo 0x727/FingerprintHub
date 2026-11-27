@@ -1,0 +1,22 @@
+id: recce
+info:
+  name: recce
+  author: cn-kali-team
+  tags: detect,tech,recce
+  severity: info
+  metadata:
+    fofa-query:
+    - title="recce"
+    product: recce
+    shodan-query:
+    - http.title:"recce"
+    vendor: datarecce
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>recce.*?</title>

@@ -1,0 +1,22 @@
+id: syncope
+info:
+  name: syncope
+  author: cn-kali-team
+  tags: detect,tech,syncope
+  severity: info
+  metadata:
+    fofa-query:
+    - title="apache syncope"
+    product: syncope
+    shodan-query:
+    - http.title:"apache syncope"
+    vendor: apache
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>apache syncope.*?</title>

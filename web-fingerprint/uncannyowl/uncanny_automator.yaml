@@ -1,0 +1,22 @@
+id: uncanny_automator
+info:
+  name: uncanny_automator
+  author: cn-kali-team
+  tags: detect,tech,uncanny_automator
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/uncanny-automator/"
+    product: uncanny_automator
+    shodan-query:
+    - http.html:"/wp-content/plugins/uncanny-automator/"
+    vendor: uncannyowl
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/uncanny-automator/

@@ -1,0 +1,22 @@
+id: wp-recipe-maker
+info:
+  name: wp-recipe-maker
+  author: cn-kali-team
+  tags: detect,tech,wp-recipe-maker
+  severity: info
+  metadata:
+    fofa-query:
+    - body="/wp-content/plugins/wp-recipe-maker/"
+    product: wp-recipe-maker
+    shodan-query:
+    - http.html:"/wp-content/plugins/wp-recipe-maker/"
+    vendor: bootstrappers
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - /wp-content/plugins/wp-recipe-maker/
