@@ -1,0 +1,22 @@
+id: anubis
+info:
+  name: anubis
+  author: cn-kali-team
+  tags: detect,tech,anubis
+  severity: info
+  metadata:
+    fofa-query:
+    - body="anubis_challenge"
+    product: anubis
+    shodan-query:
+    - http.html:"anubis_challenge"
+    vendor: techaro
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - anubis_challenge

@@ -1,0 +1,22 @@
+id: bambuddy
+info:
+  name: bambuddy
+  author: cn-kali-team
+  tags: detect,tech,bambuddy
+  severity: info
+  metadata:
+    fofa-query:
+    - title="bambuddy"
+    product: bambuddy
+    shodan-query:
+    - http.title:"bambuddy"
+    vendor: bambuddy
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: regex
+    regex:
+    - (?mi)<title[^>]*>bambuddy.*?</title>

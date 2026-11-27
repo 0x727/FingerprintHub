@@ -1,0 +1,22 @@
+id: virtuemart
+info:
+  name: virtuemart
+  author: cn-kali-team
+  tags: detect,tech,virtuemart
+  severity: info
+  metadata:
+    fofa-query:
+    - body="com_virtuemart"
+    product: virtuemart
+    shodan-query:
+    - http.html:"com_virtuemart"
+    vendor: virtuemart
+    verified: true
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: word
+    words:
+    - com_virtuemart
